@@ -1,0 +1,22 @@
+---
+site_name: "Food systems monitoring data model documentation"
+theme:
+  name: material
+  features:
+    - content.tabs.link
+plugins:
+  - search
+  - mermaid2
+nav:
+  - Overview: index.md
+  - Visualizations:
+    - Classes (categories): categories.html
+    - Predicates: predicates.html
+    - Qualifiers: qualifiers.html
+    - Associations: associations.html
+  - About: about.md
+docs_dir: docs
+site_url: https://biometris.github.io/foodsystems-model
+repo_url: https://github.com/biometris/foodsystems-model
+extra_css:
+  - style.css

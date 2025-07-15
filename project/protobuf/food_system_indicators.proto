@@ -1,0 +1,45 @@
+ syntax="proto3";
+ package
+// metamodel_version: 1.7.0
+// Food system indicator datapoint.
+message Datapoint
+ {
+  iriType iri = 0
+  labelType name = 0
+  narrativeText description = 0
+  string category = 0
+  unit hasUnit = 0
+  double hasNumericValue = 0
+  string id = 0
+  string datapointOf = 0
+ }
+// Food system indicator.
+message Indicator
+ {
+  iriType iri = 0
+  string category = 0
+  string id = 0
+  string name = 0
+  string description = 0
+  spatialScopeTypes spatialScope = 0
+ }
+// A databased entity or concept/class.
+message NamedThing
+ {
+  string id = 0
+  iriType iri = 0
+  labelType name = 0
+  narrativeText description = 0
+  string category = 0
+ }
+// A value of an attribute that is quantitative and measurable, expressed as a combination of a unit and a numeric value
+message QuantityValue
+ {
+  string id = 0
+  iriType iri = 0
+  labelType name = 0
+  narrativeText description = 0
+  string category = 0
+  unit hasUnit = 0
+  double hasNumericValue = 0
+ }

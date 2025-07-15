@@ -1,0 +1,22 @@
+[
+    {
+        "name": "NamedThing",
+        "parent": null,
+        "children": [
+            {
+                "name": "indicator",
+                "parent": "NamedThing"
+            },
+            {
+                "name": "quantity_value",
+                "parent": "NamedThing",
+                "children": [
+                    {
+                        "name": "datapoint",
+                        "parent": "quantity_value"
+                    }
+                ]
+            }
+        ]
+    }
+]

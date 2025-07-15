@@ -1,0 +1,843 @@
+{
+  "name": "food-system-indicators",
+  "id": "https://w3id.org/linkml/examples/fsi",
+  "imports": [
+    "linkml:types"
+  ],
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "prefixes": [
+    {
+      "prefix_prefix": "linkml",
+      "prefix_reference": "https://w3id.org/linkml/"
+    },
+    {
+      "prefix_prefix": "dct",
+      "prefix_reference": "http://purl.org/dc/terms/"
+    },
+    {
+      "prefix_prefix": "fsi",
+      "prefix_reference": "https://w3id.org/linkml/examples/fsi"
+    },
+    {
+      "prefix_prefix": "IAO",
+      "prefix_reference": "http://purl.obolibrary.org/obo/IAO_"
+    },
+    {
+      "prefix_prefix": "obo",
+      "prefix_reference": "http://purl.obolibrary.org/obo/"
+    },
+    {
+      "prefix_prefix": "qudt",
+      "prefix_reference": "http://qudt.org/schema/qudt/"
+    },
+    {
+      "prefix_prefix": "rdfs",
+      "prefix_reference": "http://www.w3.org/2000/01/rdf-schema#"
+    },
+    {
+      "prefix_prefix": "schema",
+      "prefix_reference": "http://schema.org/"
+    },
+    {
+      "prefix_prefix": "skos",
+      "prefix_reference": "http://www.w3.org/2004/02/skos/core#"
+    }
+  ],
+  "default_prefix": "fsi",
+  "default_range": "string",
+  "types": [
+    {
+      "name": "iri_type",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiIriType",
+      "description": "An IRI",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "typeof": "uriorcurie",
+      "base": "URIorCURIE",
+      "uri": "http://www.w3.org/2001/XMLSchema#string",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "label_type",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiLabelType",
+      "description": "A string that provides a human-readable name for an entity",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "typeof": "string",
+      "base": "str",
+      "uri": "http://www.w3.org/2001/XMLSchema#string",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "narrative_text",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiNarrativeText",
+      "description": "A string that provides a human-readable description of something",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "typeof": "string",
+      "base": "str",
+      "uri": "http://www.w3.org/2001/XMLSchema#string",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "unit",
+      "id_prefixes": [
+        "UO"
+      ],
+      "definition_uri": "https://w3id.org/linkml/examples/fsiUnit",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "exact_mappings": [
+        "qudt:Unit"
+      ],
+      "typeof": "string",
+      "base": "str",
+      "uri": "http://example.org/UNKNOWN/UO/0000000",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "string",
+      "definition_uri": "https://w3id.org/linkml/String",
+      "description": "A character string",
+      "notes": [
+        "In RDF serializations, a slot with range of string is treated as a literal or type xsd:string.   If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"string\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "exact_mappings": [
+        "schema:Text"
+      ],
+      "base": "str",
+      "uri": "http://www.w3.org/2001/XMLSchema#string",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "integer",
+      "definition_uri": "https://w3id.org/linkml/Integer",
+      "description": "An integer",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"integer\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "exact_mappings": [
+        "schema:Integer"
+      ],
+      "base": "int",
+      "uri": "http://www.w3.org/2001/XMLSchema#integer",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "boolean",
+      "definition_uri": "https://w3id.org/linkml/Boolean",
+      "description": "A binary (true or false) value",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"boolean\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "exact_mappings": [
+        "schema:Boolean"
+      ],
+      "base": "Bool",
+      "uri": "http://www.w3.org/2001/XMLSchema#boolean",
+      "repr": "bool",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "float",
+      "definition_uri": "https://w3id.org/linkml/Float",
+      "description": "A real number that conforms to the xsd:float specification",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"float\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "exact_mappings": [
+        "schema:Float"
+      ],
+      "base": "float",
+      "uri": "http://www.w3.org/2001/XMLSchema#float",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "double",
+      "definition_uri": "https://w3id.org/linkml/Double",
+      "description": "A real number that conforms to the xsd:double specification",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"double\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "close_mappings": [
+        "schema:Float"
+      ],
+      "base": "float",
+      "uri": "http://www.w3.org/2001/XMLSchema#double",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "decimal",
+      "definition_uri": "https://w3id.org/linkml/Decimal",
+      "description": "A real number with arbitrary precision that conforms to the xsd:decimal specification",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"decimal\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "broad_mappings": [
+        "schema:Number"
+      ],
+      "base": "Decimal",
+      "uri": "http://www.w3.org/2001/XMLSchema#decimal",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "time",
+      "definition_uri": "https://w3id.org/linkml/Time",
+      "description": "A time object represents a (local) time of day, independent of any particular day",
+      "notes": [
+        "URI is dateTime because OWL reasoners do not work with straight date or time",
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"time\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "exact_mappings": [
+        "schema:Time"
+      ],
+      "base": "XSDTime",
+      "uri": "http://www.w3.org/2001/XMLSchema#time",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "date",
+      "definition_uri": "https://w3id.org/linkml/Date",
+      "description": "a date (year, month and day) in an idealized calendar",
+      "notes": [
+        "URI is dateTime because OWL reasoners don't work with straight date or time",
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"date\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "exact_mappings": [
+        "schema:Date"
+      ],
+      "base": "XSDDate",
+      "uri": "http://www.w3.org/2001/XMLSchema#date",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "datetime",
+      "definition_uri": "https://w3id.org/linkml/Datetime",
+      "description": "The combination of a date and time",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"datetime\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "exact_mappings": [
+        "schema:DateTime"
+      ],
+      "base": "XSDDateTime",
+      "uri": "http://www.w3.org/2001/XMLSchema#dateTime",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "date_or_datetime",
+      "definition_uri": "https://w3id.org/linkml/DateOrDatetime",
+      "description": "Either a date or a datetime",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"date_or_datetime\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "str",
+      "uri": "https://w3id.org/linkml/DateOrDatetime",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "uriorcurie",
+      "definition_uri": "https://w3id.org/linkml/Uriorcurie",
+      "description": "a URI or a CURIE",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"uriorcurie\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "URIorCURIE",
+      "uri": "http://www.w3.org/2001/XMLSchema#anyURI",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "curie",
+      "definition_uri": "https://w3id.org/linkml/Curie",
+      "conforms_to": "https://www.w3.org/TR/curie/",
+      "description": "a compact URI",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"curie\"."
+      ],
+      "comments": [
+        "in RDF serializations this MUST be expanded to a URI",
+        "in non-RDF serializations MAY be serialized as the compact representation"
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "Curie",
+      "uri": "http://www.w3.org/2001/XMLSchema#string",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "uri",
+      "definition_uri": "https://w3id.org/linkml/Uri",
+      "conforms_to": "https://www.ietf.org/rfc/rfc3987.txt",
+      "description": "a complete URI",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"uri\"."
+      ],
+      "comments": [
+        "in RDF serializations a slot with range of uri is treated as a literal or type xsd:anyURI unless it is an identifier or a reference to an identifier, in which case it is translated directly to a node"
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "close_mappings": [
+        "schema:URL"
+      ],
+      "base": "URI",
+      "uri": "http://www.w3.org/2001/XMLSchema#anyURI",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "ncname",
+      "definition_uri": "https://w3id.org/linkml/Ncname",
+      "description": "Prefix part of CURIE",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"ncname\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "NCName",
+      "uri": "http://www.w3.org/2001/XMLSchema#string",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "objectidentifier",
+      "definition_uri": "https://w3id.org/linkml/Objectidentifier",
+      "description": "A URI or CURIE that represents an object in the model.",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"objectidentifier\"."
+      ],
+      "comments": [
+        "Used for inheritance and type checking"
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "ElementIdentifier",
+      "uri": "http://www.w3.org/ns/shex#iri",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "nodeidentifier",
+      "definition_uri": "https://w3id.org/linkml/Nodeidentifier",
+      "description": "A URI, CURIE or BNODE that represents a node in a model.",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"nodeidentifier\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "NodeIdentifier",
+      "uri": "http://www.w3.org/ns/shex#nonLiteral",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "jsonpointer",
+      "definition_uri": "https://w3id.org/linkml/Jsonpointer",
+      "conforms_to": "https://datatracker.ietf.org/doc/html/rfc6901",
+      "description": "A string encoding a JSON Pointer. The value of the string MUST conform to JSON Point syntax and SHOULD dereference to a valid object within the current instance document when encoded in tree form.",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"jsonpointer\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "str",
+      "uri": "http://www.w3.org/2001/XMLSchema#string",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "jsonpath",
+      "definition_uri": "https://w3id.org/linkml/Jsonpath",
+      "conforms_to": "https://www.ietf.org/archive/id/draft-goessner-dispatch-jsonpath-00.html",
+      "description": "A string encoding a JSON Path. The value of the string MUST conform to JSON Point syntax and SHOULD dereference to zero or more valid objects within the current instance document when encoded in tree form.",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"jsonpath\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "str",
+      "uri": "http://www.w3.org/2001/XMLSchema#string",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "sparqlpath",
+      "definition_uri": "https://w3id.org/linkml/Sparqlpath",
+      "conforms_to": "https://www.w3.org/TR/sparql11-query/#propertypaths",
+      "description": "A string encoding a SPARQL Property Path. The value of the string MUST conform to SPARQL syntax and SHOULD dereference to zero or more valid objects within the current instance document when encoded as RDF.",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"sparqlpath\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "str",
+      "uri": "http://www.w3.org/2001/XMLSchema#string",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    }
+  ],
+  "enums": [
+    {
+      "name": "SpatialScopeTypes",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiSpatialScopeTypes",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "permissible_values": [
+        {
+          "text": "Eu",
+          "description": "EU wide"
+        },
+        {
+          "text": "EuMemberStates",
+          "description": "..."
+        },
+        {
+          "text": "Regional",
+          "description": "..."
+        },
+        {
+          "text": "Local",
+          "description": "..."
+        }
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "node_property",
+      "definition_uri": "https://w3id.org/linkml/examples/fsinode_property",
+      "description": "A grouping for any property that holds between a node and a value.",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "domain": "NamedThing",
+      "slot_uri": "https://w3id.org/linkml/examples/fsinode_property",
+      "owner": "node_property",
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "description",
+      "definition_uri": "https://w3id.org/linkml/examples/fsidescription",
+      "description": "A human-readable description of an entity.",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "aliases": [
+        "definition"
+      ],
+      "mappings": [
+        "http://purl.org/dc/terms/description"
+      ],
+      "exact_mappings": [
+        "http://purl.obolibrary.org/obo/IAO_0000115",
+        "http://www.w3.org/2004/02/skos/core#definitions"
+      ],
+      "slot_uri": "http://purl.org/dc/terms/description",
+      "owner": "Entity",
+      "domain_of": [
+        "Entity"
+      ],
+      "range": "narrative_text",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "has_numeric_value",
+      "definition_uri": "https://w3id.org/linkml/examples/fsihas_numeric_value",
+      "description": "connects a quantity value to a number",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "exact_mappings": [
+        "http://qudt.org/schema/qudt/quantityValue"
+      ],
+      "domain": "QuantityValue",
+      "slot_uri": "https://w3id.org/linkml/examples/fsihas_numeric_value",
+      "owner": "QuantityValue",
+      "domain_of": [
+        "QuantityValue"
+      ],
+      "range": "double",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "has_unit",
+      "definition_uri": "https://w3id.org/linkml/examples/fsihas_unit",
+      "description": "connects a quantity value to a unit",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "exact_mappings": [
+        "http://qudt.org/schema/qudt/unit",
+        "http://purl.obolibrary.org/obo/IAO_0000039"
+      ],
+      "domain": "QuantityValue",
+      "slot_uri": "https://w3id.org/linkml/examples/fsihas_unit",
+      "owner": "QuantityValue",
+      "domain_of": [
+        "QuantityValue"
+      ],
+      "range": "unit",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "id",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiid",
+      "description": "A unique identifier for an entity.",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "domain": "Entity",
+      "slot_uri": "https://w3id.org/linkml/examples/fsiid",
+      "identifier": true,
+      "owner": "Entity",
+      "domain_of": [
+        "Entity"
+      ],
+      "range": "string",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "iri",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiiri",
+      "description": "An IRI for an entity. This is determined by the id using expansion rules.",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "slot_uri": "https://w3id.org/linkml/examples/fsiiri",
+      "owner": "Entity",
+      "domain_of": [
+        "Entity"
+      ],
+      "range": "iri_type",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "datapoint_of",
+      "definition_uri": "https://w3id.org/linkml/examples/fsidatapoint_of",
+      "description": "Indicator",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "is_a": "node_property",
+      "domain": "NamedThing",
+      "slot_uri": "https://w3id.org/linkml/examples/fsidatapoint_of",
+      "owner": "datapoint_of",
+      "range": "Indicator",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "name",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiname",
+      "description": "A human-readable name for an attribute or entity.",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "aliases": [
+        "label",
+        "display name",
+        "title"
+      ],
+      "mappings": [
+        "http://www.w3.org/2000/01/rdf-schema#label"
+      ],
+      "narrow_mappings": [
+        "http://purl.org/dc/terms/title"
+      ],
+      "domain": "Entity",
+      "slot_uri": "http://www.w3.org/2000/01/rdf-schema#label",
+      "owner": "Entity",
+      "domain_of": [
+        "Entity"
+      ],
+      "range": "label_type",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "synonym",
+      "definition_uri": "https://w3id.org/linkml/examples/fsisynonym",
+      "description": "Alternate human-readable names for a thing",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "aliases": [
+        "alias"
+      ],
+      "is_a": "node_property",
+      "domain": "NamedThing",
+      "slot_uri": "https://w3id.org/linkml/examples/fsisynonym",
+      "owner": "synonym",
+      "range": "label_type",
+      "multivalued": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "indicator__id",
+      "description": "unique identifier of the indicator",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "mappings": [
+        "http://schema.org/id"
+      ],
+      "slot_uri": "http://schema.org/id",
+      "identifier": true,
+      "alias": "id",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "string",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "indicator__name",
+      "description": "denomination of the indicator",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "mappings": [
+        "http://schema.org/name"
+      ],
+      "slot_uri": "http://schema.org/name",
+      "alias": "name",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "string",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "indicator__description",
+      "description": "concise text that provides the meaning of the identifier",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "mappings": [
+        "http://schema.org/description"
+      ],
+      "slot_uri": "http://schema.org/description",
+      "alias": "description",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "string",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "indicator__spatial_scope",
+      "description": "reference to the spatial unit that the indicator describes",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "slot_uri": "https://w3id.org/linkml/examples/fsispatial_scope",
+      "alias": "spatial_scope",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "SpatialScopeTypes",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "datapoint__id",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "slot_uri": "https://w3id.org/linkml/examples/fsiid",
+      "alias": "id",
+      "owner": "Datapoint",
+      "domain_of": [
+        "Datapoint"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "datapoint__datapoint_of",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "slot_uri": "https://w3id.org/linkml/examples/fsidatapoint_of",
+      "alias": "datapoint_of",
+      "owner": "Datapoint",
+      "domain_of": [
+        "Datapoint"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "category",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "slot_uri": "https://w3id.org/linkml/examples/fsicategory",
+      "range": "string",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "named_thing_category",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "is_a": "category",
+      "domain": "NamedThing",
+      "slot_uri": "https://w3id.org/linkml/examples/fsicategory",
+      "alias": "category",
+      "owner": "NamedThing",
+      "domain_of": [
+        "NamedThing"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "category",
+      "range": "string",
+      "required": true,
+      "@type": "SlotDefinition"
+    }
+  ],
+  "classes": [
+    {
+      "name": "Indicator",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiIndicator",
+      "description": "Food system indicator.",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "is_a": "NamedThing",
+      "slots": [
+        "iri",
+        "named_thing_category",
+        "indicator__id",
+        "indicator__name",
+        "indicator__description",
+        "indicator__spatial_scope"
+      ],
+      "slot_usage": {},
+      "attributes": [
+        {
+          "name": "id",
+          "description": "unique identifier of the indicator",
+          "slot_uri": "schema:id",
+          "identifier": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "name",
+          "description": "denomination of the indicator",
+          "slot_uri": "schema:name",
+          "required": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "description",
+          "description": "concise text that provides the meaning of the identifier",
+          "slot_uri": "schema:description",
+          "required": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "spatial_scope",
+          "description": "reference to the spatial unit that the indicator describes",
+          "range": "SpatialScopeTypes",
+          "required": true,
+          "@type": "SlotDefinition"
+        }
+      ],
+      "class_uri": "https://w3id.org/linkml/examples/fsiIndicator",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Datapoint",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiDatapoint",
+      "description": "Food system indicator datapoint.",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "is_a": "QuantityValue",
+      "slots": [
+        "iri",
+        "name",
+        "description",
+        "named_thing_category",
+        "has_unit",
+        "has_numeric_value",
+        "datapoint__id",
+        "datapoint__datapoint_of"
+      ],
+      "slot_usage": {},
+      "attributes": [
+        {
+          "name": "id",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "datapoint_of",
+          "@type": "SlotDefinition"
+        }
+      ],
+      "class_uri": "https://w3id.org/linkml/examples/fsiDatapoint",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "QuantityValue",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiQuantityValue",
+      "description": "A value of an attribute that is quantitative and measurable, expressed as a combination of a unit and a numeric value",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "is_a": "NamedThing",
+      "slots": [
+        "id",
+        "iri",
+        "name",
+        "description",
+        "named_thing_category",
+        "has_unit",
+        "has_numeric_value"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/linkml/examples/fsiQuantityValue",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Entity",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiEntity",
+      "description": "Root class for all things and informational relationships, real or imagined.",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "abstract": true,
+      "slots": [
+        "id",
+        "iri",
+        "name",
+        "description"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/linkml/examples/fsiEntity",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "NamedThing",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiNamedThing",
+      "description": "A databased entity or concept/class.",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "is_a": "Entity",
+      "slots": [
+        "id",
+        "iri",
+        "name",
+        "description",
+        "named_thing_category"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/linkml/examples/fsiNamedThing",
+      "@type": "ClassDefinition"
+    }
+  ],
+  "metamodel_version": "1.7.0",
+  "source_file": "food_system_indicators.yaml",
+  "source_file_date": "2025-04-21T17:02:57",
+  "source_file_size": 4635,
+  "generation_date": "2025-04-21T17:03:00",
+  "@type": "SchemaDefinition",
+  "@context": [
+    "project/jsonld/food_system_indicators.context.jsonld",
+    "https://w3id.org/linkml/types.context.jsonld",
+    {
+      "@base": "https://w3id.org/linkml/examples/fsi"
+    }
+  ]
+}

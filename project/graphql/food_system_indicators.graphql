@@ -1,0 +1,59 @@
+# metamodel_version: 1.7.0
+enum SpatialScopeTypes
+  {
+    Eu
+    EuMemberStates
+    Regional
+    Local
+  }
+
+type Datapoint
+  {
+    iri: IriType
+    name: LabelType
+    description: NarrativeText
+    category: String!
+    hasUnit: Unit
+    hasNumericValue: Double
+    id: String
+    datapointOf: String
+  }
+
+interface Entity
+  {
+    id: String!
+    iri: IriType
+    name: LabelType
+    description: NarrativeText
+  }
+
+type Indicator
+  {
+    iri: IriType
+    category: String!
+    id: String!
+    name: String!
+    description: String!
+    spatialScope: SpatialScopeTypes!
+  }
+
+type NamedThing
+  {
+    id: String!
+    iri: IriType
+    name: LabelType
+    description: NarrativeText
+    category: String!
+  }
+
+type QuantityValue
+  {
+    id: String!
+    iri: IriType
+    name: LabelType
+    description: NarrativeText
+    category: String!
+    hasUnit: Unit
+    hasNumericValue: Double
+  }
+

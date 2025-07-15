@@ -1,0 +1,203 @@
+{
+    "$defs": {
+        "Datapoint": {
+            "additionalProperties": false,
+            "description": "Food system indicator datapoint.",
+            "properties": {
+                "datapoint_of": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "description": {
+                    "description": "A human-readable description of an entity.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "has_numeric_value": {
+                    "description": "connects a quantity value to a number",
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
+                "has_unit": {
+                    "description": "connects a quantity value to a unit",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "iri": {
+                    "description": "An IRI for an entity. This is determined by the id using expansion rules.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "description": "A human-readable name for an attribute or entity.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "title": "Datapoint",
+            "type": "object"
+        },
+        "Indicator": {
+            "additionalProperties": false,
+            "description": "Food system indicator.",
+            "properties": {
+                "description": {
+                    "description": "concise text that provides the meaning of the identifier",
+                    "type": "string"
+                },
+                "id": {
+                    "description": "unique identifier of the indicator",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "iri": {
+                    "description": "An IRI for an entity. This is determined by the id using expansion rules.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "description": "denomination of the indicator",
+                    "type": "string"
+                },
+                "spatial_scope": {
+                    "$ref": "#/$defs/SpatialScopeTypes",
+                    "description": "reference to the spatial unit that the indicator describes"
+                }
+            },
+            "required": [
+                "id",
+                "name",
+                "description",
+                "spatial_scope"
+            ],
+            "title": "Indicator",
+            "type": "object"
+        },
+        "NamedThing": {
+            "additionalProperties": false,
+            "description": "A databased entity or concept/class.",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description of an entity.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "A unique identifier for an entity.",
+                    "type": "string"
+                },
+                "iri": {
+                    "description": "An IRI for an entity. This is determined by the id using expansion rules.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "description": "A human-readable name for an attribute or entity.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "NamedThing",
+            "type": "object"
+        },
+        "QuantityValue": {
+            "additionalProperties": false,
+            "description": "A value of an attribute that is quantitative and measurable, expressed as a combination of a unit and a numeric value",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description of an entity.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "has_numeric_value": {
+                    "description": "connects a quantity value to a number",
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
+                "has_unit": {
+                    "description": "connects a quantity value to a unit",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "A unique identifier for an entity.",
+                    "type": "string"
+                },
+                "iri": {
+                    "description": "An IRI for an entity. This is determined by the id using expansion rules.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "description": "A human-readable name for an attribute or entity.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "QuantityValue",
+            "type": "object"
+        },
+        "SpatialScopeTypes": {
+            "description": "",
+            "enum": [
+                "Eu",
+                "EuMemberStates",
+                "Regional",
+                "Local"
+            ],
+            "title": "SpatialScopeTypes",
+            "type": "string"
+        }
+    },
+    "$id": "https://w3id.org/linkml/examples/fsi",
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "additionalProperties": true,
+    "metamodel_version": "1.7.0",
+    "title": "food-system-indicators",
+    "type": "object",
+    "version": null
+}
