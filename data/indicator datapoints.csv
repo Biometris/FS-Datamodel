@@ -1,0 +1,4 @@
+measurement_of,has_unit,has_numeric_value,id,iri,name,description
+I1,m,37,IM1,,indicator 1 datapoint 1,
+I1,m,42,IM2,,indicator 1 datapoint 2,
+I2,kg,37.42,IM3,,indicator 2 datapoint 1,

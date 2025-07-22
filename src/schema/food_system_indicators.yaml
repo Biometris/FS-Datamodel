@@ -10,54 +10,13 @@ prefixes:
   rdfs: http://www.w3.org/2000/01/rdf-schema#
   schema: http://schema.org/
   skos: http://www.w3.org/2004/02/skos/core#
+  UO: http://purl.obolibrary.org/obo/UO_
 imports:
   - linkml:types
 default_range: string
 default_prefix: fsi
 
 classes:
-  indicator:
-    is_a: named thing
-    description: >-
-      Food system indicator.
-    attributes:
-      id:
-        identifier: true
-        slot_uri: schema:id
-        description:
-          unique identifier of the indicator
-      name:
-        slot_uri: schema:name
-        required: true
-        description:
-          denomination of the indicator
-      description:
-        slot_uri: schema:description
-        required: true
-        description:
-          concise text that provides the meaning of the identifier
-      spatial scope:
-        required: true
-        range: SpatialScopeTypes
-        description:
-          reference to the spatial unit that the indicator describes
-
-  datapoint:
-    is_a: quantity value
-    description: >-
-      Food system indicator datapoint.
-    attributes:
-      - id
-      - datapoint of
-
-  quantity value:
-    is_a: named thing
-    description: >-
-      A value of an attribute that is quantitative and measurable,
-      expressed as a combination of a unit and a numeric value
-    slots:
-      - has unit
-      - has numeric value
 
   ## ------
   ## THINGS
@@ -81,21 +40,54 @@ classes:
       category:
         required: true
 
-enums:
-  SpatialScopeTypes:
-    permissible_values:
-      Eu:
+  indicator:
+    is_a: named thing
+    description: >-
+      Food system indicator.
+    slots: 
+      - spatial scope
+    slot_usage:    
+      id:        
         description:
-          EU wide
-      EuMemberStates:
+          unique identifier of the indicator    
+      name:        
         description:
-          ...
-      Regional:
+          denomination of the indicator
+      description:        
         description:
-          ...
-      Local:
+          concise text that provides the meaning of the identifier 
+
+  indicator datapoint:
+    is_a: quantity value
+    description: >-
+      Food system indicator datapoint.
+    slots:
+      - measurement of
+    slot_usage:
+      id:        
         description:
-          ...
+          unique identifier of the datapoint
+
+  indicator datapoint collection:
+    tree_root: true
+    description: >-
+      Collection of food system indicator datapoints.
+    attributes:
+      indicator datapoints:
+        multivalued: true
+        inlined_as_list: true
+        range: indicator datapoint
+
+  quantity value:
+    is_a: named thing
+    description: >-
+      A value of an attribute that is quantitative and measurable,
+      expressed as a combination of a unit and a numeric value
+    slots:
+      - has unit
+      - has numeric value
+
+
 
 ## --------------------
 ## SLOTS
@@ -148,7 +140,7 @@ slots:
       An IRI for an entity. This is determined by the id using expansion rules.
     range: iri type
 
-  datapoint of:
+  measurement of:
     is_a: node property
     range: indicator
     required: true
@@ -173,6 +165,13 @@ slots:
     description: >-
       Alternate human-readable names for a thing
     multivalued: true
+
+  spatial scope:
+    required: true
+    range: SpatialScopeTypes
+    description:
+      Reference to the spatial unit that the indicator describes
+
 
 ## --------------------
 ## TYPES
@@ -204,3 +203,23 @@ types:
       - UO
     exact_mappings:
       - qudt:Unit
+
+## --------------------
+## ENUMS
+## --------------------
+
+enums:
+  SpatialScopeTypes:
+    permissible_values:
+      Eu:
+        description:
+          EU wide
+      EuMemberStates:
+        description:
+          EU member states
+      Regional:
+        description:
+          Regional
+      Local:
+        description:
+          Local

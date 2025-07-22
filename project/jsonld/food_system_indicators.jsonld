@@ -41,6 +41,10 @@
     {
       "prefix_prefix": "skos",
       "prefix_reference": "http://www.w3.org/2004/02/skos/core#"
+    },
+    {
+      "prefix_prefix": "UO",
+      "prefix_reference": "http://purl.obolibrary.org/obo/UO_"
     }
   ],
   "default_prefix": "fsi",
@@ -89,7 +93,7 @@
       ],
       "typeof": "string",
       "base": "str",
-      "uri": "http://example.org/UNKNOWN/UO/0000000",
+      "uri": "http://purl.obolibrary.org/obo/UO_0000000",
       "@type": "TypeDefinition"
     },
     {
@@ -413,15 +417,15 @@
         },
         {
           "text": "EuMemberStates",
-          "description": "..."
+          "description": "EU member states"
         },
         {
           "text": "Regional",
-          "description": "..."
+          "description": "Regional"
         },
         {
           "text": "Local",
-          "description": "..."
+          "description": "Local"
         }
       ]
     }
@@ -526,14 +530,17 @@
       "@type": "SlotDefinition"
     },
     {
-      "name": "datapoint_of",
-      "definition_uri": "https://w3id.org/linkml/examples/fsidatapoint_of",
+      "name": "measurement_of",
+      "definition_uri": "https://w3id.org/linkml/examples/fsimeasurement_of",
       "description": "Indicator",
       "from_schema": "https://w3id.org/linkml/examples/fsi",
       "is_a": "node_property",
       "domain": "NamedThing",
-      "slot_uri": "https://w3id.org/linkml/examples/fsidatapoint_of",
-      "owner": "datapoint_of",
+      "slot_uri": "https://w3id.org/linkml/examples/fsimeasurement_of",
+      "owner": "IndicatorDatapoint",
+      "domain_of": [
+        "IndicatorDatapoint"
+      ],
       "range": "Indicator",
       "required": true,
       "@type": "SlotDefinition"
@@ -580,63 +587,11 @@
       "@type": "SlotDefinition"
     },
     {
-      "name": "indicator__id",
-      "description": "unique identifier of the indicator",
-      "from_schema": "https://w3id.org/linkml/examples/fsi",
-      "mappings": [
-        "http://schema.org/id"
-      ],
-      "slot_uri": "http://schema.org/id",
-      "identifier": true,
-      "alias": "id",
-      "owner": "Indicator",
-      "domain_of": [
-        "Indicator"
-      ],
-      "range": "string",
-      "required": true,
-      "@type": "SlotDefinition"
-    },
-    {
-      "name": "indicator__name",
-      "description": "denomination of the indicator",
-      "from_schema": "https://w3id.org/linkml/examples/fsi",
-      "mappings": [
-        "http://schema.org/name"
-      ],
-      "slot_uri": "http://schema.org/name",
-      "alias": "name",
-      "owner": "Indicator",
-      "domain_of": [
-        "Indicator"
-      ],
-      "range": "string",
-      "required": true,
-      "@type": "SlotDefinition"
-    },
-    {
-      "name": "indicator__description",
-      "description": "concise text that provides the meaning of the identifier",
-      "from_schema": "https://w3id.org/linkml/examples/fsi",
-      "mappings": [
-        "http://schema.org/description"
-      ],
-      "slot_uri": "http://schema.org/description",
-      "alias": "description",
-      "owner": "Indicator",
-      "domain_of": [
-        "Indicator"
-      ],
-      "range": "string",
-      "required": true,
-      "@type": "SlotDefinition"
-    },
-    {
-      "name": "indicator__spatial_scope",
-      "description": "reference to the spatial unit that the indicator describes",
+      "name": "spatial_scope",
+      "definition_uri": "https://w3id.org/linkml/examples/fsispatial_scope",
+      "description": "Reference to the spatial unit that the indicator describes",
       "from_schema": "https://w3id.org/linkml/examples/fsi",
       "slot_uri": "https://w3id.org/linkml/examples/fsispatial_scope",
-      "alias": "spatial_scope",
       "owner": "Indicator",
       "domain_of": [
         "Indicator"
@@ -646,27 +601,18 @@
       "@type": "SlotDefinition"
     },
     {
-      "name": "datapoint__id",
+      "name": "indicatorDatapointCollection__indicator_datapoints",
       "from_schema": "https://w3id.org/linkml/examples/fsi",
-      "slot_uri": "https://w3id.org/linkml/examples/fsiid",
-      "alias": "id",
-      "owner": "Datapoint",
+      "slot_uri": "https://w3id.org/linkml/examples/fsiindicator_datapoints",
+      "alias": "indicator_datapoints",
+      "owner": "IndicatorDatapointCollection",
       "domain_of": [
-        "Datapoint"
+        "IndicatorDatapointCollection"
       ],
-      "range": "string",
-      "@type": "SlotDefinition"
-    },
-    {
-      "name": "datapoint__datapoint_of",
-      "from_schema": "https://w3id.org/linkml/examples/fsi",
-      "slot_uri": "https://w3id.org/linkml/examples/fsidatapoint_of",
-      "alias": "datapoint_of",
-      "owner": "Datapoint",
-      "domain_of": [
-        "Datapoint"
-      ],
-      "range": "string",
+      "range": "IndicatorDatapoint",
+      "multivalued": true,
+      "inlined": true,
+      "inlined_as_list": true,
       "@type": "SlotDefinition"
     },
     {
@@ -693,106 +639,106 @@
       "range": "string",
       "required": true,
       "@type": "SlotDefinition"
+    },
+    {
+      "name": "indicator_id",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiid",
+      "description": "unique identifier of the indicator",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "is_a": "id",
+      "domain": "Indicator",
+      "slot_uri": "https://w3id.org/linkml/examples/fsiid",
+      "identifier": true,
+      "alias": "id",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "id",
+      "range": "string",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "indicator_name",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiname",
+      "description": "denomination of the indicator",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "aliases": [
+        "label",
+        "display name",
+        "title"
+      ],
+      "mappings": [
+        "http://www.w3.org/2000/01/rdf-schema#label"
+      ],
+      "narrow_mappings": [
+        "http://purl.org/dc/terms/title"
+      ],
+      "is_a": "name",
+      "domain": "Indicator",
+      "slot_uri": "http://www.w3.org/2000/01/rdf-schema#label",
+      "alias": "name",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "name",
+      "range": "label_type",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "indicator_description",
+      "definition_uri": "https://w3id.org/linkml/examples/fsidescription",
+      "description": "concise text that provides the meaning of the identifier",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "aliases": [
+        "definition"
+      ],
+      "mappings": [
+        "http://purl.org/dc/terms/description"
+      ],
+      "exact_mappings": [
+        "http://purl.obolibrary.org/obo/IAO_0000115",
+        "http://www.w3.org/2004/02/skos/core#definitions"
+      ],
+      "is_a": "description",
+      "domain": "Indicator",
+      "slot_uri": "http://purl.org/dc/terms/description",
+      "alias": "description",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "description",
+      "range": "narrative_text",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "indicator_datapoint_id",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiid",
+      "description": "unique identifier of the datapoint",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "is_a": "id",
+      "domain": "IndicatorDatapoint",
+      "slot_uri": "https://w3id.org/linkml/examples/fsiid",
+      "identifier": true,
+      "alias": "id",
+      "owner": "IndicatorDatapoint",
+      "domain_of": [
+        "IndicatorDatapoint"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "id",
+      "range": "string",
+      "required": true,
+      "@type": "SlotDefinition"
     }
   ],
   "classes": [
-    {
-      "name": "Indicator",
-      "definition_uri": "https://w3id.org/linkml/examples/fsiIndicator",
-      "description": "Food system indicator.",
-      "from_schema": "https://w3id.org/linkml/examples/fsi",
-      "is_a": "NamedThing",
-      "slots": [
-        "iri",
-        "named_thing_category",
-        "indicator__id",
-        "indicator__name",
-        "indicator__description",
-        "indicator__spatial_scope"
-      ],
-      "slot_usage": {},
-      "attributes": [
-        {
-          "name": "id",
-          "description": "unique identifier of the indicator",
-          "slot_uri": "schema:id",
-          "identifier": true,
-          "@type": "SlotDefinition"
-        },
-        {
-          "name": "name",
-          "description": "denomination of the indicator",
-          "slot_uri": "schema:name",
-          "required": true,
-          "@type": "SlotDefinition"
-        },
-        {
-          "name": "description",
-          "description": "concise text that provides the meaning of the identifier",
-          "slot_uri": "schema:description",
-          "required": true,
-          "@type": "SlotDefinition"
-        },
-        {
-          "name": "spatial_scope",
-          "description": "reference to the spatial unit that the indicator describes",
-          "range": "SpatialScopeTypes",
-          "required": true,
-          "@type": "SlotDefinition"
-        }
-      ],
-      "class_uri": "https://w3id.org/linkml/examples/fsiIndicator",
-      "@type": "ClassDefinition"
-    },
-    {
-      "name": "Datapoint",
-      "definition_uri": "https://w3id.org/linkml/examples/fsiDatapoint",
-      "description": "Food system indicator datapoint.",
-      "from_schema": "https://w3id.org/linkml/examples/fsi",
-      "is_a": "QuantityValue",
-      "slots": [
-        "iri",
-        "name",
-        "description",
-        "named_thing_category",
-        "has_unit",
-        "has_numeric_value",
-        "datapoint__id",
-        "datapoint__datapoint_of"
-      ],
-      "slot_usage": {},
-      "attributes": [
-        {
-          "name": "id",
-          "@type": "SlotDefinition"
-        },
-        {
-          "name": "datapoint_of",
-          "@type": "SlotDefinition"
-        }
-      ],
-      "class_uri": "https://w3id.org/linkml/examples/fsiDatapoint",
-      "@type": "ClassDefinition"
-    },
-    {
-      "name": "QuantityValue",
-      "definition_uri": "https://w3id.org/linkml/examples/fsiQuantityValue",
-      "description": "A value of an attribute that is quantitative and measurable, expressed as a combination of a unit and a numeric value",
-      "from_schema": "https://w3id.org/linkml/examples/fsi",
-      "is_a": "NamedThing",
-      "slots": [
-        "id",
-        "iri",
-        "name",
-        "description",
-        "named_thing_category",
-        "has_unit",
-        "has_numeric_value"
-      ],
-      "slot_usage": {},
-      "class_uri": "https://w3id.org/linkml/examples/fsiQuantityValue",
-      "@type": "ClassDefinition"
-    },
     {
       "name": "Entity",
       "definition_uri": "https://w3id.org/linkml/examples/fsiEntity",
@@ -825,13 +771,92 @@
       "slot_usage": {},
       "class_uri": "https://w3id.org/linkml/examples/fsiNamedThing",
       "@type": "ClassDefinition"
+    },
+    {
+      "name": "Indicator",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiIndicator",
+      "description": "Food system indicator.",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "is_a": "NamedThing",
+      "slots": [
+        "iri",
+        "named_thing_category",
+        "spatial_scope",
+        "indicator_id",
+        "indicator_name",
+        "indicator_description"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/linkml/examples/fsiIndicator",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "IndicatorDatapoint",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiIndicatorDatapoint",
+      "description": "Food system indicator datapoint.",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "is_a": "QuantityValue",
+      "slots": [
+        "iri",
+        "name",
+        "description",
+        "named_thing_category",
+        "has_unit",
+        "has_numeric_value",
+        "measurement_of",
+        "indicator_datapoint_id"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/linkml/examples/fsiIndicatorDatapoint",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "IndicatorDatapointCollection",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiIndicatorDatapointCollection",
+      "description": "Collection of food system indicator datapoints.",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "slots": [
+        "indicatorDatapointCollection__indicator_datapoints"
+      ],
+      "slot_usage": {},
+      "attributes": [
+        {
+          "name": "indicator_datapoints",
+          "range": "IndicatorDatapoint",
+          "multivalued": true,
+          "inlined_as_list": true,
+          "@type": "SlotDefinition"
+        }
+      ],
+      "class_uri": "https://w3id.org/linkml/examples/fsiIndicatorDatapointCollection",
+      "tree_root": true,
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "QuantityValue",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiQuantityValue",
+      "description": "A value of an attribute that is quantitative and measurable, expressed as a combination of a unit and a numeric value",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "is_a": "NamedThing",
+      "slots": [
+        "id",
+        "iri",
+        "name",
+        "description",
+        "named_thing_category",
+        "has_unit",
+        "has_numeric_value"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/linkml/examples/fsiQuantityValue",
+      "@type": "ClassDefinition"
     }
   ],
   "metamodel_version": "1.7.0",
   "source_file": "food_system_indicators.yaml",
-  "source_file_date": "2025-04-21T17:02:57",
-  "source_file_size": 4635,
-  "generation_date": "2025-04-21T17:03:00",
+  "source_file_date": "2025-07-21T14:14:51",
+  "source_file_size": 5019,
+  "generation_date": "2025-07-21T14:17:16",
   "@type": "SchemaDefinition",
   "@context": [
     "project/jsonld/food_system_indicators.context.jsonld",

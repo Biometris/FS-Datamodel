@@ -1,4 +1,5 @@
 @prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix UO: <http://purl.obolibrary.org/obo/UO_> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix fsi: <https://w3id.org/linkml/examples/fsi> .
 @prefix linkml: <https://w3id.org/linkml/> .
@@ -12,28 +13,15 @@
 fsi:.owl.ttl a owl:Ontology ;
     rdfs:label "food-system-indicators" .
 
-fsi:Datapoint a owl:Class ;
-    rdfs:label "datapoint" ;
+fsi:IndicatorDatapointCollection a owl:Class ;
+    rdfs:label "indicator datapoint collection" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:allValuesFrom xsd:string ;
-            owl:onProperty fsi:datapoint_of ],
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:indicator_datapoints ],
         [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:datapoint_of ],
-        [ a owl:Restriction ;
-            owl:minCardinality 1 ;
-            owl:onProperty fsi:datapoint_of ],
-        [ a owl:Restriction ;
-            owl:minCardinality 1 ;
-            owl:onProperty fsi:id ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom xsd:string ;
-            owl:onProperty fsi:id ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:id ],
-        fsi:QuantityValue ;
-    skos:definition "Food system indicator datapoint." ;
+            owl:allValuesFrom fsi:IndicatorDatapoint ;
+            owl:onProperty fsi:indicator_datapoints ] ;
+    skos:definition "Collection of food system indicator datapoints." ;
     skos:inScheme fsi: .
 
 fsi:synonym a owl:DatatypeProperty ;
@@ -45,50 +33,74 @@ fsi:synonym a owl:DatatypeProperty ;
     skos:definition "Alternate human-readable names for a thing" ;
     skos:inScheme fsi: .
 
+fsi:IndicatorDatapoint a owl:Class ;
+    rdfs:label "indicator datapoint" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:id ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty fsi:measurement_of ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty fsi:id ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom fsi:Indicator ;
+            owl:onProperty fsi:measurement_of ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty fsi:id ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:measurement_of ],
+        fsi:QuantityValue ;
+    skos:definition "Food system indicator datapoint." ;
+    skos:inScheme fsi: .
+
+UO:0000000 a rdfs:Datatype ;
+    owl:equivalentClass xsd:string .
+
 fsi:Indicator a owl:Class ;
     rdfs:label "indicator" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:minCardinality 1 ;
-            owl:onProperty fsi:description ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom xsd:string ;
-            owl:onProperty fsi:description ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom xsd:string ;
-            owl:onProperty fsi:name ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom xsd:string ;
-            owl:onProperty fsi:id ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:name ],
-        [ a owl:Restriction ;
-            owl:minCardinality 1 ;
-            owl:onProperty fsi:name ],
-        [ a owl:Restriction ;
-            owl:minCardinality 1 ;
-            owl:onProperty fsi:id ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:spatial_scope ],
-        [ a owl:Restriction ;
             owl:allValuesFrom fsi:SpatialScopeTypes ;
             owl:onProperty fsi:spatial_scope ],
         [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty fsi:name ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:spatial_scope ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty fsi:id ],
+        [ a owl:Restriction ;
             owl:minCardinality 1 ;
             owl:onProperty fsi:spatial_scope ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:description ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty fsi:description ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:name ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:name ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:id ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
             owl:onProperty fsi:description ],
         [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
+            owl:minCardinality 1 ;
             owl:onProperty fsi:id ],
         fsi:NamedThing ;
     skos:definition "Food system indicator." ;
     skos:inScheme fsi: .
-
-<UO:0000000> a rdfs:Datatype ;
-    owl:equivalentClass xsd:string .
 
 <https://w3id.org/linkml/examples/fsiSpatialScopeTypes#Eu> a owl:Class ;
     rdfs:label "Eu" ;
@@ -106,6 +118,10 @@ fsi:Indicator a owl:Class ;
     rdfs:label "Regional" ;
     rdfs:subClassOf fsi:SpatialScopeTypes .
 
+fsi:indicator_datapoints a owl:ObjectProperty ;
+    rdfs:label "indicator datapoints" ;
+    skos:inScheme fsi: .
+
 fsi:node_property a owl:DatatypeProperty ;
     rdfs:label "node property" ;
     rdfs:domain fsi:NamedThing ;
@@ -118,37 +134,37 @@ fsi:Entity a owl:Class ;
             owl:maxCardinality 1 ;
             owl:onProperty fsi:name ],
         [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty fsi:id ],
+        [ a owl:Restriction ;
             owl:minCardinality 0 ;
             owl:onProperty fsi:description ],
         [ a owl:Restriction ;
-            owl:allValuesFrom xsd:string ;
-            owl:onProperty fsi:id ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:id ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom xsd:string ;
+            owl:minCardinality 0 ;
             owl:onProperty fsi:iri ],
         [ a owl:Restriction ;
-            owl:minCardinality 0 ;
+            owl:allValuesFrom xsd:string ;
             owl:onProperty fsi:name ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
-            owl:onProperty fsi:iri ],
+            owl:onProperty fsi:id ],
         [ a owl:Restriction ;
             owl:allValuesFrom xsd:string ;
             owl:onProperty fsi:description ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:iri ],
         [ a owl:Restriction ;
             owl:minCardinality 1 ;
             owl:onProperty fsi:id ],
         [ a owl:Restriction ;
-            owl:allValuesFrom xsd:string ;
+            owl:minCardinality 0 ;
             owl:onProperty fsi:name ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
             owl:onProperty fsi:description ],
         [ a owl:Restriction ;
-            owl:minCardinality 0 ;
+            owl:allValuesFrom xsd:string ;
             owl:onProperty fsi:iri ] ;
     skos:definition "Root class for all things and informational relationships, real or imagined." ;
     skos:inScheme fsi: .
@@ -157,32 +173,24 @@ fsi:QuantityValue a owl:Class ;
     rdfs:label "quantity value" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:minCardinality 0 ;
+            owl:onProperty fsi:has_unit ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
             owl:onProperty fsi:has_numeric_value ],
         [ a owl:Restriction ;
-            owl:allValuesFrom <UO:0000000> ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:has_numeric_value ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
             owl:onProperty fsi:has_unit ],
         [ a owl:Restriction ;
             owl:allValuesFrom xsd:double ;
             owl:onProperty fsi:has_numeric_value ],
         [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty fsi:has_unit ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:has_numeric_value ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
+            owl:allValuesFrom UO:0000000 ;
             owl:onProperty fsi:has_unit ],
         fsi:NamedThing ;
     skos:definition "A value of an attribute that is quantitative and measurable, expressed as a combination of a unit and a numeric value" ;
-    skos:inScheme fsi: .
-
-fsi:datapoint_of a owl:DatatypeProperty,
-        owl:ObjectProperty ;
-    rdfs:label "datapoint of" ;
-    rdfs:range fsi:Indicator ;
-    rdfs:subPropertyOf fsi:node_property ;
-    skos:definition "Indicator" ;
     skos:inScheme fsi: .
 
 fsi:has_numeric_value a owl:DatatypeProperty ;
@@ -196,7 +204,7 @@ fsi:has_numeric_value a owl:DatatypeProperty ;
 fsi:has_unit a owl:DatatypeProperty ;
     rdfs:label "has unit" ;
     rdfs:domain fsi:QuantityValue ;
-    rdfs:range <UO:0000000> ;
+    rdfs:range UO:0000000 ;
     skos:definition "connects a quantity value to a unit" ;
     skos:exactMatch IAO:0000039,
         qudt:unit ;
@@ -208,21 +216,29 @@ fsi:iri a owl:DatatypeProperty ;
     skos:definition "An IRI for an entity. This is determined by the id using expansion rules." ;
     skos:inScheme fsi: .
 
+fsi:measurement_of a owl:ObjectProperty ;
+    rdfs:label "measurement of" ;
+    rdfs:range fsi:Indicator ;
+    rdfs:subPropertyOf fsi:node_property ;
+    skos:definition "Indicator" ;
+    skos:inScheme fsi: .
+
 fsi:spatial_scope a owl:ObjectProperty ;
     rdfs:label "spatial scope" ;
-    skos:definition "reference to the spatial unit that the indicator describes" ;
+    rdfs:range fsi:SpatialScopeTypes ;
+    skos:definition "Reference to the spatial unit that the indicator describes" ;
     skos:inScheme fsi: .
 
 fsi:NamedThing a owl:Class ;
     rdfs:label "named thing" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:minCardinality 1 ;
-            owl:onProperty fsi:category ],
-        [ a owl:Restriction ;
             owl:maxCardinality 1 ;
             owl:onProperty fsi:category ],
         [ a owl:Restriction ;
             owl:allValuesFrom xsd:string ;
+            owl:onProperty fsi:category ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
             owl:onProperty fsi:category ],
         fsi:Entity ;
     skos:definition "A databased entity or concept/class." ;
@@ -239,8 +255,7 @@ fsi:description a owl:DatatypeProperty ;
     rdfs:label "description" ;
     rdfs:range xsd:string ;
     skos:altLabel "definition" ;
-    skos:definition "A human-readable description of an entity.",
-        "concise text that provides the meaning of the identifier" ;
+    skos:definition "A human-readable description of an entity." ;
     skos:exactMatch IAO:0000115,
         skos:definitions ;
     skos:inScheme fsi: .
@@ -252,20 +267,17 @@ fsi:name a owl:DatatypeProperty ;
     skos:altLabel "display name",
         "label",
         "title" ;
-    skos:definition "A human-readable name for an attribute or entity.",
-        "denomination of the indicator" ;
+    skos:definition "A human-readable name for an attribute or entity." ;
     skos:inScheme fsi: ;
     skos:narrowMatch dct:title .
 
 fsi:id a owl:DatatypeProperty ;
     rdfs:label "id" ;
     rdfs:domain fsi:Entity ;
-    skos:definition "A unique identifier for an entity.",
-        "unique identifier of the indicator" ;
+    skos:definition "A unique identifier for an entity." ;
     skos:inScheme fsi: .
 
 xsd:string a rdfs:Datatype ;
-    owl:equivalentClass [ owl:intersectionOf ( xsd:anyURI <xsd:string> ) ],
-        <xsd:string> .
+    owl:equivalentClass xsd:anyURI .
 
 

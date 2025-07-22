@@ -5,8 +5,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX linkml: <https://w3id.org/linkml/>
 PREFIX dct: <http://purl.org/dc/terms/>
-PREFIX schema1: <http://schema.org/>
-PREFIX UO: <http://example.org/UNKNOWN/UO/>
+PREFIX UO: <http://purl.obolibrary.org/obo/UO_>
 
 
 <https://w3id.org/linkml/examples/fsiIriType> xsd:string
@@ -55,16 +54,6 @@ linkml:Jsonpath xsd:string
 
 linkml:Sparqlpath xsd:string
 
-<https://w3id.org/linkml/examples/fsiDatapoint> CLOSED {
-    (  $<https://w3id.org/linkml/examples/fsiDatapoint_tes> (  &<https://w3id.org/linkml/examples/fsiQuantityValue_tes> ;
-          rdf:type [ <https://w3id.org/linkml/examples/fsiQuantityValue> ] ? ;
-          <https://w3id.org/linkml/examples/fsiid> @linkml:String ? ;
-          <https://w3id.org/linkml/examples/fsidatapoint_of> @linkml:String ?
-       ) ;
-       rdf:type [ <https://w3id.org/linkml/examples/fsiDatapoint> ] ?
-    )
-}
-
 <https://w3id.org/linkml/examples/fsiEntity>  (
     {
        (  $<https://w3id.org/linkml/examples/fsiEntity_tes> (  <https://w3id.org/linkml/examples/fsiiri>
@@ -80,14 +69,30 @@ linkml:Sparqlpath xsd:string
 <https://w3id.org/linkml/examples/fsiIndicator> CLOSED {
     (  $<https://w3id.org/linkml/examples/fsiIndicator_tes> (  &<https://w3id.org/linkml/examples/fsiNamedThing_tes> ;
           rdf:type [ <https://w3id.org/linkml/examples/fsiNamedThing> ] ? ;
-          schema1:name @linkml:String ;
-          schema1:description @linkml:String ;
           <https://w3id.org/linkml/examples/fsispatial_scope> [ <https://w3id.org/linkml/examples/fsiSpatialScopeTypes#Eu>
              <https://w3id.org/linkml/examples/fsiSpatialScopeTypes#EuMemberStates>
              <https://w3id.org/linkml/examples/fsiSpatialScopeTypes#Regional>
-             <https://w3id.org/linkml/examples/fsiSpatialScopeTypes#Local> ]
+             <https://w3id.org/linkml/examples/fsiSpatialScopeTypes#Local> ] ;
+          rdfs:label @<https://w3id.org/linkml/examples/fsiLabelType> ? ;
+          dct:description @<https://w3id.org/linkml/examples/fsiNarrativeText> ?
        ) ;
        rdf:type [ <https://w3id.org/linkml/examples/fsiIndicator> ]
+    )
+}
+
+<https://w3id.org/linkml/examples/fsiIndicatorDatapoint> CLOSED {
+    (  $<https://w3id.org/linkml/examples/fsiIndicatorDatapoint_tes> (  &<https://w3id.org/linkml/examples/fsiQuantityValue_tes> ;
+          rdf:type [ <https://w3id.org/linkml/examples/fsiQuantityValue> ] ? ;
+          <https://w3id.org/linkml/examples/fsimeasurement_of> @<https://w3id.org/linkml/examples/fsiIndicator>
+       ) ;
+       rdf:type [ <https://w3id.org/linkml/examples/fsiIndicatorDatapoint> ]
+    )
+}
+
+<https://w3id.org/linkml/examples/fsiIndicatorDatapointCollection> CLOSED {
+    (  $<https://w3id.org/linkml/examples/fsiIndicatorDatapointCollection_tes>
+       <https://w3id.org/linkml/examples/fsiindicator_datapoints> @<https://w3id.org/linkml/examples/fsiIndicatorDatapoint> * ;
+       rdf:type [ <https://w3id.org/linkml/examples/fsiIndicatorDatapointCollection> ] ?
     )
 }
 
@@ -111,6 +116,6 @@ linkml:Sparqlpath xsd:string
           ) ;
           rdf:type [ <https://w3id.org/linkml/examples/fsiQuantityValue> ]
        )
-    } OR @<https://w3id.org/linkml/examples/fsiDatapoint>
+    } OR @<https://w3id.org/linkml/examples/fsiIndicatorDatapoint>
 )
 

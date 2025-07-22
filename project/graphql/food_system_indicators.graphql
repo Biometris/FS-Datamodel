@@ -7,18 +7,6 @@ enum SpatialScopeTypes
     Local
   }
 
-type Datapoint
-  {
-    iri: IriType
-    name: LabelType
-    description: NarrativeText
-    category: String!
-    hasUnit: Unit
-    hasNumericValue: Double
-    id: String
-    datapointOf: String
-  }
-
 interface Entity
   {
     id: String!
@@ -31,10 +19,27 @@ type Indicator
   {
     iri: IriType
     category: String!
-    id: String!
-    name: String!
-    description: String!
     spatialScope: SpatialScopeTypes!
+    id: String!
+    name: LabelType
+    description: NarrativeText
+  }
+
+type IndicatorDatapoint
+  {
+    iri: IriType
+    name: LabelType
+    description: NarrativeText
+    category: String!
+    hasUnit: Unit
+    hasNumericValue: Double
+    measurementOf: Indicator!
+    id: String!
+  }
+
+type IndicatorDatapointCollection
+  {
+    indicatorDatapoints: [IndicatorDatapoint]
   }
 
 type NamedThing

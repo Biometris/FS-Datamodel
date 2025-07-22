@@ -1,8 +1,18 @@
  syntax="proto3";
  package
 // metamodel_version: 1.7.0
+// Food system indicator.
+message Indicator
+ {
+  iriType iri = 0
+  string category = 0
+  spatialScopeTypes spatialScope = 0
+  string id = 0
+  labelType name = 0
+  narrativeText description = 0
+ }
 // Food system indicator datapoint.
-message Datapoint
+message IndicatorDatapoint
  {
   iriType iri = 0
   labelType name = 0
@@ -10,18 +20,13 @@ message Datapoint
   string category = 0
   unit hasUnit = 0
   double hasNumericValue = 0
+  indicator measurementOf = 0
   string id = 0
-  string datapointOf = 0
  }
-// Food system indicator.
-message Indicator
+// Collection of food system indicator datapoints.
+message IndicatorDatapointCollection
  {
-  iriType iri = 0
-  string category = 0
-  string id = 0
-  string name = 0
-  string description = 0
-  spatialScopeTypes spatialScope = 0
+ repeated  indicatorDatapoint indicatorDatapoints = 0
  }
 // A databased entity or concept/class.
 message NamedThing

@@ -1,15 +1,50 @@
 {
     "$defs": {
-        "Datapoint": {
+        "Indicator": {
             "additionalProperties": false,
-            "description": "Food system indicator datapoint.",
+            "description": "Food system indicator.",
             "properties": {
-                "datapoint_of": {
+                "description": {
+                    "description": "concise text that provides the meaning of the identifier",
                     "type": [
                         "string",
                         "null"
                     ]
                 },
+                "id": {
+                    "description": "unique identifier of the indicator",
+                    "type": "string"
+                },
+                "iri": {
+                    "description": "An IRI for an entity. This is determined by the id using expansion rules.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "description": "denomination of the indicator",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "spatial_scope": {
+                    "$ref": "#/$defs/SpatialScopeTypes",
+                    "description": "Reference to the spatial unit that the indicator describes"
+                }
+            },
+            "required": [
+                "spatial_scope",
+                "id"
+            ],
+            "title": "Indicator",
+            "type": "object"
+        },
+        "IndicatorDatapoint": {
+            "additionalProperties": false,
+            "description": "Food system indicator datapoint.",
+            "properties": {
                 "description": {
                     "description": "A human-readable description of an entity.",
                     "type": [
@@ -32,10 +67,8 @@
                     ]
                 },
                 "id": {
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "description": "unique identifier of the datapoint",
+                    "type": "string"
                 },
                 "iri": {
                     "description": "An IRI for an entity. This is determined by the id using expansion rules.",
@@ -43,6 +76,10 @@
                         "string",
                         "null"
                     ]
+                },
+                "measurement_of": {
+                    "description": "Indicator",
+                    "type": "string"
                 },
                 "name": {
                     "description": "A human-readable name for an attribute or entity.",
@@ -52,47 +89,28 @@
                     ]
                 }
             },
-            "title": "Datapoint",
+            "required": [
+                "measurement_of",
+                "id"
+            ],
+            "title": "IndicatorDatapoint",
             "type": "object"
         },
-        "Indicator": {
+        "IndicatorDatapointCollection": {
             "additionalProperties": false,
-            "description": "Food system indicator.",
+            "description": "Collection of food system indicator datapoints.",
             "properties": {
-                "description": {
-                    "description": "concise text that provides the meaning of the identifier",
-                    "type": "string"
-                },
-                "id": {
-                    "description": "unique identifier of the indicator",
+                "indicator_datapoints": {
+                    "items": {
+                        "$ref": "#/$defs/IndicatorDatapoint"
+                    },
                     "type": [
-                        "string",
+                        "array",
                         "null"
                     ]
-                },
-                "iri": {
-                    "description": "An IRI for an entity. This is determined by the id using expansion rules.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "name": {
-                    "description": "denomination of the indicator",
-                    "type": "string"
-                },
-                "spatial_scope": {
-                    "$ref": "#/$defs/SpatialScopeTypes",
-                    "description": "reference to the spatial unit that the indicator describes"
                 }
             },
-            "required": [
-                "id",
-                "name",
-                "description",
-                "spatial_scope"
-            ],
-            "title": "Indicator",
+            "title": "IndicatorDatapointCollection",
             "type": "object"
         },
         "NamedThing": {
@@ -196,7 +214,19 @@
     "$id": "https://w3id.org/linkml/examples/fsi",
     "$schema": "https://json-schema.org/draft/2019-09/schema",
     "additionalProperties": true,
+    "description": "Collection of food system indicator datapoints.",
     "metamodel_version": "1.7.0",
+    "properties": {
+        "indicator_datapoints": {
+            "items": {
+                "$ref": "#/$defs/IndicatorDatapoint"
+            },
+            "type": [
+                "array",
+                "null"
+            ]
+        }
+    },
     "title": "food-system-indicators",
     "type": "object",
     "version": null
