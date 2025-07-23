@@ -1,5 +1,5 @@
 # Auto generated from food_system_indicators.yaml by pythongen.py version: 0.0.1
-# Generation date: 2025-07-21T14:17:17
+# Generation date: 2025-07-23T14:31:14
 # Schema: food-system-indicators
 #
 # id: https://w3id.org/linkml/examples/fsi
@@ -194,6 +194,8 @@ class NamedThing(Entity):
         super().__post_init__(**kwargs)
 
 
+Any = Any
+
 @dataclass(repr=False)
 class Indicator(NamedThing):
     """
@@ -208,7 +210,9 @@ class Indicator(NamedThing):
 
     id: Union[str, IndicatorId] = None
     category: str = None
-    spatial_scope: Union[str, "SpatialScopeTypes"] = None
+    spatial_scope: Union[str, "SpatialScopeType"] = None
+    key_area: Union[str, "KeyArea"] = None
+    thematic_area: Union[dict, Any] = None
     name: Optional[Union[str, LabelType]] = None
     description: Optional[Union[str, NarrativeText]] = None
 
@@ -220,8 +224,13 @@ class Indicator(NamedThing):
 
         if self._is_empty(self.spatial_scope):
             self.MissingRequiredField("spatial_scope")
-        if not isinstance(self.spatial_scope, SpatialScopeTypes):
-            self.spatial_scope = SpatialScopeTypes(self.spatial_scope)
+        if not isinstance(self.spatial_scope, SpatialScopeType):
+            self.spatial_scope = SpatialScopeType(self.spatial_scope)
+
+        if self._is_empty(self.key_area):
+            self.MissingRequiredField("key_area")
+        if not isinstance(self.key_area, KeyArea):
+            self.key_area = KeyArea(self.key_area)
 
         if self.name is not None and not isinstance(self.name, LabelType):
             self.name = LabelType(self.name)
@@ -316,7 +325,90 @@ class IndicatorDatapoint(QuantityValue):
 
 
 # Enumerations
-class SpatialScopeTypes(EnumDefinitionImpl):
+class KeyArea(EnumDefinitionImpl):
+
+    Environmental = PermissibleValue(
+        text="Environmental",
+        description="environmental")
+    Economic = PermissibleValue(
+        text="Economic",
+        description="economic")
+    Social = PermissibleValue(
+        text="Social",
+        description="social")
+    Horizontal = PermissibleValue(
+        text="Horizontal",
+        description="horizontal thematic areas")
+
+    _defn = EnumDefinition(
+        name="KeyArea",
+    )
+
+class EnvironmentalThematicArea(EnumDefinitionImpl):
+
+    ClimateChange = PermissibleValue(
+        text="ClimateChange",
+        description="climate change")
+    PollutionAntimicrobials = PermissibleValue(
+        text="PollutionAntimicrobials",
+        description="pollution and antimicrobials")
+    SustainableUseOfResources = PermissibleValue(
+        text="SustainableUseOfResources",
+        description="sustainable use of resources")
+    Biodiversity = PermissibleValue(
+        text="Biodiversity",
+        description="biodiversity")
+    CrossCuttingAreas = PermissibleValue(
+        text="CrossCuttingAreas",
+        description="cross-cutting areas")
+
+    _defn = EnumDefinition(
+        name="EnvironmentalThematicArea",
+    )
+
+class EconomicThematicArea(EnumDefinitionImpl):
+
+    FairEconomicViabilityInFoodValueChain = PermissibleValue(
+        text="FairEconomicViabilityInFoodValueChain",
+        description="fair economic viability in the food value chain")
+    DevelopmentAndLogistics = PermissibleValue(
+        text="DevelopmentAndLogistics",
+        description="development and logistics")
+
+    _defn = EnumDefinition(
+        name="EconomicThematicArea",
+    )
+
+class SocialThematicArea(EnumDefinitionImpl):
+
+    FairInclusiveAndEthicalFoodSystem = PermissibleValue(
+        text="FairInclusiveAndEthicalFoodSystem",
+        description="fair, inclusive and ethical food system")
+    FoodEnvironment = PermissibleValue(
+        text="FoodEnvironment",
+        description="food environment")
+    NutritionAndHealth = PermissibleValue(
+        text="NutritionAndHealth",
+        description="nutrition and health")
+
+    _defn = EnumDefinition(
+        name="SocialThematicArea",
+    )
+
+class HorizontalThematicArea(EnumDefinitionImpl):
+
+    Governance = PermissibleValue(
+        text="Governance",
+        description="governance")
+    Resilience = PermissibleValue(
+        text="Resilience",
+        description="resilience")
+
+    _defn = EnumDefinition(
+        name="HorizontalThematicArea",
+    )
+
+class SpatialScopeType(EnumDefinitionImpl):
 
     Eu = PermissibleValue(
         text="Eu",
@@ -332,7 +424,7 @@ class SpatialScopeTypes(EnumDefinitionImpl):
         description="Local")
 
     _defn = EnumDefinition(
-        name="SpatialScopeTypes",
+        name="SpatialScopeType",
     )
 
 # Slots
@@ -367,7 +459,13 @@ slots.synonym = Slot(uri=FSI.synonym, name="synonym", curie=FSI.curie('synonym')
                    model_uri=FSI.synonym, domain=NamedThing, range=Optional[Union[Union[str, LabelType], list[Union[str, LabelType]]]])
 
 slots.spatial_scope = Slot(uri=FSI.spatial_scope, name="spatial scope", curie=FSI.curie('spatial_scope'),
-                   model_uri=FSI.spatial_scope, domain=None, range=Union[str, "SpatialScopeTypes"])
+                   model_uri=FSI.spatial_scope, domain=None, range=Union[str, "SpatialScopeType"])
+
+slots.key_area = Slot(uri=FSI.key_area, name="key area", curie=FSI.curie('key_area'),
+                   model_uri=FSI.key_area, domain=None, range=Union[str, "KeyArea"])
+
+slots.indicator__thematic_area = Slot(uri=FSI.thematic_area, name="indicator__thematic_area", curie=FSI.curie('thematic_area'),
+                   model_uri=FSI.indicator__thematic_area, domain=None, range=Union[dict, Any])
 
 slots.indicatorDatapointCollection__indicator_datapoints = Slot(uri=FSI.indicator_datapoints, name="indicatorDatapointCollection__indicator_datapoints", curie=FSI.curie('indicator_datapoints'),
                    model_uri=FSI.indicatorDatapointCollection__indicator_datapoints, domain=None, range=Optional[Union[dict[Union[str, IndicatorDatapointId], Union[dict, IndicatorDatapoint]], list[Union[dict, IndicatorDatapoint]]]])

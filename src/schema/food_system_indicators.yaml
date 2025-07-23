@@ -18,10 +18,6 @@ default_prefix: fsi
 
 classes:
 
-  ## ------
-  ## THINGS
-  ## ------
-
   entity:
     description: >-
       Root class for all things and informational relationships, real or imagined.
@@ -40,12 +36,27 @@ classes:
       category:
         required: true
 
+  Any:
+    class_uri: linkml:Any
+
   indicator:
     is_a: named thing
     description: >-
       Food system indicator.
     slots: 
       - spatial scope
+      - key area
+    attributes:
+      thematic area:
+        description:
+          the thematic area the indicator belongs to
+        required: true
+        range: Any
+        any_of:
+          - range: EnvironmentalThematicArea
+          - range: EconomicThematicArea
+          - range: SocialThematicArea
+          - range: HorizontalThematicArea
     slot_usage:    
       id:        
         description:
@@ -56,6 +67,43 @@ classes:
       description:        
         description:
           concise text that provides the meaning of the identifier 
+    rules:
+      - preconditions:
+          slot_conditions:
+            key area:
+              equals_string: Environmental
+        postconditions:
+          slot_conditions:
+            thematic area: 
+              any_of:
+                - range: EnvironmentalThematicArea
+      - preconditions:
+          slot_conditions:
+            key area:
+              equals_string: Economic
+        postconditions:
+          slot_conditions:        
+            thematic area: 
+              any_of:
+                - range: EconomicThematicArea
+      - preconditions:
+          slot_conditions:
+            key area:
+              equals_string: Social
+        postconditions:
+          slot_conditions:
+            thematic area: 
+              any_of:
+                - range: SocialThematicArea
+      - preconditions:
+          slot_conditions:
+            key area:
+              equals_string: Horizontal
+        postconditions:
+          slot_conditions:
+            thematic area: 
+              any_of:
+                - range: HorizontalThematicArea     
 
   indicator datapoint:
     is_a: quantity value
@@ -86,8 +134,6 @@ classes:
     slots:
       - has unit
       - has numeric value
-
-
 
 ## --------------------
 ## SLOTS
@@ -168,10 +214,17 @@ slots:
 
   spatial scope:
     required: true
-    range: SpatialScopeTypes
+    range: SpatialScopeType
     description:
       Reference to the spatial unit that the indicator describes
 
+  key area:
+    required: true
+    range: KeyArea    
+    description:
+      Reference to the thematic area that the indicator belongs to
+   
+   
 
 ## --------------------
 ## TYPES
@@ -209,7 +262,70 @@ types:
 ## --------------------
 
 enums:
-  SpatialScopeTypes:
+  KeyArea:
+    permissible_values:
+      Environmental:
+        description:
+          environmental
+      Economic:
+        description:
+          economic
+      Social:
+        description:
+          social
+      Horizontal:
+        description:
+          horizontal thematic areas              
+
+  EnvironmentalThematicArea:
+    permissible_values:
+      ClimateChange:
+        description:
+          climate change
+      PollutionAntimicrobials:
+        description:
+          pollution and antimicrobials
+      SustainableUseOfResources:
+        description:
+          sustainable use of resources
+      Biodiversity:
+        description:
+          biodiversity
+      CrossCuttingAreas:
+        description:
+          cross-cutting areas
+
+  EconomicThematicArea:  
+    permissible_values:
+      FairEconomicViabilityInFoodValueChain:
+        description:
+          fair economic viability in the food value chain
+      DevelopmentAndLogistics:
+        description:
+          development and logistics
+
+  SocialThematicArea:
+    permissible_values:
+      FairInclusiveAndEthicalFoodSystem:
+        description:
+          fair, inclusive and ethical food system
+      FoodEnvironment:
+        description:
+          food environment
+      NutritionAndHealth:
+        description:
+          nutrition and health
+
+  HorizontalThematicArea:
+    permissible_values:
+      Governance:
+        description:
+          governance
+      Resilience:
+        description:
+          resilience      
+
+  SpatialScopeType:
     permissible_values:
       Eu:
         description:

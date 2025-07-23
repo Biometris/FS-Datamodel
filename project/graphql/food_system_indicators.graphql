@@ -1,10 +1,50 @@
 # metamodel_version: 1.7.0
-enum SpatialScopeTypes
+enum EconomicThematicArea
+  {
+    FairEconomicViabilityInFoodValueChain
+    DevelopmentAndLogistics
+  }
+
+enum EnvironmentalThematicArea
+  {
+    ClimateChange
+    PollutionAntimicrobials
+    SustainableUseOfResources
+    Biodiversity
+    CrossCuttingAreas
+  }
+
+enum HorizontalThematicArea
+  {
+    Governance
+    Resilience
+  }
+
+enum KeyArea
+  {
+    Environmental
+    Economic
+    Social
+    Horizontal
+  }
+
+enum SocialThematicArea
+  {
+    FairInclusiveAndEthicalFoodSystem
+    FoodEnvironment
+    NutritionAndHealth
+  }
+
+enum SpatialScopeType
   {
     Eu
     EuMemberStates
     Regional
     Local
+  }
+
+type Any
+  {
   }
 
 interface Entity
@@ -19,7 +59,9 @@ type Indicator
   {
     iri: IriType
     category: String!
-    spatialScope: SpatialScopeTypes!
+    spatialScope: SpatialScopeType!
+    keyArea: KeyArea!
+    thematicArea: Any!
     id: String!
     name: LabelType
     description: NarrativeText

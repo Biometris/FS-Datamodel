@@ -11,9 +11,10 @@
         {
             "label": "validate",
             "type": "shell",
-            //"command": "linkml-validate --schema .\\src\\schema\\food_system_indicators.yaml --target-class 'indicator datapoint' '.\\data\\indicator datapoints.csv'"
-            //"command": "linkml-validate --schema .\\src\\schema\\food_system_indicators.yaml --target-class indicator .\\data\\indicators.csv"
-            "command": "linkml-validate --config validation.config.yaml"
+            "command": [
+                "linkml-validate --schema .\\src\\schema\\food_system_indicators.yaml --target-class 'indicator datapoint'",
+                "'.\\data\\indicator datapoints.csv'; linkml-validate --schema .\\src\\schema\\food_system_indicators.yaml --target-class indicator .\\data\\indicators.csv"
+            ]
         }
     ]
 }

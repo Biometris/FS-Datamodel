@@ -54,6 +54,12 @@ linkml:Jsonpath xsd:string
 
 linkml:Sparqlpath xsd:string
 
+<https://w3id.org/linkml/examples/fsiAny> CLOSED {
+    (  $<https://w3id.org/linkml/examples/fsiAny_tes> rdf:type . * ;
+       rdf:type [ linkml:Any ] ?
+    )
+}
+
 <https://w3id.org/linkml/examples/fsiEntity>  (
     {
        (  $<https://w3id.org/linkml/examples/fsiEntity_tes> (  <https://w3id.org/linkml/examples/fsiiri>
@@ -69,10 +75,14 @@ linkml:Sparqlpath xsd:string
 <https://w3id.org/linkml/examples/fsiIndicator> CLOSED {
     (  $<https://w3id.org/linkml/examples/fsiIndicator_tes> (  &<https://w3id.org/linkml/examples/fsiNamedThing_tes> ;
           rdf:type [ <https://w3id.org/linkml/examples/fsiNamedThing> ] ? ;
-          <https://w3id.org/linkml/examples/fsispatial_scope> [ <https://w3id.org/linkml/examples/fsiSpatialScopeTypes#Eu>
-             <https://w3id.org/linkml/examples/fsiSpatialScopeTypes#EuMemberStates>
-             <https://w3id.org/linkml/examples/fsiSpatialScopeTypes#Regional>
-             <https://w3id.org/linkml/examples/fsiSpatialScopeTypes#Local> ] ;
+          <https://w3id.org/linkml/examples/fsispatial_scope> [ <https://w3id.org/linkml/examples/fsiSpatialScopeType#Eu>
+             <https://w3id.org/linkml/examples/fsiSpatialScopeType#EuMemberStates>
+             <https://w3id.org/linkml/examples/fsiSpatialScopeType#Regional>
+             <https://w3id.org/linkml/examples/fsiSpatialScopeType#Local> ] ;
+          <https://w3id.org/linkml/examples/fsikey_area> [ <https://w3id.org/linkml/examples/fsiKeyArea#Environmental>
+             <https://w3id.org/linkml/examples/fsiKeyArea#Economic> <https://w3id.org/linkml/examples/fsiKeyArea#Social>
+             <https://w3id.org/linkml/examples/fsiKeyArea#Horizontal> ] ;
+          <https://w3id.org/linkml/examples/fsithematic_area> @<https://w3id.org/linkml/examples/fsiAny> ;
           rdfs:label @<https://w3id.org/linkml/examples/fsiLabelType> ? ;
           dct:description @<https://w3id.org/linkml/examples/fsiNarrativeText> ?
        ) ;

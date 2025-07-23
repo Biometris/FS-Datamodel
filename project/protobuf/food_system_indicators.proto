@@ -6,7 +6,9 @@ message Indicator
  {
   iriType iri = 0
   string category = 0
-  spatialScopeTypes spatialScope = 0
+  spatialScopeType spatialScope = 0
+  keyArea keyArea = 0
+  any thematicArea = 0
   string id = 0
   labelType name = 0
   narrativeText description = 0

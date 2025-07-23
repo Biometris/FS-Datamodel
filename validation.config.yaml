@@ -5,7 +5,7 @@ data_sources:
   - CsvLoader:
       source: .\\data\\indicators.csv      
 
-target_class: 'indicator datapoint'
-data_sources:
-  - CsvLoader:
-      source: .\\data\\indicator datapoints.csv
+## target_class: 'indicator datapoint'
+##//data_sources:
+##  - CsvLoader:
+##      source: .\\data\\indicator datapoints.csv

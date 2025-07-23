@@ -10,10 +10,7 @@ plugins:
 nav:
   - Overview: index.md
   - Visualizations:
-    - Classes (categories): categories.html
-    - Predicates: predicates.html
-    - Qualifiers: qualifiers.html
-    - Associations: associations.html
+    - Classes (categories): categories.html    
   - About: about.md
 docs_dir: docs
 site_url: https://biometris.github.io/foodsystems-model

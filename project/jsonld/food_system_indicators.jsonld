@@ -407,8 +407,107 @@
   ],
   "enums": [
     {
-      "name": "SpatialScopeTypes",
-      "definition_uri": "https://w3id.org/linkml/examples/fsiSpatialScopeTypes",
+      "name": "KeyArea",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiKeyArea",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "permissible_values": [
+        {
+          "text": "Environmental",
+          "description": "environmental"
+        },
+        {
+          "text": "Economic",
+          "description": "economic"
+        },
+        {
+          "text": "Social",
+          "description": "social"
+        },
+        {
+          "text": "Horizontal",
+          "description": "horizontal thematic areas"
+        }
+      ]
+    },
+    {
+      "name": "EnvironmentalThematicArea",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiEnvironmentalThematicArea",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "permissible_values": [
+        {
+          "text": "ClimateChange",
+          "description": "climate change"
+        },
+        {
+          "text": "PollutionAntimicrobials",
+          "description": "pollution and antimicrobials"
+        },
+        {
+          "text": "SustainableUseOfResources",
+          "description": "sustainable use of resources"
+        },
+        {
+          "text": "Biodiversity",
+          "description": "biodiversity"
+        },
+        {
+          "text": "CrossCuttingAreas",
+          "description": "cross-cutting areas"
+        }
+      ]
+    },
+    {
+      "name": "EconomicThematicArea",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiEconomicThematicArea",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "permissible_values": [
+        {
+          "text": "FairEconomicViabilityInFoodValueChain",
+          "description": "fair economic viability in the food value chain"
+        },
+        {
+          "text": "DevelopmentAndLogistics",
+          "description": "development and logistics"
+        }
+      ]
+    },
+    {
+      "name": "SocialThematicArea",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiSocialThematicArea",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "permissible_values": [
+        {
+          "text": "FairInclusiveAndEthicalFoodSystem",
+          "description": "fair, inclusive and ethical food system"
+        },
+        {
+          "text": "FoodEnvironment",
+          "description": "food environment"
+        },
+        {
+          "text": "NutritionAndHealth",
+          "description": "nutrition and health"
+        }
+      ]
+    },
+    {
+      "name": "HorizontalThematicArea",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiHorizontalThematicArea",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "permissible_values": [
+        {
+          "text": "Governance",
+          "description": "governance"
+        },
+        {
+          "text": "Resilience",
+          "description": "resilience"
+        }
+      ]
+    },
+    {
+      "name": "SpatialScopeType",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiSpatialScopeType",
       "from_schema": "https://w3id.org/linkml/examples/fsi",
       "permissible_values": [
         {
@@ -596,8 +695,55 @@
       "domain_of": [
         "Indicator"
       ],
-      "range": "SpatialScopeTypes",
+      "range": "SpatialScopeType",
       "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "key_area",
+      "definition_uri": "https://w3id.org/linkml/examples/fsikey_area",
+      "description": "Reference to the thematic area that the indicator belongs to",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "slot_uri": "https://w3id.org/linkml/examples/fsikey_area",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "KeyArea",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "indicator__thematic_area",
+      "description": "the thematic area the indicator belongs to",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "slot_uri": "https://w3id.org/linkml/examples/fsithematic_area",
+      "alias": "thematic_area",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "Any",
+      "required": true,
+      "inlined": true,
+      "any_of": [
+        {
+          "range": "EnvironmentalThematicArea",
+          "@type": "AnonymousSlotExpression"
+        },
+        {
+          "range": "EconomicThematicArea",
+          "@type": "AnonymousSlotExpression"
+        },
+        {
+          "range": "SocialThematicArea",
+          "@type": "AnonymousSlotExpression"
+        },
+        {
+          "range": "HorizontalThematicArea",
+          "@type": "AnonymousSlotExpression"
+        }
+      ],
       "@type": "SlotDefinition"
     },
     {
@@ -773,6 +919,17 @@
       "@type": "ClassDefinition"
     },
     {
+      "name": "Any",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiAny",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "mappings": [
+        "linkml:Any"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/linkml/Any",
+      "@type": "ClassDefinition"
+    },
+    {
       "name": "Indicator",
       "definition_uri": "https://w3id.org/linkml/examples/fsiIndicator",
       "description": "Food system indicator.",
@@ -782,12 +939,155 @@
         "iri",
         "named_thing_category",
         "spatial_scope",
+        "key_area",
+        "indicator__thematic_area",
         "indicator_id",
         "indicator_name",
         "indicator_description"
       ],
       "slot_usage": {},
+      "attributes": [
+        {
+          "name": "thematic_area",
+          "description": "the thematic area the indicator belongs to",
+          "range": "Any",
+          "required": true,
+          "any_of": [
+            {
+              "range": "EnvironmentalThematicArea",
+              "@type": "AnonymousSlotExpression"
+            },
+            {
+              "range": "EconomicThematicArea",
+              "@type": "AnonymousSlotExpression"
+            },
+            {
+              "range": "SocialThematicArea",
+              "@type": "AnonymousSlotExpression"
+            },
+            {
+              "range": "HorizontalThematicArea",
+              "@type": "AnonymousSlotExpression"
+            }
+          ],
+          "@type": "SlotDefinition"
+        }
+      ],
       "class_uri": "https://w3id.org/linkml/examples/fsiIndicator",
+      "rules": [
+        {
+          "preconditions": {
+            "slot_conditions": [
+              {
+                "name": "key_area",
+                "equals_string": "Environmental",
+                "@type": "SlotDefinition"
+              }
+            ],
+            "@type": "AnonymousClassExpression"
+          },
+          "postconditions": {
+            "slot_conditions": [
+              {
+                "name": "thematic_area",
+                "any_of": [
+                  {
+                    "range": "EnvironmentalThematicArea",
+                    "@type": "AnonymousSlotExpression"
+                  }
+                ],
+                "@type": "SlotDefinition"
+              }
+            ],
+            "@type": "AnonymousClassExpression"
+          },
+          "@type": "ClassRule"
+        },
+        {
+          "preconditions": {
+            "slot_conditions": [
+              {
+                "name": "key_area",
+                "equals_string": "Economic",
+                "@type": "SlotDefinition"
+              }
+            ],
+            "@type": "AnonymousClassExpression"
+          },
+          "postconditions": {
+            "slot_conditions": [
+              {
+                "name": "thematic_area",
+                "any_of": [
+                  {
+                    "range": "EconomicThematicArea",
+                    "@type": "AnonymousSlotExpression"
+                  }
+                ],
+                "@type": "SlotDefinition"
+              }
+            ],
+            "@type": "AnonymousClassExpression"
+          },
+          "@type": "ClassRule"
+        },
+        {
+          "preconditions": {
+            "slot_conditions": [
+              {
+                "name": "key_area",
+                "equals_string": "Social",
+                "@type": "SlotDefinition"
+              }
+            ],
+            "@type": "AnonymousClassExpression"
+          },
+          "postconditions": {
+            "slot_conditions": [
+              {
+                "name": "thematic_area",
+                "any_of": [
+                  {
+                    "range": "SocialThematicArea",
+                    "@type": "AnonymousSlotExpression"
+                  }
+                ],
+                "@type": "SlotDefinition"
+              }
+            ],
+            "@type": "AnonymousClassExpression"
+          },
+          "@type": "ClassRule"
+        },
+        {
+          "preconditions": {
+            "slot_conditions": [
+              {
+                "name": "key_area",
+                "equals_string": "Horizontal",
+                "@type": "SlotDefinition"
+              }
+            ],
+            "@type": "AnonymousClassExpression"
+          },
+          "postconditions": {
+            "slot_conditions": [
+              {
+                "name": "thematic_area",
+                "any_of": [
+                  {
+                    "range": "HorizontalThematicArea",
+                    "@type": "AnonymousSlotExpression"
+                  }
+                ],
+                "@type": "SlotDefinition"
+              }
+            ],
+            "@type": "AnonymousClassExpression"
+          },
+          "@type": "ClassRule"
+        }
+      ],
       "@type": "ClassDefinition"
     },
     {
@@ -854,9 +1154,9 @@
   ],
   "metamodel_version": "1.7.0",
   "source_file": "food_system_indicators.yaml",
-  "source_file_date": "2025-07-21T14:14:51",
-  "source_file_size": 5019,
-  "generation_date": "2025-07-21T14:17:16",
+  "source_file_date": "2025-07-23T14:30:12",
+  "source_file_size": 8179,
+  "generation_date": "2025-07-23T14:31:14",
   "@type": "SchemaDefinition",
   "@context": [
     "project/jsonld/food_system_indicators.context.jsonld",

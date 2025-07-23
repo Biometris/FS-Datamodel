@@ -1,28 +1,22 @@
 @prefix UO: <http://purl.obolibrary.org/obo/UO_> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix fsi: <https://w3id.org/linkml/examples/fsi> .
+@prefix linkml: <https://w3id.org/linkml/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+linkml:Any a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:targetClass linkml:Any .
+
 fsi:Entity a sh:NodeShape ;
     sh:closed false ;
     sh:description "Root class for all things and informational relationships, real or imagined." ;
-    sh:ignoredProperties ( fsi:has_unit fsi:has_numeric_value fsi:spatial_scope fsi:measurement_of rdf:type ) ;
+    sh:ignoredProperties ( rdf:type fsi:has_unit fsi:has_numeric_value fsi:spatial_scope fsi:measurement_of fsi:thematic_area fsi:key_area ) ;
     sh:property [ sh:datatype xsd:string ;
-            sh:description "An IRI for an entity. This is determined by the id using expansion rules." ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 1 ;
-            sh:path fsi:iri ],
-        [ sh:datatype xsd:string ;
-            sh:description "A human-readable description of an entity." ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 3 ;
-            sh:path dct:description ],
-        [ sh:datatype xsd:string ;
             sh:description "A human-readable name for an attribute or entity." ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
@@ -34,7 +28,19 @@ fsi:Entity a sh:NodeShape ;
             sh:minCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 0 ;
-            sh:path fsi:id ] ;
+            sh:path fsi:id ],
+        [ sh:datatype xsd:string ;
+            sh:description "A human-readable description of an entity." ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 3 ;
+            sh:path dct:description ],
+        [ sh:datatype xsd:string ;
+            sh:description "An IRI for an entity. This is determined by the id using expansion rules." ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 1 ;
+            sh:path fsi:iri ] ;
     sh:targetClass fsi:Entity .
 
 fsi:IndicatorDatapointCollection a sh:NodeShape ;
@@ -50,8 +56,15 @@ fsi:IndicatorDatapointCollection a sh:NodeShape ;
 fsi:NamedThing a sh:NodeShape ;
     sh:closed true ;
     sh:description "A databased entity or concept/class." ;
-    sh:ignoredProperties ( fsi:has_unit fsi:has_numeric_value fsi:spatial_scope fsi:measurement_of rdf:type ) ;
+    sh:ignoredProperties ( rdf:type fsi:has_unit fsi:has_numeric_value fsi:key_area fsi:measurement_of fsi:thematic_area fsi:spatial_scope ) ;
     sh:property [ sh:datatype xsd:string ;
+            sh:description "A unique identifier for an entity." ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 0 ;
+            sh:path fsi:id ],
+        [ sh:datatype xsd:string ;
             sh:description "An IRI for an entity. This is determined by the id using expansion rules." ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
@@ -68,14 +81,7 @@ fsi:NamedThing a sh:NodeShape ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 2 ;
-            sh:path rdfs:label ],
-        [ sh:datatype xsd:string ;
-            sh:description "A unique identifier for an entity." ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 0 ;
-            sh:path fsi:id ] ;
+            sh:path rdfs:label ] ;
     sh:targetClass fsi:NamedThing .
 
 fsi:QuantityValue a sh:NodeShape ;
@@ -88,12 +94,6 @@ fsi:QuantityValue a sh:NodeShape ;
             sh:nodeKind sh:Literal ;
             sh:order 5 ;
             sh:path dct:description ],
-        [ sh:datatype xsd:string ;
-            sh:description "A human-readable name for an attribute or entity." ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 4 ;
-            sh:path rdfs:label ],
         [ sh:datatype xsd:double ;
             sh:description "connects a quantity value to a number" ;
             sh:maxCount 1 ;
@@ -101,11 +101,11 @@ fsi:QuantityValue a sh:NodeShape ;
             sh:order 1 ;
             sh:path fsi:has_numeric_value ],
         [ sh:datatype xsd:string ;
-            sh:description "An IRI for an entity. This is determined by the id using expansion rules." ;
+            sh:description "A human-readable name for an attribute or entity." ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 3 ;
-            sh:path fsi:iri ],
+            sh:order 4 ;
+            sh:path rdfs:label ],
         [ sh:datatype xsd:string ;
             sh:description "A unique identifier for an entity." ;
             sh:maxCount 1 ;
@@ -113,6 +113,12 @@ fsi:QuantityValue a sh:NodeShape ;
             sh:nodeKind sh:Literal ;
             sh:order 2 ;
             sh:path fsi:id ],
+        [ sh:datatype xsd:string ;
+            sh:description "An IRI for an entity. This is determined by the id using expansion rules." ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 3 ;
+            sh:path fsi:iri ],
         [ sh:datatype UO:0000000 ;
             sh:description "connects a quantity value to a unit" ;
             sh:maxCount 1 ;
@@ -125,25 +131,31 @@ fsi:Indicator a sh:NodeShape ;
     sh:closed true ;
     sh:description "Food system indicator." ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property [ sh:datatype xsd:string ;
+    sh:property [ sh:description "Reference to the thematic area that the indicator belongs to" ;
+            sh:in ( "Environmental" "Economic" "Social" "Horizontal" ) ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:order 1 ;
+            sh:path fsi:key_area ],
+        [ sh:datatype xsd:string ;
             sh:description "concise text that provides the meaning of the identifier" ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 4 ;
+            sh:order 6 ;
             sh:path dct:description ],
+        [ sh:description "the thematic area the indicator belongs to" ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:or ( [ sh:in ( "ClimateChange" "PollutionAntimicrobials" "SustainableUseOfResources" "Biodiversity" "CrossCuttingAreas" ) ] [ sh:in ( "FairEconomicViabilityInFoodValueChain" "DevelopmentAndLogistics" ) ] [ sh:in ( "FairInclusiveAndEthicalFoodSystem" "FoodEnvironment" "NutritionAndHealth" ) ] [ sh:in ( "Governance" "Resilience" ) ] ) ;
+            sh:order 2 ;
+            sh:path fsi:thematic_area ],
         [ sh:datatype xsd:string ;
             sh:description "unique identifier of the indicator" ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 1 ;
+            sh:order 3 ;
             sh:path fsi:id ],
-        [ sh:datatype xsd:string ;
-            sh:description "An IRI for an entity. This is determined by the id using expansion rules." ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 2 ;
-            sh:path fsi:iri ],
         [ sh:description "Reference to the spatial unit that the indicator describes" ;
             sh:in ( "Eu" "EuMemberStates" "Regional" "Local" ) ;
             sh:maxCount 1 ;
@@ -151,10 +163,16 @@ fsi:Indicator a sh:NodeShape ;
             sh:order 0 ;
             sh:path fsi:spatial_scope ],
         [ sh:datatype xsd:string ;
+            sh:description "An IRI for an entity. This is determined by the id using expansion rules." ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 4 ;
+            sh:path fsi:iri ],
+        [ sh:datatype xsd:string ;
             sh:description "denomination of the indicator" ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 3 ;
+            sh:order 5 ;
             sh:path rdfs:label ] ;
     sh:targetClass fsi:Indicator .
 
@@ -169,6 +187,13 @@ fsi:IndicatorDatapoint a sh:NodeShape ;
             sh:nodeKind sh:Literal ;
             sh:order 3 ;
             sh:path fsi:id ],
+        [ sh:class fsi:Indicator ;
+            sh:description "Indicator" ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:IRI ;
+            sh:order 0 ;
+            sh:path fsi:measurement_of ],
         [ sh:datatype xsd:string ;
             sh:description "A human-readable name for an attribute or entity." ;
             sh:maxCount 1 ;
@@ -176,35 +201,28 @@ fsi:IndicatorDatapoint a sh:NodeShape ;
             sh:order 5 ;
             sh:path rdfs:label ],
         [ sh:datatype xsd:string ;
+            sh:description "A human-readable description of an entity." ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 6 ;
+            sh:path dct:description ],
+        [ sh:datatype xsd:string ;
             sh:description "An IRI for an entity. This is determined by the id using expansion rules." ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 4 ;
             sh:path fsi:iri ],
-        [ sh:datatype UO:0000000 ;
-            sh:description "connects a quantity value to a unit" ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 1 ;
-            sh:path fsi:has_unit ],
         [ sh:datatype xsd:double ;
             sh:description "connects a quantity value to a number" ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 2 ;
             sh:path fsi:has_numeric_value ],
-        [ sh:datatype xsd:string ;
-            sh:description "A human-readable description of an entity." ;
+        [ sh:datatype UO:0000000 ;
+            sh:description "connects a quantity value to a unit" ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 6 ;
-            sh:path dct:description ],
-        [ sh:class fsi:Indicator ;
-            sh:description "Indicator" ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:nodeKind sh:IRI ;
-            sh:order 0 ;
-            sh:path fsi:measurement_of ] ;
+            sh:order 1 ;
+            sh:path fsi:has_unit ] ;
     sh:targetClass fsi:IndicatorDatapoint .
 

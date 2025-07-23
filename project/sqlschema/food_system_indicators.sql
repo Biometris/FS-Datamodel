@@ -8,12 +8,16 @@
 --     * Slot: iri Description: An IRI for an entity. This is determined by the id using expansion rules.
 --     * Slot: name Description: A human-readable name for an attribute or entity.
 --     * Slot: description Description: A human-readable description of an entity.
+-- # Class: "Any" Description: ""
+--     * Slot: id Description: 
 -- # Class: "indicator" Description: "Food system indicator."
 --     * Slot: spatial_scope Description: Reference to the spatial unit that the indicator describes
+--     * Slot: key_area Description: Reference to the thematic area that the indicator belongs to
 --     * Slot: id Description: unique identifier of the indicator
 --     * Slot: iri Description: An IRI for an entity. This is determined by the id using expansion rules.
 --     * Slot: name Description: denomination of the indicator
 --     * Slot: description Description: concise text that provides the meaning of the identifier
+--     * Slot: thematic_area_id Description: the thematic area the indicator belongs to
 -- # Class: "indicator datapoint" Description: "Food system indicator datapoint."
 --     * Slot: measurement_of Description: Indicator
 --     * Slot: has_unit Description: connects a quantity value to a unit
@@ -47,12 +51,8 @@ CREATE TABLE "named thing" (
 	description TEXT, 
 	PRIMARY KEY (id)
 );
-CREATE TABLE indicator (
-	spatial_scope VARCHAR(14) NOT NULL, 
-	id TEXT NOT NULL, 
-	iri TEXT, 
-	name TEXT, 
-	description TEXT, 
+CREATE TABLE "Any" (
+	id INTEGER NOT NULL, 
 	PRIMARY KEY (id)
 );
 CREATE TABLE "indicator datapoint collection" (
@@ -67,6 +67,17 @@ CREATE TABLE "quantity value" (
 	name TEXT, 
 	description TEXT, 
 	PRIMARY KEY (id)
+);
+CREATE TABLE indicator (
+	spatial_scope VARCHAR(14) NOT NULL, 
+	key_area VARCHAR(13) NOT NULL, 
+	id TEXT NOT NULL, 
+	iri TEXT, 
+	name TEXT, 
+	description TEXT, 
+	thematic_area_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(thematic_area_id) REFERENCES "Any" (id)
 );
 CREATE TABLE "indicator datapoint" (
 	measurement_of TEXT NOT NULL, 

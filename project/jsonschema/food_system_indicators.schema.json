@@ -1,7 +1,155 @@
 {
     "$defs": {
+        "Any": {
+            "additionalProperties": true,
+            "description": "",
+            "title": "Any",
+            "type": [
+                "null",
+                "boolean",
+                "object",
+                "number",
+                "string"
+            ]
+        },
+        "EconomicThematicArea": {
+            "description": "",
+            "enum": [
+                "FairEconomicViabilityInFoodValueChain",
+                "DevelopmentAndLogistics"
+            ],
+            "title": "EconomicThematicArea",
+            "type": "string"
+        },
+        "EnvironmentalThematicArea": {
+            "description": "",
+            "enum": [
+                "ClimateChange",
+                "PollutionAntimicrobials",
+                "SustainableUseOfResources",
+                "Biodiversity",
+                "CrossCuttingAreas"
+            ],
+            "title": "EnvironmentalThematicArea",
+            "type": "string"
+        },
+        "HorizontalThematicArea": {
+            "description": "",
+            "enum": [
+                "Governance",
+                "Resilience"
+            ],
+            "title": "HorizontalThematicArea",
+            "type": "string"
+        },
         "Indicator": {
             "additionalProperties": false,
+            "allOf": [
+                {
+                    "if": {
+                        "properties": {
+                            "key_area": {
+                                "const": "Environmental"
+                            }
+                        },
+                        "required": [
+                            "key_area"
+                        ]
+                    },
+                    "then": {
+                        "properties": {
+                            "thematic_area": {
+                                "anyOf": [
+                                    {
+                                        "$ref": "#/$defs/EnvironmentalThematicArea"
+                                    }
+                                ]
+                            }
+                        },
+                        "required": [
+                            "thematic_area"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "key_area": {
+                                "const": "Economic"
+                            }
+                        },
+                        "required": [
+                            "key_area"
+                        ]
+                    },
+                    "then": {
+                        "properties": {
+                            "thematic_area": {
+                                "anyOf": [
+                                    {
+                                        "$ref": "#/$defs/EconomicThematicArea"
+                                    }
+                                ]
+                            }
+                        },
+                        "required": [
+                            "thematic_area"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "key_area": {
+                                "const": "Social"
+                            }
+                        },
+                        "required": [
+                            "key_area"
+                        ]
+                    },
+                    "then": {
+                        "properties": {
+                            "thematic_area": {
+                                "anyOf": [
+                                    {
+                                        "$ref": "#/$defs/SocialThematicArea"
+                                    }
+                                ]
+                            }
+                        },
+                        "required": [
+                            "thematic_area"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "key_area": {
+                                "const": "Horizontal"
+                            }
+                        },
+                        "required": [
+                            "key_area"
+                        ]
+                    },
+                    "then": {
+                        "properties": {
+                            "thematic_area": {
+                                "anyOf": [
+                                    {
+                                        "$ref": "#/$defs/HorizontalThematicArea"
+                                    }
+                                ]
+                            }
+                        },
+                        "required": [
+                            "thematic_area"
+                        ]
+                    }
+                }
+            ],
             "description": "Food system indicator.",
             "properties": {
                 "description": {
@@ -22,6 +170,10 @@
                         "null"
                     ]
                 },
+                "key_area": {
+                    "$ref": "#/$defs/KeyArea",
+                    "description": "Reference to the thematic area that the indicator belongs to"
+                },
                 "name": {
                     "description": "denomination of the indicator",
                     "type": [
@@ -30,12 +182,32 @@
                     ]
                 },
                 "spatial_scope": {
-                    "$ref": "#/$defs/SpatialScopeTypes",
+                    "$ref": "#/$defs/SpatialScopeType",
                     "description": "Reference to the spatial unit that the indicator describes"
+                },
+                "thematic_area": {
+                    "$ref": "#/$defs/Any",
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/EnvironmentalThematicArea"
+                        },
+                        {
+                            "$ref": "#/$defs/EconomicThematicArea"
+                        },
+                        {
+                            "$ref": "#/$defs/SocialThematicArea"
+                        },
+                        {
+                            "$ref": "#/$defs/HorizontalThematicArea"
+                        }
+                    ],
+                    "description": "the thematic area the indicator belongs to"
                 }
             },
             "required": [
                 "spatial_scope",
+                "key_area",
+                "thematic_area",
                 "id"
             ],
             "title": "Indicator",
@@ -112,6 +284,17 @@
             },
             "title": "IndicatorDatapointCollection",
             "type": "object"
+        },
+        "KeyArea": {
+            "description": "",
+            "enum": [
+                "Environmental",
+                "Economic",
+                "Social",
+                "Horizontal"
+            ],
+            "title": "KeyArea",
+            "type": "string"
         },
         "NamedThing": {
             "additionalProperties": false,
@@ -199,7 +382,17 @@
             "title": "QuantityValue",
             "type": "object"
         },
-        "SpatialScopeTypes": {
+        "SocialThematicArea": {
+            "description": "",
+            "enum": [
+                "FairInclusiveAndEthicalFoodSystem",
+                "FoodEnvironment",
+                "NutritionAndHealth"
+            ],
+            "title": "SocialThematicArea",
+            "type": "string"
+        },
+        "SpatialScopeType": {
             "description": "",
             "enum": [
                 "Eu",
@@ -207,7 +400,7 @@
                 "Regional",
                 "Local"
             ],
-            "title": "SpatialScopeTypes",
+            "title": "SpatialScopeType",
             "type": "string"
         }
     },
