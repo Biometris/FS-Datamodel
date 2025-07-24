@@ -63,8 +63,12 @@ clean:
     rm -rf tmp
     rm -rf {{docdir}}/*
 
+# Generate er diagram
+_gen_er:
+  gen-erdiagram {{source_schema_path}} > {{docdir}}/erdiagram.md
+
 # Generate project files
-_gen-project:
+_gen-project:    
     gen-project {{config_yaml}} -d {{dest}} {{source_schema_path}}
     @if [ ! -z "${{gen_owl_args}}" ]; then \
       mkdir -p {{dest}}/owl || true && \
@@ -78,7 +82,7 @@ _gen-project:
     fi
 
 # Generate documentation
-_gendoc: _ensure_docdir _gen_viz
+_gendoc: _ensure_docdir _gen_viz _gen_er
     # DO NOT REMOVE: these cp statements are crucial to maintain the w3 ids for the model artifacts
     cp {{dest}}/owl/{{schema_name}}.owl.ttl {{docdir}}/{{schema_name}}.owl.ttl ; \
     cp {{dest}}/jsonld/{{schema_name}}.context.jsonld {{docdir}}/{{schema_name}}.context.jsonld ; \

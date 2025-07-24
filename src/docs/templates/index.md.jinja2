@@ -2,30 +2,21 @@
 
 Model for the indicators on the sustainability performance of food Systems within Europe
 
-## Classes ([Visualization](categories.html))
+## Model components
 
-| Class | Description |
+| Type | Class | Description |
 {% for c in schemaview.all_classes(ordered_by="lexical").values()|sort(attribute='name') -%}
 {%- if 'association' not in schemaview.class_ancestors(c.name) and not schemaview.is_mixin(c.name) -%}
-| --- | --- |
-| {{gen.link(c)}} | {{c.description}} |
+| --- | --- | --- |
+| Class | {{gen.link(c)}} | {{c.description}} |
 {%- endif -%}
 {% endfor %}
-
-## Class Properties
-
-| Property | Description |
 {% for np in schemaview.all_slots(ordered_by="lexical").values()|sort(attribute='name') -%}
 {%- if 'node property' in schemaview.slot_ancestors(np.name) -%}
-| --- | --- |
-| {{gen.link(np)}} | {{np.description}} |
+| Property | {{gen.link(np)}} | {{np.description}} |
 {%- endif -%}
 {% endfor %}
-
-## Enumerations
-
-| Enumeration | Description |
-| --- | --- |
 {% for e in schemaview.all_enums().values()|sort(attribute='name') -%}
-| {{gen.link(e)}} | {{e.description}} |
+| Enum | {{gen.link(e)}} | {{e.description}} |
 {% endfor %}
+

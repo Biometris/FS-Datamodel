@@ -1,5 +1,5 @@
 # Auto generated from food_system_indicators.yaml by pythongen.py version: 0.0.1
-# Generation date: 2025-07-23T14:31:14
+# Generation date: 2025-07-24T15:00:43
 # Schema: food-system-indicators
 #
 # id: https://w3id.org/linkml/examples/fsi
@@ -82,7 +82,7 @@ class IriType(Uriorcurie):
     """ An IRI """
     type_class_uri = XSD["string"]
     type_class_curie = "xsd:string"
-    type_name = "iri type"
+    type_name = "iri_type"
     type_model_uri = FSI.IriType
 
 
@@ -90,7 +90,7 @@ class LabelType(String):
     """ A string that provides a human-readable name for an entity """
     type_class_uri = XSD["string"]
     type_class_curie = "xsd:string"
-    type_name = "label type"
+    type_name = "label_type"
     type_model_uri = FSI.LabelType
 
 
@@ -98,7 +98,7 @@ class NarrativeText(String):
     """ A string that provides a human-readable description of something """
     type_class_uri = XSD["string"]
     type_class_curie = "xsd:string"
-    type_name = "narrative text"
+    type_name = "narrative_text"
     type_model_uri = FSI.NarrativeText
 
 

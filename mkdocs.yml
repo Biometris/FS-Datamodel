@@ -9,8 +9,7 @@ plugins:
   - mermaid2
 nav:
   - Overview: index.md
-  - Visualizations:
-    - Classes (categories): categories.html    
+  - Model diagram: erdiagram.md  
   - About: about.md
 docs_dir: docs
 site_url: https://biometris.github.io/foodsystems-model

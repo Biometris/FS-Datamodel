@@ -147,7 +147,7 @@ slots:
 
   description:
     aliases: ['definition']
-    range: narrative text
+    range: narrative_text
     description: >-
       A human-readable description of an entity.
     slot_uri: dct:description
@@ -184,7 +184,7 @@ slots:
   iri:
     description: >-
       An IRI for an entity. This is determined by the id using expansion rules.
-    range: iri type
+    range: iri_type
 
   measurement of:
     is_a: node property
@@ -198,7 +198,7 @@ slots:
     description: >-
       A human-readable name for an attribute or entity.
     domain: entity
-    range: label type
+    range: label_type
     slot_uri: rdfs:label
     narrow_mappings:
       - dct:title
@@ -207,7 +207,7 @@ slots:
     is_a: node property
     aliases: ['alias']
     domain: named thing
-    range: label type
+    range: label_type
     description: >-
       Alternate human-readable names for a thing
     multivalued: true
@@ -231,19 +231,19 @@ slots:
 ## --------------------
 
 types:
-  iri type:
+  iri_type:
     uri: xsd:string
     typeof: uriorcurie
     description: >-
       An IRI
 
-  label type:
+  label_type:
     uri: xsd:string
     typeof: string
     description: >-
       A string that provides a human-readable name for an entity
 
-  narrative text:
+  narrative_text:
     uri: xsd:string
     typeof: string
     description: >-

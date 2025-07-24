@@ -76,7 +76,7 @@
 </g><g class='edge' id='edge13'><title>Indicator-&gt;Any</title>
 <path d='M87.3656,-128.76C86.9873,-100.031 87.5376,-68.8435 89.0165,-47.2628' fill='none' stroke='black'/><path d='M87.3656,-128.76C86.9873,-100.031 87.5376,-68.8435 89.0165,-47.2628' fill='none' filter='url(#shadow)' stroke='black' style='stroke:{@stroke}; stroke-opacity:0.1; fill:none;'/>
 <polygon fill='black' filter='url(#shadow)' points='89.8456,-37.2054 93.5087,-47.5413 89.4347,-42.1885 89.0239,-47.1716 89.0239,-47.1716 89.0239,-47.1716 89.4347,-42.1885 84.5391,-46.8018 89.8456,-37.2054 89.8456,-37.2054' stroke='black' style='fill: black; stroke: none; fill-opacity:0.2'/><polygon fill='black' points='89.8456,-37.2054 93.5087,-47.5413 89.4347,-42.1885 89.0239,-47.1716 89.0239,-47.1716 89.0239,-47.1716 89.4347,-42.1885 84.5391,-46.8018 89.8456,-37.2054 89.8456,-37.2054' stroke='black' style='fill:url(#black);stroke:black;'/>
-<text style='font-size:8px; font-family:Verdana;' text-anchor='middle' transform='translate(0,0)' x='77.3036' y='-60.7579'> thematic area 0..1</text>
+<text style='font-size:8px; font-family:Verdana;' text-anchor='middle' transform='translate(0,0)' x='77.3036' y='-60.7579'> thematic area 1..1</text>
 </g><g class='node' id='node4'><title>QuantityValue</title>
 <polygon fill='lightgrey' filter='url(#shadow)' points='126,-701 126,-849 302,-849 302,-701 126,-701' stroke='black' style='fill: black; stroke: none; fill-opacity:0.2'/><polygon fill='lightgrey' points='126,-701 126,-849 302,-849 302,-701 126,-701' stroke='black' style='fill:url(#lightgrey);stroke:black;'/>
 <text style='font-size:10px; font-family:Verdana;' text-anchor='middle' transform='translate(0,0)' x='214' y='-830.8'>QuantityValue</text>
@@ -130,6 +130,6 @@
 <path d='M98.9835,-47.2628C100.462,-68.8435 101.013,-100.031 100.634,-128.76' fill='none' stroke='black'/><path d='M98.9835,-47.2628C100.462,-68.8435 101.013,-100.031 100.634,-128.76' fill='none' filter='url(#shadow)' stroke='black' style='stroke:{@stroke}; stroke-opacity:0.1; fill:none;'/>
 <polygon fill='black' filter='url(#shadow)' points='98.1544,-37.2054 103.461,-46.8018 98.5653,-42.1885 98.9761,-47.1716 98.9761,-47.1716 98.9761,-47.1716 98.5653,-42.1885 94.4913,-47.5413 98.1544,-37.2054 98.1544,-37.2054' stroke='black' style='fill: black; stroke: none; fill-opacity:0.2'/><polygon fill='black' points='98.1544,-37.2054 103.461,-46.8018 98.5653,-42.1885 98.9761,-47.1716 98.9761,-47.1716 98.9761,-47.1716 98.5653,-42.1885 94.4913,-47.5413 98.1544,-37.2054 98.1544,-37.2054' stroke='black' style='fill:url(#black);stroke:black;'/>
 <text style='font-size:8px; font-family:Verdana;' text-anchor='middle' transform='translate(0,0)' x='107.66' y='-106.335'>  </text>
-<text style='font-size:8px; font-family:Verdana;' text-anchor='middle' transform='translate(0,0)' x='92.8812' y='-52.7977'>thematic area 0..1</text>
+<text style='font-size:8px; font-family:Verdana;' text-anchor='middle' transform='translate(0,0)' x='92.8812' y='-52.7977'>thematic area 1..1</text>
 </g></g>
 <text style='fill: lightslategray; font-size: 6pt; font-family: Verdana' x='290' y='1282'>CREATED WITH YUML</text></svg>
