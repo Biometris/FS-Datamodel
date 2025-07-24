@@ -1156,7 +1156,7 @@
   "source_file": "food_system_indicators.yaml",
   "source_file_date": "2025-07-24T15:00:31",
   "source_file_size": 8179,
-  "generation_date": "2025-07-24T15:00:42",
+  "generation_date": "2025-07-24T16:35:57",
   "@type": "SchemaDefinition",
   "@context": [
     "project/jsonld/food_system_indicators.context.jsonld",

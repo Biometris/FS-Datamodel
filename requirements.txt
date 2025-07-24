@@ -3,3 +3,5 @@ mkdocs
 mkdocs-material
 mkdocs-mermaid2-plugin
 mermaid
+pandas
+tabulate

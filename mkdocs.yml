@@ -9,7 +9,8 @@ plugins:
   - mermaid2
 nav:
   - Overview: index.md
-  - Model diagram: erdiagram.md  
+  - Model diagram: erdiagram.md
+  - Example data: exampledata.md
   - About: about.md
 docs_dir: docs
 site_url: https://biometris.github.io/foodsystems-model

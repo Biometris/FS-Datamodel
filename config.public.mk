@@ -8,7 +8,7 @@
 
 # Note: makefile variables should not be quoted, as makefile handles quoting differently than bash
 LINKML_SCHEMA_NAME="food_system_indicators"
-LINKML_SCHEMA_AUTHOR="My Name <my-name@my-org.org>"
+LINKML_SCHEMA_AUTHOR="Bart-Jan van Rossum <bart-jan.vanrossum@wur.nl>"
 LINKML_SCHEMA_DESCRIPTION="This is the project description."
 LINKML_SCHEMA_SOURCE_PATH="src/schema/food_system_indicators.yaml"
 

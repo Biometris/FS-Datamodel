@@ -35,6 +35,7 @@ dest := "project"
 docdir := "docs"
 templatedir := src / "docs" / "templates"
 exampledir := "examples"
+datadir := "data"
 
 # Show current project status
 _status: _check-config
@@ -63,10 +64,6 @@ clean:
     rm -rf tmp
     rm -rf {{docdir}}/*
 
-# Generate er diagram
-_gen_er:
-  gen-erdiagram {{source_schema_path}} > {{docdir}}/erdiagram.md
-
 # Generate project files
 _gen-project:    
     gen-project {{config_yaml}} -d {{dest}} {{source_schema_path}}
@@ -82,7 +79,7 @@ _gen-project:
     fi
 
 # Generate documentation
-_gendoc: _ensure_docdir _gen_viz _gen_er
+_gendoc: _ensure_docdir _gen_viz _gen_er _gen_plantuml _gen_exampledata
     # DO NOT REMOVE: these cp statements are crucial to maintain the w3 ids for the model artifacts
     cp {{dest}}/owl/{{schema_name}}.owl.ttl {{docdir}}/{{schema_name}}.owl.ttl ; \
     cp {{dest}}/jsonld/{{schema_name}}.context.jsonld {{docdir}}/{{schema_name}}.context.jsonld ; \
@@ -95,7 +92,19 @@ _gendoc: _ensure_docdir _gen_viz _gen_er
     cp {{dest}}/prefixmap/* {{docdir}} ; \
 
     cp -r {{src}}/docs/files/* {{docdir}}
-    gen-doc {{gen_doc_args}} -d {{docdir}} --template-directory {{templatedir}} {{source_schema_path}}
+    gen-doc {{gen_doc_args}} -d {{docdir}} --template-directory {{templatedir}} {{source_schema_path}}    
+
+# Generate er diagram
+_gen_er:
+  gen-erdiagram {{source_schema_path}} > {{docdir}}/erdiagram.md
+
+# Generate plantuml diagram
+_gen_plantuml:
+  gen-plantuml {{source_schema_path}} --directory {{docdir}}  
+
+# Generate example data table
+_gen_exampledata:
+  {{shebang}} {{src}}/scripts/generate_exampledata.py 
 
 _gen_viz:
     {{shebang}} {{src}}/scripts/generate_json.py
@@ -114,4 +123,3 @@ serve:
 
 mkdocs:
   mkdocs
-
