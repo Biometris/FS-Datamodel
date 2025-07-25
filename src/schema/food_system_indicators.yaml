@@ -1,5 +1,7 @@
 id: https://w3id.org/linkml/examples/fsi
-name: food-system-indicators
+name: food_system_indicators
+description: >-
+  Model for the indicators on the sustainability performance of food Systems within Europe.
 prefixes:
   linkml: https://w3id.org/linkml/
   dct: http://purl.org/dc/terms/

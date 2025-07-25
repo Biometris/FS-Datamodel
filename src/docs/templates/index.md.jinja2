@@ -1,6 +1,12 @@
 # {{ schema.name }}
 
-Model for the indicators on the sustainability performance of food Systems within Europe
+{{ schema.description }}
+
+## Model diagram
+
+```{{ gen.mermaid_directive() }}
+{{ gen.mermaid_diagram() }}
+```
 
 ## Model components
 
@@ -19,5 +25,4 @@ Model for the indicators on the sustainability performance of food Systems withi
 {% for e in schemaview.all_enums().values()|sort(attribute='name') -%}
 | Enum | {{gen.link(e)}} | {{e.description}} |
 {% endfor %}
-
-
+ 

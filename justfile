@@ -79,7 +79,7 @@ _gen-project:
     fi
 
 # Generate documentation
-_gendoc: _ensure_docdir _gen_viz _gen_er _gen_plantuml _gen_exampledata
+_gendoc: _ensure_docdir _gen_viz _gen_er _gen_exampledata
     # DO NOT REMOVE: these cp statements are crucial to maintain the w3 ids for the model artifacts
     cp {{dest}}/owl/{{schema_name}}.owl.ttl {{docdir}}/{{schema_name}}.owl.ttl ; \
     cp {{dest}}/jsonld/{{schema_name}}.context.jsonld {{docdir}}/{{schema_name}}.context.jsonld ; \

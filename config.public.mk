@@ -18,7 +18,9 @@ LINKML_SCHEMA_SOURCE_PATH="src/schema/food_system_indicators.yaml"
 LINKML_GENERATORS_CONFIG_YAML=config.yaml
 
 ## pass args if gendoc ignores config.yaml (i.e. --no-mergeimports)
-LINKML_GENERATORS_DOC_ARGS="--diagram-type plantuml_class_diagram --include-top-level-diagram"
+# LINKML_GENERATORS_DOC_ARGS="--diagram-type plantuml_class_diagram --include-top-level-diagram"
+# LINKML_GENERATORS_DOC_ARGS="--diagram-type mermaid_class_diagram --include-top-level-diagram"
+LINKML_GENERATORS_DOC_ARGS="--diagram-type er_diagram --include-top-level-diagram"
 
 ## pass args to workaround genowl rdfs config bug (linkml#1453)
 ##   (i.e. --no-type-objects --no-metaclasses --metadata-profile rdfs)

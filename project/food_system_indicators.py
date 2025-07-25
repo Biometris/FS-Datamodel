@@ -1,9 +1,9 @@
 # Auto generated from food_system_indicators.yaml by pythongen.py version: 0.0.1
-# Generation date: 2025-07-24T16:35:57
-# Schema: food-system-indicators
+# Generation date: 2025-07-25T11:38:46
+# Schema: food_system_indicators
 #
 # id: https://w3id.org/linkml/examples/fsi
-# description:
+# description: Model for the indicators on the sustainability performance of food Systems within Europe.
 # license: https://creativecommons.org/publicdomain/zero/1.0/
 
 import dataclasses

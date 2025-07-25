@@ -1,5 +1,6 @@
 {
-  "name": "food-system-indicators",
+  "name": "food_system_indicators",
+  "description": "Model for the indicators on the sustainability performance of food Systems within Europe.",
   "id": "https://w3id.org/linkml/examples/fsi",
   "imports": [
     "linkml:types"
@@ -1154,9 +1155,9 @@
   ],
   "metamodel_version": "1.7.0",
   "source_file": "food_system_indicators.yaml",
-  "source_file_date": "2025-07-24T15:00:31",
-  "source_file_size": 8179,
-  "generation_date": "2025-07-24T16:35:57",
+  "source_file_date": "2025-07-25T09:59:52",
+  "source_file_size": 8289,
+  "generation_date": "2025-07-25T11:38:45",
   "@type": "SchemaDefinition",
   "@context": [
     "project/jsonld/food_system_indicators.context.jsonld",

@@ -420,7 +420,7 @@
             ]
         }
     },
-    "title": "food-system-indicators",
+    "title": "food_system_indicators",
     "type": "object",
     "version": null
 }
