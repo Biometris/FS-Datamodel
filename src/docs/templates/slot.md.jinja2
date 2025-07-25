@@ -1,4 +1,4 @@
-# <strong> Slot: {{ gen.name(element) }} </strong> {% if element.deprecated %} <span style="color: red;"><strong> (DEPRECATED) </strong></span> {% endif %}{% if element.abstract %}<span style="color: purple;"><strong><small> (Abstract) </small></strong></span> {% endif %}{% if element.multivalued %} (multivalued){% endif -%}
+# <strong> Slot: {{ element.name }} </strong> {% if element.deprecated %} <span style="color: red;"><strong> (DEPRECATED) </strong></span> {% endif %}{% if element.abstract %}<span style="color: purple;"><strong><small> (Abstract) </small></strong></span> {% endif %}{% if element.multivalued %} (multivalued){% endif -%}
 {% if element.description or element.aliases or element.required or element.inverse %}
 <div class="highlight-box">{% if element.description %}<strong>Description:</strong><i> {{ element.description }}</i><br>{% endif %}
   {% if element.aliases %} <strong>Aliases:</strong> {{ element.aliases | join(', ') }}<br>{% endif -%}
@@ -65,15 +65,3 @@
 {% endif %}
 
 {% include "common_metadata.md.jinja2" %}
-
-## LinkML Source
-
-<details open>
-```yaml
-{{ gen.yaml(element) }}
-```
-</details>
-
-{%- if footer -%}
-{{footer}}
-{%- endif -%}

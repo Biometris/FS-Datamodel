@@ -79,9 +79,11 @@ linkml:Sparqlpath xsd:string
              <https://w3id.org/linkml/examples/fsiSpatialScopeType#EuMemberStates>
              <https://w3id.org/linkml/examples/fsiSpatialScopeType#Regional>
              <https://w3id.org/linkml/examples/fsiSpatialScopeType#Local> ] ;
-          <https://w3id.org/linkml/examples/fsikey_area> [ <https://w3id.org/linkml/examples/fsiKeyArea#Environmental>
-             <https://w3id.org/linkml/examples/fsiKeyArea#Economic> <https://w3id.org/linkml/examples/fsiKeyArea#Social>
-             <https://w3id.org/linkml/examples/fsiKeyArea#Horizontal> ] ;
+          <https://w3id.org/linkml/examples/fsikey_area> [
+             <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Environmental>
+             <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Economic>
+             <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Social>
+             <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Horizontal> ] ;
           <https://w3id.org/linkml/examples/fsithematic_area> @<https://w3id.org/linkml/examples/fsiAny> ;
           rdfs:label @<https://w3id.org/linkml/examples/fsiLabelType> ? ;
           dct:description @<https://w3id.org/linkml/examples/fsiNarrativeText> ?

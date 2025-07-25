@@ -1,4 +1,4 @@
-# {{ schema.title | upper }}
+# {{ gen.schema_title() | upper }}
 
 {{ schema.description }}
 
@@ -10,14 +10,16 @@
 
 ## Glossary
 
-| Label | Name | Description | Type |
-{% for c in schemaview.all_classes(ordered_by="lexical").values()|sort(attribute='name') -%}
+| Name | Description | Type |
+{% for c in schemaview.all_classes().values()|sort(attribute='name') -%}
 {%- if 'association' not in schemaview.class_ancestors(c.name) and not schemaview.is_mixin(c.name) -%}
-| --- | --- | --- | --- |
-| {{gen.link(c)}} | [{{ c.name | capitalize }}]({{ gen.uri(c) }}) | {{c.description}} | Class |
+{%- if c.name not in ["Any", "entity", "named thing"] -%}
+|  --- | --- | --- |
+| {{ gen._markdown_link(gen.name(c), c.name | capitalize, "") }} | {{c.description}} | Class |
+{%- endif -%}
 {%- endif -%}
 {% endfor %}
 {% for e in schemaview.all_enums().values()|sort(attribute='name') -%}
-| {{gen.link(e)}} | [{{ e.name | capitalize }}]({{ gen.uri(e) }}) |{{e.description}} | Enum |
+| {{ gen._markdown_link(e.name, e.title | capitalize, "") }} | {{e.description}} | Enum |
 {% endfor %}
  

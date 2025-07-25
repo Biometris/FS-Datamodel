@@ -1,5 +1,5 @@
 # Auto generated from food_system_indicators.yaml by pythongen.py version: 0.0.1
-# Generation date: 2025-07-25T13:02:48
+# Generation date: 2025-07-25T15:30:20
 # Schema: food_system_indicators
 #
 # id: https://w3id.org/linkml/examples/fsi
@@ -211,7 +211,7 @@ class Indicator(NamedThing):
     id: Union[str, IndicatorId] = None
     category: str = None
     spatial_scope: Union[str, "SpatialScopeType"] = None
-    key_area: Union[str, "KeyArea"] = None
+    key_area: Union[str, "SustainabilityDimension"] = None
     thematic_area: Union[dict, Any] = None
     name: Optional[Union[str, LabelType]] = None
     description: Optional[Union[str, NarrativeText]] = None
@@ -229,8 +229,8 @@ class Indicator(NamedThing):
 
         if self._is_empty(self.key_area):
             self.MissingRequiredField("key_area")
-        if not isinstance(self.key_area, KeyArea):
-            self.key_area = KeyArea(self.key_area)
+        if not isinstance(self.key_area, SustainabilityDimension):
+            self.key_area = SustainabilityDimension(self.key_area)
 
         if self.name is not None and not isinstance(self.name, LabelType):
             self.name = LabelType(self.name)
@@ -325,7 +325,7 @@ class IndicatorDatapoint(QuantityValue):
 
 
 # Enumerations
-class KeyArea(EnumDefinitionImpl):
+class SustainabilityDimension(EnumDefinitionImpl):
     """
     Main sustainability dimension.
     """
@@ -343,12 +343,14 @@ class KeyArea(EnumDefinitionImpl):
         description="horizontal thematic areas")
 
     _defn = EnumDefinition(
-        name="KeyArea",
+        name="SustainabilityDimension",
         description="Main sustainability dimension.",
     )
 
 class EnvironmentalThematicArea(EnumDefinitionImpl):
-
+    """
+    Enviromental sustainability dimension.
+    """
     ClimateChange = PermissibleValue(
         text="ClimateChange",
         description="climate change")
@@ -367,10 +369,13 @@ class EnvironmentalThematicArea(EnumDefinitionImpl):
 
     _defn = EnumDefinition(
         name="EnvironmentalThematicArea",
+        description="Enviromental sustainability dimension.",
     )
 
 class EconomicThematicArea(EnumDefinitionImpl):
-
+    """
+    Economic sustainability dimension.
+    """
     FairEconomicViabilityInFoodValueChain = PermissibleValue(
         text="FairEconomicViabilityInFoodValueChain",
         description="fair economic viability in the food value chain")
@@ -380,10 +385,13 @@ class EconomicThematicArea(EnumDefinitionImpl):
 
     _defn = EnumDefinition(
         name="EconomicThematicArea",
+        description="Economic sustainability dimension.",
     )
 
 class SocialThematicArea(EnumDefinitionImpl):
-
+    """
+    Social sustainability dimension.
+    """
     FairInclusiveAndEthicalFoodSystem = PermissibleValue(
         text="FairInclusiveAndEthicalFoodSystem",
         description="fair, inclusive and ethical food system")
@@ -396,10 +404,13 @@ class SocialThematicArea(EnumDefinitionImpl):
 
     _defn = EnumDefinition(
         name="SocialThematicArea",
+        description="Social sustainability dimension.",
     )
 
 class HorizontalThematicArea(EnumDefinitionImpl):
-
+    """
+    Horizontal sustainability dimension.
+    """
     Governance = PermissibleValue(
         text="Governance",
         description="governance")
@@ -409,10 +420,13 @@ class HorizontalThematicArea(EnumDefinitionImpl):
 
     _defn = EnumDefinition(
         name="HorizontalThematicArea",
+        description="Horizontal sustainability dimension.",
     )
 
 class SpatialScopeType(EnumDefinitionImpl):
-
+    """
+    The spatial scope for which the indicator is defined.
+    """
     Eu = PermissibleValue(
         text="Eu",
         description="EU wide")
@@ -428,6 +442,7 @@ class SpatialScopeType(EnumDefinitionImpl):
 
     _defn = EnumDefinition(
         name="SpatialScopeType",
+        description="The spatial scope for which the indicator is defined.",
     )
 
 # Slots
@@ -465,7 +480,7 @@ slots.spatial_scope = Slot(uri=FSI.spatial_scope, name="spatial scope", curie=FS
                    model_uri=FSI.spatial_scope, domain=None, range=Union[str, "SpatialScopeType"])
 
 slots.key_area = Slot(uri=FSI.key_area, name="key area", curie=FSI.curie('key_area'),
-                   model_uri=FSI.key_area, domain=None, range=Union[str, "KeyArea"])
+                   model_uri=FSI.key_area, domain=None, range=Union[str, "SustainabilityDimension"])
 
 slots.indicator__thematic_area = Slot(uri=FSI.thematic_area, name="indicator__thematic_area", curie=FSI.curie('thematic_area'),
                    model_uri=FSI.indicator__thematic_area, domain=None, range=Union[dict, Any])

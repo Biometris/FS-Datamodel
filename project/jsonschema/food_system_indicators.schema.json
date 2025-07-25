@@ -13,7 +13,7 @@
             ]
         },
         "EconomicThematicArea": {
-            "description": "",
+            "description": "Economic sustainability dimension.",
             "enum": [
                 "FairEconomicViabilityInFoodValueChain",
                 "DevelopmentAndLogistics"
@@ -22,7 +22,7 @@
             "type": "string"
         },
         "EnvironmentalThematicArea": {
-            "description": "",
+            "description": "Enviromental sustainability dimension.",
             "enum": [
                 "ClimateChange",
                 "PollutionAntimicrobials",
@@ -34,7 +34,7 @@
             "type": "string"
         },
         "HorizontalThematicArea": {
-            "description": "",
+            "description": "Horizontal sustainability dimension.",
             "enum": [
                 "Governance",
                 "Resilience"
@@ -171,7 +171,7 @@
                     ]
                 },
                 "key_area": {
-                    "$ref": "#/$defs/KeyArea",
+                    "$ref": "#/$defs/SustainabilityDimension",
                     "description": "Reference to the thematic area that the indicator belongs to"
                 },
                 "name": {
@@ -285,17 +285,6 @@
             "title": "IndicatorDatapointCollection",
             "type": "object"
         },
-        "KeyArea": {
-            "description": "Main sustainability dimension.",
-            "enum": [
-                "Environmental",
-                "Economic",
-                "Social",
-                "Horizontal"
-            ],
-            "title": "KeyArea",
-            "type": "string"
-        },
         "NamedThing": {
             "additionalProperties": false,
             "description": "A databased entity or concept/class.",
@@ -383,7 +372,7 @@
             "type": "object"
         },
         "SocialThematicArea": {
-            "description": "",
+            "description": "Social sustainability dimension.",
             "enum": [
                 "FairInclusiveAndEthicalFoodSystem",
                 "FoodEnvironment",
@@ -393,7 +382,7 @@
             "type": "string"
         },
         "SpatialScopeType": {
-            "description": "",
+            "description": "The spatial scope for which the indicator is defined.",
             "enum": [
                 "Eu",
                 "EuMemberStates",
@@ -401,6 +390,17 @@
                 "Local"
             ],
             "title": "SpatialScopeType",
+            "type": "string"
+        },
+        "SustainabilityDimension": {
+            "description": "Main sustainability dimension.",
+            "enum": [
+                "Environmental",
+                "Economic",
+                "Social",
+                "Horizontal"
+            ],
+            "title": "SustainabilityDimension",
             "type": "string"
         }
     },

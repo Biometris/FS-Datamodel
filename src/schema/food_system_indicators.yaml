@@ -56,7 +56,7 @@ classes:
         required: true
         range: Any
         any_of:
-          - range: environmental thematic area
+          - range: EnvironmentalThematicArea
           - range: EconomicThematicArea
           - range: SocialThematicArea
           - range: HorizontalThematicArea
@@ -79,7 +79,7 @@ classes:
           slot_conditions:
             thematic area: 
               any_of:
-                - range: environmental thematic area
+                - range: EnvironmentalThematicArea
       - preconditions:
           slot_conditions:
             key area:
@@ -106,7 +106,7 @@ classes:
           slot_conditions:
             thematic area: 
               any_of:
-                - range: HorizontalThematicArea     
+                - range: HorizontalThematicArea
 
   indicator datapoint:
     is_a: quantity value
@@ -223,12 +223,10 @@ slots:
 
   key area:
     required: true
-    range: KeyArea    
+    range: SustainabilityDimension    
     description:
       Reference to the thematic area that the indicator belongs to
    
-   
-
 ## --------------------
 ## TYPES
 ## --------------------
@@ -265,7 +263,8 @@ types:
 ## --------------------
 
 enums:
-  KeyArea:
+  SustainabilityDimension:
+    title: sustainability dimension
     description: >-
       Main sustainability dimension.
     permissible_values:
@@ -282,7 +281,10 @@ enums:
         description:
           horizontal thematic areas              
 
-  environmental thematic area:
+  EnvironmentalThematicArea:
+    title: environmental thematic area
+    description: >- 
+      Enviromental sustainability dimension.
     permissible_values:
       ClimateChange:
         description:
@@ -300,7 +302,10 @@ enums:
         description:
           cross-cutting areas
 
-  EconomicThematicArea:  
+  EconomicThematicArea:
+    title: economic thematic area
+    description: >- 
+      Economic sustainability dimension.
     permissible_values:
       FairEconomicViabilityInFoodValueChain:
         description:
@@ -310,6 +315,9 @@ enums:
           development and logistics
 
   SocialThematicArea:
+    title: social thematic area
+    description: >-
+      Social sustainability dimension.
     permissible_values:
       FairInclusiveAndEthicalFoodSystem:
         description:
@@ -322,6 +330,9 @@ enums:
           nutrition and health
 
   HorizontalThematicArea:
+    title: horizontal thematic area
+    description: >-
+      Horizontal sustainability dimension.
     permissible_values:
       Governance:
         description:
@@ -331,6 +342,9 @@ enums:
           resilience      
 
   SpatialScopeType:
+    title: spatial scope type
+    description: >-
+      The spatial scope for which the indicator is defined.
     permissible_values:
       Eu:
         description:

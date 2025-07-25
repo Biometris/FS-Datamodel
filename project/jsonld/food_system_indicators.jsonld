@@ -409,9 +409,10 @@
   ],
   "enums": [
     {
-      "name": "KeyArea",
-      "definition_uri": "https://w3id.org/linkml/examples/fsiKeyArea",
+      "name": "SustainabilityDimension",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiSustainabilityDimension",
       "description": "Main sustainability dimension.",
+      "title": "sustainability dimension",
       "from_schema": "https://w3id.org/linkml/examples/fsi",
       "permissible_values": [
         {
@@ -433,8 +434,10 @@
       ]
     },
     {
-      "name": "environmental thematic area",
+      "name": "EnvironmentalThematicArea",
       "definition_uri": "https://w3id.org/linkml/examples/fsiEnvironmentalThematicArea",
+      "description": "Enviromental sustainability dimension.",
+      "title": "environmental thematic area",
       "from_schema": "https://w3id.org/linkml/examples/fsi",
       "permissible_values": [
         {
@@ -462,6 +465,8 @@
     {
       "name": "EconomicThematicArea",
       "definition_uri": "https://w3id.org/linkml/examples/fsiEconomicThematicArea",
+      "description": "Economic sustainability dimension.",
+      "title": "economic thematic area",
       "from_schema": "https://w3id.org/linkml/examples/fsi",
       "permissible_values": [
         {
@@ -477,6 +482,8 @@
     {
       "name": "SocialThematicArea",
       "definition_uri": "https://w3id.org/linkml/examples/fsiSocialThematicArea",
+      "description": "Social sustainability dimension.",
+      "title": "social thematic area",
       "from_schema": "https://w3id.org/linkml/examples/fsi",
       "permissible_values": [
         {
@@ -496,6 +503,8 @@
     {
       "name": "HorizontalThematicArea",
       "definition_uri": "https://w3id.org/linkml/examples/fsiHorizontalThematicArea",
+      "description": "Horizontal sustainability dimension.",
+      "title": "horizontal thematic area",
       "from_schema": "https://w3id.org/linkml/examples/fsi",
       "permissible_values": [
         {
@@ -511,6 +520,8 @@
     {
       "name": "SpatialScopeType",
       "definition_uri": "https://w3id.org/linkml/examples/fsiSpatialScopeType",
+      "description": "The spatial scope for which the indicator is defined.",
+      "title": "spatial scope type",
       "from_schema": "https://w3id.org/linkml/examples/fsi",
       "permissible_values": [
         {
@@ -712,7 +723,7 @@
       "domain_of": [
         "Indicator"
       ],
-      "range": "KeyArea",
+      "range": "SustainabilityDimension",
       "required": true,
       "@type": "SlotDefinition"
     },
@@ -731,7 +742,7 @@
       "inlined": true,
       "any_of": [
         {
-          "range": "environmental thematic area",
+          "range": "EnvironmentalThematicArea",
           "@type": "AnonymousSlotExpression"
         },
         {
@@ -957,7 +968,7 @@
           "required": true,
           "any_of": [
             {
-              "range": "environmental thematic area",
+              "range": "EnvironmentalThematicArea",
               "@type": "AnonymousSlotExpression"
             },
             {
@@ -995,7 +1006,7 @@
                 "name": "thematic_area",
                 "any_of": [
                   {
-                    "range": "environmental thematic area",
+                    "range": "EnvironmentalThematicArea",
                     "@type": "AnonymousSlotExpression"
                   }
                 ],
@@ -1157,9 +1168,9 @@
   ],
   "metamodel_version": "1.7.0",
   "source_file": "food_system_indicators.yaml",
-  "source_file_date": "2025-07-25T12:43:13",
-  "source_file_size": 8393,
-  "generation_date": "2025-07-25T13:02:48",
+  "source_file_date": "2025-07-25T15:11:56",
+  "source_file_size": 8958,
+  "generation_date": "2025-07-25T15:30:19",
   "@type": "SchemaDefinition",
   "@context": [
     "project/jsonld/food_system_indicators.context.jsonld",

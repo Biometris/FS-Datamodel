@@ -20,14 +20,6 @@ enum HorizontalThematicArea
     Resilience
   }
 
-enum KeyArea
-  {
-    Environmental
-    Economic
-    Social
-    Horizontal
-  }
-
 enum SocialThematicArea
   {
     FairInclusiveAndEthicalFoodSystem
@@ -41,6 +33,14 @@ enum SpatialScopeType
     EuMemberStates
     Regional
     Local
+  }
+
+enum SustainabilityDimension
+  {
+    Environmental
+    Economic
+    Social
+    Horizontal
   }
 
 type Any
@@ -60,7 +60,7 @@ type Indicator
     iri: IriType
     category: String!
     spatialScope: SpatialScopeType!
-    keyArea: KeyArea!
+    keyArea: SustainabilityDimension!
     thematicArea: Any!
     id: String!
     name: LabelType
