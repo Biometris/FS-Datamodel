@@ -34,8 +34,6 @@ src := "src"
 dest := "project"
 docdir := "docs"
 templatedir := src / "docs" / "templates"
-exampledir := "examples"
-datadir := "data"
 
 # Show current project status
 _status: _check-config
@@ -79,7 +77,7 @@ _gen-project:
     fi
 
 # Generate documentation
-_gendoc: _ensure_docdir _gen_viz _gen_er _gen_exampledata
+_gendoc: _ensure_docdir _gen_exampledata
     # DO NOT REMOVE: these cp statements are crucial to maintain the w3 ids for the model artifacts
     cp {{dest}}/owl/{{schema_name}}.owl.ttl {{docdir}}/{{schema_name}}.owl.ttl ; \
     cp {{dest}}/jsonld/{{schema_name}}.context.jsonld {{docdir}}/{{schema_name}}.context.jsonld ; \
@@ -94,20 +92,9 @@ _gendoc: _ensure_docdir _gen_viz _gen_er _gen_exampledata
     cp -r {{src}}/docs/files/* {{docdir}}
     gen-doc {{gen_doc_args}} -d {{docdir}} --template-directory {{templatedir}} {{source_schema_path}}    
 
-# Generate er diagram
-_gen_er:
-  gen-erdiagram {{source_schema_path}} > {{docdir}}/erdiagram.md
-
-# Generate plantuml diagram
-_gen_plantuml:
-  gen-plantuml {{source_schema_path}} --directory {{docdir}}  
-
 # Generate example data table
 _gen_exampledata:
   {{shebang}} {{src}}/scripts/generate_exampledata.py 
-
-_gen_viz:
-    {{shebang}} {{src}}/scripts/generate_json.py
 
 _ensure_docdir:
     -mkdir -p {{docdir}}
@@ -120,6 +107,3 @@ testdoc: _gendoc serve
 
 serve:
   - mkdocs serve
-
-mkdocs:
-  mkdocs

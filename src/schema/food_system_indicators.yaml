@@ -1,5 +1,6 @@
 id: https://w3id.org/linkml/examples/fsi
 name: food_system_indicators
+title: food systems indicators schema
 description: >-
   Model for the indicators on the sustainability performance of food Systems within Europe.
 prefixes:
@@ -55,7 +56,7 @@ classes:
         required: true
         range: Any
         any_of:
-          - range: EnvironmentalThematicArea
+          - range: environmental thematic area
           - range: EconomicThematicArea
           - range: SocialThematicArea
           - range: HorizontalThematicArea
@@ -78,7 +79,7 @@ classes:
           slot_conditions:
             thematic area: 
               any_of:
-                - range: EnvironmentalThematicArea
+                - range: environmental thematic area
       - preconditions:
           slot_conditions:
             key area:
@@ -265,6 +266,8 @@ types:
 
 enums:
   KeyArea:
+    description: >-
+      Main sustainability dimension.
     permissible_values:
       Environmental:
         description:
@@ -279,7 +282,7 @@ enums:
         description:
           horizontal thematic areas              
 
-  EnvironmentalThematicArea:
+  environmental thematic area:
     permissible_values:
       ClimateChange:
         description:

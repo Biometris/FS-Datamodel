@@ -1,1 +1,0 @@
-generateD3Tree("associations.json", {top: 10, right: 120, bottom: 10, left: 120}, camelcase = true );

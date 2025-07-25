@@ -9,7 +9,6 @@ plugins:
   - mermaid2
 nav:
   - Overview: index.md
-  - Model diagram: erdiagram.md
   - Example data: exampledata.md
   - About: about.md
 docs_dir: docs

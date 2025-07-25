@@ -1,6 +1,7 @@
 {
   "name": "food_system_indicators",
   "description": "Model for the indicators on the sustainability performance of food Systems within Europe.",
+  "title": "food systems indicators schema",
   "id": "https://w3id.org/linkml/examples/fsi",
   "imports": [
     "linkml:types"
@@ -410,6 +411,7 @@
     {
       "name": "KeyArea",
       "definition_uri": "https://w3id.org/linkml/examples/fsiKeyArea",
+      "description": "Main sustainability dimension.",
       "from_schema": "https://w3id.org/linkml/examples/fsi",
       "permissible_values": [
         {
@@ -431,7 +433,7 @@
       ]
     },
     {
-      "name": "EnvironmentalThematicArea",
+      "name": "environmental thematic area",
       "definition_uri": "https://w3id.org/linkml/examples/fsiEnvironmentalThematicArea",
       "from_schema": "https://w3id.org/linkml/examples/fsi",
       "permissible_values": [
@@ -729,7 +731,7 @@
       "inlined": true,
       "any_of": [
         {
-          "range": "EnvironmentalThematicArea",
+          "range": "environmental thematic area",
           "@type": "AnonymousSlotExpression"
         },
         {
@@ -955,7 +957,7 @@
           "required": true,
           "any_of": [
             {
-              "range": "EnvironmentalThematicArea",
+              "range": "environmental thematic area",
               "@type": "AnonymousSlotExpression"
             },
             {
@@ -993,7 +995,7 @@
                 "name": "thematic_area",
                 "any_of": [
                   {
-                    "range": "EnvironmentalThematicArea",
+                    "range": "environmental thematic area",
                     "@type": "AnonymousSlotExpression"
                   }
                 ],
@@ -1155,9 +1157,9 @@
   ],
   "metamodel_version": "1.7.0",
   "source_file": "food_system_indicators.yaml",
-  "source_file_date": "2025-07-25T09:59:52",
-  "source_file_size": 8289,
-  "generation_date": "2025-07-25T11:38:45",
+  "source_file_date": "2025-07-25T12:43:13",
+  "source_file_size": 8393,
+  "generation_date": "2025-07-25T13:02:48",
   "@type": "SchemaDefinition",
   "@context": [
     "project/jsonld/food_system_indicators.context.jsonld",

@@ -286,7 +286,7 @@
             "type": "object"
         },
         "KeyArea": {
-            "description": "",
+            "description": "Main sustainability dimension.",
             "enum": [
                 "Environmental",
                 "Economic",

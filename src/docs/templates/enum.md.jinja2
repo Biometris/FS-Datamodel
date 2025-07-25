@@ -1,4 +1,4 @@
-# <strong> Enum: </strong> {{ gen.name(element) }}
+# <strong> Enum: </strong> {{ element.name }}
 
 {% if element.description %}
 {% set element_description_lines = element.description.split('\n') %}
@@ -18,25 +18,3 @@ _{{ element_description_line }}_
 {% else %}
 _This is a dynamic enum_
 {% endif %}
-
-{% set slots_for_enum = schemaview.get_slots_by_enum(element.name) %}
-{% if slots_for_enum is defined and slots_for_enum|length > 0 -%}
-## Slots constrained by this enum
-
-| Name |
-| ---  |
-{% for s in schemaview.get_slots_by_enum(element.name) -%}
-| {{gen.link(s)}} |
-{% endfor %}
-{% endif %}
-
-{% include "common_metadata.md.jinja2" %}
-
-## LinkML Source
-
-<details open>
-```yaml
-{{gen.yaml(element)}}
-```
-</details>
-

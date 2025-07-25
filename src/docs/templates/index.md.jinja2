@@ -1,4 +1,4 @@
-# {{ schema.name }}
+# {{ schema.title | upper }}
 
 {{ schema.description }}
 
@@ -8,21 +8,16 @@
 {{ gen.mermaid_diagram() }}
 ```
 
-## Model components
+## Glossary
 
-| Type | Class | Description |
+| Label | Name | Description | Type |
 {% for c in schemaview.all_classes(ordered_by="lexical").values()|sort(attribute='name') -%}
 {%- if 'association' not in schemaview.class_ancestors(c.name) and not schemaview.is_mixin(c.name) -%}
-| --- | --- | --- |
-| Class | {{gen.link(c)}} | {{c.description}} |
-{%- endif -%}
-{% endfor %}
-{% for np in schemaview.all_slots(ordered_by="lexical").values()|sort(attribute='name') -%}
-{%- if 'node property' in schemaview.slot_ancestors(np.name) -%}
-| Property | {{gen.link(np)}} | {{np.description}} |
+| --- | --- | --- | --- |
+| {{gen.link(c)}} | [{{ c.name | capitalize }}]({{ gen.uri(c) }}) | {{c.description}} | Class |
 {%- endif -%}
 {% endfor %}
 {% for e in schemaview.all_enums().values()|sort(attribute='name') -%}
-| Enum | {{gen.link(e)}} | {{e.description}} |
+| {{gen.link(e)}} | [{{ e.name | capitalize }}]({{ gen.uri(e) }}) |{{e.description}} | Enum |
 {% endfor %}
  

@@ -1,5 +1,5 @@
 # Auto generated from food_system_indicators.yaml by pythongen.py version: 0.0.1
-# Generation date: 2025-07-25T11:38:46
+# Generation date: 2025-07-25T13:02:48
 # Schema: food_system_indicators
 #
 # id: https://w3id.org/linkml/examples/fsi
@@ -326,7 +326,9 @@ class IndicatorDatapoint(QuantityValue):
 
 # Enumerations
 class KeyArea(EnumDefinitionImpl):
-
+    """
+    Main sustainability dimension.
+    """
     Environmental = PermissibleValue(
         text="Environmental",
         description="environmental")
@@ -342,6 +344,7 @@ class KeyArea(EnumDefinitionImpl):
 
     _defn = EnumDefinition(
         name="KeyArea",
+        description="Main sustainability dimension.",
     )
 
 class EnvironmentalThematicArea(EnumDefinitionImpl):

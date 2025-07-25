@@ -12,6 +12,7 @@
 
 fsi:.owl.ttl a owl:Ontology ;
     rdfs:label "food_system_indicators" ;
+    dct:title "food systems indicators schema" ;
     skos:definition "Model for the indicators on the sustainability performance of food Systems within Europe." .
 
 fsi:IndicatorDatapointCollection a owl:Class ;
@@ -42,23 +43,23 @@ fsi:Any a owl:Class ;
 fsi:IndicatorDatapoint a owl:Class ;
     rdfs:label "indicator datapoint" ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:measurement_of ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty fsi:measurement_of ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:id ],
+        [ a owl:Restriction ;
             owl:allValuesFrom xsd:string ;
             owl:onProperty fsi:id ],
         [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:measurement_of ],
+            owl:minCardinality 1 ;
+            owl:onProperty fsi:id ],
         [ a owl:Restriction ;
             owl:allValuesFrom fsi:Indicator ;
             owl:onProperty fsi:measurement_of ],
-        [ a owl:Restriction ;
-            owl:minCardinality 1 ;
-            owl:onProperty fsi:measurement_of ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:id ],
-        [ a owl:Restriction ;
-            owl:minCardinality 1 ;
-            owl:onProperty fsi:id ],
         fsi:QuantityValue ;
     skos:definition "Food system indicator datapoint." ;
     skos:inScheme fsi: .
@@ -159,64 +160,64 @@ fsi:node_property a owl:DatatypeProperty ;
 fsi:Entity a owl:Class ;
     rdfs:label "entity" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:minCardinality 0 ;
+            owl:maxCardinality 1 ;
             owl:onProperty fsi:description ],
         [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:id ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty fsi:iri ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:iri ],
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty fsi:description ],
         [ a owl:Restriction ;
             owl:minCardinality 1 ;
             owl:onProperty fsi:id ],
         [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:iri ],
+        [ a owl:Restriction ;
             owl:allValuesFrom xsd:string ;
+            owl:onProperty fsi:name ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
             owl:onProperty fsi:description ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
             owl:onProperty fsi:name ],
         [ a owl:Restriction ;
             owl:allValuesFrom xsd:string ;
-            owl:onProperty fsi:name ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom xsd:string ;
-            owl:onProperty fsi:iri ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom xsd:string ;
             owl:onProperty fsi:id ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
-            owl:onProperty fsi:description ],
+            owl:onProperty fsi:iri ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
-            owl:onProperty fsi:name ] ;
+            owl:onProperty fsi:name ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:id ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty fsi:iri ] ;
     skos:definition "Root class for all things and informational relationships, real or imagined." ;
     skos:inScheme fsi: .
 
 fsi:QuantityValue a owl:Class ;
     rdfs:label "quantity value" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty fsi:has_unit ],
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:has_numeric_value ],
         [ a owl:Restriction ;
             owl:allValuesFrom UO:0000000 ;
             owl:onProperty fsi:has_unit ],
         [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:has_numeric_value ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
+            owl:minCardinality 0 ;
             owl:onProperty fsi:has_unit ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:double ;
+            owl:onProperty fsi:has_numeric_value ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
             owl:onProperty fsi:has_numeric_value ],
         [ a owl:Restriction ;
-            owl:allValuesFrom xsd:double ;
-            owl:onProperty fsi:has_numeric_value ],
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:has_unit ],
         fsi:NamedThing ;
     skos:definition "A value of an attribute that is quantitative and measurable, expressed as a combination of a unit and a numeric value" ;
     skos:inScheme fsi: .
@@ -270,10 +271,10 @@ fsi:HorizontalThematicArea a owl:Class ;
 fsi:NamedThing a owl:Class ;
     rdfs:label "named thing" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:minCardinality 1 ;
+            owl:maxCardinality 1 ;
             owl:onProperty fsi:category ],
         [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
+            owl:minCardinality 1 ;
             owl:onProperty fsi:category ],
         [ a owl:Restriction ;
             owl:allValuesFrom xsd:string ;
@@ -292,58 +293,58 @@ fsi:Indicator a owl:Class ;
     rdfs:label "indicator" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:maxCardinality 1 ;
-            owl:onProperty fsi:key_area ],
-        [ a owl:Restriction ;
-            owl:minCardinality 1 ;
             owl:onProperty fsi:spatial_scope ],
         [ a owl:Restriction ;
-            owl:allValuesFrom xsd:string ;
-            owl:onProperty fsi:name ],
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:id ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
             owl:onProperty fsi:description ],
         [ a owl:Restriction ;
             owl:minCardinality 1 ;
-            owl:onProperty fsi:id ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:spatial_scope ],
-        [ a owl:Restriction ;
-            owl:minCardinality 1 ;
             owl:onProperty fsi:key_area ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom xsd:string ;
-            owl:onProperty fsi:id ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:thematic_area ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:name ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
             owl:onProperty fsi:description ],
         [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
+            owl:allValuesFrom xsd:string ;
             owl:onProperty fsi:id ],
         [ a owl:Restriction ;
-            owl:minCardinality 1 ;
-            owl:onProperty fsi:thematic_area ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty fsi:name ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom fsi:KeyArea ;
-            owl:onProperty fsi:key_area ],
-        [ a owl:Restriction ;
             owl:allValuesFrom xsd:string ;
-            owl:onProperty fsi:description ],
+            owl:onProperty fsi:name ],
         [ a owl:Restriction ;
             owl:allValuesFrom [ owl:intersectionOf ( [ owl:unionOf ( fsi:EnvironmentalThematicArea fsi:EconomicThematicArea fsi:SocialThematicArea fsi:HorizontalThematicArea ) ] fsi:Any ) ] ;
             owl:onProperty fsi:thematic_area ],
         [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:thematic_area ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty fsi:thematic_area ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:name ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty fsi:id ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty fsi:description ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty fsi:spatial_scope ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom fsi:KeyArea ;
+            owl:onProperty fsi:key_area ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:name ],
+        [ a owl:Restriction ;
             owl:allValuesFrom fsi:SpatialScopeType ;
             owl:onProperty fsi:spatial_scope ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:key_area ],
         fsi:NamedThing ;
     skos:definition "Food system indicator." ;
     skos:inScheme fsi: .
@@ -412,14 +413,14 @@ xsd:string a rdfs:Datatype ;
 
 [] rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty fsi:thematic_area ;
-            owl:someValuesFrom fsi:SocialThematicArea ] ;
+            owl:someValuesFrom fsi:EnvironmentalThematicArea ] ;
     owl:intersectionOf ( [ a owl:Restriction ;
                 owl:onProperty fsi:key_area ;
                 owl:someValuesFrom xsd:string ] fsi:Indicator ) .
 
 [] rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty fsi:thematic_area ;
-            owl:someValuesFrom fsi:EnvironmentalThematicArea ] ;
+            owl:someValuesFrom fsi:HorizontalThematicArea ] ;
     owl:intersectionOf ( [ a owl:Restriction ;
                 owl:onProperty fsi:key_area ;
                 owl:someValuesFrom xsd:string ] fsi:Indicator ) .
@@ -433,7 +434,7 @@ xsd:string a rdfs:Datatype ;
 
 [] rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty fsi:thematic_area ;
-            owl:someValuesFrom fsi:HorizontalThematicArea ] ;
+            owl:someValuesFrom fsi:SocialThematicArea ] ;
     owl:intersectionOf ( [ a owl:Restriction ;
                 owl:onProperty fsi:key_area ;
                 owl:someValuesFrom xsd:string ] fsi:Indicator ) .
