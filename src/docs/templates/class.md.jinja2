@@ -1,4 +1,4 @@
-# <strong>  Class: {{ element.nametitle }} </strong> {% if element.deprecated %} <span style="color: red;"><strong> (DEPRECATED) </strong></span>{% endif %}{% if element.abstract %}<span style="color: purple;"><strong><small> (Abstract) </small> </strong></span> {% endif %}
+# {{ element.title | capitalize }} {% if element.deprecated %} <span style="color: red;"><strong> (DEPRECATED) </strong></span>{% endif %}{% if element.abstract %}<span style="color: purple;"><strong><small> (Abstract) </small> </strong></span> {% endif %}
 {% if element.description or element.notes %}
 <div class="highlight-box">
     {% if element.description %}
@@ -50,7 +50,7 @@
 {% if schemaview.usage_index().get(element.name) %}
 ## Usages
 
-| used by | used in | type | used |
+| Used by | Used in | Type | Used |
 | ---  | --- | --- | --- |
 {% for usage in schemaview.usage_index().get(element.name) -%}
 | {{gen.link(usage.used_by)}} | {{gen.link(usage.slot)}} | {{usage.metaslot}} | {{ gen.link(usage.used) }} |

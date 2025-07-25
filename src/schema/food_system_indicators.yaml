@@ -21,7 +21,8 @@ default_prefix: fsi
 
 classes:
 
-  entity:
+  Entity:
+    title: entity
     description: >-
       Root class for all things and informational relationships, real or imagined.
     abstract: true
@@ -31,35 +32,20 @@ classes:
       - name
       - description
 
-  named thing:
-    is_a: entity
-    description: >-
-      A databased entity or concept/class.
-    slot_usage:
-      category:
-        required: true
-
-  Any:
+  ThematicArea:
+    title: thematic area
+    description: a thematic area
     class_uri: linkml:Any
 
-  indicator:
-    is_a: named thing
+  Indicator:
+    is_a: Entity
+    title: indicator
     description: >-
       Food system indicator.
     slots: 
-      - spatial scope
-      - key area
-    attributes:
-      thematic area:
-        description:
-          the thematic area the indicator belongs to
-        required: true
-        range: Any
-        any_of:
-          - range: EnvironmentalThematicArea
-          - range: EconomicThematicArea
-          - range: SocialThematicArea
-          - range: HorizontalThematicArea
+      - spatial_scope
+      - key_area
+      - thematic_area
     slot_usage:    
       id:        
         description:
@@ -73,67 +59,71 @@ classes:
     rules:
       - preconditions:
           slot_conditions:
-            key area:
+            key_area:
               equals_string: Environmental
         postconditions:
           slot_conditions:
-            thematic area: 
+            thematic_area: 
               any_of:
                 - range: EnvironmentalThematicArea
       - preconditions:
           slot_conditions:
-            key area:
+            key_area:
               equals_string: Economic
         postconditions:
           slot_conditions:        
-            thematic area: 
+            thematic_area: 
               any_of:
                 - range: EconomicThematicArea
       - preconditions:
           slot_conditions:
-            key area:
+            key_area:
               equals_string: Social
         postconditions:
           slot_conditions:
-            thematic area: 
+            thematic_area: 
               any_of:
                 - range: SocialThematicArea
       - preconditions:
           slot_conditions:
-            key area:
+            key_area:
               equals_string: Horizontal
         postconditions:
           slot_conditions:
-            thematic area: 
+            thematic_area: 
               any_of:
                 - range: HorizontalThematicArea
 
-  indicator datapoint:
-    is_a: quantity value
+  IndicatorDatapoint:
+    is_a: QuantityValue
+    title: indicator datapoint
     description: >-
       Food system indicator datapoint.
     slots:
-      - measurement of
+      - measurement_of
     slot_usage:
       id:        
         description:
           unique identifier of the datapoint
 
-  indicator datapoint collection:
-    tree_root: true
+  IndicatorDatapointCollection:
+    title: indicator datapoint collection 
     description: >-
       Collection of food system indicator datapoints.
+    tree_root: true
     attributes:
       indicator datapoints:
+        title: indicator datapoints
         multivalued: true
         inlined_as_list: true
-        range: indicator datapoint
+        range: IndicatorDatapoint
 
-  quantity value:
-    is_a: named thing
+  QuantityValue:
+    title: quantity value
     description: >-
       A value of an attribute that is quantitative and measurable,
       expressed as a combination of a unit and a numeric value
+    is_a: Entity
     slots:
       - has unit
       - has numeric value
@@ -146,7 +136,7 @@ slots:
   node property:
     description: >-
       A grouping for any property that holds between a node and a value.
-    domain: named thing
+    domain: Entity
 
   description:
     aliases: ['definition']
@@ -161,7 +151,7 @@ slots:
   has numeric value:
     description: >-
       connects a quantity value to a number
-    domain: quantity value
+    domain: QuantityValue
     range: double
     multivalued: false
     exact_mappings:
@@ -170,7 +160,7 @@ slots:
   has unit:
     description: >-
       connects a quantity value to a unit
-    domain: quantity value
+    domain: QuantityValue
     range: unit
     multivalued: false
     exact_mappings:
@@ -179,7 +169,7 @@ slots:
 
   id:
     identifier: true
-    domain: entity
+    domain: Entity
     description: >-
       A unique identifier for an entity.
     required: true
@@ -189,43 +179,50 @@ slots:
       An IRI for an entity. This is determined by the id using expansion rules.
     range: iri_type
 
-  measurement of:
+  measurement_of:
+    title: measurement of
     is_a: node property
-    range: indicator
+    range: Indicator
     required: true
     description:
       Indicator 
 
   name:
+    title: name
     aliases: ['label', 'display name', 'title']
     description: >-
       A human-readable name for an attribute or entity.
-    domain: entity
+    domain: Entity
     range: label_type
     slot_uri: rdfs:label
     narrow_mappings:
       - dct:title
 
-  synonym:
-    is_a: node property
-    aliases: ['alias']
-    domain: named thing
-    range: label_type
-    description: >-
-      Alternate human-readable names for a thing
-    multivalued: true
-
-  spatial scope:
+  spatial_scope:
+    title: spatial scope
     required: true
     range: SpatialScopeType
     description:
       Reference to the spatial unit that the indicator describes
 
-  key area:
+  key_area:
+    title: key area
     required: true
     range: SustainabilityDimension    
     description:
       Reference to the thematic area that the indicator belongs to
+
+  thematic_area:
+    title: thematic area
+    description:
+      the thematic area the indicator belongs to
+    required: true
+    range: ThematicArea
+    any_of:
+      - range: EnvironmentalThematicArea
+      - range: EconomicThematicArea
+      - range: SocialThematicArea
+      - range: HorizontalThematicArea
    
 ## --------------------
 ## TYPES

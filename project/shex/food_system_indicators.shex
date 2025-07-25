@@ -54,27 +54,23 @@ linkml:Jsonpath xsd:string
 
 linkml:Sparqlpath xsd:string
 
-<https://w3id.org/linkml/examples/fsiAny> CLOSED {
-    (  $<https://w3id.org/linkml/examples/fsiAny_tes> rdf:type . * ;
-       rdf:type [ linkml:Any ] ?
+<https://w3id.org/linkml/examples/fsiEntity>  (
+    @<https://w3id.org/linkml/examples/fsiIndicator> OR @<https://w3id.org/linkml/examples/fsiQuantityValue>
+)
+
+<https://w3id.org/linkml/examples/fsiEntity_struct> {
+    (  $<https://w3id.org/linkml/examples/fsiEntity_tes> (  <https://w3id.org/linkml/examples/fsiiri>
+          @<https://w3id.org/linkml/examples/fsiIriType> ? ;
+          rdfs:label @<https://w3id.org/linkml/examples/fsiLabelType> ? ;
+          dct:description @<https://w3id.org/linkml/examples/fsiNarrativeText> ?
+       ) ;
+       rdf:type [ <https://w3id.org/linkml/examples/fsiEntity> ]
     )
 }
 
-<https://w3id.org/linkml/examples/fsiEntity>  (
-    {
-       (  $<https://w3id.org/linkml/examples/fsiEntity_tes> (  <https://w3id.org/linkml/examples/fsiiri>
-             @<https://w3id.org/linkml/examples/fsiIriType> ? ;
-             rdfs:label @<https://w3id.org/linkml/examples/fsiLabelType> ? ;
-             dct:description @<https://w3id.org/linkml/examples/fsiNarrativeText> ?
-          ) ;
-          rdf:type [ <https://w3id.org/linkml/examples/fsiEntity> ]
-       )
-    } OR @<https://w3id.org/linkml/examples/fsiNamedThing>
-)
-
 <https://w3id.org/linkml/examples/fsiIndicator> CLOSED {
-    (  $<https://w3id.org/linkml/examples/fsiIndicator_tes> (  &<https://w3id.org/linkml/examples/fsiNamedThing_tes> ;
-          rdf:type [ <https://w3id.org/linkml/examples/fsiNamedThing> ] ? ;
+    (  $<https://w3id.org/linkml/examples/fsiIndicator_tes> (  &<https://w3id.org/linkml/examples/fsiEntity_tes> ;
+          rdf:type [ <https://w3id.org/linkml/examples/fsiEntity> ] ? ;
           <https://w3id.org/linkml/examples/fsispatial_scope> [ <https://w3id.org/linkml/examples/fsiSpatialScopeType#Eu>
              <https://w3id.org/linkml/examples/fsiSpatialScopeType#EuMemberStates>
              <https://w3id.org/linkml/examples/fsiSpatialScopeType#Regional>
@@ -84,7 +80,7 @@ linkml:Sparqlpath xsd:string
              <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Economic>
              <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Social>
              <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Horizontal> ] ;
-          <https://w3id.org/linkml/examples/fsithematic_area> @<https://w3id.org/linkml/examples/fsiAny> ;
+          <https://w3id.org/linkml/examples/fsithematic_area> @<https://w3id.org/linkml/examples/fsiThematicArea> ;
           rdfs:label @<https://w3id.org/linkml/examples/fsiLabelType> ? ;
           dct:description @<https://w3id.org/linkml/examples/fsiNarrativeText> ?
        ) ;
@@ -108,21 +104,10 @@ linkml:Sparqlpath xsd:string
     )
 }
 
-<https://w3id.org/linkml/examples/fsiNamedThing>  (
-    CLOSED {
-       (  $<https://w3id.org/linkml/examples/fsiNamedThing_tes> (  &<https://w3id.org/linkml/examples/fsiEntity_tes> ;
-             rdf:type [ <https://w3id.org/linkml/examples/fsiEntity> ] ? ;
-             <https://w3id.org/linkml/examples/fsicategory> @linkml:String
-          ) ;
-          rdf:type [ <https://w3id.org/linkml/examples/fsiNamedThing> ]
-       )
-    } OR @<https://w3id.org/linkml/examples/fsiIndicator> OR @<https://w3id.org/linkml/examples/fsiQuantityValue>
-)
-
 <https://w3id.org/linkml/examples/fsiQuantityValue>  (
     CLOSED {
-       (  $<https://w3id.org/linkml/examples/fsiQuantityValue_tes> (  &<https://w3id.org/linkml/examples/fsiNamedThing_tes> ;
-             rdf:type [ <https://w3id.org/linkml/examples/fsiNamedThing> ] ? ;
+       (  $<https://w3id.org/linkml/examples/fsiQuantityValue_tes> (  &<https://w3id.org/linkml/examples/fsiEntity_tes> ;
+             rdf:type [ <https://w3id.org/linkml/examples/fsiEntity> ] ? ;
              <https://w3id.org/linkml/examples/fsihas_unit> @<https://w3id.org/linkml/examples/fsiUnit> ? ;
              <https://w3id.org/linkml/examples/fsihas_numeric_value> @linkml:Double ?
           ) ;
@@ -130,4 +115,10 @@ linkml:Sparqlpath xsd:string
        )
     } OR @<https://w3id.org/linkml/examples/fsiIndicatorDatapoint>
 )
+
+<https://w3id.org/linkml/examples/fsiThematicArea> CLOSED {
+    (  $<https://w3id.org/linkml/examples/fsiThematicArea_tes> rdf:type . * ;
+       rdf:type [ linkml:Any ] ?
+    )
+}
 

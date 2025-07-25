@@ -1,17 +1,5 @@
 {
     "$defs": {
-        "Any": {
-            "additionalProperties": true,
-            "description": "",
-            "title": "Any",
-            "type": [
-                "null",
-                "boolean",
-                "object",
-                "number",
-                "string"
-            ]
-        },
         "EconomicThematicArea": {
             "description": "Economic sustainability dimension.",
             "enum": [
@@ -186,7 +174,7 @@
                     "description": "Reference to the spatial unit that the indicator describes"
                 },
                 "thematic_area": {
-                    "$ref": "#/$defs/Any",
+                    "$ref": "#/$defs/ThematicArea",
                     "anyOf": [
                         {
                             "$ref": "#/$defs/EnvironmentalThematicArea"
@@ -285,42 +273,6 @@
             "title": "IndicatorDatapointCollection",
             "type": "object"
         },
-        "NamedThing": {
-            "additionalProperties": false,
-            "description": "A databased entity or concept/class.",
-            "properties": {
-                "description": {
-                    "description": "A human-readable description of an entity.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "id": {
-                    "description": "A unique identifier for an entity.",
-                    "type": "string"
-                },
-                "iri": {
-                    "description": "An IRI for an entity. This is determined by the id using expansion rules.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "name": {
-                    "description": "A human-readable name for an attribute or entity.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                }
-            },
-            "required": [
-                "id"
-            ],
-            "title": "NamedThing",
-            "type": "object"
-        },
         "QuantityValue": {
             "additionalProperties": false,
             "description": "A value of an attribute that is quantitative and measurable, expressed as a combination of a unit and a numeric value",
@@ -402,6 +354,18 @@
             ],
             "title": "SustainabilityDimension",
             "type": "string"
+        },
+        "ThematicArea": {
+            "additionalProperties": true,
+            "description": "a thematic area",
+            "title": "ThematicArea",
+            "type": [
+                "null",
+                "boolean",
+                "object",
+                "number",
+                "string"
+            ]
         }
     },
     "$id": "https://w3id.org/linkml/examples/fsi",

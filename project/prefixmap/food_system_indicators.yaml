@@ -9,7 +9,7 @@
    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
    "schema": "http://schema.org/",
    "skos": "http://www.w3.org/2004/02/skos/core#",
-   "Any": {
+   "ThematicArea": {
       "@id": "linkml:Any"
    }
 }

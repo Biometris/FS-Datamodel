@@ -43,10 +43,6 @@ enum SustainabilityDimension
     Horizontal
   }
 
-type Any
-  {
-  }
-
 interface Entity
   {
     id: String!
@@ -58,10 +54,9 @@ interface Entity
 type Indicator
   {
     iri: IriType
-    category: String!
     spatialScope: SpatialScopeType!
     keyArea: SustainabilityDimension!
-    thematicArea: Any!
+    thematicArea: ThematicArea!
     id: String!
     name: LabelType
     description: NarrativeText
@@ -72,7 +67,6 @@ type IndicatorDatapoint
     iri: IriType
     name: LabelType
     description: NarrativeText
-    category: String!
     hasUnit: Unit
     hasNumericValue: Double
     measurementOf: Indicator!
@@ -84,23 +78,17 @@ type IndicatorDatapointCollection
     indicatorDatapoints: [IndicatorDatapoint]
   }
 
-type NamedThing
-  {
-    id: String!
-    iri: IriType
-    name: LabelType
-    description: NarrativeText
-    category: String!
-  }
-
 type QuantityValue
   {
     id: String!
     iri: IriType
     name: LabelType
     description: NarrativeText
-    category: String!
     hasUnit: Unit
     hasNumericValue: Double
+  }
+
+type ThematicArea
+  {
   }
 

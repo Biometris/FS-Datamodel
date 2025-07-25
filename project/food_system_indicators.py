@@ -1,5 +1,5 @@
 # Auto generated from food_system_indicators.yaml by pythongen.py version: 0.0.1
-# Generation date: 2025-07-25T15:30:20
+# Generation date: 2025-07-25T16:30:37
 # Schema: food_system_indicators
 #
 # id: https://w3id.org/linkml/examples/fsi
@@ -114,15 +114,11 @@ class EntityId(extended_str):
     pass
 
 
-class NamedThingId(EntityId):
+class IndicatorId(EntityId):
     pass
 
 
-class IndicatorId(NamedThingId):
-    pass
-
-
-class QuantityValueId(NamedThingId):
+class QuantityValueId(EntityId):
     pass
 
 
@@ -139,7 +135,7 @@ class Entity(YAMLRoot):
 
     class_class_uri: ClassVar[URIRef] = FSI["Entity"]
     class_class_curie: ClassVar[str] = "fsi:Entity"
-    class_name: ClassVar[str] = "entity"
+    class_name: ClassVar[str] = "Entity"
     class_model_uri: ClassVar[URIRef] = FSI.Entity
 
     id: Union[str, EntityId] = None
@@ -165,39 +161,10 @@ class Entity(YAMLRoot):
         super().__post_init__(**kwargs)
 
 
-@dataclass(repr=False)
-class NamedThing(Entity):
-    """
-    A databased entity or concept/class.
-    """
-    _inherited_slots: ClassVar[list[str]] = []
-
-    class_class_uri: ClassVar[URIRef] = FSI["NamedThing"]
-    class_class_curie: ClassVar[str] = "fsi:NamedThing"
-    class_name: ClassVar[str] = "named thing"
-    class_model_uri: ClassVar[URIRef] = FSI.NamedThing
-
-    id: Union[str, NamedThingId] = None
-    category: str = None
-
-    def __post_init__(self, *_: str, **kwargs: Any):
-        if self._is_empty(self.id):
-            self.MissingRequiredField("id")
-        if not isinstance(self.id, NamedThingId):
-            self.id = NamedThingId(self.id)
-
-        if self._is_empty(self.category):
-            self.MissingRequiredField("category")
-        if not isinstance(self.category, str):
-            self.category = str(self.category)
-
-        super().__post_init__(**kwargs)
-
-
-Any = Any
+ThematicArea = Any
 
 @dataclass(repr=False)
-class Indicator(NamedThing):
+class Indicator(Entity):
     """
     Food system indicator.
     """
@@ -205,14 +172,13 @@ class Indicator(NamedThing):
 
     class_class_uri: ClassVar[URIRef] = FSI["Indicator"]
     class_class_curie: ClassVar[str] = "fsi:Indicator"
-    class_name: ClassVar[str] = "indicator"
+    class_name: ClassVar[str] = "Indicator"
     class_model_uri: ClassVar[URIRef] = FSI.Indicator
 
     id: Union[str, IndicatorId] = None
-    category: str = None
     spatial_scope: Union[str, "SpatialScopeType"] = None
     key_area: Union[str, "SustainabilityDimension"] = None
-    thematic_area: Union[dict, Any] = None
+    thematic_area: Union[dict, ThematicArea] = None
     name: Optional[Union[str, LabelType]] = None
     description: Optional[Union[str, NarrativeText]] = None
 
@@ -250,7 +216,7 @@ class IndicatorDatapointCollection(YAMLRoot):
 
     class_class_uri: ClassVar[URIRef] = FSI["IndicatorDatapointCollection"]
     class_class_curie: ClassVar[str] = "fsi:IndicatorDatapointCollection"
-    class_name: ClassVar[str] = "indicator datapoint collection"
+    class_name: ClassVar[str] = "IndicatorDatapointCollection"
     class_model_uri: ClassVar[URIRef] = FSI.IndicatorDatapointCollection
 
     indicator_datapoints: Optional[Union[dict[Union[str, IndicatorDatapointId], Union[dict, "IndicatorDatapoint"]], list[Union[dict, "IndicatorDatapoint"]]]] = empty_dict()
@@ -262,7 +228,7 @@ class IndicatorDatapointCollection(YAMLRoot):
 
 
 @dataclass(repr=False)
-class QuantityValue(NamedThing):
+class QuantityValue(Entity):
     """
     A value of an attribute that is quantitative and measurable, expressed as a combination of a unit and a numeric
     value
@@ -271,11 +237,10 @@ class QuantityValue(NamedThing):
 
     class_class_uri: ClassVar[URIRef] = FSI["QuantityValue"]
     class_class_curie: ClassVar[str] = "fsi:QuantityValue"
-    class_name: ClassVar[str] = "quantity value"
+    class_name: ClassVar[str] = "QuantityValue"
     class_model_uri: ClassVar[URIRef] = FSI.QuantityValue
 
     id: Union[str, QuantityValueId] = None
-    category: str = None
     has_unit: Optional[Union[str, Unit]] = None
     has_numeric_value: Optional[float] = None
 
@@ -303,11 +268,10 @@ class IndicatorDatapoint(QuantityValue):
 
     class_class_uri: ClassVar[URIRef] = FSI["IndicatorDatapoint"]
     class_class_curie: ClassVar[str] = "fsi:IndicatorDatapoint"
-    class_name: ClassVar[str] = "indicator datapoint"
+    class_name: ClassVar[str] = "IndicatorDatapoint"
     class_model_uri: ClassVar[URIRef] = FSI.IndicatorDatapoint
 
     id: Union[str, IndicatorDatapointId] = None
-    category: str = None
     measurement_of: Union[str, IndicatorId] = None
 
     def __post_init__(self, *_: str, **kwargs: Any):
@@ -450,7 +414,7 @@ class slots:
     pass
 
 slots.node_property = Slot(uri=FSI.node_property, name="node property", curie=FSI.curie('node_property'),
-                   model_uri=FSI.node_property, domain=NamedThing, range=Optional[str])
+                   model_uri=FSI.node_property, domain=Entity, range=Optional[str])
 
 slots.description = Slot(uri=DCT.description, name="description", curie=DCT.curie('description'),
                    model_uri=FSI.description, domain=None, range=Optional[Union[str, NarrativeText]])
@@ -467,41 +431,32 @@ slots.id = Slot(uri=FSI.id, name="id", curie=FSI.curie('id'),
 slots.iri = Slot(uri=FSI.iri, name="iri", curie=FSI.curie('iri'),
                    model_uri=FSI.iri, domain=None, range=Optional[Union[str, IriType]])
 
-slots.measurement_of = Slot(uri=FSI.measurement_of, name="measurement of", curie=FSI.curie('measurement_of'),
-                   model_uri=FSI.measurement_of, domain=NamedThing, range=Union[str, IndicatorId])
+slots.measurement_of = Slot(uri=FSI.measurement_of, name="measurement_of", curie=FSI.curie('measurement_of'),
+                   model_uri=FSI.measurement_of, domain=Entity, range=Union[str, IndicatorId])
 
 slots.name = Slot(uri=RDFS.label, name="name", curie=RDFS.curie('label'),
                    model_uri=FSI.name, domain=Entity, range=Optional[Union[str, LabelType]])
 
-slots.synonym = Slot(uri=FSI.synonym, name="synonym", curie=FSI.curie('synonym'),
-                   model_uri=FSI.synonym, domain=NamedThing, range=Optional[Union[Union[str, LabelType], list[Union[str, LabelType]]]])
-
-slots.spatial_scope = Slot(uri=FSI.spatial_scope, name="spatial scope", curie=FSI.curie('spatial_scope'),
+slots.spatial_scope = Slot(uri=FSI.spatial_scope, name="spatial_scope", curie=FSI.curie('spatial_scope'),
                    model_uri=FSI.spatial_scope, domain=None, range=Union[str, "SpatialScopeType"])
 
-slots.key_area = Slot(uri=FSI.key_area, name="key area", curie=FSI.curie('key_area'),
+slots.key_area = Slot(uri=FSI.key_area, name="key_area", curie=FSI.curie('key_area'),
                    model_uri=FSI.key_area, domain=None, range=Union[str, "SustainabilityDimension"])
 
-slots.indicator__thematic_area = Slot(uri=FSI.thematic_area, name="indicator__thematic_area", curie=FSI.curie('thematic_area'),
-                   model_uri=FSI.indicator__thematic_area, domain=None, range=Union[dict, Any])
+slots.thematic_area = Slot(uri=FSI.thematic_area, name="thematic_area", curie=FSI.curie('thematic_area'),
+                   model_uri=FSI.thematic_area, domain=None, range=Union[dict, ThematicArea])
 
 slots.indicatorDatapointCollection__indicator_datapoints = Slot(uri=FSI.indicator_datapoints, name="indicatorDatapointCollection__indicator_datapoints", curie=FSI.curie('indicator_datapoints'),
                    model_uri=FSI.indicatorDatapointCollection__indicator_datapoints, domain=None, range=Optional[Union[dict[Union[str, IndicatorDatapointId], Union[dict, IndicatorDatapoint]], list[Union[dict, IndicatorDatapoint]]]])
 
-slots.category = Slot(uri=FSI.category, name="category", curie=FSI.curie('category'),
-                   model_uri=FSI.category, domain=None, range=str)
+slots.Indicator_id = Slot(uri=FSI.id, name="Indicator_id", curie=FSI.curie('id'),
+                   model_uri=FSI.Indicator_id, domain=Indicator, range=Union[str, IndicatorId])
 
-slots.named_thing_category = Slot(uri=FSI.category, name="named thing_category", curie=FSI.curie('category'),
-                   model_uri=FSI.named_thing_category, domain=NamedThing, range=str)
+slots.Indicator_name = Slot(uri=RDFS.label, name="Indicator_name", curie=RDFS.curie('label'),
+                   model_uri=FSI.Indicator_name, domain=Indicator, range=Optional[Union[str, LabelType]])
 
-slots.indicator_id = Slot(uri=FSI.id, name="indicator_id", curie=FSI.curie('id'),
-                   model_uri=FSI.indicator_id, domain=Indicator, range=Union[str, IndicatorId])
+slots.Indicator_description = Slot(uri=DCT.description, name="Indicator_description", curie=DCT.curie('description'),
+                   model_uri=FSI.Indicator_description, domain=Indicator, range=Optional[Union[str, NarrativeText]])
 
-slots.indicator_name = Slot(uri=RDFS.label, name="indicator_name", curie=RDFS.curie('label'),
-                   model_uri=FSI.indicator_name, domain=Indicator, range=Optional[Union[str, LabelType]])
-
-slots.indicator_description = Slot(uri=DCT.description, name="indicator_description", curie=DCT.curie('description'),
-                   model_uri=FSI.indicator_description, domain=Indicator, range=Optional[Union[str, NarrativeText]])
-
-slots.indicator_datapoint_id = Slot(uri=FSI.id, name="indicator datapoint_id", curie=FSI.curie('id'),
-                   model_uri=FSI.indicator_datapoint_id, domain=IndicatorDatapoint, range=Union[str, IndicatorDatapointId])
+slots.IndicatorDatapoint_id = Slot(uri=FSI.id, name="IndicatorDatapoint_id", curie=FSI.curie('id'),
+                   model_uri=FSI.IndicatorDatapoint_id, domain=IndicatorDatapoint, range=Union[str, IndicatorDatapointId])

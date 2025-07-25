@@ -5,10 +5,9 @@
 message Indicator
  {
   iriType iri = 0
-  string category = 0
   spatialScopeType spatialScope = 0
   sustainabilityDimension keyArea = 0
-  any thematicArea = 0
+  thematicArea thematicArea = 0
   string id = 0
   labelType name = 0
   narrativeText description = 0
@@ -19,7 +18,6 @@ message IndicatorDatapoint
   iriType iri = 0
   labelType name = 0
   narrativeText description = 0
-  string category = 0
   unit hasUnit = 0
   double hasNumericValue = 0
   indicator measurementOf = 0
@@ -30,15 +28,6 @@ message IndicatorDatapointCollection
  {
  repeated  indicatorDatapoint indicatorDatapoints = 0
  }
-// A databased entity or concept/class.
-message NamedThing
- {
-  string id = 0
-  iriType iri = 0
-  labelType name = 0
-  narrativeText description = 0
-  string category = 0
- }
 // A value of an attribute that is quantitative and measurable, expressed as a combination of a unit and a numeric value
 message QuantityValue
  {
@@ -46,7 +35,6 @@ message QuantityValue
   iriType iri = 0
   labelType name = 0
   narrativeText description = 0
-  string category = 0
   unit hasUnit = 0
   double hasNumericValue = 0
  }
