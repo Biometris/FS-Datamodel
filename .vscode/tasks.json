@@ -1,15 +1,51 @@
 {
-    // See https://go.microsoft.com/fwlink/?LinkId=733558
-    // for the documentation about the tasks.json format
-    "version": "2.0.0",
-    "tasks": [
-        {
-            "label": "validate",
-            "type": "shell",
-            "command": [
-                "linkml-validate --schema .\\src\\schema\\food_system_indicators.yaml --target-class 'indicator datapoint' '.\\data\\indicator datapoints.csv';",
-                "linkml-validate --schema .\\src\\schema\\food_system_indicators.yaml --target-class indicator .\\data\\indicators.csv"
-            ]
-        }
-    ]
+  "version": "2.0.0",
+  "tasks": [
+    
+    {
+      "label": "Clean venv",
+      "type": "shell",
+      "command": "virtualenv --clear venv",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Install requirements (venv)",
+      "type": "shell",
+      "command": "source .venv/Scripts/activate; pip install -r requirements.txt",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Just serve",
+      "type": "shell",
+      "command": "source .venv/Scripts/activate; just serve",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Just clean",
+      "type": "shell",
+      "command": "source .venv/Scripts/activate; just clean",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Just site",
+      "type": "shell",
+      "command": "source .venv/Scripts/activate; just site",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
 }
