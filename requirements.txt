@@ -1,7 +1,6 @@
-pandas
-tabulate
-linkml
-mkdocs
-mkdocs-material
-mkdocs-mermaid2-plugin
-mermaid
+pandas>=2.3.1
+tabulate2>=1.10.2
+linkml>=1.9.3
+mkdocs>=1.6.1
+mkdocs-material>=9.6.17
+mkdocs-mermaid2-plugin>=1.2.1
