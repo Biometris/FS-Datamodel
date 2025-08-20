@@ -107,3 +107,7 @@ testdoc: _gendoc serve
 
 serve:
   - mkdocs serve
+
+# Validate data
+validate:
+  linkml-validate --config validation.config.yaml

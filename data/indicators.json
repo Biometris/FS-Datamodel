@@ -9,15 +9,29 @@
     "justification": "It includes the full food-system, the methodology is robust, and it covers all possible degrees of temporal and spatial granularity levels (which were the main gaps identified in the first phase of the project). Uncertainties are also estimated, which are an extra advantage of this indicator in comparison with the others included in the F2F monitoring framework. Negative direction is desirable.",
     "spatial_scope": "Global",
     "granularity": 
-        ["Countries",
-         "MarcoRegions"],
+        [
+          "Countries",
+          "MacroRegions"
+        ],
     "supply_chain_component": 
-        ["FoodConsumption",
-         "FoodDistribution",
-         "FoodProcessing",
-         "PrimaryFoodProduction"],
+        [
+          "FoodConsumption",
+          "FoodDistribution",
+          "FoodProcessing",
+          "PrimaryFoodProduction"
+        ],
+    "temporal_characteristics":
+      {
+        "oldest_datapoint": 1990,
+        "newest_datapoint": 2018,
+        "time_granularity": "Yearly",
+        "update_frequency": "Other"
+      },
     "measurement_unit": "kt CO2eq",
-    "data_source": "JRC",
+    "data_source": 
+        [
+          "JRC"
+        ],
     "data_link": "https://edgar.jrc.ec.europa.eu/datasets/EDGAR-FOOD_v6.xlsx"
   },
   {
@@ -29,13 +43,27 @@
     "domain": "Pollution",
     "justification": "The indicator is part of the EU Sustainable Development Goals indicator set. Reducing the use and risk of chemical pesticides is an important step towards achieving a more sustainable and healthy food system in the EU. It is essential to promote sustainable agriculture and protect the environment. Pesticides can contaminate soil, water, and air, leading to negative impacts on ecosystems, such as the loss of biodiversity and the decline of pollinators. Pesticides can also have harmful effects on human health, particularly for farmers and agricultural workers who handle these chemicals. Furthermore, reducing pesticide use and risk can help to promote more sustainable farming practices. Alternative approaches, such as integrated pest management and agroecology, can reduce the reliance on pesticides and promote more sustainable and resilient food systems.",
     "spatial_scope": "Eu",
-    "granularity": "MarcoRegions",
+    "granularity": 
+        [
+          "MacroRegions"
+        ],
     "supply_chain_component": 
-        ["FoodConsumption",
-         "PrimaryFoodProduction"],    
+        [
+          "FoodConsumption",
+          "PrimaryFoodProduction"
+        ],
+    "temporal_characteristics":
+      {
+        "oldest_datapoint": 2011,
+        "newest_datapoint": 2022,
+        "time_granularity": "Yearly",
+        "update_frequency": "Yearly"
+      },
     "data_source":
-        ["DG SANTE",
-         "ESTAT"],
+        [
+          "DG SANTE",
+          "ESTAT"
+        ],
     "data_link": "https://food.ec.europa.eu/plants/pesticides/sustainable-use-pesticides/farm-fork-targets-progress/member-states-trends_en"
   }
 ]

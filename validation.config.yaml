@@ -1,9 +1,8 @@
-schema: .\\src\\schema\\food_system_indicators.yaml
+schema: src\\schema\\food_system_indicators.yaml
 
-target_class: 'indicator'
+target_class: Indicator
 data_sources:
-  - CsvLoader:
-      source: .\\data\\indicators.csv      
+  - data\\indicators.json
 
 ## target_class: 'indicator datapoint'
 ##//data_sources:

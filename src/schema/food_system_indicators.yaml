@@ -34,13 +34,22 @@ classes:
 
   ThematicArea:
     title: thematic area
-    description: a thematic area
+    description: a thematic area.
     class_uri: linkml:Any
 
   Domain:
     title: domain
-    description: a domain
+    description: a domain.
     class_uri: linkml:Any
+
+  TemporalCharacteristics:  
+    title: temporal characteristics
+    description: Information about the timeliness and time coverage of the indicator.
+    slots:
+      - oldest_datapoint
+      - newest_datapoint
+      - time_granularity
+      - update_frequency
 
   Indicator:
     is_a: Entity
@@ -58,6 +67,7 @@ classes:
       - measurement_unit
       - data_source
       - data_link
+      - temporal_characteristics
     slot_usage:    
       id:        
         description:
@@ -278,13 +288,45 @@ slots:
     title: data source
     description:
       Data source from which the data for the indicator can be obtained.
-    multivalued: true
+    multivalued: true    
 
   data_link:
     title: data link
     description:
       Link to the data for the indicator
-    range: iri_type    
+    range: iri_type
+
+  oldest_datapoint:
+    title: oldest datapoint
+    description:
+      Oldest datapoint for which the indicator is measured.
+    range: double
+
+  newest_datapoint:
+    title: newest datapoint
+    description:
+      Newest datapoint for which the indicator is measured.
+    range: double
+
+  time_granularity:
+    title: time granularity between the datapoints.
+    description:
+      Time granularity between the datapoints.
+    range: TimeGranularity
+
+  update_frequency:
+    title: frequency at which the data is updated
+    description:
+      Frequency at which the data is updated.
+    range: TimeGranularity
+
+  temporal_characteristics:
+    title: temporal_characteristics
+    is_a: node property
+    range: TemporalCharacteristics
+    required: true
+    description:
+      Temporal characteristics.
    
 ## --------------------
 ## TYPES
@@ -497,24 +539,24 @@ enums:
     permissible_values:
       Global:
         description:
-          Global
+          Global.
       Eu:
         description:
-          EU wide
+          EU wide.
       EuMemberStates:
         description:
-          EU member states
+          EU member states.
       Regional:
         description:
-          Regional
+          Regional.
       Local:
         description:
-          Local
+          Local.
   
   GranularityType:
     title: granularity type
     description: >-
-      The granularity for which the indicator is measured
+      The granularity for which the indicator is measured.
     permissible_values:
       MacroRegions:
         description:
@@ -524,13 +566,13 @@ enums:
           Countries      
       NUTS1:
         description:
-          First level administrative division of countries for statistical purposes
+          First level administrative division of countries for statistical purposes.
       NUTS2:
         description:
-          Second level administrative division of countries for statistical purposes
+          Second level administrative division of countries for statistical purposes.
       NUTS3:
         description:
-          Third level administrative division of countries for statistical purposes
+          Third level administrative division of countries for statistical purposes.
       LAU:
         description:
           Local administrative units
@@ -538,18 +580,35 @@ enums:
   SupplyChainComponentType:
     title: supply chain component type
     description: >-
-      The supply chain component for which the indicator is relevent
+      The supply chain component for which the indicator is relevant.
     permissible_values:
       PrimaryFoodProduction:
         description:
-          Primary food production
+          Primary food production.
       FoodProcessing:
         description:
-          Food processing
+          Food processing.
       FoodDistribution:
         description:
-          Food distribution
+          Food distribution.
       FoodConsumption:
         description:
-          Food consuption
+          Food consuption.
 
+  TimeGranularity:
+    title: time granularity
+    description: >-
+      Time granularity for measuring and updating data.
+    permissible_values:
+      Yearly:
+        description: 
+          Yearly.
+      Monthly:
+        description:
+          Monthly.
+      Weekly:
+        description:
+          Weekly.
+      Other:
+        description:
+          Other.
