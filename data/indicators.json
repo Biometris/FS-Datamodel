@@ -22,8 +22,8 @@
         ],
     "temporal_characteristics":
       {
-        "oldest_datapoint": 1990,
-        "newest_datapoint": 2018,
+        "oldest_datapoint": "1990",
+        "newest_datapoint": "2018",
         "time_granularity": "Yearly",
         "update_frequency": "Other"
       },
@@ -54,8 +54,8 @@
         ],
     "temporal_characteristics":
       {
-        "oldest_datapoint": 2011,
-        "newest_datapoint": 2022,
+        "oldest_datapoint": "2011",
+        "newest_datapoint": "2022",
         "time_granularity": "Yearly",
         "update_frequency": "Yearly"
       },

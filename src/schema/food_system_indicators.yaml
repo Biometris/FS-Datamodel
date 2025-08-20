@@ -300,13 +300,13 @@ slots:
     title: oldest datapoint
     description:
       Oldest datapoint for which the indicator is measured.
-    range: double
+    range: date_or_datetime
 
   newest_datapoint:
     title: newest datapoint
     description:
       Newest datapoint for which the indicator is measured.
-    range: double
+    range: date_or_datetime
 
   time_granularity:
     title: time granularity between the datapoints.

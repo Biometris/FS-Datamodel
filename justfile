@@ -94,7 +94,7 @@ _gendoc: _ensure_docdir _gen_indicatordata
 
 # Generate indicator data table
 _gen_indicatordata:
-  {{shebang}} {{src}}/scripts/generate_indicatordata.py    
+  {{shebang}} {{src}}/scripts/generate_indicatordata.py
 
 _ensure_docdir:
     -mkdir -p {{docdir}}
