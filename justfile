@@ -77,7 +77,7 @@ _gen-project:
     fi
 
 # Generate documentation
-_gendoc: _ensure_docdir _gen_exampledata
+_gendoc: _ensure_docdir _gen_indicatordata
     # DO NOT REMOVE: these cp statements are crucial to maintain the w3 ids for the model artifacts
     cp {{dest}}/owl/{{schema_name}}.owl.ttl {{docdir}}/{{schema_name}}.owl.ttl ; \
     cp {{dest}}/jsonld/{{schema_name}}.context.jsonld {{docdir}}/{{schema_name}}.context.jsonld ; \
@@ -90,11 +90,11 @@ _gendoc: _ensure_docdir _gen_exampledata
     cp {{dest}}/prefixmap/* {{docdir}} ; \
 
     cp -r {{src}}/docs/files/* {{docdir}}
-    gen-doc {{gen_doc_args}} -d {{docdir}} --template-directory {{templatedir}} {{source_schema_path}}    
+    gen-doc {{gen_doc_args}} -d {{docdir}} --template-directory {{templatedir}} {{source_schema_path}} --example-directory data
 
-# Generate example data table
-_gen_exampledata:
-  {{shebang}} {{src}}/scripts/generate_exampledata.py 
+# Generate indicator data table
+_gen_indicatordata:
+  {{shebang}} {{src}}/scripts/generate_indicatordata.py    
 
 _ensure_docdir:
     -mkdir -p {{docdir}}

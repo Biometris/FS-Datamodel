@@ -9,7 +9,7 @@ plugins:
   - mermaid2
 nav:
   - Overview: index.md
-  - Example data: exampledata.md
+  - Indicators: indicatordata.md  
   - About: about.md
 docs_dir: docs
 site_url: https://biometris.github.io/foodsystems-model

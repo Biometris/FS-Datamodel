@@ -37,15 +37,27 @@ classes:
     description: a thematic area
     class_uri: linkml:Any
 
+  Domain:
+    title: domain
+    description: a domain
+    class_uri: linkml:Any
+
   Indicator:
     is_a: Entity
     title: indicator
     description: >-
       Food system indicator.
-    slots: 
-      - spatial_scope
+    slots:      
       - key_area
       - thematic_area
+      - domain
+      - justification
+      - spatial_scope
+      - granularity      
+      - supply_chain_component
+      - measurement_unit
+      - data_source
+      - data_link
     slot_usage:    
       id:        
         description:
@@ -200,22 +212,30 @@ slots:
 
   spatial_scope:
     title: spatial scope
-    required: true
-    range: SpatialScopeType
     description:
-      Reference to the spatial unit that the indicator describes
+      Reference to the spatial unit that the indicator describes.
+    required: true
+    range: SpatialScopeType    
+
+  granularity:
+    title: granularity
+    description:
+      Reference to the granularity(ies) for which the indicator is measured.
+    required: true
+    range: GranularityType
+    multivalued: true
 
   key_area:
     title: key area
+    description:
+      Reference to the thematic area that the indicator belongs to.
     required: true
     range: SustainabilityDimension    
-    description:
-      Reference to the thematic area that the indicator belongs to
 
   thematic_area:
     title: thematic area
     description:
-      the thematic area the indicator belongs to
+      The thematic area the indicator belongs to.
     required: true
     range: ThematicArea
     any_of:
@@ -223,6 +243,48 @@ slots:
       - range: EconomicThematicArea
       - range: SocialThematicArea
       - range: HorizontalThematicArea
+
+  domain:
+    title: domain
+    description:
+      Reference to the domain that the indicator belongs to.
+    required: true
+    range: Domain
+    any_of:
+      - range: EnvironmentalDomain
+      - range: EconomicDomain
+      - range: SocialDomain
+
+  justification:
+    title: justification of selection
+    description: 
+      Justification for the selection of the indicator.
+    range: narrative_text
+
+  supply_chain_component:
+    title: supply chain component(s)
+    description:
+      Reference to the supply chain component(s) for which the indicator is relevant.
+    range: SupplyChainComponentType
+    multivalued: true
+
+  measurement_unit:
+    title: unit of measurement
+    description:
+      Unit of measurement.
+    range: unit
+
+  data_source:
+    title: data source
+    description:
+      Data source from which the data for the indicator can be obtained.
+    multivalued: true
+
+  data_link:
+    title: data link
+    description:
+      Link to the data for the indicator
+    range: iri_type    
    
 ## --------------------
 ## TYPES
@@ -336,13 +398,106 @@ enums:
           governance
       Resilience:
         description:
-          resilience      
+          resilience
+
+  EnvironmentalDomain:
+    title: environmental domain
+    description: >-
+      Environmental domain.
+    permissible_values:
+      GHGEmissions:
+        description:
+          GHG emissions.
+      Pollution:
+        description:
+          pollution.
+      Antimicrobials:
+        description:
+          antimicrobials.
+      LandAndSoil:
+        description:
+          land and soil.
+      Water:
+        description:
+          water.
+      AquaticLivingResources:
+        description:
+          aquatic living resources.
+      Energy:
+        description:
+          energy.
+      BiodiversityConservationAndRestorationOfNaturalEcosystems:
+        description:
+          biodiversity conservation and restoration of natural ecosystems.
+      FoodLossAndWaste:
+        description:
+          food loss and waste.
+      ConsumptionFootprint:
+        description:
+          consumption footprint.
+
+  EconomicDomain:
+    title: economic domain
+    description: >-
+      Economic domain.
+    permissible_values:
+      SectorialGrowth:
+        description:
+          sectorial growth.          
+      MarketPowerAndBusinessStructure:      
+        description:
+          market power and business structure.
+      IncomeDistribution:
+        description:
+          income distribution.
+      Price:
+        description:
+          price.
+      Trade:
+        description:
+          trade.
+      TechnologyAndDigitalization:
+        description:
+          technology and digitalization.
+      TransportAccessibilityAndInfrastructure:
+        description:
+          transport, accessibility and infrastructure.
+
+  SocialDomain:
+    title: social domain
+    description: >-
+      Social domain.
+    permissible_values:
+      Employment:
+        description:
+          employment.
+      AnimalWelfare:
+        description:
+          animal welfare.
+      FoodHeritage:
+        description:
+          food heritage.
+      FoodAffordability:
+        description:
+          food affordability.
+      FoodAvailability:
+        description:
+          food availability.
+      HealthImpactFromDiets:
+        description:
+          health impact from diets.
+      FoodSecurity:
+        description:
+          food security.
 
   SpatialScopeType:
     title: spatial scope type
     description: >-
       The spatial scope for which the indicator is defined.
     permissible_values:
+      Global:
+        description:
+          Global
       Eu:
         description:
           EU wide
@@ -355,3 +510,46 @@ enums:
       Local:
         description:
           Local
+  
+  GranularityType:
+    title: granularity type
+    description: >-
+      The granularity for which the indicator is measured
+    permissible_values:
+      MacroRegions:
+        description:
+          Macro regions
+      Countries:
+        description: 
+          Countries      
+      NUTS1:
+        description:
+          First level administrative division of countries for statistical purposes
+      NUTS2:
+        description:
+          Second level administrative division of countries for statistical purposes
+      NUTS3:
+        description:
+          Third level administrative division of countries for statistical purposes
+      LAU:
+        description:
+          Local administrative units
+
+  SupplyChainComponentType:
+    title: supply chain component type
+    description: >-
+      The supply chain component for which the indicator is relevent
+    permissible_values:
+      PrimaryFoodProduction:
+        description:
+          Primary food production
+      FoodProcessing:
+        description:
+          Food processing
+      FoodDistribution:
+        description:
+          Food distribution
+      FoodConsumption:
+        description:
+          Food consuption
+

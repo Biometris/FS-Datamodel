@@ -1,0 +1,32 @@
+- id: GHGFoodSystemEmissions
+  name: GHG food system emissions
+  description: >-
+    EDGAR-FOOD has been developed to aid the understanding of the activities
+    underlying the energy demand and use, agriculture and land use change
+    emissions associated with the production, distribution, consumption and
+    disposal of food through the various stages and sectors of the composite
+    global food system. These data were complemented with data from the FAOSTAT
+    database on GHG emissions from land use related to agriculture (FAO, 2020).
+    Details regarding the methodology applied are available in Crippa et al.
+    (2021). Further info also in https://edgar.jrc.ec.europa.eu/edgar_food
+  key_area: Environmental
+  thematic_area: ClimateChange
+  justification: >-
+    It includes the full food-system, the methodology is robust, and it covers
+    all possible degrees of temporal and spatial granularity levels (which were
+    the main gaps identified in the first phase of the project). Uncertainties
+    are also estimated, which are an extra advantage of this indicator in
+    comparison with the others included in the F2F monitoring framework.
+    Negative direction is desirable.
+  spatial_scope: Global
+  granularity:
+    - Countries
+    - MarcoRegions
+  supply_chain_component:
+    - FoodConsumption
+    - FoodDistribution
+    - FoodProcessing
+    - PrimaryFoodProduction
+  measurement_unit: kt CO2eq
+  data_source: JRC
+  data_link: 'https://edgar.jrc.ec.europa.eu/datasets/EDGAR-FOOD_v6.xlsx'
