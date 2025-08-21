@@ -18,11 +18,9 @@ for i in range(len(json_data)):
     with open(outfile_path_short + str(i) + ".md", "w") as md_record:
          md_record.write(html_record)
 
-    indicator_name = df["name"].iloc[i]
-         
-    with open(outfile_path, "a") as md:
-        md.write('<a href="#" onClick="MyWindow=window.open(\'../indicatordata' + str(i) + '/\',\'' + indicator_name + 
-                 '\',\'width=1100,height=1500\'); return false;">' + indicator_name + '</a><br>') 
+tab_data = df[["name", "key_area", "thematic_area", "domain"]]
 
+tab_data.loc[:, "name"] = '<a href="#" onClick="MyWindow=window.open(\'../indicatordata' + tab_data.index.astype(str) + '/\',\'' + tab_data["name"] + '\',\'width=1100,height=1500\'); return false;">' + tab_data["name"] + '</a><br>'
 
-
+with open(outfile_path, "a") as md:
+    tab_data.to_markdown(buf = md, index = False, tablefmt = "github")

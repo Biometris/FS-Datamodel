@@ -564,7 +564,7 @@ enums:
       Countries:
         description: 
           Countries      
-      NUTS1:
+      NUTS1:    
         description:
           First level administrative division of countries for statistical purposes.
       NUTS2:
@@ -593,7 +593,7 @@ enums:
           Food distribution.
       FoodConsumption:
         description:
-          Food consuption.
+          Food consumption.
 
   TimeGranularity:
     title: time granularity
