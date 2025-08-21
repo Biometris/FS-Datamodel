@@ -600,6 +600,9 @@ enums:
     description: >-
       Time granularity for measuring and updating data.
     permissible_values:
+      EveryTwoYears:
+        description:
+          Every 2 years.      
       Yearly:
         description: 
           Yearly.
