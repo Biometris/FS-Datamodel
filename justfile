@@ -33,6 +33,7 @@ gen_ts_args := env_var_or_default("LINKML_GENERATORS_TYPESCRIPT_ARGS", "")
 src := "src"
 dest := "project"
 docdir := "docs"
+datadir := "data"
 templatedir := src / "docs" / "templates"
 
 # Show current project status
@@ -93,7 +94,7 @@ _gendoc: _ensure_docdir _gen_indicatordata
     gen-doc {{gen_doc_args}} -d {{docdir}} --template-directory {{templatedir}} {{source_schema_path}} --example-directory data
 
 # Generate indicator data table
-_gen_indicatordata:
+_gen_indicatordata: convert
   {{shebang}} {{src}}/scripts/generate_indicatordata.py
 
 _ensure_docdir:
@@ -109,5 +110,9 @@ serve:
   - mkdocs serve
 
 # Validate data
-validate:
+validate: convert
   linkml-validate --config validation.config.yaml
+
+# Convert indicator data from yaml to json
+convert:
+  {{shebang}} {{src}}/scripts/convert_indicatordata.py
