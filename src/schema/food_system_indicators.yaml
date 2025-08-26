@@ -42,14 +42,16 @@ classes:
     description: a domain.
     class_uri: linkml:Any
 
-  TemporalCharacteristics:  
-    title: temporal characteristics
-    description: Information about the timeliness and time coverage of the indicator.
+  DataSource:
+    is_a: Entity
+    title: data source
+    description: Data source containing the indicator data.    
     slots:
+      - data_link
       - oldest_datapoint
       - newest_datapoint
       - time_granularity
-      - update_frequency
+      - update_frequency 
 
   Indicator:
     is_a: Entity
@@ -65,9 +67,7 @@ classes:
       - granularity      
       - supply_chain_component
       - measurement_unit
-      - data_source
-      - data_link
-      - temporal_characteristics
+      - data_source      
     slot_usage:    
       id:        
         description:
@@ -284,12 +284,6 @@ slots:
       Unit of measurement.
     range: unit
 
-  data_source:
-    title: data source
-    description:
-      Data source from which the data for the indicator can be obtained.
-    multivalued: true    
-
   data_link:
     title: data link
     description:
@@ -318,16 +312,19 @@ slots:
     title: frequency at which the data is updated
     description:
       Frequency at which the data is updated.
-    range: TimeGranularity
+    range: TimeGranularity  
 
-  temporal_characteristics:
-    title: temporal_characteristics
-    is_a: node property
-    range: TemporalCharacteristics
-    required: true
+  data_source:
+    title: data source
     description:
-      Temporal characteristics.
-   
+      Data source.
+    is_a: node property
+    range: DataSource
+    required: true
+    multivalued: true
+    inlined_as_list: true
+       
+       
 ## --------------------
 ## TYPES
 ## --------------------

@@ -19,20 +19,21 @@
           "FoodDistribution",
           "FoodProcessing",
           "PrimaryFoodProduction"
-        ],
-    "temporal_characteristics":
-      {
-        "oldest_datapoint": "1990",
-        "newest_datapoint": "2018",
-        "time_granularity": "Yearly",
-        "update_frequency": "Other"
-      },
+        ],    
     "measurement_unit": "kt CO2eq",
-    "data_source": 
+    "data_source":
         [
-          "JRC"
-        ],
-    "data_link": "https://edgar.jrc.ec.europa.eu/datasets/EDGAR-FOOD_v6.xlsx"
+          {
+            "id": "JRC",
+            "name": "JRC",
+            "description": "JRC",
+            "data_link": "https://edgar.jrc.ec.europa.eu/datasets/EDGAR-FOOD_v6.xlsx",
+            "oldest_datapoint": "1990",
+            "newest_datapoint": "2018",
+            "time_granularity": "Yearly",
+            "update_frequency": "Other"
+          }
+        ]
   },
   {
     "id": "UseAndRiskOfChemicalPesticides",
@@ -52,19 +53,27 @@
           "FoodConsumption",
           "PrimaryFoodProduction"
         ],
-    "temporal_characteristics":
-      {
-        "oldest_datapoint": "2011",
-        "newest_datapoint": "2022",
-        "time_granularity": "Yearly",
-        "update_frequency": "Yearly"
-      },
     "data_source":
         [
-          "DG SANTE",
-          "ESTAT"
-        ],
-    "data_link": "https://food.ec.europa.eu/plants/pesticides/sustainable-use-pesticides/farm-fork-targets-progress/member-states-trends_en"
+          {
+            "id": "ESTAT",
+            "description": "ESTAT",
+            "data_link": "https://food.ec.europa.eu/plants/pesticides/sustainable-use-pesticides/farm-fork-targets-progress/member-states-trends_en",
+            "oldest_datapoint": "2011",
+            "newest_datapoint": "2022",
+            "time_granularity": "Yearly",
+            "update_frequency": "Yearly"
+          },
+          {
+            "id": "DG SANTE",
+            "description": "DG SANTE",
+            "data_link": "https://food.ec.europa.eu/plants/pesticides/sustainable-use-pesticides/farm-fork-targets-progress/member-states-trends_en",
+            "oldest_datapoint": "2011",
+            "newest_datapoint": "2022",
+            "time_granularity": "Yearly",
+            "update_frequency": "Yearly"
+          }
+        ]    
   },
   {
     "id": "PercentAffordHealthyDiet",
@@ -83,18 +92,18 @@
         [
           "FoodConsumption"
         ],
-    "temporal_characteristics":
-      {
-        "oldest_datapoint": "2017",
-        "newest_datapoint": "2022",
-        "time_granularity": "Yearly",
-        "update_frequency": "Yearly"
-      },    
-    "data_source": 
+    "data_source":
         [
-          "FAO"
-        ],
-    "data_link": "https://www.fao.org/faostat/en/#data/CAHD"
+          {
+            "id": "FAO",
+            "description": "FAO",
+            "data_link": "https://www.fao.org/faostat/en/#data/CAHD",
+            "oldest_datapoint": "2017",
+            "newest_datapoint": "2022",
+            "time_granularity": "Yearly",
+            "update_frequency": "Yearly"
+          }
+        ]
   },
   {
     "id": "PrevalenceFoodInsecurity",
@@ -112,19 +121,19 @@
     "supply_chain_component": 
         [
           "FoodConsumption"
-        ],
-    "temporal_characteristics":
-      {
-        "oldest_datapoint": "2015",
-        "newest_datapoint": "2021",
-        "time_granularity": "Yearly",
-        "update_frequency": "Yearly"
-      },    
+        ], 
     "data_source": 
         [
-          "FAO"
-        ],
-    "data_link": "https://www.fao.org/faostat/en/#data/FS"
+          {
+            "id": "FAO",
+            "description": "FAO",
+            "data_link": "https://www.fao.org/faostat/en/#data/FS",
+            "oldest_datapoint": "2015",
+            "newest_datapoint": "2021",
+            "time_granularity": "Yearly",
+            "update_frequency": "Yearly"
+          }
+        ]
   },
   {
     "id": "FarmersIncomeRelative",
@@ -143,19 +152,27 @@
         [          
           "PrimaryFoodProduction"
         ],
-    "temporal_characteristics":
-      {
-        "oldest_datapoint": "1995",
-        "newest_datapoint": "2023",
-        "time_granularity": "Yearly",
-        "update_frequency": "Yearly"
-      },    
     "data_source": 
         [
-          "DG AGRI",
-          "ESTAT"
-        ],
-    "data_link": "https://agridata.ec.europa.eu/extensions/DashboardIndicators/JobsGrowth.html"
+          {
+            "id": "DG AGRI",
+            "description": "DG AGRI",
+            "data_link": "https://agridata.ec.europa.eu/extensions/DashboardIndicators/JobsGrowth.html",
+            "oldest_datapoint": "1995",
+            "newest_datapoint": "2023",
+            "time_granularity": "Yearly",
+            "update_frequency": "Yearly"
+          },
+          {
+            "id": "ESTAT",
+            "description": "ESTAT",
+            "data_link": "https://agridata.ec.europa.eu/extensions/DashboardIndicators/JobsGrowth.html",
+            "oldest_datapoint": "1995",
+            "newest_datapoint": "2023",
+            "time_granularity": "Yearly",
+            "update_frequency": "Yearly"
+          }
+        ]
   },
   {
     "id": "WaterExploitationIndex",
@@ -175,20 +192,28 @@
         [          
           "PrimaryFoodProduction"
         ],
-    "temporal_characteristics":
-      {
-        "oldest_datapoint": "2000",
-        "newest_datapoint": "2019",
-        "time_granularity": "Yearly",
-        "update_frequency": "Yearly"
-      },
-    "measurement_unit": "kt CO2eq",
     "data_source": 
         [
-          "EEA",
-          "ESTAT"
-        ],
-    "data_link": "https://ec.europa.eu/eurostat/databrowser/view/sdg_06_60/default/table?lang=en"
+          {
+            "id": "EEA",
+            "description": "EEA",
+            "data_link": "https://ec.europa.eu/eurostat/databrowser/view/sdg_06_60/default/table?lang=en",
+            "oldest_datapoint": "2000",
+            "newest_datapoint": "2019",
+            "time_granularity": "Yearly",
+            "update_frequency": "Yearly"
+          },
+          {
+            "id": "ESTAT",
+            "description": "ESTAT",
+            "data_link": "https://ec.europa.eu/eurostat/databrowser/view/sdg_06_60/default/table?lang=en",
+            "oldest_datapoint": "2000",
+            "newest_datapoint": "2019",
+            "time_granularity": "Yearly",
+            "update_frequency": "Yearly"
+          }
+        ],    
+    "measurement_unit": "kt CO2eq"
   },
   {
     "id": "GrossNutrientBalanceNitrogen",
@@ -207,19 +232,19 @@
         [          
           "PrimaryFoodProduction"
         ],
-    "temporal_characteristics":
-      {
-        "oldest_datapoint": "1985",
-        "newest_datapoint": "2021",
-        "time_granularity": "Yearly",
-        "update_frequency": "EveryTwoYears"
-      },
-    "measurement_unit": "kg/ha",
     "data_source": 
-        [          
-          "ESTAT"
+        [
+          {
+            "id": "ESTAT",
+            "description": "ESTAT",
+            "data_link": "https://ec.europa.eu/eurostat/databrowser/view/AEI_PR_GNB/default/table?lang=en&category=agr.aei.aei_nut",
+            "oldest_datapoint": "1985",
+            "newest_datapoint": "2021",
+            "time_granularity": "Yearly",
+            "update_frequency": "EveryTwoYears"
+          }
         ],
-    "data_link": "https://ec.europa.eu/eurostat/databrowser/view/AEI_PR_GNB/default/table?lang=en&category=agr.aei.aei_nut"
+    "measurement_unit": "kg/ha"    
   }
 ]
 
