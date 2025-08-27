@@ -79,3 +79,7 @@ button a {
 .md-link:hover {
   fill: darkblue;  /* Changes the color on hover for visual feedback */
 }
+
+.dt-container, .md-typeset {
+  font: 12px sans-serif;   /* Changes the font for the interactive tables */
+}

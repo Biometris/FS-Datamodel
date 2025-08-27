@@ -1,3 +1,6 @@
+# Convert the indicator data provided in yaml format to data in json format.
+# The json format is required for easy conversion to html/docs.
+
 import yaml
 import json
 

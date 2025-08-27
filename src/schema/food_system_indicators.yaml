@@ -82,7 +82,7 @@ classes:
       - preconditions:
           slot_conditions:
             key_area:
-              equals_string: Environmental
+              equals_string: environmental
         postconditions:
           slot_conditions:
             thematic_area: 
@@ -91,7 +91,7 @@ classes:
       - preconditions:
           slot_conditions:
             key_area:
-              equals_string: Economic
+              equals_string: economic
         postconditions:
           slot_conditions:        
             thematic_area: 
@@ -100,7 +100,7 @@ classes:
       - preconditions:
           slot_conditions:
             key_area:
-              equals_string: Social
+              equals_string: social
         postconditions:
           slot_conditions:
             thematic_area: 
@@ -109,7 +109,7 @@ classes:
       - preconditions:
           slot_conditions:
             key_area:
-              equals_string: Horizontal
+              equals_string: horizontal
         postconditions:
           slot_conditions:
             thematic_area: 

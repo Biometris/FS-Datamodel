@@ -126,6 +126,9 @@ venv.bak/
 # mkdocs documentation
 /site
 
+# helper file
+data/inciators.json
+
 # mypy
 .mypy_cache/
 .dmypy.json
