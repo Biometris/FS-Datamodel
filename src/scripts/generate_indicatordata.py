@@ -15,7 +15,7 @@ df = pd.read_json(data_path)
 
 for i in range(len(json_data)):
     record = json_data[i]   
-    html_record = json2html.convert(json=record)
+    html_record = json2html.convert(json=record, clubbing=False)
     with open(outfile_path_short + str(i) + ".md", "w") as md_record:
          md_record.write(html_record)
 

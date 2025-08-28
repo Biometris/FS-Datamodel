@@ -2,15 +2,21 @@
 ```{{ gen.mermaid_directive() }}
  classDiagram
     class {{ gen.name(element) }}
-      {% for s in schemaview.class_parents(element.name)|sort(attribute='name') -%}
+      {% for s in schemaview.class_parents(element.name) -%}
         {{ gen.name(schemaview.get_element(s)) }} <|-- {{ gen.name(element) }}
       {% endfor %}
 
-      {% for s in schemaview.class_children(element.name)|sort(attribute='name') -%}
+      {% for s in schemaview.class_children(element.name) -%}
         {{ gen.name(element) }} <|-- {{ gen.name(schemaview.get_element(s)) }}
       {% endfor %}
       
-      {% for s in schemaview.class_induced_slots(element.name)|sort(attribute='name') -%}
+      {% for s in gen.get_indirect_slots(element) -%}
+        {{ gen.name(element) }} : {{gen.name(s)}}
+        {% if s.range not in gen.all_type_object_names() %}
+          {{ gen.name(element) }} --|> {{ gen.name(schemaview.get_element(s.range)) }} : {{ gen.name(s) }}
+        {% endif %}
+      {% endfor %}
+      {% for s in gen.get_direct_slots(element) -%}
         {{ gen.name(element) }} : {{gen.name(s)}}
         {% if s.range not in gen.all_type_object_names() %}
           {{ gen.name(element) }} --|> {{ gen.name(schemaview.get_element(s.range)) }} : {{ gen.name(s) }}
@@ -21,24 +27,37 @@
 ```{{ gen.mermaid_directive() }}
  classDiagram
     class {{ gen.name(element) }}
-      {% for s in schemaview.class_parents(element.name)|sort(attribute='name') -%}
+      {% for s in schemaview.class_parents(element.name) -%}
         {{ gen.name(schemaview.get_element(s)) }} <|-- {{ gen.name(element) }}
       {% endfor %}
-      {% for s in schemaview.class_induced_slots(element.name)|sort(attribute='name') -%}
+      {% for s in gen.get_indirect_slots(element) -%}
         {{ gen.name(element) }} : {{gen.name(s)}}
         {% if s.range not in gen.all_type_object_names() %}
           {{ gen.name(element) }} --|> {{ gen.name(schemaview.get_element(s.range)) }} : {{ gen.name(s) }}
         {% endif %}
       {% endfor %}
+      {% for s in gen.get_direct_slots(element) -%}
+        {{ gen.name(element) }} : {{gen.name(s)}}
+        {% if s.range not in gen.all_type_object_names() %}
+          {{ gen.name(element) }} --|> {{ gen.name(schemaview.get_element(s.range)) }} : {{ gen.name(s) }}
+        {% endif %}
+      {% endfor %}      
 ```
 {% elif schemaview.class_children(element.name)  %}
 ```{{ gen.mermaid_directive() }}
  classDiagram
     class {{ gen.name(element) }}
-      {% for s in schemaview.class_children(element.name)|sort(attribute='name') -%}
+      {% for s in schemaview.class_children(element.name) -%}
         {{ gen.name(element) }} <|-- {{ gen.name(schemaview.get_element(s)) }}
       {% endfor %}
-      {% for s in schemaview.class_induced_slots(element.name)|sort(attribute='name') -%}
+
+      {% for s in gen.get_indirect_slots(element) -%}
+        {{ gen.name(element) }} : {{gen.name(s)}}
+        {% if s.range not in gen.all_type_object_names() %}
+          {{ gen.name(element) }} --|> {{ gen.name(schemaview.get_element(s.range)) }} : {{ gen.name(s) }}
+        {% endif %}
+      {% endfor %}
+      {% for s in gen.get_direct_slots(element) -%}
         {{ gen.name(element) }} : {{gen.name(s)}}
         {% if s.range not in gen.all_type_object_names() %}
           {{ gen.name(element) }} --|> {{ gen.name(schemaview.get_element(s.range)) }} : {{ gen.name(s) }}
@@ -49,7 +68,13 @@
 ```{{ gen.mermaid_directive() }}
  classDiagram
     class {{ gen.name(element) }}
-      {% for s in schemaview.class_induced_slots(element.name)|sort(attribute='name') -%}
+      {% for s in gen.get_indirect_slots(element) -%}
+        {{ gen.name(element) }} : {{gen.name(s)}}
+        {% if s.range not in gen.all_type_object_names() %}
+          {{ gen.name(element) }} --|> {{ gen.name(schemaview.get_element(s.range)) }} : {{ gen.name(s) }}
+        {% endif %}
+      {% endfor %}
+      {% for s in gen.get_direct_slots(element) -%}
         {{ gen.name(element) }} : {{gen.name(s)}}
         {% if s.range not in gen.all_type_object_names() %}
           {{ gen.name(element) }} --|> {{ gen.name(schemaview.get_element(s.range)) }} : {{ gen.name(s) }}

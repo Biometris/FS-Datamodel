@@ -61,7 +61,7 @@ classes:
     slots:      
       - key_area
       - thematic_area
-      - domain
+      - indicator_domain
       - justification
       - spatial_scope
       - granularity      
@@ -254,7 +254,7 @@ slots:
       - range: SocialThematicArea
       - range: HorizontalThematicArea
 
-  domain:
+  indicator_domain:
     title: domain
     description:
       Reference to the domain that the indicator belongs to.
@@ -264,6 +264,7 @@ slots:
       - range: EnvironmentalDomain
       - range: EconomicDomain
       - range: SocialDomain
+      - range: HorizontalDomain
 
   justification:
     title: justification of selection
@@ -528,6 +529,37 @@ enums:
       FoodSecurity:
         description:
           food security.
+
+  HorizontalDomain:
+    title: horizontal domain
+    description: >-
+      Horizontal domain.
+    permissible_values:
+      StrategicPlanningAndPolicies:
+        description:
+          strategic planning and policies.
+      EffectiveImplementation:
+        description:
+          effective implementation.
+      Accountability:
+        description:
+          accountability.
+      SharedVision:
+        description:
+          shared vision.
+      ShockResilience:
+        description:
+          shock resilience.
+      Preparedness:
+        description:
+          preparedness.
+      Adaptation:
+        description:
+          adaptation.
+      Transformation:
+        description:
+          transformation
+
 
   SpatialScopeType:
     title: spatial scope type
