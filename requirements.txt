@@ -6,3 +6,4 @@ linkml>=1.9.3
 mkdocs>=1.6.1
 mkdocs-material>=9.6.17
 mkdocs-mermaid2-plugin>=1.2.1
+PyYAML>=6.0.2
