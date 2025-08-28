@@ -5,7 +5,7 @@
 		"description": "EDGAR-FOOD has been developed to aid the understanding of the activities underlying the energy demand and use, agriculture and land use change emissions associated with the production, distribution, consumption and disposal of food through the various stages and sectors of the composite global food system. These data were complemented with data from the FAOSTAT database on GHG emissions from land use related to agriculture (FAO, 2020). Details regarding the methodology applied are available in Crippa et al. (2021). Further info also in https://edgar.jrc.ec.europa.eu/edgar_food",
 		"key_area": "Environmental",
 		"thematic_area": "ClimateChange",
-		"domain": "GHGEmissions",
+		"indicator_domain": "GHGEmissions",
 		"justification": "It includes the full food-system, the methodology is robust, and it covers all possible degrees of temporal and spatial granularity levels (which were the main gaps identified in the first phase of the project). Uncertainties are also estimated, which are an extra advantage of this indicator in comparison with the others included in the F2F monitoring framework. Negative direction is desirable.",
 		"spatial_scope": "Global",
 		"granularity": [
@@ -37,7 +37,7 @@
 		"description": "The F2F1 indicator is based on: - the quantities of active substances contained in the pesticides which are placed on the market (sold), and therefore used, in each Member State, and - the hazard properties of these active substances (considering 4 risk categories) The trend is compared to a three-year baseline, comprising the average of 2015, 2016 and 2017.",
 		"key_area": "Environmental",
 		"thematic_area": "PollutionAntimicrobials",
-		"domain": "Pollution",
+		"indicator_domain": "Pollution",
 		"justification": "The indicator is part of the EU Sustainable Development Goals indicator set. Reducing the use and risk of chemical pesticides is an important step towards achieving a more sustainable and healthy food system in the EU. It is essential to promote sustainable agriculture and protect the environment. Pesticides can contaminate soil, water, and air, leading to negative impacts on ecosystems, such as the loss of biodiversity and the decline of pollinators. Pesticides can also have harmful effects on human health, particularly for farmers and agricultural workers who handle these chemicals. Furthermore, reducing pesticide use and risk can help to promote more sustainable farming practices. Alternative approaches, such as integrated pest management and agroecology, can reduce the reliance on pesticides and promote more sustainable and resilient food systems.",
 		"spatial_scope": "Eu",
 		"granularity": [
@@ -74,7 +74,7 @@
 		"description": "The proportion of a population who cannot afford the least cost set of food items by food group that would meet requirements for food-based dietary guidelines. The food budget threshold is defined as 52% of household income, based on the average share of income that households in low-income countries spend on food. Data is available from the World Bank and published annually by FAO.",
 		"key_area": "Social",
 		"thematic_area": "FoodEnvironment",
-		"domain": "FoodAffordability",
+		"indicator_domain": "FoodAffordability",
 		"justification": "This indicator informs on the quality of food environments and access to healthy diets in the population. It is relevant to several SDGs, particularly SDG 2 (Zero Hunger) and SDG 3 (Good Health and Well-Being), which emphasize the need for universal access to safe, nutritious, and sufficient food. The indicator is often use by International Organizations, such as FAO, to determine the percentage of countries' populations that cannot afford a healthy diet. High values indicate widespread food insecurity and have various adverse implications.",
 		"spatial_scope": "Global",
 		"granularity": [
@@ -101,7 +101,7 @@
 		"description": "The indicator monitors the share of population at higher risk to be affected by food insecurity. The indicator is assessed and regularly updated by FAO through the application of the Food Insecurity Experience Scale (FIES) in more than 140 countries worldwide. The FIES is an experience-based food security scale used to produce a measure of access to food at different levels of severity that can be compared across contexts. It includes a set of eight questions asking respondents to self-report conditions and experiences typically associated with limited access to food.",
 		"key_area": "Social",
 		"thematic_area": "NutritionAndHealth",
-		"domain": "FoodSecurity",
+		"indicator_domain": "FoodSecurity",
 		"justification": "Food insecurity at moderate levels of severity is typically associated with the inability to regularly eat healthy, balanced diets. Food insecurity at moderate levels can be considered a predictor of various forms of diet-related health conditions in the population, associated with micronutrient deficiency and unbalanced diets. Severe levels of food insecurity imply a high probability of inadequate food intake and therefore can lead to more severe forms of undernutrition, including hunger. Food insecurity is tied to the quality of food environments. Monitoring the prevalence of food insecurity is pivotal for tracking progress towards SDG 2 aims to end hunger, achieve food security and improved nutrition, and promote sustainable agriculture. Ensuring sustainable food systems and improving food security is also part of the broader objective of the European Green Deal to create a fair, healthy, and environmentally-friendly food system.",
 		"spatial_scope": "Global",
 		"granularity": [
@@ -128,7 +128,7 @@
 		"description": "This indicator compares the wages in the agricultural sector to the rest of the economy. It is based on data from the economic accounts for agriculture provided by Eurostat for the agricultural sector of the EU as a whole and of individual Member States. It measures the Agricultural entrepreneurial income (net agricultural entrepreneurial income in real terms) derived from agricultural activities that can be used for the remuneration of own production factors, i.e. non-salaried (= family) labour, land belonging to the agricultural holding and own capital, per unpaid (non-salaried) annual work unit. It is obtained by deducting compensation of employees, rent and net interest from agricultural factor income. For the purpose of this indicator, compensation of employees are added back in, so that the resulting indicator represents the compensation of all work (salaried and non-salaried) performed in the agricultural sector, as well as the income remaining with the enterprise.",
 		"key_area": "Economic",
 		"thematic_area": "FairEconomicViabilityInFoodValueChain",
-		"domain": "IncomeDistribution",
+		"indicator_domain": "IncomeDistribution",
 		"justification": "The gap between agricultural and non-agricultural income remains high. Therefore, the Common Agricultural Policy and other strategic policies aim at reducing these income disparities along the food chain, focusing on farmers in particular. A positive share is desirable as it bring make farmers' wages closer to those of other workers.",
 		"spatial_scope": "Eu",
 		"granularity": [
@@ -164,7 +164,7 @@
 		"description": "Water use in agriculture is assessed with the WATER EXPLOITATION INDEX PLUS (WEI+), which provides an estimated measure of the total water use as a percentage of the renewable freshwater resources (groundwater and surface water) for a given territory and time period. It helps track the efficiency of water utilization in agricultural practices. As advanced version of the WEI, the WEI+ addresses regional and seasonal aspects of water scarcity. In addition, it also takes water use (water abstraction minus water returned) into account. It identifies areas prone to water stress due to exceeding water abstraction and use on a seasonal scale in relation to the resources available.",
 		"key_area": "Environmental",
 		"thematic_area": "SustainableUseOfResources",
-		"domain": "Water",
+		"indicator_domain": "Water",
 		"justification": "Agriculture is a significant consumer of water resources in the EU due to irrigation needs for crop production. According to the European Environment Agency, agriculture alone accounted for approximately 1/4 of total water abstraction in the EU in 2015. This indicator is part of the Performance Monitoring and Evaluation Framework of the Common Agricultural Policy. Efficient water use in agriculture also contributes to achieving the Green Deal\u00e2\u20ac\u2122s overarching goals. By promoting sustainable practices, improving irrigation systems, and enhancing soil moisture management, water waste can be reduced, food security enhanced and food systems more sustainable and resilient. Decreasing water consumption in agriculture is envisaged to ensure sustainable water management and alleviating water scarcity. Thus, a negative direction is desirable.",
 		"spatial_scope": "Eu",
 		"granularity": [
@@ -202,7 +202,7 @@
 		"description": "Nitrogen is added to the soil by mineral and organic fertilisers, grazing animals, atmospheric deposition and biological nitrogen fixation, while harvesting of crops, grazing and removal of residues remove nitrogen from the soil. A lack of nitrogen may cause degradation in soil fertility and erosion, while an excess may cause surface and groundwater (including drinking water) pollution and eutrophication. This indicator also helps identifying the factors which contribute to the nitrogen surplus and shows the change over time.",
 		"key_area": "Environmental",
 		"thematic_area": "SustainableUseOfResources",
-		"domain": "LandAndSoil",
+		"indicator_domain": "LandAndSoil",
 		"justification": "The Gross Nutrient Balance illustrates the link between the use of agricultural nutrients and the environmental impact, particularly regarding potential threats to water quality.  It identifies the factors determining the nutrients surplus or deficit and the trends over time. The indicator is also part of the Performance Monitoring and Evaluation Framework of the Common Agricultural Policy. A decreasing trend of Nitrogen Gross Nutrient Balance is desirable because it indicates a reduction in the surplus of nitrogen in agricultural systems. This is important for reducing nitrogen runoff into water bodies, which can lead to eutrophication, and consequent negative implications to aquatic ecosystems. Additionally, managing nitrogen more efficiently reduces the emission of nitrous oxide, a potent greenhouse gas, thereby contributing to climate change mitigation efforts.",
 		"spatial_scope": "EuMemberStates",
 		"granularity": [

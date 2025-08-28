@@ -11,7 +11,7 @@
     (2021). Further info also in https://edgar.jrc.ec.europa.eu/edgar_food
   key_area: Environmental
   thematic_area: ClimateChange
-  domain: GHGEmissions
+  indicator_domain: GHGEmissions
   justification: >-
     It includes the full food-system, the methodology is robust, and it covers
     all possible degrees of temporal and spatial granularity levels (which were
@@ -47,7 +47,7 @@
     three-year baseline, comprising the average of 2015, 2016 and 2017.
   key_area: Environmental
   thematic_area: PollutionAntimicrobials
-  domain: Pollution
+  indicator_domain: Pollution
   justification: >-
     The indicator is part of the EU Sustainable Development Goals indicator set.
     Reducing the use and risk of chemical pesticides is an important step
@@ -95,7 +95,7 @@
     by FAO.
   key_area: Social
   thematic_area: FoodEnvironment
-  domain: FoodAffordability
+  indicator_domain: FoodAffordability
   justification: >-
     This indicator informs on the quality of food environments and access to
     healthy diets in the population. It is relevant to several SDGs,
@@ -131,7 +131,7 @@
     experiences typically associated with limited access to food.
   key_area: Social
   thematic_area: NutritionAndHealth
-  domain: FoodSecurity
+  indicator_domain: FoodSecurity
   justification: >-
     Food insecurity at moderate levels of severity is typically associated with
     the inability to regularly eat healthy, balanced diets. Food insecurity at
@@ -179,7 +179,7 @@
     remaining with the enterprise.
   key_area: Economic
   thematic_area: FairEconomicViabilityInFoodValueChain
-  domain: IncomeDistribution
+  indicator_domain: IncomeDistribution
   justification: >-
     The gap between agricultural and non-agricultural income remains high.
     Therefore, the Common Agricultural Policy and other strategic policies aim
@@ -223,7 +223,7 @@
     available.
   key_area: Environmental
   thematic_area: SustainableUseOfResources
-  domain: Water
+  indicator_domain: Water
   justification: >-
     Agriculture is a significant consumer of water resources in the EU due to
     irrigation needs for crop production. According to the European Environment
@@ -274,7 +274,7 @@
     the change over time.
   key_area: Environmental
   thematic_area: SustainableUseOfResources
-  domain: LandAndSoil
+  indicator_domain: LandAndSoil
   justification: >-
     The Gross Nutrient Balance illustrates the link between the use of
     agricultural nutrients and the environmental impact, particularly regarding
