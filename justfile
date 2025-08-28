@@ -108,8 +108,8 @@ serve:
   - mkdocs serve
 
 # Validate data
-validate: convert
-  linkml-validate --config validation.config.yaml
+validate:
+  linkml-validate --schema {{source_schema_path}} --config validation.config.yaml
 
 # Convert indicator data from yaml to json
 convert:
