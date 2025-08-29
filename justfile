@@ -91,14 +91,17 @@ _gendoc: _ensure_docdir _gen_indicatordata
     cp {{dest}}/prefixmap/* {{docdir}} ; \
 
     cp -r {{src}}/docs/files/* {{docdir}}
+    cp -r data/* {{docdir}}/data
     gen-doc {{gen_doc_args}} -d {{docdir}} --template-directory {{templatedir}} {{source_schema_path}}
 
 # Generate indicator data table
 _gen_indicatordata: convert
   {{shebang}} {{src}}/scripts/generate_indicatordata.py
+  {{shebang}} {{src}}/scripts/generate_indicators_table.py
 
 _ensure_docdir:
     -mkdir -p {{docdir}}
+    -mkdir -p {{docdir}}/data
 
 _ensure_examples_output:
     -mkdir -p examples/output

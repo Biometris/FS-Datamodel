@@ -14,7 +14,7 @@
     {
       "label": "Install requirements (venv)",
       "type": "shell",
-      "command": ".venv/Scripts/activate; pip install -r requirements.txt",
+      "command": "source .venv/Scripts/activate; pip install -r requirements.txt",
       "group": {
         "kind": "test",
         "isDefault": true
@@ -23,7 +23,7 @@
     {
       "label": "Just serve",
       "type": "shell",
-      "command": ".venv/Scripts/activate; just serve",
+      "command": "source .venv/Scripts/activate; just serve",
       "group": {
         "kind": "build",
         "isDefault": true
@@ -32,7 +32,7 @@
     {
       "label": "Just clean",
       "type": "shell",
-      "command": ".venv/Scripts/activate; just clean",
+      "command": "source .venv/Scripts/activate; just clean",
       "group": {
         "kind": "build",
         "isDefault": true
@@ -41,7 +41,7 @@
     {
       "label": "Just site",
       "type": "shell",
-      "command": ".venv/Scripts/activate; just site",
+      "command": "source .venv/Scripts/activate; just site",
       "group": {
         "kind": "build",
         "isDefault": true

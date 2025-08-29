@@ -1,5 +1,5 @@
 ---
-site_name: "Food systems monitoring data model documentation"
+site_name: "FS Data Model"
 theme:
   name: material
   features:
@@ -10,9 +10,13 @@ plugins:
 nav:
   - Overview: index.md
   - Indicators: indicatordata.md  
+  - Indicators table: indicators_table.md
   - About: about.md
 docs_dir: docs
 site_url: https://biometris.github.io/foodsystems-model
 repo_url: https://github.com/biometris/foodsystems-model
 extra_css:
   - style.css
+extra_javascript:
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - js/tablesort.js
