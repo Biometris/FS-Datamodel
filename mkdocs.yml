@@ -8,15 +8,17 @@ plugins:
   - search
   - mermaid2
 nav:
-  - Overview: index.md
-  - Indicators: indicatordata.md  
+  - Home: home.md
+  - Data model: index.md
+  - Indicators: indicatordata.md
   - Indicators table: indicators_table.md
-  - About: about.md
+  - Indicators chart: indicators_chart.md
 docs_dir: docs
 site_url: https://biometris.github.io/foodsystems-model
 repo_url: https://github.com/biometris/foodsystems-model
 extra_css:
   - style.css
 extra_javascript:
+  - https://cdn.jsdelivr.net/npm/echarts@6.0.0/dist/echarts.min.js
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
   - js/tablesort.js

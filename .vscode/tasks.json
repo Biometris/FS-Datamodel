@@ -48,6 +48,15 @@
       }
     },
     {
+      "label": "Just convert",
+      "type": "shell",
+      "command": "source .venv/Scripts/activate; just convert",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
       "label": "Just validate",
       "type": "shell",
       "command": "just validate",

@@ -1,0 +1,7 @@
+## Indicators
+
+| Name | Sustainability Dimensions | Thematic Area |
+|------|---------------------------|---------------|
+{% for e in entities -%}
+| {{ e.name }} | {{ e.key_area }} | {{ e.thematic_area }} |
+{% endfor %}

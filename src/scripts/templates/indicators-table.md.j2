@@ -1,5 +1,0 @@
-| ID | Name | Sustainability Dimensions |
-|----|------|----------------------------|
-{% for e in entities -%}
-| [{{ e.id }}](https://example.org/definition/{{ e.id }}) | {{ e.name }} | {% for d in e.sustainability_dimensions %}[{{ d }}](https://example.org/definition/{{ d }}){% if not loop.last %}, {% endif %}{% endfor %} |
-{% endfor %}
