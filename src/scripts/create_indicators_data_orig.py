@@ -1,23 +1,15 @@
+import sys
 from dataclasses import dataclass
 from pathlib import Path
 import json
 from jinja2 import Environment, FileSystemLoader
-from linkml_store.api.client import Client
-from linkml_runtime import SchemaView
-from linkml_store.utils.format_utils import load_objects
+import yaml
+
+from linkml_runtime.utils.yamlutils import as_dict
+sys.path.append("./")
+import project.food_system_indicators as fsi
 
 data_path = "data/indicators.yaml"
-schema_path = "src/schema/food_system_indicators.yaml"
-
-client = Client()
-db = client.attach_database("duckdb", alias="fsidb")
-sv = SchemaView(schema_path)
-db.set_schema_view(sv)
-
-indicator_collection = db.create_collection("Indicator", "Indicators")
-indicator_obs = load_objects(data_path)
-indicator_collection.insert(indicator_obs)
-
 
 @dataclass
 class Entity:
@@ -26,28 +18,42 @@ class Entity:
     key_area: str
     thematic_area: str
 
-def create_indicator_records(indicator_collection):
+def get_thematic_area(key_area, thematic_area_id):
+    match key_area.code:
+        case fsi.SustainabilityDimension.Environmental:
+            return fsi.EnvironmentalThematicArea(thematic_area_id)
+        case fsi.SustainabilityDimension.Economic:
+            return fsi.EconomicThematicArea(thematic_area_id)
+        case fsi.SustainabilityDimension.Social:
+            return fsi.SocialThematicArea(thematic_area_id)
+        case fsi.SustainabilityDimension.Horizontal:
+            return fsi.HorizontalThematicArea(thematic_area_id)
+        case _:
+            return None
 
-    thematic_areas = db.schema_view.get_element("thematic_area").__getattribute__("any_of")
-    all_thematic_areas = {}
-    for thematic_area in thematic_areas:
-        range = getattr(thematic_area, "range")
-        permissible_range = db.schema_view.get_enum(range).permissible_values
-        all_thematic_areas.update(permissible_range)
+def read_indicator_data(path):
+    # Load data as a list of dicts
+    with open(path, encoding="utf-8") as f:
+        data = yaml.safe_load(f)
 
-    all_key_areas = db.schema_view.get_enum("SustainabilityDimension").permissible_values
+    # Convert each dict into an indicator
+    indicators = [fsi.Indicator(**as_dict(d)) for d in data]
+    return indicators
 
+def create_indicator_records(indicators):
     # Create table records
     entities = []
-    for indicator in indicator_collection.rows_iter():
-        thematic_area = all_thematic_areas[indicator.get("thematic_area")]
-        key_area = all_key_areas[indicator.get("key_area")]
+    for indicator in indicators:
+        thematic_area = get_thematic_area(
+            indicator.key_area,
+            indicator.thematic_area
+        )
         entities.append(
             Entity(
-                indicator.get("id"),
-                indicator.get("name"),
-                getattr(key_area, "description"),
-                getattr(thematic_area, "description")
+                indicator.id,
+                indicator["name"],
+                str(indicator.key_area._code.description),
+                str(thematic_area._code.description)
             ))
     return entities
 
@@ -94,6 +100,7 @@ def create_indicators_data_table(entities):
     with open(output_file, "w") as f:
         f.write(markdown_output)
 
-records = create_indicator_records(indicator_collection)
+indicators = read_indicator_data(data_path)
+records = create_indicator_records(indicators)
 create_indicator_hiearchy_json(records)
 create_indicators_data_table(records)

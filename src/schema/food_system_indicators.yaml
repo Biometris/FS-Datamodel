@@ -42,16 +42,24 @@ classes:
     description: a domain.
     class_uri: linkml:Any
 
-  DataSource:
+  Database:
     is_a: Entity
-    title: data source
-    description: Data source containing the indicator data.    
+    title: database
+    description: Data base containing data corresponding to an indicator
+    slots:
+      - database_link
+      - update_frequency
+
+  IndicatorDataSource:
+    is_a: Entity
+    title: indicator data source
+    description: Data source containing the indicator data.
     slots:
       - data_link
       - oldest_datapoint
       - newest_datapoint
-      - time_granularity
-      - update_frequency 
+      - update_frequency
+      - in_database
 
   Indicator:
     is_a: Entity
@@ -67,7 +75,7 @@ classes:
       - granularity      
       - supply_chain_component
       - measurement_unit
-      - data_source      
+      - has_indicator_data_source      
     slot_usage:    
       id:        
         description:
@@ -207,7 +215,22 @@ slots:
     range: Indicator
     required: true
     description:
-      Indicator 
+      Indicator.
+
+  in_database:
+    title: in database
+    is_a: node property
+    range: Database
+    description:
+      Database.
+
+  has_indicator_data_source:
+    title: has indicator data source
+    is_a: node property
+    range: IndicatorDataSource
+    multivalued: true
+    description:
+      Indicator data source.
 
   name:
     title: name
@@ -291,6 +314,12 @@ slots:
       Link to the data for the indicator
     range: iri_type
 
+  database_link:
+    title: database link
+    description:
+      Link to the database
+    range: iri_type
+
   oldest_datapoint:
     title: oldest datapoint
     description:
@@ -315,14 +344,14 @@ slots:
       Frequency at which the data is updated.
     range: TimeGranularity  
 
-  data_source:
-    title: data source
+  incidator_data_source:
+    title: indicator data source
     description:
-      Data source.
+      Indicator data source.
     is_a: node property
-    range: DataSource
+    range: IndicatorDataSource
     required: true
-    multivalued: true
+    multivalued: false
     inlined_as_list: true
        
        
