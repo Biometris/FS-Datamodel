@@ -29,14 +29,14 @@
     - FoodProcessing
     - PrimaryFoodProduction
   measurement_unit: kt CO2eq
-  data_source:
-    - id: JRC
-      description: JRC
-      data_link: 'https://edgar.jrc.ec.europa.eu/datasets/EDGAR-FOOD_v6.xlsx'
+  has_indicator_data_source:
+    - id: JRC_GHG
+      description: JRC.
+      data_link: https://edgar.jrc.ec.europa.eu/datasets/EDGAR-FOOD_v6.xlsx
       oldest_datapoint: '1990'
       newest_datapoint: '2018'
       time_granularity: Yearly
-      update_frequency: Other
+      in_database: JRC
 - id: UseAndRiskOfChemicalPesticides
   name: Use and risk of chemical pesticides (F2F pesticide reduction target 1)
   description: >-
@@ -67,7 +67,7 @@
   supply_chain_component:
     - FoodConsumption
     - PrimaryFoodProduction
-  data_source:
+  has_indicator_data_source:
     - id: ESTAT
       description: ESTAT
       data_link: >-
@@ -75,7 +75,7 @@
       oldest_datapoint: '2011'
       newest_datapoint: '2022'
       time_granularity: Yearly
-      update_frequency: Yearly
+      in_database: "ESTAT"
     - id: DG SANTE
       description: DG SANTE
       data_link: >-
@@ -83,7 +83,7 @@
       oldest_datapoint: '2011'
       newest_datapoint: '2022'
       time_granularity: Yearly
-      update_frequency: Yearly
+      in_database: "DG_SANTE"
 - id: PercentAffordHealthyDiet
   name: Percent of the population who cannot afford a healthy diet
   description: >-
@@ -110,14 +110,14 @@
     - Countries
   supply_chain_component:
     - FoodConsumption
-  data_source:
+  has_indicator_data_source:
     - id: FAO
       description: FAO
       data_link: 'https://www.fao.org/faostat/en/#data/CAHD'
       oldest_datapoint: '2017'
-      newest_datapoint: '2022'
+      newest_datapoint: '2022'      
       time_granularity: Yearly
-      update_frequency: Yearly
+      in_database: FAO
 - id: PrevalenceFoodInsecurity
   name: Prevalence of moderate or severe food insecurity in the population
   description: >-
@@ -152,14 +152,14 @@
     - Countries
   supply_chain_component:
     - FoodConsumption
-  data_source:
+  has_indicator_data_source:
     - id: FAO
       description: FAO
       data_link: 'https://www.fao.org/faostat/en/#data/FS'
       oldest_datapoint: '2015'
       newest_datapoint: '2021'
       time_granularity: Yearly
-      update_frequency: Yearly
+      in_database: FAO      
 - id: FarmersIncomeRelative
   name: Farmers income in agriculture compared to wages in the rest of the economy
   description: >-
@@ -191,7 +191,7 @@
     - Countries
   supply_chain_component:
     - PrimaryFoodProduction
-  data_source:
+  has_indicator_data_source:
     - id: DG AGRI
       description: DG AGRI
       data_link: >-
@@ -199,15 +199,15 @@
       oldest_datapoint: '1995'
       newest_datapoint: '2023'
       time_granularity: Yearly
-      update_frequency: Yearly
+      in_database: DG_AGRI
     - id: ESTAT
       description: ESTAT
       data_link: >-
         https://agridata.ec.europa.eu/extensions/DashboardIndicators/JobsGrowth.html
       oldest_datapoint: '1995'
-      newest_datapoint: '2023'
+      newest_datapoint: '2023'      
       time_granularity: Yearly
-      update_frequency: Yearly
+      in_database: ESTAT
 - id: WaterExploitationIndex
   name: 'Water exploitation index, plus (WEI+)'
   description: >-
@@ -243,15 +243,15 @@
     - MacroRegions
   supply_chain_component:
     - PrimaryFoodProduction
-  data_source:
+  has_indicator_data_source:
     - id: EEA
       description: EEA
       data_link: >-
         https://ec.europa.eu/eurostat/databrowser/view/sdg_06_60/default/table?lang=en
       oldest_datapoint: '2000'
       newest_datapoint: '2019'
-      time_granularity: Yearly
-      update_frequency: Yearly
+      time_granularity: Yearly      
+      in_database: ESTAT
     - id: ESTAT
       description: ESTAT
       data_link: >-
@@ -259,7 +259,7 @@
       oldest_datapoint: '2000'
       newest_datapoint: '2019'
       time_granularity: Yearly
-      update_frequency: Yearly
+      in_database: ESTAT
   measurement_unit: kt CO2eq
 - id: GrossNutrientBalanceNitrogen
   name: Gross nutrient balance - nitrogen
@@ -293,7 +293,7 @@
     - Countries
   supply_chain_component:
     - PrimaryFoodProduction
-  data_source:
+  has_indicator_data_source:
     - id: ESTAT
       description: ESTAT
       data_link: >-
@@ -301,5 +301,5 @@
       oldest_datapoint: '1985'
       newest_datapoint: '2021'
       time_granularity: Yearly
-      update_frequency: EveryTwoYears
+      in_database: ESTAT      
   measurement_unit: kg/ha

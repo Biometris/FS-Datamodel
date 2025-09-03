@@ -6,18 +6,35 @@ from linkml_store.api.client import Client
 from linkml_runtime import SchemaView
 from linkml_store.utils.format_utils import load_objects
 
-data_path = "data/indicators.yaml"
 schema_path = "src/schema/food_system_indicators.yaml"
 
+indicator_data_path = "data/indicators.yaml"
+database_data_path = "data/databases.yaml"
+
+## Setup database
 client = Client()
 db = client.attach_database("duckdb", alias="fsidb")
 sv = SchemaView(schema_path)
 db.set_schema_view(sv)
 
+## Add data to database.
+database_collection = db.create_collection("Database", "Databases")
+database_obs = load_objects(database_data_path)
+database_collection.insert(database_obs)
+
+for r in database_collection.iter_validate_collection():
+   print(r.message)
+
 indicator_collection = db.create_collection("Indicator", "Indicators")
-indicator_obs = load_objects(data_path)
+indicator_obs = load_objects(indicator_data_path)
 indicator_collection.insert(indicator_obs)
 
+for r in indicator_collection.iter_validate_collection():
+   print(r.message)   
+
+results = list(db.iter_validate_database(ensure_referential_integrity=True))
+for result in results:
+    print(result)
 
 @dataclass
 class Entity:
@@ -94,6 +111,24 @@ def create_indicators_data_table(entities):
     with open(output_file, "w") as f:
         f.write(markdown_output)
 
+def create_databases_data_table(database_collection):
+    # Out file
+    output_file = "docs/databases_table.md"
+
+    # Point to templates folder
+    env = Environment(loader=FileSystemLoader("./src/docs/templates"))
+    template = env.get_template("databases_table.md.j2")
+
+    # Render
+    markdown_output = template.render(collection=database_collection)
+
+    # Save to file
+    with open(output_file, "w") as f:
+        f.write(markdown_output)
+
+
 records = create_indicator_records(indicator_collection)
 create_indicator_hiearchy_json(records)
 create_indicators_data_table(records)
+
+create_databases_data_table(database_collection)

@@ -45,7 +45,7 @@ classes:
   Database:
     is_a: Entity
     title: database
-    description: Data base containing data corresponding to an indicator
+    description: Data base containing data corresponding to an indicator.
     slots:
       - database_link
       - update_frequency
@@ -58,7 +58,7 @@ classes:
       - data_link
       - oldest_datapoint
       - newest_datapoint
-      - update_frequency
+      - time_granularity
       - in_database
 
   Indicator:
@@ -225,12 +225,14 @@ slots:
       Database.
 
   has_indicator_data_source:
-    title: has indicator data source
     is_a: node property
-    range: IndicatorDataSource
-    multivalued: true
+    title: has indicator data source
     description:
-      Indicator data source.
+      Indicator data source.    
+    range: IndicatorDataSource
+    required: true
+    multivalued: true
+    inlined_as_list: true
 
   name:
     title: name
@@ -342,18 +344,7 @@ slots:
     title: frequency at which the data is updated
     description:
       Frequency at which the data is updated.
-    range: TimeGranularity  
-
-  incidator_data_source:
-    title: indicator data source
-    description:
-      Indicator data source.
-    is_a: node property
-    range: IndicatorDataSource
-    required: true
-    multivalued: false
-    inlined_as_list: true
-       
+    range: TimeGranularity     
        
 ## --------------------
 ## TYPES

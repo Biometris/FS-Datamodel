@@ -13,6 +13,7 @@ nav:
   - Indicators: indicatordata.md
   - Indicators table: indicators_table.md
   - Indicators chart: indicators_chart.md
+  - Databases table: databases_table.md
 docs_dir: docs
 site_url: https://biometris.github.io/foodsystems-model
 repo_url: https://github.com/biometris/foodsystems-model

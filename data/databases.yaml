@@ -1,0 +1,28 @@
+- id: JRC123
+  name: JRC
+  description: Independent, global database  of anthropogenic emissions of greenhous gases
+    and air pollution on Earth.
+  database_link: https://edgar.jrc.ec.europa.eu
+  update_frequency: Other
+- id: ESTAT
+  name: ESTAT
+  description: Database for European Statistics in partnership with National Statistical 
+    Institues and other national authorities in the EU Member states.
+  database_link: https://ec.europa.eu/eurostat/web/main/data/database
+  update_frequency: Yearly
+- id: DG_SANTE
+  name: DG SANTE
+  description: EU Pesticides Database
+  database_link: https://food.ec.europa.eu/plants/pesticides/eu-pesticides-database_en
+  update_frequency: Yearly  
+- id: FAO
+  name: FAO  
+  description: Database for the Food and Agriculture Organization of the United Nations.
+  database_link: https://www.fao.org/faostat/en/#home
+  update_frequency: Yearly
+- id: DG_AGRI
+  name: DG AGRI
+  description: Data on national and European agriculture and common agricultural policy (CAP),
+    provided by the European Commission's agricultural and rural development department.
+  database_link: https://agridata.ec.europa.eu/extensions/DataPortal/home.html
+  update_frequency: Yearly

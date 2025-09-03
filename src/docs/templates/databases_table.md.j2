@@ -1,0 +1,7 @@
+## Databases
+
+| Name | Description | Link |
+|------|---------------------------|---------------------------|
+{% for c in collection.rows_iter() -%}
+| {{ c.get("name") }} | {{ c.get("description") }} | {{ c.get("database_link") }} |
+{% endfor %}
