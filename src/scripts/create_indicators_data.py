@@ -1,108 +1,21 @@
-from dataclasses import dataclass
 from pathlib import Path
 import json
 from jinja2 import Environment, FileSystemLoader
-from linkml_store.api.client import Client
-from linkml_runtime import SchemaView
-from linkml_store.utils.format_utils import load_objects
 
-# Setup database
-def setup_database(schema_path):
-    client = Client()
-    db = client.attach_database("duckdb")
-    sv = SchemaView(schema_path)
-    db.set_schema_view(sv)
+from indicator_datastore import DataStore
 
-    return db
-
-# Add data collection to database.
-def add_database_data(db,
-                      data_path,
-                      reference_class,
-                      collection_name):
-    
-    collection = db.create_collection(reference_class, collection_name)
-    objects = load_objects(data_path)
-    collection.insert(objects)
-
-    for r in collection.iter_validate_collection():
-        print(r.message)
-
-    return db
-
-# Validate database.
-def validate_database(db):
-
-    valid = True
-
-    collections = db.list_collections()
-
-    for c in collections:        
-        for r in c.iter_validate_collection():
-            valid = False
-            print(r.message)
-
-    indicator_collection = db.get_collection("Indicators")
-    database_collection = db.get_collection("Databases")    
-        
-    for indicator in indicator_collection.rows_iter():
-        datasources = indicator.get("has_indicator_data_source")
-        for datasource in datasources:
-            database = datasource.get("in_database")
-            if len(database_collection.find({"id": database}).rows) == 0:
-                print(database + " is not in the collection of databases.")
-                valid = False
-
-    return valid
-
-
-
-@dataclass
-class Entity:
-    id: str
-    name: str
-    key_area: str
-    thematic_area: str
-
-def create_indicator_records(db):
-
-    indicator_collection = db.get_collection("Indicators")
-
-    thematic_areas = db.schema_view.get_element("thematic_area").__getattribute__("any_of")
-    all_thematic_areas = {}
-    for thematic_area in thematic_areas:
-        range = getattr(thematic_area, "range")
-        permissible_range = db.schema_view.get_enum(range).permissible_values
-        all_thematic_areas.update(permissible_range)
-
-    all_key_areas = db.schema_view.get_enum("SustainabilityDimension").permissible_values
-
-    # Create table records
-    entities = []
-    for indicator in indicator_collection.rows_iter():
-        thematic_area = all_thematic_areas[indicator.get("thematic_area")]
-        key_area = all_key_areas[indicator.get("key_area")]
-        entities.append(
-            Entity(
-                indicator.get("id"),
-                indicator.get("name"),
-                getattr(key_area, "description"),
-                getattr(thematic_area, "description")
-            ))
-    return entities
-
-def create_indicator_hiearchy_json(entities):
+def create_indicator_hiearchy_json(indicators):
     # Output file
     outfile_path = "docs/data/indicators_chart_data.json"
 
     # Build hierarchy
     hierarchy = {}
-    for e in entities:
-        if e.key_area not in hierarchy:
-            hierarchy[e.key_area] = {}
-        if e.thematic_area not in hierarchy[e.key_area]:
-            hierarchy[e.key_area][e.thematic_area] = []
-        hierarchy[e.key_area][e.thematic_area].append(e)
+    for e in indicators:
+        if e['key_area'] not in hierarchy:
+            hierarchy[e['key_area']] = {}
+        if e['thematic_area'] not in hierarchy[e['key_area']]:
+            hierarchy[e['key_area']][e['thematic_area']] = []
+        hierarchy[e['key_area']][e['thematic_area']].append(e)
 
     # Convert hierarchy
     sunburst_data = []
@@ -111,7 +24,7 @@ def create_indicator_hiearchy_json(entities):
         for thematic_area_id, ents in thematic_groups.items():
             thematic_node = {
                 "name": thematic_area_id,
-                "children": [{"name": ent.name, "value": 1} for ent in ents]
+                "children": [{"name": ent['name'], "value": 1} for ent in ents]
             }
             key_area_node["children"].append(thematic_node)
         sunburst_data.append(key_area_node)
@@ -119,61 +32,50 @@ def create_indicator_hiearchy_json(entities):
     # Save JSON for reuse
     Path(outfile_path).write_text(json.dumps(sunburst_data, indent=2))
 
-def create_indicators_data_table(entities):
+def render_template(
+    template_name,
+    **kwargs
+):
     # Out file
-    output_file = "docs/indicators_table.md"
+    output_file = f"docs/{template_name}.md"
 
     # Point to templates folder
     env = Environment(loader=FileSystemLoader("./src/docs/templates"))
-    template = env.get_template("indicators_table.md.j2")
+    template = env.get_template(f"{template_name}.md.j2")
 
     # Render
-    markdown_output = template.render(entities=entities)
+    markdown_output = template.render(**kwargs)
 
     # Save to file
     with open(output_file, "w") as f:
         f.write(markdown_output)
 
-def create_databases_data_table(db):
+if __name__ == "__main__":
+    schema_path = "src/schema/food_system_indicators.yaml"
+    indicator_data_path = "data/indicators.yaml"
+    database_data_path = "data/databases.yaml"
 
-    database_collection = db.get_collection("Databases")
+    # Setup data store
+    datastore = DataStore(
+        schema_file=schema_path,
+        indicators_file=indicator_data_path,
+        databases_file=database_data_path
+    )
 
-    # Out file
-    output_file = "docs/databases_table.md"
+    # Validate database content.
+    if datastore.validate_data():
 
-    # Point to templates folder
-    env = Environment(loader=FileSystemLoader("./src/docs/templates"))
-    template = env.get_template("databases_table.md.j2")
+        # Get indicators and create hierarchy JSON and table
+        indicators = datastore.get_indicators()
+        create_indicator_hiearchy_json(indicators)
+        render_template(
+            template_name = 'indicators_table',
+            indicators = indicators
+        )
 
-    # Render
-    markdown_output = template.render(collection=database_collection)
-
-    # Save to file
-    with open(output_file, "w") as f:
-        f.write(markdown_output)
-
-
-schema_path = "src/schema/food_system_indicators.yaml"
-
-indicator_data_path = "data/indicators.yaml"
-database_data_path = "data/databases.yaml"
-
-# Setup database based on schema.
-db = setup_database(schema_path)
-
-# Add database data from yaml to db.
-db = add_database_data(db, data_path=database_data_path, reference_class="Database", collection_name="Databases")
-
-# Add indicator data from yaml to db.
-db = add_database_data(db, data_path=indicator_data_path, reference_class="Indicator", collection_name="Indicators")
-
-# Validate database content.
-if validate_database(db):
-
-    # Create indicator output table and visual.
-    records = create_indicator_records(db)
-    create_indicator_hiearchy_json(records)
-    create_indicators_data_table(records)
-
-    # Create database output table.
-    create_databases_data_table(db)
+        # Get database and create output table.
+        databases = datastore.get_databases()
+        render_template(
+            template_name = 'databases_table',
+            databases = databases
+        )

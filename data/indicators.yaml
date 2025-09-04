@@ -115,7 +115,7 @@
       description: FAO
       data_link: 'https://www.fao.org/faostat/en/#data/CAHD'
       oldest_datapoint: '2017'
-      newest_datapoint: '2022'      
+      newest_datapoint: '2022'
       time_granularity: Yearly
       in_database: FAO
 - id: PrevalenceFoodInsecurity
@@ -159,7 +159,7 @@
       oldest_datapoint: '2015'
       newest_datapoint: '2021'
       time_granularity: Yearly
-      in_database: FAO      
+      in_database: FAO
 - id: FarmersIncomeRelative
   name: Farmers income in agriculture compared to wages in the rest of the economy
   description: >-
@@ -205,7 +205,7 @@
       data_link: >-
         https://agridata.ec.europa.eu/extensions/DashboardIndicators/JobsGrowth.html
       oldest_datapoint: '1995'
-      newest_datapoint: '2023'      
+      newest_datapoint: '2023'
       time_granularity: Yearly
       in_database: ESTAT
 - id: WaterExploitationIndex
@@ -250,7 +250,7 @@
         https://ec.europa.eu/eurostat/databrowser/view/sdg_06_60/default/table?lang=en
       oldest_datapoint: '2000'
       newest_datapoint: '2019'
-      time_granularity: Yearly      
+      time_granularity: Yearly
       in_database: ESTAT
     - id: ESTAT
       description: ESTAT
@@ -301,5 +301,5 @@
       oldest_datapoint: '1985'
       newest_datapoint: '2021'
       time_granularity: Yearly
-      in_database: ESTAT      
+      in_database: ESTAT
   measurement_unit: kg/ha
