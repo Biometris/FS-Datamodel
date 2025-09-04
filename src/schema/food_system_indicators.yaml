@@ -221,6 +221,7 @@ slots:
     title: in database
     is_a: node property
     range: Database
+    required: true
     description:
       Database.
 

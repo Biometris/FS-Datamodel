@@ -6,35 +6,56 @@ from linkml_store.api.client import Client
 from linkml_runtime import SchemaView
 from linkml_store.utils.format_utils import load_objects
 
-schema_path = "src/schema/food_system_indicators.yaml"
+# Setup database
+def setup_database(schema_path):
+    client = Client()
+    db = client.attach_database("duckdb")
+    sv = SchemaView(schema_path)
+    db.set_schema_view(sv)
 
-indicator_data_path = "data/indicators.yaml"
-database_data_path = "data/databases.yaml"
+    return db
 
-## Setup database
-client = Client()
-db = client.attach_database("duckdb", alias="fsidb")
-sv = SchemaView(schema_path)
-db.set_schema_view(sv)
+# Add data collection to database.
+def add_database_data(db,
+                      data_path,
+                      reference_class,
+                      collection_name):
+    
+    collection = db.create_collection(reference_class, collection_name)
+    objects = load_objects(data_path)
+    collection.insert(objects)
 
-## Add data to database.
-database_collection = db.create_collection("Database", "Databases")
-database_obs = load_objects(database_data_path)
-database_collection.insert(database_obs)
+    for r in collection.iter_validate_collection():
+        print(r.message)
 
-for r in database_collection.iter_validate_collection():
-   print(r.message)
+    return db
 
-indicator_collection = db.create_collection("Indicator", "Indicators")
-indicator_obs = load_objects(indicator_data_path)
-indicator_collection.insert(indicator_obs)
+# Validate database.
+def validate_database(db):
 
-for r in indicator_collection.iter_validate_collection():
-   print(r.message)   
+    valid = True
 
-results = list(db.iter_validate_database(ensure_referential_integrity=True))
-for result in results:
-    print(result)
+    collections = db.list_collections()
+
+    for c in collections:        
+        for r in c.iter_validate_collection():
+            valid = False
+            print(r.message)
+
+    indicator_collection = db.get_collection("Indicators")
+    database_collection = db.get_collection("Databases")    
+        
+    for indicator in indicator_collection.rows_iter():
+        datasources = indicator.get("has_indicator_data_source")
+        for datasource in datasources:
+            database = datasource.get("in_database")
+            if len(database_collection.find({"id": database}).rows) == 0:
+                print(database + " is not in the collection of databases.")
+                valid = False
+
+    return valid
+
+
 
 @dataclass
 class Entity:
@@ -43,7 +64,9 @@ class Entity:
     key_area: str
     thematic_area: str
 
-def create_indicator_records(indicator_collection):
+def create_indicator_records(db):
+
+    indicator_collection = db.get_collection("Indicators")
 
     thematic_areas = db.schema_view.get_element("thematic_area").__getattribute__("any_of")
     all_thematic_areas = {}
@@ -111,7 +134,10 @@ def create_indicators_data_table(entities):
     with open(output_file, "w") as f:
         f.write(markdown_output)
 
-def create_databases_data_table(database_collection):
+def create_databases_data_table(db):
+
+    database_collection = db.get_collection("Databases")
+
     # Out file
     output_file = "docs/databases_table.md"
 
@@ -127,8 +153,27 @@ def create_databases_data_table(database_collection):
         f.write(markdown_output)
 
 
-records = create_indicator_records(indicator_collection)
-create_indicator_hiearchy_json(records)
-create_indicators_data_table(records)
+schema_path = "src/schema/food_system_indicators.yaml"
 
-create_databases_data_table(database_collection)
+indicator_data_path = "data/indicators.yaml"
+database_data_path = "data/databases.yaml"
+
+# Setup database based on schema.
+db = setup_database(schema_path)
+
+# Add database data from yaml to db.
+db = add_database_data(db, data_path=database_data_path, reference_class="Database", collection_name="Databases")
+
+# Add indicator data from yaml to db.
+db = add_database_data(db, data_path=indicator_data_path, reference_class="Indicator", collection_name="Indicators")
+
+# Validate database content.
+if validate_database(db):
+
+    # Create indicator output table and visual.
+    records = create_indicator_records(db)
+    create_indicator_hiearchy_json(records)
+    create_indicators_data_table(records)
+
+    # Create database output table.
+    create_databases_data_table(db)
