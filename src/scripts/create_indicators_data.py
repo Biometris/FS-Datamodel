@@ -54,12 +54,14 @@ if __name__ == "__main__":
     schema_path = "src/schema/food_system_indicators.yaml"
     indicator_data_path = "data/indicators.yaml"
     database_data_path = "data/databases.yaml"
+    datasource_data_path = "data/datasources.yaml"
 
     # Setup data store
     datastore = DataStore(
         schema_file=schema_path,
         indicators_file=indicator_data_path,
-        databases_file=database_data_path
+        databases_file=database_data_path,
+        datasources_file=datasource_data_path
     )
 
     # Validate database content.
@@ -78,4 +80,10 @@ if __name__ == "__main__":
         render_template(
             template_name = 'databases_table',
             databases = databases
+        )
+
+        datasources = datastore.get_indicator_datasources()
+        render_template(
+            template_name = 'indicator_datasources_table',
+            datasources = datasources
         )

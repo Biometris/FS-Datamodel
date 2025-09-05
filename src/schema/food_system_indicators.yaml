@@ -46,20 +46,22 @@ classes:
     is_a: Entity
     title: database
     description: Data base containing data corresponding to an indicator.
-    slots:
+    tree_root: true
+    slots:        
       - database_link
       - update_frequency
+      - contains_indicator_data_source
 
   IndicatorDataSource:
     is_a: Entity
     title: indicator data source
-    description: Data source containing the indicator data.
+    description: Data source containing the indicator data.    
     slots:
       - data_link
       - oldest_datapoint
       - newest_datapoint
-      - time_granularity
-      - in_database
+      - time_granularity      
+      - measures_indicator
 
   Indicator:
     is_a: Entity
@@ -74,8 +76,7 @@ classes:
       - spatial_scope
       - granularity      
       - supply_chain_component
-      - measurement_unit
-      - has_indicator_data_source      
+      - measurement_unit      
     slot_usage:    
       id:        
         description:
@@ -217,23 +218,22 @@ slots:
     description:
       Indicator.
 
-  in_database:
-    title: in database
-    is_a: node property
-    range: Database
-    required: true
+  contains_indicator_data_source:
+    title: contains indicator data source
     description:
-      Database.
-
-  has_indicator_data_source:
+      Indicator data source.
     is_a: node property
-    title: has indicator data source
-    description:
-      Indicator data source.    
     range: IndicatorDataSource
     required: true
     multivalued: true
-    inlined_as_list: true
+
+  measures_indicator:
+    is_a: node property
+    title: measures indicator
+    description:
+      Indicator.
+    range: Indicator
+    required: true
 
   name:
     title: name

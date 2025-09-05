@@ -12,6 +12,7 @@ nav:
   - Data model: index.md
   - Indicators: indicators_table.md
   - Databases: databases_table.md
+  - Datasources: indicator_datasources_table.md
 docs_dir: docs
 site_url: https://biometris.github.io/foodsystems-model
 repo_url: https://github.com/biometris/foodsystems-model

@@ -1,0 +1,5 @@
+| Name | Link | Measures indicator
+|---------------|------------------------|---------------|
+{% for datasource in datasources -%}
+| {{ datasource['description'] }} |  {{ datasource['data_link'] }} | {{ datasource['measures_indicator'] }}
+{% endfor %}

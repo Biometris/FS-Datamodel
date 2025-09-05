@@ -8,7 +8,8 @@ class DataStore:
         self,
         schema_file: str,
         indicators_file: str,
-        databases_file: str
+        databases_file: str,
+        datasources_file: str
     ):
         # Initialize LinkML Store with DuckDB
         self.client = Client()
@@ -18,9 +19,10 @@ class DataStore:
         sv = SchemaView(schema_file)
         self.db.set_schema_view(sv)
 
-        # Add database data from yaml to db.
+        # Add database data from yaml to db.             
+        self.add_database_data(indicators_file, "Indicator", "Indicators")        
+        self.add_database_data(datasources_file, "IndicatorDataSource", "IndicatorDataSources")
         self.add_database_data(databases_file, "Database", "Databases")
-        self.add_database_data(indicators_file, "Indicator", "Indicators")
 
         # Validate cross-links
         print("\nRunning validation...")
@@ -47,16 +49,24 @@ class DataStore:
                 valid = False
                 print(r.message)
 
-        # Validate cross-references between Indicators and Databases
-        indicator_collection = self.db.get_collection("Indicators")
+        # Validate cross-references between Databases and IndicatorDataSources
         database_collection = self.db.get_collection("Databases")
-        for indicator in indicator_collection.rows_iter():
-            datasources = getattr(indicator, "has_indicator_data_source", [])
-            for datasource in datasources:
-                database = getattr(datasource, "in_database", None)
-                if database is not None and len(database_collection.find({"id": database}).rows) == 0:
-                    print(database + " is not in the collection of databases.")
+        data_source_collection = self.db.get_collection("IndicatorDataSources")
+        for database in database_collection.rows_iter():
+            data_sources = database.get("contains_indicator_data_source")
+            for data_source in data_sources:
+                if data_source is not None and len(data_source_collection.find({"id": data_source}).rows) == 0:
+                    print(data_source + " specified in database " + database.get("id") + " is not in the collection of datasources.")
                     valid = False
+
+        # Validate cross-references between Indicators and IndicatorDataSources
+        indicator_collection = self.db.get_collection("Indicators")
+        data_source_collection = self.db.get_collection("IndicatorDataSources")        
+        for data_source in data_source_collection.rows_iter():            
+            indicator = data_source.get("measures_indicator")            
+            if indicator is not None and len(indicator_collection.find({"id": indicator}).rows) == 0:
+                print(indicator + " specified in data source " + data_source.get("id") + " is not in the collection of indicators.")
+                valid = False
 
         return valid
 
@@ -68,4 +78,9 @@ class DataStore:
     def get_databases(self):
         """Return a joined view of databases"""
         q = Query(from_table="Databases")
+        return self.db.query(q).rows
+
+    def get_indicator_datasources(self):
+        """Return a joined view of databases"""
+        q = Query(from_table="IndicatorDataSources")
         return self.db.query(q).rows
