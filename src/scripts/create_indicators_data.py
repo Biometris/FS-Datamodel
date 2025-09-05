@@ -14,18 +14,27 @@ def create_indicator_hiearchy_json(indicators):
         if e['key_area'] not in hierarchy:
             hierarchy[e['key_area']] = {}
         if e['thematic_area'] not in hierarchy[e['key_area']]:
-            hierarchy[e['key_area']][e['thematic_area']] = []
-        hierarchy[e['key_area']][e['thematic_area']].append(e)
-
+            hierarchy[e['key_area']][e['thematic_area']] = {}
+        if e['indicator_domain'] not in hierarchy[e['key_area']][e['thematic_area']]:
+            hierarchy[e['key_area']][e['thematic_area']][e['indicator_domain']] = []
+        hierarchy[e['key_area']][e['thematic_area']][e['indicator_domain']].append(e)
+   
     # Convert hierarchy
     sunburst_data = []
     for key_area, thematic_groups in hierarchy.items():
         key_area_node = {"name": key_area, "children": []}
-        for thematic_area_id, ents in thematic_groups.items():
+        for thematic_area_id, domain_groups in thematic_groups.items():
             thematic_node = {
-                "name": thematic_area_id,
-                "children": [{"name": ent['name'], "value": 1} for ent in ents]
+                "name": thematic_area_id, 
+                "children": []
             }
+            for domain_group_id, ents in domain_groups.items():
+                domain_node = {
+                    "name": domain_group_id,
+                    "children": [{"name": ent['name'], "value": 1} for ent in ents]
+                }
+                thematic_node["children"].append(domain_node)
+            
             key_area_node["children"].append(thematic_node)
         sunburst_data.append(key_area_node)
 

@@ -43,7 +43,19 @@ Aim is to create a harmonised data model.
             },
             {
               r0: '35%',
-              r: '65%',
+              r: '55%',
+              label: {
+                rotate: 'tangential',
+                overflow: 'break',
+                formatter: function(params) {
+                  const name = params.name;
+                  return name.length > 12 ? name.slice(0,12) + '…' : name;
+                }
+              }
+            },
+             {
+              r0: '55%',
+              r: '75%',
               label: {
                 rotate: 'tangential',
                 overflow: 'break',
@@ -54,7 +66,7 @@ Aim is to create a harmonised data model.
               }
             },
             {
-              r0: '65%',
+              r0: '75%',
               r: '90%',
               label: {
                 rotate: 'tangential',

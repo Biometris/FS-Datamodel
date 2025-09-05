@@ -1,5 +1,5 @@
-| Name | Sustainability Dimensions | Thematic Area | Supply chain components |
-|------|---------------------------|---------------| ---------------------- |
+| Name | Sustainability Dimensions | Thematic Area | Domain | Supply chain components |
+|------|---------------------------|---------------|---------------| ---------------------- |
 {% for indicator in indicators -%}
-| {{ indicator['name'] }} | [{{indicator['key_area']}}](../SustainabilityDimension) | [{{indicator['thematic_area']}}](../ThematicArea) | [{{', '.join(indicator['supply_chain_component'])}}](../SupplyChainComponentType) |
+| {{ indicator['name'] }} | [{{indicator['key_area']}}](../SustainabilityDimension) | [{{indicator['thematic_area']}}](../ThematicArea) | [{{indicator['indicator_domain']}}](../Domain) | [{{', '.join(indicator['supply_chain_component'])}}](../SupplyChainComponentType) |
 {% endfor %}
