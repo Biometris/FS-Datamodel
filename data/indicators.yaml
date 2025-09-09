@@ -219,3 +219,104 @@
   supply_chain_component:
     - PrimaryFoodProduction
   measurement_unit: kg/ha
+- id: UseOfTheMoreHazardousPesticides
+  name: Use of the more hazardous pesticides (F2F pesticide reduction target 2)
+  description: >-
+    The indicator is calculated by adding together the quantities of active substances 
+    (categorised into Group 3 of Directive 2009/128/EC). These substances are approved
+    as candidates for substitution in accordance with Article 24 of Regulation (EC) No
+    1107/2009, which are placed on the market in plant protection products each year
+    reported under Regulation (EC) No 1185/2009.
+  key_area: Environmental
+  thematic_area: PollutionAntimicrobials
+  indicator_domain: Pollution
+  justification: >-
+    The indicator is part of the EU Sustainable Development Goals indicator set. The 
+    trend in the use of more hazardous pesticides is measured with data on the quantities
+    of more hazardous active substances, the so called 'candidates for substitution' 
+    (categorised into Group 3 of Directive 2009/128/EC), contained in the pesticides 
+    which are placed on the market (sold), and therefore used, in each MS. In the context
+    of the Biodiversity Strategy, more hazardous pesticides are plant protection products
+    containing one or more active substances approved as candidates for substitution
+    in accordance with Article 24 of Regulation (EC) No 1107/2009 and listed in Part E of
+    the Annex to Commission Implementing Regulation (EU) No 540/2011, or containing one or
+    more active substances listed in the Annex to Commission Implementing Regulation (EU)
+    2015/408. Hence, this indicator serves as a proxy for assessing the growth of healthy
+    crop by encouraging natural pest control mechanisms and reducing or minimising risks
+    to human health and the environment. Thus, a negative direction is desirable.
+  spatial_scope: EuMemberStates
+  granularity:
+    - Countries
+    - MacroRegions
+  supply_chain_component:
+    - FoodConsumption
+    - PrimaryFoodProduction
+  measurement_unit: Index 2015-2017 average = 100
+- id: WaterQualityNitratesInGroundwater
+  name: Water quality - Nitrates in groundwater
+  description: >-
+    Nitrate pollution is measured by current values and trends in nitrate concentrations 
+    in groundwater and rivers, expressed in mg NO3/l for groundwater and mg N/l for rivers. 
+    According to the Drinking Water Directive, a maximum concentration of 50 mg/L of nitrate
+    in groundwater that is used for drinking water is allowed to avoid threats to human health.
+    This indicator refers to concentrations of nitrate (NO3) in groundwater, measured as 
+    milligrams per litre (mg NO3/L). Data are taken from well samples and aggregated to annual
+    average values. Nitrate can persist in groundwater for a long time and accumulate at a high
+    level through inputs from anthropogenic sources (mainly agriculture). Only complete series
+    after inter/extrapolation are presented. For details on the total of measuring stations and
+    their distribution over the countries, please consult the metadata file.  
+  key_area: Environmental
+  thematic_area: PollutionAntimicrobials
+  indicator_domain: Pollution
+  justification: >-
+    Protection of water resources, water ecosystems and of drinking and bathing water is at the
+    cornerstone of EU environmental policy. The European Green Deal, with its initiatives of 
+    Biodiversity strategies and Zero pollution action plan, set a goal for the EU to reduce 
+    nutrient losses by at least 50%, while ensuring that there is no deterioration in soil 
+    fertility. The proposed 8th Environment Action Programme sets the environmental policy 
+    agenda for the years from 2021 to 2030 and explicitly mentions water-related issues in two
+    of its six priority objectives. This indicator is also part of the Performance Monitoring 
+    and Evaluation Framework of the CAP and a set of indicators for the EU Sustainable 
+    Development Goals, where it is used to monitor progress towards SDG 6 on clean water and 
+    sanitation and SDG 2 on ending hunger and malnutrition. Negative direction for this 
+    indicator is thus desirable. 
+  spatial_scope: EuMemberStates
+  granularity:
+    - Countries
+  supply_chain_component:
+    - FoodConsumption
+    - FoodProcessing
+    - PrimaryFoodProduction
+  measurement_unit: mg NO3 per liter
+- id: SalesOfAntimicrobialsForFoodProducingAnimals
+  name: Sales of antimicrobials for food-producing animals
+  description: >-
+    	The indicator on the sales of antimicrobials is expressed as milligrams (mg) of active 
+      substance sold per population correction unit (PCU) — mg/PCU. The PCU is applied as a 
+      proxy for the size of the food producing animal population (including all horses and 
+      excluding companion animals) and serves to normalise the sales data by the number of 
+      animals that could be potentially treated with antibiotics in each country. For 
+      food-producing animals, the proposed indicators for antimicrobial consumption are: 
+      overall sales of veterinary antimicrobials; sales of 3rd- and 4th-generation cephalosporins; 
+      sales of quinolones (specifying the proportion of fluoroquinolones); and sales of polymyxins, 
+      all measured in milligrams per population correction unit (mg/PCU.) The European Medicines 
+      Agency, in frame of the European Surveillance of Veterinary Antimicrobial Consumption 
+      project regularly collects data on how antimicrobial medicines are used in animals 
+      across the EU.  
+  key_area: Environmental
+  thematic_area: PollutionAntimicrobials
+  indicator_domain: Antimicrobials
+  justification: >-
+    This indicator aims to improve the response of EU agriculture to societal demands on food 
+    and public health such as fighting antimicrobial resistance, promoting production of safe, 
+    nutritious and sustainable food. The indicator is also part of the Performance Monitoring 
+    and Evaluation Framework of the Common Agricultural Policy and, with a negative desired 
+    direction, it is pivotal to present the progress.    
+  spatial_scope: Eu
+  granularity:
+    - Countries
+  supply_chain_component:
+    - PrimaryFoodProduction
+  measurement_unit: The unit of measurement is milligrams (mg) of antimicrobial active substance sold
+    for food-producing animals per population correction unit (PCU) - mg/PCU
+
