@@ -6,7 +6,8 @@ from indicator_datastore import DataStore
 
 def create_indicator_hiearchy_json(indicators):
     # Output file
-    outfile_path = "docs/data/indicators_chart_data.json"
+    outfile_path_sunburst = "docs/data/indicators_sunburst_chart_data.json"
+    outfile_path_tree = "docs/data/indicators_tree_chart_data.json"
 
     # Build hierarchy
     hierarchy = {}
@@ -18,7 +19,7 @@ def create_indicator_hiearchy_json(indicators):
         if e['indicator_domain'] not in hierarchy[e['key_area']][e['thematic_area']]:
             hierarchy[e['key_area']][e['thematic_area']][e['indicator_domain']] = []
         hierarchy[e['key_area']][e['thematic_area']][e['indicator_domain']].append(e)
-   
+       
     # Convert hierarchy
     sunburst_data = []
     for key_area, thematic_groups in hierarchy.items():
@@ -38,8 +39,36 @@ def create_indicator_hiearchy_json(indicators):
             key_area_node["children"].append(thematic_node)
         sunburst_data.append(key_area_node)
 
+    # Tree data requires base node
+    tree_data = {"name": "JRC hierarchy", "children": sunburst_data}
+
     # Save JSON for reuse
-    Path(outfile_path).write_text(json.dumps(sunburst_data, indent=2))
+    Path(outfile_path_sunburst).write_text(json.dumps(sunburst_data, indent=2))
+    Path(outfile_path_tree).write_text(json.dumps(tree_data, indent=2))
+
+def create_supply_chain_indicator_hiearchy_json(indicators):
+    # Output file    
+    outfile_path = "docs/data/indicators_supply_chain_chart_data.json"
+
+    # Build hierarchy
+    hierarchy = {}
+    for e in indicators:
+        for s in e['supply_chain_component']:
+            if s not in hierarchy:
+                hierarchy[s] = []
+            hierarchy[s].append(e)
+       
+    # Convert hierarchy
+    tree_data = {"name": "Supply chain component", "children": []}
+    for component, ents in hierarchy.items():
+        component_node = {
+            "name": component, 
+            "children": [{"name": ent['name'], "value": 1} for ent in ents]
+        }        
+        tree_data["children"].append(component_node)    
+
+    # Save JSON for reuse    
+    Path(outfile_path).write_text(json.dumps(tree_data, indent=2))    
 
 def render_template(
     template_name,
@@ -79,6 +108,8 @@ if __name__ == "__main__":
         # Get indicators and create hierarchy JSON and table
         indicators = datastore.get_indicators()
         create_indicator_hiearchy_json(indicators)
+        create_supply_chain_indicator_hiearchy_json(indicators)
+
         render_template(
             template_name = 'indicators_table',
             indicators = indicators
@@ -96,3 +127,5 @@ if __name__ == "__main__":
             template_name = 'indicator_datasources_table',
             datasources = datasources
         )
+
+

@@ -81,6 +81,7 @@ class DataStore:
         return self.db.query(q).rows
 
     def get_indicator_datasources(self):
-        """Return a joined view of databases"""
+        """Return a joined view of indicator data sources"""
         q = Query(from_table="IndicatorDataSources")
         return self.db.query(q).rows
+    

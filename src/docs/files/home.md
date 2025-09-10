@@ -2,14 +2,21 @@
 
 Aim is to create a harmonised data model.
 
+## Supply chain component hierarchy tree
+
+<div id="indicators-tree-chart" style="width: 100; height: 600px;"></div>
+
+## JRC domain sunburst diagram
+
 <div id="indicators-sunburst-chart" style="width: 100; height: 600px;"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+
 <script type="text/javascript">
   var chartDom = document.getElementById('indicators-sunburst-chart');
-  var myChart = echarts.init(chartDom);
+  var sunburstChart = echarts.init(chartDom);
 
-  fetch("../data/indicators_chart_data.json")
+  fetch("../data/indicators_sunburst_chart_data.json")
     .then(r => r.json())
     .then(data => {
       var option = {
@@ -88,10 +95,73 @@ Aim is to create a harmonised data model.
           ]
         }
       };
-      myChart.setOption(option);
+      sunburstChart.setOption(option);
     });
 
   window.addEventListener('resize', function() {
-    myChart.resize();
+    sunburstChart.resize();
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+
+<script type="text/javascript">
+  var chartDom = document.getElementById('indicators-tree-chart');
+  var treeChart = echarts.init(chartDom);
+
+  fetch("../data/indicators_supply_chain_chart_data.json")
+    .then(r => r.json())
+    .then(data => {
+      var option = {
+        tooltip: {
+            show: true,
+            trigger: 'item',
+            triggerOn: 'mousemove',
+            formatter: function(params) {
+                return params.name;
+            }
+        },
+        series: {
+          type: 'tree',
+          data: [data],
+          top: '1%',
+          left: '7%',
+          bottom: '1%',
+          right: '20%',
+          symbolSize: 7,
+          label: {
+            position: 'left',
+            verticalAlign: 'middle',
+            align: 'right',
+            fontSize: 9,
+            formatter: function(params) {
+                return params.name;
+              }
+          },
+          leaves: {
+            label: {
+              position: 'right',
+              verticalAlign: 'middle',
+              align: 'left',
+              overflow: 'break',
+              formatter: function(params) {
+                return params.name;
+              }
+            }
+          },
+          emphasis: {
+            focus: 'descendant'
+          },          
+          expandAndCollapse: true,
+          animationDuration: 550,
+          animationDurationUpdate: 750,
+          initialTreeDepth: 3
+        }
+      };
+      treeChart.setOption(option);
+    });
+
+  window.addEventListener('resize', function() {
+    treeChart.resize();
   });
 </script>
