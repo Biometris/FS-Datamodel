@@ -66,10 +66,19 @@ classes:
   IndicatorCriterion:
     is_a: Entity    
     title: indicator criterion
-    description: Criterion used for indicator selection.
-    tree_root: true
+    description: Criterion used for indicator selection.    
     slots:
       - category
+
+  IndicatorCriterionScore:
+    title: indicator criterion score
+    description: Score for an indicator for an indicator selection criterion.
+    tree_root: true
+    slots:
+      - score_for_indicator
+      - scores_criterion
+      - score
+      - comment
 
   Indicator:
     is_a: Entity
@@ -187,6 +196,11 @@ slots:
       - IAO:0000115
       - skos:definitions
 
+  comment:
+    range: narrative_text
+    description:
+      A comment about an entity.
+
   has numeric value:
     description: >-
       connects a quantity value to a number
@@ -242,6 +256,20 @@ slots:
       Indicator.
     range: Indicator
     required: true
+
+  score_for_indicator:
+    is_a: node property
+    title: score for indicator
+    description:
+      Indicator.
+    range: Indicator
+
+  scores_criterion:
+    is_a: node property
+    title: scores criterion
+    description:
+      Indicator criterion.
+    range: IndicatorCriterion
 
   name:
     title: name
@@ -359,6 +387,11 @@ slots:
     title: category
     description: category for the indicator selection criterion.
     range: CriterionCategory
+
+  score:
+    title: score
+    description: score for an indicator selection criterion for an indicator.
+    range: ScoreCategory
        
 ## --------------------
 ## TYPES
@@ -680,8 +713,8 @@ enums:
           Other.
 
   CriterionCategory:
-    title:
-    description:
+    title: criterion category
+    description: Category of an indicator selection criterion.
     permissible_values:
       GoalOrientedAndPolicyRelevant:
         description:
@@ -698,3 +731,23 @@ enums:
       OperationalFeasibility:
         description:
           Operational feasibility.
+
+  ScoreCategory:
+    title: score category
+    description: Score category.
+    permissible_values:
+      VeryPoor:        
+        description:
+          Very poor.
+      Poor:
+        description:
+          Poor.
+      Moderate:
+        description:
+          Moderate.
+      Good:
+        description:
+          Good.
+      Excellent:
+        description:
+          Excellent.
