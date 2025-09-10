@@ -63,6 +63,14 @@ classes:
       - time_granularity      
       - measures_indicator
 
+  IndicatorCriterion:
+    is_a: Entity    
+    title: indicator criterion
+    description: Criterion used for indicator selection.
+    tree_root: true
+    slots:
+      - category
+
   Indicator:
     is_a: Entity
     title: indicator
@@ -345,7 +353,12 @@ slots:
     title: frequency at which the data is updated
     description:
       Frequency at which the data is updated.
-    range: TimeGranularity     
+    range: TimeGranularity
+  
+  category:
+    title: category
+    description: category for the indicator selection criterion.
+    range: CriterionCategory
        
 ## --------------------
 ## TYPES
@@ -665,3 +678,23 @@ enums:
       Other:
         description:
           Other.
+
+  CriterionCategory:
+    title:
+    description:
+    permissible_values:
+      GoalOrientedAndPolicyRelevant:
+        description:
+          Goal oriented and policy relevant.
+      SoundMethodologies:
+        description:
+          Sound methodologies.
+      AvailabilityAncAccessibility:
+        description:
+          Availability and accessibility.
+      GeographicalCoverageAndTimeliness:
+        description:
+          Geographical coverage and timeliness.
+      OperationalFeasibility:
+        description:
+          Operational feasibility.
