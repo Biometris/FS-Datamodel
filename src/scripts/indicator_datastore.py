@@ -85,3 +85,13 @@ class DataStore:
         q = Query(from_table="IndicatorDataSources")
         return self.db.query(q).rows
     
+    def get_domains(self):
+        """Return a joined view of indicator domains"""
+        q = Query(from_table="Indicators",
+                  select_cols=["key_area", "thematic_area", "indicator_domain"])
+        
+        domains = [dict(s) for s in set(frozenset(d.items()) for d in self.db.query(q).rows)]
+        sorted_domains = sorted(domains, key=lambda i: (i["key_area"], i["thematic_area"], i["indicator_domain"]))
+                        
+        return sorted_domains
+    

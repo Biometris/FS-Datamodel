@@ -128,4 +128,10 @@ if __name__ == "__main__":
             datasources = datasources
         )
 
+        domains = datastore.get_domains()
+        render_template(
+            template_name = 'domains_table',
+            domains = domains
+        )
+
 

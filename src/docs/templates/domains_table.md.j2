@@ -1,0 +1,5 @@
+| Sustainability Dimension | Thematic Area | Domain |
+|------|---------------------------|---------------------------|
+{% for c in domains -%}
+| {{ c["key_area"] }} | {{ c["thematic_area"] }} | {{ c["indicator_domain"] }} |
+{% endfor %}
