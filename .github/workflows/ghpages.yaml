@@ -20,9 +20,9 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.13'
-      - run: mkdir docs
+          python-version: '3.13'      
       - run: pip install -r requirements.txt
+      - run: just site
       - run: mkdocs gh-deploy --config-file mkdocs.yml --force
  
   deploy_mkdocs:
