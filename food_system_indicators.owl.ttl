@@ -1,0 +1,1065 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix UO: <http://purl.obolibrary.org/obo/UO_> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix fsi: <https://w3id.org/linkml/examples/fsi> .
+@prefix linkml: <https://w3id.org/linkml/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+fsi:.owl.ttl a owl:Ontology ;
+    rdfs:label "food_system_indicators" ;
+    dct:title "food systems indicators schema" ;
+    skos:definition "Model for the indicators on the sustainability performance of food Systems within Europe." .
+
+fsi:Database a owl:Class ;
+    rdfs:label "Database" ;
+    dct:title "database" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty fsi:database_link ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:update_frequency ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty fsi:contains_indicator_data_source ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom fsi:IndicatorDataSource ;
+            owl:onProperty fsi:contains_indicator_data_source ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:database_link ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:database_link ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom fsi:TimeGranularity ;
+            owl:onProperty fsi:update_frequency ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:update_frequency ],
+        fsi:Entity ;
+    skos:definition "Data base containing data corresponding to an indicator." ;
+    skos:inScheme fsi: .
+
+fsi:IndicatorCriterionScore a owl:Class ;
+    rdfs:label "IndicatorCriterionScore" ;
+    dct:title "indicator criterion score" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:score ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom fsi:IndicatorCriterion ;
+            owl:onProperty fsi:scores_criterion ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:scores_criterion ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:comment ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:scores_criterion ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom fsi:ScoreCategory ;
+            owl:onProperty fsi:score ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:score ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty fsi:comment ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:comment ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom fsi:Indicator ;
+            owl:onProperty fsi:score_for_indicator ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:score_for_indicator ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:score_for_indicator ] ;
+    skos:definition "Score for an indicator for an indicator selection criterion." ;
+    skos:inScheme fsi: .
+
+fsi:IndicatorDatapointCollection a owl:Class ;
+    rdfs:label "IndicatorDatapointCollection" ;
+    dct:title "indicator datapoint collection" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:indicator_datapoints ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom fsi:IndicatorDatapoint ;
+            owl:onProperty fsi:indicator_datapoints ] ;
+    skos:definition "Collection of food system indicator datapoints." ;
+    skos:inScheme fsi: .
+
+fsi:IndicatorDatapoint a owl:Class ;
+    rdfs:label "IndicatorDatapoint" ;
+    dct:title "indicator datapoint" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty fsi:id ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:measurement_of ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty fsi:id ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty fsi:measurement_of ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom fsi:Indicator ;
+            owl:onProperty fsi:measurement_of ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:id ],
+        fsi:QuantityValue ;
+    skos:definition "Food system indicator datapoint." ;
+    skos:inScheme fsi: .
+
+<https://w3id.org/linkml/examples/fsiCriterionCategory#AvailabilityAncAccessibility> a owl:Class ;
+    rdfs:label "AvailabilityAncAccessibility" ;
+    rdfs:subClassOf fsi:CriterionCategory .
+
+<https://w3id.org/linkml/examples/fsiCriterionCategory#GeographicalCoverageAndTimeliness> a owl:Class ;
+    rdfs:label "GeographicalCoverageAndTimeliness" ;
+    rdfs:subClassOf fsi:CriterionCategory .
+
+<https://w3id.org/linkml/examples/fsiCriterionCategory#GoalOrientedAndPolicyRelevant> a owl:Class ;
+    rdfs:label "GoalOrientedAndPolicyRelevant" ;
+    rdfs:subClassOf fsi:CriterionCategory .
+
+<https://w3id.org/linkml/examples/fsiCriterionCategory#OperationalFeasibility> a owl:Class ;
+    rdfs:label "OperationalFeasibility" ;
+    rdfs:subClassOf fsi:CriterionCategory .
+
+<https://w3id.org/linkml/examples/fsiCriterionCategory#SoundMethodologies> a owl:Class ;
+    rdfs:label "SoundMethodologies" ;
+    rdfs:subClassOf fsi:CriterionCategory .
+
+fsi:Domain a owl:Class ;
+    rdfs:label "Domain" ;
+    dct:title "domain" ;
+    skos:definition "a domain." ;
+    skos:exactMatch linkml:Any ;
+    skos:inScheme fsi: .
+
+<https://w3id.org/linkml/examples/fsiEconomicDomain#IncomeDistribution> a owl:Class ;
+    rdfs:label "IncomeDistribution" ;
+    rdfs:subClassOf fsi:EconomicDomain .
+
+<https://w3id.org/linkml/examples/fsiEconomicDomain#MarketPowerAndBusinessStructure> a owl:Class ;
+    rdfs:label "MarketPowerAndBusinessStructure" ;
+    rdfs:subClassOf fsi:EconomicDomain .
+
+<https://w3id.org/linkml/examples/fsiEconomicDomain#Price> a owl:Class ;
+    rdfs:label "Price" ;
+    rdfs:subClassOf fsi:EconomicDomain .
+
+<https://w3id.org/linkml/examples/fsiEconomicDomain#SectorialGrowth> a owl:Class ;
+    rdfs:label "SectorialGrowth" ;
+    rdfs:subClassOf fsi:EconomicDomain .
+
+<https://w3id.org/linkml/examples/fsiEconomicDomain#TechnologyAndDigitalization> a owl:Class ;
+    rdfs:label "TechnologyAndDigitalization" ;
+    rdfs:subClassOf fsi:EconomicDomain .
+
+<https://w3id.org/linkml/examples/fsiEconomicDomain#Trade> a owl:Class ;
+    rdfs:label "Trade" ;
+    rdfs:subClassOf fsi:EconomicDomain .
+
+<https://w3id.org/linkml/examples/fsiEconomicDomain#TransportAccessibilityAndInfrastructure> a owl:Class ;
+    rdfs:label "TransportAccessibilityAndInfrastructure" ;
+    rdfs:subClassOf fsi:EconomicDomain .
+
+<https://w3id.org/linkml/examples/fsiEconomicThematicArea#DevelopmentAndLogistics> a owl:Class ;
+    rdfs:label "DevelopmentAndLogistics" ;
+    rdfs:subClassOf fsi:EconomicThematicArea .
+
+<https://w3id.org/linkml/examples/fsiEconomicThematicArea#FairEconomicViabilityInFoodValueChain> a owl:Class ;
+    rdfs:label "FairEconomicViabilityInFoodValueChain" ;
+    rdfs:subClassOf fsi:EconomicThematicArea .
+
+<https://w3id.org/linkml/examples/fsiEnvironmentalDomain#Antimicrobials> a owl:Class ;
+    rdfs:label "Antimicrobials" ;
+    rdfs:subClassOf fsi:EnvironmentalDomain .
+
+<https://w3id.org/linkml/examples/fsiEnvironmentalDomain#AquaticLivingResources> a owl:Class ;
+    rdfs:label "AquaticLivingResources" ;
+    rdfs:subClassOf fsi:EnvironmentalDomain .
+
+<https://w3id.org/linkml/examples/fsiEnvironmentalDomain#BiodiversityConservationAndRestorationOfNaturalEcosystems> a owl:Class ;
+    rdfs:label "BiodiversityConservationAndRestorationOfNaturalEcosystems" ;
+    rdfs:subClassOf fsi:EnvironmentalDomain .
+
+<https://w3id.org/linkml/examples/fsiEnvironmentalDomain#ConsumptionFootprint> a owl:Class ;
+    rdfs:label "ConsumptionFootprint" ;
+    rdfs:subClassOf fsi:EnvironmentalDomain .
+
+<https://w3id.org/linkml/examples/fsiEnvironmentalDomain#Energy> a owl:Class ;
+    rdfs:label "Energy" ;
+    rdfs:subClassOf fsi:EnvironmentalDomain .
+
+<https://w3id.org/linkml/examples/fsiEnvironmentalDomain#FoodLossAndWaste> a owl:Class ;
+    rdfs:label "FoodLossAndWaste" ;
+    rdfs:subClassOf fsi:EnvironmentalDomain .
+
+<https://w3id.org/linkml/examples/fsiEnvironmentalDomain#GHGEmissions> a owl:Class ;
+    rdfs:label "GHGEmissions" ;
+    rdfs:subClassOf fsi:EnvironmentalDomain .
+
+<https://w3id.org/linkml/examples/fsiEnvironmentalDomain#LandAndSoil> a owl:Class ;
+    rdfs:label "LandAndSoil" ;
+    rdfs:subClassOf fsi:EnvironmentalDomain .
+
+<https://w3id.org/linkml/examples/fsiEnvironmentalDomain#Pollution> a owl:Class ;
+    rdfs:label "Pollution" ;
+    rdfs:subClassOf fsi:EnvironmentalDomain .
+
+<https://w3id.org/linkml/examples/fsiEnvironmentalDomain#Water> a owl:Class ;
+    rdfs:label "Water" ;
+    rdfs:subClassOf fsi:EnvironmentalDomain .
+
+<https://w3id.org/linkml/examples/fsiEnvironmentalThematicArea#Biodiversity> a owl:Class ;
+    rdfs:label "Biodiversity" ;
+    rdfs:subClassOf fsi:EnvironmentalThematicArea .
+
+<https://w3id.org/linkml/examples/fsiEnvironmentalThematicArea#ClimateChange> a owl:Class ;
+    rdfs:label "ClimateChange" ;
+    rdfs:subClassOf fsi:EnvironmentalThematicArea .
+
+<https://w3id.org/linkml/examples/fsiEnvironmentalThematicArea#CrossCuttingAreas> a owl:Class ;
+    rdfs:label "CrossCuttingAreas" ;
+    rdfs:subClassOf fsi:EnvironmentalThematicArea .
+
+<https://w3id.org/linkml/examples/fsiEnvironmentalThematicArea#PollutionAntimicrobials> a owl:Class ;
+    rdfs:label "PollutionAntimicrobials" ;
+    rdfs:subClassOf fsi:EnvironmentalThematicArea .
+
+<https://w3id.org/linkml/examples/fsiEnvironmentalThematicArea#SustainableUseOfResources> a owl:Class ;
+    rdfs:label "SustainableUseOfResources" ;
+    rdfs:subClassOf fsi:EnvironmentalThematicArea .
+
+<https://w3id.org/linkml/examples/fsiGranularityType#Countries> a owl:Class ;
+    rdfs:label "Countries" ;
+    rdfs:subClassOf fsi:GranularityType .
+
+<https://w3id.org/linkml/examples/fsiGranularityType#LAU> a owl:Class ;
+    rdfs:label "LAU" ;
+    rdfs:subClassOf fsi:GranularityType .
+
+<https://w3id.org/linkml/examples/fsiGranularityType#MacroRegions> a owl:Class ;
+    rdfs:label "MacroRegions" ;
+    rdfs:subClassOf fsi:GranularityType .
+
+<https://w3id.org/linkml/examples/fsiGranularityType#NUTS1> a owl:Class ;
+    rdfs:label "NUTS1" ;
+    rdfs:subClassOf fsi:GranularityType .
+
+<https://w3id.org/linkml/examples/fsiGranularityType#NUTS2> a owl:Class ;
+    rdfs:label "NUTS2" ;
+    rdfs:subClassOf fsi:GranularityType .
+
+<https://w3id.org/linkml/examples/fsiGranularityType#NUTS3> a owl:Class ;
+    rdfs:label "NUTS3" ;
+    rdfs:subClassOf fsi:GranularityType .
+
+<https://w3id.org/linkml/examples/fsiHorizontalDomain#Accountability> a owl:Class ;
+    rdfs:label "Accountability" ;
+    rdfs:subClassOf fsi:HorizontalDomain .
+
+<https://w3id.org/linkml/examples/fsiHorizontalDomain#Adaptation> a owl:Class ;
+    rdfs:label "Adaptation" ;
+    rdfs:subClassOf fsi:HorizontalDomain .
+
+<https://w3id.org/linkml/examples/fsiHorizontalDomain#EffectiveImplementation> a owl:Class ;
+    rdfs:label "EffectiveImplementation" ;
+    rdfs:subClassOf fsi:HorizontalDomain .
+
+<https://w3id.org/linkml/examples/fsiHorizontalDomain#Preparedness> a owl:Class ;
+    rdfs:label "Preparedness" ;
+    rdfs:subClassOf fsi:HorizontalDomain .
+
+<https://w3id.org/linkml/examples/fsiHorizontalDomain#SharedVision> a owl:Class ;
+    rdfs:label "SharedVision" ;
+    rdfs:subClassOf fsi:HorizontalDomain .
+
+<https://w3id.org/linkml/examples/fsiHorizontalDomain#ShockResilience> a owl:Class ;
+    rdfs:label "ShockResilience" ;
+    rdfs:subClassOf fsi:HorizontalDomain .
+
+<https://w3id.org/linkml/examples/fsiHorizontalDomain#StrategicPlanningAndPolicies> a owl:Class ;
+    rdfs:label "StrategicPlanningAndPolicies" ;
+    rdfs:subClassOf fsi:HorizontalDomain .
+
+<https://w3id.org/linkml/examples/fsiHorizontalDomain#Transformation> a owl:Class ;
+    rdfs:label "Transformation" ;
+    rdfs:subClassOf fsi:HorizontalDomain .
+
+<https://w3id.org/linkml/examples/fsiHorizontalThematicArea#Governance> a owl:Class ;
+    rdfs:label "Governance" ;
+    rdfs:subClassOf fsi:HorizontalThematicArea .
+
+<https://w3id.org/linkml/examples/fsiHorizontalThematicArea#Resilience> a owl:Class ;
+    rdfs:label "Resilience" ;
+    rdfs:subClassOf fsi:HorizontalThematicArea .
+
+fsi:IndicatorCriterion a owl:Class ;
+    rdfs:label "IndicatorCriterion" ;
+    dct:title "indicator criterion" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:category ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:category ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom fsi:CriterionCategory ;
+            owl:onProperty fsi:category ],
+        fsi:Entity ;
+    skos:definition "Criterion used for indicator selection." ;
+    skos:inScheme fsi: .
+
+fsi:IndicatorDataSource a owl:Class ;
+    rdfs:label "IndicatorDataSource" ;
+    dct:title "indicator data source" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:data_link ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:measures_indicator ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom fsi:TimeGranularity ;
+            owl:onProperty fsi:time_granularity ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom fsi:Indicator ;
+            owl:onProperty fsi:measures_indicator ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:DateOrDatetime ;
+            owl:onProperty fsi:newest_datapoint ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:newest_datapoint ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty fsi:data_link ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:oldest_datapoint ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:newest_datapoint ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:time_granularity ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:time_granularity ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:DateOrDatetime ;
+            owl:onProperty fsi:oldest_datapoint ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty fsi:measures_indicator ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:data_link ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:oldest_datapoint ],
+        fsi:Entity ;
+    skos:definition "Data source containing the indicator data." ;
+    skos:inScheme fsi: .
+
+<https://w3id.org/linkml/examples/fsiScoreCategory#Excellent> a owl:Class ;
+    rdfs:label "Excellent" ;
+    rdfs:subClassOf fsi:ScoreCategory .
+
+<https://w3id.org/linkml/examples/fsiScoreCategory#Good> a owl:Class ;
+    rdfs:label "Good" ;
+    rdfs:subClassOf fsi:ScoreCategory .
+
+<https://w3id.org/linkml/examples/fsiScoreCategory#Moderate> a owl:Class ;
+    rdfs:label "Moderate" ;
+    rdfs:subClassOf fsi:ScoreCategory .
+
+<https://w3id.org/linkml/examples/fsiScoreCategory#Poor> a owl:Class ;
+    rdfs:label "Poor" ;
+    rdfs:subClassOf fsi:ScoreCategory .
+
+<https://w3id.org/linkml/examples/fsiScoreCategory#VeryPoor> a owl:Class ;
+    rdfs:label "VeryPoor" ;
+    rdfs:subClassOf fsi:ScoreCategory .
+
+<https://w3id.org/linkml/examples/fsiSocialDomain#AnimalWelfare> a owl:Class ;
+    rdfs:label "AnimalWelfare" ;
+    rdfs:subClassOf fsi:SocialDomain .
+
+<https://w3id.org/linkml/examples/fsiSocialDomain#Employment> a owl:Class ;
+    rdfs:label "Employment" ;
+    rdfs:subClassOf fsi:SocialDomain .
+
+<https://w3id.org/linkml/examples/fsiSocialDomain#FoodAffordability> a owl:Class ;
+    rdfs:label "FoodAffordability" ;
+    rdfs:subClassOf fsi:SocialDomain .
+
+<https://w3id.org/linkml/examples/fsiSocialDomain#FoodAvailability> a owl:Class ;
+    rdfs:label "FoodAvailability" ;
+    rdfs:subClassOf fsi:SocialDomain .
+
+<https://w3id.org/linkml/examples/fsiSocialDomain#FoodHeritage> a owl:Class ;
+    rdfs:label "FoodHeritage" ;
+    rdfs:subClassOf fsi:SocialDomain .
+
+<https://w3id.org/linkml/examples/fsiSocialDomain#FoodSecurity> a owl:Class ;
+    rdfs:label "FoodSecurity" ;
+    rdfs:subClassOf fsi:SocialDomain .
+
+<https://w3id.org/linkml/examples/fsiSocialDomain#HealthImpactFromDiets> a owl:Class ;
+    rdfs:label "HealthImpactFromDiets" ;
+    rdfs:subClassOf fsi:SocialDomain .
+
+<https://w3id.org/linkml/examples/fsiSocialThematicArea#FairInclusiveAndEthicalFoodSystem> a owl:Class ;
+    rdfs:label "FairInclusiveAndEthicalFoodSystem" ;
+    rdfs:subClassOf fsi:SocialThematicArea .
+
+<https://w3id.org/linkml/examples/fsiSocialThematicArea#FoodEnvironment> a owl:Class ;
+    rdfs:label "FoodEnvironment" ;
+    rdfs:subClassOf fsi:SocialThematicArea .
+
+<https://w3id.org/linkml/examples/fsiSocialThematicArea#NutritionAndHealth> a owl:Class ;
+    rdfs:label "NutritionAndHealth" ;
+    rdfs:subClassOf fsi:SocialThematicArea .
+
+<https://w3id.org/linkml/examples/fsiSpatialScopeType#Eu> a owl:Class ;
+    rdfs:label "Eu" ;
+    rdfs:subClassOf fsi:SpatialScopeType .
+
+<https://w3id.org/linkml/examples/fsiSpatialScopeType#EuMemberStates> a owl:Class ;
+    rdfs:label "EuMemberStates" ;
+    rdfs:subClassOf fsi:SpatialScopeType .
+
+<https://w3id.org/linkml/examples/fsiSpatialScopeType#Global> a owl:Class ;
+    rdfs:label "Global" ;
+    rdfs:subClassOf fsi:SpatialScopeType .
+
+<https://w3id.org/linkml/examples/fsiSpatialScopeType#Local> a owl:Class ;
+    rdfs:label "Local" ;
+    rdfs:subClassOf fsi:SpatialScopeType .
+
+<https://w3id.org/linkml/examples/fsiSpatialScopeType#Regional> a owl:Class ;
+    rdfs:label "Regional" ;
+    rdfs:subClassOf fsi:SpatialScopeType .
+
+<https://w3id.org/linkml/examples/fsiSupplyChainComponentType#FoodConsumption> a owl:Class ;
+    rdfs:label "FoodConsumption" ;
+    rdfs:subClassOf fsi:SupplyChainComponentType .
+
+<https://w3id.org/linkml/examples/fsiSupplyChainComponentType#FoodDistribution> a owl:Class ;
+    rdfs:label "FoodDistribution" ;
+    rdfs:subClassOf fsi:SupplyChainComponentType .
+
+<https://w3id.org/linkml/examples/fsiSupplyChainComponentType#FoodProcessing> a owl:Class ;
+    rdfs:label "FoodProcessing" ;
+    rdfs:subClassOf fsi:SupplyChainComponentType .
+
+<https://w3id.org/linkml/examples/fsiSupplyChainComponentType#PrimaryFoodProduction> a owl:Class ;
+    rdfs:label "PrimaryFoodProduction" ;
+    rdfs:subClassOf fsi:SupplyChainComponentType .
+
+<https://w3id.org/linkml/examples/fsiSustainabilityDimension#Economic> a owl:Class ;
+    rdfs:label "Economic" ;
+    rdfs:subClassOf fsi:SustainabilityDimension .
+
+<https://w3id.org/linkml/examples/fsiSustainabilityDimension#Environmental> a owl:Class ;
+    rdfs:label "Environmental" ;
+    rdfs:subClassOf fsi:SustainabilityDimension .
+
+<https://w3id.org/linkml/examples/fsiSustainabilityDimension#Horizontal> a owl:Class ;
+    rdfs:label "Horizontal" ;
+    rdfs:subClassOf fsi:SustainabilityDimension .
+
+<https://w3id.org/linkml/examples/fsiSustainabilityDimension#Social> a owl:Class ;
+    rdfs:label "Social" ;
+    rdfs:subClassOf fsi:SustainabilityDimension .
+
+fsi:ThematicArea a owl:Class ;
+    rdfs:label "ThematicArea" ;
+    dct:title "thematic area" ;
+    skos:definition "a thematic area." ;
+    skos:exactMatch linkml:Any ;
+    skos:inScheme fsi: .
+
+<https://w3id.org/linkml/examples/fsiTimeGranularity#EveryTwoYears> a owl:Class ;
+    rdfs:label "EveryTwoYears" ;
+    rdfs:subClassOf fsi:TimeGranularity .
+
+<https://w3id.org/linkml/examples/fsiTimeGranularity#Monthly> a owl:Class ;
+    rdfs:label "Monthly" ;
+    rdfs:subClassOf fsi:TimeGranularity .
+
+<https://w3id.org/linkml/examples/fsiTimeGranularity#Other> a owl:Class ;
+    rdfs:label "Other" ;
+    rdfs:subClassOf fsi:TimeGranularity .
+
+<https://w3id.org/linkml/examples/fsiTimeGranularity#Weekly> a owl:Class ;
+    rdfs:label "Weekly" ;
+    rdfs:subClassOf fsi:TimeGranularity .
+
+<https://w3id.org/linkml/examples/fsiTimeGranularity#Yearly> a owl:Class ;
+    rdfs:label "Yearly" ;
+    rdfs:subClassOf fsi:TimeGranularity .
+
+fsi:contains_indicator_data_source a owl:ObjectProperty ;
+    rdfs:label "contains_indicator_data_source" ;
+    dct:title "contains indicator data source" ;
+    rdfs:range fsi:IndicatorDataSource ;
+    rdfs:subPropertyOf fsi:node_property ;
+    skos:definition "Indicator data source." ;
+    skos:inScheme fsi: .
+
+fsi:granularity a owl:ObjectProperty ;
+    rdfs:label "granularity" ;
+    dct:title "granularity" ;
+    rdfs:range fsi:GranularityType ;
+    skos:definition "Reference to the granularity(ies) for which the indicator is measured." ;
+    skos:inScheme fsi: .
+
+fsi:indicator_datapoints a owl:ObjectProperty ;
+    rdfs:label "indicator datapoints" ;
+    dct:title "indicator datapoints" ;
+    skos:inScheme fsi: .
+
+fsi:supply_chain_component a owl:ObjectProperty ;
+    rdfs:label "supply_chain_component" ;
+    dct:title "supply chain component(s)" ;
+    rdfs:range fsi:SupplyChainComponentType ;
+    skos:definition "Reference to the supply chain component(s) for which the indicator is relevant." ;
+    skos:inScheme fsi: .
+
+fsi:QuantityValue a owl:Class ;
+    rdfs:label "QuantityValue" ;
+    dct:title "quantity value" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom xsd:double ;
+            owl:onProperty fsi:has_numeric_value ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:has_numeric_value ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:has_unit ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:has_unit ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom UO:0000000 ;
+            owl:onProperty fsi:has_unit ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:has_numeric_value ],
+        fsi:Entity ;
+    skos:definition "A value of an attribute that is quantitative and measurable, expressed as a combination of a unit and a numeric value" ;
+    skos:inScheme fsi: .
+
+fsi:category a owl:ObjectProperty ;
+    rdfs:label "category" ;
+    dct:title "category" ;
+    rdfs:range fsi:CriterionCategory ;
+    skos:definition "category for the indicator selection criterion." ;
+    skos:inScheme fsi: .
+
+fsi:comment a owl:DatatypeProperty ;
+    rdfs:label "comment" ;
+    rdfs:range xsd:string ;
+    skos:definition "A comment about an entity." ;
+    skos:inScheme fsi: .
+
+fsi:data_link a owl:DatatypeProperty ;
+    rdfs:label "data_link" ;
+    dct:title "data link" ;
+    rdfs:range xsd:string ;
+    skos:definition "Link to the data for the indicator" ;
+    skos:inScheme fsi: .
+
+fsi:database_link a owl:DatatypeProperty ;
+    rdfs:label "database_link" ;
+    dct:title "database link" ;
+    rdfs:range xsd:string ;
+    skos:definition "Link to the database" ;
+    skos:inScheme fsi: .
+
+fsi:has_numeric_value a owl:DatatypeProperty ;
+    rdfs:label "has numeric value" ;
+    rdfs:domain fsi:QuantityValue ;
+    rdfs:range xsd:double ;
+    skos:definition "connects a quantity value to a number" ;
+    skos:exactMatch qudt:quantityValue ;
+    skos:inScheme fsi: .
+
+fsi:has_unit a owl:DatatypeProperty ;
+    rdfs:label "has unit" ;
+    rdfs:domain fsi:QuantityValue ;
+    rdfs:range UO:0000000 ;
+    skos:definition "connects a quantity value to a unit" ;
+    skos:exactMatch IAO:0000039,
+        qudt:unit ;
+    skos:inScheme fsi: .
+
+fsi:indicator_domain a owl:ObjectProperty ;
+    rdfs:label "indicator_domain" ;
+    dct:title "domain" ;
+    rdfs:range [ owl:intersectionOf ( [ owl:unionOf ( fsi:EnvironmentalDomain fsi:EconomicDomain fsi:SocialDomain fsi:HorizontalDomain ) ] fsi:Domain ) ] ;
+    skos:definition "Reference to the domain that the indicator belongs to." ;
+    skos:inScheme fsi: .
+
+fsi:iri a owl:DatatypeProperty ;
+    rdfs:label "iri" ;
+    rdfs:range xsd:string ;
+    skos:definition "An IRI for an entity. This is determined by the id using expansion rules." ;
+    skos:inScheme fsi: .
+
+fsi:justification a owl:DatatypeProperty ;
+    rdfs:label "justification" ;
+    dct:title "justification of selection" ;
+    rdfs:range xsd:string ;
+    skos:definition "Justification for the selection of the indicator." ;
+    skos:inScheme fsi: .
+
+fsi:measurement_of a owl:ObjectProperty ;
+    rdfs:label "measurement_of" ;
+    dct:title "measurement of" ;
+    rdfs:range fsi:Indicator ;
+    rdfs:subPropertyOf fsi:node_property ;
+    skos:definition "Indicator." ;
+    skos:inScheme fsi: .
+
+fsi:measurement_unit a owl:DatatypeProperty ;
+    rdfs:label "measurement_unit" ;
+    dct:title "unit of measurement" ;
+    rdfs:range UO:0000000 ;
+    skos:definition "Unit of measurement." ;
+    skos:inScheme fsi: .
+
+fsi:measures_indicator a owl:ObjectProperty ;
+    rdfs:label "measures_indicator" ;
+    dct:title "measures indicator" ;
+    rdfs:range fsi:Indicator ;
+    rdfs:subPropertyOf fsi:node_property ;
+    skos:definition "Indicator." ;
+    skos:inScheme fsi: .
+
+fsi:newest_datapoint a owl:DatatypeProperty ;
+    rdfs:label "newest_datapoint" ;
+    dct:title "newest datapoint" ;
+    rdfs:range linkml:DateOrDatetime ;
+    skos:definition "Newest datapoint for which the indicator is measured." ;
+    skos:inScheme fsi: .
+
+fsi:oldest_datapoint a owl:DatatypeProperty ;
+    rdfs:label "oldest_datapoint" ;
+    dct:title "oldest datapoint" ;
+    rdfs:range linkml:DateOrDatetime ;
+    skos:definition "Oldest datapoint for which the indicator is measured." ;
+    skos:inScheme fsi: .
+
+fsi:score a owl:ObjectProperty ;
+    rdfs:label "score" ;
+    dct:title "score" ;
+    rdfs:range fsi:ScoreCategory ;
+    skos:definition "score for an indicator selection criterion for an indicator." ;
+    skos:inScheme fsi: .
+
+fsi:score_for_indicator a owl:ObjectProperty ;
+    rdfs:label "score_for_indicator" ;
+    dct:title "score for indicator" ;
+    rdfs:range fsi:Indicator ;
+    rdfs:subPropertyOf fsi:node_property ;
+    skos:definition "Indicator." ;
+    skos:inScheme fsi: .
+
+fsi:scores_criterion a owl:ObjectProperty ;
+    rdfs:label "scores_criterion" ;
+    dct:title "scores criterion" ;
+    rdfs:range fsi:IndicatorCriterion ;
+    rdfs:subPropertyOf fsi:node_property ;
+    skos:definition "Indicator criterion." ;
+    skos:inScheme fsi: .
+
+fsi:spatial_scope a owl:ObjectProperty ;
+    rdfs:label "spatial_scope" ;
+    dct:title "spatial scope" ;
+    rdfs:range fsi:SpatialScopeType ;
+    skos:definition "Reference to the spatial unit that the indicator describes." ;
+    skos:inScheme fsi: .
+
+fsi:time_granularity a owl:ObjectProperty ;
+    rdfs:label "time_granularity" ;
+    dct:title "time granularity between the datapoints." ;
+    rdfs:range fsi:TimeGranularity ;
+    skos:definition "Time granularity between the datapoints." ;
+    skos:inScheme fsi: .
+
+fsi:update_frequency a owl:ObjectProperty ;
+    rdfs:label "update_frequency" ;
+    dct:title "frequency at which the data is updated" ;
+    rdfs:range fsi:TimeGranularity ;
+    skos:definition "Frequency at which the data is updated." ;
+    skos:inScheme fsi: .
+
+UO:0000000 a rdfs:Datatype ;
+    owl:equivalentClass xsd:string .
+
+fsi:EconomicThematicArea a owl:Class ;
+    owl:unionOf ( <https://w3id.org/linkml/examples/fsiEconomicThematicArea#FairEconomicViabilityInFoodValueChain> <https://w3id.org/linkml/examples/fsiEconomicThematicArea#DevelopmentAndLogistics> ) ;
+    linkml:permissible_values <https://w3id.org/linkml/examples/fsiEconomicThematicArea#DevelopmentAndLogistics>,
+        <https://w3id.org/linkml/examples/fsiEconomicThematicArea#FairEconomicViabilityInFoodValueChain> .
+
+fsi:HorizontalThematicArea a owl:Class ;
+    owl:unionOf ( <https://w3id.org/linkml/examples/fsiHorizontalThematicArea#Governance> <https://w3id.org/linkml/examples/fsiHorizontalThematicArea#Resilience> ) ;
+    linkml:permissible_values <https://w3id.org/linkml/examples/fsiHorizontalThematicArea#Governance>,
+        <https://w3id.org/linkml/examples/fsiHorizontalThematicArea#Resilience> .
+
+fsi:node_property a owl:DatatypeProperty ;
+    rdfs:label "node property" ;
+    rdfs:domain fsi:Entity ;
+    skos:definition "A grouping for any property that holds between a node and a value." ;
+    skos:inScheme fsi: .
+
+fsi:SocialThematicArea a owl:Class ;
+    owl:unionOf ( <https://w3id.org/linkml/examples/fsiSocialThematicArea#FairInclusiveAndEthicalFoodSystem> <https://w3id.org/linkml/examples/fsiSocialThematicArea#FoodEnvironment> <https://w3id.org/linkml/examples/fsiSocialThematicArea#NutritionAndHealth> ) ;
+    linkml:permissible_values <https://w3id.org/linkml/examples/fsiSocialThematicArea#FairInclusiveAndEthicalFoodSystem>,
+        <https://w3id.org/linkml/examples/fsiSocialThematicArea#FoodEnvironment>,
+        <https://w3id.org/linkml/examples/fsiSocialThematicArea#NutritionAndHealth> .
+
+fsi:SupplyChainComponentType a owl:Class ;
+    owl:unionOf ( <https://w3id.org/linkml/examples/fsiSupplyChainComponentType#PrimaryFoodProduction> <https://w3id.org/linkml/examples/fsiSupplyChainComponentType#FoodProcessing> <https://w3id.org/linkml/examples/fsiSupplyChainComponentType#FoodDistribution> <https://w3id.org/linkml/examples/fsiSupplyChainComponentType#FoodConsumption> ) ;
+    linkml:permissible_values <https://w3id.org/linkml/examples/fsiSupplyChainComponentType#FoodConsumption>,
+        <https://w3id.org/linkml/examples/fsiSupplyChainComponentType#FoodDistribution>,
+        <https://w3id.org/linkml/examples/fsiSupplyChainComponentType#FoodProcessing>,
+        <https://w3id.org/linkml/examples/fsiSupplyChainComponentType#PrimaryFoodProduction> .
+
+fsi:SustainabilityDimension a owl:Class ;
+    owl:unionOf ( <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Environmental> <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Economic> <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Social> <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Horizontal> ) ;
+    linkml:permissible_values <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Economic>,
+        <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Environmental>,
+        <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Horizontal>,
+        <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Social> .
+
+fsi:description a owl:DatatypeProperty ;
+    rdfs:label "description" ;
+    rdfs:range xsd:string ;
+    skos:altLabel "definition" ;
+    skos:definition "A human-readable description of an entity." ;
+    skos:exactMatch IAO:0000115,
+        skos:definitions ;
+    skos:inScheme fsi: .
+
+fsi:name a owl:DatatypeProperty ;
+    rdfs:label "name" ;
+    dct:title "name" ;
+    rdfs:domain fsi:Entity ;
+    rdfs:range xsd:string ;
+    skos:altLabel "display name",
+        "label",
+        "title" ;
+    skos:definition "A human-readable name for an attribute or entity." ;
+    skos:inScheme fsi: ;
+    skos:narrowMatch dct:title .
+
+fsi:CriterionCategory a owl:Class ;
+    owl:unionOf ( <https://w3id.org/linkml/examples/fsiCriterionCategory#GoalOrientedAndPolicyRelevant> <https://w3id.org/linkml/examples/fsiCriterionCategory#SoundMethodologies> <https://w3id.org/linkml/examples/fsiCriterionCategory#AvailabilityAncAccessibility> <https://w3id.org/linkml/examples/fsiCriterionCategory#GeographicalCoverageAndTimeliness> <https://w3id.org/linkml/examples/fsiCriterionCategory#OperationalFeasibility> ) ;
+    linkml:permissible_values <https://w3id.org/linkml/examples/fsiCriterionCategory#AvailabilityAncAccessibility>,
+        <https://w3id.org/linkml/examples/fsiCriterionCategory#GeographicalCoverageAndTimeliness>,
+        <https://w3id.org/linkml/examples/fsiCriterionCategory#GoalOrientedAndPolicyRelevant>,
+        <https://w3id.org/linkml/examples/fsiCriterionCategory#OperationalFeasibility>,
+        <https://w3id.org/linkml/examples/fsiCriterionCategory#SoundMethodologies> .
+
+fsi:ScoreCategory a owl:Class ;
+    owl:unionOf ( <https://w3id.org/linkml/examples/fsiScoreCategory#VeryPoor> <https://w3id.org/linkml/examples/fsiScoreCategory#Poor> <https://w3id.org/linkml/examples/fsiScoreCategory#Moderate> <https://w3id.org/linkml/examples/fsiScoreCategory#Good> <https://w3id.org/linkml/examples/fsiScoreCategory#Excellent> ) ;
+    linkml:permissible_values <https://w3id.org/linkml/examples/fsiScoreCategory#Excellent>,
+        <https://w3id.org/linkml/examples/fsiScoreCategory#Good>,
+        <https://w3id.org/linkml/examples/fsiScoreCategory#Moderate>,
+        <https://w3id.org/linkml/examples/fsiScoreCategory#Poor>,
+        <https://w3id.org/linkml/examples/fsiScoreCategory#VeryPoor> .
+
+fsi:SpatialScopeType a owl:Class ;
+    owl:unionOf ( <https://w3id.org/linkml/examples/fsiSpatialScopeType#Global> <https://w3id.org/linkml/examples/fsiSpatialScopeType#Eu> <https://w3id.org/linkml/examples/fsiSpatialScopeType#EuMemberStates> <https://w3id.org/linkml/examples/fsiSpatialScopeType#Regional> <https://w3id.org/linkml/examples/fsiSpatialScopeType#Local> ) ;
+    linkml:permissible_values <https://w3id.org/linkml/examples/fsiSpatialScopeType#Eu>,
+        <https://w3id.org/linkml/examples/fsiSpatialScopeType#EuMemberStates>,
+        <https://w3id.org/linkml/examples/fsiSpatialScopeType#Global>,
+        <https://w3id.org/linkml/examples/fsiSpatialScopeType#Local>,
+        <https://w3id.org/linkml/examples/fsiSpatialScopeType#Regional> .
+
+fsi:key_area a owl:ObjectProperty ;
+    rdfs:label "key_area" ;
+    dct:title "key area" ;
+    rdfs:range fsi:SustainabilityDimension ;
+    skos:definition "Reference to the thematic area that the indicator belongs to." ;
+    skos:inScheme fsi: .
+
+fsi:thematic_area a owl:ObjectProperty ;
+    rdfs:label "thematic_area" ;
+    dct:title "thematic area" ;
+    rdfs:range [ owl:intersectionOf ( [ owl:unionOf ( fsi:EnvironmentalThematicArea fsi:EconomicThematicArea fsi:SocialThematicArea fsi:HorizontalThematicArea ) ] fsi:ThematicArea ) ] ;
+    skos:definition "The thematic area the indicator belongs to." ;
+    skos:inScheme fsi: .
+
+fsi:Entity a owl:Class ;
+    rdfs:label "Entity" ;
+    dct:title "entity" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty fsi:id ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:iri ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:description ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty fsi:iri ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty fsi:id ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:id ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:name ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:description ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:name ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty fsi:description ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:iri ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty fsi:name ] ;
+    skos:definition "Root class for all things and informational relationships, real or imagined." ;
+    skos:inScheme fsi: .
+
+fsi:EnvironmentalThematicArea a owl:Class ;
+    owl:unionOf ( <https://w3id.org/linkml/examples/fsiEnvironmentalThematicArea#ClimateChange> <https://w3id.org/linkml/examples/fsiEnvironmentalThematicArea#PollutionAntimicrobials> <https://w3id.org/linkml/examples/fsiEnvironmentalThematicArea#SustainableUseOfResources> <https://w3id.org/linkml/examples/fsiEnvironmentalThematicArea#Biodiversity> <https://w3id.org/linkml/examples/fsiEnvironmentalThematicArea#CrossCuttingAreas> ) ;
+    linkml:permissible_values <https://w3id.org/linkml/examples/fsiEnvironmentalThematicArea#Biodiversity>,
+        <https://w3id.org/linkml/examples/fsiEnvironmentalThematicArea#ClimateChange>,
+        <https://w3id.org/linkml/examples/fsiEnvironmentalThematicArea#CrossCuttingAreas>,
+        <https://w3id.org/linkml/examples/fsiEnvironmentalThematicArea#PollutionAntimicrobials>,
+        <https://w3id.org/linkml/examples/fsiEnvironmentalThematicArea#SustainableUseOfResources> .
+
+fsi:GranularityType a owl:Class ;
+    owl:unionOf ( <https://w3id.org/linkml/examples/fsiGranularityType#MacroRegions> <https://w3id.org/linkml/examples/fsiGranularityType#Countries> <https://w3id.org/linkml/examples/fsiGranularityType#NUTS1> <https://w3id.org/linkml/examples/fsiGranularityType#NUTS2> <https://w3id.org/linkml/examples/fsiGranularityType#NUTS3> <https://w3id.org/linkml/examples/fsiGranularityType#LAU> ) ;
+    linkml:permissible_values <https://w3id.org/linkml/examples/fsiGranularityType#Countries>,
+        <https://w3id.org/linkml/examples/fsiGranularityType#LAU>,
+        <https://w3id.org/linkml/examples/fsiGranularityType#MacroRegions>,
+        <https://w3id.org/linkml/examples/fsiGranularityType#NUTS1>,
+        <https://w3id.org/linkml/examples/fsiGranularityType#NUTS2>,
+        <https://w3id.org/linkml/examples/fsiGranularityType#NUTS3> .
+
+fsi:EconomicDomain a owl:Class ;
+    owl:unionOf ( <https://w3id.org/linkml/examples/fsiEconomicDomain#SectorialGrowth> <https://w3id.org/linkml/examples/fsiEconomicDomain#MarketPowerAndBusinessStructure> <https://w3id.org/linkml/examples/fsiEconomicDomain#IncomeDistribution> <https://w3id.org/linkml/examples/fsiEconomicDomain#Price> <https://w3id.org/linkml/examples/fsiEconomicDomain#Trade> <https://w3id.org/linkml/examples/fsiEconomicDomain#TechnologyAndDigitalization> <https://w3id.org/linkml/examples/fsiEconomicDomain#TransportAccessibilityAndInfrastructure> ) ;
+    linkml:permissible_values <https://w3id.org/linkml/examples/fsiEconomicDomain#IncomeDistribution>,
+        <https://w3id.org/linkml/examples/fsiEconomicDomain#MarketPowerAndBusinessStructure>,
+        <https://w3id.org/linkml/examples/fsiEconomicDomain#Price>,
+        <https://w3id.org/linkml/examples/fsiEconomicDomain#SectorialGrowth>,
+        <https://w3id.org/linkml/examples/fsiEconomicDomain#TechnologyAndDigitalization>,
+        <https://w3id.org/linkml/examples/fsiEconomicDomain#Trade>,
+        <https://w3id.org/linkml/examples/fsiEconomicDomain#TransportAccessibilityAndInfrastructure> .
+
+fsi:SocialDomain a owl:Class ;
+    owl:unionOf ( <https://w3id.org/linkml/examples/fsiSocialDomain#Employment> <https://w3id.org/linkml/examples/fsiSocialDomain#AnimalWelfare> <https://w3id.org/linkml/examples/fsiSocialDomain#FoodHeritage> <https://w3id.org/linkml/examples/fsiSocialDomain#FoodAffordability> <https://w3id.org/linkml/examples/fsiSocialDomain#FoodAvailability> <https://w3id.org/linkml/examples/fsiSocialDomain#HealthImpactFromDiets> <https://w3id.org/linkml/examples/fsiSocialDomain#FoodSecurity> ) ;
+    linkml:permissible_values <https://w3id.org/linkml/examples/fsiSocialDomain#AnimalWelfare>,
+        <https://w3id.org/linkml/examples/fsiSocialDomain#Employment>,
+        <https://w3id.org/linkml/examples/fsiSocialDomain#FoodAffordability>,
+        <https://w3id.org/linkml/examples/fsiSocialDomain#FoodAvailability>,
+        <https://w3id.org/linkml/examples/fsiSocialDomain#FoodHeritage>,
+        <https://w3id.org/linkml/examples/fsiSocialDomain#FoodSecurity>,
+        <https://w3id.org/linkml/examples/fsiSocialDomain#HealthImpactFromDiets> .
+
+fsi:TimeGranularity a owl:Class ;
+    owl:unionOf ( <https://w3id.org/linkml/examples/fsiTimeGranularity#EveryTwoYears> <https://w3id.org/linkml/examples/fsiTimeGranularity#Yearly> <https://w3id.org/linkml/examples/fsiTimeGranularity#Monthly> <https://w3id.org/linkml/examples/fsiTimeGranularity#Weekly> <https://w3id.org/linkml/examples/fsiTimeGranularity#Other> ) ;
+    linkml:permissible_values <https://w3id.org/linkml/examples/fsiTimeGranularity#EveryTwoYears>,
+        <https://w3id.org/linkml/examples/fsiTimeGranularity#Monthly>,
+        <https://w3id.org/linkml/examples/fsiTimeGranularity#Other>,
+        <https://w3id.org/linkml/examples/fsiTimeGranularity#Weekly>,
+        <https://w3id.org/linkml/examples/fsiTimeGranularity#Yearly> .
+
+fsi:id a owl:DatatypeProperty ;
+    rdfs:label "id" ;
+    rdfs:domain fsi:Entity ;
+    skos:definition "A unique identifier for an entity." ;
+    skos:inScheme fsi: .
+
+fsi:HorizontalDomain a owl:Class ;
+    owl:unionOf ( <https://w3id.org/linkml/examples/fsiHorizontalDomain#StrategicPlanningAndPolicies> <https://w3id.org/linkml/examples/fsiHorizontalDomain#EffectiveImplementation> <https://w3id.org/linkml/examples/fsiHorizontalDomain#Accountability> <https://w3id.org/linkml/examples/fsiHorizontalDomain#SharedVision> <https://w3id.org/linkml/examples/fsiHorizontalDomain#ShockResilience> <https://w3id.org/linkml/examples/fsiHorizontalDomain#Preparedness> <https://w3id.org/linkml/examples/fsiHorizontalDomain#Adaptation> <https://w3id.org/linkml/examples/fsiHorizontalDomain#Transformation> ) ;
+    linkml:permissible_values <https://w3id.org/linkml/examples/fsiHorizontalDomain#Accountability>,
+        <https://w3id.org/linkml/examples/fsiHorizontalDomain#Adaptation>,
+        <https://w3id.org/linkml/examples/fsiHorizontalDomain#EffectiveImplementation>,
+        <https://w3id.org/linkml/examples/fsiHorizontalDomain#Preparedness>,
+        <https://w3id.org/linkml/examples/fsiHorizontalDomain#SharedVision>,
+        <https://w3id.org/linkml/examples/fsiHorizontalDomain#ShockResilience>,
+        <https://w3id.org/linkml/examples/fsiHorizontalDomain#StrategicPlanningAndPolicies>,
+        <https://w3id.org/linkml/examples/fsiHorizontalDomain#Transformation> .
+
+fsi:Indicator a owl:Class ;
+    rdfs:label "Indicator" ;
+    dct:title "indicator" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty fsi:description ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty fsi:id ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty fsi:key_area ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:spatial_scope ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:description ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:key_area ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ owl:intersectionOf ( [ owl:unionOf ( fsi:EnvironmentalThematicArea fsi:EconomicThematicArea fsi:SocialThematicArea fsi:HorizontalThematicArea ) ] fsi:ThematicArea ) ] ;
+            owl:onProperty fsi:thematic_area ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom fsi:SpatialScopeType ;
+            owl:onProperty fsi:spatial_scope ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom UO:0000000 ;
+            owl:onProperty fsi:measurement_unit ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:description ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom fsi:GranularityType ;
+            owl:onProperty fsi:granularity ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty fsi:granularity ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty fsi:spatial_scope ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:justification ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty fsi:name ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:name ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:thematic_area ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty fsi:indicator_domain ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:name ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty fsi:thematic_area ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom fsi:SupplyChainComponentType ;
+            owl:onProperty fsi:supply_chain_component ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom fsi:SustainabilityDimension ;
+            owl:onProperty fsi:key_area ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ owl:intersectionOf ( [ owl:unionOf ( fsi:EnvironmentalDomain fsi:EconomicDomain fsi:SocialDomain fsi:HorizontalDomain ) ] fsi:Domain ) ] ;
+            owl:onProperty fsi:indicator_domain ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:supply_chain_component ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:indicator_domain ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:measurement_unit ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty fsi:id ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:measurement_unit ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:id ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:justification ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty fsi:justification ],
+        fsi:Entity ;
+    skos:definition "Food system indicator." ;
+    skos:inScheme fsi: .
+
+fsi:EnvironmentalDomain a owl:Class ;
+    owl:unionOf ( <https://w3id.org/linkml/examples/fsiEnvironmentalDomain#GHGEmissions> <https://w3id.org/linkml/examples/fsiEnvironmentalDomain#Pollution> <https://w3id.org/linkml/examples/fsiEnvironmentalDomain#Antimicrobials> <https://w3id.org/linkml/examples/fsiEnvironmentalDomain#LandAndSoil> <https://w3id.org/linkml/examples/fsiEnvironmentalDomain#Water> <https://w3id.org/linkml/examples/fsiEnvironmentalDomain#AquaticLivingResources> <https://w3id.org/linkml/examples/fsiEnvironmentalDomain#Energy> <https://w3id.org/linkml/examples/fsiEnvironmentalDomain#BiodiversityConservationAndRestorationOfNaturalEcosystems> <https://w3id.org/linkml/examples/fsiEnvironmentalDomain#FoodLossAndWaste> <https://w3id.org/linkml/examples/fsiEnvironmentalDomain#ConsumptionFootprint> ) ;
+    linkml:permissible_values <https://w3id.org/linkml/examples/fsiEnvironmentalDomain#Antimicrobials>,
+        <https://w3id.org/linkml/examples/fsiEnvironmentalDomain#AquaticLivingResources>,
+        <https://w3id.org/linkml/examples/fsiEnvironmentalDomain#BiodiversityConservationAndRestorationOfNaturalEcosystems>,
+        <https://w3id.org/linkml/examples/fsiEnvironmentalDomain#ConsumptionFootprint>,
+        <https://w3id.org/linkml/examples/fsiEnvironmentalDomain#Energy>,
+        <https://w3id.org/linkml/examples/fsiEnvironmentalDomain#FoodLossAndWaste>,
+        <https://w3id.org/linkml/examples/fsiEnvironmentalDomain#GHGEmissions>,
+        <https://w3id.org/linkml/examples/fsiEnvironmentalDomain#LandAndSoil>,
+        <https://w3id.org/linkml/examples/fsiEnvironmentalDomain#Pollution>,
+        <https://w3id.org/linkml/examples/fsiEnvironmentalDomain#Water> .
+
+xsd:string a rdfs:Datatype ;
+    owl:equivalentClass xsd:anyURI .
+
+[] rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty fsi:thematic_area ;
+            owl:someValuesFrom fsi:HorizontalThematicArea ] ;
+    owl:intersectionOf ( [ a owl:Restriction ;
+                owl:onProperty fsi:key_area ;
+                owl:someValuesFrom xsd:string ] fsi:Indicator ) .
+
+[] rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty fsi:thematic_area ;
+            owl:someValuesFrom fsi:EconomicThematicArea ] ;
+    owl:intersectionOf ( [ a owl:Restriction ;
+                owl:onProperty fsi:key_area ;
+                owl:someValuesFrom xsd:string ] fsi:Indicator ) .
+
+[] rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty fsi:thematic_area ;
+            owl:someValuesFrom fsi:SocialThematicArea ] ;
+    owl:intersectionOf ( [ a owl:Restriction ;
+                owl:onProperty fsi:key_area ;
+                owl:someValuesFrom xsd:string ] fsi:Indicator ) .
+
+[] rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty fsi:thematic_area ;
+            owl:someValuesFrom fsi:EnvironmentalThematicArea ] ;
+    owl:intersectionOf ( [ a owl:Restriction ;
+                owl:onProperty fsi:key_area ;
+                owl:someValuesFrom xsd:string ] fsi:Indicator ) .
+
+

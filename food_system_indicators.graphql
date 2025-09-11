@@ -1,0 +1,237 @@
+# metamodel_version: 1.7.0
+enum CriterionCategory
+  {
+    GoalOrientedAndPolicyRelevant
+    SoundMethodologies
+    AvailabilityAncAccessibility
+    GeographicalCoverageAndTimeliness
+    OperationalFeasibility
+  }
+
+enum EconomicDomain
+  {
+    SectorialGrowth
+    MarketPowerAndBusinessStructure
+    IncomeDistribution
+    Price
+    Trade
+    TechnologyAndDigitalization
+    TransportAccessibilityAndInfrastructure
+  }
+
+enum EconomicThematicArea
+  {
+    FairEconomicViabilityInFoodValueChain
+    DevelopmentAndLogistics
+  }
+
+enum EnvironmentalDomain
+  {
+    GHGEmissions
+    Pollution
+    Antimicrobials
+    LandAndSoil
+    Water
+    AquaticLivingResources
+    Energy
+    BiodiversityConservationAndRestorationOfNaturalEcosystems
+    FoodLossAndWaste
+    ConsumptionFootprint
+  }
+
+enum EnvironmentalThematicArea
+  {
+    ClimateChange
+    PollutionAntimicrobials
+    SustainableUseOfResources
+    Biodiversity
+    CrossCuttingAreas
+  }
+
+enum GranularityType
+  {
+    MacroRegions
+    Countries
+    NUTS1
+    NUTS2
+    NUTS3
+    LAU
+  }
+
+enum HorizontalDomain
+  {
+    StrategicPlanningAndPolicies
+    EffectiveImplementation
+    Accountability
+    SharedVision
+    ShockResilience
+    Preparedness
+    Adaptation
+    Transformation
+  }
+
+enum HorizontalThematicArea
+  {
+    Governance
+    Resilience
+  }
+
+enum ScoreCategory
+  {
+    VeryPoor
+    Poor
+    Moderate
+    Good
+    Excellent
+  }
+
+enum SocialDomain
+  {
+    Employment
+    AnimalWelfare
+    FoodHeritage
+    FoodAffordability
+    FoodAvailability
+    HealthImpactFromDiets
+    FoodSecurity
+  }
+
+enum SocialThematicArea
+  {
+    FairInclusiveAndEthicalFoodSystem
+    FoodEnvironment
+    NutritionAndHealth
+  }
+
+enum SpatialScopeType
+  {
+    Global
+    Eu
+    EuMemberStates
+    Regional
+    Local
+  }
+
+enum SupplyChainComponentType
+  {
+    PrimaryFoodProduction
+    FoodProcessing
+    FoodDistribution
+    FoodConsumption
+  }
+
+enum SustainabilityDimension
+  {
+    Environmental
+    Economic
+    Social
+    Horizontal
+  }
+
+enum TimeGranularity
+  {
+    EveryTwoYears
+    Yearly
+    Monthly
+    Weekly
+    Other
+  }
+
+type Database
+  {
+    id: String!
+    iri: IriType
+    name: LabelType
+    description: NarrativeText
+    databaseLink: IriType
+    updateFrequency: TimeGranularity
+    containsIndicatorDataSource: [IndicatorDataSource]!
+  }
+
+type Domain
+  {
+  }
+
+interface Entity
+  {
+    id: String!
+    iri: IriType
+    name: LabelType
+    description: NarrativeText
+  }
+
+type Indicator
+  {
+    iri: IriType
+    keyArea: SustainabilityDimension!
+    thematicArea: ThematicArea!
+    indicatorDomain: Domain!
+    justification: NarrativeText
+    spatialScope: SpatialScopeType!
+    granularity: [GranularityType]!
+    supplyChainComponent: [SupplyChainComponentType]
+    measurementUnit: Unit
+    id: String!
+    name: LabelType
+    description: NarrativeText
+  }
+
+type IndicatorCriterion
+  {
+    id: String!
+    iri: IriType
+    name: LabelType
+    description: NarrativeText
+    category: CriterionCategory
+  }
+
+type IndicatorCriterionScore
+  {
+    scoreForIndicator: Indicator
+    scoresCriterion: IndicatorCriterion
+    score: ScoreCategory
+    comment: NarrativeText
+  }
+
+type IndicatorDatapoint
+  {
+    iri: IriType
+    name: LabelType
+    description: NarrativeText
+    hasUnit: Unit
+    hasNumericValue: Double
+    measurementOf: Indicator!
+    id: String!
+  }
+
+type IndicatorDatapointCollection
+  {
+    indicatorDatapoints: [IndicatorDatapoint]
+  }
+
+type IndicatorDataSource
+  {
+    id: String!
+    iri: IriType
+    name: LabelType
+    description: NarrativeText
+    dataLink: IriType
+    oldestDatapoint: DateOrDatetime
+    newestDatapoint: DateOrDatetime
+    timeGranularity: TimeGranularity
+    measuresIndicator: Indicator!
+  }
+
+type QuantityValue
+  {
+    id: String!
+    iri: IriType
+    name: LabelType
+    description: NarrativeText
+    hasUnit: Unit
+    hasNumericValue: Double
+  }
+
+type ThematicArea
+  {
+  }

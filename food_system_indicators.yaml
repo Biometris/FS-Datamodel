@@ -1,0 +1,18 @@
+{
+   "IAO": "http://purl.obolibrary.org/obo/IAO_",
+   "UO": "http://purl.obolibrary.org/obo/UO_",
+   "dct": "http://purl.org/dc/terms/",
+   "fsi": "https://w3id.org/linkml/examples/fsi",
+   "linkml": "https://w3id.org/linkml/",
+   "obo": "http://purl.obolibrary.org/obo/",
+   "qudt": "http://qudt.org/schema/qudt/",
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+   "schema": "http://schema.org/",
+   "skos": "http://www.w3.org/2004/02/skos/core#",
+   "Domain": {
+      "@id": "linkml:Any"
+   },
+   "ThematicArea": {
+      "@id": "linkml:Any"
+   }
+}

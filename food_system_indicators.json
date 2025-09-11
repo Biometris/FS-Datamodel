@@ -1,0 +1,806 @@
+{
+    "$defs": {
+        "CriterionCategory": {
+            "description": "Category of an indicator selection criterion.",
+            "enum": [
+                "GoalOrientedAndPolicyRelevant",
+                "SoundMethodologies",
+                "AvailabilityAncAccessibility",
+                "GeographicalCoverageAndTimeliness",
+                "OperationalFeasibility"
+            ],
+            "title": "CriterionCategory",
+            "type": "string"
+        },
+        "Database": {
+            "additionalProperties": false,
+            "description": "Data base containing data corresponding to an indicator.",
+            "properties": {
+                "contains_indicator_data_source": {
+                    "description": "Indicator data source.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "database_link": {
+                    "description": "Link to the database",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "description": {
+                    "description": "A human-readable description of an entity.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "A unique identifier for an entity.",
+                    "type": "string"
+                },
+                "iri": {
+                    "description": "An IRI for an entity. This is determined by the id using expansion rules.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "description": "A human-readable name for an attribute or entity.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "update_frequency": {
+                    "$ref": "#/$defs/TimeGranularity",
+                    "description": "Frequency at which the data is updated."
+                }
+            },
+            "required": [
+                "contains_indicator_data_source",
+                "id"
+            ],
+            "title": "Database",
+            "type": "object"
+        },
+        "Domain": {
+            "additionalProperties": true,
+            "description": "a domain.",
+            "title": "Domain",
+            "type": [
+                "null",
+                "boolean",
+                "object",
+                "number",
+                "string"
+            ]
+        },
+        "EconomicDomain": {
+            "description": "Economic domain.",
+            "enum": [
+                "SectorialGrowth",
+                "MarketPowerAndBusinessStructure",
+                "IncomeDistribution",
+                "Price",
+                "Trade",
+                "TechnologyAndDigitalization",
+                "TransportAccessibilityAndInfrastructure"
+            ],
+            "title": "EconomicDomain",
+            "type": "string"
+        },
+        "EconomicThematicArea": {
+            "description": "Economic sustainability dimension.",
+            "enum": [
+                "FairEconomicViabilityInFoodValueChain",
+                "DevelopmentAndLogistics"
+            ],
+            "title": "EconomicThematicArea",
+            "type": "string"
+        },
+        "EnvironmentalDomain": {
+            "description": "Environmental domain.",
+            "enum": [
+                "GHGEmissions",
+                "Pollution",
+                "Antimicrobials",
+                "LandAndSoil",
+                "Water",
+                "AquaticLivingResources",
+                "Energy",
+                "BiodiversityConservationAndRestorationOfNaturalEcosystems",
+                "FoodLossAndWaste",
+                "ConsumptionFootprint"
+            ],
+            "title": "EnvironmentalDomain",
+            "type": "string"
+        },
+        "EnvironmentalThematicArea": {
+            "description": "Enviromental sustainability dimension.",
+            "enum": [
+                "ClimateChange",
+                "PollutionAntimicrobials",
+                "SustainableUseOfResources",
+                "Biodiversity",
+                "CrossCuttingAreas"
+            ],
+            "title": "EnvironmentalThematicArea",
+            "type": "string"
+        },
+        "GranularityType": {
+            "description": "The granularity for which the indicator is measured.",
+            "enum": [
+                "MacroRegions",
+                "Countries",
+                "NUTS1",
+                "NUTS2",
+                "NUTS3",
+                "LAU"
+            ],
+            "title": "GranularityType",
+            "type": "string"
+        },
+        "HorizontalDomain": {
+            "description": "Horizontal domain.",
+            "enum": [
+                "StrategicPlanningAndPolicies",
+                "EffectiveImplementation",
+                "Accountability",
+                "SharedVision",
+                "ShockResilience",
+                "Preparedness",
+                "Adaptation",
+                "Transformation"
+            ],
+            "title": "HorizontalDomain",
+            "type": "string"
+        },
+        "HorizontalThematicArea": {
+            "description": "Horizontal sustainability dimension.",
+            "enum": [
+                "Governance",
+                "Resilience"
+            ],
+            "title": "HorizontalThematicArea",
+            "type": "string"
+        },
+        "Indicator": {
+            "additionalProperties": false,
+            "allOf": [
+                {
+                    "if": {
+                        "properties": {
+                            "key_area": {
+                                "const": "environmental"
+                            }
+                        },
+                        "required": [
+                            "key_area"
+                        ]
+                    },
+                    "then": {
+                        "properties": {
+                            "thematic_area": {
+                                "anyOf": [
+                                    {
+                                        "$ref": "#/$defs/EnvironmentalThematicArea"
+                                    }
+                                ]
+                            }
+                        },
+                        "required": [
+                            "thematic_area"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "key_area": {
+                                "const": "economic"
+                            }
+                        },
+                        "required": [
+                            "key_area"
+                        ]
+                    },
+                    "then": {
+                        "properties": {
+                            "thematic_area": {
+                                "anyOf": [
+                                    {
+                                        "$ref": "#/$defs/EconomicThematicArea"
+                                    }
+                                ]
+                            }
+                        },
+                        "required": [
+                            "thematic_area"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "key_area": {
+                                "const": "social"
+                            }
+                        },
+                        "required": [
+                            "key_area"
+                        ]
+                    },
+                    "then": {
+                        "properties": {
+                            "thematic_area": {
+                                "anyOf": [
+                                    {
+                                        "$ref": "#/$defs/SocialThematicArea"
+                                    }
+                                ]
+                            }
+                        },
+                        "required": [
+                            "thematic_area"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "key_area": {
+                                "const": "horizontal"
+                            }
+                        },
+                        "required": [
+                            "key_area"
+                        ]
+                    },
+                    "then": {
+                        "properties": {
+                            "thematic_area": {
+                                "anyOf": [
+                                    {
+                                        "$ref": "#/$defs/HorizontalThematicArea"
+                                    }
+                                ]
+                            }
+                        },
+                        "required": [
+                            "thematic_area"
+                        ]
+                    }
+                }
+            ],
+            "description": "Food system indicator.",
+            "properties": {
+                "description": {
+                    "description": "Concise text that provides the meaning of the identifier.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "granularity": {
+                    "description": "Reference to the granularity(ies) for which the indicator is measured.",
+                    "items": {
+                        "$ref": "#/$defs/GranularityType"
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "description": "Unique identifier of the indicator.",
+                    "type": "string"
+                },
+                "indicator_domain": {
+                    "$ref": "#/$defs/Domain",
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/EnvironmentalDomain"
+                        },
+                        {
+                            "$ref": "#/$defs/EconomicDomain"
+                        },
+                        {
+                            "$ref": "#/$defs/SocialDomain"
+                        },
+                        {
+                            "$ref": "#/$defs/HorizontalDomain"
+                        }
+                    ],
+                    "description": "Reference to the domain that the indicator belongs to."
+                },
+                "iri": {
+                    "description": "An IRI for an entity. This is determined by the id using expansion rules.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "justification": {
+                    "description": "Justification for the selection of the indicator.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "key_area": {
+                    "$ref": "#/$defs/SustainabilityDimension",
+                    "description": "Reference to the thematic area that the indicator belongs to."
+                },
+                "measurement_unit": {
+                    "description": "Unit of measurement.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "description": "Denomination of the indicator.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "spatial_scope": {
+                    "$ref": "#/$defs/SpatialScopeType",
+                    "description": "Reference to the spatial unit that the indicator describes."
+                },
+                "supply_chain_component": {
+                    "description": "Reference to the supply chain component(s) for which the indicator is relevant.",
+                    "items": {
+                        "$ref": "#/$defs/SupplyChainComponentType"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "thematic_area": {
+                    "$ref": "#/$defs/ThematicArea",
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/EnvironmentalThematicArea"
+                        },
+                        {
+                            "$ref": "#/$defs/EconomicThematicArea"
+                        },
+                        {
+                            "$ref": "#/$defs/SocialThematicArea"
+                        },
+                        {
+                            "$ref": "#/$defs/HorizontalThematicArea"
+                        }
+                    ],
+                    "description": "The thematic area the indicator belongs to."
+                }
+            },
+            "required": [
+                "key_area",
+                "thematic_area",
+                "indicator_domain",
+                "spatial_scope",
+                "granularity",
+                "id"
+            ],
+            "title": "Indicator",
+            "type": "object"
+        },
+        "IndicatorCriterion": {
+            "additionalProperties": false,
+            "description": "Criterion used for indicator selection.",
+            "properties": {
+                "category": {
+                    "$ref": "#/$defs/CriterionCategory",
+                    "description": "category for the indicator selection criterion."
+                },
+                "description": {
+                    "description": "A human-readable description of an entity.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "A unique identifier for an entity.",
+                    "type": "string"
+                },
+                "iri": {
+                    "description": "An IRI for an entity. This is determined by the id using expansion rules.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "description": "A human-readable name for an attribute or entity.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "IndicatorCriterion",
+            "type": "object"
+        },
+        "IndicatorCriterionScore": {
+            "additionalProperties": false,
+            "description": "Score for an indicator for an indicator selection criterion.",
+            "properties": {
+                "comment": {
+                    "description": "A comment about an entity.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "score": {
+                    "$ref": "#/$defs/ScoreCategory",
+                    "description": "score for an indicator selection criterion for an indicator."
+                },
+                "score_for_indicator": {
+                    "description": "Indicator.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "scores_criterion": {
+                    "description": "Indicator criterion.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "title": "IndicatorCriterionScore",
+            "type": "object"
+        },
+        "IndicatorDataSource": {
+            "additionalProperties": false,
+            "description": "Data source containing the indicator data.",
+            "properties": {
+                "data_link": {
+                    "description": "Link to the data for the indicator",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "description": {
+                    "description": "A human-readable description of an entity.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "A unique identifier for an entity.",
+                    "type": "string"
+                },
+                "iri": {
+                    "description": "An IRI for an entity. This is determined by the id using expansion rules.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "measures_indicator": {
+                    "description": "Indicator.",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for an attribute or entity.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "newest_datapoint": {
+                    "description": "Newest datapoint for which the indicator is measured.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "oldest_datapoint": {
+                    "description": "Oldest datapoint for which the indicator is measured.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "time_granularity": {
+                    "$ref": "#/$defs/TimeGranularity",
+                    "description": "Time granularity between the datapoints."
+                }
+            },
+            "required": [
+                "measures_indicator",
+                "id"
+            ],
+            "title": "IndicatorDataSource",
+            "type": "object"
+        },
+        "IndicatorDatapoint": {
+            "additionalProperties": false,
+            "description": "Food system indicator datapoint.",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description of an entity.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "has_numeric_value": {
+                    "description": "connects a quantity value to a number",
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
+                "has_unit": {
+                    "description": "connects a quantity value to a unit",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "Unique identifier of the datapoint.",
+                    "type": "string"
+                },
+                "iri": {
+                    "description": "An IRI for an entity. This is determined by the id using expansion rules.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "measurement_of": {
+                    "description": "Indicator.",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "A human-readable name for an attribute or entity.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "measurement_of",
+                "id"
+            ],
+            "title": "IndicatorDatapoint",
+            "type": "object"
+        },
+        "IndicatorDatapointCollection": {
+            "additionalProperties": false,
+            "description": "Collection of food system indicator datapoints.",
+            "properties": {
+                "indicator_datapoints": {
+                    "items": {
+                        "$ref": "#/$defs/IndicatorDatapoint"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                }
+            },
+            "title": "IndicatorDatapointCollection",
+            "type": "object"
+        },
+        "QuantityValue": {
+            "additionalProperties": false,
+            "description": "A value of an attribute that is quantitative and measurable, expressed as a combination of a unit and a numeric value",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description of an entity.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "has_numeric_value": {
+                    "description": "connects a quantity value to a number",
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
+                "has_unit": {
+                    "description": "connects a quantity value to a unit",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "A unique identifier for an entity.",
+                    "type": "string"
+                },
+                "iri": {
+                    "description": "An IRI for an entity. This is determined by the id using expansion rules.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "description": "A human-readable name for an attribute or entity.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "QuantityValue",
+            "type": "object"
+        },
+        "ScoreCategory": {
+            "description": "Score category.",
+            "enum": [
+                "VeryPoor",
+                "Poor",
+                "Moderate",
+                "Good",
+                "Excellent"
+            ],
+            "title": "ScoreCategory",
+            "type": "string"
+        },
+        "SocialDomain": {
+            "description": "Social domain.",
+            "enum": [
+                "Employment",
+                "AnimalWelfare",
+                "FoodHeritage",
+                "FoodAffordability",
+                "FoodAvailability",
+                "HealthImpactFromDiets",
+                "FoodSecurity"
+            ],
+            "title": "SocialDomain",
+            "type": "string"
+        },
+        "SocialThematicArea": {
+            "description": "Social sustainability dimension.",
+            "enum": [
+                "FairInclusiveAndEthicalFoodSystem",
+                "FoodEnvironment",
+                "NutritionAndHealth"
+            ],
+            "title": "SocialThematicArea",
+            "type": "string"
+        },
+        "SpatialScopeType": {
+            "description": "The spatial scope for which the indicator is defined.",
+            "enum": [
+                "Global",
+                "Eu",
+                "EuMemberStates",
+                "Regional",
+                "Local"
+            ],
+            "title": "SpatialScopeType",
+            "type": "string"
+        },
+        "SupplyChainComponentType": {
+            "description": "The supply chain component for which the indicator is relevant.",
+            "enum": [
+                "PrimaryFoodProduction",
+                "FoodProcessing",
+                "FoodDistribution",
+                "FoodConsumption"
+            ],
+            "title": "SupplyChainComponentType",
+            "type": "string"
+        },
+        "SustainabilityDimension": {
+            "description": "Main sustainability dimension.",
+            "enum": [
+                "Environmental",
+                "Economic",
+                "Social",
+                "Horizontal"
+            ],
+            "title": "SustainabilityDimension",
+            "type": "string"
+        },
+        "ThematicArea": {
+            "additionalProperties": true,
+            "description": "a thematic area.",
+            "title": "ThematicArea",
+            "type": [
+                "null",
+                "boolean",
+                "object",
+                "number",
+                "string"
+            ]
+        },
+        "TimeGranularity": {
+            "description": "Time granularity for measuring and updating data.",
+            "enum": [
+                "EveryTwoYears",
+                "Yearly",
+                "Monthly",
+                "Weekly",
+                "Other"
+            ],
+            "title": "TimeGranularity",
+            "type": "string"
+        }
+    },
+    "$id": "https://w3id.org/linkml/examples/fsi",
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "additionalProperties": true,
+    "description": "Data base containing data corresponding to an indicator.",
+    "metamodel_version": "1.7.0",
+    "properties": {
+        "contains_indicator_data_source": {
+            "description": "Indicator data source.",
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "database_link": {
+            "description": "Link to the database",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "description": {
+            "description": "A human-readable description of an entity.",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "id": {
+            "description": "A unique identifier for an entity.",
+            "type": "string"
+        },
+        "iri": {
+            "description": "An IRI for an entity. This is determined by the id using expansion rules.",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "name": {
+            "description": "A human-readable name for an attribute or entity.",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "update_frequency": {
+            "$ref": "#/$defs/TimeGranularity",
+            "description": "Frequency at which the data is updated."
+        }
+    },
+    "required": [
+        "contains_indicator_data_source",
+        "id"
+    ],
+    "title": "food_system_indicators",
+    "type": "object",
+    "version": null
+}

@@ -1,0 +1,209 @@
+# metamodel_version: 1.7.0
+BASE <https://w3id.org/linkml/examples/fsi/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX linkml: <https://w3id.org/linkml/>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX UO: <http://purl.obolibrary.org/obo/UO_>
+
+
+<https://w3id.org/linkml/examples/fsiIriType> xsd:string
+
+<https://w3id.org/linkml/examples/fsiLabelType> xsd:string
+
+<https://w3id.org/linkml/examples/fsiNarrativeText> xsd:string
+
+<https://w3id.org/linkml/examples/fsiUnit> UO:0000000
+
+linkml:String xsd:string
+
+linkml:Integer xsd:integer
+
+linkml:Boolean xsd:boolean
+
+linkml:Float xsd:float
+
+linkml:Double xsd:double
+
+linkml:Decimal xsd:decimal
+
+linkml:Time xsd:time
+
+linkml:Date xsd:date
+
+linkml:Datetime xsd:dateTime
+
+linkml:DateOrDatetime linkml:DateOrDatetime
+
+linkml:Uriorcurie IRI
+
+linkml:Curie xsd:string
+
+linkml:Uri IRI
+
+linkml:Ncname xsd:string
+
+linkml:Objectidentifier IRI
+
+linkml:Nodeidentifier NONLITERAL
+
+linkml:Jsonpointer xsd:string
+
+linkml:Jsonpath xsd:string
+
+linkml:Sparqlpath xsd:string
+
+<https://w3id.org/linkml/examples/fsiDatabase> CLOSED {
+    (  $<https://w3id.org/linkml/examples/fsiDatabase_tes> (  &<https://w3id.org/linkml/examples/fsiEntity_tes> ;
+          rdf:type [ <https://w3id.org/linkml/examples/fsiEntity> ] ? ;
+          <https://w3id.org/linkml/examples/fsidatabase_link> @<https://w3id.org/linkml/examples/fsiIriType> ? ;
+          <https://w3id.org/linkml/examples/fsiupdate_frequency> [
+             <https://w3id.org/linkml/examples/fsiTimeGranularity#EveryTwoYears>
+             <https://w3id.org/linkml/examples/fsiTimeGranularity#Yearly>
+             <https://w3id.org/linkml/examples/fsiTimeGranularity#Monthly>
+             <https://w3id.org/linkml/examples/fsiTimeGranularity#Weekly>
+             <https://w3id.org/linkml/examples/fsiTimeGranularity#Other> ] ? ;
+          <https://w3id.org/linkml/examples/fsicontains_indicator_data_source>
+          @<https://w3id.org/linkml/examples/fsiIndicatorDataSource> +
+       ) ;
+       rdf:type [ <https://w3id.org/linkml/examples/fsiDatabase> ]
+    )
+}
+
+<https://w3id.org/linkml/examples/fsiDomain> CLOSED {
+    (  $<https://w3id.org/linkml/examples/fsiDomain_tes> rdf:type . * ;
+       rdf:type [ linkml:Any ] ?
+    )
+}
+
+<https://w3id.org/linkml/examples/fsiEntity>  (
+    @<https://w3id.org/linkml/examples/fsiDatabase> OR @<https://w3id.org/linkml/examples/fsiIndicator> OR
+    @<https://w3id.org/linkml/examples/fsiIndicatorCriterion> OR @<https://w3id.org/linkml/examples/fsiIndicatorDataSource> OR
+    @<https://w3id.org/linkml/examples/fsiQuantityValue>
+)
+
+<https://w3id.org/linkml/examples/fsiEntity_struct> {
+    (  $<https://w3id.org/linkml/examples/fsiEntity_tes> (  <https://w3id.org/linkml/examples/fsiiri>
+          @<https://w3id.org/linkml/examples/fsiIriType> ? ;
+          rdfs:label @<https://w3id.org/linkml/examples/fsiLabelType> ? ;
+          dct:description @<https://w3id.org/linkml/examples/fsiNarrativeText> ?
+       ) ;
+       rdf:type [ <https://w3id.org/linkml/examples/fsiEntity> ]
+    )
+}
+
+<https://w3id.org/linkml/examples/fsiIndicator> CLOSED {
+    (  $<https://w3id.org/linkml/examples/fsiIndicator_tes> (  &<https://w3id.org/linkml/examples/fsiEntity_tes> ;
+          rdf:type [ <https://w3id.org/linkml/examples/fsiEntity> ] ? ;
+          <https://w3id.org/linkml/examples/fsikey_area> [
+             <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Environmental>
+             <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Economic>
+             <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Social>
+             <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Horizontal> ] ;
+          <https://w3id.org/linkml/examples/fsithematic_area> @<https://w3id.org/linkml/examples/fsiThematicArea> ;
+          <https://w3id.org/linkml/examples/fsiindicator_domain> @<https://w3id.org/linkml/examples/fsiDomain> ;
+          <https://w3id.org/linkml/examples/fsijustification> @<https://w3id.org/linkml/examples/fsiNarrativeText> ? ;
+          <https://w3id.org/linkml/examples/fsispatial_scope> [ <https://w3id.org/linkml/examples/fsiSpatialScopeType#Global>
+             <https://w3id.org/linkml/examples/fsiSpatialScopeType#Eu>
+             <https://w3id.org/linkml/examples/fsiSpatialScopeType#EuMemberStates>
+             <https://w3id.org/linkml/examples/fsiSpatialScopeType#Regional>
+             <https://w3id.org/linkml/examples/fsiSpatialScopeType#Local> ] ;
+          <https://w3id.org/linkml/examples/fsigranularity> [ <https://w3id.org/linkml/examples/fsiGranularityType#MacroRegions>
+             <https://w3id.org/linkml/examples/fsiGranularityType#Countries>
+             <https://w3id.org/linkml/examples/fsiGranularityType#NUTS1>
+             <https://w3id.org/linkml/examples/fsiGranularityType#NUTS2>
+             <https://w3id.org/linkml/examples/fsiGranularityType#NUTS3> <https://w3id.org/linkml/examples/fsiGranularityType#LAU>
+             ] + ;
+          <https://w3id.org/linkml/examples/fsisupply_chain_component> [
+             <https://w3id.org/linkml/examples/fsiSupplyChainComponentType#PrimaryFoodProduction>
+             <https://w3id.org/linkml/examples/fsiSupplyChainComponentType#FoodProcessing>
+             <https://w3id.org/linkml/examples/fsiSupplyChainComponentType#FoodDistribution>
+             <https://w3id.org/linkml/examples/fsiSupplyChainComponentType#FoodConsumption> ] * ;
+          <https://w3id.org/linkml/examples/fsimeasurement_unit> @<https://w3id.org/linkml/examples/fsiUnit> ? ;
+          rdfs:label @<https://w3id.org/linkml/examples/fsiLabelType> ? ;
+          dct:description @<https://w3id.org/linkml/examples/fsiNarrativeText> ?
+       ) ;
+       rdf:type [ <https://w3id.org/linkml/examples/fsiIndicator> ]
+    )
+}
+
+<https://w3id.org/linkml/examples/fsiIndicatorCriterion> CLOSED {
+    (  $<https://w3id.org/linkml/examples/fsiIndicatorCriterion_tes> (  &<https://w3id.org/linkml/examples/fsiEntity_tes> ;
+          rdf:type [ <https://w3id.org/linkml/examples/fsiEntity> ] ? ;
+          <https://w3id.org/linkml/examples/fsicategory> [
+             <https://w3id.org/linkml/examples/fsiCriterionCategory#GoalOrientedAndPolicyRelevant>
+             <https://w3id.org/linkml/examples/fsiCriterionCategory#SoundMethodologies>
+             <https://w3id.org/linkml/examples/fsiCriterionCategory#AvailabilityAncAccessibility>
+             <https://w3id.org/linkml/examples/fsiCriterionCategory#GeographicalCoverageAndTimeliness>
+             <https://w3id.org/linkml/examples/fsiCriterionCategory#OperationalFeasibility> ] ?
+       ) ;
+       rdf:type [ <https://w3id.org/linkml/examples/fsiIndicatorCriterion> ]
+    )
+}
+
+<https://w3id.org/linkml/examples/fsiIndicatorCriterionScore> CLOSED {
+    (  $<https://w3id.org/linkml/examples/fsiIndicatorCriterionScore_tes> ( 
+          <https://w3id.org/linkml/examples/fsiscore_for_indicator> @<https://w3id.org/linkml/examples/fsiIndicator> ? ;
+          <https://w3id.org/linkml/examples/fsiscores_criterion> @<https://w3id.org/linkml/examples/fsiIndicatorCriterion> ? ;
+          <https://w3id.org/linkml/examples/fsiscore> [ <https://w3id.org/linkml/examples/fsiScoreCategory#VeryPoor>
+             <https://w3id.org/linkml/examples/fsiScoreCategory#Poor> <https://w3id.org/linkml/examples/fsiScoreCategory#Moderate>
+             <https://w3id.org/linkml/examples/fsiScoreCategory#Good> <https://w3id.org/linkml/examples/fsiScoreCategory#Excellent>
+             ] ? ;
+          <https://w3id.org/linkml/examples/fsicomment> @<https://w3id.org/linkml/examples/fsiNarrativeText> ?
+       ) ;
+       rdf:type [ <https://w3id.org/linkml/examples/fsiIndicatorCriterionScore> ] ?
+    )
+}
+
+<https://w3id.org/linkml/examples/fsiIndicatorDatapoint> CLOSED {
+    (  $<https://w3id.org/linkml/examples/fsiIndicatorDatapoint_tes> (  &<https://w3id.org/linkml/examples/fsiQuantityValue_tes> ;
+          rdf:type [ <https://w3id.org/linkml/examples/fsiQuantityValue> ] ? ;
+          <https://w3id.org/linkml/examples/fsimeasurement_of> @<https://w3id.org/linkml/examples/fsiIndicator>
+       ) ;
+       rdf:type [ <https://w3id.org/linkml/examples/fsiIndicatorDatapoint> ]
+    )
+}
+
+<https://w3id.org/linkml/examples/fsiIndicatorDatapointCollection> CLOSED {
+    (  $<https://w3id.org/linkml/examples/fsiIndicatorDatapointCollection_tes>
+       <https://w3id.org/linkml/examples/fsiindicator_datapoints> @<https://w3id.org/linkml/examples/fsiIndicatorDatapoint> * ;
+       rdf:type [ <https://w3id.org/linkml/examples/fsiIndicatorDatapointCollection> ] ?
+    )
+}
+
+<https://w3id.org/linkml/examples/fsiIndicatorDataSource> CLOSED {
+    (  $<https://w3id.org/linkml/examples/fsiIndicatorDataSource_tes> (  &<https://w3id.org/linkml/examples/fsiEntity_tes> ;
+          rdf:type [ <https://w3id.org/linkml/examples/fsiEntity> ] ? ;
+          <https://w3id.org/linkml/examples/fsidata_link> @<https://w3id.org/linkml/examples/fsiIriType> ? ;
+          <https://w3id.org/linkml/examples/fsioldest_datapoint> @linkml:DateOrDatetime ? ;
+          <https://w3id.org/linkml/examples/fsinewest_datapoint> @linkml:DateOrDatetime ? ;
+          <https://w3id.org/linkml/examples/fsitime_granularity> [
+             <https://w3id.org/linkml/examples/fsiTimeGranularity#EveryTwoYears>
+             <https://w3id.org/linkml/examples/fsiTimeGranularity#Yearly>
+             <https://w3id.org/linkml/examples/fsiTimeGranularity#Monthly>
+             <https://w3id.org/linkml/examples/fsiTimeGranularity#Weekly>
+             <https://w3id.org/linkml/examples/fsiTimeGranularity#Other> ] ? ;
+          <https://w3id.org/linkml/examples/fsimeasures_indicator> @<https://w3id.org/linkml/examples/fsiIndicator>
+       ) ;
+       rdf:type [ <https://w3id.org/linkml/examples/fsiIndicatorDataSource> ]
+    )
+}
+
+<https://w3id.org/linkml/examples/fsiQuantityValue>  (
+    CLOSED {
+       (  $<https://w3id.org/linkml/examples/fsiQuantityValue_tes> (  &<https://w3id.org/linkml/examples/fsiEntity_tes> ;
+             rdf:type [ <https://w3id.org/linkml/examples/fsiEntity> ] ? ;
+             <https://w3id.org/linkml/examples/fsihas_unit> @<https://w3id.org/linkml/examples/fsiUnit> ? ;
+             <https://w3id.org/linkml/examples/fsihas_numeric_value> @linkml:Double ?
+          ) ;
+          rdf:type [ <https://w3id.org/linkml/examples/fsiQuantityValue> ]
+       )
+    } OR @<https://w3id.org/linkml/examples/fsiIndicatorDatapoint>
+)
+
+<https://w3id.org/linkml/examples/fsiThematicArea> CLOSED {
+    (  $<https://w3id.org/linkml/examples/fsiThematicArea_tes> rdf:type . * ;
+       rdf:type [ linkml:Any ] ?
+    )
+}

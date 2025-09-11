@@ -1,0 +1,127 @@
+[
+  {
+    "name": "Environmental",
+    "children": [
+      {
+        "name": "ClimateChange",
+        "children": [
+          {
+            "name": "GHGEmissions",
+            "children": [
+              {
+                "name": "GHG food system emissions",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "PollutionAntimicrobials",
+        "children": [
+          {
+            "name": "Pollution",
+            "children": [
+              {
+                "name": "Use and risk of chemical pesticides (F2F pesticide reduction target 1)",
+                "value": 1
+              },
+              {
+                "name": "Use of the more hazardous pesticides (F2F pesticide reduction target 2)",
+                "value": 1
+              },
+              {
+                "name": "Water quality - Nitrates in groundwater",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Antimicrobials",
+            "children": [
+              {
+                "name": "Sales of antimicrobials for food-producing animals",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "SustainableUseOfResources",
+        "children": [
+          {
+            "name": "Water",
+            "children": [
+              {
+                "name": "Water exploitation index, plus (WEI+)",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "LandAndSoil",
+            "children": [
+              {
+                "name": "Gross nutrient balance - nitrogen",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Social",
+    "children": [
+      {
+        "name": "FoodEnvironment",
+        "children": [
+          {
+            "name": "FoodAffordability",
+            "children": [
+              {
+                "name": "Percent of the population who cannot afford a healthy diet",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "NutritionAndHealth",
+        "children": [
+          {
+            "name": "FoodSecurity",
+            "children": [
+              {
+                "name": "Prevalence of moderate or severe food insecurity in the population",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Economic",
+    "children": [
+      {
+        "name": "FairEconomicViabilityInFoodValueChain",
+        "children": [
+          {
+            "name": "IncomeDistribution",
+            "children": [
+              {
+                "name": "Farmers income in agriculture compared to wages in the rest of the economy",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
