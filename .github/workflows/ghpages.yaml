@@ -22,6 +22,9 @@ jobs:
         with:
           python-version: '3.13'      
       - run: pip install -r requirements.txt
+
+      - name: Setup just
+        uses: taiki-e/install-action@just
       - run: just site
       - run: mkdocs gh-deploy --config-file mkdocs.yml --force
  
