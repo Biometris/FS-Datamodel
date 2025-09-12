@@ -128,6 +128,20 @@ linkml:Sparqlpath xsd:string
     )
 }
 
+<https://w3id.org/linkml/examples/fsiIndicatorcriteriacore> CLOSED {
+    (  $<https://w3id.org/linkml/examples/fsiIndicatorcriteriacore_tes> ( 
+          <https://w3id.org/linkml/examples/fsiscore_for_indicator> @<https://w3id.org/linkml/examples/fsiIndicator> ? ;
+          <https://w3id.org/linkml/examples/fsiscores_criterion> @<https://w3id.org/linkml/examples/fsiIndicatorCriterion> ? ;
+          <https://w3id.org/linkml/examples/fsiscore> [ <https://w3id.org/linkml/examples/fsiScoreCategory#VeryPoor>
+             <https://w3id.org/linkml/examples/fsiScoreCategory#Poor> <https://w3id.org/linkml/examples/fsiScoreCategory#Moderate>
+             <https://w3id.org/linkml/examples/fsiScoreCategory#Good> <https://w3id.org/linkml/examples/fsiScoreCategory#Excellent>
+             ] ? ;
+          <https://w3id.org/linkml/examples/fsicomment> @<https://w3id.org/linkml/examples/fsiNarrativeText> ?
+       ) ;
+       rdf:type [ <https://w3id.org/linkml/examples/fsiIndicatorcriteriacore> ] ?
+    )
+}
+
 <https://w3id.org/linkml/examples/fsiIndicatorCriterion> CLOSED {
     (  $<https://w3id.org/linkml/examples/fsiIndicatorCriterion_tes> (  &<https://w3id.org/linkml/examples/fsiEntity_tes> ;
           rdf:type [ <https://w3id.org/linkml/examples/fsiEntity> ] ? ;
@@ -139,20 +153,6 @@ linkml:Sparqlpath xsd:string
              <https://w3id.org/linkml/examples/fsiCriterionCategory#OperationalFeasibility> ] ?
        ) ;
        rdf:type [ <https://w3id.org/linkml/examples/fsiIndicatorCriterion> ]
-    )
-}
-
-<https://w3id.org/linkml/examples/fsiIndicatorCriterionScore> CLOSED {
-    (  $<https://w3id.org/linkml/examples/fsiIndicatorCriterionScore_tes> ( 
-          <https://w3id.org/linkml/examples/fsiscore_for_indicator> @<https://w3id.org/linkml/examples/fsiIndicator> ? ;
-          <https://w3id.org/linkml/examples/fsiscores_criterion> @<https://w3id.org/linkml/examples/fsiIndicatorCriterion> ? ;
-          <https://w3id.org/linkml/examples/fsiscore> [ <https://w3id.org/linkml/examples/fsiScoreCategory#VeryPoor>
-             <https://w3id.org/linkml/examples/fsiScoreCategory#Poor> <https://w3id.org/linkml/examples/fsiScoreCategory#Moderate>
-             <https://w3id.org/linkml/examples/fsiScoreCategory#Good> <https://w3id.org/linkml/examples/fsiScoreCategory#Excellent>
-             ] ? ;
-          <https://w3id.org/linkml/examples/fsicomment> @<https://w3id.org/linkml/examples/fsiNarrativeText> ?
-       ) ;
-       rdf:type [ <https://w3id.org/linkml/examples/fsiIndicatorCriterionScore> ] ?
     )
 }
 

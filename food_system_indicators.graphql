@@ -176,6 +176,14 @@ type Indicator
     description: NarrativeText
   }
 
+type Indicatorcriteriacore
+  {
+    scoreForIndicator: Indicator
+    scoresCriterion: IndicatorCriterion
+    score: ScoreCategory
+    comment: NarrativeText
+  }
+
 type IndicatorCriterion
   {
     id: String!
@@ -183,14 +191,6 @@ type IndicatorCriterion
     name: LabelType
     description: NarrativeText
     category: CriterionCategory
-  }
-
-type IndicatorCriterionScore
-  {
-    scoreForIndicator: Indicator
-    scoresCriterion: IndicatorCriterion
-    score: ScoreCategory
-    comment: NarrativeText
   }
 
 type IndicatorDatapoint

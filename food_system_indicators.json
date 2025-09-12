@@ -430,39 +430,6 @@
             "title": "IndicatorCriterion",
             "type": "object"
         },
-        "IndicatorCriterionScore": {
-            "additionalProperties": false,
-            "description": "Score for an indicator for an indicator selection criterion.",
-            "properties": {
-                "comment": {
-                    "description": "A comment about an entity.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "score": {
-                    "$ref": "#/$defs/ScoreCategory",
-                    "description": "score for an indicator selection criterion for an indicator."
-                },
-                "score_for_indicator": {
-                    "description": "Indicator.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "scores_criterion": {
-                    "description": "Indicator criterion.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                }
-            },
-            "title": "IndicatorCriterionScore",
-            "type": "object"
-        },
         "IndicatorDataSource": {
             "additionalProperties": false,
             "description": "Data source containing the indicator data.",
@@ -599,6 +566,39 @@
                 }
             },
             "title": "IndicatorDatapointCollection",
+            "type": "object"
+        },
+        "Indicatorcriteriacore": {
+            "additionalProperties": false,
+            "description": "Score for an indicator for an indicator selection criterion.",
+            "properties": {
+                "comment": {
+                    "description": "A comment about an entity.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "score": {
+                    "$ref": "#/$defs/ScoreCategory",
+                    "description": "score for an indicator selection criterion for an indicator."
+                },
+                "score_for_indicator": {
+                    "description": "Indicator.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "scores_criterion": {
+                    "description": "Indicator criterion.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "title": "Indicatorcriteriacore",
             "type": "object"
         },
         "QuantityValue": {
