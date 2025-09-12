@@ -13,6 +13,7 @@ nav:
   - Databases: databases_table.md
   - Datasources: indicator_datasources_table.md
   - Domains: domains_table.md
+  - Criterions: indicator_criterions_table.md
 docs_dir: docs
 site_url: https://biometris.github.io/FS-Datamodel
 repo_url: https://github.com/biometris/FS-Datamodel

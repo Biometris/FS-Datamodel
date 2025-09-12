@@ -93,13 +93,15 @@ if __name__ == "__main__":
     indicator_data_path = "data/indicators.yaml"
     database_data_path = "data/databases.yaml"
     datasource_data_path = "data/datasources.yaml"
+    criterion_data_path = "data/criterions.yaml"
 
     # Setup data store
     datastore = DataStore(
         schema_file=schema_path,
         indicators_file=indicator_data_path,
         databases_file=database_data_path,
-        datasources_file=datasource_data_path
+        datasources_file=datasource_data_path,
+        criterions_file=criterion_data_path
     )
 
     # Validate database content.
@@ -126,6 +128,12 @@ if __name__ == "__main__":
         render_template(
             template_name = 'indicator_datasources_table',
             datasources = datasources
+        )
+
+        criterions = datastore.get_indicator_criterions()
+        render_template(
+            template_name = 'indicator_criterions_table',
+            criterions = criterions
         )
 
         domains = datastore.get_domains()

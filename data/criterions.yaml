@@ -1,0 +1,61 @@
+
+- id: AlignmentWithObjectives
+  name: Alignment with objectives
+  description: Alignment with objectives.
+  category: GoalOrientedAndPolicyRelevant
+- id: RelevanceForDecisionMaking
+  name: Relevance for decision-making
+  description: Relevance for decision-making.
+  category: GoalOrientedAndPolicyRelevant
+- id: BasedOnInternationalStandards
+  name: Based on international standards
+  description: Based on international standards.
+  category: SoundMethodologies
+- id: ComparabilityAmongCountries
+  name: Comparability among countries
+  description: Comparability among countries.
+  category: SoundMethodologies
+- id: ScientificRigor
+  name: Scientific rigor
+  description: Scientific rigor.
+  category: SoundMethodologies
+- id: ComplementarityWithOtherIndicators
+  name: Complementarity with other indicators
+  description: Complementarity with other indicators.
+  category: SoundMethodologies
+- id: DataAvailability
+  name: Data availability
+  description: Data availability (official/statistical sources).
+  category: AvailabilityAndAccessibility
+- id: DataAccessibility
+  name: Data accessibility
+  description: Data accessibility (publicly available).
+  category: AvailabilityAndAccessibility
+- id: DataRegularlyUpdated
+  name: Data regularly updated
+  description: Data regularly updated.
+  category: AvailabilityAndAccessibility
+- id: DataDisaggregated
+  name: Data disaggregated
+  description: Data disaggregated (territory, gender, income, etc.).
+  category: AvailabilityAndAccessibility
+- id: BroadGeographicalCoverage
+  name: Broad geographical coverage 
+  description: Broad geographical coverage.
+  category: GeographicalCoverageAndTimeliness
+- id: TimelyAvailable
+  name: Timely available
+  description: Timely available.
+  category: GeographicalCoverageAndTimeliness
+- id: ClearyInterpretable
+  name: Cleary interpretable 
+  description: Cleary interpretable.
+  category: GeographicalCoverageAndTimeliness
+- id: SimplicityAndClarity
+  name: Simplicity and clarity
+  description: Simplicity and clarity.
+  category: OperationalFeasibility
+- id: CostEffectiveness
+  name: Cost-effectiveness
+  description: Cost-effectiveness.
+  category: OperationalFeasibility

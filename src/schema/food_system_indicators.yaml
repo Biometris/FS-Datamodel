@@ -722,7 +722,7 @@ enums:
       SoundMethodologies:
         description:
           Sound methodologies.
-      AvailabilityAncAccessibility:
+      AvailabilityAndAccessibility:
         description:
           Availability and accessibility.
       GeographicalCoverageAndTimeliness:

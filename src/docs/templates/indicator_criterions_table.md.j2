@@ -1,0 +1,5 @@
+| Name | Description | category |
+|------|---------------------------|---------------------------|
+{% for c in criterions -%}
+| {{ c.get("name") }} | {{ c.get("description") }} | {{ c.get("category") }} |
+{% endfor %}
