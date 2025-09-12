@@ -134,7 +134,7 @@ linkml:Sparqlpath xsd:string
           <https://w3id.org/linkml/examples/fsicategory> [
              <https://w3id.org/linkml/examples/fsiCriterionCategory#GoalOrientedAndPolicyRelevant>
              <https://w3id.org/linkml/examples/fsiCriterionCategory#SoundMethodologies>
-             <https://w3id.org/linkml/examples/fsiCriterionCategory#AvailabilityAncAccessibility>
+             <https://w3id.org/linkml/examples/fsiCriterionCategory#AvailabilityAndAccessibility>
              <https://w3id.org/linkml/examples/fsiCriterionCategory#GeographicalCoverageAndTimeliness>
              <https://w3id.org/linkml/examples/fsiCriterionCategory#OperationalFeasibility> ] ?
        ) ;

@@ -813,7 +813,7 @@
           "description": "Sound methodologies."
         },
         {
-          "text": "AvailabilityAncAccessibility",
+          "text": "AvailabilityAndAccessibility",
           "description": "Availability and accessibility."
         },
         {
@@ -1789,9 +1789,9 @@
   ],
   "metamodel_version": "1.7.0",
   "source_file": "food_system_indicators.yaml",
-  "source_file_date": "2025-09-11T07:09:53",
+  "source_file_date": "2025-09-12T14:37:32",
   "source_file_size": 18170,
-  "generation_date": "2025-09-11T07:10:39",
+  "generation_date": "2025-09-12T14:38:17",
   "@type": "SchemaDefinition",
   "@context": [
     "project/jsonld/food_system_indicators.context.jsonld",

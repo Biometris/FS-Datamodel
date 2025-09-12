@@ -3,7 +3,7 @@ enum CriterionCategory
   {
     GoalOrientedAndPolicyRelevant
     SoundMethodologies
-    AvailabilityAncAccessibility
+    AvailabilityAndAccessibility
     GeographicalCoverageAndTimeliness
     OperationalFeasibility
   }
