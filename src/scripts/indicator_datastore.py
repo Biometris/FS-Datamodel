@@ -10,7 +10,7 @@ class DataStore:
         indicators_file: str,
         databases_file: str,
         datasources_file: str,
-        criterions_file: str
+        criteria_file: str
     ):
         # Initialize LinkML Store with DuckDB
         self.client = Client()
@@ -24,7 +24,7 @@ class DataStore:
         self.add_database_data(indicators_file, "Indicator", "Indicators")        
         self.add_database_data(datasources_file, "IndicatorDataSource", "IndicatorDataSources")
         self.add_database_data(databases_file, "Database", "Databases")
-        self.add_database_data(criterions_file, "IndicatorCriterion", "IndicatorCriterions")
+        self.add_database_data(criteria_file, "IndicatorCriterion", "Indicatorcriteria")
 
         # Validate cross-links
         print("\nRunning validation...")
@@ -87,9 +87,9 @@ class DataStore:
         q = Query(from_table="IndicatorDataSources")
         return self.db.query(q).rows
 
-    def get_indicator_criterions(self):
-        """Return a joined view of indicator criterions"""
-        q = Query(from_table="IndicatorCriterions")
+    def get_indicator_criteria(self):
+        """Return a joined view of indicator criteria"""
+        q = Query(from_table="Indicatorcriteria")
         return self.db.query(q).rows
     
     def get_domains(self):
