@@ -70,7 +70,7 @@ classes:
     slots:
       - category
 
-  Indicatorcriteriacore:
+  IndicatorcriteriaScore:
     title: indicator criterion score
     description: Score for an indicator for an indicator selection criterion.
     tree_root: true

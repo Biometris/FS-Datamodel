@@ -10,7 +10,8 @@ class DataStore:
         indicators_file: str,
         databases_file: str,
         datasources_file: str,
-        criteria_file: str
+        criteria_file: str,
+        indicatorscores_file: str
     ):
         # Initialize LinkML Store with DuckDB
         self.client = Client()
@@ -24,7 +25,8 @@ class DataStore:
         self.add_database_data(indicators_file, "Indicator", "Indicators")        
         self.add_database_data(datasources_file, "IndicatorDataSource", "IndicatorDataSources")
         self.add_database_data(databases_file, "Database", "Databases")
-        self.add_database_data(criteria_file, "IndicatorCriterion", "Indicatorcriteria")
+        self.add_database_data(criteria_file, "IndicatorCriterion", "IndicatorCriteria")
+        self.add_database_data(indicatorscores_file, "IndicatorcriteriaScore", "IndicatorCriteriaScores")
 
         # Validate cross-links
         print("\nRunning validation...")
@@ -38,7 +40,8 @@ class DataStore:
         collection_name
     ):
         collection = self.db.create_collection(reference_class, collection_name)
-        objects = load_objects(data_path)
+        objects = load_objects(data_path)        
+
         collection.insert(objects)
 
     def validate_data(self):
@@ -74,22 +77,27 @@ class DataStore:
 
     def get_indicators(self):
         """Return a joined view of indicators"""
-        q = Query(from_table="Indicators")
+        q = Query(from_table="Indicators", limit=1000)
         return self.db.query(q).rows
 
     def get_databases(self):
         """Return a joined view of databases"""
-        q = Query(from_table="Databases")
+        q = Query(from_table="Databases", limit=1000)
         return self.db.query(q).rows
 
     def get_indicator_datasources(self):
         """Return a joined view of indicator data sources"""
-        q = Query(from_table="IndicatorDataSources")
+        q = Query(from_table="IndicatorDataSources", limit=1000)
         return self.db.query(q).rows
 
     def get_indicator_criteria(self):
         """Return a joined view of indicator criteria"""
-        q = Query(from_table="Indicatorcriteria")
+        q = Query(from_table="IndicatorCriteria", limit=1000)
+        return self.db.query(q).rows
+    
+    def get_indicator_criteria_scores(self):
+        """Return a joined view of indicator criteria scores"""
+        q = Query(from_table="IndicatorCriteriaScores", limit=1000)
         return self.db.query(q).rows
     
     def get_domains(self):

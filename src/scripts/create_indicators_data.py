@@ -67,8 +67,31 @@ def create_supply_chain_indicator_hiearchy_json(indicators):
         }        
         tree_data["children"].append(component_node)    
 
-    # Save JSON for reuse    
-    Path(outfile_path).write_text(json.dumps(tree_data, indent=2))    
+    # Save JSON for reuse
+    Path(outfile_path).write_text(json.dumps(tree_data, indent=2))
+
+         
+def create_indicator_scores_data_json(criteriascores):
+
+    # Output file
+    outfile_path = "docs/data/indicator_scores_chart_data.json"
+
+    score_mapping = {"Excellent": 5,
+                     "Good": 4,
+                     "Moderate": 3,
+                     "Poor": 2,
+                     "VeryPoor": 1}   
+   
+    chart_data = []
+    for score in criteriascores:        
+        score_point = [score.get("scores_criterion"),
+                       score.get("score_for_indicator"),
+                       score_mapping.get(score.get("score"))]   
+        chart_data.append(score_point)
+
+    # Save JSON for reuse
+    Path(outfile_path).write_text(json.dumps(chart_data, indent=2))
+
 
 def render_template(
     template_name,
@@ -94,6 +117,7 @@ if __name__ == "__main__":
     database_data_path = "data/databases.yaml"
     datasource_data_path = "data/datasources.yaml"
     criterion_data_path = "data/criteria.yaml"
+    indicatorscores_data_path = "data/indicatorscores.yaml"
 
     # Setup data store
     datastore = DataStore(
@@ -101,7 +125,8 @@ if __name__ == "__main__":
         indicators_file=indicator_data_path,
         databases_file=database_data_path,
         datasources_file=datasource_data_path,
-        criteria_file=criterion_data_path
+        criteria_file=criterion_data_path,
+        indicatorscores_file=indicatorscores_data_path
     )
 
     # Validate database content.
@@ -134,6 +159,12 @@ if __name__ == "__main__":
         render_template(
             template_name = 'indicator_criteria_table',
             criteria = criteria
+        )
+
+        criteriascores = datastore.get_indicator_criteria_scores()
+        create_indicator_scores_data_json(criteriascores)
+        render_template(
+            template_name = "indicator_scores"
         )
 
         domains = datastore.get_domains()

@@ -1,0 +1,67 @@
+<div id="indicator-scores-heatmap" style="width: 100; height: 900px;"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+
+<script type="text/javascript">
+  var chartDom = document.getElementById('indicator-scores-heatmap');
+  var heatmapChart = echarts.init(chartDom);
+
+  fetch("../data/indicator_scores_chart_data.json")
+    .then(r => r.json())
+    .then(data => {
+      var option = {
+        tooltip: {
+            position: 'top'
+        },
+        grid: {
+            height: '50%',
+            top: '10%'
+        },
+        xAxis: {
+            type: 'category',
+            position: 'top',
+            axisLabel: {
+                show: true,
+                rotate: 45
+            },
+            splitArea: {
+                show: true
+            }
+        },
+        yAxis: {
+            type: 'category',            
+            splitArea: {
+                show: true
+            }
+        },
+        visualMap: {
+            min: 1,
+            max: 5,
+            calculable: true,
+            orient: 'horizontal',
+            left: 'center',
+            bottom: '15%'
+        },        
+        series: [
+            {
+                type: 'heatmap',
+                data: data,
+                label: {
+                    show: true
+                },
+                emphasis: {
+                    itemStyle: {
+                        shadowBlur: 10,
+                        shadowColor: 'rgba(0, 0, 0, 0.5)'
+                    }
+                }
+            }
+        ]        
+      };
+      heatmapChart.setOption(option);
+    });
+
+  window.addEventListener('resize', function() {
+    heatmapChart.resize();
+  });
+</script>
