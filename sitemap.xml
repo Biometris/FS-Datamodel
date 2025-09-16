@@ -2,350 +2,354 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/Boolean/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/CriterionCategory/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/Curie/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/Database/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/Date/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/DateOrDatetime/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/Datetime/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/Decimal/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/Domain/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/Double/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/EconomicDomain/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/EconomicThematicArea/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/Entity/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/EnvironmentalDomain/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/EnvironmentalThematicArea/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/Float/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/GranularityType/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/HorizontalDomain/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/HorizontalThematicArea/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/Indicator/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/IndicatorCriterion/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/IndicatorDataSource/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/IndicatorDatapoint/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/IndicatorDatapointCollection/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/Indicatorcriteriacore/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/IndicatorcriteriaScore/</loc>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/Integer/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/IriType/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/Jsonpath/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/Jsonpointer/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/LabelType/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/NarrativeText/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/Ncname/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/Nodeidentifier/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/Objectidentifier/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/QuantityValue/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/ScoreCategory/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/SocialDomain/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/SocialThematicArea/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/Sparqlpath/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/SpatialScopeType/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/String/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/SupplyChainComponentType/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/SustainabilityDimension/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/ThematicArea/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/Time/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/TimeGranularity/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/Unit/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/Uri/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/Uriorcurie/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/category/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/comment/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/contains_indicator_data_source/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/data_link/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/database_link/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/databases_table/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/description/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/domains_table/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/food_system_indicators/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/granularity/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/has_numeric_value/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/has_unit/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/home/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/id/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_criteria_table/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_datapoints/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_datasources_table/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_domain/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
+    </url>
+    <url>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_scores/</loc>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators_table/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/iri/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/justification/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/key_area/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/measurement_of/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/measurement_unit/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/measures_indicator/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/name/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/newest_datapoint/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/node_property/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/oldest_datapoint/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/score/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/score_for_indicator/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/scores_criterion/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/spatial_scope/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/supply_chain_component/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/thematic_area/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/time_granularity/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/update_frequency/</loc>
-         <lastmod>2025-09-12</lastmod>
+         <lastmod>2025-09-16</lastmod>
     </url>
 </urlset>

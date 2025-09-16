@@ -176,7 +176,7 @@ type Indicator
     description: NarrativeText
   }
 
-type Indicatorcriteriacore
+type IndicatorcriteriaScore
   {
     scoreForIndicator: Indicator
     scoresCriterion: IndicatorCriterion

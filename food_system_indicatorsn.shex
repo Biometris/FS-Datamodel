@@ -128,8 +128,8 @@ linkml:Sparqlpath xsd:string
     )
 }
 
-<https://w3id.org/linkml/examples/fsiIndicatorcriteriacore> CLOSED {
-    (  $<https://w3id.org/linkml/examples/fsiIndicatorcriteriacore_tes> ( 
+<https://w3id.org/linkml/examples/fsiIndicatorcriteriaScore> CLOSED {
+    (  $<https://w3id.org/linkml/examples/fsiIndicatorcriteriaScore_tes> ( 
           <https://w3id.org/linkml/examples/fsiscore_for_indicator> @<https://w3id.org/linkml/examples/fsiIndicator> ? ;
           <https://w3id.org/linkml/examples/fsiscores_criterion> @<https://w3id.org/linkml/examples/fsiIndicatorCriterion> ? ;
           <https://w3id.org/linkml/examples/fsiscore> [ <https://w3id.org/linkml/examples/fsiScoreCategory#VeryPoor>
@@ -138,7 +138,7 @@ linkml:Sparqlpath xsd:string
              ] ? ;
           <https://w3id.org/linkml/examples/fsicomment> @<https://w3id.org/linkml/examples/fsiNarrativeText> ?
        ) ;
-       rdf:type [ <https://w3id.org/linkml/examples/fsiIndicatorcriteriacore> ] ?
+       rdf:type [ <https://w3id.org/linkml/examples/fsiIndicatorcriteriaScore> ] ?
     )
 }
 

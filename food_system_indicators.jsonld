@@ -897,9 +897,9 @@
       "description": "A comment about an entity.",
       "from_schema": "https://w3id.org/linkml/examples/fsi",
       "slot_uri": "https://w3id.org/linkml/examples/fsicomment",
-      "owner": "Indicatorcriteriacore",
+      "owner": "IndicatorcriteriaScore",
       "domain_of": [
-        "Indicatorcriteriacore"
+        "IndicatorcriteriaScore"
       ],
       "range": "narrative_text",
       "@type": "SlotDefinition"
@@ -1029,9 +1029,9 @@
       "is_a": "node_property",
       "domain": "Entity",
       "slot_uri": "https://w3id.org/linkml/examples/fsiscore_for_indicator",
-      "owner": "Indicatorcriteriacore",
+      "owner": "IndicatorcriteriaScore",
       "domain_of": [
-        "Indicatorcriteriacore"
+        "IndicatorcriteriaScore"
       ],
       "range": "Indicator",
       "@type": "SlotDefinition"
@@ -1045,9 +1045,9 @@
       "is_a": "node_property",
       "domain": "Entity",
       "slot_uri": "https://w3id.org/linkml/examples/fsiscores_criterion",
-      "owner": "Indicatorcriteriacore",
+      "owner": "IndicatorcriteriaScore",
       "domain_of": [
-        "Indicatorcriteriacore"
+        "IndicatorcriteriaScore"
       ],
       "range": "IndicatorCriterion",
       "@type": "SlotDefinition"
@@ -1340,9 +1340,9 @@
       "title": "score",
       "from_schema": "https://w3id.org/linkml/examples/fsi",
       "slot_uri": "https://w3id.org/linkml/examples/fsiscore",
-      "owner": "Indicatorcriteriacore",
+      "owner": "IndicatorcriteriaScore",
       "domain_of": [
-        "Indicatorcriteriacore"
+        "IndicatorcriteriaScore"
       ],
       "range": "ScoreCategory",
       "@type": "SlotDefinition"
@@ -1568,8 +1568,8 @@
       "@type": "ClassDefinition"
     },
     {
-      "name": "Indicatorcriteriacore",
-      "definition_uri": "https://w3id.org/linkml/examples/fsiIndicatorcriteriacore",
+      "name": "IndicatorcriteriaScore",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiIndicatorcriteriaScore",
       "description": "Score for an indicator for an indicator selection criterion.",
       "title": "indicator criterion score",
       "from_schema": "https://w3id.org/linkml/examples/fsi",
@@ -1580,7 +1580,7 @@
         "comment"
       ],
       "slot_usage": {},
-      "class_uri": "https://w3id.org/linkml/examples/fsiIndicatorcriteriacore",
+      "class_uri": "https://w3id.org/linkml/examples/fsiIndicatorcriteriaScore",
       "tree_root": true,
       "@type": "ClassDefinition"
     },
@@ -1789,9 +1789,9 @@
   ],
   "metamodel_version": "1.7.0",
   "source_file": "food_system_indicators.yaml",
-  "source_file_date": "2025-09-12T15:00:55",
-  "source_file_size": 18168,
-  "generation_date": "2025-09-12T15:01:33",
+  "source_file_date": "2025-09-16T10:12:23",
+  "source_file_size": 18169,
+  "generation_date": "2025-09-16T10:13:03",
   "@type": "SchemaDefinition",
   "@context": [
     "project/jsonld/food_system_indicators.context.jsonld",

@@ -568,7 +568,7 @@
             "title": "IndicatorDatapointCollection",
             "type": "object"
         },
-        "Indicatorcriteriacore": {
+        "IndicatorcriteriaScore": {
             "additionalProperties": false,
             "description": "Score for an indicator for an indicator selection criterion.",
             "properties": {
@@ -598,7 +598,7 @@
                     ]
                 }
             },
-            "title": "Indicatorcriteriacore",
+            "title": "IndicatorcriteriaScore",
             "type": "object"
         },
         "QuantityValue": {
