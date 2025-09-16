@@ -1,5 +1,5 @@
-| Name | Description | Link |
-|------|---------------------------|---------------------------|
+| Name | Description | URL |
+|------|-------------|-----|
 {% for c in databases -%}
-| {{ c.get("name") }} | {{ c.get("description") }} | {{ c.get("database_link") }} |
+| {{ c.get("name") }} | {{ c.get("description") }} | [{{ c.get("database_link") }}]({{ c.get("database_link") }}) |
 {% endfor %}

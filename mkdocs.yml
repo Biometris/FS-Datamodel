@@ -8,13 +8,16 @@ plugins:
   - mermaid2
 nav:
   - Home: home.md
-  - Data model: index.md
+  - Data model:
+    - Data model: index.md
+    - Indicator domains: domains_table.md
   - Indicators: indicators_table.md
-  - Databases: databases_table.md
-  - Datasources: indicator_datasources_table.md
-  - Domains: domains_table.md
-  - Indicator criteria: indicator_criteria_table.md
-  - Indicator scores: indicator_scores.md
+  - Indicator data sources:
+    - Databases: databases_table.md
+    - Data sources: indicator_datasources_table.md
+  - Indicator selection:
+    - Indicator criteria: indicator_criteria_table.md
+    - Indicator scores: indicator_scores.md
 docs_dir: docs
 site_url: https://biometris.github.io/FS-Datamodel
 repo_url: https://github.com/biometris/FS-Datamodel
