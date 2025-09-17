@@ -134,8 +134,9 @@ if __name__ == "__main__":
 
         # Get indicators and create hierarchy JSON and table
         indicators = datastore.get_indicators()
+        enum_dict = datastore.create_enum_dict()
         create_indicator_hiearchy_json(indicators)
-        create_supply_chain_indicator_hiearchy_json(indicators)
+        create_supply_chain_indicator_hiearchy_json(indicators)       
 
         render_template(
             template_name = 'indicators_table',

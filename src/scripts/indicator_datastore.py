@@ -74,6 +74,26 @@ class DataStore:
                 valid = False
 
         return valid
+    
+    def create_enum_dict(self):
+        view = self.db.schema_view
+
+        enum_dict = {}
+        for e in view.all_enums():
+            enum = self.db.schema_view.get_enum(e)
+            permissible_values = enum.permissible_values
+            enum_dict[enum.name] = {pv: permissible_values[pv].description for pv in permissible_values}
+
+        for s in view.all_slots():
+            slot = self.db.schema_view.get_element(s)
+            any_of = getattr(slot, "any_of")
+            if any_of:
+                full_range = {}
+                for r in any_of:
+                    full_range = dict(enum_dict[getattr(r, "range")], **full_range)
+                enum_dict[getattr(slot, "range")] = full_range
+        
+        return(enum_dict)
 
     def get_indicators(self):
         """Return a joined view of indicators"""
