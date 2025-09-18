@@ -19,8 +19,8 @@ fsi:Database a owl:Class ;
     rdfs:label "Database" ;
     dct:title "database" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:allValuesFrom fsi:IndicatorDataSource ;
-            owl:onProperty fsi:contains_indicator_data_source ],
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:update_frequency ],
         [ a owl:Restriction ;
             owl:allValuesFrom xsd:string ;
             owl:onProperty fsi:database_link ],
@@ -34,13 +34,13 @@ fsi:Database a owl:Class ;
             owl:maxCardinality 1 ;
             owl:onProperty fsi:database_link ],
         [ a owl:Restriction ;
+            owl:allValuesFrom fsi:IndicatorDataSource ;
+            owl:onProperty fsi:contains_indicator_data_source ],
+        [ a owl:Restriction ;
             owl:minCardinality 1 ;
             owl:onProperty fsi:contains_indicator_data_source ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
-            owl:onProperty fsi:update_frequency ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
             owl:onProperty fsi:update_frequency ],
         fsi:Entity ;
     skos:definition "Data base containing data corresponding to an indicator." ;
@@ -65,38 +65,38 @@ fsi:IndicatorcriteriaScore a owl:Class ;
             owl:allValuesFrom fsi:ScoreCategory ;
             owl:onProperty fsi:score ],
         [ a owl:Restriction ;
-            owl:allValuesFrom fsi:Indicator ;
-            owl:onProperty fsi:score_for_indicator ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty fsi:score ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:score_for_indicator ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:score ],
-        [ a owl:Restriction ;
             owl:allValuesFrom xsd:string ;
             owl:onProperty fsi:comment ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
-            owl:onProperty fsi:scores_criterion ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:scores_criterion ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:comment ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty fsi:comment ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
             owl:onProperty fsi:score_for_indicator ],
         [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:scores_criterion ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:scores_criterion ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:score ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:comment ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:score_for_indicator ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:comment ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:score ],
+        [ a owl:Restriction ;
             owl:allValuesFrom fsi:IndicatorCriterion ;
-            owl:onProperty fsi:scores_criterion ] ;
+            owl:onProperty fsi:scores_criterion ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom fsi:Indicator ;
+            owl:onProperty fsi:score_for_indicator ] ;
     skos:definition "Score for an indicator for an indicator selection criterion." ;
     skos:inScheme fsi: .
 
@@ -105,12 +105,9 @@ fsi:IndicatorDatapoint a owl:Class ;
     dct:title "indicator datapoint" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:minCardinality 1 ;
-            owl:onProperty fsi:measurement_of ],
-        [ a owl:Restriction ;
-            owl:minCardinality 1 ;
             owl:onProperty fsi:id ],
         [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
+            owl:minCardinality 1 ;
             owl:onProperty fsi:measurement_of ],
         [ a owl:Restriction ;
             owl:allValuesFrom fsi:Indicator ;
@@ -121,6 +118,9 @@ fsi:IndicatorDatapoint a owl:Class ;
         [ a owl:Restriction ;
             owl:allValuesFrom xsd:string ;
             owl:onProperty fsi:id ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:measurement_of ],
         fsi:QuantityValue ;
     skos:definition "Food system indicator datapoint." ;
     skos:inScheme fsi: .
@@ -316,13 +316,13 @@ fsi:IndicatorCriterion a owl:Class ;
     rdfs:label "IndicatorCriterion" ;
     dct:title "indicator criterion" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty fsi:category ],
-        [ a owl:Restriction ;
             owl:maxCardinality 1 ;
             owl:onProperty fsi:category ],
         [ a owl:Restriction ;
             owl:allValuesFrom fsi:CriterionCategory ;
+            owl:onProperty fsi:category ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
             owl:onProperty fsi:category ],
         fsi:Entity ;
     skos:definition "Criterion used for indicator selection." ;
@@ -333,48 +333,48 @@ fsi:IndicatorDataSource a owl:Class ;
     dct:title "indicator data source" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:minCardinality 0 ;
-            owl:onProperty fsi:oldest_datapoint ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom linkml:DateOrDatetime ;
-            owl:onProperty fsi:newest_datapoint ],
+            owl:onProperty fsi:data_link ],
         [ a owl:Restriction ;
             owl:allValuesFrom xsd:string ;
             owl:onProperty fsi:data_link ],
         [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:newest_datapoint ],
+        [ a owl:Restriction ;
             owl:allValuesFrom linkml:DateOrDatetime ;
-            owl:onProperty fsi:oldest_datapoint ],
+            owl:onProperty fsi:newest_datapoint ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
-            owl:onProperty fsi:time_granularity ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:data_link ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:time_granularity ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty fsi:data_link ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom fsi:TimeGranularity ;
             owl:onProperty fsi:time_granularity ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
             owl:onProperty fsi:newest_datapoint ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:oldest_datapoint ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty fsi:measures_indicator ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:oldest_datapoint ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:DateOrDatetime ;
+            owl:onProperty fsi:oldest_datapoint ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:data_link ],
         [ a owl:Restriction ;
             owl:allValuesFrom fsi:Indicator ;
             owl:onProperty fsi:measures_indicator ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
-            owl:onProperty fsi:measures_indicator ],
+            owl:onProperty fsi:time_granularity ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom fsi:TimeGranularity ;
+            owl:onProperty fsi:time_granularity ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
-            owl:onProperty fsi:oldest_datapoint ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty fsi:newest_datapoint ],
-        [ a owl:Restriction ;
-            owl:minCardinality 1 ;
             owl:onProperty fsi:measures_indicator ],
         fsi:Entity ;
     skos:definition "Data source containing the indicator data." ;
@@ -550,6 +550,12 @@ fsi:QuantityValue a owl:Class ;
     rdfs:label "QuantityValue" ;
     dct:title "quantity value" ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom xsd:double ;
+            owl:onProperty fsi:has_numeric_value ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:has_unit ],
+        [ a owl:Restriction ;
             owl:minCardinality 0 ;
             owl:onProperty fsi:has_unit ],
         [ a owl:Restriction ;
@@ -560,12 +566,6 @@ fsi:QuantityValue a owl:Class ;
             owl:onProperty fsi:has_numeric_value ],
         [ a owl:Restriction ;
             owl:allValuesFrom UO:0000000 ;
-            owl:onProperty fsi:has_unit ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom xsd:double ;
-            owl:onProperty fsi:has_numeric_value ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
             owl:onProperty fsi:has_unit ],
         fsi:Entity ;
     skos:definition "A value of an attribute that is quantitative and measurable, expressed as a combination of a unit and a numeric value" ;
@@ -821,38 +821,38 @@ fsi:Entity a owl:Class ;
             owl:allValuesFrom xsd:string ;
             owl:onProperty fsi:id ],
         [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:iri ],
-        [ a owl:Restriction ;
             owl:allValuesFrom xsd:string ;
             owl:onProperty fsi:description ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty fsi:name ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:description ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty fsi:iri ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
             owl:onProperty fsi:name ],
         [ a owl:Restriction ;
-            owl:allValuesFrom xsd:string ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:description ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
             owl:onProperty fsi:iri ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:name ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:id ],
         [ a owl:Restriction ;
             owl:minCardinality 1 ;
             owl:onProperty fsi:id ],
         [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:description ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:id ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom xsd:string ;
-            owl:onProperty fsi:name ],
-        [ a owl:Restriction ;
             owl:minCardinality 0 ;
-            owl:onProperty fsi:iri ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:name ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty fsi:description ] ;
+            owl:onProperty fsi:iri ] ;
     skos:definition "Root class for all things and informational relationships, real or imagined." ;
     skos:inScheme fsi: .
 
@@ -922,41 +922,35 @@ fsi:Indicator a owl:Class ;
     rdfs:label "Indicator" ;
     dct:title "indicator" ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:name ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty fsi:name ],
+        [ a owl:Restriction ;
             owl:maxCardinality 1 ;
-            owl:onProperty fsi:description ],
+            owl:onProperty fsi:key_area ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
             owl:onProperty fsi:indicator_domain ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
-            owl:onProperty fsi:spatial_scope ],
+            owl:onProperty fsi:justification ],
         [ a owl:Restriction ;
-            owl:allValuesFrom xsd:string ;
-            owl:onProperty fsi:name ],
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:supply_chain_component ],
         [ a owl:Restriction ;
-            owl:minCardinality 1 ;
-            owl:onProperty fsi:spatial_scope ],
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:description ],
         [ a owl:Restriction ;
-            owl:allValuesFrom UO:0000000 ;
+            owl:minCardinality 0 ;
             owl:onProperty fsi:measurement_unit ],
         [ a owl:Restriction ;
-            owl:allValuesFrom xsd:string ;
-            owl:onProperty fsi:justification ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom xsd:string ;
-            owl:onProperty fsi:id ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:id ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:justification ],
+            owl:minCardinality 1 ;
+            owl:onProperty fsi:indicator_domain ],
         [ a owl:Restriction ;
             owl:minCardinality 1 ;
-            owl:onProperty fsi:thematic_area ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:thematic_area ],
+            owl:onProperty fsi:key_area ],
         [ a owl:Restriction ;
             owl:allValuesFrom fsi:SupplyChainComponentType ;
             owl:onProperty fsi:supply_chain_component ],
@@ -965,10 +959,19 @@ fsi:Indicator a owl:Class ;
             owl:onProperty fsi:id ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
-            owl:onProperty fsi:key_area ],
+            owl:onProperty fsi:spatial_scope ],
         [ a owl:Restriction ;
-            owl:minCardinality 1 ;
-            owl:onProperty fsi:indicator_domain ],
+            owl:allValuesFrom UO:0000000 ;
+            owl:onProperty fsi:measurement_unit ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom fsi:GranularityType ;
+            owl:onProperty fsi:granularity ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty fsi:justification ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:name ],
         [ a owl:Restriction ;
             owl:allValuesFrom [ owl:intersectionOf ( [ owl:unionOf ( fsi:EnvironmentalThematicArea fsi:EconomicThematicArea fsi:SocialThematicArea fsi:HorizontalThematicArea ) ] fsi:ThematicArea ) ] ;
             owl:onProperty fsi:thematic_area ],
@@ -976,31 +979,7 @@ fsi:Indicator a owl:Class ;
             owl:allValuesFrom fsi:SpatialScopeType ;
             owl:onProperty fsi:spatial_scope ],
         [ a owl:Restriction ;
-            owl:allValuesFrom [ owl:intersectionOf ( [ owl:unionOf ( fsi:EnvironmentalDomain fsi:EconomicDomain fsi:SocialDomain fsi:HorizontalDomain ) ] fsi:Domain ) ] ;
-            owl:onProperty fsi:indicator_domain ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty fsi:name ],
-        [ a owl:Restriction ;
             owl:minCardinality 1 ;
-            owl:onProperty fsi:key_area ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:measurement_unit ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom xsd:string ;
-            owl:onProperty fsi:description ],
-        [ a owl:Restriction ;
-            owl:minCardinality 1 ;
-            owl:onProperty fsi:granularity ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty fsi:supply_chain_component ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty fsi:description ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom fsi:GranularityType ;
             owl:onProperty fsi:granularity ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
@@ -1009,11 +988,32 @@ fsi:Indicator a owl:Class ;
             owl:allValuesFrom fsi:SustainabilityDimension ;
             owl:onProperty fsi:key_area ],
         [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:name ],
+            owl:minCardinality 1 ;
+            owl:onProperty fsi:spatial_scope ],
         [ a owl:Restriction ;
-            owl:minCardinality 0 ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:description ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ owl:intersectionOf ( [ owl:unionOf ( fsi:EnvironmentalDomain fsi:EconomicDomain fsi:SocialDomain fsi:HorizontalDomain ) ] fsi:Domain ) ] ;
+            owl:onProperty fsi:indicator_domain ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty fsi:description ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
             owl:onProperty fsi:measurement_unit ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:id ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty fsi:thematic_area ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:thematic_area ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty fsi:id ],
         fsi:Entity ;
     skos:definition "Food system indicator." ;
     skos:inScheme fsi: .
@@ -1036,14 +1036,7 @@ xsd:string a rdfs:Datatype ;
 
 [] rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty fsi:thematic_area ;
-            owl:someValuesFrom fsi:EconomicThematicArea ] ;
-    owl:intersectionOf ( [ a owl:Restriction ;
-                owl:onProperty fsi:key_area ;
-                owl:someValuesFrom xsd:string ] fsi:Indicator ) .
-
-[] rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty fsi:thematic_area ;
-            owl:someValuesFrom fsi:SocialThematicArea ] ;
+            owl:someValuesFrom fsi:EnvironmentalThematicArea ] ;
     owl:intersectionOf ( [ a owl:Restriction ;
                 owl:onProperty fsi:key_area ;
                 owl:someValuesFrom xsd:string ] fsi:Indicator ) .
@@ -1057,7 +1050,14 @@ xsd:string a rdfs:Datatype ;
 
 [] rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty fsi:thematic_area ;
-            owl:someValuesFrom fsi:EnvironmentalThematicArea ] ;
+            owl:someValuesFrom fsi:SocialThematicArea ] ;
+    owl:intersectionOf ( [ a owl:Restriction ;
+                owl:onProperty fsi:key_area ;
+                owl:someValuesFrom xsd:string ] fsi:Indicator ) .
+
+[] rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty fsi:thematic_area ;
+            owl:someValuesFrom fsi:EconomicThematicArea ] ;
     owl:intersectionOf ( [ a owl:Restriction ;
                 owl:onProperty fsi:key_area ;
                 owl:someValuesFrom xsd:string ] fsi:Indicator ) .
