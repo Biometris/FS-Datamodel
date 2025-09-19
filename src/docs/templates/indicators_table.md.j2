@@ -1,5 +1,7 @@
 | Name | Sustainability Dimensions | Thematic Area | Domain | Supply chain components |
 |------|---------------------------|---------------|---------------| ---------------------- |
-{% for indicator in indicators -%}
-| {{ indicator['name'] }} | [{{indicator['key_area']}}](../SustainabilityDimension) | [{{indicator['thematic_area']}}](../{{indicator['key_area']}}ThematicArea) | [{{indicator['indicator_domain']}}](../{{indicator['key_area']}}Domain) | [{{', '.join(indicator['supply_chain_component'])}}](../SupplyChainComponentType) |
+{% for indicator in indicators -%} 
+| {{ indicator['name'] }} | [{{ enum_dict['SustainabilityDimension'][indicator['key_area']] }}](../SustainabilityDimension) | [{{ enum_dict['ThematicArea'][indicator['thematic_area']] }}](../{{ indicator['key_area'] }}ThematicArea) | [{{ enum_dict['Domain'][indicator['indicator_domain']] }}](../{{ indicator['key_area'] }}Domain) | {% for scp in indicator['supply_chain_component'] %} [{{ enum_dict['SupplyChainComponentType'][scp] }}](../SupplyChainComponentType) {% endfor %} |
 {% endfor %}
+
+

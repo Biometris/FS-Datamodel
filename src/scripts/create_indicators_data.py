@@ -136,11 +136,12 @@ if __name__ == "__main__":
         indicators = datastore.get_indicators()
         enum_dict = datastore.create_enum_dict()
         create_indicator_hiearchy_json(indicators)
-        create_supply_chain_indicator_hiearchy_json(indicators)       
+        create_supply_chain_indicator_hiearchy_json(indicators)
 
         render_template(
             template_name = 'indicators_table',
-            indicators = indicators
+            indicators = indicators,
+            enum_dict = enum_dict
         )
 
         # Get database and create output table.
@@ -159,19 +160,21 @@ if __name__ == "__main__":
         criteria = datastore.get_indicator_criteria()
         render_template(
             template_name = 'indicator_criteria_table',
-            criteria = criteria
+            criteria = criteria,
+            enum_dict = enum_dict
         )
 
         criteriascores = datastore.get_indicator_criteria_scores()
         create_indicator_scores_data_json(criteriascores)
         render_template(
-            template_name = "indicator_scores"
+            template_name = 'indicator_scores'
         )
 
         domains = datastore.get_domains()
         render_template(
             template_name = 'domains_table',
-            domains = domains
+            domains = domains,
+            enum_dict = enum_dict
         )
 
 

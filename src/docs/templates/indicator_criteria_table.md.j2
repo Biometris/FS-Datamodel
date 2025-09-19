@@ -1,5 +1,5 @@
 | Name | Description | Category |
-|------|---------------------------|---------------------------|
+|------|-------------|----------|
 {% for c in criteria -%}
-| {{ c.get("name") }} | {{ c.get("description") }} | {{ c.get("category") }} |
+| {{ c.get("name") }} | {{ c.get("description") }} | {{ enum_dict['CriterionCategory'][c.get("category")] }} |
 {% endfor %}

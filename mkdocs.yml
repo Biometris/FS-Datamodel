@@ -16,6 +16,7 @@ nav:
     - Databases: databases_table.md
     - Data sources: indicator_datasources_table.md
   - Indicator selection:
+    - Indicator criterion category: CriterionCategory.md
     - Indicator criteria: indicator_criteria_table.md
     - Indicator scores: indicator_scores.md
 docs_dir: docs
