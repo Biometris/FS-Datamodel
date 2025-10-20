@@ -9,8 +9,8 @@
 
 linkml:Any a sh:NodeShape ;
     sh:closed true ;
-    sh:description "a domain.",
-        "a thematic area." ;
+    sh:description "A specific sub-area within a thematic area that groups related indicators to measure a particular aspect of sustainability.",
+        "A topic within a sustainability dimension (environmental, social, or economic) that organizes related domains and indicators around a common sustainability theme." ;
     sh:ignoredProperties ( rdf:type ),
         ( rdf:type ) ;
     sh:name "domain",
@@ -19,34 +19,22 @@ linkml:Any a sh:NodeShape ;
 
 fsi:Database a sh:NodeShape ;
     sh:closed true ;
-    sh:description "Data base containing data corresponding to an indicator." ;
+    sh:description "Database containing data corresponding to an indicator." ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:name "database" ;
     sh:property [ sh:datatype xsd:string ;
-            sh:description "A human-readable description of an entity." ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 6 ;
-            sh:path dct:description ],
-        [ sh:description "Frequency at which the data is updated." ;
-            sh:in ( "EveryTwoYears" "Yearly" "Monthly" "Weekly" "Other" ) ;
-            sh:maxCount 1 ;
-            sh:name "frequency at which the data is updated" ;
-            sh:order 1 ;
-            sh:path fsi:update_frequency ],
-        [ sh:datatype xsd:string ;
-            sh:description "An IRI for an entity. This is determined by the id using expansion rules." ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 4 ;
-            sh:path fsi:iri ],
-        [ sh:datatype xsd:string ;
             sh:description "A unique identifier for an entity." ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 3 ;
             sh:path fsi:id ],
+        [ sh:datatype xsd:string ;
+            sh:description "An IRI for an entity. This is determined by the id using expansion rules." ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 4 ;
+            sh:path fsi:iri ],
         [ sh:class fsi:IndicatorDataSource ;
             sh:description "Indicator data source." ;
             sh:minCount 1 ;
@@ -54,6 +42,12 @@ fsi:Database a sh:NodeShape ;
             sh:nodeKind sh:IRI ;
             sh:order 2 ;
             sh:path fsi:contains_indicator_data_source ],
+        [ sh:datatype xsd:string ;
+            sh:description "A human-readable description of an entity." ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 6 ;
+            sh:path dct:description ],
         [ sh:datatype xsd:string ;
             sh:description "Link to the database" ;
             sh:maxCount 1 ;
@@ -67,13 +61,19 @@ fsi:Database a sh:NodeShape ;
             sh:name "name" ;
             sh:nodeKind sh:Literal ;
             sh:order 5 ;
-            sh:path rdfs:label ] ;
+            sh:path rdfs:label ],
+        [ sh:description "Frequency at which the data is updated." ;
+            sh:in ( "EveryTwoYears" "Yearly" "Monthly" "Weekly" "Other" ) ;
+            sh:maxCount 1 ;
+            sh:name "frequency at which the data is updated" ;
+            sh:order 1 ;
+            sh:path fsi:update_frequency ] ;
     sh:targetClass fsi:Database .
 
 fsi:Entity a sh:NodeShape ;
     sh:closed false ;
     sh:description "Root class for all things and informational relationships, real or imagined." ;
-    sh:ignoredProperties ( fsi:spatial_scope fsi:time_granularity fsi:data_link fsi:key_area fsi:has_numeric_value rdf:type fsi:update_frequency fsi:database_link fsi:thematic_area fsi:measurement_unit fsi:measures_indicator fsi:granularity fsi:has_unit fsi:contains_indicator_data_source fsi:oldest_datapoint fsi:category fsi:indicator_domain fsi:newest_datapoint fsi:measurement_of fsi:justification fsi:supply_chain_component ) ;
+    sh:ignoredProperties ( fsi:spatial_scope fsi:granularity fsi:thematic_area fsi:supply_chain_component fsi:time_granularity fsi:oldest_datapoint fsi:update_frequency fsi:measures_indicator fsi:has_numeric_value fsi:data_link fsi:category fsi:measurement_of fsi:key_area fsi:has_unit fsi:indicator_domain fsi:measurement_unit fsi:contains_indicator_data_source rdf:type fsi:justification fsi:database_link fsi:newest_datapoint ) ;
     sh:name "entity" ;
     sh:property [ sh:datatype xsd:string ;
             sh:description "A human-readable description of an entity." ;
@@ -82,18 +82,18 @@ fsi:Entity a sh:NodeShape ;
             sh:order 3 ;
             sh:path dct:description ],
         [ sh:datatype xsd:string ;
-            sh:description "An IRI for an entity. This is determined by the id using expansion rules." ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 1 ;
-            sh:path fsi:iri ],
-        [ sh:datatype xsd:string ;
             sh:description "A human-readable name for an attribute or entity." ;
             sh:maxCount 1 ;
             sh:name "name" ;
             sh:nodeKind sh:Literal ;
             sh:order 2 ;
             sh:path rdfs:label ],
+        [ sh:datatype xsd:string ;
+            sh:description "An IRI for an entity. This is determined by the id using expansion rules." ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 1 ;
+            sh:path fsi:iri ],
         [ sh:datatype xsd:string ;
             sh:description "A unique identifier for an entity." ;
             sh:maxCount 1 ;
@@ -154,20 +154,6 @@ fsi:QuantityValue a sh:NodeShape ;
     sh:ignoredProperties ( rdf:type fsi:measurement_of ) ;
     sh:name "quantity value" ;
     sh:property [ sh:datatype xsd:string ;
-            sh:description "A unique identifier for an entity." ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 2 ;
-            sh:path fsi:id ],
-        [ sh:datatype xsd:string ;
-            sh:description "A human-readable name for an attribute or entity." ;
-            sh:maxCount 1 ;
-            sh:name "name" ;
-            sh:nodeKind sh:Literal ;
-            sh:order 4 ;
-            sh:path rdfs:label ],
-        [ sh:datatype xsd:string ;
             sh:description "An IRI for an entity. This is determined by the id using expansion rules." ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
@@ -185,12 +171,26 @@ fsi:QuantityValue a sh:NodeShape ;
             sh:nodeKind sh:Literal ;
             sh:order 0 ;
             sh:path fsi:has_unit ],
+        [ sh:datatype xsd:string ;
+            sh:description "A unique identifier for an entity." ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 2 ;
+            sh:path fsi:id ],
         [ sh:datatype xsd:double ;
             sh:description "connects a quantity value to a number" ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 1 ;
-            sh:path fsi:has_numeric_value ] ;
+            sh:path fsi:has_numeric_value ],
+        [ sh:datatype xsd:string ;
+            sh:description "A human-readable name for an attribute or entity." ;
+            sh:maxCount 1 ;
+            sh:name "name" ;
+            sh:nodeKind sh:Literal ;
+            sh:order 4 ;
+            sh:path rdfs:label ] ;
     sh:targetClass fsi:QuantityValue .
 
 fsi:IndicatorCriterion a sh:NodeShape ;
@@ -199,19 +199,6 @@ fsi:IndicatorCriterion a sh:NodeShape ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:name "indicator criterion" ;
     sh:property [ sh:datatype xsd:string ;
-            sh:description "An IRI for an entity. This is determined by the id using expansion rules." ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 2 ;
-            sh:path fsi:iri ],
-        [ sh:datatype xsd:string ;
-            sh:description "A human-readable name for an attribute or entity." ;
-            sh:maxCount 1 ;
-            sh:name "name" ;
-            sh:nodeKind sh:Literal ;
-            sh:order 3 ;
-            sh:path rdfs:label ],
-        [ sh:datatype xsd:string ;
             sh:description "A unique identifier for an entity." ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
@@ -219,11 +206,24 @@ fsi:IndicatorCriterion a sh:NodeShape ;
             sh:order 1 ;
             sh:path fsi:id ],
         [ sh:datatype xsd:string ;
+            sh:description "An IRI for an entity. This is determined by the id using expansion rules." ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 2 ;
+            sh:path fsi:iri ],
+        [ sh:datatype xsd:string ;
             sh:description "A human-readable description of an entity." ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 4 ;
             sh:path dct:description ],
+        [ sh:datatype xsd:string ;
+            sh:description "A human-readable name for an attribute or entity." ;
+            sh:maxCount 1 ;
+            sh:name "name" ;
+            sh:nodeKind sh:Literal ;
+            sh:order 3 ;
+            sh:path rdfs:label ],
         [ sh:description "category for the indicator selection criterion." ;
             sh:in ( "GoalOrientedAndPolicyRelevant" "SoundMethodologies" "AvailabilityAndAccessibility" "GeographicalCoverageAndTimeliness" "OperationalFeasibility" ) ;
             sh:maxCount 1 ;
@@ -234,49 +234,10 @@ fsi:IndicatorCriterion a sh:NodeShape ;
 
 fsi:IndicatorDataSource a sh:NodeShape ;
     sh:closed true ;
-    sh:description "Data source containing the indicator data." ;
+    sh:description "Data source containing the indicator data.    " ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:name "indicator data source" ;
-    sh:property [ sh:datatype xsd:string ;
-            sh:description "A human-readable name for an attribute or entity." ;
-            sh:maxCount 1 ;
-            sh:name "name" ;
-            sh:nodeKind sh:Literal ;
-            sh:order 7 ;
-            sh:path rdfs:label ],
-        [ sh:description "Time granularity between the datapoints." ;
-            sh:in ( "EveryTwoYears" "Yearly" "Monthly" "Weekly" "Other" ) ;
-            sh:maxCount 1 ;
-            sh:name "time granularity between the datapoints." ;
-            sh:order 3 ;
-            sh:path fsi:time_granularity ],
-        [ sh:datatype linkml:DateOrDatetime ;
-            sh:description "Oldest datapoint for which the indicator is measured." ;
-            sh:maxCount 1 ;
-            sh:name "oldest datapoint" ;
-            sh:nodeKind sh:Literal ;
-            sh:order 1 ;
-            sh:path fsi:oldest_datapoint ],
-        [ sh:datatype xsd:string ;
-            sh:description "A unique identifier for an entity." ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 5 ;
-            sh:path fsi:id ],
-        [ sh:datatype xsd:string ;
-            sh:description "A human-readable description of an entity." ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 8 ;
-            sh:path dct:description ],
-        [ sh:datatype xsd:string ;
-            sh:description "An IRI for an entity. This is determined by the id using expansion rules." ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 6 ;
-            sh:path fsi:iri ],
-        [ sh:datatype linkml:DateOrDatetime ;
+    sh:property [ sh:datatype linkml:DateOrDatetime ;
             sh:description "Newest datapoint for which the indicator is measured." ;
             sh:maxCount 1 ;
             sh:name "newest datapoint" ;
@@ -290,6 +251,12 @@ fsi:IndicatorDataSource a sh:NodeShape ;
             sh:nodeKind sh:Literal ;
             sh:order 0 ;
             sh:path fsi:data_link ],
+        [ sh:datatype xsd:string ;
+            sh:description "A human-readable description of an entity." ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 8 ;
+            sh:path dct:description ],
         [ sh:class fsi:Indicator ;
             sh:description "Indicator." ;
             sh:maxCount 1 ;
@@ -297,23 +264,48 @@ fsi:IndicatorDataSource a sh:NodeShape ;
             sh:name "measures indicator" ;
             sh:nodeKind sh:IRI ;
             sh:order 4 ;
-            sh:path fsi:measures_indicator ] ;
+            sh:path fsi:measures_indicator ],
+        [ sh:datatype xsd:string ;
+            sh:description "A unique identifier for an entity." ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 5 ;
+            sh:path fsi:id ],
+        [ sh:datatype linkml:DateOrDatetime ;
+            sh:description "Oldest datapoint for which the indicator is measured." ;
+            sh:maxCount 1 ;
+            sh:name "oldest datapoint" ;
+            sh:nodeKind sh:Literal ;
+            sh:order 1 ;
+            sh:path fsi:oldest_datapoint ],
+        [ sh:datatype xsd:string ;
+            sh:description "An IRI for an entity. This is determined by the id using expansion rules." ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 6 ;
+            sh:path fsi:iri ],
+        [ sh:datatype xsd:string ;
+            sh:description "A human-readable name for an attribute or entity." ;
+            sh:maxCount 1 ;
+            sh:name "name" ;
+            sh:nodeKind sh:Literal ;
+            sh:order 7 ;
+            sh:path rdfs:label ],
+        [ sh:description "Time granularity between the datapoints." ;
+            sh:in ( "EveryTwoYears" "Yearly" "Monthly" "Weekly" "Other" ) ;
+            sh:maxCount 1 ;
+            sh:name "time granularity between the datapoints." ;
+            sh:order 3 ;
+            sh:path fsi:time_granularity ] ;
     sh:targetClass fsi:IndicatorDataSource .
 
 fsi:IndicatorDatapoint a sh:NodeShape ;
     sh:closed true ;
-    sh:description "Food system indicator datapoint." ;
+    sh:description "A food system indicator datapoint is a measured value or statistic that provides quantitative information for a specific sustainability indicator at a given time and place, used to track the performance or state of the food system." ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:name "indicator datapoint" ;
-    sh:property [ sh:class fsi:Indicator ;
-            sh:description "Indicator." ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:name "measurement of" ;
-            sh:nodeKind sh:IRI ;
-            sh:order 0 ;
-            sh:path fsi:measurement_of ],
-        [ sh:datatype xsd:double ;
+    sh:property [ sh:datatype xsd:double ;
             sh:description "connects a quantity value to a number" ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
@@ -325,19 +317,14 @@ fsi:IndicatorDatapoint a sh:NodeShape ;
             sh:nodeKind sh:Literal ;
             sh:order 1 ;
             sh:path fsi:has_unit ],
-        [ sh:datatype xsd:string ;
-            sh:description "A human-readable name for an attribute or entity." ;
+        [ sh:class fsi:Indicator ;
+            sh:description "Indicator." ;
             sh:maxCount 1 ;
-            sh:name "name" ;
-            sh:nodeKind sh:Literal ;
-            sh:order 5 ;
-            sh:path rdfs:label ],
-        [ sh:datatype xsd:string ;
-            sh:description "An IRI for an entity. This is determined by the id using expansion rules." ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 4 ;
-            sh:path fsi:iri ],
+            sh:minCount 1 ;
+            sh:name "measurement of" ;
+            sh:nodeKind sh:IRI ;
+            sh:order 0 ;
+            sh:path fsi:measurement_of ],
         [ sh:datatype xsd:string ;
             sh:description "A human-readable description of an entity." ;
             sh:maxCount 1 ;
@@ -350,60 +337,28 @@ fsi:IndicatorDatapoint a sh:NodeShape ;
             sh:minCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 3 ;
-            sh:path fsi:id ] ;
-    sh:targetClass fsi:IndicatorDatapoint .
-
-fsi:Indicator a sh:NodeShape ;
-    sh:closed true ;
-    sh:description "Food system indicator." ;
-    sh:ignoredProperties ( rdf:type ) ;
-    sh:name "indicator" ;
-    sh:property [ sh:datatype xsd:string ;
-            sh:description "Unique identifier of the indicator." ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 8 ;
             sh:path fsi:id ],
-        [ sh:description "Reference to the granularity(ies) for which the indicator is measured." ;
-            sh:in ( "MacroRegions" "Countries" "NUTS1" "NUTS2" "NUTS3" "LAU" ) ;
-            sh:minCount 1 ;
-            sh:name "granularity" ;
-            sh:order 5 ;
-            sh:path fsi:granularity ],
         [ sh:datatype xsd:string ;
-            sh:description "Justification for the selection of the indicator." ;
+            sh:description "A human-readable name for an attribute or entity." ;
             sh:maxCount 1 ;
-            sh:name "justification of selection" ;
+            sh:name "name" ;
             sh:nodeKind sh:Literal ;
-            sh:order 3 ;
-            sh:path fsi:justification ],
-        [ sh:description "Reference to the domain that the indicator belongs to." ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:name "domain" ;
-            sh:or ( [ sh:in ( "GHGEmissions" "Pollution" "Antimicrobials" "LandAndSoil" "Water" "AquaticLivingResources" "Energy" "BiodiversityConservationAndRestorationOfNaturalEcosystems" "FoodLossAndWaste" "ConsumptionFootprint" ) ] [ sh:in ( "SectorialGrowth" "MarketPowerAndBusinessStructure" "IncomeDistribution" "Price" "Trade" "TechnologyAndDigitalization" "TransportAccessibilityAndInfrastructure" ) ] [ sh:in ( "Employment" "AnimalWelfare" "FoodHeritage" "FoodAffordability" "FoodAvailability" "HealthImpactFromDiets" "FoodSecurity" ) ] [ sh:in ( "StrategicPlanningAndPolicies" "EffectiveImplementation" "Accountability" "SharedVision" "ShockResilience" "Preparedness" "Adaptation" "Transformation" ) ] ) ;
-            sh:order 2 ;
-            sh:path fsi:indicator_domain ],
-        [ sh:datatype UO:0000000 ;
-            sh:description "Unit of measurement." ;
-            sh:maxCount 1 ;
-            sh:name "unit of measurement" ;
-            sh:nodeKind sh:Literal ;
-            sh:order 7 ;
-            sh:path fsi:measurement_unit ],
-        [ sh:description "Reference to the supply chain component(s) for which the indicator is relevant." ;
-            sh:in ( "PrimaryFoodProduction" "FoodProcessing" "FoodDistribution" "FoodConsumption" ) ;
-            sh:name "supply chain component(s)" ;
-            sh:order 6 ;
-            sh:path fsi:supply_chain_component ],
+            sh:order 5 ;
+            sh:path rdfs:label ],
         [ sh:datatype xsd:string ;
             sh:description "An IRI for an entity. This is determined by the id using expansion rules." ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 9 ;
-            sh:path fsi:iri ],
-        [ sh:description "Reference to the thematic area that the indicator belongs to." ;
+            sh:order 4 ;
+            sh:path fsi:iri ] ;
+    sh:targetClass fsi:IndicatorDatapoint .
+
+fsi:Indicator a sh:NodeShape ;
+    sh:closed true ;
+    sh:description "A quantitative measure used to assess the state, performance, or progress of a specific aspect of the food system in relation to sustainability objectives." ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:name "indicator" ;
+    sh:property [ sh:description "Reference to the thematic area that the indicator belongs to." ;
             sh:in ( "Environmental" "Economic" "Social" "Horizontal" ) ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
@@ -411,12 +366,30 @@ fsi:Indicator a sh:NodeShape ;
             sh:order 0 ;
             sh:path fsi:key_area ],
         [ sh:datatype xsd:string ;
-            sh:description "Denomination of the indicator." ;
+            sh:description "Concise text that provides the meaning of the identifier." ;
             sh:maxCount 1 ;
-            sh:name "name" ;
             sh:nodeKind sh:Literal ;
-            sh:order 10 ;
-            sh:path rdfs:label ],
+            sh:order 11 ;
+            sh:path dct:description ],
+        [ sh:datatype xsd:string ;
+            sh:description "Justification for the selection of the indicator." ;
+            sh:maxCount 1 ;
+            sh:name "justification of selection" ;
+            sh:nodeKind sh:Literal ;
+            sh:order 3 ;
+            sh:path fsi:justification ],
+        [ sh:datatype xsd:string ;
+            sh:description "An IRI for an entity. This is determined by the id using expansion rules." ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 9 ;
+            sh:path fsi:iri ],
+        [ sh:description "Reference to the granularity(ies) for which the indicator is measured." ;
+            sh:in ( "MacroRegions" "Countries" "NUTS1" "NUTS2" "NUTS3" "LAU" ) ;
+            sh:minCount 1 ;
+            sh:name "granularity" ;
+            sh:order 5 ;
+            sh:path fsi:granularity ],
         [ sh:description "The thematic area the indicator belongs to." ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
@@ -424,18 +397,45 @@ fsi:Indicator a sh:NodeShape ;
             sh:or ( [ sh:in ( "ClimateChange" "PollutionAntimicrobials" "SustainableUseOfResources" "Biodiversity" "CrossCuttingAreas" ) ] [ sh:in ( "FairEconomicViabilityInFoodValueChain" "DevelopmentAndLogistics" ) ] [ sh:in ( "FairInclusiveAndEthicalFoodSystem" "FoodEnvironment" "NutritionAndHealth" ) ] [ sh:in ( "Governance" "Resilience" ) ] ) ;
             sh:order 1 ;
             sh:path fsi:thematic_area ],
-        [ sh:datatype xsd:string ;
-            sh:description "Concise text that provides the meaning of the identifier." ;
+        [ sh:description "Reference to the domain that the indicator belongs to." ;
             sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 11 ;
-            sh:path dct:description ],
+            sh:minCount 1 ;
+            sh:name "domain" ;
+            sh:or ( [ sh:in ( "GHGEmissions" "Pollution" "Antimicrobials" "LandAndSoil" "Water" "AquaticLivingResources" "Energy" "BiodiversityConservationAndRestorationOfNaturalEcosystems" "FoodLossAndWaste" "ConsumptionFootprint" ) ] [ sh:in ( "SectorialGrowth" "MarketPowerAndBusinessStructure" "IncomeDistribution" "Price" "Trade" "TechnologyAndDigitalization" "TransportAccessibilityAndInfrastructure" ) ] [ sh:in ( "Employment" "AnimalWelfare" "FoodHeritage" "FoodAffordability" "FoodAvailability" "HealthImpactFromDiets" "FoodSecurity" ) ] [ sh:in ( "StrategicPlanningAndPolicies" "EffectiveImplementation" "Accountability" "SharedVision" "ShockResilience" "Preparedness" "Adaptation" "Transformation" ) ] ) ;
+            sh:order 2 ;
+            sh:path fsi:indicator_domain ],
         [ sh:description "Reference to the spatial unit that the indicator describes." ;
             sh:in ( "Global" "Eu" "EuMemberStates" "Regional" "Local" ) ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:name "spatial scope" ;
             sh:order 4 ;
-            sh:path fsi:spatial_scope ] ;
+            sh:path fsi:spatial_scope ],
+        [ sh:description "Reference to the supply chain component(s) for which the indicator is relevant." ;
+            sh:in ( "PrimaryFoodProduction" "FoodProcessing" "FoodDistribution" "FoodConsumption" ) ;
+            sh:name "supply chain component(s)" ;
+            sh:order 6 ;
+            sh:path fsi:supply_chain_component ],
+        [ sh:datatype xsd:string ;
+            sh:description "Unique identifier of the indicator." ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 8 ;
+            sh:path fsi:id ],
+        [ sh:datatype UO:0000000 ;
+            sh:description "Unit of measurement." ;
+            sh:maxCount 1 ;
+            sh:name "unit of measurement" ;
+            sh:nodeKind sh:Literal ;
+            sh:order 7 ;
+            sh:path fsi:measurement_unit ],
+        [ sh:datatype xsd:string ;
+            sh:description "Denomination of the indicator." ;
+            sh:maxCount 1 ;
+            sh:name "name" ;
+            sh:nodeKind sh:Literal ;
+            sh:order 10 ;
+            sh:path rdfs:label ] ;
     sh:targetClass fsi:Indicator .
 

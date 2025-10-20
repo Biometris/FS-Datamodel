@@ -14,7 +14,7 @@
         },
         "Database": {
             "additionalProperties": false,
-            "description": "Data base containing data corresponding to an indicator.",
+            "description": "Database containing data corresponding to an indicator.",
             "properties": {
                 "contains_indicator_data_source": {
                     "description": "Indicator data source.",
@@ -69,7 +69,7 @@
         },
         "Domain": {
             "additionalProperties": true,
-            "description": "a domain.",
+            "description": "A specific sub-area within a thematic area that groups related indicators to measure a particular aspect of sustainability.",
             "title": "Domain",
             "type": [
                 "null",
@@ -80,7 +80,7 @@
             ]
         },
         "EconomicDomain": {
-            "description": "Economic domain.",
+            "description": "A specific area within the economic dimension that focuses on the performance, resilience, and fairness of economic activities. Examples are productivity, value distribution, or competitiveness, measured through related indicators.",
             "enum": [
                 "SectorialGrowth",
                 "MarketPowerAndBusinessStructure",
@@ -94,7 +94,7 @@
             "type": "string"
         },
         "EconomicThematicArea": {
-            "description": "Economic sustainability dimension.",
+            "description": "Thematic areas defined for the economic sustainability dimension.",
             "enum": [
                 "FairEconomicViabilityInFoodValueChain",
                 "DevelopmentAndLogistics"
@@ -103,7 +103,7 @@
             "type": "string"
         },
         "EnvironmentalDomain": {
-            "description": "Environmental domain.",
+            "description": "A specific area within the environmental dimension that focuses on the state and use of natural resources and ecosystems. Examples are climate impact, biodiversity, pollution, or resource efficiency, measured through related indicators.",
             "enum": [
                 "GHGEmissions",
                 "Pollution",
@@ -120,7 +120,7 @@
             "type": "string"
         },
         "EnvironmentalThematicArea": {
-            "description": "Enviromental sustainability dimension.",
+            "description": "Thematic areas defined for the enviromental sustainability dimension.",
             "enum": [
                 "ClimateChange",
                 "PollutionAntimicrobials",
@@ -145,7 +145,7 @@
             "type": "string"
         },
         "HorizontalDomain": {
-            "description": "Horizontal domain.",
+            "description": "A cross-cutting area that spans all sustainability dimensions\u2014environmental, social, and economic\u2014and addresses overarching aspects such as governance, resilience, or innovation that influence the entire food system.",
             "enum": [
                 "StrategicPlanningAndPolicies",
                 "EffectiveImplementation",
@@ -160,7 +160,7 @@
             "type": "string"
         },
         "HorizontalThematicArea": {
-            "description": "Horizontal sustainability dimension.",
+            "description": "Thematic areas defined for the horizontal, cross-cutting sustainability dimension.",
             "enum": [
                 "Governance",
                 "Resilience"
@@ -276,7 +276,7 @@
                     }
                 }
             ],
-            "description": "Food system indicator.",
+            "description": "A quantitative measure used to assess the state, performance, or progress of a specific aspect of the food system in relation to sustainability objectives.",
             "properties": {
                 "description": {
                     "description": "Concise text that provides the meaning of the identifier.",
@@ -498,7 +498,7 @@
         },
         "IndicatorDatapoint": {
             "additionalProperties": false,
-            "description": "Food system indicator datapoint.",
+            "description": "A food system indicator datapoint is a measured value or statistic that provides quantitative information for a specific sustainability indicator at a given time and place, used to track the performance or state of the food system.",
             "properties": {
                 "description": {
                     "description": "A human-readable description of an entity.",
@@ -664,7 +664,7 @@
             "type": "string"
         },
         "SocialDomain": {
-            "description": "Social domain.",
+            "description": "Specific area within the social dimension of sustainability that focuses on human well-being, equity, and social conditions. Examples are fairness, health, nutrition, or working conditions, measured through related indicators.",
             "enum": [
                 "Employment",
                 "AnimalWelfare",
@@ -678,7 +678,7 @@
             "type": "string"
         },
         "SocialThematicArea": {
-            "description": "Social sustainability dimension.",
+            "description": "Thematic areas defined for the social sustainability dimension.",
             "enum": [
                 "FairInclusiveAndEthicalFoodSystem",
                 "FoodEnvironment",
@@ -711,7 +711,7 @@
             "type": "string"
         },
         "SustainabilityDimension": {
-            "description": "Main sustainability dimension.",
+            "description": "A core pillar of sustainability (environmental, social, economic, or horizontal) that groups indicators to evaluate different aspects of sustainable development within the food system.",
             "enum": [
                 "Environmental",
                 "Economic",
@@ -723,7 +723,7 @@
         },
         "ThematicArea": {
             "additionalProperties": true,
-            "description": "a thematic area.",
+            "description": "A topic within a sustainability dimension (environmental, social, or economic) that organizes related domains and indicators around a common sustainability theme.",
             "title": "ThematicArea",
             "type": [
                 "null",
@@ -749,7 +749,7 @@
     "$id": "https://w3id.org/linkml/examples/fsi",
     "$schema": "https://json-schema.org/draft/2019-09/schema",
     "additionalProperties": true,
-    "description": "Data base containing data corresponding to an indicator.",
+    "description": "Database containing data corresponding to an indicator.",
     "metamodel_version": "1.7.0",
     "properties": {
         "contains_indicator_data_source": {
