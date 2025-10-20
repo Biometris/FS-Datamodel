@@ -1836,9 +1836,9 @@
   ],
   "metamodel_version": "1.7.0",
   "source_file": "food_system_indicators.yaml",
-  "source_file_date": "2025-10-20T10:45:24",
+  "source_file_date": "2025-10-20T12:02:06",
   "source_file_size": 19650,
-  "generation_date": "2025-10-20T10:46:10",
+  "generation_date": "2025-10-20T12:02:52",
   "@type": "SchemaDefinition",
   "@context": [
     "project/jsonld/food_system_indicators.context.jsonld",

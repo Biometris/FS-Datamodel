@@ -14,7 +14,7 @@
         <link rel="prev" href="../domains_table/">
       
       
-        <link rel="next" href="../databases_table/">
+        <link rel="next" href="../indicator_datasources_table/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -177,6 +177,8 @@
         <div class="md-main__inner md-grid">
           
             
+              
+                
               
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
@@ -376,7 +378,7 @@
   
   
   <span class="md-ellipsis">
-    Indicator data sources
+    Indicator data
     
   </span>
   
@@ -387,7 +389,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Indicator data sources
+            Indicator data
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -398,12 +400,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../databases_table/" class="md-nav__link">
+      <a href="../indicator_datasources_table/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Databases
+    Data sources
     
   </span>
   
@@ -421,12 +423,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../indicator_datasources_table/" class="md-nav__link">
+      <a href="../databases_table/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Data sources
+    Databases
     
   </span>
   
@@ -566,7 +568,9 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -587,6 +591,8 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
+
 
 
   
@@ -599,6 +605,8 @@
 <thead>
 <tr>
 <th>Name</th>
+<th>Unit</th>
+<th>Description</th>
 <th>Sustainability Dimensions</th>
 <th>Thematic Area</th>
 <th>Domain</th>
@@ -608,13 +616,17 @@
 <tbody>
 <tr>
 <td>GHG food system emissions</td>
+<td>kt CO2eq</td>
+<td>EDGAR-FOOD has been developed to aid the understanding of the activities underlying the energy demand and use, agriculture and land use change emissions associated with the production, distribution, consumption and disposal of food through the various stages and sectors of the composite global food system. These data were complemented with data from the FAOSTAT database on GHG emissions from land use related to agriculture (FAO, 2020). Details regarding the methodology applied are available in Crippa et al. (2021). Further info also in https://edgar.jrc.ec.europa.eu/edgar_food</td>
 <td><a href="../SustainabilityDimension">environmental</a></td>
 <td><a href="../EnvironmentalThematicArea">climate change</a></td>
 <td><a href="../EnvironmentalDomain">GHG emissions</a></td>
 <td><a href="../SupplyChainComponentType">food consumption</a>  <a href="../SupplyChainComponentType">food distribution</a>  <a href="../SupplyChainComponentType">food processing</a>  <a href="../SupplyChainComponentType">primary food production</a></td>
 </tr>
 <tr>
-<td>Use and risk of chemical pesticides (F2F pesticide reduction target 1)</td>
+<td>Use and risk of chemical pesticides</td>
+<td>None</td>
+<td>The F2F1 indicator is based on: - the quantities of active substances contained in the pesticides which are placed on the market (sold), and therefore used, in each Member State, and - the hazard properties of these active substances (considering 4 risk categories) The trend is compared to a three-year baseline, comprising the average of 2015, 2016 and 2017.</td>
 <td><a href="../SustainabilityDimension">environmental</a></td>
 <td><a href="../EnvironmentalThematicArea">pollution and antimicrobials</a></td>
 <td><a href="../EnvironmentalDomain">pollution</a></td>
@@ -622,6 +634,8 @@
 </tr>
 <tr>
 <td>Percent of the population who cannot afford a healthy diet</td>
+<td>None</td>
+<td>The proportion of a population who cannot afford the least cost set of food items by food group that would meet requirements for food-based dietary guidelines. The food budget threshold is defined as 52% of household income, based on the average share of income that households in low-income countries spend on food. Data is available from the World Bank and published annually by FAO.</td>
 <td><a href="../SustainabilityDimension">social</a></td>
 <td><a href="../SocialThematicArea">food environment</a></td>
 <td><a href="../SocialDomain">food affordability</a></td>
@@ -629,6 +643,8 @@
 </tr>
 <tr>
 <td>Prevalence of moderate or severe food insecurity in the population</td>
+<td>None</td>
+<td>The indicator monitors the share of population at higher risk to be affected by food insecurity. The indicator is assessed and regularly updated by FAO through the application of the Food Insecurity Experience Scale (FIES) in more than 140 countries worldwide. The FIES is an experience-based food security scale used to produce a measure of access to food at different levels of severity that can be compared across contexts. It includes a set of eight questions asking respondents to self-report conditions and experiences typically associated with limited access to food.</td>
 <td><a href="../SustainabilityDimension">social</a></td>
 <td><a href="../SocialThematicArea">nutrition and health</a></td>
 <td><a href="../SocialDomain">food security</a></td>
@@ -636,6 +652,8 @@
 </tr>
 <tr>
 <td>Farmers income in agriculture compared to wages in the rest of the economy</td>
+<td>None</td>
+<td>This indicator compares the wages in the agricultural sector to the rest of the economy. It is based on data from the economic accounts for agriculture provided by Eurostat for the agricultural sector of the EU as a whole and of individual Member States. It measures the Agricultural entrepreneurial income (net agricultural entrepreneurial income in real terms) derived from agricultural activities that can be used for the remuneration of own production factors, i.e. non-salaried (= family) labour, land belonging to the agricultural holding and own capital, per unpaid (non-salaried) annual work unit. It is obtained by deducting compensation of employees, rent and net interest from agricultural factor income. For the purpose of this indicator, compensation of employees are added back in, so that the resulting indicator represents the compensation of all work (salaried and non-salaried) performed in the agricultural sector, as well as the income remaining with the enterprise.</td>
 <td><a href="../SustainabilityDimension">economic</a></td>
 <td><a href="../EconomicThematicArea">fair economic viability in the food value chain</a></td>
 <td><a href="../EconomicDomain">income distribution</a></td>
@@ -643,6 +661,8 @@
 </tr>
 <tr>
 <td>Water exploitation index, plus (WEI+)</td>
+<td>kt CO2eq</td>
+<td>Water use in agriculture is assessed with the WATER EXPLOITATION INDEX PLUS (WEI+), which provides an estimated measure of the total water use as a percentage of the renewable freshwater resources (groundwater and surface water) for a given territory and time period. It helps track the efficiency of water utilization in agricultural practices. As advanced version of the WEI, the WEI+ addresses regional and seasonal aspects of water scarcity. In addition, it also takes water use (water abstraction minus water returned) into account. It identifies areas prone to water stress due to exceeding water abstraction and use on a seasonal scale in relation to the resources available.</td>
 <td><a href="../SustainabilityDimension">environmental</a></td>
 <td><a href="../EnvironmentalThematicArea">sustainable use of resources</a></td>
 <td><a href="../EnvironmentalDomain">water</a></td>
@@ -650,13 +670,17 @@
 </tr>
 <tr>
 <td>Gross nutrient balance - nitrogen</td>
+<td>kg/ha</td>
+<td>Nitrogen is added to the soil by mineral and organic fertilisers, grazing animals, atmospheric deposition and biological nitrogen fixation, while harvesting of crops, grazing and removal of residues remove nitrogen from the soil. A lack of nitrogen may cause degradation in soil fertility and erosion, while an excess may cause surface and groundwater (including drinking water) pollution and eutrophication. This indicator also helps identifying the factors which contribute to the nitrogen surplus and shows the change over time.</td>
 <td><a href="../SustainabilityDimension">environmental</a></td>
 <td><a href="../EnvironmentalThematicArea">sustainable use of resources</a></td>
 <td><a href="../EnvironmentalDomain">land and soil</a></td>
 <td><a href="../SupplyChainComponentType">primary food production</a></td>
 </tr>
 <tr>
-<td>Use of the more hazardous pesticides (F2F pesticide reduction target 2)</td>
+<td>Use of the more hazardous pesticides</td>
+<td>Index 2015-2017 average = 100</td>
+<td>The indicator is calculated by adding together the quantities of active substances  (categorised into Group 3 of Directive 2009/128/EC). These substances are approved as candidates for substitution in accordance with Article 24 of Regulation (EC) No 1107/2009, which are placed on the market in plant protection products each year reported under Regulation (EC) No 1185/2009.</td>
 <td><a href="../SustainabilityDimension">environmental</a></td>
 <td><a href="../EnvironmentalThematicArea">pollution and antimicrobials</a></td>
 <td><a href="../EnvironmentalDomain">pollution</a></td>
@@ -664,6 +688,8 @@
 </tr>
 <tr>
 <td>Water quality - Nitrates in groundwater</td>
+<td>mg NO3 per liter</td>
+<td>Nitrate pollution is measured by current values and trends in nitrate concentrations  in groundwater and rivers, expressed in mg NO3/l for groundwater and mg N/l for rivers.  According to the Drinking Water Directive, a maximum concentration of 50 mg/L of nitrate in groundwater that is used for drinking water is allowed to avoid threats to human health. This indicator refers to concentrations of nitrate (NO3) in groundwater, measured as  milligrams per litre (mg NO3/L). Data are taken from well samples and aggregated to annual average values. Nitrate can persist in groundwater for a long time and accumulate at a high level through inputs from anthropogenic sources (mainly agriculture). Only complete series after inter/extrapolation are presented. For details on the total of measuring stations and their distribution over the countries, please consult the metadata file.</td>
 <td><a href="../SustainabilityDimension">environmental</a></td>
 <td><a href="../EnvironmentalThematicArea">pollution and antimicrobials</a></td>
 <td><a href="../EnvironmentalDomain">pollution</a></td>
@@ -671,10 +697,111 @@
 </tr>
 <tr>
 <td>Sales of antimicrobials for food-producing animals</td>
+<td>The unit of measurement is milligrams (mg) of antimicrobial active substance sold for food-producing animals per population correction unit (PCU) - mg/PCU</td>
+<td>The indicator on the sales of antimicrobials is expressed as milligrams (mg) of active</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>substance sold per population correction unit (PCU) — mg/PCU. The PCU is applied as a</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>proxy for the size of the food producing animal population (including all horses and</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>excluding companion animals) and serves to normalise the sales data by the number of</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>animals that could be potentially treated with antibiotics in each country. For</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>food-producing animals, the proposed indicators for antimicrobial consumption are:</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>overall sales of veterinary antimicrobials; sales of 3rd- and 4th-generation cephalosporins;</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>sales of quinolones (specifying the proportion of fluoroquinolones); and sales of polymyxins,</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>all measured in milligrams per population correction unit (mg/PCU.) The European Medicines</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Agency, in frame of the European Surveillance of Veterinary Antimicrobial Consumption</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>project regularly collects data on how antimicrobial medicines are used in animals</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>across the EU.</td>
 <td><a href="../SustainabilityDimension">environmental</a></td>
 <td><a href="../EnvironmentalThematicArea">pollution and antimicrobials</a></td>
 <td><a href="../EnvironmentalDomain">antimicrobials</a></td>
 <td><a href="../SupplyChainComponentType">primary food production</a></td>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -685,8 +812,13 @@
 
 
 
+  
+  
 
 
+
+
+  
 
 
 
