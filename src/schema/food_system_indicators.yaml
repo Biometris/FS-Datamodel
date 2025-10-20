@@ -513,33 +513,43 @@ enums:
       Environmental domain.
     permissible_values:
       GHGEmissions:
+        title: GHG emissions
         description:
           GHG emissions.
       Pollution:
+        title: pollution
         description:
           pollution.
       Antimicrobials:
+        title: antimicrobials
         description:
           antimicrobials.
       LandAndSoil:
+        title: land and soil
         description:
           land and soil.
       Water:
+        title: water
         description:
           water.
       AquaticLivingResources:
+        title: aquatic living resources
         description:
           aquatic living resources.
       Energy:
+        title: energy
         description:
           energy.
       BiodiversityConservationAndRestorationOfNaturalEcosystems:
+        title: biodiversity conservation and restoration of natural ecosystems
         description:
           biodiversity conservation and restoration of natural ecosystems.
       FoodLossAndWaste:
+        title: food loss and waste
         description:
           food loss and waste.
       ConsumptionFootprint:
+        title: consumption footprint
         description:
           consumption footprint.
 
@@ -549,24 +559,31 @@ enums:
       Economic domain.
     permissible_values:
       SectorialGrowth:
+        title: sectorial growth
         description:
-          sectorial growth.          
+          sectorial growth.
       MarketPowerAndBusinessStructure:      
+        title: market power and business structure
         description:
           market power and business structure.
       IncomeDistribution:
+        title: income distribution
         description:
           income distribution.
       Price:
+        title: price
         description:
           price.
       Trade:
+        title: trade
         description:
           trade.
       TechnologyAndDigitalization:
+        title: technology and digitalization
         description:
           technology and digitalization.
       TransportAccessibilityAndInfrastructure:
+        title: transport, accessibility and infrastructure
         description:
           transport, accessibility and infrastructure.
 
@@ -576,24 +593,31 @@ enums:
       Social domain.
     permissible_values:
       Employment:
+        title: employment
         description:
           employment.
       AnimalWelfare:
+        title: animal welfare
         description:
           animal welfare.
       FoodHeritage:
+        title: food heritage
         description:
           food heritage.
       FoodAffordability:
+        title: food affordability
         description:
           food affordability.
       FoodAvailability:
+        title: food availability
         description:
           food availability.
       HealthImpactFromDiets:
+        title: food health impact from diets
         description:
           health impact from diets.
       FoodSecurity:
+        title: food security
         description:
           food security.
 
@@ -603,30 +627,37 @@ enums:
       Horizontal domain.
     permissible_values:
       StrategicPlanningAndPolicies:
+        title: strategic planning and policies
         description:
           strategic planning and policies.
       EffectiveImplementation:
+        title: effective implementation
         description:
           effective implementation.
       Accountability:
+        title: accountability
         description:
           accountability.
       SharedVision:
+        title: shared vision
         description:
           shared vision.
       ShockResilience:
+        title: shock resilience
         description:
           shock resilience.
       Preparedness:
+        title: preparedness
         description:
           preparedness.
       Adaptation:
+        title: adaptation
         description:
           adaptation.
       Transformation:
+        title: transformation
         description:
           transformation
-
 
   SpatialScopeType:
     title: spatial scope type
@@ -634,18 +665,23 @@ enums:
       The spatial scope for which the indicator is defined.
     permissible_values:
       Global:
+        title: global
         description:
           Global.
       Eu:
+        title: EU wide
         description:
           EU wide.
       EuMemberStates:
+        title: EU member states
         description:
           EU member states.
       Regional:
+        title: regional
         description:
           Regional.
       Local:
+        title: local
         description:
           Local.
   
@@ -655,21 +691,27 @@ enums:
       The granularity for which the indicator is measured.
     permissible_values:
       MacroRegions:
+        title: macro regions
         description:
           Macro regions
       Countries:
+        title: countries
         description: 
           Countries      
       NUTS1:    
+        title: NUTS1
         description:
           First level administrative division of countries for statistical purposes.
       NUTS2:
+        title: NUTS2
         description:
           Second level administrative division of countries for statistical purposes.
       NUTS3:
+        title: NUTS3
         description:
           Third level administrative division of countries for statistical purposes.
       LAU:
+        title: LAU
         description:
           Local administrative units
 
@@ -679,15 +721,19 @@ enums:
       The supply chain component for which the indicator is relevant.
     permissible_values:
       PrimaryFoodProduction:
+        title: primary food production
         description:
           Primary food production.
       FoodProcessing:
+        title: food processing
         description:
           Food processing.
       FoodDistribution:
+        title: food distribution
         description:
           Food distribution.
       FoodConsumption:
+        title: food consumption
         description:
           Food consumption.
 

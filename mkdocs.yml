@@ -11,7 +11,7 @@ nav:
   - Data model:
     - Data model: index.md
     - Indicator domains: domains_table.md
-  - Indicators: indicators_table.md
+  - Indicator definitions: indicators_table.md
   - Indicator data sources:
     - Databases: databases_table.md
     - Data sources: indicator_datasources_table.md

@@ -82,7 +82,9 @@ class DataStore:
         for e in view.all_enums():
             enum = self.db.schema_view.get_enum(e)
             permissible_values = enum.permissible_values
-            enum_dict[enum.name] = {pv: permissible_values[pv].description for pv in permissible_values}
+            enum_dict[enum.name] = {
+                pv: (permissible_values[pv].title if permissible_values[pv].title else permissible_values[pv].description) for pv in permissible_values
+            }
 
         for s in view.all_slots():
             slot = self.db.schema_view.get_element(s)
