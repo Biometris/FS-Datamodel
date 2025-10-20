@@ -526,43 +526,53 @@
       "permissible_values": [
         {
           "text": "GHGEmissions",
-          "description": "GHG emissions."
+          "description": "GHG emissions.",
+          "title": "GHG emissions"
         },
         {
           "text": "Pollution",
-          "description": "pollution."
+          "description": "pollution.",
+          "title": "pollution"
         },
         {
           "text": "Antimicrobials",
-          "description": "antimicrobials."
+          "description": "antimicrobials.",
+          "title": "antimicrobials"
         },
         {
           "text": "LandAndSoil",
-          "description": "land and soil."
+          "description": "land and soil.",
+          "title": "land and soil"
         },
         {
           "text": "Water",
-          "description": "water."
+          "description": "water.",
+          "title": "water"
         },
         {
           "text": "AquaticLivingResources",
-          "description": "aquatic living resources."
+          "description": "aquatic living resources.",
+          "title": "aquatic living resources"
         },
         {
           "text": "Energy",
-          "description": "energy."
+          "description": "energy.",
+          "title": "energy"
         },
         {
           "text": "BiodiversityConservationAndRestorationOfNaturalEcosystems",
-          "description": "biodiversity conservation and restoration of natural ecosystems."
+          "description": "biodiversity conservation and restoration of natural ecosystems.",
+          "title": "biodiversity conservation and restoration of natural ecosystems"
         },
         {
           "text": "FoodLossAndWaste",
-          "description": "food loss and waste."
+          "description": "food loss and waste.",
+          "title": "food loss and waste"
         },
         {
           "text": "ConsumptionFootprint",
-          "description": "consumption footprint."
+          "description": "consumption footprint.",
+          "title": "consumption footprint"
         }
       ]
     },
@@ -575,31 +585,38 @@
       "permissible_values": [
         {
           "text": "SectorialGrowth",
-          "description": "sectorial growth."
+          "description": "sectorial growth.",
+          "title": "sectorial growth"
         },
         {
           "text": "MarketPowerAndBusinessStructure",
-          "description": "market power and business structure."
+          "description": "market power and business structure.",
+          "title": "market power and business structure"
         },
         {
           "text": "IncomeDistribution",
-          "description": "income distribution."
+          "description": "income distribution.",
+          "title": "income distribution"
         },
         {
           "text": "Price",
-          "description": "price."
+          "description": "price.",
+          "title": "price"
         },
         {
           "text": "Trade",
-          "description": "trade."
+          "description": "trade.",
+          "title": "trade"
         },
         {
           "text": "TechnologyAndDigitalization",
-          "description": "technology and digitalization."
+          "description": "technology and digitalization.",
+          "title": "technology and digitalization"
         },
         {
           "text": "TransportAccessibilityAndInfrastructure",
-          "description": "transport, accessibility and infrastructure."
+          "description": "transport, accessibility and infrastructure.",
+          "title": "transport, accessibility and infrastructure"
         }
       ]
     },
@@ -612,31 +629,38 @@
       "permissible_values": [
         {
           "text": "Employment",
-          "description": "employment."
+          "description": "employment.",
+          "title": "employment"
         },
         {
           "text": "AnimalWelfare",
-          "description": "animal welfare."
+          "description": "animal welfare.",
+          "title": "animal welfare"
         },
         {
           "text": "FoodHeritage",
-          "description": "food heritage."
+          "description": "food heritage.",
+          "title": "food heritage"
         },
         {
           "text": "FoodAffordability",
-          "description": "food affordability."
+          "description": "food affordability.",
+          "title": "food affordability"
         },
         {
           "text": "FoodAvailability",
-          "description": "food availability."
+          "description": "food availability.",
+          "title": "food availability"
         },
         {
           "text": "HealthImpactFromDiets",
-          "description": "health impact from diets."
+          "description": "health impact from diets.",
+          "title": "food health impact from diets"
         },
         {
           "text": "FoodSecurity",
-          "description": "food security."
+          "description": "food security.",
+          "title": "food security"
         }
       ]
     },
@@ -649,35 +673,43 @@
       "permissible_values": [
         {
           "text": "StrategicPlanningAndPolicies",
-          "description": "strategic planning and policies."
+          "description": "strategic planning and policies.",
+          "title": "strategic planning and policies"
         },
         {
           "text": "EffectiveImplementation",
-          "description": "effective implementation."
+          "description": "effective implementation.",
+          "title": "effective implementation"
         },
         {
           "text": "Accountability",
-          "description": "accountability."
+          "description": "accountability.",
+          "title": "accountability"
         },
         {
           "text": "SharedVision",
-          "description": "shared vision."
+          "description": "shared vision.",
+          "title": "shared vision"
         },
         {
           "text": "ShockResilience",
-          "description": "shock resilience."
+          "description": "shock resilience.",
+          "title": "shock resilience"
         },
         {
           "text": "Preparedness",
-          "description": "preparedness."
+          "description": "preparedness.",
+          "title": "preparedness"
         },
         {
           "text": "Adaptation",
-          "description": "adaptation."
+          "description": "adaptation.",
+          "title": "adaptation"
         },
         {
           "text": "Transformation",
-          "description": "transformation"
+          "description": "transformation",
+          "title": "transformation"
         }
       ]
     },
@@ -690,23 +722,28 @@
       "permissible_values": [
         {
           "text": "Global",
-          "description": "Global."
+          "description": "Global.",
+          "title": "global"
         },
         {
           "text": "Eu",
-          "description": "EU wide."
+          "description": "EU wide.",
+          "title": "EU wide"
         },
         {
           "text": "EuMemberStates",
-          "description": "EU member states."
+          "description": "EU member states.",
+          "title": "EU member states"
         },
         {
           "text": "Regional",
-          "description": "Regional."
+          "description": "Regional.",
+          "title": "regional"
         },
         {
           "text": "Local",
-          "description": "Local."
+          "description": "Local.",
+          "title": "local"
         }
       ]
     },
@@ -719,27 +756,33 @@
       "permissible_values": [
         {
           "text": "MacroRegions",
-          "description": "Macro regions"
+          "description": "Macro regions",
+          "title": "macro regions"
         },
         {
           "text": "Countries",
-          "description": "Countries"
+          "description": "Countries",
+          "title": "countries"
         },
         {
           "text": "NUTS1",
-          "description": "First level administrative division of countries for statistical purposes."
+          "description": "First level administrative division of countries for statistical purposes.",
+          "title": "NUTS1"
         },
         {
           "text": "NUTS2",
-          "description": "Second level administrative division of countries for statistical purposes."
+          "description": "Second level administrative division of countries for statistical purposes.",
+          "title": "NUTS2"
         },
         {
           "text": "NUTS3",
-          "description": "Third level administrative division of countries for statistical purposes."
+          "description": "Third level administrative division of countries for statistical purposes.",
+          "title": "NUTS3"
         },
         {
           "text": "LAU",
-          "description": "Local administrative units"
+          "description": "Local administrative units",
+          "title": "LAU"
         }
       ]
     },
@@ -752,19 +795,23 @@
       "permissible_values": [
         {
           "text": "PrimaryFoodProduction",
-          "description": "Primary food production."
+          "description": "Primary food production.",
+          "title": "primary food production"
         },
         {
           "text": "FoodProcessing",
-          "description": "Food processing."
+          "description": "Food processing.",
+          "title": "food processing"
         },
         {
           "text": "FoodDistribution",
-          "description": "Food distribution."
+          "description": "Food distribution.",
+          "title": "food distribution"
         },
         {
           "text": "FoodConsumption",
-          "description": "Food consumption."
+          "description": "Food consumption.",
+          "title": "food consumption"
         }
       ]
     },
@@ -1789,9 +1836,9 @@
   ],
   "metamodel_version": "1.7.0",
   "source_file": "food_system_indicators.yaml",
-  "source_file_date": "2025-09-19T08:05:19",
-  "source_file_size": 18169,
-  "generation_date": "2025-09-19T08:06:01",
+  "source_file_date": "2025-10-20T10:45:24",
+  "source_file_size": 19650,
+  "generation_date": "2025-10-20T10:46:10",
   "@type": "SchemaDefinition",
   "@context": [
     "project/jsonld/food_system_indicators.context.jsonld",
