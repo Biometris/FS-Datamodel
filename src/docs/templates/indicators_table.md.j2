@@ -7,7 +7,7 @@ hide:
 |------|------|-------------|---------------------------|---------------|--------| ----------------------- |
 {% for indicator in indicators -%}
   {%- set name = indicator['name'] -%}
-  {%- set description = indicator['description'] -%}
+  {%- set description = indicator['description'].replace("\n", "") -%}
   {%- set unit = indicator['measurement_unit'] -%}
   {%- set key_area = enum_dict['SustainabilityDimension'][indicator['key_area']] -%}
   {%- set thematic_area = enum_dict['ThematicArea'][indicator['thematic_area']] -%}

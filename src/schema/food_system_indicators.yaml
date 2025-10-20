@@ -34,18 +34,21 @@ classes:
 
   ThematicArea:
     title: thematic area
-    description: a thematic area.
+    description: >-
+      A topic within a sustainability dimension (environmental, social, or economic) that organizes related domains and indicators around a common sustainability theme.
     class_uri: linkml:Any
 
   Domain:
     title: domain
-    description: a domain.
+    description: >-
+      A specific sub-area within a thematic area that groups related indicators to measure a particular aspect of sustainability.
     class_uri: linkml:Any
 
   Database:
     is_a: Entity
     title: database
-    description: Data base containing data corresponding to an indicator.
+    description: >-
+      Database containing data corresponding to an indicator.
     tree_root: true
     slots:        
       - database_link
@@ -55,7 +58,8 @@ classes:
   IndicatorDataSource:
     is_a: Entity
     title: indicator data source
-    description: Data source containing the indicator data.    
+    description: >-
+      Data source containing the indicator data.    
     slots:
       - data_link
       - oldest_datapoint
@@ -84,7 +88,7 @@ classes:
     is_a: Entity
     title: indicator
     description: >-
-      Food system indicator.
+      A quantitative measure used to assess the state, performance, or progress of a specific aspect of the food system in relation to sustainability objectives.
     slots:      
       - key_area
       - thematic_area
@@ -146,7 +150,7 @@ classes:
     is_a: QuantityValue
     title: indicator datapoint
     description: >-
-      Food system indicator datapoint.
+      A food system indicator datapoint is a measured value or statistic that provides quantitative information for a specific sustainability indicator at a given time and place, used to track the performance or state of the food system.
     slots:
       - measurement_of
     slot_usage:
@@ -169,8 +173,7 @@ classes:
   QuantityValue:
     title: quantity value
     description: >-
-      A value of an attribute that is quantitative and measurable,
-      expressed as a combination of a unit and a numeric value
+      A value of an attribute that is quantitative and measurable, expressed as a combination of a unit and a numeric value
     is_a: Entity
     slots:
       - has unit
@@ -432,25 +435,29 @@ enums:
   SustainabilityDimension:
     title: sustainability dimension
     description: >-
-      Main sustainability dimension.
+      A core pillar of sustainability (environmental, social, economic, or horizontal) that groups indicators to evaluate different aspects of sustainable development within the food system.
     permissible_values:
       Environmental:
+        title: environmental
         description:
-          environmental
+          Sustainability dimension that focuses on the state and management of natural resources and ecosystems, including aspects such as climate, biodiversity, pollution, and resource efficiency, to ensure the food system operates within ecological limits.
       Economic:
+        title: economic
         description:
-          economic
+          Sustainability dimension that focuses on the performance, efficiency, and resilience of economic activities within the food system, including aspects like productivity, value distribution, competitiveness, and financial viability.
       Social:
+        title: social
         description:
-          social
+          Sustainability dimension that focuses on human well-being, equity, and societal outcomes within the food system, including aspects such as health, nutrition, fairness, labor conditions, and access to resources.
       Horizontal:
+        title: horizontal
         description:
-          horizontal thematic areas              
+          Cross-cutting sustainability dimension that addresses overarching aspects affecting all other dimensions—environmental, social, and economic—such as governance, resilience, innovation, and policy coherence within the food system.
 
   EnvironmentalThematicArea:
     title: environmental thematic area
     description: >- 
-      Enviromental sustainability dimension.
+      Thematic areas defined for the enviromental sustainability dimension.
     permissible_values:
       ClimateChange:
         description:
@@ -471,7 +478,7 @@ enums:
   EconomicThematicArea:
     title: economic thematic area
     description: >- 
-      Economic sustainability dimension.
+      Thematic areas defined for the economic sustainability dimension.
     permissible_values:
       FairEconomicViabilityInFoodValueChain:
         description:
@@ -483,7 +490,7 @@ enums:
   SocialThematicArea:
     title: social thematic area
     description: >-
-      Social sustainability dimension.
+      Thematic areas defined for the social sustainability dimension.
     permissible_values:
       FairInclusiveAndEthicalFoodSystem:
         description:
@@ -498,7 +505,7 @@ enums:
   HorizontalThematicArea:
     title: horizontal thematic area
     description: >-
-      Horizontal sustainability dimension.
+      Thematic areas defined for the horizontal, cross-cutting sustainability dimension.
     permissible_values:
       Governance:
         description:
@@ -510,7 +517,7 @@ enums:
   EnvironmentalDomain:
     title: environmental domain
     description: >-
-      Environmental domain.
+      A specific area within the environmental dimension that focuses on the state and use of natural resources and ecosystems. Examples are climate impact, biodiversity, pollution, or resource efficiency, measured through related indicators.
     permissible_values:
       GHGEmissions:
         title: GHG emissions
@@ -556,7 +563,7 @@ enums:
   EconomicDomain:
     title: economic domain
     description: >-
-      Economic domain.
+      A specific area within the economic dimension that focuses on the performance, resilience, and fairness of economic activities. Examples are productivity, value distribution, or competitiveness, measured through related indicators.
     permissible_values:
       SectorialGrowth:
         title: sectorial growth
@@ -590,7 +597,7 @@ enums:
   SocialDomain:
     title: social domain
     description: >-
-      Social domain.
+      Specific area within the social dimension of sustainability that focuses on human well-being, equity, and social conditions. Examples are fairness, health, nutrition, or working conditions, measured through related indicators.
     permissible_values:
       Employment:
         title: employment
@@ -624,7 +631,7 @@ enums:
   HorizontalDomain:
     title: horizontal domain
     description: >-
-      Horizontal domain.
+      A cross-cutting area that spans all sustainability dimensions—environmental, social, and economic—and addresses overarching aspects such as governance, resilience, or innovation that influence the entire food system.
     permissible_values:
       StrategicPlanningAndPolicies:
         title: strategic planning and policies

@@ -10,7 +10,7 @@ _{{ element_description_line }}_
 {% if element.permissible_values -%}
 ## Possible values
 
-| Value | Meaning | Description |
+| Value | URI | Description |
 | --- | --- | --- |
 {% for pv in element.permissible_values.values() -%}
 | {{pv.text}} | {{pv.meaning}} | {{pv.description}} |

@@ -32,11 +32,7 @@
 - id: UseAndRiskOfChemicalPesticides
   name: Use and risk of chemical pesticides
   description: >-
-    The F2F1 indicator is based on: - the quantities of active substances
-    contained in the pesticides which are placed on the market (sold), and
-    therefore used, in each Member State, and - the hazard properties of these
-    active substances (considering 4 risk categories) The trend is compared to a
-    three-year baseline, comprising the average of 2015, 2016 and 2017.
+    The quantities of active substances contained in the pesticides which are placed on the market (sold), and therefore used, in each EU Member State, and the hazard properties of these active substances (considering 4 risk categories). The trend is compared to a three-year baseline, comprising the average of 2015, 2016 and 2017.
   key_area: Environmental
   thematic_area: PollutionAntimicrobials
   indicator_domain: Pollution
