@@ -30,7 +30,7 @@
     - PrimaryFoodProduction
   measurement_unit: kt CO2eq
 - id: UseAndRiskOfChemicalPesticides
-  name: Use and risk of chemical pesticides (F2F pesticide reduction target 1)
+  name: Use and risk of chemical pesticides
   description: >-
     The F2F1 indicator is based on: - the quantities of active substances
     contained in the pesticides which are placed on the market (sold), and
@@ -220,7 +220,7 @@
     - PrimaryFoodProduction
   measurement_unit: kg/ha
 - id: UseOfTheMoreHazardousPesticides
-  name: Use of the more hazardous pesticides (F2F pesticide reduction target 2)
+  name: Use of the more hazardous pesticides
   description: >-
     The indicator is calculated by adding together the quantities of active substances 
     (categorised into Group 3 of Directive 2009/128/EC). These substances are approved

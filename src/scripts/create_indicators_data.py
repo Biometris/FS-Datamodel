@@ -152,8 +152,10 @@ if __name__ == "__main__":
         )
 
         datasources = datastore.get_indicator_datasources()
+        indicators_dict = res = {i['id']: i for i in indicators}
         render_template(
             template_name = 'indicator_datasources_table',
+            indicators_dict = indicators_dict,
             datasources = datasources
         )
 

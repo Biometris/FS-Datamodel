@@ -1,5 +1,15 @@
-| Name | Indicator | URL | 
-|------|-----------|-----|
+---
+hide:
+  - toc
+---
+
+| Indicator | Database | Description | Time granularity | URL |
+|-----------|----------|-------------|------------------|-----|
 {% for datasource in datasources -%}
-| {{ datasource['description'] }}| {{ datasource['measures_indicator'] }} | [{{ datasource['data_link'] }}]({{ datasource['data_link'] }}) | 
+  {%- set database = 'TODO' -%}
+  {%- set indicator = indicators_dict[datasource['measures_indicator']]['name'] -%}
+  {%- set description = datasource['description'] -%}
+  {%- set time_granularity = datasource['time_granularity'] -%}
+  {%- set url = datasource['data_link'] -%}
+| {{ indicator }} | {{ database }} | {{ description }} | {{ time_granularity }} | [{{url}}]({{url}}) | 
 {% endfor %}
