@@ -1,0 +1,27 @@
+---
+hide:
+  - toc
+---
+
+# {{database['name']}}
+
+**URL:** [{{database['database_link']}}]({{database['database_link']}})
+
+{{ database['description'] }}
+
+| Name | Indicator | Time granularity | Spatial scope | Spatial resolution | Year oldest datapoint | Year latest datapoint | URL |
+|------|-----------|------------------|---------------|--------------------|-----------------------|-----------------------|-----|
+{% for record in database_indicators -%}
+  {%- set id = record['id'] -%}
+  {%- set name = record['name'] -%}
+  {%- set id_indicator = record['measures_indicator'] -%}
+  {%- set indicator = indicators_dict[record['measures_indicator']]['name'] -%}
+  {%- set description = record['description'] -%}
+  {%- set time_granularity = record['time_granularity'] -%}
+  {%- set spatial_granularity = record['spatial_granularity'] -%}
+  {%- set spatial_scope = record['spatial_scope'] -%}
+  {%- set oldest_datapoint = record['oldest_datapoint'] -%}
+  {%- set newest_datapoint = record['newest_datapoint'] -%}
+  {%- set url = record['data_link'] -%}
+| [{{name}}](../indicator_data_collection_details/{{id}}) | [{{indicator}}](../indicators/{{id_indicator}}) | {{ time_granularity }} | {{ spatial_scope }} | {{ spatial_granularity }} | {{ oldest_datapoint }} | {{ newest_datapoint }} | [[link]]({{url}}) | 
+{% endfor %}

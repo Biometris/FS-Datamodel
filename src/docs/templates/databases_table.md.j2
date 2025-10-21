@@ -6,5 +6,7 @@ hide:
 | Name | Description | URL |
 |------|-------------|-----|
 {% for c in databases -%}
-| {{ c.get("name") }} | {{ c.get("description").replace("\n", "") }} | [{{ c.get("database_link") }}]({{ c.get("database_link") }}) |
+  {%- set name = c['name'] -%}
+  {%- set id = c['id'] -%}
+| [{{name}}](../databases/{{id}}) | {{ c.get("description").replace("\n", "") }} | [{{ c.get("database_link") }}]({{ c.get("database_link") }}) |
 {% endfor %}

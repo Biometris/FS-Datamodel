@@ -12,10 +12,10 @@ nav:
     - Data model: model/index.md
     - Indicator domains: domains_table.md
   - Indicator definitions: indicators_table.md
-  - Indicator data collections: indicator_data_collections_table.md
-  - Databases: databases_table.md
-  - Indicator selection:
-    - Indicator criterion categories: CriterionCategory.md
+  - Indicator data collection details: indicator_data_collection_details_table.md
+  - Indicator databases: databases_table.md
+  - Indicator selection details:
+    - Indicator criterion categories: model/CriterionCategory.md
     - Indicator criteria: indicator_criteria_table.md
     - Indicator scores: indicator_scores.md
 docs_dir: docs

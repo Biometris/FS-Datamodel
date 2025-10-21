@@ -117,7 +117,7 @@ if __name__ == "__main__":
     schema_path = "src/schema/food_system_indicators.yaml"
     indicator_data_path = "data/indicators.yaml"
     database_data_path = "data/databases.yaml"
-    indicator_data_collections_data_path = "data/indicator_data_collections.yaml"
+    indicator_data_collection_details_data_path = "data/indicator_data_collection_details.yaml"
     criterion_data_path = "data/criteria.yaml"
     indicatorscores_data_path = "data/indicatorscores.yaml"
 
@@ -126,7 +126,7 @@ if __name__ == "__main__":
         schema_file=schema_path,
         indicators_file=indicator_data_path,
         databases_file=database_data_path,
-        indicator_data_collections_file=indicator_data_collections_data_path,
+        indicator_data_collection_details_file=indicator_data_collection_details_data_path,
         criteria_file=criterion_data_path,
         indicatorscores_file=indicatorscores_data_path
     )
@@ -137,6 +137,13 @@ if __name__ == "__main__":
         # Get indicators and create hierarchy JSON and table
         indicators = datastore.get_indicators()
         indicators_dict = res = {i['id']: i for i in indicators}
+        databases = datastore.get_databases()
+        databases_dict = res = {d['id']: d for d in databases}
+        indicator_data_collection_details = datastore.get_indicator_indicator_data_collection_details()
+        database_indicators = {}
+        for record in indicator_data_collection_details:
+            database_indicators.setdefault(record['in_database'], []).append(record)
+
         enum_dict = datastore.create_enum_dict()
         create_indicator_hiearchy_json(indicators)
         create_supply_chain_indicator_hiearchy_json(indicators)
@@ -156,24 +163,31 @@ if __name__ == "__main__":
             )
 
         # Get database and create output table.
-        databases = datastore.get_databases()
-        databases_dict = res = {d['id']: d for d in databases}
         render_template(
             template_name = 'databases_table',
             databases = databases
         )
 
-        indicator_data_collections = datastore.get_indicator_indicator_data_collections()
+        for database in databases:
+            render_template(
+                template_name = 'database_details',
+                output_file = f"docs/databases/{database['id']}.md",
+                database = database,
+                database_indicators = database_indicators[database['id']] if database['id'] in database_indicators.keys() else [],
+                indicators_dict = indicators_dict,
+                enum_dict = enum_dict
+            )
+
         render_template(
-            template_name = 'indicator_data_collections_table',
+            template_name = 'indicator_data_collection_details_table',
             indicators_dict = indicators_dict,
-            indicator_data_collections = indicator_data_collections
+            indicator_data_collection_details = indicator_data_collection_details
         )
 
-        for collection in indicator_data_collections:
+        for collection in indicator_data_collection_details:
             render_template(
                 template_name = 'indicator_data_collection_details',
-                output_file = f"docs/indicator_data_collections/{collection['id']}.md",
+                output_file = f"docs/indicator_data_collection_details/{collection['id']}.md",
                 collection = collection,
                 indicator = indicators_dict[collection['measures_indicator']],
                 database = databases_dict[collection['in_database']],

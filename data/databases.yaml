@@ -1,5 +1,6 @@
-- id: JRC
-  name: JRC
+- id: EDGAR
+  name: EDGAR
+  author: JRC
   description: Independent, global database  of anthropogenic emissions of greenhous gases
     and air pollution on Earth.
   database_link: https://edgar.jrc.ec.europa.eu

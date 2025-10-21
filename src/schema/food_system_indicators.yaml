@@ -104,11 +104,11 @@ classes:
               any_of:
                 - range: HorizontalThematicArea
 
-  IndicatorDataCollection:
+  IndicatorDataCollectionDetails:
     is_a: Entity
-    title: indicator data collection
+    title: indicator data collection details
     description: >-
-      Data collection indicator data.
+      Details on the collection of indicator data within a certain database/dataset.
     slots:
       - measures_indicator
       - in_database
@@ -233,7 +233,7 @@ slots:
   part_of_collection:
     title: part of collection
     is_a: node property
-    range: IndicatorDataCollection
+    range: IndicatorDataCollectionDetails
     required: true
     description:
       Data collection which this measurement is part of.

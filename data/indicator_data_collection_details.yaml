@@ -9,7 +9,7 @@
     database on GHG emissions from land use related to agriculture (FAO, 2020).
     Details regarding the methodology applied are available in Crippa et al.
     (2021).
-  in_database: JRC
+  in_database: EDGAR
   data_link: https://edgar.jrc.ec.europa.eu/datasets/EDGAR-FOOD_v6.xlsx
   oldest_datapoint: '1990'
   newest_datapoint: '2018'
