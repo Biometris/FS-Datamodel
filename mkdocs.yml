@@ -13,7 +13,7 @@ nav:
     - Indicator domains: domains_table.md
   - Indicator definitions: indicators_table.md
   - Indicator data:
-    - Data sources: indicator_datasources_table.md
+    - Data collections: indicator_data_collections_table.md
     - Databases: databases_table.md
   - Indicator selection:
     - Indicator criterion categories: CriterionCategory.md

@@ -9,7 +9,7 @@ class DataStore:
         schema_file: str,
         indicators_file: str,
         databases_file: str,
-        datasources_file: str,
+        indicator_data_collections_file: str,
         criteria_file: str,
         indicatorscores_file: str
     ):
@@ -23,7 +23,7 @@ class DataStore:
 
         # Add database data from yaml to db.             
         self.add_database_data(indicators_file, "Indicator", "Indicators")        
-        self.add_database_data(datasources_file, "IndicatorDataSource", "IndicatorDataSources")
+        self.add_database_data(indicator_data_collections_file, "IndicatorDataCollection", "IndicatorDataCollection")
         self.add_database_data(databases_file, "Database", "Databases")
         self.add_database_data(criteria_file, "IndicatorCriterion", "IndicatorCriteria")
         self.add_database_data(indicatorscores_file, "IndicatorcriteriaScore", "IndicatorCriteriaScores")
@@ -54,18 +54,18 @@ class DataStore:
                 valid = False
                 print(r.message)
 
-        # Validate cross-references between Databases and IndicatorDataSources
+        # Validate cross-references between Databases and IndicatorDataCollection
         database_collection = self.db.get_collection("Databases")
-        data_source_collection = self.db.get_collection("IndicatorDataSources")
+        data_source_collection = self.db.get_collection("IndicatorDataCollection")
         for data_collection in data_source_collection.rows_iter():
             database = data_collection.get("database")
             if database is not None and len(database.find({"id": data_source}).rows) == 0:
                 print(f"{database} specified in data collection {data_collection.ged("id")} is not in the collection of databases.")
                 valid = False
 
-        # Validate cross-references between Indicators and IndicatorDataSources
+        # Validate cross-references between Indicators and IndicatorDataCollection
         indicator_collection = self.db.get_collection("Indicators")
-        data_source_collection = self.db.get_collection("IndicatorDataSources")        
+        data_source_collection = self.db.get_collection("IndicatorDataCollection")        
         for data_source in data_source_collection.rows_iter():            
             indicator = data_source.get("measures_indicator")            
             if indicator is not None and len(indicator_collection.find({"id": indicator}).rows) == 0:
@@ -106,9 +106,9 @@ class DataStore:
         q = Query(from_table="Databases", limit=1000)
         return self.db.query(q).rows
 
-    def get_indicator_datasources(self):
-        """Return a joined view of indicator data sources"""
-        q = Query(from_table="IndicatorDataSources", limit=1000)
+    def get_indicator_indicator_data_collections(self):
+        """Return a joined view of indicator data collections"""
+        q = Query(from_table="IndicatorDataCollection", limit=1000)
         return self.db.query(q).rows
 
     def get_indicator_criteria(self):

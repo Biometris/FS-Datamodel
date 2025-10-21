@@ -5,7 +5,7 @@ hide:
 
 | Indicator | Database | Description | Time granularity | URL |
 |-----------|----------|-------------|------------------|-----|
-{% for datasource in datasources -%}
+{% for datasource in indicator_data_collections -%}
   {%- set database = datasource['in_database'] -%}
   {%- set indicator = indicators_dict[datasource['measures_indicator']]['name'] -%}
   {%- set description = datasource['description'] -%}

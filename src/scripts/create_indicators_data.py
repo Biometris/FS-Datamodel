@@ -115,7 +115,7 @@ if __name__ == "__main__":
     schema_path = "src/schema/food_system_indicators.yaml"
     indicator_data_path = "data/indicators.yaml"
     database_data_path = "data/databases.yaml"
-    datasource_data_path = "data/datasources.yaml"
+    indicator_data_collections_data_path = "data/indicator_data_collections.yaml"
     criterion_data_path = "data/criteria.yaml"
     indicatorscores_data_path = "data/indicatorscores.yaml"
 
@@ -124,7 +124,7 @@ if __name__ == "__main__":
         schema_file=schema_path,
         indicators_file=indicator_data_path,
         databases_file=database_data_path,
-        datasources_file=datasource_data_path,
+        indicator_data_collections_file=indicator_data_collections_data_path,
         criteria_file=criterion_data_path,
         indicatorscores_file=indicatorscores_data_path
     )
@@ -151,12 +151,12 @@ if __name__ == "__main__":
             databases = databases
         )
 
-        datasources = datastore.get_indicator_datasources()
+        indicator_data_collections = datastore.get_indicator_indicator_data_collections()
         indicators_dict = res = {i['id']: i for i in indicators}
         render_template(
-            template_name = 'indicator_datasources_table',
+            template_name = 'indicator_data_collections_table',
             indicators_dict = indicators_dict,
-            datasources = datasources
+            indicator_data_collections = indicator_data_collections
         )
 
         criteria = datastore.get_indicator_criteria()

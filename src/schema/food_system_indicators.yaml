@@ -44,46 +44,6 @@ classes:
       A specific sub-area within a thematic area that groups related indicators to measure a particular aspect of sustainability.
     class_uri: linkml:Any
 
-  Database:
-    is_a: Entity
-    title: database
-    description: >-
-      Database containing data corresponding to an indicator.
-    tree_root: true
-    slots:
-      - database_link
-      - update_frequency
-
-  IndicatorDataSource:
-    is_a: Entity
-    title: indicator data source
-    description: >-
-      Data source containing the indicator data.
-    slots:
-      - in_database
-      - data_link
-      - oldest_datapoint
-      - newest_datapoint
-      - time_granularity
-      - measures_indicator
-
-  IndicatorCriterion:
-    is_a: Entity
-    title: indicator criterion
-    description: Criterion used for indicator selection.
-    slots:
-      - category
-
-  IndicatorcriteriaScore:
-    title: indicator criterion score
-    description: Score for an indicator for an indicator selection criterion.
-    tree_root: true
-    slots:
-      - score_for_indicator
-      - scores_criterion
-      - score
-      - comment
-
   Indicator:
     is_a: Entity
     title: indicator
@@ -146,6 +106,28 @@ classes:
               any_of:
                 - range: HorizontalThematicArea
 
+  IndicatorDataCollection:
+    is_a: Entity
+    title: indicator data collection
+    description: >-
+      Data collection indicator data.
+    slots:
+      - in_database
+      - data_link
+      - oldest_datapoint
+      - newest_datapoint
+      - time_granularity
+      - measures_indicator
+
+  Database:
+    is_a: Entity
+    title: database
+    description: >-
+      Database containing data corresponding to an indicator.
+    slots:
+      - database_link
+      - update_frequency
+
   IndicatorDatapoint:
     is_a: QuantityValue
     title: indicator datapoint
@@ -153,22 +135,11 @@ classes:
       A food system indicator datapoint is a measured value or statistic that provides quantitative information for a specific sustainability indicator at a given time and place, used to track the performance or state of the food system.
     slots:
       - measurement_of
+      - part_of_collection
     slot_usage:
       id:
         description:
           Unique identifier of the datapoint.
-
-  IndicatorDatapointCollection:
-    title: indicator datapoint collection
-    description: >-
-      Collection of food system indicator datapoints.
-    tree_root: true
-    attributes:
-      indicator datapoints:
-        title: indicator datapoints
-        multivalued: true
-        inlined_as_list: true
-        range: IndicatorDatapoint
 
   QuantityValue:
     title: quantity value
@@ -178,6 +149,22 @@ classes:
     slots:
       - has unit
       - has numeric value
+
+  IndicatorCriterion:
+    is_a: Entity
+    title: indicator criterion
+    description: Criterion used for indicator selection.
+    slots:
+      - category
+
+  IndicatorcriteriaScore:
+    title: indicator criterion score
+    description: Score for an indicator for an indicator selection criterion.
+    slots:
+      - score_for_indicator
+      - scores_criterion
+      - score
+      - comment
 
 ## --------------------
 ## SLOTS
@@ -242,6 +229,14 @@ slots:
     required: true
     description:
       Indicator.
+
+  part_of_collection:
+    title: part of collection
+    is_a: node property
+    range: IndicatorDataCollection
+    required: true
+    description:
+      Data collection which this measurement is part of.
 
   measures_indicator:
     is_a: node property
