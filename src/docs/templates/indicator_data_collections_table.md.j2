@@ -3,13 +3,18 @@ hide:
   - toc
 ---
 
-| Indicator | Database | Description | Time granularity | URL |
-|-----------|----------|-------------|------------------|-----|
+| Name | Indicator | Database | Description | Time granularity | Spatial scope | Spatial resolution | Year oldest datapoint | Year latest datapoint | URL |
+|------|-----------|----------|-------------|------------------|---------------|--------------------|-----------------------|-----------------------|-----|
 {% for datasource in indicator_data_collections -%}
+  {%- set name = datasource['name'] -%}
   {%- set database = datasource['in_database'] -%}
   {%- set indicator = indicators_dict[datasource['measures_indicator']]['name'] -%}
   {%- set description = datasource['description'] -%}
   {%- set time_granularity = datasource['time_granularity'] -%}
+  {%- set spatial_granularity = datasource['spatial_granularity'] -%}
+  {%- set spatial_scope = datasource['spatial_scope'] -%}
+  {%- set oldest_datapoint = datasource['oldest_datapoint'] -%}
+  {%- set newest_datapoint = datasource['newest_datapoint'] -%}
   {%- set url = datasource['data_link'] -%}
-| {{ indicator }} | {{ database }} | {{ description }} | {{ time_granularity }} | [{{url}}]({{url}}) | 
+| {{ name }} | {{ indicator }} | {{ database }} | {{ description }} | {{ time_granularity }} | {{ spatial_scope }} | {{ spatial_granularity }} | {{ oldest_datapoint }} | {{ newest_datapoint }} | [[link]]({{url}}) | 
 {% endfor %}

@@ -12,9 +12,8 @@ nav:
     - Data model: index.md
     - Indicator domains: domains_table.md
   - Indicator definitions: indicators_table.md
-  - Indicator data:
-    - Data collections: indicator_data_collections_table.md
-    - Databases: databases_table.md
+  - Indicator data collections: indicator_data_collections_table.md
+  - Databases: databases_table.md
   - Indicator selection:
     - Indicator criterion categories: CriterionCategory.md
     - Indicator criteria: indicator_criteria_table.md

@@ -53,8 +53,6 @@ classes:
       - key_area
       - thematic_area
       - indicator_domain
-      - justification
-      - spatial_scope
       - granularity
       - supply_chain_component
       - measurement_unit
@@ -117,6 +115,8 @@ classes:
       - oldest_datapoint
       - newest_datapoint
       - time_granularity
+      - spatial_scope
+      - spatial_granularity
       - measures_indicator
 
   Database:
@@ -279,19 +279,12 @@ slots:
     narrow_mappings:
       - dct:title
 
-  spatial_scope:
-    title: spatial scope
-    description:
-      Reference to the spatial unit that the indicator describes.
-    required: true
-    range: SpatialScopeType
-
   granularity:
     title: granularity
     description:
       Reference to the granularity(ies) for which the indicator is measured.
     required: true
-    range: GranularityType
+    range: SpatialGranularity
     multivalued: true
 
   key_area:
@@ -324,12 +317,6 @@ slots:
       - range: EconomicDomain
       - range: SocialDomain
       - range: HorizontalDomain
-
-  justification:
-    title: justification of selection
-    description:
-      Justification for the selection of the indicator.
-    range: narrative_text
 
   supply_chain_component:
     title: supply chain component(s)
@@ -373,6 +360,18 @@ slots:
     description:
       Time granularity between the datapoints.
     range: TimeGranularity
+
+  spatial_granularity:
+    title: spatial resolution of the (collected) datapoints
+    description:
+      Spatial granularity/resolution of the datapoints.
+    range: SpatialGranularity
+
+  spatial_scope:
+    title: spatial scope of the data collection
+    description:
+      Spatial scope of the data collection.
+    range: SpatialScopeType
 
   update_frequency:
     title: frequency at which the data is updated
@@ -686,36 +685,6 @@ enums:
         description:
           Local.
 
-  GranularityType:
-    title: granularity type
-    description: >-
-      The granularity for which the indicator is measured.
-    permissible_values:
-      MacroRegions:
-        title: macro regions
-        description:
-          Macro regions
-      Countries:
-        title: countries
-        description:
-          Countries
-      NUTS1:
-        title: NUTS1
-        description:
-          First level administrative division of countries for statistical purposes.
-      NUTS2:
-        title: NUTS2
-        description:
-          Second level administrative division of countries for statistical purposes.
-      NUTS3:
-        title: NUTS3
-        description:
-          Third level administrative division of countries for statistical purposes.
-      LAU:
-        title: LAU
-        description:
-          Local administrative units
-
   SupplyChainComponentType:
     title: supply chain component type
     description: >-
@@ -758,6 +727,36 @@ enums:
       Other:
         description:
           Other.
+
+  SpatialGranularity:
+    title: spatial granularity
+    description: >-
+      The granularity for which the indicator is measured.
+    permissible_values:
+      MacroRegions:
+        title: macro regions
+        description: >-
+          Macro regions
+      Country:
+        title: country
+        description: >-
+          Measurements at the country level.
+      NUTS1:
+        title: NUTS1
+        description: >-
+          Measurements at NUTS1 level (i.e., the first level administrative division of countries for statistical purposes).
+      NUTS2:
+        title: NUTS2
+        description: >-
+          Measurements at NUTS2 level (i.e., the second level administrative division of countries for statistical purposes).
+      NUTS3:
+        title: NUTS3
+        description: >-
+          Measurements at NUTS2 level (i.e., the third level administrative division of countries for statistical purposes).
+      LAU:
+        title: LAU
+        description: >-
+          Local administrative units
 
   CriterionCategory:
     title: criterion category
