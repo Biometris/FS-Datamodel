@@ -57,12 +57,11 @@ class DataStore:
         # Validate cross-references between Databases and IndicatorDataSources
         database_collection = self.db.get_collection("Databases")
         data_source_collection = self.db.get_collection("IndicatorDataSources")
-        for database in database_collection.rows_iter():
-            data_sources = database.get("contains_indicator_data_source")
-            for data_source in data_sources:
-                if data_source is not None and len(data_source_collection.find({"id": data_source}).rows) == 0:
-                    print(data_source + " specified in database " + database.get("id") + " is not in the collection of datasources.")
-                    valid = False
+        for data_collection in data_source_collection.rows_iter():
+            database = data_collection.get("database")
+            if database is not None and len(database.find({"id": data_source}).rows) == 0:
+                print(f"{database} specified in data collection {data_collection.ged("id")} is not in the collection of databases.")
+                valid = False
 
         # Validate cross-references between Indicators and IndicatorDataSources
         indicator_collection = self.db.get_collection("Indicators")

@@ -1,5 +1,6 @@
 - id: JRC_GHGFoodSystemEmissions
   description: JRC GHG food system emissions.
+  in_database: JRC
   data_link: https://edgar.jrc.ec.europa.eu/datasets/EDGAR-FOOD_v6.xlsx
   oldest_datapoint: '1990'
   newest_datapoint: '2018'
@@ -7,6 +8,7 @@
   measures_indicator: GHGFoodSystemEmissions
 - id: ESTAT_UseAndRiskOfChemicalPesticides
   description: ESTAT Use and risk of chemical pesticides (F2F pesticide reduction target 1).
+  in_database: ESTAT
   data_link: >-
     https://food.ec.europa.eu/plants/pesticides/sustainable-use-pesticides/farm-fork-targets-progress/member-states-trends_en
   oldest_datapoint: '2011'
@@ -15,6 +17,7 @@
   measures_indicator: UseAndRiskOfChemicalPesticides
 - id: DG_SANTE_UseAndRiskOfChemicalPesticides
   description: DG SANTE Use and risk of chemical pesticides (F2F pesticide reduction target 1).
+  in_database: ESTAT
   data_link: >-
     https://food.ec.europa.eu/plants/pesticides/sustainable-use-pesticides/farm-fork-targets-progress/member-states-trends_en
   oldest_datapoint: '2011'
@@ -23,6 +26,7 @@
   measures_indicator: UseAndRiskOfChemicalPesticides
 - id: FAO_PercentAffordHealthyDiet
   description: FAO Percent of the population who cannot afford a healthy diet.
+  in_database: FAO
   data_link: 'https://www.fao.org/faostat/en/#data/CAHD'
   oldest_datapoint: '2017'
   newest_datapoint: '2022'
@@ -30,6 +34,7 @@
   measures_indicator: PercentAffordHealthyDiet
 - id: FAO_PrevalenceFoodInsecurity
   description: FAO Prevalence of moderate or severe food insecurity in the population.
+  in_database: FAO
   data_link: 'https://www.fao.org/faostat/en/#data/FS'
   oldest_datapoint: '2015'
   newest_datapoint: '2021'
@@ -37,6 +42,7 @@
   measures_indicator: PrevalenceFoodInsecurity
 - id: DG_AGRI_FarmersIncomeRelative
   description: DG AGRI Farmers income in agriculture compared to wages in the rest of the economy.
+  in_database: DG AGRI
   data_link: >-
     https://agridata.ec.europa.eu/extensions/DashboardIndicators/JobsGrowth.html
   oldest_datapoint: '1995'
@@ -45,6 +51,7 @@
   measures_indicator: FarmersIncomeRelative
 - id: ESTAT_FarmersIncomeRelative
   description: ESTAT Farmers income in agriculture compared to wages in the rest of the economy.
+  in_database: ESTAT
   data_link: >-
     https://agridata.ec.europa.eu/extensions/DashboardIndicators/JobsGrowth.html
   oldest_datapoint: '1995'
@@ -53,6 +60,7 @@
   measures_indicator: FarmersIncomeRelative
 - id: EEA_WaterExploitationIndex
   description: EEA Water exploitation index, plus (WEI+).
+  in_database: EEA
   data_link: >-
     https://ec.europa.eu/eurostat/databrowser/view/sdg_06_60/default/table?lang=en
   oldest_datapoint: '2000'
@@ -61,6 +69,7 @@
   measures_indicator: WaterExploitationIndex
 - id: ESTAT_WaterExploitationIndex
   description: ESTAT Water exploitation index, plus (WEI+).
+  in_database: ESTAT
   data_link: >-
     https://ec.europa.eu/eurostat/databrowser/view/sdg_06_60/default/table?lang=en
   oldest_datapoint: '2000'
@@ -69,6 +78,7 @@
   measures_indicator: WaterExploitationIndex
 - id: ESTAT_GrossNutrientBalanceNitrogen
   description: ESTAT Gross nutrient balance - nitrogen.
+  in_database: ESTAT
   data_link: >-
     https://ec.europa.eu/eurostat/databrowser/view/AEI_PR_GNB/default/table?lang=en&category=agr.aei.aei_nut
   oldest_datapoint: '1985'

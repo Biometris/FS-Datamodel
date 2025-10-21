@@ -6,7 +6,7 @@ hide:
 | Indicator | Database | Description | Time granularity | URL |
 |-----------|----------|-------------|------------------|-----|
 {% for datasource in datasources -%}
-  {%- set database = 'TODO' -%}
+  {%- set database = datasource['in_database'] -%}
   {%- set indicator = indicators_dict[datasource['measures_indicator']]['name'] -%}
   {%- set description = datasource['description'] -%}
   {%- set time_granularity = datasource['time_granularity'] -%}

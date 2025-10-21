@@ -50,27 +50,27 @@ classes:
     description: >-
       Database containing data corresponding to an indicator.
     tree_root: true
-    slots:        
+    slots:
       - database_link
       - update_frequency
-      - contains_indicator_data_source
 
   IndicatorDataSource:
     is_a: Entity
     title: indicator data source
     description: >-
-      Data source containing the indicator data.    
+      Data source containing the indicator data.
     slots:
+      - in_database
       - data_link
       - oldest_datapoint
       - newest_datapoint
-      - time_granularity      
+      - time_granularity
       - measures_indicator
 
   IndicatorCriterion:
-    is_a: Entity    
+    is_a: Entity
     title: indicator criterion
-    description: Criterion used for indicator selection.    
+    description: Criterion used for indicator selection.
     slots:
       - category
 
@@ -89,23 +89,23 @@ classes:
     title: indicator
     description: >-
       A quantitative measure used to assess the state, performance, or progress of a specific aspect of the food system in relation to sustainability objectives.
-    slots:      
+    slots:
       - key_area
       - thematic_area
       - indicator_domain
       - justification
       - spatial_scope
-      - granularity      
+      - granularity
       - supply_chain_component
-      - measurement_unit      
-    slot_usage:    
-      id:        
+      - measurement_unit
+    slot_usage:
+      id:
         description:
           Unique identifier of the indicator.
-      name:        
+      name:
         description:
           Denomination of the indicator.
-      description:        
+      description:
         description:
           Concise text that provides the meaning of the identifier.
     rules:
@@ -115,7 +115,7 @@ classes:
               equals_string: environmental
         postconditions:
           slot_conditions:
-            thematic_area: 
+            thematic_area:
               any_of:
                 - range: EnvironmentalThematicArea
       - preconditions:
@@ -123,8 +123,8 @@ classes:
             key_area:
               equals_string: economic
         postconditions:
-          slot_conditions:        
-            thematic_area: 
+          slot_conditions:
+            thematic_area:
               any_of:
                 - range: EconomicThematicArea
       - preconditions:
@@ -133,7 +133,7 @@ classes:
               equals_string: social
         postconditions:
           slot_conditions:
-            thematic_area: 
+            thematic_area:
               any_of:
                 - range: SocialThematicArea
       - preconditions:
@@ -142,7 +142,7 @@ classes:
               equals_string: horizontal
         postconditions:
           slot_conditions:
-            thematic_area: 
+            thematic_area:
               any_of:
                 - range: HorizontalThematicArea
 
@@ -154,12 +154,12 @@ classes:
     slots:
       - measurement_of
     slot_usage:
-      id:        
+      id:
         description:
           Unique identifier of the datapoint.
 
   IndicatorDatapointCollection:
-    title: indicator datapoint collection 
+    title: indicator datapoint collection
     description: >-
       Collection of food system indicator datapoints.
     tree_root: true
@@ -243,21 +243,20 @@ slots:
     description:
       Indicator.
 
-  contains_indicator_data_source:
-    title: contains indicator data source
-    description:
-      Indicator data source.
-    is_a: node property
-    range: IndicatorDataSource
-    required: true
-    multivalued: true
-
   measures_indicator:
     is_a: node property
     title: measures indicator
     description:
       Indicator.
     range: Indicator
+    required: true
+
+  in_database:
+    is_a: node property
+    title: in database
+    description:
+      Specifies the database which the entity is part of.
+    range: Database
     required: true
 
   score_for_indicator:
@@ -290,7 +289,7 @@ slots:
     description:
       Reference to the spatial unit that the indicator describes.
     required: true
-    range: SpatialScopeType    
+    range: SpatialScopeType
 
   granularity:
     title: granularity
@@ -305,7 +304,7 @@ slots:
     description:
       Reference to the thematic area that the indicator belongs to.
     required: true
-    range: SustainabilityDimension    
+    range: SustainabilityDimension
 
   thematic_area:
     title: thematic area
@@ -333,7 +332,7 @@ slots:
 
   justification:
     title: justification of selection
-    description: 
+    description:
       Justification for the selection of the indicator.
     range: narrative_text
 
@@ -385,7 +384,7 @@ slots:
     description:
       Frequency at which the data is updated.
     range: TimeGranularity
-  
+
   category:
     title: category
     description: category for the indicator selection criterion.
@@ -395,7 +394,7 @@ slots:
     title: score
     description: score for an indicator selection criterion for an indicator.
     range: ScoreCategory
-       
+
 ## --------------------
 ## TYPES
 ## --------------------
@@ -456,7 +455,7 @@ enums:
 
   EnvironmentalThematicArea:
     title: environmental thematic area
-    description: >- 
+    description: >-
       Thematic areas defined for the enviromental sustainability dimension.
     permissible_values:
       ClimateChange:
@@ -477,7 +476,7 @@ enums:
 
   EconomicThematicArea:
     title: economic thematic area
-    description: >- 
+    description: >-
       Thematic areas defined for the economic sustainability dimension.
     permissible_values:
       FairEconomicViabilityInFoodValueChain:
@@ -569,7 +568,7 @@ enums:
         title: sectorial growth
         description:
           sectorial growth.
-      MarketPowerAndBusinessStructure:      
+      MarketPowerAndBusinessStructure:
         title: market power and business structure
         description:
           market power and business structure.
@@ -691,7 +690,7 @@ enums:
         title: local
         description:
           Local.
-  
+
   GranularityType:
     title: granularity type
     description: >-
@@ -703,9 +702,9 @@ enums:
           Macro regions
       Countries:
         title: countries
-        description: 
-          Countries      
-      NUTS1:    
+        description:
+          Countries
+      NUTS1:
         title: NUTS1
         description:
           First level administrative division of countries for statistical purposes.
@@ -751,9 +750,9 @@ enums:
     permissible_values:
       EveryTwoYears:
         description:
-          Every 2 years.      
+          Every 2 years.
       Yearly:
-        description: 
+        description:
           Yearly.
       Monthly:
         description:
@@ -789,7 +788,7 @@ enums:
     title: score category
     description: Score category.
     permissible_values:
-      VeryPoor:        
+      VeryPoor:
         description:
           Very poor.
       Poor:
