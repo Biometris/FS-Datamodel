@@ -16,13 +16,6 @@
             "additionalProperties": false,
             "description": "Database containing data corresponding to an indicator.",
             "properties": {
-                "contains_indicator_data_source": {
-                    "description": "Indicator data source.",
-                    "items": {
-                        "type": "string"
-                    },
-                    "type": "array"
-                },
                 "database_link": {
                     "description": "Link to the database",
                     "type": [
@@ -61,7 +54,6 @@
                 }
             },
             "required": [
-                "contains_indicator_data_source",
                 "id"
             ],
             "title": "Database",
@@ -129,19 +121,6 @@
                 "CrossCuttingAreas"
             ],
             "title": "EnvironmentalThematicArea",
-            "type": "string"
-        },
-        "GranularityType": {
-            "description": "The granularity for which the indicator is measured.",
-            "enum": [
-                "MacroRegions",
-                "Countries",
-                "NUTS1",
-                "NUTS2",
-                "NUTS3",
-                "LAU"
-            ],
-            "title": "GranularityType",
             "type": "string"
         },
         "HorizontalDomain": {
@@ -288,7 +267,7 @@
                 "granularity": {
                     "description": "Reference to the granularity(ies) for which the indicator is measured.",
                     "items": {
-                        "$ref": "#/$defs/GranularityType"
+                        "$ref": "#/$defs/SpatialGranularity"
                     },
                     "type": "array"
                 },
@@ -321,13 +300,6 @@
                         "null"
                     ]
                 },
-                "justification": {
-                    "description": "Justification for the selection of the indicator.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
                 "key_area": {
                     "$ref": "#/$defs/SustainabilityDimension",
                     "description": "Reference to the thematic area that the indicator belongs to."
@@ -345,10 +317,6 @@
                         "string",
                         "null"
                     ]
-                },
-                "spatial_scope": {
-                    "$ref": "#/$defs/SpatialScopeType",
-                    "description": "Reference to the spatial unit that the indicator describes."
                 },
                 "supply_chain_component": {
                     "description": "Reference to the supply chain component(s) for which the indicator is relevant.",
@@ -383,7 +351,6 @@
                 "key_area",
                 "thematic_area",
                 "indicator_domain",
-                "spatial_scope",
                 "granularity",
                 "id"
             ],
@@ -430,9 +397,9 @@
             "title": "IndicatorCriterion",
             "type": "object"
         },
-        "IndicatorDataSource": {
+        "IndicatorDataCollectionDetails": {
             "additionalProperties": false,
-            "description": "Data source containing the indicator data.",
+            "description": "Details on the collection of indicator data within a certain database/dataset.",
             "properties": {
                 "data_link": {
                     "description": "Link to the data for the indicator",
@@ -450,6 +417,10 @@
                 },
                 "id": {
                     "description": "A unique identifier for an entity.",
+                    "type": "string"
+                },
+                "in_database": {
+                    "description": "Specifies the database which the entity is part of.",
                     "type": "string"
                 },
                 "iri": {
@@ -484,6 +455,14 @@
                         "null"
                     ]
                 },
+                "spatial_granularity": {
+                    "$ref": "#/$defs/SpatialGranularity",
+                    "description": "Spatial granularity/resolution of the datapoints."
+                },
+                "spatial_scope": {
+                    "$ref": "#/$defs/SpatialScopeType",
+                    "description": "Spatial scope of the data collection."
+                },
                 "time_granularity": {
                     "$ref": "#/$defs/TimeGranularity",
                     "description": "Time granularity between the datapoints."
@@ -491,9 +470,10 @@
             },
             "required": [
                 "measures_indicator",
+                "in_database",
                 "id"
             ],
-            "title": "IndicatorDataSource",
+            "title": "IndicatorDataCollectionDetails",
             "type": "object"
         },
         "IndicatorDatapoint": {
@@ -542,30 +522,18 @@
                         "string",
                         "null"
                     ]
+                },
+                "part_of_collection": {
+                    "description": "Data collection which this measurement is part of.",
+                    "type": "string"
                 }
             },
             "required": [
                 "measurement_of",
+                "part_of_collection",
                 "id"
             ],
             "title": "IndicatorDatapoint",
-            "type": "object"
-        },
-        "IndicatorDatapointCollection": {
-            "additionalProperties": false,
-            "description": "Collection of food system indicator datapoints.",
-            "properties": {
-                "indicator_datapoints": {
-                    "items": {
-                        "$ref": "#/$defs/IndicatorDatapoint"
-                    },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
-                }
-            },
-            "title": "IndicatorDatapointCollection",
             "type": "object"
         },
         "IndicatorcriteriaScore": {
@@ -687,6 +655,19 @@
             "title": "SocialThematicArea",
             "type": "string"
         },
+        "SpatialGranularity": {
+            "description": "The granularity for which the indicator is measured.",
+            "enum": [
+                "MacroRegions",
+                "Country",
+                "NUTS1",
+                "NUTS2",
+                "NUTS3",
+                "LAU"
+            ],
+            "title": "SpatialGranularity",
+            "type": "string"
+        },
         "SpatialScopeType": {
             "description": "The spatial scope for which the indicator is defined.",
             "enum": [
@@ -749,57 +730,7 @@
     "$id": "https://w3id.org/linkml/examples/fsi",
     "$schema": "https://json-schema.org/draft/2019-09/schema",
     "additionalProperties": true,
-    "description": "Database containing data corresponding to an indicator.",
     "metamodel_version": "1.7.0",
-    "properties": {
-        "contains_indicator_data_source": {
-            "description": "Indicator data source.",
-            "items": {
-                "type": "string"
-            },
-            "type": "array"
-        },
-        "database_link": {
-            "description": "Link to the database",
-            "type": [
-                "string",
-                "null"
-            ]
-        },
-        "description": {
-            "description": "A human-readable description of an entity.",
-            "type": [
-                "string",
-                "null"
-            ]
-        },
-        "id": {
-            "description": "A unique identifier for an entity.",
-            "type": "string"
-        },
-        "iri": {
-            "description": "An IRI for an entity. This is determined by the id using expansion rules.",
-            "type": [
-                "string",
-                "null"
-            ]
-        },
-        "name": {
-            "description": "A human-readable name for an attribute or entity.",
-            "type": [
-                "string",
-                "null"
-            ]
-        },
-        "update_frequency": {
-            "$ref": "#/$defs/TimeGranularity",
-            "description": "Frequency at which the data is updated."
-        }
-    },
-    "required": [
-        "contains_indicator_data_source",
-        "id"
-    ],
     "title": "food_system_indicators",
     "type": "object",
     "version": null

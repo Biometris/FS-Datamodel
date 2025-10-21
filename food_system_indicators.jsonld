@@ -752,45 +752,6 @@
       ]
     },
     {
-      "name": "GranularityType",
-      "definition_uri": "https://w3id.org/linkml/examples/fsiGranularityType",
-      "description": "The granularity for which the indicator is measured.",
-      "title": "granularity type",
-      "from_schema": "https://w3id.org/linkml/examples/fsi",
-      "permissible_values": [
-        {
-          "text": "MacroRegions",
-          "description": "Macro regions",
-          "title": "macro regions"
-        },
-        {
-          "text": "Countries",
-          "description": "Countries",
-          "title": "countries"
-        },
-        {
-          "text": "NUTS1",
-          "description": "First level administrative division of countries for statistical purposes.",
-          "title": "NUTS1"
-        },
-        {
-          "text": "NUTS2",
-          "description": "Second level administrative division of countries for statistical purposes.",
-          "title": "NUTS2"
-        },
-        {
-          "text": "NUTS3",
-          "description": "Third level administrative division of countries for statistical purposes.",
-          "title": "NUTS3"
-        },
-        {
-          "text": "LAU",
-          "description": "Local administrative units",
-          "title": "LAU"
-        }
-      ]
-    },
-    {
       "name": "SupplyChainComponentType",
       "definition_uri": "https://w3id.org/linkml/examples/fsiSupplyChainComponentType",
       "description": "The supply chain component for which the indicator is relevant.",
@@ -845,6 +806,45 @@
         {
           "text": "Other",
           "description": "Other."
+        }
+      ]
+    },
+    {
+      "name": "SpatialGranularity",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiSpatialGranularity",
+      "description": "The granularity for which the indicator is measured.",
+      "title": "spatial granularity",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "permissible_values": [
+        {
+          "text": "MacroRegions",
+          "description": "Macro regions",
+          "title": "macro regions"
+        },
+        {
+          "text": "Country",
+          "description": "Measurements at the country level.",
+          "title": "country"
+        },
+        {
+          "text": "NUTS1",
+          "description": "Measurements at NUTS1 level (i.e., the first level administrative division of countries for statistical purposes).",
+          "title": "NUTS1"
+        },
+        {
+          "text": "NUTS2",
+          "description": "Measurements at NUTS2 level (i.e., the second level administrative division of countries for statistical purposes).",
+          "title": "NUTS2"
+        },
+        {
+          "text": "NUTS3",
+          "description": "Measurements at NUTS2 level (i.e., the third level administrative division of countries for statistical purposes).",
+          "title": "NUTS3"
+        },
+        {
+          "text": "LAU",
+          "description": "Local administrative units",
+          "title": "LAU"
         }
       ]
     },
@@ -1037,21 +1037,20 @@
       "@type": "SlotDefinition"
     },
     {
-      "name": "contains_indicator_data_source",
-      "definition_uri": "https://w3id.org/linkml/examples/fsicontains_indicator_data_source",
-      "description": "Indicator data source.",
-      "title": "contains indicator data source",
+      "name": "part_of_collection",
+      "definition_uri": "https://w3id.org/linkml/examples/fsipart_of_collection",
+      "description": "Data collection which this measurement is part of.",
+      "title": "part of collection",
       "from_schema": "https://w3id.org/linkml/examples/fsi",
       "is_a": "node_property",
       "domain": "Entity",
-      "slot_uri": "https://w3id.org/linkml/examples/fsicontains_indicator_data_source",
-      "owner": "Database",
+      "slot_uri": "https://w3id.org/linkml/examples/fsipart_of_collection",
+      "owner": "IndicatorDatapoint",
       "domain_of": [
-        "Database"
+        "IndicatorDatapoint"
       ],
-      "range": "IndicatorDataSource",
+      "range": "IndicatorDataCollectionDetails",
       "required": true,
-      "multivalued": true,
       "@type": "SlotDefinition"
     },
     {
@@ -1063,11 +1062,28 @@
       "is_a": "node_property",
       "domain": "Entity",
       "slot_uri": "https://w3id.org/linkml/examples/fsimeasures_indicator",
-      "owner": "IndicatorDataSource",
+      "owner": "IndicatorDataCollectionDetails",
       "domain_of": [
-        "IndicatorDataSource"
+        "IndicatorDataCollectionDetails"
       ],
       "range": "Indicator",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "in_database",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiin_database",
+      "description": "Specifies the database which the entity is part of.",
+      "title": "in database",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "is_a": "node_property",
+      "domain": "Entity",
+      "slot_uri": "https://w3id.org/linkml/examples/fsiin_database",
+      "owner": "IndicatorDataCollectionDetails",
+      "domain_of": [
+        "IndicatorDataCollectionDetails"
+      ],
+      "range": "Database",
       "required": true,
       "@type": "SlotDefinition"
     },
@@ -1130,21 +1146,6 @@
       "@type": "SlotDefinition"
     },
     {
-      "name": "spatial_scope",
-      "definition_uri": "https://w3id.org/linkml/examples/fsispatial_scope",
-      "description": "Reference to the spatial unit that the indicator describes.",
-      "title": "spatial scope",
-      "from_schema": "https://w3id.org/linkml/examples/fsi",
-      "slot_uri": "https://w3id.org/linkml/examples/fsispatial_scope",
-      "owner": "Indicator",
-      "domain_of": [
-        "Indicator"
-      ],
-      "range": "SpatialScopeType",
-      "required": true,
-      "@type": "SlotDefinition"
-    },
-    {
       "name": "granularity",
       "definition_uri": "https://w3id.org/linkml/examples/fsigranularity",
       "description": "Reference to the granularity(ies) for which the indicator is measured.",
@@ -1155,7 +1156,7 @@
       "domain_of": [
         "Indicator"
       ],
-      "range": "GranularityType",
+      "range": "SpatialGranularity",
       "required": true,
       "multivalued": true,
       "@type": "SlotDefinition"
@@ -1244,20 +1245,6 @@
       "@type": "SlotDefinition"
     },
     {
-      "name": "justification",
-      "definition_uri": "https://w3id.org/linkml/examples/fsijustification",
-      "description": "Justification for the selection of the indicator.",
-      "title": "justification of selection",
-      "from_schema": "https://w3id.org/linkml/examples/fsi",
-      "slot_uri": "https://w3id.org/linkml/examples/fsijustification",
-      "owner": "Indicator",
-      "domain_of": [
-        "Indicator"
-      ],
-      "range": "narrative_text",
-      "@type": "SlotDefinition"
-    },
-    {
       "name": "supply_chain_component",
       "definition_uri": "https://w3id.org/linkml/examples/fsisupply_chain_component",
       "description": "Reference to the supply chain component(s) for which the indicator is relevant.",
@@ -1293,9 +1280,9 @@
       "title": "data link",
       "from_schema": "https://w3id.org/linkml/examples/fsi",
       "slot_uri": "https://w3id.org/linkml/examples/fsidata_link",
-      "owner": "IndicatorDataSource",
+      "owner": "IndicatorDataCollectionDetails",
       "domain_of": [
-        "IndicatorDataSource"
+        "IndicatorDataCollectionDetails"
       ],
       "range": "iri_type",
       "@type": "SlotDefinition"
@@ -1321,9 +1308,9 @@
       "title": "oldest datapoint",
       "from_schema": "https://w3id.org/linkml/examples/fsi",
       "slot_uri": "https://w3id.org/linkml/examples/fsioldest_datapoint",
-      "owner": "IndicatorDataSource",
+      "owner": "IndicatorDataCollectionDetails",
       "domain_of": [
-        "IndicatorDataSource"
+        "IndicatorDataCollectionDetails"
       ],
       "range": "date_or_datetime",
       "@type": "SlotDefinition"
@@ -1335,9 +1322,9 @@
       "title": "newest datapoint",
       "from_schema": "https://w3id.org/linkml/examples/fsi",
       "slot_uri": "https://w3id.org/linkml/examples/fsinewest_datapoint",
-      "owner": "IndicatorDataSource",
+      "owner": "IndicatorDataCollectionDetails",
       "domain_of": [
-        "IndicatorDataSource"
+        "IndicatorDataCollectionDetails"
       ],
       "range": "date_or_datetime",
       "@type": "SlotDefinition"
@@ -1349,11 +1336,39 @@
       "title": "time granularity between the datapoints.",
       "from_schema": "https://w3id.org/linkml/examples/fsi",
       "slot_uri": "https://w3id.org/linkml/examples/fsitime_granularity",
-      "owner": "IndicatorDataSource",
+      "owner": "IndicatorDataCollectionDetails",
       "domain_of": [
-        "IndicatorDataSource"
+        "IndicatorDataCollectionDetails"
       ],
       "range": "TimeGranularity",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "spatial_granularity",
+      "definition_uri": "https://w3id.org/linkml/examples/fsispatial_granularity",
+      "description": "Spatial granularity/resolution of the datapoints.",
+      "title": "spatial resolution of the (collected) datapoints",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "slot_uri": "https://w3id.org/linkml/examples/fsispatial_granularity",
+      "owner": "IndicatorDataCollectionDetails",
+      "domain_of": [
+        "IndicatorDataCollectionDetails"
+      ],
+      "range": "SpatialGranularity",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "spatial_scope",
+      "definition_uri": "https://w3id.org/linkml/examples/fsispatial_scope",
+      "description": "Spatial scope of the data collection.",
+      "title": "spatial scope of the data collection",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "slot_uri": "https://w3id.org/linkml/examples/fsispatial_scope",
+      "owner": "IndicatorDataCollectionDetails",
+      "domain_of": [
+        "IndicatorDataCollectionDetails"
+      ],
+      "range": "SpatialScopeType",
       "@type": "SlotDefinition"
     },
     {
@@ -1396,22 +1411,6 @@
         "IndicatorcriteriaScore"
       ],
       "range": "ScoreCategory",
-      "@type": "SlotDefinition"
-    },
-    {
-      "name": "indicatorDatapointCollection__indicator_datapoints",
-      "title": "indicator datapoints",
-      "from_schema": "https://w3id.org/linkml/examples/fsi",
-      "slot_uri": "https://w3id.org/linkml/examples/fsiindicator_datapoints",
-      "alias": "indicator_datapoints",
-      "owner": "IndicatorDatapointCollection",
-      "domain_of": [
-        "IndicatorDatapointCollection"
-      ],
-      "range": "IndicatorDatapoint",
-      "multivalued": true,
-      "inlined": true,
-      "inlined_as_list": true,
       "@type": "SlotDefinition"
     },
     {
@@ -1558,84 +1557,6 @@
       "@type": "ClassDefinition"
     },
     {
-      "name": "Database",
-      "definition_uri": "https://w3id.org/linkml/examples/fsiDatabase",
-      "description": "Database containing data corresponding to an indicator.",
-      "title": "database",
-      "from_schema": "https://w3id.org/linkml/examples/fsi",
-      "is_a": "Entity",
-      "slots": [
-        "id",
-        "iri",
-        "name",
-        "description",
-        "database_link",
-        "update_frequency",
-        "contains_indicator_data_source"
-      ],
-      "slot_usage": {},
-      "class_uri": "https://w3id.org/linkml/examples/fsiDatabase",
-      "tree_root": true,
-      "@type": "ClassDefinition"
-    },
-    {
-      "name": "IndicatorDataSource",
-      "definition_uri": "https://w3id.org/linkml/examples/fsiIndicatorDataSource",
-      "description": "Data source containing the indicator data.    ",
-      "title": "indicator data source",
-      "from_schema": "https://w3id.org/linkml/examples/fsi",
-      "is_a": "Entity",
-      "slots": [
-        "id",
-        "iri",
-        "name",
-        "description",
-        "data_link",
-        "oldest_datapoint",
-        "newest_datapoint",
-        "time_granularity",
-        "measures_indicator"
-      ],
-      "slot_usage": {},
-      "class_uri": "https://w3id.org/linkml/examples/fsiIndicatorDataSource",
-      "@type": "ClassDefinition"
-    },
-    {
-      "name": "IndicatorCriterion",
-      "definition_uri": "https://w3id.org/linkml/examples/fsiIndicatorCriterion",
-      "description": "Criterion used for indicator selection.",
-      "title": "indicator criterion",
-      "from_schema": "https://w3id.org/linkml/examples/fsi",
-      "is_a": "Entity",
-      "slots": [
-        "id",
-        "iri",
-        "name",
-        "description",
-        "category"
-      ],
-      "slot_usage": {},
-      "class_uri": "https://w3id.org/linkml/examples/fsiIndicatorCriterion",
-      "@type": "ClassDefinition"
-    },
-    {
-      "name": "IndicatorcriteriaScore",
-      "definition_uri": "https://w3id.org/linkml/examples/fsiIndicatorcriteriaScore",
-      "description": "Score for an indicator for an indicator selection criterion.",
-      "title": "indicator criterion score",
-      "from_schema": "https://w3id.org/linkml/examples/fsi",
-      "slots": [
-        "score_for_indicator",
-        "scores_criterion",
-        "score",
-        "comment"
-      ],
-      "slot_usage": {},
-      "class_uri": "https://w3id.org/linkml/examples/fsiIndicatorcriteriaScore",
-      "tree_root": true,
-      "@type": "ClassDefinition"
-    },
-    {
       "name": "Indicator",
       "definition_uri": "https://w3id.org/linkml/examples/fsiIndicator",
       "description": "A quantitative measure used to assess the state, performance, or progress of a specific aspect of the food system in relation to sustainability objectives.",
@@ -1647,8 +1568,6 @@
         "key_area",
         "thematic_area",
         "indicator_domain",
-        "justification",
-        "spatial_scope",
         "granularity",
         "supply_chain_component",
         "measurement_unit",
@@ -1775,6 +1694,50 @@
       "@type": "ClassDefinition"
     },
     {
+      "name": "IndicatorDataCollectionDetails",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiIndicatorDataCollectionDetails",
+      "description": "Details on the collection of indicator data within a certain database/dataset.",
+      "title": "indicator data collection details",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "is_a": "Entity",
+      "slots": [
+        "id",
+        "iri",
+        "name",
+        "description",
+        "measures_indicator",
+        "in_database",
+        "oldest_datapoint",
+        "newest_datapoint",
+        "time_granularity",
+        "spatial_scope",
+        "spatial_granularity",
+        "data_link"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/linkml/examples/fsiIndicatorDataCollectionDetails",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Database",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiDatabase",
+      "description": "Database containing data corresponding to an indicator.",
+      "title": "database",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "is_a": "Entity",
+      "slots": [
+        "id",
+        "iri",
+        "name",
+        "description",
+        "database_link",
+        "update_frequency"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/linkml/examples/fsiDatabase",
+      "@type": "ClassDefinition"
+    },
+    {
       "name": "IndicatorDatapoint",
       "definition_uri": "https://w3id.org/linkml/examples/fsiIndicatorDatapoint",
       "description": "A food system indicator datapoint is a measured value or statistic that provides quantitative information for a specific sustainability indicator at a given time and place, used to track the performance or state of the food system.",
@@ -1788,34 +1751,11 @@
         "has_unit",
         "has_numeric_value",
         "measurement_of",
+        "part_of_collection",
         "IndicatorDatapoint_id"
       ],
       "slot_usage": {},
       "class_uri": "https://w3id.org/linkml/examples/fsiIndicatorDatapoint",
-      "@type": "ClassDefinition"
-    },
-    {
-      "name": "IndicatorDatapointCollection",
-      "definition_uri": "https://w3id.org/linkml/examples/fsiIndicatorDatapointCollection",
-      "description": "Collection of food system indicator datapoints.",
-      "title": "indicator datapoint collection",
-      "from_schema": "https://w3id.org/linkml/examples/fsi",
-      "slots": [
-        "indicatorDatapointCollection__indicator_datapoints"
-      ],
-      "slot_usage": {},
-      "attributes": [
-        {
-          "name": "indicator_datapoints",
-          "title": "indicator datapoints",
-          "range": "IndicatorDatapoint",
-          "multivalued": true,
-          "inlined_as_list": true,
-          "@type": "SlotDefinition"
-        }
-      ],
-      "class_uri": "https://w3id.org/linkml/examples/fsiIndicatorDatapointCollection",
-      "tree_root": true,
       "@type": "ClassDefinition"
     },
     {
@@ -1836,13 +1776,47 @@
       "slot_usage": {},
       "class_uri": "https://w3id.org/linkml/examples/fsiQuantityValue",
       "@type": "ClassDefinition"
+    },
+    {
+      "name": "IndicatorCriterion",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiIndicatorCriterion",
+      "description": "Criterion used for indicator selection.",
+      "title": "indicator criterion",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "is_a": "Entity",
+      "slots": [
+        "id",
+        "iri",
+        "name",
+        "description",
+        "category"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/linkml/examples/fsiIndicatorCriterion",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "IndicatorcriteriaScore",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiIndicatorcriteriaScore",
+      "description": "Score for an indicator for an indicator selection criterion.",
+      "title": "indicator criterion score",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "slots": [
+        "score_for_indicator",
+        "scores_criterion",
+        "score",
+        "comment"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/linkml/examples/fsiIndicatorcriteriaScore",
+      "@type": "ClassDefinition"
     }
   ],
   "metamodel_version": "1.7.0",
   "source_file": "food_system_indicators.yaml",
-  "source_file_date": "2025-10-20T15:14:08",
-  "source_file_size": 22364,
-  "generation_date": "2025-10-20T15:14:53",
+  "source_file_date": "2025-10-21T15:26:10",
+  "source_file_size": 22263,
+  "generation_date": "2025-10-21T15:26:55",
   "@type": "SchemaDefinition",
   "@context": [
     "project/jsonld/food_system_indicators.context.jsonld",

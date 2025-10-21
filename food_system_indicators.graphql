@@ -48,16 +48,6 @@ enum EnvironmentalThematicArea
     CrossCuttingAreas
   }
 
-enum GranularityType
-  {
-    MacroRegions
-    Countries
-    NUTS1
-    NUTS2
-    NUTS3
-    LAU
-  }
-
 enum HorizontalDomain
   {
     StrategicPlanningAndPolicies
@@ -103,6 +93,16 @@ enum SocialThematicArea
     NutritionAndHealth
   }
 
+enum SpatialGranularity
+  {
+    MacroRegions
+    Country
+    NUTS1
+    NUTS2
+    NUTS3
+    LAU
+  }
+
 enum SpatialScopeType
   {
     Global
@@ -145,7 +145,6 @@ type Database
     description: NarrativeText
     databaseLink: IriType
     updateFrequency: TimeGranularity
-    containsIndicatorDataSource: [IndicatorDataSource]!
   }
 
 type Domain
@@ -166,9 +165,7 @@ type Indicator
     keyArea: SustainabilityDimension!
     thematicArea: ThematicArea!
     indicatorDomain: Domain!
-    justification: NarrativeText
-    spatialScope: SpatialScopeType!
-    granularity: [GranularityType]!
+    granularity: [SpatialGranularity]!
     supplyChainComponent: [SupplyChainComponentType]
     measurementUnit: Unit
     id: String!
@@ -193,6 +190,22 @@ type IndicatorCriterion
     category: CriterionCategory
   }
 
+type IndicatorDataCollectionDetails
+  {
+    id: String!
+    iri: IriType
+    name: LabelType
+    description: NarrativeText
+    measuresIndicator: Indicator!
+    inDatabase: Database!
+    oldestDatapoint: DateOrDatetime
+    newestDatapoint: DateOrDatetime
+    timeGranularity: TimeGranularity
+    spatialScope: SpatialScopeType
+    spatialGranularity: SpatialGranularity
+    dataLink: IriType
+  }
+
 type IndicatorDatapoint
   {
     iri: IriType
@@ -201,25 +214,8 @@ type IndicatorDatapoint
     hasUnit: Unit
     hasNumericValue: Double
     measurementOf: Indicator!
+    partOfCollection: IndicatorDataCollectionDetails!
     id: String!
-  }
-
-type IndicatorDatapointCollection
-  {
-    indicatorDatapoints: [IndicatorDatapoint]
-  }
-
-type IndicatorDataSource
-  {
-    id: String!
-    iri: IriType
-    name: LabelType
-    description: NarrativeText
-    dataLink: IriType
-    oldestDatapoint: DateOrDatetime
-    newestDatapoint: DateOrDatetime
-    timeGranularity: TimeGranularity
-    measuresIndicator: Indicator!
   }
 
 type QuantityValue
