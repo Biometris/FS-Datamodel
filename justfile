@@ -92,7 +92,7 @@ _gendoc: _ensure_docdir
 
     cp -r {{src}}/docs/files/* {{docdir}}
     cp -r data/* {{docdir}}/data
-    gen-doc {{gen_doc_args}} -d {{docdir}} --template-directory {{templatedir}} {{source_schema_path}}
+    gen-doc {{gen_doc_args}} -d {{docdir}}/model --template-directory {{templatedir}} {{source_schema_path}}
 
 _ensure_docdir:
     -mkdir -p {{docdir}}
