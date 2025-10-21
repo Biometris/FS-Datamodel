@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 import json
 from jinja2 import Environment, FileSystemLoader
@@ -98,7 +99,7 @@ def render_template(
     **kwargs
 ):
     # Out file
-    output_file = f"docs/{template_name}.md"
+    output_file = kwargs.get('output_file') if 'output_file' in kwargs else f"docs/{template_name}.md"
 
     # Point to templates folder
     env = Environment(loader=FileSystemLoader("./src/docs/templates"))
@@ -108,6 +109,7 @@ def render_template(
     markdown_output = template.render(**kwargs)
 
     # Save to file
+    os.makedirs(os.path.dirname(output_file), exist_ok=True)
     with open(output_file, "w") as f:
         f.write(markdown_output)
 
@@ -134,6 +136,7 @@ if __name__ == "__main__":
 
         # Get indicators and create hierarchy JSON and table
         indicators = datastore.get_indicators()
+        indicators_dict = res = {i['id']: i for i in indicators}
         enum_dict = datastore.create_enum_dict()
         create_indicator_hiearchy_json(indicators)
         create_supply_chain_indicator_hiearchy_json(indicators)
@@ -144,20 +147,38 @@ if __name__ == "__main__":
             enum_dict = enum_dict
         )
 
+        for indicator in indicators:
+            render_template(
+                template_name = 'indicator_details',
+                output_file = f"docs/indicators/{indicator['id']}.md",
+                indicator = indicator,
+                enum_dict = enum_dict
+            )
+
         # Get database and create output table.
         databases = datastore.get_databases()
+        databases_dict = res = {d['id']: d for d in databases}
         render_template(
             template_name = 'databases_table',
             databases = databases
         )
 
         indicator_data_collections = datastore.get_indicator_indicator_data_collections()
-        indicators_dict = res = {i['id']: i for i in indicators}
         render_template(
             template_name = 'indicator_data_collections_table',
             indicators_dict = indicators_dict,
             indicator_data_collections = indicator_data_collections
         )
+
+        for collection in indicator_data_collections:
+            render_template(
+                template_name = 'indicator_data_collection_details',
+                output_file = f"docs/indicator_data_collections/{collection['id']}.md",
+                collection = collection,
+                indicator = indicators_dict[collection['measures_indicator']],
+                database = databases_dict[collection['in_database']],
+                enum_dict = enum_dict
+            )
 
         criteria = datastore.get_indicator_criteria()
         render_template(
@@ -178,5 +199,3 @@ if __name__ == "__main__":
             domains = domains,
             enum_dict = enum_dict
         )
-
-

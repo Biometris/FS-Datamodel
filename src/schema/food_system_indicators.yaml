@@ -110,14 +110,14 @@ classes:
     description: >-
       Data collection indicator data.
     slots:
+      - measures_indicator
       - in_database
-      - data_link
       - oldest_datapoint
       - newest_datapoint
       - time_granularity
       - spatial_scope
       - spatial_granularity
-      - measures_indicator
+      - data_link
 
   Database:
     is_a: Entity

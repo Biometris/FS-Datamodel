@@ -68,7 +68,7 @@
   measures_indicator: PrevalenceFoodInsecurity
 - id: DG_AGRI_FarmersIncomeRelative
   description: DG AGRI Farmers income in agriculture compared to wages in the rest of the economy.
-  in_database: DG AGRI
+  in_database: DG_AGRI
   data_link: >-
     https://agridata.ec.europa.eu/extensions/DashboardIndicators/JobsGrowth.html
   oldest_datapoint: '1995'
@@ -78,6 +78,7 @@
   spatial_scope: Eu
   measures_indicator: FarmersIncomeRelative
 - id: ESTAT_FarmersIncomeRelative
+  name: ESTAT relative farmers income
   description:
     It is based on data from the economic accounts for agriculture provided by Eurostat for the agricultural sector of the EU as a whole and of individual Member States.
     ESTAT Farmers income in agriculture compared to wages in the rest of the economy.
@@ -91,7 +92,9 @@
   spatial_scope: Eu
   measures_indicator: FarmersIncomeRelative
 - id: EEA_WaterExploitationIndex
-  description: EEA Water exploitation index, plus (WEI+).
+  name: EEA Water exploitation index, plus (WEI+).
+  description: >-
+    Water exploitation index, plus (WEI+) data collected by EEA.
   in_database: EEA
   data_link: >-
     https://ec.europa.eu/eurostat/databrowser/view/sdg_06_60/default/table?lang=en
@@ -100,6 +103,7 @@
   time_granularity: Yearly
   measures_indicator: WaterExploitationIndex
 - id: ESTAT_WaterExploitationIndex
+  name: ESTAT Water Exploitation Index, plus (WEI+).
   description: ESTAT Water exploitation index, plus (WEI+).
   in_database: ESTAT
   data_link: >-
@@ -111,7 +115,8 @@
   spatial_scope: Eu
   measures_indicator: WaterExploitationIndex
 - id: ESTAT_GrossNutrientBalanceNitrogen
-  description: ESTAT Gross nutrient balance - nitrogen.
+  name: ESTAT Gross nutrient balance (nitrogen).
+  description: ESTAT Gross nutrient balance (nitrogen).
   in_database: ESTAT
   data_link: >-
     https://ec.europa.eu/eurostat/databrowser/view/AEI_PR_GNB/default/table?lang=en&category=agr.aei.aei_nut

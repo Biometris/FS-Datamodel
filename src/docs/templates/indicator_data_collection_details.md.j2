@@ -1,0 +1,20 @@
+---
+hide:
+  - toc
+---
+
+# Data collection details - {{ collection['name'] }}
+
+{{ collection['description'] }}
+
+**Link:** [{{collection['data_link']}}]({{collection['data_link']}})
+
+| Key | Value |
+|-----|-------|
+| Database  | [{{database['name']}}](../indicators/{{database['id']}})  |
+| Indicator | [{{indicator['name']}}](../indicators/{{indicator['id']}}) |
+| Spatial granularity | {{ collection['spatial_granularity'] }} |
+| Spatial scope | {{ collection['spatial_scope'] }} |
+| Time granularity | {{ collection['spatial_granularity'] }} |
+| Year oldest datapoint | {{ collection['oldest_datapoint'] }} |
+| Year newest datapoint | {{ collection['newest_datapoint'] }} |
