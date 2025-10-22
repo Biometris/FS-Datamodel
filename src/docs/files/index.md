@@ -1,6 +1,6 @@
 # FutureFoods Food Systems Data Model
 
-Aim is to create a harmonised data model.
+The aim is to establish a harmonised data model for structured collection of metadata on Food Systems indicators.
 
 ## Supply chain component hierarchy tree
 
@@ -16,7 +16,7 @@ Aim is to create a harmonised data model.
   var chartDom = document.getElementById('indicators-sunburst-chart');
   var sunburstChart = echarts.init(chartDom);
 
-  fetch("../data/indicators_sunburst_chart_data.json")
+  fetch("data/indicators_sunburst_chart_data.json")
     .then(r => r.json())
     .then(data => {
       var option = {
@@ -109,7 +109,7 @@ Aim is to create a harmonised data model.
   var chartDom = document.getElementById('indicators-tree-chart');
   var treeChart = echarts.init(chartDom);
 
-  fetch("../data/indicators_supply_chain_chart_data.json")
+  fetch("data/indicators_supply_chain_chart_data.json")
     .then(r => r.json())
     .then(data => {
       var option = {

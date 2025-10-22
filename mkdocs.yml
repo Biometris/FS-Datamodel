@@ -7,9 +7,10 @@ plugins:
   - search
   - mermaid2
 nav:
-  - Home: home.md
+  - Home: index.md
   - Data model:
-    - Data model: model/index.md
+    - Diagram: model/model_diagram.md
+    - Glossary: model/glossary.md
     - Indicator domains: domains_table.md
   - Indicator definitions: indicators_table.md
   - Indicator data collection details: indicator_data_collection_details_table.md

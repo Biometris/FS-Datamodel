@@ -3,6 +3,8 @@ from pathlib import Path
 import json
 from jinja2 import Environment, FileSystemLoader
 
+from linkml.generators.docgen import DocGenerator, SchemaView, DiagramType
+
 from indicator_datastore import DataStore
 
 def create_indicator_hiearchy_json(indicators):
@@ -20,14 +22,14 @@ def create_indicator_hiearchy_json(indicators):
         if e['indicator_domain'] not in hierarchy[e['key_area']][e['thematic_area']]:
             hierarchy[e['key_area']][e['thematic_area']][e['indicator_domain']] = []
         hierarchy[e['key_area']][e['thematic_area']][e['indicator_domain']].append(e)
-       
+
     # Convert hierarchy
     sunburst_data = []
     for key_area, thematic_groups in hierarchy.items():
         key_area_node = {"name": key_area, "children": []}
         for thematic_area_id, domain_groups in thematic_groups.items():
             thematic_node = {
-                "name": thematic_area_id, 
+                "name": thematic_area_id,
                 "children": []
             }
             for domain_group_id, ents in domain_groups.items():
@@ -36,7 +38,7 @@ def create_indicator_hiearchy_json(indicators):
                     "children": [{"name": ent['name'], "value": 1} for ent in ents]
                 }
                 thematic_node["children"].append(domain_node)
-            
+
             key_area_node["children"].append(thematic_node)
         sunburst_data.append(key_area_node)
 
@@ -48,7 +50,7 @@ def create_indicator_hiearchy_json(indicators):
     Path(outfile_path_tree).write_text(json.dumps(tree_data, indent=2))
 
 def create_supply_chain_indicator_hiearchy_json(indicators):
-    # Output file    
+    # Output file
     outfile_path = "docs/data/indicators_supply_chain_chart_data.json"
 
     # Build hierarchy
@@ -58,20 +60,20 @@ def create_supply_chain_indicator_hiearchy_json(indicators):
             if s not in hierarchy:
                 hierarchy[s] = []
             hierarchy[s].append(e)
-       
+
     # Convert hierarchy
     tree_data = {"name": "Supply chain component", "children": []}
     for component, ents in hierarchy.items():
         component_node = {
-            "name": component, 
+            "name": component,
             "children": [{"name": ent['name'], "value": 1} for ent in ents]
-        }        
-        tree_data["children"].append(component_node)    
+        }
+        tree_data["children"].append(component_node)
 
     # Save JSON for reuse
     Path(outfile_path).write_text(json.dumps(tree_data, indent=2))
 
-         
+
 def create_indicator_scores_data_json(criteriascores):
 
     # Output file
@@ -81,13 +83,13 @@ def create_indicator_scores_data_json(criteriascores):
                      "Good": 4,
                      "Moderate": 3,
                      "Poor": 2,
-                     "VeryPoor": 1}   
-   
+                     "VeryPoor": 1}
+
     chart_data = []
-    for score in criteriascores:        
+    for score in criteriascores:
         score_point = [score.get("scores_criterion"),
                        score.get("score_for_indicator"),
-                       score_mapping.get(score.get("score"))]   
+                       score_mapping.get(score.get("score"))]
         chart_data.append(score_point)
 
     # Save JSON for reuse
@@ -110,7 +112,7 @@ def render_template(
 
     # Save to file
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
-    with open(output_file, "w") as f:
+    with open(output_file, "w", encoding="utf-8") as f:
         f.write(markdown_output)
 
 if __name__ == "__main__":
@@ -129,6 +131,33 @@ if __name__ == "__main__":
         indicator_data_collection_details_file=indicator_data_collection_details_data_path,
         criteria_file=criterion_data_path,
         indicatorscores_file=indicatorscores_data_path
+    )
+
+    # Generate model diagram
+    doc_gen = DocGenerator(schema_path, importmap={})
+    doc_gen.diagram_type = DiagramType.er_diagram
+    diagram_classes = [
+        'Indicator',
+        'IndicatorDataCollectionDetails',
+        'Database',
+        'IndicatorDatapoint',
+        'IndicatorCriterion',
+        'IndicatorcriteriaScore'
+    ]
+    render_template(
+        template_name = 'model_diagram',
+        schema = SchemaView(schema_path),
+        output_file = f"docs/model/model_diagram.md",
+        gen = doc_gen,
+        classes = diagram_classes
+    )
+
+    # Glossary
+    render_template(
+        template_name = 'glossary',
+        output_file = f"docs/model/glossary.md",
+        schema = SchemaView(schema_path),
+        gen = doc_gen
     )
 
     # Validate database content.

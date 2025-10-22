@@ -1,0 +1,12 @@
+| Name | Description | Type |
+{% for c in schema.all_classes().values()|sort(attribute='name') -%}
+{%- if 'association' not in schema.class_ancestors(c.name) and not schema.is_mixin(c.name) -%}
+{%- if c.name not in ["Any", "Entity" ] -%}
+|  --- | --- | --- |
+| {{ gen._markdown_link(gen.name(c), c.title | capitalize, "") }} | {{c.description}} | Class |
+{%- endif -%}
+{%- endif -%}
+{% endfor %}
+{% for e in schema.all_enums().values()|sort(attribute='name') -%}
+| {{ gen._markdown_link(e.name, e.title | capitalize, "") }} | {{e.description}} | Enum |
+{% endfor %}

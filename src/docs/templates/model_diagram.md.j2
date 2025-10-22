@@ -1,0 +1,15 @@
+{{ schema.description }}
+
+```{{ gen.mermaid_directive() }}
+{{ gen.mermaid_diagram(class_names=classes) }}
+```
+
+| Name | Description |
+{% for c in schema.all_classes().values()|sort(attribute='name') -%}
+{%- if 'association' not in schema.class_ancestors(c.name) and not schema.is_mixin(c.name) -%}
+{%- if c.name in classes -%}
+|  --- | --- |
+| {{ gen._markdown_link(gen.name(c), c.title | capitalize, "") }} | {{c.description}} |
+{%- endif -%}
+{%- endif -%}
+{% endfor %}
