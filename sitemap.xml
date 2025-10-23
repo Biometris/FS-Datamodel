@@ -2,462 +2,462 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/databases_table/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/domains_table/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_criteria_table/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details_table/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_scores/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators_table/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/databases/DG_AGRI/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/databases/DG_SANTE/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/databases/EDGAR/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/databases/EEA/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/databases/ESTAT/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/databases/FAO/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/DG_AGRI_FarmersIncomeRelative/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/DG_SANTE_UseAndRiskOfChemicalPesticides/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/EEA_WaterExploitationIndex/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/ESTAT_FarmersIncomeRelative/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/ESTAT_GrossNutrientBalanceNitrogen/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/ESTAT_UseAndRiskOfChemicalPesticides/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/ESTAT_WaterExploitationIndex/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/FAO_PercentAffordHealthyDiet/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/FAO_PrevalenceFoodInsecurity/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/JRC_GHGFoodSystemEmissions/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/FarmersIncomeRelative/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/GHGFoodSystemEmissions/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/GrossNutrientBalanceNitrogen/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/PercentAffordHealthyDiet/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/PrevalenceFoodInsecurity/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/SalesOfAntimicrobialsForFoodProducingAnimals/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/UseAndRiskOfChemicalPesticides/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/UseOfTheMoreHazardousPesticides/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/WaterExploitationIndex/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/WaterQualityNitratesInGroundwater/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Boolean/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/CriterionCategory/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Curie/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Database/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Date/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/DateOrDatetime/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Datetime/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Decimal/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Domain/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Double/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/EconomicDomain/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/EconomicThematicArea/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Entity/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/EnvironmentalDomain/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/EnvironmentalThematicArea/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Float/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/HorizontalDomain/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/HorizontalThematicArea/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Indicator/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/IndicatorCriterion/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/IndicatorDataCollectionDetails/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/IndicatorDatapoint/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/IndicatorcriteriaScore/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Integer/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/IriType/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Jsonpath/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Jsonpointer/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/LabelType/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/NarrativeText/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Ncname/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Nodeidentifier/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Objectidentifier/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/QuantityValue/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/ScoreCategory/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/SocialDomain/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/SocialThematicArea/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Sparqlpath/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/SpatialGranularity/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/SpatialScopeType/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/String/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/SupplyChainComponentType/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/SustainabilityDimension/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/ThematicArea/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Time/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/TimeGranularity/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Unit/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Uri/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Uriorcurie/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/category/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/comment/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/data_link/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/database_link/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/description/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/food_system_indicators/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/glossary/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/granularity/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/has_numeric_value/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/has_unit/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/id/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/in_database/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/indicator_domain/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/iri/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/key_area/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/measurement_of/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/measurement_unit/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/measures_indicator/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/model_diagram/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/name/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/newest_datapoint/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/node_property/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/oldest_datapoint/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/part_of_collection/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/score/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/score_for_indicator/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/scores_criterion/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/spatial_granularity/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/spatial_scope/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/supply_chain_component/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/thematic_area/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/time_granularity/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/update_frequency/</loc>
-         <lastmod>2025-10-22</lastmod>
+         <lastmod>2025-10-23</lastmod>
     </url>
 </urlset>
