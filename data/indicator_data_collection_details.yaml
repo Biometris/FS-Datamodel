@@ -67,7 +67,9 @@
   spatial_granularity: Country
   measures_indicator: PrevalenceFoodInsecurity
 - id: DG_AGRI_FarmersIncomeRelative
-  description: DG AGRI Farmers income in agriculture compared to wages in the rest of the economy.
+  name: DG AGRI Farmers income in agriculture compared to wages in the rest of the economy.
+  description: >-
+    Data on farmers income in agriculture compared to wages in the rest of the economy collected by DG AGRI.
   in_database: DG_AGRI
   data_link: >-
     https://agridata.ec.europa.eu/extensions/DashboardIndicators/JobsGrowth.html
