@@ -1,0 +1,5 @@
+| Sustainability Dimension | Category | 
+|------|---------------------------|
+{% for c in domains -%}
+| [{{ enum_dict['SustainabilityDimension'][c['dimension']] }}](../model/SustainabilityDimension) | {{ c['has_category'] }} |
+{% endfor %}

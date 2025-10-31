@@ -8,5 +8,6 @@ hide:
 {% for c in databases -%}
   {%- set name = c['name'] -%}
   {%- set id = c['id'] -%}
-| [{{name}}](../databases/{{id}}) | {{ c.get("description").replace("\n", "") }} | [{{ c.get("database_link") }}]({{ c.get("database_link") }}) |
+  {%- set description = c.get("description") -%}  
+| [{{name}}](../databases/{{id}}) | {{ description.replace("\n", "") if description else description }} | [{{ c.get("database_link") }}]({{ c.get("database_link") }}) |
 {% endfor %}

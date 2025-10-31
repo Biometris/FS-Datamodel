@@ -121,13 +121,13 @@ class DataStore:
         q = Query(from_table="IndicatorCriteriaScores", limit=1000)
         return self.db.query(q).rows
     
-    def get_domains(self):
-        """Return a joined view of indicator domains"""
+    def get_dimensions(self):
+        """Return a joined view of indicator dimensions"""
         q = Query(from_table="Indicators",
-                  select_cols=["key_area", "thematic_area", "indicator_domain"])
+                  select_cols=["dimension", "has_category"], limit=1000)
         
-        domains = [dict(s) for s in set(frozenset(d.items()) for d in self.db.query(q).rows)]
-        sorted_domains = sorted(domains, key=lambda i: (i["key_area"], i["thematic_area"], i["indicator_domain"]))
+        dimensions = [dict(s) for s in set(frozenset(d.items()) for d in self.db.query(q).rows)]
+        sorted_dimensions = sorted(dimensions, key=lambda i: (i["dimension"], i["has_category"]))
                         
-        return sorted_domains
+        return sorted_dimensions
     

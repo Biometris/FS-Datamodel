@@ -1,5 +1,0 @@
-| Sustainability Dimension | Thematic Area | Domain |
-|------|---------------------------|---------------------------|
-{% for c in domains -%}
-| [{{ enum_dict['SustainabilityDimension'][c['key_area']] }}](../model/SustainabilityDimension) | [{{ enum_dict['ThematicArea'][c['thematic_area']] }}](../model/{{ c['key_area'] }}ThematicArea) | [{{ enum_dict['Domain'][c['indicator_domain']] }}](../model/{{ c['key_area'] }}Domain) | 
-{% endfor %}

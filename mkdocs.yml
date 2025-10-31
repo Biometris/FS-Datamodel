@@ -11,7 +11,7 @@ nav:
   - Data model:
     - Diagram: model/model_diagram.md
     - Glossary: model/glossary.md
-    - Indicator domains: domains_table.md
+    - Indicator dimensions: dimensions_table.md
   - Indicator definitions: indicators_table.md
   - Indicator data collection details: indicator_data_collection_details_table.md
   - Indicator databases: databases_table.md

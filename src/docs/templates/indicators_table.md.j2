@@ -3,15 +3,14 @@ hide:
   - toc
 ---
 
-| Name | Unit | Description | Sustainability Dimensions | Thematic Area | Domain | Supply chain components |
-|------|------|-------------|---------------------------|---------------|--------| ----------------------- |
+| Name | Unit | Description | Sustainability Dimensions | Category | Supply chain components |
+|------|------|-------------|---------------------------|----------| ----------------------- |
 {% for indicator in indicators -%}
   {%- set id = indicator['id'] -%}
   {%- set name = indicator['name'] -%}
-  {%- set description = indicator['description'].replace("\n", "") -%}
+  {%- set description = indicator['description'] -%}
   {%- set unit = indicator['measurement_unit'] -%}
-  {%- set key_area = enum_dict['SustainabilityDimension'][indicator['key_area']] -%}
-  {%- set thematic_area = enum_dict['ThematicArea'][indicator['thematic_area']] -%}
-  {%- set domain = enum_dict['Domain'][indicator['indicator_domain']] -%}
-| [{{name}}](../indicators/{{id}}) | {{unit}} | {{ description }} | [{{ key_area }}](../SustainabilityDimension) | [{{ thematic_area }}](../{{ indicator['key_area'] }}ThematicArea) | [{{ domain }}](../{{ indicator['key_area'] }}Domain) | {% for scp in indicator['supply_chain_component'] %} [{{ enum_dict['SupplyChainComponentType'][scp] }}](../SupplyChainComponentType) {% endfor %} |
+  {%- set dimension = enum_dict['SustainabilityDimension'][indicator['dimension']] -%}
+  {%- set category = indicator['has_category'] -%}
+| [{{name}}](../indicators/{{id}}) | {{unit}} | {{ description.replace("\n", "") if description else description }} | [{{ dimension }}](../model/SustainabilityDimension) | {{ category }} | {% for scp in indicator['supply_chain_component'] %} [{{ enum_dict['SupplyChainComponentType'][scp] }}](../SupplyChainComponentType) {% endfor %} |
 {% endfor %}

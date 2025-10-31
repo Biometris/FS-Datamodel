@@ -15,35 +15,26 @@ def create_indicator_hiearchy_json(indicators):
     # Build hierarchy
     hierarchy = {}
     for e in indicators:
-        if e['key_area'] not in hierarchy:
-            hierarchy[e['key_area']] = {}
-        if e['thematic_area'] not in hierarchy[e['key_area']]:
-            hierarchy[e['key_area']][e['thematic_area']] = {}
-        if e['indicator_domain'] not in hierarchy[e['key_area']][e['thematic_area']]:
-            hierarchy[e['key_area']][e['thematic_area']][e['indicator_domain']] = []
-        hierarchy[e['key_area']][e['thematic_area']][e['indicator_domain']].append(e)
+        if e['dimension'] not in hierarchy:
+            hierarchy[e['dimension']] = {}
+        if e['has_category'] not in hierarchy[e['dimension']]:
+            hierarchy[e['dimension']][e['has_category']] = []
+        hierarchy[e['dimension']][e['has_category']].append(e)    
 
     # Convert hierarchy
     sunburst_data = []
-    for key_area, thematic_groups in hierarchy.items():
-        key_area_node = {"name": key_area, "children": []}
-        for thematic_area_id, domain_groups in thematic_groups.items():
-            thematic_node = {
-                "name": thematic_area_id,
-                "children": []
-            }
-            for domain_group_id, ents in domain_groups.items():
-                domain_node = {
-                    "name": domain_group_id,
-                    "children": [{"name": ent['name'], "value": 1} for ent in ents]
-                }
-                thematic_node["children"].append(domain_node)
-
-            key_area_node["children"].append(thematic_node)
-        sunburst_data.append(key_area_node)
+    for dimension, categories in hierarchy.items():
+        dimension_node = {"name": dimension, "children": []}
+        for category_id, ents in categories.items():
+             category_node = {
+                 "name": category_id,
+                 "children": [{"name": ent['name'], "value": 1} for ent in ents]
+                 }
+             dimension_node["children"].append(category_node)
+        sunburst_data.append(dimension_node)
 
     # Tree data requires base node
-    tree_data = {"name": "JRC hierarchy", "children": sunburst_data}
+    tree_data = {"name": "Indicator hierarchy", "children": sunburst_data}
 
     # Save JSON for reuse
     Path(outfile_path_sunburst).write_text(json.dumps(sunburst_data, indent=2))
@@ -117,9 +108,9 @@ def render_template(
 
 if __name__ == "__main__":
     schema_path = "src/schema/food_system_indicators.yaml"
-    indicator_data_path = "data/indicators.yaml"
-    database_data_path = "data/databases.yaml"
-    indicator_data_collection_details_data_path = "data/indicator_data_collection_details.yaml"
+    indicator_data_path = "data/t511_indicators.yaml"
+    database_data_path = "data/t511_databases.yaml"
+    indicator_data_collection_details_data_path = "data/t511_indicator_data_collection_details.yaml"
     criterion_data_path = "data/criteria.yaml"
     indicatorscores_data_path = "data/indicatorscores.yaml"
 
@@ -138,6 +129,7 @@ if __name__ == "__main__":
     doc_gen.diagram_type = DiagramType.er_diagram
     diagram_classes = [
         'Indicator',
+        'IndicatorCategory',
         'IndicatorDataCollectionDetails',
         'Database',
         'IndicatorDatapoint',
@@ -236,9 +228,9 @@ if __name__ == "__main__":
             template_name = 'indicator_scores'
         )
 
-        domains = datastore.get_domains()
+        domains = datastore.get_dimensions()
         render_template(
-            template_name = 'domains_table',
+            template_name = 'dimensions_table',
             domains = domains,
             enum_dict = enum_dict
         )

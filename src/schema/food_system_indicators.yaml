@@ -32,21 +32,21 @@ classes:
       - name
       - description  
 
-  Category:
+  IndicatorCategory:
     is_a: Entity
-    title: category
+    title: indicator category
     description:
-      The category indicator belongs to.
+      The category the indicator belongs to.
     slot_usage:
       id:
         description:
-          Unique identifier of the category.
+          Unique identifier of the indicator category.
       name:
         description:
-          Denomination of the category.
+          Denomination of the indicator category.
       description:
         description:
-          Concise text that provides the meaning of the category.
+          Concise text that provides the meaning of the indicator category.
 
   Indicator:
     is_a: Entity
@@ -58,7 +58,7 @@ classes:
       - granularity
       - supply_chain_component
       - measurement_unit
-      - indicator_category
+      - has_category
     slot_usage:
       id:
         description:
@@ -220,12 +220,12 @@ slots:
     range: Database
     required: true
 
-  indicator_category:
+  has_category:
     is_a: node property
     title: indicator category
     description: 
       Specifies the category for the indicator.
-    range: Category
+    range: IndicatorCategory
     required: true
 
   score_for_indicator:
@@ -380,7 +380,7 @@ enums:
     description: >-
       A core pillar of sustainability (environment, society, economy, or health) that groups indicators to evaluate different aspects of sustainable development within the food system.
     permissible_values:
-      Environmental:
+      Environment:
         title: environment
         description:
           Sustainability dimension that focuses on the state and management of natural resources and ecosystems, including aspects such as climate, biodiversity, pollution, and resource efficiency, to ensure the food system operates within ecological limits.
@@ -392,7 +392,7 @@ enums:
         title: society
         description:
           Sustainability dimension that focuses on human well-being, equity, and societal outcomes within the food system, including aspects such as health, nutrition, fairness, labor conditions, and access to resources.
-      Horizontal:
+      Health:
         title: health
         description:
           Sustainability dimension that focucus on ... . 
@@ -428,7 +428,7 @@ enums:
     description: >-
       The supply chain component for which the indicator is relevant.
     permissible_values:
-      PrimaryFoodProduction:
+      PrimaryProduction:
         title: primary food production
         description:
           Primary food production.
@@ -436,14 +436,22 @@ enums:
         title: food processing
         description:
           Food processing.
-      FoodDistribution:
-        title: food distribution
+      Consumption:
+        title: consumption
         description:
-          Food distribution.
-      FoodConsumption:
-        title: food consumption
+          Consumption.
+      Retail:
+        title: retail
         description:
-          Food consumption.
+          Retail.
+      Transport:
+        title: transport
+        description:
+          Transport.
+      DisposalRecycling:
+        title: disposal & recycling
+        description:
+          Disposal and recycling.
 
   TimeGranularity:
     title: time granularity

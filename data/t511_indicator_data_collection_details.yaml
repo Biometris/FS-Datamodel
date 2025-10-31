@@ -1,0 +1,130 @@
+- id: JRC_GHGFoodSystemEmissions
+  name: JRC GHG food system emissions
+  description: >-
+    EDGAR-FOOD has been developed to aid the understanding of the activities
+    underlying the energy demand and use, agriculture and land use change
+    emissions associated with the production, distribution, consumption and
+    disposal of food through the various stages and sectors of the composite
+    global food system. These data were complemented with data from the FAOSTAT
+    database on GHG emissions from land use related to agriculture (FAO, 2020).
+    Details regarding the methodology applied are available in Crippa et al.
+    (2021).
+  in_database: Eurostat
+  data_link: https://edgar.jrc.ec.europa.eu/datasets/EDGAR-FOOD_v6.xlsx
+  oldest_datapoint: '1990'
+  newest_datapoint: '2018'
+  time_granularity: Yearly
+  spatial_granularity: Country
+  spatial_scope: Global
+  measures_indicator: AgriculturalRealFactorIncomePerAnnualWorkUnitAwuSdg0220
+- id: ESTAT_UseAndRiskOfChemicalPesticides
+  name: ESTAT Use and risk of chemical pesticides
+  description: >-
+    Data on use and risk of chemical pesticides collected by Eurostat.
+  in_database: Eurostat
+  data_link: >-
+    https://food.ec.europa.eu/plants/pesticides/sustainable-use-pesticides/farm-fork-targets-progress/member-states-trends_en
+  oldest_datapoint: '2011'
+  newest_datapoint: '2022'
+  time_granularity: Yearly
+  spatial_granularity: Country
+  spatial_scope: Eu
+  measures_indicator: AgriculturalRealFactorIncomePerAnnualWorkUnitAwuSdg0220
+- id: DG_SANTE_UseAndRiskOfChemicalPesticides
+  name: DG SANTE Use and risk of chemical pesticides
+  description: >-
+    Data on use and risk of chemical pesticides collected by DG SANTE.
+  in_database: Eurostat
+  data_link: >-
+    https://food.ec.europa.eu/plants/pesticides/sustainable-use-pesticides/farm-fork-targets-progress/member-states-trends_en
+  oldest_datapoint: '2011'
+  newest_datapoint: '2022'
+  time_granularity: Yearly
+  spatial_granularity: Country
+  spatial_scope: Eu
+  measures_indicator: AgriculturalRealFactorIncomePerAnnualWorkUnitAwuSdg0220
+- id: FAO_PercentAffordHealthyDiet
+  name: FAO Percent of the population who cannot afford a healthy diet
+  description: >-
+    Data on percent of the population who cannot afford a healthy diet collected by FAO.
+  in_database: Eurostat
+  data_link: 'https://www.fao.org/faostat/en/#data/CAHD'
+  oldest_datapoint: '2017'
+  newest_datapoint: '2022'
+  time_granularity: Yearly
+  spatial_granularity: Country
+  spatial_scope: Global
+  measures_indicator: AgriculturalRealFactorIncomePerAnnualWorkUnitAwuSdg0220
+- id: FAO_PrevalenceFoodInsecurity
+  name: FAO Prevalence of moderate or severe food insecurity in the population
+  description: >-
+    Data on prevalence of moderate or severe food insecurity in the population collected by FAO.
+  in_database: Eurostat
+  data_link: 'https://www.fao.org/faostat/en/#data/FS'
+  oldest_datapoint: '2015'
+  newest_datapoint: '2021'
+  time_granularity: Yearly
+  spatial_granularity: Country
+  measures_indicator: AgriculturalRealFactorIncomePerAnnualWorkUnitAwuSdg0220
+- id: DG_AGRI_FarmersIncomeRelative
+  name: DG AGRI Farmers income in agriculture compared to wages in the rest of the economy.
+  description: >-
+    Data on farmers income in agriculture compared to wages in the rest of the economy collected by DG AGRI.
+  in_database: Eurostat
+  data_link: >-
+    https://agridata.ec.europa.eu/extensions/DashboardIndicators/JobsGrowth.html
+  oldest_datapoint: '1995'
+  newest_datapoint: '2023'
+  time_granularity: Yearly
+  spatial_granularity: Country
+  spatial_scope: Eu
+  measures_indicator: AgriculturalRealFactorIncomePerAnnualWorkUnitAwuSdg0220
+- id: ESTAT_FarmersIncomeRelative
+  name: ESTAT relative farmers income
+  description:
+    It is based on data from the economic accounts for agriculture provided by Eurostat for the agricultural sector of the EU as a whole and of individual Member States.
+    ESTAT Farmers income in agriculture compared to wages in the rest of the economy.
+  in_database: Eurostat
+  data_link: >-
+    https://agridata.ec.europa.eu/extensions/DashboardIndicators/JobsGrowth.html
+  oldest_datapoint: '1995'
+  newest_datapoint: '2023'
+  time_granularity: Yearly
+  spatial_granularity: Country
+  spatial_scope: Eu
+  measures_indicator: AgriculturalRealFactorIncomePerAnnualWorkUnitAwuSdg0220
+- id: EEA_WaterExploitationIndex
+  name: EEA Water exploitation index, plus (WEI+).
+  description: >-
+    Water exploitation index, plus (WEI+) data collected by EEA.
+  in_database: Eurostat
+  data_link: >-
+    https://ec.europa.eu/eurostat/databrowser/view/sdg_06_60/default/table?lang=en
+  oldest_datapoint: '2000'
+  newest_datapoint: '2019'
+  time_granularity: Yearly
+  measures_indicator: AgriculturalRealFactorIncomePerAnnualWorkUnitAwuSdg0220
+- id: ESTAT_WaterExploitationIndex
+  name: ESTAT Water Exploitation Index, plus (WEI+).
+  description: ESTAT Water exploitation index, plus (WEI+).
+  in_database: Eurostat
+  data_link: >-
+    https://ec.europa.eu/eurostat/databrowser/view/sdg_06_60/default/table?lang=en
+  oldest_datapoint: '2000'
+  newest_datapoint: '2019'
+  time_granularity: Yearly
+  spatial_granularity: Country
+  spatial_scope: Eu
+  measures_indicator: AgriculturalRealFactorIncomePerAnnualWorkUnitAwuSdg0220
+- id: ESTAT_GrossNutrientBalanceNitrogen
+  name: ESTAT Gross nutrient balance (nitrogen).
+  description: ESTAT Gross nutrient balance (nitrogen).
+  in_database: Eurostat
+  data_link: >-
+    https://ec.europa.eu/eurostat/databrowser/view/AEI_PR_GNB/default/table?lang=en&category=agr.aei.aei_nut
+  oldest_datapoint: '1985'
+  newest_datapoint: '2021'
+  time_granularity: Yearly
+  spatial_granularity: Country
+  spatial_scope: Eu
+  measures_indicator: AgriculturalRealFactorIncomePerAnnualWorkUnitAwuSdg0220

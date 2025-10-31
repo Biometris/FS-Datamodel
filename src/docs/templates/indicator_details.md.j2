@@ -7,10 +7,8 @@ hide:
 
 {{ indicator['description'] }}
 
-**Key area**: {{ enum_dict['SustainabilityDimension'][indicator['key_area']] }}
+**Dimension**: {{ enum_dict['SustainabilityDimension'][indicator['dimension']] }}
 
-**Thematic area**: {{ enum_dict['ThematicArea'][indicator['thematic_area']] }}
-
-**Domain**: {{ enum_dict['Domain'][indicator['indicator_domain']] }}
+**Category**: {{ indicator['has_category'] }}
 
 **Unit of measurement**: {{ indicator['measurement_unit'] }}
