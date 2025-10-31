@@ -6,7 +6,7 @@ The aim is to establish a harmonised data model for structured collection of met
 
 <div id="indicators-tree-chart" style="width: 100; height: 600px;"></div>
 
-## JRC domain sunburst diagram
+## Dimension sunburst diagram
 
 <div id="indicators-sunburst-chart" style="width: 100; height: 600px;"></div>
 
