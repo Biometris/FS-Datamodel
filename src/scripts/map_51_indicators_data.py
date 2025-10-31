@@ -11,6 +11,7 @@ input_files = {
 
 fout_indicator_definitions = "data/t511_indicators.yaml"
 fout_databases = "data/t511_databases.yaml"
+fout_data_collection_details = "data/t511_indicator_data_collection_details.yaml"
 
 # Read all input files and combine their sheets into a single DataFrame
 all_dfs = []
@@ -48,15 +49,9 @@ def escape(xlsx_combined, column_name):
 
 # Map supply chain components
 ### TODO: This should ideally be correct in input. Check and throw error?
-component_mapping = {
-    "Consumption": "Consumption",
-    "Connsumption": "Consumption",
-    "FoodProcessing": "FoodProcessing",
-    "PrimaryProduction": "PrimaryProduction",
-    "Retail": "Retail",
-    "RetailDistribution": "Retail",
-    "Transport": "Transport",
-    "DisposalRecycling": "DisposalRecycling"
+component_mapping = {    
+    "Connsumption": "Consumption",    
+    "RetailDistribution": "Retail"    
 }
 supply_chain_components = []
 for lst in xlsx_combined["Related stage of the food supply chain"].str.split("[;,]", regex=True):
@@ -92,7 +87,7 @@ yaml_output = yaml.dump(indicators, sort_keys=False, indent=2, allow_unicode=Tru
 with open(fout_indicator_definitions, "w", encoding="utf-8") as f:
     f.write(yaml_output)
 
-# Build the final indicator data structure
+# Build the final database structure
 databases = {
     "id": to_identifier(xlsx_combined, "Source"),
     "name": xlsx_combined["Source"]
@@ -103,4 +98,44 @@ databases = list({db['id']:db for db in databases}.values())  # Remove duplicate
 # Write to YAML
 yaml_output = yaml.dump(databases, sort_keys=False, indent=2, allow_unicode=True)
 with open(fout_databases, "w", encoding="utf-8") as f:
+    f.write(yaml_output)
+
+# Map datapoints
+### TODO: This should ideally be correct in input. Check and throw error?
+'EveryTwoYears', 'Yearly', 'Monthly', 'Weekly', 'Other'
+
+granularity_mapping = {
+    "EveryTwoYears": "EveryTwoYears",
+    "Every2Years": "EveryTwoYears",
+    "Yearly": "Yearly",
+    "EveryYear": "Yearly",
+    "Monthly": "Monthly",
+    "Weekly": "Weekly",
+    "Other": "Other"
+}
+time_granularities = []
+for tg in xlsx_combined["Frequency of data collection (or dissemniation)"]:
+    if isinstance(tg, float):
+        time_granularities.append([])
+    else:
+        tg = re.sub("[^a-zA-Z0-9]", "", tg.title())
+        time_granularities.append(granularity_mapping.get(tg, "Other"))
+# Build the final data collection details structure
+data_collection_details = {
+    "id": to_identifier(xlsx_combined, "Source") + "_" + to_identifier(xlsx_combined, "Indicator"),
+    "name": xlsx_combined["Source"] + "-" + xlsx_combined["Indicator"],
+    "in_database": to_identifier(xlsx_combined, "Source"),
+    "measures_indicator": to_identifier(xlsx_combined, "Indicator"),
+    "data_link": xlsx_combined["Link"],
+    "newest_datapoint": xlsx_combined["Latest data availability"],
+    "time_granularity": time_granularities,
+    "spatial_granularity": "Country",
+    "spatial_scope": "Eu"
+}
+data_collection_details = pd.DataFrame(data_collection_details).to_dict(orient='records')
+data_collection_details = list({dcd['id']:dcd for dcd in data_collection_details}.values())  # Remove duplicates
+
+# Write to YAML
+yaml_output = yaml.dump(data_collection_details, sort_keys=False, indent=2, allow_unicode=True)
+with open(fout_data_collection_details, "w", encoding="utf-8") as f:
     f.write(yaml_output)
