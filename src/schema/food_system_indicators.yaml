@@ -30,19 +30,23 @@ classes:
       - id
       - iri
       - name
-      - description
+      - description  
 
-  ThematicArea:
-    title: thematic area
-    description: >-
-      A topic within a sustainability dimension (environmental, social, or economic) that organizes related domains and indicators around a common sustainability theme.
-    class_uri: linkml:Any
-
-  Domain:
-    title: domain
-    description: >-
-      A specific sub-area within a thematic area that groups related indicators to measure a particular aspect of sustainability.
-    class_uri: linkml:Any
+  Category:
+    is_a: Entity
+    title: category
+    description:
+      The category indicator belongs to.
+    slot_usage:
+      id:
+        description:
+          Unique identifier of the category.
+      name:
+        description:
+          Denomination of the category.
+      description:
+        description:
+          Concise text that provides the meaning of the category.
 
   Indicator:
     is_a: Entity
@@ -50,12 +54,11 @@ classes:
     description: >-
       A quantitative measure used to assess the state, performance, or progress of a specific aspect of the food system in relation to sustainability objectives.
     slots:
-      - key_area
-      - thematic_area
-      - indicator_domain
+      - dimension     
       - granularity
       - supply_chain_component
       - measurement_unit
+      - indicator_category
     slot_usage:
       id:
         description:
@@ -66,44 +69,7 @@ classes:
       description:
         description:
           Concise text that provides the meaning of the identifier.
-    rules:
-      - preconditions:
-          slot_conditions:
-            key_area:
-              equals_string: environmental
-        postconditions:
-          slot_conditions:
-            thematic_area:
-              any_of:
-                - range: EnvironmentalThematicArea
-      - preconditions:
-          slot_conditions:
-            key_area:
-              equals_string: economic
-        postconditions:
-          slot_conditions:
-            thematic_area:
-              any_of:
-                - range: EconomicThematicArea
-      - preconditions:
-          slot_conditions:
-            key_area:
-              equals_string: social
-        postconditions:
-          slot_conditions:
-            thematic_area:
-              any_of:
-                - range: SocialThematicArea
-      - preconditions:
-          slot_conditions:
-            key_area:
-              equals_string: horizontal
-        postconditions:
-          slot_conditions:
-            thematic_area:
-              any_of:
-                - range: HorizontalThematicArea
-
+                
   IndicatorDataCollectionDetails:
     is_a: Entity
     title: indicator data collection details
@@ -254,6 +220,14 @@ slots:
     range: Database
     required: true
 
+  indicator_category:
+    is_a: node property
+    title: indicator category
+    description: 
+      Specifies the category for the indicator.
+    range: Category
+    required: true
+
   score_for_indicator:
     is_a: node property
     title: score for indicator
@@ -287,36 +261,12 @@ slots:
     range: SpatialGranularity
     multivalued: true
 
-  key_area:
-    title: key area
+  dimension:
+    title: dimension
     description:
-      Reference to the thematic area that the indicator belongs to.
+      Reference to the dimension that the indicator belongs to.
     required: true
     range: SustainabilityDimension
-
-  thematic_area:
-    title: thematic area
-    description:
-      The thematic area the indicator belongs to.
-    required: true
-    range: ThematicArea
-    any_of:
-      - range: EnvironmentalThematicArea
-      - range: EconomicThematicArea
-      - range: SocialThematicArea
-      - range: HorizontalThematicArea
-
-  indicator_domain:
-    title: domain
-    description:
-      Reference to the domain that the indicator belongs to.
-    required: true
-    range: Domain
-    any_of:
-      - range: EnvironmentalDomain
-      - range: EconomicDomain
-      - range: SocialDomain
-      - range: HorizontalDomain
 
   supply_chain_component:
     title: supply chain component(s)
@@ -377,7 +327,7 @@ slots:
     title: frequency at which the data is updated
     description:
       Frequency at which the data is updated.
-    range: TimeGranularity
+    range: TimeGranularity  
 
   category:
     title: category
@@ -428,236 +378,24 @@ enums:
   SustainabilityDimension:
     title: sustainability dimension
     description: >-
-      A core pillar of sustainability (environmental, social, economic, or horizontal) that groups indicators to evaluate different aspects of sustainable development within the food system.
+      A core pillar of sustainability (environment, society, economy, or health) that groups indicators to evaluate different aspects of sustainable development within the food system.
     permissible_values:
       Environmental:
-        title: environmental
+        title: environment
         description:
           Sustainability dimension that focuses on the state and management of natural resources and ecosystems, including aspects such as climate, biodiversity, pollution, and resource efficiency, to ensure the food system operates within ecological limits.
-      Economic:
-        title: economic
+      Economy:
+        title: economy
         description:
           Sustainability dimension that focuses on the performance, efficiency, and resilience of economic activities within the food system, including aspects like productivity, value distribution, competitiveness, and financial viability.
-      Social:
-        title: social
+      Society:
+        title: society
         description:
           Sustainability dimension that focuses on human well-being, equity, and societal outcomes within the food system, including aspects such as health, nutrition, fairness, labor conditions, and access to resources.
       Horizontal:
-        title: horizontal
+        title: health
         description:
-          Cross-cutting sustainability dimension that addresses overarching aspects affecting all other dimensions—environmental, social, and economic—such as governance, resilience, innovation, and policy coherence within the food system.
-
-  EnvironmentalThematicArea:
-    title: environmental thematic area
-    description: >-
-      Thematic areas defined for the enviromental sustainability dimension.
-    permissible_values:
-      ClimateChange:
-        description:
-          climate change
-      PollutionAntimicrobials:
-        description:
-          pollution and antimicrobials
-      SustainableUseOfResources:
-        description:
-          sustainable use of resources
-      Biodiversity:
-        description:
-          biodiversity
-      CrossCuttingAreas:
-        description:
-          cross-cutting areas
-
-  EconomicThematicArea:
-    title: economic thematic area
-    description: >-
-      Thematic areas defined for the economic sustainability dimension.
-    permissible_values:
-      FairEconomicViabilityInFoodValueChain:
-        description:
-          fair economic viability in the food value chain
-      DevelopmentAndLogistics:
-        description:
-          development and logistics
-
-  SocialThematicArea:
-    title: social thematic area
-    description: >-
-      Thematic areas defined for the social sustainability dimension.
-    permissible_values:
-      FairInclusiveAndEthicalFoodSystem:
-        description:
-          fair, inclusive and ethical food system
-      FoodEnvironment:
-        description:
-          food environment
-      NutritionAndHealth:
-        description:
-          nutrition and health
-
-  HorizontalThematicArea:
-    title: horizontal thematic area
-    description: >-
-      Thematic areas defined for the horizontal, cross-cutting sustainability dimension.
-    permissible_values:
-      Governance:
-        description:
-          governance
-      Resilience:
-        description:
-          resilience
-
-  EnvironmentalDomain:
-    title: environmental domain
-    description: >-
-      A specific area within the environmental dimension that focuses on the state and use of natural resources and ecosystems. Examples are climate impact, biodiversity, pollution, or resource efficiency, measured through related indicators.
-    permissible_values:
-      GHGEmissions:
-        title: GHG emissions
-        description:
-          GHG emissions.
-      Pollution:
-        title: pollution
-        description:
-          pollution.
-      Antimicrobials:
-        title: antimicrobials
-        description:
-          antimicrobials.
-      LandAndSoil:
-        title: land and soil
-        description:
-          land and soil.
-      Water:
-        title: water
-        description:
-          water.
-      AquaticLivingResources:
-        title: aquatic living resources
-        description:
-          aquatic living resources.
-      Energy:
-        title: energy
-        description:
-          energy.
-      BiodiversityConservationAndRestorationOfNaturalEcosystems:
-        title: biodiversity conservation and restoration of natural ecosystems
-        description:
-          biodiversity conservation and restoration of natural ecosystems.
-      FoodLossAndWaste:
-        title: food loss and waste
-        description:
-          food loss and waste.
-      ConsumptionFootprint:
-        title: consumption footprint
-        description:
-          consumption footprint.
-
-  EconomicDomain:
-    title: economic domain
-    description: >-
-      A specific area within the economic dimension that focuses on the performance, resilience, and fairness of economic activities. Examples are productivity, value distribution, or competitiveness, measured through related indicators.
-    permissible_values:
-      SectorialGrowth:
-        title: sectorial growth
-        description:
-          sectorial growth.
-      MarketPowerAndBusinessStructure:
-        title: market power and business structure
-        description:
-          market power and business structure.
-      IncomeDistribution:
-        title: income distribution
-        description:
-          income distribution.
-      Price:
-        title: price
-        description:
-          price.
-      Trade:
-        title: trade
-        description:
-          trade.
-      TechnologyAndDigitalization:
-        title: technology and digitalization
-        description:
-          technology and digitalization.
-      TransportAccessibilityAndInfrastructure:
-        title: transport, accessibility and infrastructure
-        description:
-          transport, accessibility and infrastructure.
-
-  SocialDomain:
-    title: social domain
-    description: >-
-      Specific area within the social dimension of sustainability that focuses on human well-being, equity, and social conditions. Examples are fairness, health, nutrition, or working conditions, measured through related indicators.
-    permissible_values:
-      Employment:
-        title: employment
-        description:
-          employment.
-      AnimalWelfare:
-        title: animal welfare
-        description:
-          animal welfare.
-      FoodHeritage:
-        title: food heritage
-        description:
-          food heritage.
-      FoodAffordability:
-        title: food affordability
-        description:
-          food affordability.
-      FoodAvailability:
-        title: food availability
-        description:
-          food availability.
-      HealthImpactFromDiets:
-        title: food health impact from diets
-        description:
-          health impact from diets.
-      FoodSecurity:
-        title: food security
-        description:
-          food security.
-
-  HorizontalDomain:
-    title: horizontal domain
-    description: >-
-      A cross-cutting area that spans all sustainability dimensions—environmental, social, and economic—and addresses overarching aspects such as governance, resilience, or innovation that influence the entire food system.
-    permissible_values:
-      StrategicPlanningAndPolicies:
-        title: strategic planning and policies
-        description:
-          strategic planning and policies.
-      EffectiveImplementation:
-        title: effective implementation
-        description:
-          effective implementation.
-      Accountability:
-        title: accountability
-        description:
-          accountability.
-      SharedVision:
-        title: shared vision
-        description:
-          shared vision.
-      ShockResilience:
-        title: shock resilience
-        description:
-          shock resilience.
-      Preparedness:
-        title: preparedness
-        description:
-          preparedness.
-      Adaptation:
-        title: adaptation
-        description:
-          adaptation.
-      Transformation:
-        title: transformation
-        description:
-          transformation
+          Sustainability dimension that focucus on ... . 
 
   SpatialScopeType:
     title: spatial scope type
