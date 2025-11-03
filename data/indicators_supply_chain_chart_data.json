@@ -2,39 +2,431 @@
   "name": "Supply chain component",
   "children": [
     {
-      "name": "FoodConsumption",
+      "name": "PrimaryProduction",
       "children": [
         {
-          "name": "GHG food system emissions",
+          "name": "Agricultural real factor income per annual work unit (AWU) (sdg_02_20)",
           "value": 1
         },
         {
-          "name": "Use and risk of chemical pesticides",
+          "name": "Index of the real income of factors in agriculture per annual work unit (Indicator A)",
           "value": 1
         },
         {
-          "name": "Percent of the population who cannot afford a healthy diet",
+          "name": "Index of real net agricultural entrepreneurial income, per unpaid annual work unit (Indicator B)",
           "value": 1
         },
         {
-          "name": "Prevalence of moderate or severe food insecurity in the population",
+          "name": "Net entrepreneurial income of agriculture (Indicator C)",
           "value": 1
         },
         {
-          "name": "Use of the more hazardous pesticides",
+          "name": "Proportion of agricultural land area that has achieved an acceptable or desirable level of net farm income",
           "value": 1
         },
         {
-          "name": "Water quality - Nitrates in groundwater",
+          "name": "Farmers' income compared to wages in the rest of the economy",
+          "value": 1
+        },
+        {
+          "name": "Government support to agricultural research and development (sdg_02_30)",
+          "value": 1
+        },
+        {
+          "name": "Real GDP per capita (sdg_08_10)",
+          "value": 1
+        },
+        {
+          "name": "Balance of trade",
+          "value": 1
+        },
+        {
+          "name": "Agriculture value added share of GDP",
+          "value": 1
+        },
+        {
+          "name": "Agriculture orientation index (AOI) for government expenditures",
+          "value": 1
+        },
+        {
+          "name": "Labour productivity in the agricultural/beverages/fishing and aquaculture/food sector",
+          "value": 1
+        },
+        {
+          "name": "(Gross) value added along the food chain (by sector; Agriculture, Fishing and Aquaculture, Food and Beverage selectable)",
+          "value": 1
+        },
+        {
+          "name": "Products under EU quality schemes (per scheme: PDO, PGI, TSG, GI)",
+          "value": 1
+        },
+        {
+          "name": "Indicator of Food Price Anomalies (IFPA), by Food CPI",
+          "value": 1
+        },
+        {
+          "name": "Price indices of the means of agricultural production, input",
+          "value": 1
+        },
+        {
+          "name": "Self-sufficiency rate per member state (by food product)",
+          "value": 1
+        },
+        {
+          "name": "Area at risk of severe soil erosion by water (sdg_15_50)",
+          "value": 1
+        },
+        {
+          "name": "Water exploitation index, plus (WEI+) (sdg_06_60)",
+          "value": 1
+        },
+        {
+          "name": "Final energy consumption by agriculture/forestry per hectare of utilised agricultural area",
+          "value": 1
+        },
+        {
+          "name": "Livestock density index",
+          "value": 1
+        },
+        {
+          "name": "Estimated soil loss by water erosion by land cover type",
+          "value": 1
+        },
+        {
+          "name": "Share of landcover types affected by severe erosion",
+          "value": 1
+        },
+        {
+          "name": "Energy use in agriculture",
+          "value": 1
+        },
+        {
+          "name": "Plant genetic resources accessions stored ex situ",
+          "value": 1
+        },
+        {
+          "name": "Number of local breeds for which sufficient genetic resources are stored for reconstitution",
+          "value": 1
+        },
+        {
+          "name": "Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",
+          "value": 1
+        },
+        {
+          "name": "Common farmland bird index",
+          "value": 1
+        },
+        {
+          "name": "Area under organic farming (sdg_02_40)",
+          "value": 1
+        },
+        {
+          "name": "Organic crops by utilised agricultural area, economic size of the farm and NUTS 2 region",
+          "value": 1
+        },
+        {
+          "name": "Organic animal farming by utilised agricultural area, livestock unit, economic size of the farm and NUTS 2 region",
+          "value": 1
+        },
+        {
+          "name": "Organic operators (by status of the registration process)",
+          "value": 1
+        },
+        {
+          "name": "Organic crop area by agricultural production methods and crops",
+          "value": 1
+        },
+        {
+          "name": "Organic crop production by crops",
+          "value": 1
+        },
+        {
+          "name": "Organic livestock",
+          "value": 1
+        },
+        {
+          "name": "Organic production of animal products (by product)",
+          "value": 1
+        },
+        {
+          "name": "Organic production of aquaculture products",
+          "value": 1
+        },
+        {
+          "name": "Ammonia emissions from agriculture (sdg_02_60)",
+          "value": 1
+        },
+        {
+          "name": "Greenhouse gas emissions from agriculture",
+          "value": 1
+        },
+        {
+          "name": "Greenhouse gas emissions by source sector (Agriculture selectable)",
+          "value": 1
+        },
+        {
+          "name": "Emissions (e.g. CO2) from the individual stages of the food value chain",
+          "value": 1
+        },
+        {
+          "name": "Emissions indicators; resulting from agriculture (several, e.g.: -Emissions per capita from pre- and post-production -Emissions per capita from livestock, \u2026)",
+          "value": 1
+        },
+        {
+          "name": "Emission intensity of commodity (e.g. meat of cattle with the bone, fresh or chilled or cereals excluding rice)",
+          "value": 1
+        },
+        {
+          "name": "Emissions from livestock (N2O)",
+          "value": 1
+        },
+        {
+          "name": "Emissions from livestock (CH4)",
+          "value": 1
+        },
+        {
+          "name": "Emissions from crops (N2O)",
+          "value": 1
+        },
+        {
+          "name": "Emissions from crops (CH4)",
+          "value": 1
+        },
+        {
+          "name": "Emissions from pre and post agricultural production",
+          "value": 1
+        },
+        {
+          "name": "Use and risk of chemical pesticides (sdg_02_53)",
+          "value": 1
+        },
+        {
+          "name": "Sales of pesticides by type of pesticide",
+          "value": 1
+        },
+        {
+          "name": "Harmonised risk indicator 1 for pesticides by categorisation of active substances",
+          "value": 1
+        },
+        {
+          "name": "Pesticide use per area of cropland or per value of agricultural production or per capita",
+          "value": 1
+        },
+        {
+          "name": "Sales of antimicrobials for food-producing animals",
+          "value": 1
+        },
+        {
+          "name": "Consumption of inorganic fertilizers",
+          "value": 1
+        },
+        {
+          "name": "Use of Nutrient nitrogen N fertilizers per area of cropland",
+          "value": 1
+        },
+        {
+          "name": "Use of Nutrient phosphate P2O5 fertilizers per area of cropland",
+          "value": 1
+        },
+        {
+          "name": "Use of Nutrient potash K2O fertilizers per area of cropland",
+          "value": 1
+        },
+        {
+          "name": "Fertilizer consumption",
+          "value": 1
+        },
+        {
+          "name": "Gross nutrient balance per hectare UAA - Nitrogen",
+          "value": 1
+        },
+        {
+          "name": "Gross nutrient balance per hectare UAA - Phosphorus",
+          "value": 1
+        },
+        {
+          "name": "Drought impact area on ecosystems (sdg_15_42)",
+          "value": 1
+        },
+        {
+          "name": "Livestock units per agricultural land area (major livestock types)",
+          "value": 1
+        },
+        {
+          "name": "Livestock production index",
+          "value": 1
+        },
+        {
+          "name": "Share of laying hens by way of keeping (Enriched cage, Free range, Barn, Organic)",
+          "value": 1
+        },
+        {
+          "name": "Food waste and food waste prevention by NACE Rev. 2 activity",
+          "value": 1
+        },
+        {
+          "name": "Nitrate in groundwater",
+          "value": 1
+        },
+        {
+          "name": "Farm modernisation",
+          "value": 1
+        },
+        {
+          "name": "Adaptation to climate change",
+          "value": 1
+        },
+        {
+          "name": "Reducing emissions in the livestock sector",
+          "value": 1
+        },
+        {
+          "name": "Carbon storage in soils and biomass",
+          "value": 1
+        },
+        {
+          "name": "Investments related to climate",
+          "value": 1
+        },
+        {
+          "name": "Improving air quality",
+          "value": 1
+        },
+        {
+          "name": "Sustainable and reduced use of pesticides",
+          "value": 1
+        },
+        {
+          "name": "Environmental performance in the livestock sector",
+          "value": 1
+        },
+        {
+          "name": "Investment related to natural resources",
+          "value": 1
+        },
+        {
+          "name": "Environmental or climate-related performance through investment in rural areas",
+          "value": 1
+        },
+        {
+          "name": "Development of organic agriculture",
+          "value": 1
+        },
+        {
+          "name": "Preserving habitats and species",
+          "value": 1
+        },
+        {
+          "name": "Generational renewal",
+          "value": 1
+        },
+        {
+          "name": "Limiting antimicrobial use",
+          "value": 1
+        },
+        {
+          "name": "Improving animal welfare",
+          "value": 1
+        },
+        {
+          "name": "Redistribution to smaller farms",
+          "value": 1
+        },
+        {
+          "name": "Agriculture share of Government Expenditure",
+          "value": 1
+        },
+        {
+          "name": "Agricultural training of farm managers (categorized by \"Only practical agricultural experience\", \"Basic agricultural training\" and \"Full agricultural training\")",
+          "value": 1
+        },
+        {
+          "name": "Nitrate in groundwater (sdg_06_40)",
+          "value": 1
+        },
+        {
+          "name": "Proportion of agricultural land area that has achieved an acceptable or desirable level of food security",
+          "value": 1
+        },
+        {
+          "name": "Productivity of large-scale food producers",
+          "value": 1
+        },
+        {
+          "name": "Productivity of small-scale food producers",
+          "value": 1
+        },
+        {
+          "name": "Proportion of agricultural land area that has achieved an acceptable or desirable level of farm output value per hectare",
+          "value": 1
+        },
+        {
+          "name": "Agricultural land (% of land area)",
+          "value": 1
+        },
+        {
+          "name": "Food production index",
+          "value": 1
+        },
+        {
+          "name": "Percent of arable land equipped for irrigation (3-year average)",
+          "value": 1
+        },
+        {
+          "name": "Cereal import dependency ratio (3-year average)",
+          "value": 1
+        },
+        {
+          "name": "Employment in agriculture (% of total employment) (modeled ILO estimate)",
+          "value": 1
+        },
+        {
+          "name": "Share of people employed in agriculture/beverage/fishing and aquaculture/food (vs. EU27)",
+          "value": 1
+        },
+        {
+          "name": "Average income of large-scale food producers",
+          "value": 1
+        },
+        {
+          "name": "Average income of small-scale food producers",
+          "value": 1
+        },
+        {
+          "name": "Proportion of agricultural land area that has achieved an acceptable or desirable level of wage rate in agriculture",
+          "value": 1
+        },
+        {
+          "name": "Legal guarantees to women\u2019s equal rights to land ownership and/or control",
           "value": 1
         }
       ]
     },
     {
-      "name": "FoodDistribution",
+      "name": "Transport",
       "children": [
         {
-          "name": "GHG food system emissions",
+          "name": "Real GDP per capita (sdg_08_10)",
+          "value": 1
+        },
+        {
+          "name": "Labour productivity in the agricultural/beverages/fishing and aquaculture/food sector",
+          "value": 1
+        },
+        {
+          "name": "(Gross) value added along the food chain (by sector; Agriculture, Fishing and Aquaculture, Food and Beverage selectable)",
+          "value": 1
+        },
+        {
+          "name": "Emissions (e.g. CO2) from the individual stages of the food value chain",
+          "value": 1
+        },
+        {
+          "name": "Emissions from pre and post agricultural production",
+          "value": 1
+        },
+        {
+          "name": "Share of people employed in agriculture/beverage/fishing and aquaculture/food (vs. EU27)",
           "value": 1
         }
       ]
@@ -43,48 +435,518 @@
       "name": "FoodProcessing",
       "children": [
         {
-          "name": "GHG food system emissions",
+          "name": "Real GDP per capita (sdg_08_10)",
           "value": 1
         },
         {
-          "name": "Water quality - Nitrates in groundwater",
+          "name": "Balance of trade",
+          "value": 1
+        },
+        {
+          "name": "Labour productivity in the agricultural/beverages/fishing and aquaculture/food sector",
+          "value": 1
+        },
+        {
+          "name": "(Gross) value added along the food chain (by sector; Agriculture, Fishing and Aquaculture, Food and Beverage selectable)",
+          "value": 1
+        },
+        {
+          "name": "Products under EU quality schemes (per scheme: PDO, PGI, TSG, GI)",
+          "value": 1
+        },
+        {
+          "name": "Indicator of Food Price Anomalies (IFPA), by Food CPI",
+          "value": 1
+        },
+        {
+          "name": "Self-sufficiency rate per member state (by food product)",
+          "value": 1
+        },
+        {
+          "name": "Water exploitation index, plus (WEI+) (sdg_06_60)",
+          "value": 1
+        },
+        {
+          "name": "Water use in the manufacturing industry by activity and supply category: Manufacture of food products and beverages",
+          "value": 1
+        },
+        {
+          "name": "Organic operators (by status of the registration process)",
+          "value": 1
+        },
+        {
+          "name": "Organic production of animal products (by product)",
+          "value": 1
+        },
+        {
+          "name": "Processors of organic products by NACE Rev. 2 activity(C)",
+          "value": 1
+        },
+        {
+          "name": "Emissions (e.g. CO2) from the individual stages of the food value chain",
+          "value": 1
+        },
+        {
+          "name": "Emissions from pre and post agricultural production",
+          "value": 1
+        },
+        {
+          "name": "Air pollutants by source sector (\"Food and beverages industry\" selectable)",
+          "value": 1
+        },
+        {
+          "name": "Food waste and food waste prevention by NACE Rev. 2 activity",
+          "value": 1
+        },
+        {
+          "name": "Prevalence of anemia among children (% of children ages 6-59 months)",
+          "value": 1
+        },
+        {
+          "name": "Consumption of iodized salt",
+          "value": 1
+        },
+        {
+          "name": "Share of people employed in agriculture/beverage/fishing and aquaculture/food (vs. EU27)",
           "value": 1
         }
       ]
     },
     {
-      "name": "PrimaryFoodProduction",
+      "name": "Retail",
       "children": [
         {
-          "name": "GHG food system emissions",
+          "name": "Real GDP per capita (sdg_08_10)",
           "value": 1
         },
         {
-          "name": "Use and risk of chemical pesticides",
+          "name": "Balance of trade",
           "value": 1
         },
         {
-          "name": "Farmers income in agriculture compared to wages in the rest of the economy",
+          "name": "Labour productivity in the agricultural/beverages/fishing and aquaculture/food sector",
           "value": 1
         },
         {
-          "name": "Water exploitation index, plus (WEI+)",
+          "name": "(Gross) value added along the food chain (by sector; Agriculture, Fishing and Aquaculture, Food and Beverage selectable)",
           "value": 1
         },
         {
-          "name": "Gross nutrient balance - nitrogen",
+          "name": "Adjusted gross disposable income of households per capita",
           "value": 1
         },
         {
-          "name": "Use of the more hazardous pesticides",
+          "name": "Consumer Prices, Food Indices (2015 = 100)",
           "value": 1
         },
         {
-          "name": "Water quality - Nitrates in groundwater",
+          "name": "Food price inflation",
           "value": 1
         },
         {
-          "name": "Sales of antimicrobials for food-producing animals",
+          "name": "Cost of a healthy diet (CoHD), PPP dollar per person per day",
+          "value": 1
+        },
+        {
+          "name": "Prevalence of unaffordability (PUA)",
+          "value": 1
+        },
+        {
+          "name": "Number of people unable to afford a healthy diet (NUA)",
+          "value": 1
+        },
+        {
+          "name": "Indicator of Food Price Anomalies (IFPA), by Food CPI",
+          "value": 1
+        },
+        {
+          "name": "Inflation, consumer prices (annual %)",
+          "value": 1
+        },
+        {
+          "name": "Adjusted net national income per capita (constant 2015 US$)",
+          "value": 1
+        },
+        {
+          "name": "Change of consumer food prices",
+          "value": 1
+        },
+        {
+          "name": "Emissions (e.g. CO2) from the individual stages of the food value chain",
+          "value": 1
+        },
+        {
+          "name": "Emissions from pre and post agricultural production",
+          "value": 1
+        },
+        {
+          "name": "Food waste and food waste prevention by NACE Rev. 2 activity",
+          "value": 1
+        },
+        {
+          "name": "Incidence of caloric losses at retail distribution level",
+          "value": 1
+        },
+        {
+          "name": "Consumption of iodized salt",
+          "value": 1
+        },
+        {
+          "name": "Percentage of population using safely managed drinking water services",
+          "value": 1
+        },
+        {
+          "name": "Percentage of population using at least basic drinking water services",
+          "value": 1
+        },
+        {
+          "name": "Prevalence of undernourishment (3-year average)",
+          "value": 1
+        },
+        {
+          "name": "Percentage of children under 5 years of age who are stunted (modelled estimates)",
+          "value": 1
+        },
+        {
+          "name": "Share of people employed in agriculture/beverage/fishing and aquaculture/food (vs. EU27)",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Consumption",
+      "children": [
+        {
+          "name": "Adjusted gross disposable income of households per capita",
+          "value": 1
+        },
+        {
+          "name": "Consumer Prices, Food Indices (2015 = 100)",
+          "value": 1
+        },
+        {
+          "name": "Food price inflation",
+          "value": 1
+        },
+        {
+          "name": "Cost of a healthy diet (CoHD), PPP dollar per person per day",
+          "value": 1
+        },
+        {
+          "name": "Prevalence of unaffordability (PUA)",
+          "value": 1
+        },
+        {
+          "name": "Number of people unable to afford a healthy diet (NUA)",
+          "value": 1
+        },
+        {
+          "name": "Indicator of Food Price Anomalies (IFPA), by Food CPI",
+          "value": 1
+        },
+        {
+          "name": "Inflation, consumer prices (annual %)",
+          "value": 1
+        },
+        {
+          "name": "Adjusted net national income per capita (constant 2015 US$)",
+          "value": 1
+        },
+        {
+          "name": "Change of consumer food prices",
+          "value": 1
+        },
+        {
+          "name": "Household final consumption expenditure by purpose: Share of food expenditure",
+          "value": 1
+        },
+        {
+          "name": "Affordability of a healthy diet: ratio of cost to food expenditures",
+          "value": 1
+        },
+        {
+          "name": "Emissions (e.g. CO2) from the individual stages of the food value chain",
+          "value": 1
+        },
+        {
+          "name": "Emissions from pre and post agricultural production",
+          "value": 1
+        },
+        {
+          "name": "Food waste and food waste prevention by NACE Rev. 2 activity",
+          "value": 1
+        },
+        {
+          "name": "Consumption Footprint - Food",
+          "value": 1
+        },
+        {
+          "name": "Obesity rate by body mass index (BMI) (sdg_02_10)",
+          "value": 1
+        },
+        {
+          "name": "Body mass index (BMI) by sex, age and degree of urbanisation",
+          "value": 1
+        },
+        {
+          "name": "Person distribution by body mass index, educational attainment level, sex and age",
+          "value": 1
+        },
+        {
+          "name": "Body mass index (BMI) by sex, age and educational attainment level",
+          "value": 1
+        },
+        {
+          "name": "Body mass index (BMI) by sex, age and income quintile",
+          "value": 1
+        },
+        {
+          "name": "Prevalence of obesity in the adult population (18 years and older)",
+          "value": 1
+        },
+        {
+          "name": "Percentage of children under 5 years of age who are overweight (modelled estimates)",
+          "value": 1
+        },
+        {
+          "name": "Prevalence of overweight and obesity among boys and girls aged 7-9 years",
+          "value": 1
+        },
+        {
+          "name": "Prevalence of anemia among women of reproductive age (15-49 years)",
+          "value": 1
+        },
+        {
+          "name": "Prevalence of anemia among children (% of children ages 6-59 months)",
+          "value": 1
+        },
+        {
+          "name": "Prevalence of underweight children",
+          "value": 1
+        },
+        {
+          "name": "Diabetes prevalence",
+          "value": 1
+        },
+        {
+          "name": "Daily consumption of fruit and vegetables by sex, age and educational attainment level (hlth_ehis_fv3e)",
+          "value": 1
+        },
+        {
+          "name": "Daily consumption of fruit and vegetables by sex, age and income quintile",
+          "value": 1
+        },
+        {
+          "name": "Daily consumption of fruit and vegetables by sex, age and degree of urbanisation",
+          "value": 1
+        },
+        {
+          "name": "Daily consumption of fruit and vegetables by sex, age and body mass index",
+          "value": 1
+        },
+        {
+          "name": "Persons eating fruit, vegetables or salad by educational attainment level, risk of poverty threshold, most frequent activity status and sex",
+          "value": 1
+        },
+        {
+          "name": "Frequency of fruit and vegetables consumption by sex, age and degree of urbanisation",
+          "value": 1
+        },
+        {
+          "name": "Frequency of fruit and vegetables consumption by sex, age and educational attainment level",
+          "value": 1
+        },
+        {
+          "name": "Frequency of fruit and vegetables consumption by sex, age and income quintile",
+          "value": 1
+        },
+        {
+          "name": "Frequency of fruit and vegetables consumption by sex, age and body mass index",
+          "value": 1
+        },
+        {
+          "name": "Frequency of drinking sugar-sweetened soft drinks by sex, age and educational attainment level",
+          "value": 1
+        },
+        {
+          "name": "Frequency of drinking sugar-sweetened soft drinks by sex, age and body mass index",
+          "value": 1
+        },
+        {
+          "name": "Frequency of drinking pure fruit or vegetable juice by sex, age and educational attainment level",
+          "value": 1
+        },
+        {
+          "name": "Daily consumption of meat and meat products (different population groups selectable)",
+          "value": 1
+        },
+        {
+          "name": "Daily consumption of legumes (different population groups selectable)",
+          "value": 1
+        },
+        {
+          "name": "Daily consumption of milk and dairy products (different population groups selectable)",
+          "value": 1
+        },
+        {
+          "name": "Daily consumption of soft drinks (different population groups selectable)",
+          "value": 1
+        },
+        {
+          "name": "Contribution of meat products to daily energy intake",
+          "value": 1
+        },
+        {
+          "name": "Contribution of ruminant meat products to daily energy intake",
+          "value": 1
+        },
+        {
+          "name": "Consumption of iodized salt",
+          "value": 1
+        },
+        {
+          "name": "Daily concumption of fresh fruit among 6\u20139-year-olds",
+          "value": 1
+        },
+        {
+          "name": "Daily concumption of vegetables among 6\u20139-year-olds",
+          "value": 1
+        },
+        {
+          "name": "Frequent consumption of soft drinks (>3 days/week) among 6-9-year-olds",
+          "value": 1
+        },
+        {
+          "name": "Percentage of population using safely managed sanitation services",
+          "value": 1
+        },
+        {
+          "name": "Percentage of population using at least basic sanitation services",
+          "value": 1
+        },
+        {
+          "name": "Prevalence of undernourishment (3-year average)",
+          "value": 1
+        },
+        {
+          "name": "Percentage of children under 5 years of age who are stunted (modelled estimates)",
+          "value": 1
+        },
+        {
+          "name": "Prevalence of severe food insecurity in the total population (3-year average)",
+          "value": 1
+        },
+        {
+          "name": "Prevalence of moderate or severe food insecurity in the total population (3-year average)",
+          "value": 1
+        },
+        {
+          "name": "Gross domestic product per capita, PPP, (constant 2017 international $)",
+          "value": 1
+        },
+        {
+          "name": "Rail lines density (total route in km per 100 square km of land area)",
+          "value": 1
+        },
+        {
+          "name": "Average dietary energy supply adequacy (3-year average)",
+          "value": 1
+        },
+        {
+          "name": "Dietary energy supply used in the estimation of prevalence of undernourishment",
+          "value": 1
+        },
+        {
+          "name": "Dietary energy supply used in the estimation of prevalence of undernourishment (3-year average)",
+          "value": 1
+        },
+        {
+          "name": "Average protein supply (3-year average)",
+          "value": 1
+        },
+        {
+          "name": "Average supply of protein of animal origin (3-year average)",
+          "value": 1
+        },
+        {
+          "name": "Average fat supply (3-year average)",
+          "value": 1
+        },
+        {
+          "name": "Protein supply quantity of vegetal products",
+          "value": 1
+        },
+        {
+          "name": "Protein supply quantity of animal products",
+          "value": 1
+        },
+        {
+          "name": "Food supply quantity by food group (e.g. selectable: Vegetables, Fruits, Meat)",
+          "value": 1
+        },
+        {
+          "name": "Per capita food supply variability (kcal/cap/day)",
+          "value": 1
+        },
+        {
+          "name": "Employment rates by sex, age, educational attainment level, country of birth and degree of urbanisation",
+          "value": 1
+        },
+        {
+          "name": "Persons living in households with very low work intensity, by age group (sdg_01_40)",
+          "value": 1
+        },
+        {
+          "name": "Employment rate by sex (sdg_08_30)",
+          "value": 1
+        },
+        {
+          "name": "Unemployment rates by sex, age and educational attainment level",
+          "value": 1
+        },
+        {
+          "name": "Long-term unemployment by sex",
+          "value": 1
+        },
+        {
+          "name": "Unemployment, total (% of total labor force) (modeled ILO estimate)",
+          "value": 1
+        },
+        {
+          "name": "Persons at risk of poverty or social exclusion (sdg_01_10)",
+          "value": 1
+        },
+        {
+          "name": "Income Equality/Income distribution",
+          "value": 1
+        },
+        {
+          "name": "Persons at risk of poverty or social exclusion by degree of urbanisation (sdg_01_10a) (broken down by Cities, Towns and suburbs and Rural areas)",
+          "value": 1
+        },
+        {
+          "name": "Income share held by lowest 20%",
+          "value": 1
+        },
+        {
+          "name": "Income share held by highest 20%",
+          "value": 1
+        },
+        {
+          "name": "Proportion of people living below 50 percent of median income",
+          "value": 1
+        },
+        {
+          "name": "Coefficient of variation of habitual caloric consumption distribution (real number)",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "DisposalRecycling",
+      "children": [
+        {
+          "name": "Food waste and food waste prevention by NACE Rev. 2 activity",
           "value": 1
         }
       ]

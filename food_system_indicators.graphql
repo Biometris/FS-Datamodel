@@ -8,64 +8,6 @@ enum CriterionCategory
     OperationalFeasibility
   }
 
-enum EconomicDomain
-  {
-    SectorialGrowth
-    MarketPowerAndBusinessStructure
-    IncomeDistribution
-    Price
-    Trade
-    TechnologyAndDigitalization
-    TransportAccessibilityAndInfrastructure
-  }
-
-enum EconomicThematicArea
-  {
-    FairEconomicViabilityInFoodValueChain
-    DevelopmentAndLogistics
-  }
-
-enum EnvironmentalDomain
-  {
-    GHGEmissions
-    Pollution
-    Antimicrobials
-    LandAndSoil
-    Water
-    AquaticLivingResources
-    Energy
-    BiodiversityConservationAndRestorationOfNaturalEcosystems
-    FoodLossAndWaste
-    ConsumptionFootprint
-  }
-
-enum EnvironmentalThematicArea
-  {
-    ClimateChange
-    PollutionAntimicrobials
-    SustainableUseOfResources
-    Biodiversity
-    CrossCuttingAreas
-  }
-
-enum HorizontalDomain
-  {
-    StrategicPlanningAndPolicies
-    EffectiveImplementation
-    Accountability
-    SharedVision
-    ShockResilience
-    Preparedness
-    Adaptation
-    Transformation
-  }
-
-enum HorizontalThematicArea
-  {
-    Governance
-    Resilience
-  }
-
 enum ScoreCategory
   {
     VeryPoor
@@ -73,24 +15,6 @@ enum ScoreCategory
     Moderate
     Good
     Excellent
-  }
-
-enum SocialDomain
-  {
-    Employment
-    AnimalWelfare
-    FoodHeritage
-    FoodAffordability
-    FoodAvailability
-    HealthImpactFromDiets
-    FoodSecurity
-  }
-
-enum SocialThematicArea
-  {
-    FairInclusiveAndEthicalFoodSystem
-    FoodEnvironment
-    NutritionAndHealth
   }
 
 enum SpatialGranularity
@@ -114,18 +38,20 @@ enum SpatialScopeType
 
 enum SupplyChainComponentType
   {
-    PrimaryFoodProduction
+    PrimaryProduction
     FoodProcessing
-    FoodDistribution
-    FoodConsumption
+    Consumption
+    Retail
+    Transport
+    DisposalRecycling
   }
 
 enum SustainabilityDimension
   {
-    Environmental
-    Economic
-    Social
-    Horizontal
+    Environment
+    Economy
+    Society
+    Health
   }
 
 enum TimeGranularity
@@ -147,10 +73,6 @@ type Database
     updateFrequency: TimeGranularity
   }
 
-type Domain
-  {
-  }
-
 interface Entity
   {
     id: String!
@@ -162,12 +84,18 @@ interface Entity
 type Indicator
   {
     iri: IriType
-    keyArea: SustainabilityDimension!
-    thematicArea: ThematicArea!
-    indicatorDomain: Domain!
-    granularity: [SpatialGranularity]!
+    dimension: SustainabilityDimension!
     supplyChainComponent: [SupplyChainComponentType]
     measurementUnit: Unit
+    hasCategory: IndicatorCategory!
+    id: String!
+    name: LabelType
+    description: NarrativeText
+  }
+
+type IndicatorCategory
+  {
+    iri: IriType
     id: String!
     name: LabelType
     description: NarrativeText
@@ -198,8 +126,8 @@ type IndicatorDataCollectionDetails
     description: NarrativeText
     measuresIndicator: Indicator!
     inDatabase: Database!
-    oldestDatapoint: DateOrDatetime
-    newestDatapoint: DateOrDatetime
+    oldestDatapoint: String
+    newestDatapoint: String
     timeGranularity: TimeGranularity
     spatialScope: SpatialScopeType
     spatialGranularity: SpatialGranularity
@@ -212,7 +140,7 @@ type IndicatorDatapoint
     name: LabelType
     description: NarrativeText
     hasUnit: Unit
-    hasNumericValue: Double
+    hasNumericValue: Float
     measurementOf: Indicator!
     partOfCollection: IndicatorDataCollectionDetails!
     id: String!
@@ -225,9 +153,5 @@ type QuantityValue
     name: LabelType
     description: NarrativeText
     hasUnit: Unit
-    hasNumericValue: Double
-  }
-
-type ThematicArea
-  {
+    hasNumericValue: Float
   }

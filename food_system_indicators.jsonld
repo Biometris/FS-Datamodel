@@ -411,309 +411,29 @@
     {
       "name": "SustainabilityDimension",
       "definition_uri": "https://w3id.org/linkml/examples/fsiSustainabilityDimension",
-      "description": "A core pillar of sustainability (environmental, social, economic, or horizontal) that groups indicators to evaluate different aspects of sustainable development within the food system.",
+      "description": "A core pillar of sustainability (environment, society, economy, or health) that groups indicators to evaluate different aspects of sustainable development within the food system.",
       "title": "sustainability dimension",
       "from_schema": "https://w3id.org/linkml/examples/fsi",
       "permissible_values": [
         {
-          "text": "Environmental",
+          "text": "Environment",
           "description": "Sustainability dimension that focuses on the state and management of natural resources and ecosystems, including aspects such as climate, biodiversity, pollution, and resource efficiency, to ensure the food system operates within ecological limits.",
-          "title": "environmental"
+          "title": "environment"
         },
         {
-          "text": "Economic",
+          "text": "Economy",
           "description": "Sustainability dimension that focuses on the performance, efficiency, and resilience of economic activities within the food system, including aspects like productivity, value distribution, competitiveness, and financial viability.",
-          "title": "economic"
+          "title": "economy"
         },
         {
-          "text": "Social",
+          "text": "Society",
           "description": "Sustainability dimension that focuses on human well-being, equity, and societal outcomes within the food system, including aspects such as health, nutrition, fairness, labor conditions, and access to resources.",
-          "title": "social"
+          "title": "society"
         },
         {
-          "text": "Horizontal",
-          "description": "Cross-cutting sustainability dimension that addresses overarching aspects affecting all other dimensions\u2014environmental, social, and economic\u2014such as governance, resilience, innovation, and policy coherence within the food system.",
-          "title": "horizontal"
-        }
-      ]
-    },
-    {
-      "name": "EnvironmentalThematicArea",
-      "definition_uri": "https://w3id.org/linkml/examples/fsiEnvironmentalThematicArea",
-      "description": "Thematic areas defined for the enviromental sustainability dimension.",
-      "title": "environmental thematic area",
-      "from_schema": "https://w3id.org/linkml/examples/fsi",
-      "permissible_values": [
-        {
-          "text": "ClimateChange",
-          "description": "climate change"
-        },
-        {
-          "text": "PollutionAntimicrobials",
-          "description": "pollution and antimicrobials"
-        },
-        {
-          "text": "SustainableUseOfResources",
-          "description": "sustainable use of resources"
-        },
-        {
-          "text": "Biodiversity",
-          "description": "biodiversity"
-        },
-        {
-          "text": "CrossCuttingAreas",
-          "description": "cross-cutting areas"
-        }
-      ]
-    },
-    {
-      "name": "EconomicThematicArea",
-      "definition_uri": "https://w3id.org/linkml/examples/fsiEconomicThematicArea",
-      "description": "Thematic areas defined for the economic sustainability dimension.",
-      "title": "economic thematic area",
-      "from_schema": "https://w3id.org/linkml/examples/fsi",
-      "permissible_values": [
-        {
-          "text": "FairEconomicViabilityInFoodValueChain",
-          "description": "fair economic viability in the food value chain"
-        },
-        {
-          "text": "DevelopmentAndLogistics",
-          "description": "development and logistics"
-        }
-      ]
-    },
-    {
-      "name": "SocialThematicArea",
-      "definition_uri": "https://w3id.org/linkml/examples/fsiSocialThematicArea",
-      "description": "Thematic areas defined for the social sustainability dimension.",
-      "title": "social thematic area",
-      "from_schema": "https://w3id.org/linkml/examples/fsi",
-      "permissible_values": [
-        {
-          "text": "FairInclusiveAndEthicalFoodSystem",
-          "description": "fair, inclusive and ethical food system"
-        },
-        {
-          "text": "FoodEnvironment",
-          "description": "food environment"
-        },
-        {
-          "text": "NutritionAndHealth",
-          "description": "nutrition and health"
-        }
-      ]
-    },
-    {
-      "name": "HorizontalThematicArea",
-      "definition_uri": "https://w3id.org/linkml/examples/fsiHorizontalThematicArea",
-      "description": "Thematic areas defined for the horizontal, cross-cutting sustainability dimension.",
-      "title": "horizontal thematic area",
-      "from_schema": "https://w3id.org/linkml/examples/fsi",
-      "permissible_values": [
-        {
-          "text": "Governance",
-          "description": "governance"
-        },
-        {
-          "text": "Resilience",
-          "description": "resilience"
-        }
-      ]
-    },
-    {
-      "name": "EnvironmentalDomain",
-      "definition_uri": "https://w3id.org/linkml/examples/fsiEnvironmentalDomain",
-      "description": "A specific area within the environmental dimension that focuses on the state and use of natural resources and ecosystems. Examples are climate impact, biodiversity, pollution, or resource efficiency, measured through related indicators.",
-      "title": "environmental domain",
-      "from_schema": "https://w3id.org/linkml/examples/fsi",
-      "permissible_values": [
-        {
-          "text": "GHGEmissions",
-          "description": "GHG emissions.",
-          "title": "GHG emissions"
-        },
-        {
-          "text": "Pollution",
-          "description": "pollution.",
-          "title": "pollution"
-        },
-        {
-          "text": "Antimicrobials",
-          "description": "antimicrobials.",
-          "title": "antimicrobials"
-        },
-        {
-          "text": "LandAndSoil",
-          "description": "land and soil.",
-          "title": "land and soil"
-        },
-        {
-          "text": "Water",
-          "description": "water.",
-          "title": "water"
-        },
-        {
-          "text": "AquaticLivingResources",
-          "description": "aquatic living resources.",
-          "title": "aquatic living resources"
-        },
-        {
-          "text": "Energy",
-          "description": "energy.",
-          "title": "energy"
-        },
-        {
-          "text": "BiodiversityConservationAndRestorationOfNaturalEcosystems",
-          "description": "biodiversity conservation and restoration of natural ecosystems.",
-          "title": "biodiversity conservation and restoration of natural ecosystems"
-        },
-        {
-          "text": "FoodLossAndWaste",
-          "description": "food loss and waste.",
-          "title": "food loss and waste"
-        },
-        {
-          "text": "ConsumptionFootprint",
-          "description": "consumption footprint.",
-          "title": "consumption footprint"
-        }
-      ]
-    },
-    {
-      "name": "EconomicDomain",
-      "definition_uri": "https://w3id.org/linkml/examples/fsiEconomicDomain",
-      "description": "A specific area within the economic dimension that focuses on the performance, resilience, and fairness of economic activities. Examples are productivity, value distribution, or competitiveness, measured through related indicators.",
-      "title": "economic domain",
-      "from_schema": "https://w3id.org/linkml/examples/fsi",
-      "permissible_values": [
-        {
-          "text": "SectorialGrowth",
-          "description": "sectorial growth.",
-          "title": "sectorial growth"
-        },
-        {
-          "text": "MarketPowerAndBusinessStructure",
-          "description": "market power and business structure.",
-          "title": "market power and business structure"
-        },
-        {
-          "text": "IncomeDistribution",
-          "description": "income distribution.",
-          "title": "income distribution"
-        },
-        {
-          "text": "Price",
-          "description": "price.",
-          "title": "price"
-        },
-        {
-          "text": "Trade",
-          "description": "trade.",
-          "title": "trade"
-        },
-        {
-          "text": "TechnologyAndDigitalization",
-          "description": "technology and digitalization.",
-          "title": "technology and digitalization"
-        },
-        {
-          "text": "TransportAccessibilityAndInfrastructure",
-          "description": "transport, accessibility and infrastructure.",
-          "title": "transport, accessibility and infrastructure"
-        }
-      ]
-    },
-    {
-      "name": "SocialDomain",
-      "definition_uri": "https://w3id.org/linkml/examples/fsiSocialDomain",
-      "description": "Specific area within the social dimension of sustainability that focuses on human well-being, equity, and social conditions. Examples are fairness, health, nutrition, or working conditions, measured through related indicators.",
-      "title": "social domain",
-      "from_schema": "https://w3id.org/linkml/examples/fsi",
-      "permissible_values": [
-        {
-          "text": "Employment",
-          "description": "employment.",
-          "title": "employment"
-        },
-        {
-          "text": "AnimalWelfare",
-          "description": "animal welfare.",
-          "title": "animal welfare"
-        },
-        {
-          "text": "FoodHeritage",
-          "description": "food heritage.",
-          "title": "food heritage"
-        },
-        {
-          "text": "FoodAffordability",
-          "description": "food affordability.",
-          "title": "food affordability"
-        },
-        {
-          "text": "FoodAvailability",
-          "description": "food availability.",
-          "title": "food availability"
-        },
-        {
-          "text": "HealthImpactFromDiets",
-          "description": "health impact from diets.",
-          "title": "food health impact from diets"
-        },
-        {
-          "text": "FoodSecurity",
-          "description": "food security.",
-          "title": "food security"
-        }
-      ]
-    },
-    {
-      "name": "HorizontalDomain",
-      "definition_uri": "https://w3id.org/linkml/examples/fsiHorizontalDomain",
-      "description": "A cross-cutting area that spans all sustainability dimensions\u2014environmental, social, and economic\u2014and addresses overarching aspects such as governance, resilience, or innovation that influence the entire food system.",
-      "title": "horizontal domain",
-      "from_schema": "https://w3id.org/linkml/examples/fsi",
-      "permissible_values": [
-        {
-          "text": "StrategicPlanningAndPolicies",
-          "description": "strategic planning and policies.",
-          "title": "strategic planning and policies"
-        },
-        {
-          "text": "EffectiveImplementation",
-          "description": "effective implementation.",
-          "title": "effective implementation"
-        },
-        {
-          "text": "Accountability",
-          "description": "accountability.",
-          "title": "accountability"
-        },
-        {
-          "text": "SharedVision",
-          "description": "shared vision.",
-          "title": "shared vision"
-        },
-        {
-          "text": "ShockResilience",
-          "description": "shock resilience.",
-          "title": "shock resilience"
-        },
-        {
-          "text": "Preparedness",
-          "description": "preparedness.",
-          "title": "preparedness"
-        },
-        {
-          "text": "Adaptation",
-          "description": "adaptation.",
-          "title": "adaptation"
-        },
-        {
-          "text": "Transformation",
-          "description": "transformation",
-          "title": "transformation"
+          "text": "Health",
+          "description": "Sustainability dimension that focucus on ... .",
+          "title": "health"
         }
       ]
     },
@@ -759,7 +479,7 @@
       "from_schema": "https://w3id.org/linkml/examples/fsi",
       "permissible_values": [
         {
-          "text": "PrimaryFoodProduction",
+          "text": "PrimaryProduction",
           "description": "Primary food production.",
           "title": "primary food production"
         },
@@ -769,14 +489,24 @@
           "title": "food processing"
         },
         {
-          "text": "FoodDistribution",
-          "description": "Food distribution.",
-          "title": "food distribution"
+          "text": "Consumption",
+          "description": "Consumption.",
+          "title": "consumption"
         },
         {
-          "text": "FoodConsumption",
-          "description": "Food consumption.",
-          "title": "food consumption"
+          "text": "Retail",
+          "description": "Retail.",
+          "title": "retail"
+        },
+        {
+          "text": "Transport",
+          "description": "Transport.",
+          "title": "transport"
+        },
+        {
+          "text": "DisposalRecycling",
+          "description": "Disposal and recycling.",
+          "title": "disposal & recycling"
         }
       ]
     },
@@ -1088,6 +818,23 @@
       "@type": "SlotDefinition"
     },
     {
+      "name": "has_category",
+      "definition_uri": "https://w3id.org/linkml/examples/fsihas_category",
+      "description": "Specifies the category for the indicator.",
+      "title": "indicator category",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "is_a": "node_property",
+      "domain": "Entity",
+      "slot_uri": "https://w3id.org/linkml/examples/fsihas_category",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "IndicatorCategory",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
       "name": "score_for_indicator",
       "definition_uri": "https://w3id.org/linkml/examples/fsiscore_for_indicator",
       "description": "Indicator.",
@@ -1146,102 +893,18 @@
       "@type": "SlotDefinition"
     },
     {
-      "name": "granularity",
-      "definition_uri": "https://w3id.org/linkml/examples/fsigranularity",
-      "description": "Reference to the granularity(ies) for which the indicator is measured.",
-      "title": "granularity",
+      "name": "dimension",
+      "definition_uri": "https://w3id.org/linkml/examples/fsidimension",
+      "description": "Reference to the dimension that the indicator belongs to.",
+      "title": "dimension",
       "from_schema": "https://w3id.org/linkml/examples/fsi",
-      "slot_uri": "https://w3id.org/linkml/examples/fsigranularity",
-      "owner": "Indicator",
-      "domain_of": [
-        "Indicator"
-      ],
-      "range": "SpatialGranularity",
-      "required": true,
-      "multivalued": true,
-      "@type": "SlotDefinition"
-    },
-    {
-      "name": "key_area",
-      "definition_uri": "https://w3id.org/linkml/examples/fsikey_area",
-      "description": "Reference to the thematic area that the indicator belongs to.",
-      "title": "key area",
-      "from_schema": "https://w3id.org/linkml/examples/fsi",
-      "slot_uri": "https://w3id.org/linkml/examples/fsikey_area",
+      "slot_uri": "https://w3id.org/linkml/examples/fsidimension",
       "owner": "Indicator",
       "domain_of": [
         "Indicator"
       ],
       "range": "SustainabilityDimension",
       "required": true,
-      "@type": "SlotDefinition"
-    },
-    {
-      "name": "thematic_area",
-      "definition_uri": "https://w3id.org/linkml/examples/fsithematic_area",
-      "description": "The thematic area the indicator belongs to.",
-      "title": "thematic area",
-      "from_schema": "https://w3id.org/linkml/examples/fsi",
-      "slot_uri": "https://w3id.org/linkml/examples/fsithematic_area",
-      "owner": "Indicator",
-      "domain_of": [
-        "Indicator"
-      ],
-      "range": "ThematicArea",
-      "required": true,
-      "inlined": true,
-      "any_of": [
-        {
-          "range": "EnvironmentalThematicArea",
-          "@type": "AnonymousSlotExpression"
-        },
-        {
-          "range": "EconomicThematicArea",
-          "@type": "AnonymousSlotExpression"
-        },
-        {
-          "range": "SocialThematicArea",
-          "@type": "AnonymousSlotExpression"
-        },
-        {
-          "range": "HorizontalThematicArea",
-          "@type": "AnonymousSlotExpression"
-        }
-      ],
-      "@type": "SlotDefinition"
-    },
-    {
-      "name": "indicator_domain",
-      "definition_uri": "https://w3id.org/linkml/examples/fsiindicator_domain",
-      "description": "Reference to the domain that the indicator belongs to.",
-      "title": "domain",
-      "from_schema": "https://w3id.org/linkml/examples/fsi",
-      "slot_uri": "https://w3id.org/linkml/examples/fsiindicator_domain",
-      "owner": "Indicator",
-      "domain_of": [
-        "Indicator"
-      ],
-      "range": "Domain",
-      "required": true,
-      "inlined": true,
-      "any_of": [
-        {
-          "range": "EnvironmentalDomain",
-          "@type": "AnonymousSlotExpression"
-        },
-        {
-          "range": "EconomicDomain",
-          "@type": "AnonymousSlotExpression"
-        },
-        {
-          "range": "SocialDomain",
-          "@type": "AnonymousSlotExpression"
-        },
-        {
-          "range": "HorizontalDomain",
-          "@type": "AnonymousSlotExpression"
-        }
-      ],
       "@type": "SlotDefinition"
     },
     {
@@ -1414,6 +1077,84 @@
       "@type": "SlotDefinition"
     },
     {
+      "name": "IndicatorCategory_id",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiid",
+      "description": "Unique identifier of the indicator category.",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "is_a": "id",
+      "domain": "IndicatorCategory",
+      "slot_uri": "https://w3id.org/linkml/examples/fsiid",
+      "identifier": true,
+      "alias": "id",
+      "owner": "IndicatorCategory",
+      "domain_of": [
+        "IndicatorCategory"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "id",
+      "range": "string",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "IndicatorCategory_name",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiname",
+      "description": "Denomination of the indicator category.",
+      "title": "name",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "aliases": [
+        "label",
+        "display name",
+        "title"
+      ],
+      "mappings": [
+        "http://www.w3.org/2000/01/rdf-schema#label"
+      ],
+      "narrow_mappings": [
+        "http://purl.org/dc/terms/title"
+      ],
+      "is_a": "name",
+      "domain": "IndicatorCategory",
+      "slot_uri": "http://www.w3.org/2000/01/rdf-schema#label",
+      "alias": "name",
+      "owner": "IndicatorCategory",
+      "domain_of": [
+        "IndicatorCategory"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "name",
+      "range": "label_type",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "IndicatorCategory_description",
+      "definition_uri": "https://w3id.org/linkml/examples/fsidescription",
+      "description": "Concise text that provides the meaning of the indicator category.",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "aliases": [
+        "definition"
+      ],
+      "mappings": [
+        "http://purl.org/dc/terms/description"
+      ],
+      "exact_mappings": [
+        "http://purl.obolibrary.org/obo/IAO_0000115",
+        "http://www.w3.org/2004/02/skos/core#definitions"
+      ],
+      "is_a": "description",
+      "domain": "IndicatorCategory",
+      "slot_uri": "http://purl.org/dc/terms/description",
+      "alias": "description",
+      "owner": "IndicatorCategory",
+      "domain_of": [
+        "IndicatorCategory"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "description",
+      "range": "narrative_text",
+      "@type": "SlotDefinition"
+    },
+    {
       "name": "Indicator_id",
       "definition_uri": "https://w3id.org/linkml/examples/fsiid",
       "description": "Unique identifier of the indicator.",
@@ -1531,29 +1272,20 @@
       "@type": "ClassDefinition"
     },
     {
-      "name": "ThematicArea",
-      "definition_uri": "https://w3id.org/linkml/examples/fsiThematicArea",
-      "description": "A topic within a sustainability dimension (environmental, social, or economic) that organizes related domains and indicators around a common sustainability theme.",
-      "title": "thematic area",
+      "name": "IndicatorCategory",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiIndicatorCategory",
+      "description": "The category the indicator belongs to.",
+      "title": "indicator category",
       "from_schema": "https://w3id.org/linkml/examples/fsi",
-      "mappings": [
-        "linkml:Any"
+      "is_a": "Entity",
+      "slots": [
+        "iri",
+        "IndicatorCategory_id",
+        "IndicatorCategory_name",
+        "IndicatorCategory_description"
       ],
       "slot_usage": {},
-      "class_uri": "https://w3id.org/linkml/Any",
-      "@type": "ClassDefinition"
-    },
-    {
-      "name": "Domain",
-      "definition_uri": "https://w3id.org/linkml/examples/fsiDomain",
-      "description": "A specific sub-area within a thematic area that groups related indicators to measure a particular aspect of sustainability.",
-      "title": "domain",
-      "from_schema": "https://w3id.org/linkml/examples/fsi",
-      "mappings": [
-        "linkml:Any"
-      ],
-      "slot_usage": {},
-      "class_uri": "https://w3id.org/linkml/Any",
+      "class_uri": "https://w3id.org/linkml/examples/fsiIndicatorCategory",
       "@type": "ClassDefinition"
     },
     {
@@ -1565,132 +1297,16 @@
       "is_a": "Entity",
       "slots": [
         "iri",
-        "key_area",
-        "thematic_area",
-        "indicator_domain",
-        "granularity",
+        "dimension",
         "supply_chain_component",
         "measurement_unit",
+        "has_category",
         "Indicator_id",
         "Indicator_name",
         "Indicator_description"
       ],
       "slot_usage": {},
       "class_uri": "https://w3id.org/linkml/examples/fsiIndicator",
-      "rules": [
-        {
-          "preconditions": {
-            "slot_conditions": [
-              {
-                "name": "key_area",
-                "equals_string": "environmental",
-                "@type": "SlotDefinition"
-              }
-            ],
-            "@type": "AnonymousClassExpression"
-          },
-          "postconditions": {
-            "slot_conditions": [
-              {
-                "name": "thematic_area",
-                "any_of": [
-                  {
-                    "range": "EnvironmentalThematicArea",
-                    "@type": "AnonymousSlotExpression"
-                  }
-                ],
-                "@type": "SlotDefinition"
-              }
-            ],
-            "@type": "AnonymousClassExpression"
-          },
-          "@type": "ClassRule"
-        },
-        {
-          "preconditions": {
-            "slot_conditions": [
-              {
-                "name": "key_area",
-                "equals_string": "economic",
-                "@type": "SlotDefinition"
-              }
-            ],
-            "@type": "AnonymousClassExpression"
-          },
-          "postconditions": {
-            "slot_conditions": [
-              {
-                "name": "thematic_area",
-                "any_of": [
-                  {
-                    "range": "EconomicThematicArea",
-                    "@type": "AnonymousSlotExpression"
-                  }
-                ],
-                "@type": "SlotDefinition"
-              }
-            ],
-            "@type": "AnonymousClassExpression"
-          },
-          "@type": "ClassRule"
-        },
-        {
-          "preconditions": {
-            "slot_conditions": [
-              {
-                "name": "key_area",
-                "equals_string": "social",
-                "@type": "SlotDefinition"
-              }
-            ],
-            "@type": "AnonymousClassExpression"
-          },
-          "postconditions": {
-            "slot_conditions": [
-              {
-                "name": "thematic_area",
-                "any_of": [
-                  {
-                    "range": "SocialThematicArea",
-                    "@type": "AnonymousSlotExpression"
-                  }
-                ],
-                "@type": "SlotDefinition"
-              }
-            ],
-            "@type": "AnonymousClassExpression"
-          },
-          "@type": "ClassRule"
-        },
-        {
-          "preconditions": {
-            "slot_conditions": [
-              {
-                "name": "key_area",
-                "equals_string": "horizontal",
-                "@type": "SlotDefinition"
-              }
-            ],
-            "@type": "AnonymousClassExpression"
-          },
-          "postconditions": {
-            "slot_conditions": [
-              {
-                "name": "thematic_area",
-                "any_of": [
-                  {
-                    "range": "HorizontalThematicArea",
-                    "@type": "AnonymousSlotExpression"
-                  }
-                ],
-                "@type": "SlotDefinition"
-              }
-            ],
-            "@type": "AnonymousClassExpression"
-          },
-          "@type": "ClassRule"
-        }
-      ],
       "@type": "ClassDefinition"
     },
     {
@@ -1814,9 +1430,9 @@
   ],
   "metamodel_version": "1.7.0",
   "source_file": "food_system_indicators.yaml",
-  "source_file_date": "2025-10-23T05:16:08",
-  "source_file_size": 22263,
-  "generation_date": "2025-10-23T05:16:51",
+  "source_file_date": "2025-11-03T22:36:56",
+  "source_file_size": 13926,
+  "generation_date": "2025-11-03T22:37:36",
   "@type": "SchemaDefinition",
   "@context": [
     "project/jsonld/food_system_indicators.context.jsonld",

@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="https://biometris.github.io/FS-Datamodel/model/" rel="canonical"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.6.1, mkdocs-material-9.6.22" name="generator"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.6.23" name="generator"/>
 <title>FOOD SYSTEMS INDICATORS SCHEMA - FS Data Model</title>
 <link href="../assets/stylesheets/main.84d31ad4.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -157,19 +157,11 @@
   </span>
 </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../domains_table/">
-<span class="md-ellipsis">
-    Indicator domains
-    
-  </span>
-</a>
-</li>
 </ul>
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../indicators_table/">
+<a class="md-nav__link" href="../indicators/">
 <span class="md-ellipsis">
     Indicator definitions
     
@@ -177,9 +169,9 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../indicator_data_collection_details_table/">
+<a class="md-nav__link" href="../indicator_categories/">
 <span class="md-ellipsis">
-    Indicator data collection details
+    Indicator categories
     
   </span>
 </a>
@@ -192,17 +184,25 @@
   </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../indicator_data_collection_details_table/">
+<span class="md-ellipsis">
+    Indicator data collection details
+    
+  </span>
+</a>
+</li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_6" type="checkbox"/>
-<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+<input class="md-nav__toggle md-toggle" id="__nav_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
 <span class="md-ellipsis">
     Indicator selection details
     
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_6">
+<nav aria-expanded="false" aria-labelledby="__nav_7_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
 <span class="md-nav__icon md-icon"></span>
             Indicator selection details
           </label>
@@ -281,14 +281,16 @@ Database {
     label_type name  
     narrative_text description  
 }
-Domain {
-
-}
 Indicator {
-    SustainabilityDimension key_area  
-    SpatialGranularityList granularity  
+    SustainabilityDimension dimension  
     SupplyChainComponentTypeList supply_chain_component  
     unit measurement_unit  
+    string id  
+    iri_type iri  
+    label_type name  
+    narrative_text description  
+}
+IndicatorCategory {
     string id  
     iri_type iri  
     label_type name  
@@ -325,12 +327,8 @@ IndicatorcriteriaScore {
     ScoreCategory score  
     narrative_text comment  
 }
-ThematicArea {
 
-}
-
-Indicator ||--|| Domain : "indicator_domain"
-Indicator ||--|| ThematicArea : "thematic_area"
+Indicator ||--|| IndicatorCategory : "has_category"
 IndicatorDataCollectionDetails ||--|| Database : "in_database"
 IndicatorDataCollectionDetails ||--|| Indicator : "measures_indicator"
 IndicatorDatapoint ||--|| Indicator : "measurement_of"
@@ -355,13 +353,13 @@ IndicatorcriteriaScore ||--|o IndicatorCriterion : "scores_criterion"
 <td>Class</td>
 </tr>
 <tr>
-<td><a href="Domain/">Domain</a></td>
-<td>A specific sub-area within a thematic area that groups related indicators to measure a particular aspect of sustainability.</td>
+<td><a href="Indicator/">Indicator</a></td>
+<td>A quantitative measure used to assess the state, performance, or progress of a specific aspect of the food system in relation to sustainability objectives.</td>
 <td>Class</td>
 </tr>
 <tr>
-<td><a href="Indicator/">Indicator</a></td>
-<td>A quantitative measure used to assess the state, performance, or progress of a specific aspect of the food system in relation to sustainability objectives.</td>
+<td><a href="IndicatorCategory/">Indicator category</a></td>
+<td>The category the indicator belongs to.</td>
 <td>Class</td>
 </tr>
 <tr>
@@ -390,58 +388,13 @@ IndicatorcriteriaScore ||--|o IndicatorCriterion : "scores_criterion"
 <td>Class</td>
 </tr>
 <tr>
-<td><a href="ThematicArea/">Thematic area</a></td>
-<td>A topic within a sustainability dimension (environmental, social, or economic) that organizes related domains and indicators around a common sustainability theme.</td>
-<td>Class</td>
-</tr>
-<tr>
 <td><a href="CriterionCategory/">Criterion category</a></td>
 <td>Category of an indicator selection criterion.</td>
 <td>Enum</td>
 </tr>
 <tr>
-<td><a href="EconomicDomain/">Economic domain</a></td>
-<td>A specific area within the economic dimension that focuses on the performance, resilience, and fairness of economic activities. Examples are productivity, value distribution, or competitiveness, measured through related indicators.</td>
-<td>Enum</td>
-</tr>
-<tr>
-<td><a href="EconomicThematicArea/">Economic thematic area</a></td>
-<td>Thematic areas defined for the economic sustainability dimension.</td>
-<td>Enum</td>
-</tr>
-<tr>
-<td><a href="EnvironmentalDomain/">Environmental domain</a></td>
-<td>A specific area within the environmental dimension that focuses on the state and use of natural resources and ecosystems. Examples are climate impact, biodiversity, pollution, or resource efficiency, measured through related indicators.</td>
-<td>Enum</td>
-</tr>
-<tr>
-<td><a href="EnvironmentalThematicArea/">Environmental thematic area</a></td>
-<td>Thematic areas defined for the enviromental sustainability dimension.</td>
-<td>Enum</td>
-</tr>
-<tr>
-<td><a href="HorizontalDomain/">Horizontal domain</a></td>
-<td>A cross-cutting area that spans all sustainability dimensions—environmental, social, and economic—and addresses overarching aspects such as governance, resilience, or innovation that influence the entire food system.</td>
-<td>Enum</td>
-</tr>
-<tr>
-<td><a href="HorizontalThematicArea/">Horizontal thematic area</a></td>
-<td>Thematic areas defined for the horizontal, cross-cutting sustainability dimension.</td>
-<td>Enum</td>
-</tr>
-<tr>
 <td><a href="ScoreCategory/">Score category</a></td>
 <td>Score category.</td>
-<td>Enum</td>
-</tr>
-<tr>
-<td><a href="SocialDomain/">Social domain</a></td>
-<td>Specific area within the social dimension of sustainability that focuses on human well-being, equity, and social conditions. Examples are fairness, health, nutrition, or working conditions, measured through related indicators.</td>
-<td>Enum</td>
-</tr>
-<tr>
-<td><a href="SocialThematicArea/">Social thematic area</a></td>
-<td>Thematic areas defined for the social sustainability dimension.</td>
 <td>Enum</td>
 </tr>
 <tr>
@@ -461,7 +414,7 @@ IndicatorcriteriaScore ||--|o IndicatorCriterion : "scores_criterion"
 </tr>
 <tr>
 <td><a href="SustainabilityDimension/">Sustainability dimension</a></td>
-<td>A core pillar of sustainability (environmental, social, economic, or horizontal) that groups indicators to evaluate different aspects of sustainable development within the food system.</td>
+<td>A core pillar of sustainability (environment, society, economy, or health) that groups indicators to evaluate different aspects of sustainable development within the food system.</td>
 <td>Enum</td>
 </tr>
 <tr>

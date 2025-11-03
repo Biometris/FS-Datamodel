@@ -69,15 +69,9 @@ linkml:Sparqlpath xsd:string
     )
 }
 
-<https://w3id.org/linkml/examples/fsiDomain> CLOSED {
-    (  $<https://w3id.org/linkml/examples/fsiDomain_tes> rdf:type . * ;
-       rdf:type [ linkml:Any ] ?
-    )
-}
-
 <https://w3id.org/linkml/examples/fsiEntity>  (
     @<https://w3id.org/linkml/examples/fsiDatabase> OR @<https://w3id.org/linkml/examples/fsiIndicator> OR
-    @<https://w3id.org/linkml/examples/fsiIndicatorCriterion> OR
+    @<https://w3id.org/linkml/examples/fsiIndicatorCategory> OR @<https://w3id.org/linkml/examples/fsiIndicatorCriterion> OR
     @<https://w3id.org/linkml/examples/fsiIndicatorDataCollectionDetails> OR @<https://w3id.org/linkml/examples/fsiQuantityValue>
 )
 
@@ -94,29 +88,34 @@ linkml:Sparqlpath xsd:string
 <https://w3id.org/linkml/examples/fsiIndicator> CLOSED {
     (  $<https://w3id.org/linkml/examples/fsiIndicator_tes> (  &<https://w3id.org/linkml/examples/fsiEntity_tes> ;
           rdf:type [ <https://w3id.org/linkml/examples/fsiEntity> ] ? ;
-          <https://w3id.org/linkml/examples/fsikey_area> [
-             <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Environmental>
-             <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Economic>
-             <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Social>
-             <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Horizontal> ] ;
-          <https://w3id.org/linkml/examples/fsithematic_area> @<https://w3id.org/linkml/examples/fsiThematicArea> ;
-          <https://w3id.org/linkml/examples/fsiindicator_domain> @<https://w3id.org/linkml/examples/fsiDomain> ;
-          <https://w3id.org/linkml/examples/fsigranularity> [ <https://w3id.org/linkml/examples/fsiSpatialGranularity#MacroRegions>
-             <https://w3id.org/linkml/examples/fsiSpatialGranularity#Country>
-             <https://w3id.org/linkml/examples/fsiSpatialGranularity#NUTS1>
-             <https://w3id.org/linkml/examples/fsiSpatialGranularity#NUTS2>
-             <https://w3id.org/linkml/examples/fsiSpatialGranularity#NUTS3>
-             <https://w3id.org/linkml/examples/fsiSpatialGranularity#LAU> ] + ;
+          <https://w3id.org/linkml/examples/fsidimension> [
+             <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Environment>
+             <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Economy>
+             <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Society>
+             <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Health> ] ;
           <https://w3id.org/linkml/examples/fsisupply_chain_component> [
-             <https://w3id.org/linkml/examples/fsiSupplyChainComponentType#PrimaryFoodProduction>
+             <https://w3id.org/linkml/examples/fsiSupplyChainComponentType#PrimaryProduction>
              <https://w3id.org/linkml/examples/fsiSupplyChainComponentType#FoodProcessing>
-             <https://w3id.org/linkml/examples/fsiSupplyChainComponentType#FoodDistribution>
-             <https://w3id.org/linkml/examples/fsiSupplyChainComponentType#FoodConsumption> ] * ;
+             <https://w3id.org/linkml/examples/fsiSupplyChainComponentType#Consumption>
+             <https://w3id.org/linkml/examples/fsiSupplyChainComponentType#Retail>
+             <https://w3id.org/linkml/examples/fsiSupplyChainComponentType#Transport>
+             <https://w3id.org/linkml/examples/fsiSupplyChainComponentType#DisposalRecycling> ] * ;
           <https://w3id.org/linkml/examples/fsimeasurement_unit> @<https://w3id.org/linkml/examples/fsiUnit> ? ;
+          <https://w3id.org/linkml/examples/fsihas_category> @<https://w3id.org/linkml/examples/fsiIndicatorCategory> ;
           rdfs:label @<https://w3id.org/linkml/examples/fsiLabelType> ? ;
           dct:description @<https://w3id.org/linkml/examples/fsiNarrativeText> ?
        ) ;
        rdf:type [ <https://w3id.org/linkml/examples/fsiIndicator> ]
+    )
+}
+
+<https://w3id.org/linkml/examples/fsiIndicatorCategory> CLOSED {
+    (  $<https://w3id.org/linkml/examples/fsiIndicatorCategory_tes> (  &<https://w3id.org/linkml/examples/fsiEntity_tes> ;
+          rdf:type [ <https://w3id.org/linkml/examples/fsiEntity> ] ? ;
+          rdfs:label @<https://w3id.org/linkml/examples/fsiLabelType> ? ;
+          dct:description @<https://w3id.org/linkml/examples/fsiNarrativeText> ?
+       ) ;
+       rdf:type [ <https://w3id.org/linkml/examples/fsiIndicatorCategory> ]
     )
 }
 
@@ -202,9 +201,3 @@ linkml:Sparqlpath xsd:string
        )
     } OR @<https://w3id.org/linkml/examples/fsiIndicatorDatapoint>
 )
-
-<https://w3id.org/linkml/examples/fsiThematicArea> CLOSED {
-    (  $<https://w3id.org/linkml/examples/fsiThematicArea_tes> rdf:type . * ;
-       rdf:type [ linkml:Any ] ?
-    )
-}

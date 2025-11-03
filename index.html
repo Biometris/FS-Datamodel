@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
     
     
       
@@ -279,9 +279,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#jrc-domain-sunburst-diagram" class="md-nav__link">
+  <a href="#dimension-sunburst-diagram" class="md-nav__link">
     <span class="md-ellipsis">
-      JRC domain sunburst diagram
+      Dimension sunburst diagram
     </span>
   </a>
   
@@ -379,29 +379,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="domains_table/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Indicator domains
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -416,7 +393,7 @@
   
   
     <li class="md-nav__item">
-      <a href="indicators_table/" class="md-nav__link">
+      <a href="indicators/" class="md-nav__link">
         
   
   
@@ -438,12 +415,12 @@
   
   
     <li class="md-nav__item">
-      <a href="indicator_data_collection_details_table/" class="md-nav__link">
+      <a href="indicator_categories/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Indicator data collection details
+    Indicator categories
     
   </span>
   
@@ -481,6 +458,28 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="indicator_data_collection_details_table/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Indicator data collection details
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     
     
     
@@ -490,10 +489,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
   
@@ -506,8 +505,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Indicator selection details
           </label>
@@ -625,9 +624,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#jrc-domain-sunburst-diagram" class="md-nav__link">
+  <a href="#dimension-sunburst-diagram" class="md-nav__link">
     <span class="md-ellipsis">
-      JRC domain sunburst diagram
+      Dimension sunburst diagram
     </span>
   </a>
   
@@ -657,7 +656,7 @@
 <h2 id="supply-chain-component-hierarchy-tree">Supply chain component hierarchy tree</h2>
 <div id="indicators-tree-chart" style="width: 100; height: 600px;"></div>
 
-<h2 id="jrc-domain-sunburst-diagram">JRC domain sunburst diagram</h2>
+<h2 id="dimension-sunburst-diagram">Dimension sunburst diagram</h2>
 <div id="indicators-sunburst-chart" style="width: 100; height: 600px;"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
@@ -670,10 +669,6 @@
     .then(r => r.json())
     .then(data => {
       var option = {
-        radius: [0, '95%'],
-        emphasis: {
-          focus: 'ancestor'
-        },
         tooltip: {
             show: true,
             trigger: 'item',
@@ -685,6 +680,9 @@
           type: 'sunburst',
           data: data,
           radius: [0, '95%'],
+          emphasis: {
+            focus: 'ancestor'
+          },
           label: {
             overflow: 'break'
           },
@@ -700,39 +698,26 @@
             },
             {
               r0: '35%',
-              r: '55%',
+              r: '70%',
               label: {
-                rotate: 'tangential',
                 overflow: 'break',
                 formatter: function(params) {
                   const name = params.name;
-                  return name.length > 12 ? name.slice(0,12) + '…' : name;
-                }
-              }
-            },
-             {
-              r0: '55%',
-              r: '75%',
-              label: {
-                rotate: 'tangential',
-                overflow: 'break',
-                formatter: function(params) {
-                  const name = params.name;
-                  return name.length > 12 ? name.slice(0,12) + '…' : name;
+                  return name.length > 20 ? name.slice(0,20) + '…' : name;
                 }
               }
             },
             {
-              r0: '75%',
-              r: '90%',
+              r0: '70%',
+              r: '72%',
               label: {
-                rotate: 'tangential',
+                position: 'outside',
                 overflow: 'break',
                 padding: 3,
                 silent: false,
                 formatter: function(params) {
                   const name = params.name;
-                  return name.length > 12 ? name.slice(0,12) + '…' : name;
+                  return name.length > 30 ? name.slice(0,30) + '…' : name;
                 }
               },
               tooltip: {
