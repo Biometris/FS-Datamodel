@@ -36,7 +36,7 @@ xlsx_combined = xlsx_combined[pd.notnull(xlsx_combined.get("Indicator"))]
 
 # Remove spaces from all text fields
 for column in xlsx_combined.columns:
-    if xlsx_combined[column].dtype == "object":        
+    if xlsx_combined[column].dtype == "object":
         xlsx_combined[column] = xlsx_combined[column].map(lambda x : " ".join(x.split()) if isinstance(x, str) else x)
 
 # Helper function to create identifiers
@@ -45,19 +45,19 @@ def to_identifier(xlsx_combined, column_name):
 
 # Helper function to create identifiers
 def escape(xlsx_combined, column_name):
-    return xlsx_combined[column_name].str.title().replace("[“”]", "\"", regex=True)
+    return xlsx_combined[column_name].str.replace("[“”]", "\"", regex=True)
 
 # Map supply chain components
 ### TODO: This should ideally be correct in input. Check and throw error?
-component_mapping = {    
-    "Connsumption": "Consumption",    
-    "RetailDistribution": "Retail"    
+component_mapping = {
+    "Connsumption": "Consumption",
+    "RetailDistribution": "Retail"
 }
 supply_chain_components = []
 for lst in xlsx_combined["Related stage of the food supply chain"].str.split("[;,]", regex=True):
     if isinstance(lst, float):
         supply_chain_components.append([])
-    else:        
+    else:
         components = [(re.sub("[^a-zA-Z0-9]", "", str.title())) for str in lst]
         components = [component_mapping.get(component, component) for component in components]
         components = list(set(components)) if not isinstance(components[0], list) else components[0]
