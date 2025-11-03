@@ -11,10 +11,10 @@ nav:
   - Data model:
     - Diagram: model/model_diagram.md
     - Glossary: model/glossary.md
-    - Indicator dimensions: dimensions_table.md
-  - Indicator definitions: indicators_table.md
-  - Indicator data collection details: indicator_data_collection_details_table.md
+  - Indicator definitions: indicators.md
+  - Indicator categories: indicator_categories.md
   - Indicator databases: databases_table.md
+  - Indicator data collection details: indicator_data_collection_details_table.md
   - Indicator selection details:
     - Indicator criterion categories: model/CriterionCategory.md
     - Indicator criteria: indicator_criteria_table.md

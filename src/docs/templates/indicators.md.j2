@@ -1,0 +1,17 @@
+---
+hide:
+  - toc
+---
+
+| Dimensions | Category | Name | Unit | Description | Supply chain components |
+|------------|----------|------|------|-------------| ----------------------- |
+{% for indicator in indicators -%}
+  {%- set id = indicator['id'] -%}
+  {%- set name = indicator['name'] -%}
+  {%- set description = indicator['description'] -%}
+  {%- set unit = indicator['measurement_unit'] -%}
+  {%- set dimension = enum_dict['SustainabilityDimension'][indicator['dimension']] -%}
+  {%- set category_id = indicator['has_category'] -%}
+  {%- set category_name = categories_dict[indicator['has_category']]['name'] -%}
+| [{{ dimension }}](../model/SustainabilityDimension) | [{{category_name}}](../indicator_categories) | [{{name}}](../indicators/{{id}}) | {{unit}} | {{ description | replace("\n", "") }} | {% for scp in indicator['supply_chain_component'] %} [{{ enum_dict['SupplyChainComponentType'][scp] }}](../SupplyChainComponentType) {% endfor %} |
+{% endfor %}

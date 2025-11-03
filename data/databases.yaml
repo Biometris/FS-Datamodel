@@ -1,35 +1,104 @@
-- id: EDGAR
-  name: EDGAR
-  author: JRC
-  description: Independent, global database  of anthropogenic emissions of greenhous gases
-    and air pollution on Earth.
-  database_link: https://edgar.jrc.ec.europa.eu
+- id: Eurostat
+  name: Eurostat
+  author: ''
+  description: ''
+  database_link: https://ec.europa.eu/eurostat/databrowser/view/sdg_01_10a/default/table?lang=en
+  update_frequency: Yearly
+- id: Faostat
+  name: FAOSTAT
+  author: ''
+  description: ''
+  database_link: https://www.fao.org/faostat/en/#data/OA
   update_frequency: Other
-- id: ESTAT
-  name: ESTAT
-  description: Database for European Statistics in partnership with National Statistical 
-    Institues and other national authorities in the EU Member states.
-  database_link: https://ec.europa.eu/eurostat/web/main/data/database
+- id: AgriFoodDataPortalDirectorateGeneralForAgricultureAndRuralDevelopment
+  name: Agri-food data portal (Directorate-General for Agriculture and Rural Development)
+  author: ''
+  description: ''
+  database_link: https://agridata.ec.europa.eu/extensions/DashboardIndicators/AddingValue.html
   update_frequency: Yearly
-- id: EEA
-  name: EEA
-  description: European Environment Agency Database with data on a wide set of topics and 
-    legislation related to the environment, climate and sustainability.
-  database_link: https://www.eea.europa.eu/en/datahub
+- id: WorldBankGroup
+  name: World Bank Group
+  author: ''
+  description: ''
+  database_link: https://data.worldbank.org/indicator/PV.EST?view=chart
   update_frequency: Yearly
-- id: DG_SANTE
-  name: DG SANTE
-  description: EU Pesticides Database
-  database_link: https://food.ec.europa.eu/plants/pesticides/eu-pesticides-database_en
+- id: DataModellingPlatformOfResourceEconomicsJrcLasarteLpezEtAl2023
+  name: Data-Modelling platform of resource economics (JRC) / Lasarte-López et al.
+    (2023)
+  author: ''
+  description: ''
+  database_link: https://datam.jrc.ec.europa.eu/datam/mashup/BIOECONOMICS/
   update_frequency: Yearly
-- id: FAO
-  name: FAO  
-  description: Database for the Food and Agriculture Organization of the United Nations.
-  database_link: https://www.fao.org/faostat/en/#home
+- id: EuFoodSystemMonitoringDashboardJrc
+  name: EU Food System Monitoring Dashboard (JRC)
+  author: ''
+  description: ''
+  database_link: https://datam.jrc.ec.europa.eu/datam/mashup/EU_FOOD_SYSTEM_MONITORING/index.html
   update_frequency: Yearly
-- id: DG_AGRI
-  name: DG AGRI
-  description: Data on national and European agriculture and common agricultural policy (CAP),
-    provided by the European Commission's agricultural and rural development department.
-  database_link: https://agridata.ec.europa.eu/extensions/DataPortal/home.html
+- id: DataModellingPlatformOfResourceEconomics
+  name: Data-Modelling platform of resource economics
+  author: ''
+  description: ''
+  database_link: https://datam.jrc.ec.europa.eu/datam/mashup/EU_ESTIMATED_AGRICULTURAL_BALANCE_SHEETS/
+  update_frequency: Yearly
+- id: Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment
+  name: 'CAP 2023 - 27: Result indicators (European Commission, Directorate-General
+    for Agriculture and Rural Development)'
+  author: ''
+  description: ''
+  database_link: https://agridata.ec.europa.eu/extensions/DashboardCapPlan/result_indicators.html
+  update_frequency: Yearly
+- id: EuropeanDatabaseOfSalesOfVeterinaryAntmicrobialAgentsEma
+  name: European database of sales of veterinary antmicrobial agents (EMA)
+  author: ''
+  description: ''
+  database_link: https://esvacbi.ema.europa.eu/analytics/saw.dll?Dashboard
+  update_frequency: Yearly
+- id: DirectorateGeneralForAgricultureAndRuralDevelopment
+  name: Directorate-General for Agriculture and Rural Development
+  author: ''
+  description: ''
+  database_link: https://agriculture.ec.europa.eu/farming/animal-products/eggs_en
+  update_frequency: Yearly
+- id: AgriFoodDataPortal
+  name: Agri-food data portal
+  author: ''
+  description: ''
+  database_link: https://agridata.ec.europa.eu/extensions/IndicatorsSectorial/AgriculturalTrainingOfFarmManagers.html
+  update_frequency: Other
+- id: EcEuropeanPlatformOnLifeCycleAssessmentEplca
+  name: EC / European Platform on life cycle assessment (EPLCA)
+  author: ''
+  description: ''
+  database_link: https://eplca.jrc.ec.europa.eu/ConsumptionFootprintPlatform.html
+  update_frequency: Yearly
+- id: Who2024
+  name: WHO (2024)
+  author: ''
+  description: ''
+  database_link: https://www.who.int/europe/publications/m/item/brief-review-of-results-from-round-6-of-cosi-2022-2024
+  update_frequency: Other
+- id: EfsaComprehensiveEuropeanFoodConsumptionDatabase
+  name: EFSA Comprehensive European Food Consumption Database
+  author: ''
+  description: ''
+  database_link: https://www.efsa.europa.eu/en/microstrategy/foodex2-level-3
+  update_frequency: Other
+- id: MertensEtAl2019
+  name: Mertens et al. (2019)
+  author: ''
+  description: ''
+  database_link: https://www.sciencedirect.com/science/article/pii/S0959652619326873
+  update_frequency: Other
+- id: Who2022
+  name: WHO (2022)
+  author: ''
+  description: ''
+  database_link: https://www.who.int/europe/publications/i/item/WHO-EURO-2022-6594-46360-67071
+  update_frequency: Other
+- id: DirectorateGeneralForCommunicationsNetworksContentAndTechnology
+  name: Directorate-General for Communications Networks, Content and Technology
+  author: ''
+  description: ''
+  database_link: https://digital-decade-desi.digital-strategy.ec.europa.eu/datasets/key-indicators/charts/analyse-one-indicator-and-compare-countries?indicator=bb_rngacov&indicatorGroup=broadband&breakdown=total_pophh&period=2022&unit=pc_hh_all&country=AT,BE,BG,HR,CY,CZ,DK,EE,EU,FI,FR,DE,EL,HU,IS,IE,IT,LV,LT,LU,MT,NL,NO,PL,PT,RO,SK,SI,ES,SE,UK
   update_frequency: Yearly

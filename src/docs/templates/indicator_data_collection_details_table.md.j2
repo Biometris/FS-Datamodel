@@ -8,7 +8,7 @@ hide:
 {% for datasource in indicator_data_collection_details -%}
   {%- set id = datasource['id'] -%}
   {%- set name = datasource['name'] -%}
-  {%- set database = datasource['in_database'] -%}
+  {%- set database = databases_dict[datasource['in_database']]['name'] -%}
   {%- set id_database = datasource['in_database'] -%}
   {%- set indicator = indicators_dict[datasource['measures_indicator']]['name'] -%}
   {%- set id_indicator = datasource['measures_indicator'] -%}

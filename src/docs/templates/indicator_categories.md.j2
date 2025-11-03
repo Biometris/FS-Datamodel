@@ -1,0 +1,14 @@
+---
+hide:
+  - toc
+---
+
+| Dimension | Name | Description |
+|-----------|------|-------------|
+{% for record in categories -%}
+  {%- set id = record['id'] -%}
+  {%- set name = record['name'] -%}
+  {%- set description = record['description'] -%}
+  {%- set dimension = enum_dict['SustainabilityDimension'][record['dimension']] -%}
+| [{{ dimension }}](../model/SustainabilityDimension) | {{ name }} | {{ description | replace("\n", "") }} |
+{% endfor %}

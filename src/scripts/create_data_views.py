@@ -64,7 +64,6 @@ def create_supply_chain_indicator_hiearchy_json(indicators):
     # Save JSON for reuse
     Path(outfile_path).write_text(json.dumps(tree_data, indent=2))
 
-
 def create_indicator_scores_data_json(criteriascores):
 
     # Output file
@@ -85,7 +84,6 @@ def create_indicator_scores_data_json(criteriascores):
 
     # Save JSON for reuse
     Path(outfile_path).write_text(json.dumps(chart_data, indent=2))
-
 
 def render_template(
     template_name,
@@ -108,16 +106,19 @@ def render_template(
 
 if __name__ == "__main__":
     schema_path = "src/schema/food_system_indicators.yaml"
-    indicator_data_path = "data/t511_indicators.yaml"
-    database_data_path = "data/t511_databases.yaml"
-    indicator_data_collection_details_data_path = "data/t511_indicator_data_collection_details.yaml"
+    indicator_data_path = "data/indicators.yaml"
+    indicator_categories_data_path = "data/indicator_categories.yaml"
+    database_data_path = "data/databases.yaml"
+    indicator_data_collection_details_data_path = "data/indicator_data_collection_details.yaml"
     criterion_data_path = "data/criteria.yaml"
     indicatorscores_data_path = "data/indicatorscores.yaml"
+    excel_export_path = "docs/data/exported_indicator_datastore.xlsx"
 
     # Setup data store
     datastore = DataStore(
         schema_file=schema_path,
         indicators_file=indicator_data_path,
+        indicator_categories_file=indicator_categories_data_path,
         databases_file=database_data_path,
         indicator_data_collection_details_file=indicator_data_collection_details_data_path,
         criteria_file=criterion_data_path,
@@ -156,6 +157,8 @@ if __name__ == "__main__":
     if datastore.validate_data():
 
         # Get indicators and create hierarchy JSON and table
+        indicator_categories = datastore.get_indicator_categories()
+        indicator_categories_dict = res = {i['id']: i for i in indicator_categories}
         indicators = datastore.get_indicators()
         indicators_dict = res = {i['id']: i for i in indicators}
         databases = datastore.get_databases()
@@ -170,8 +173,15 @@ if __name__ == "__main__":
         create_supply_chain_indicator_hiearchy_json(indicators)
 
         render_template(
-            template_name = 'indicators_table',
+            template_name = 'indicators',
             indicators = indicators,
+            categories_dict = indicator_categories_dict,
+            enum_dict = enum_dict
+        )
+
+        render_template(
+            template_name = 'indicator_categories',
+            categories = indicator_categories,
             enum_dict = enum_dict
         )
 
@@ -183,7 +193,6 @@ if __name__ == "__main__":
                 enum_dict = enum_dict
             )
 
-        # Get database and create output table.
         render_template(
             template_name = 'databases_table',
             databases = databases
@@ -202,6 +211,7 @@ if __name__ == "__main__":
         render_template(
             template_name = 'indicator_data_collection_details_table',
             indicators_dict = indicators_dict,
+            databases_dict = databases_dict,
             indicator_data_collection_details = indicator_data_collection_details
         )
 
@@ -228,9 +238,5 @@ if __name__ == "__main__":
             template_name = 'indicator_scores'
         )
 
-        domains = datastore.get_dimensions()
-        render_template(
-            template_name = 'dimensions_table',
-            domains = domains,
-            enum_dict = enum_dict
-        )
+        # Export entire datastore to Excel
+        datastore.export_to_excel(excel_export_path)

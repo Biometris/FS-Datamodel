@@ -1,0 +1,136 @@
+- id: FarmersIncome
+  name: Farmers' income
+  description: ''
+  dimension: Economy
+- id: Competitiveness
+  name: Competitiveness
+  description: ''
+  dimension: Economy
+- id: FoodAffordability
+  name: Food affordability
+  description: ''
+  dimension: Economy
+- id: EconomicResilience
+  name: Economic resilience
+  description: ''
+  dimension: Economy
+- id: ConservOfNaturalResources
+  name: Conserv. of natural resources
+  description: ''
+  dimension: Environment
+- id: BiodiversityConservation
+  name: Biodiversity conservation
+  description: ''
+  dimension: Environment
+- id: OrganicFarming
+  name: Organic farming
+  description: ''
+  dimension: Environment
+- id: GhgEmissions
+  name: GHG emissions
+  description: ''
+  dimension: Environment
+- id: AirPollutants
+  name: Air pollutants
+  description: ''
+  dimension: Environment
+- id: PesticideAndAntibioticUse
+  name: Pesticide and antibiotic use
+  description: ''
+  dimension: Environment
+- id: FertilizerUse
+  name: Fertilizer use
+  description: ''
+  dimension: Environment
+- id: ImpactsOfClimateChange
+  name: Impacts of climate change
+  description: ''
+  dimension: Environment
+- id: AnimalKeeping
+  name: Animal keeping
+  description: ''
+  dimension: Environment
+- id: FoodWasteFoodLoss
+  name: Food waste & food loss
+  description: ''
+  dimension: Environment
+- id: WaterQuality
+  name: Water quality
+  description: ''
+  dimension: Environment
+- id: SusDevelopmentPrimaryProd
+  name: Sus. development_primary prod.
+  description: ''
+  dimension: Environment
+- id: EcologicalResilience
+  name: Ecological resilience
+  description: ''
+  dimension: Environment
+- id: CrossCuttingIndicators
+  name: Cross-cutting indicators
+  description: ''
+  dimension: Environment
+- id: NutritionalHealthOutcomes
+  name: Nutritional health outcomes
+  description: ''
+  dimension: Health
+- id: NutritionalBehaviour
+  name: Nutritional behaviour
+  description: ''
+  dimension: Health
+- id: FoodQualitySafety
+  name: Food quality & safety
+  description: ''
+  dimension: Health
+- id: Malnutrition
+  name: Malnutrition
+  description: ''
+  dimension: Health
+- id: FoodAccess
+  name: Food access
+  description: ''
+  dimension: Health
+- id: FoodAvailability
+  name: Food availability
+  description: ''
+  dimension: Health
+- id: FoodStability
+  name: Food stability
+  description: ''
+  dimension: Health
+- id: EmploymInAgricFoodSector
+  name: Employm. in agric._food sector
+  description: ''
+  dimension: Society
+- id: WorkingCondAgricFoodSect
+  name: Working cond._agric. food sect.
+  description: ''
+  dimension: Society
+- id: GeneralUnEmployment
+  name: General (un)employment
+  description: ''
+  dimension: Society
+- id: IncomeDistributPovertyRisk
+  name: Income distribut._Poverty risk
+  description: ''
+  dimension: Society
+- id: FoodEquity
+  name: Food Equity
+  description: ''
+  dimension: Society
+- id: GenderEquity
+  name: Gender Equity
+  description: ''
+  dimension: Society
+- id: Demography
+  name: Demography
+  description: ''
+  dimension: Society
+- id: SocialResilience
+  name: Social resilience
+  description: ''
+  dimension: Society
+- id: RuralDevelopment
+  name: Rural development
+  description: ''
+  dimension: Society

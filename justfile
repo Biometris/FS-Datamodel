@@ -113,4 +113,4 @@ validate:
 
 # Convert indicator data from yaml to json
 convert:
-  {{shebang}} {{src}}/scripts/create_indicators_data.py
+  {{shebang}} {{src}}/scripts/create_data_views.py

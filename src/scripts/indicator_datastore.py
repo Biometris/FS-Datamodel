@@ -2,12 +2,14 @@ from linkml_runtime import SchemaView
 from linkml_store import Client
 from linkml_store.utils.format_utils import load_objects
 from linkml_store.api.queries import Query
+import pandas as pd
 
 class DataStore:
     def __init__(
         self,
         schema_file: str,
         indicators_file: str,
+        indicator_categories_file: str,
         databases_file: str,
         indicator_data_collection_details_file: str,
         criteria_file: str,
@@ -21,8 +23,9 @@ class DataStore:
         sv = SchemaView(schema_file)
         self.db.set_schema_view(sv)
 
-        # Add database data from yaml to db.             
-        self.add_database_data(indicators_file, "Indicator", "Indicators")        
+        # Add database data from yaml to db.
+        self.add_database_data(indicators_file, "Indicator", "Indicators")
+        self.add_database_data(indicator_categories_file, "IndicatorCategories", "IndicatorCategories")
         self.add_database_data(indicator_data_collection_details_file, "IndicatorDataCollectionDetails", "IndicatorDataCollectionDetails")
         self.add_database_data(databases_file, "Database", "Databases")
         self.add_database_data(criteria_file, "IndicatorCriterion", "IndicatorCriteria")
@@ -40,7 +43,7 @@ class DataStore:
         collection_name
     ):
         collection = self.db.create_collection(reference_class, collection_name)
-        objects = load_objects(data_path)        
+        objects = load_objects(data_path)
 
         collection.insert(objects)
 
@@ -55,7 +58,6 @@ class DataStore:
                 print(r.message)
 
         # Validate cross-references between Databases and IndicatorDataCollectionDetails
-        database_collection = self.db.get_collection("Databases")
         data_source_collection = self.db.get_collection("IndicatorDataCollectionDetails")
         for data_collection in data_source_collection.rows_iter():
             database = data_collection.get("database")
@@ -65,15 +67,15 @@ class DataStore:
 
         # Validate cross-references between Indicators and IndicatorDataCollectionDetails
         indicator_collection = self.db.get_collection("Indicators")
-        data_source_collection = self.db.get_collection("IndicatorDataCollectionDetails")        
-        for data_source in data_source_collection.rows_iter():            
-            indicator = data_source.get("measures_indicator")            
+        data_source_collection = self.db.get_collection("IndicatorDataCollectionDetails")
+        for data_source in data_source_collection.rows_iter():
+            indicator = data_source.get("measures_indicator")
             if indicator is not None and len(indicator_collection.find({"id": indicator}).rows) == 0:
                 print(indicator + " specified in data source " + data_source.get("id") + " is not in the collection of indicators.")
                 valid = False
 
         return valid
-    
+
     def create_enum_dict(self):
         view = self.db.schema_view
 
@@ -93,41 +95,44 @@ class DataStore:
                 for r in any_of:
                     full_range = dict(enum_dict[getattr(r, "range")], **full_range)
                 enum_dict[getattr(slot, "range")] = full_range
-        
+
         return(enum_dict)
+
+    def get_indicator_categories(self):
+        """Return a joined view of indicator categories"""
+        q = Query(from_table="IndicatorCategories", limit=-1)
+        return self.db.query(q).rows
 
     def get_indicators(self):
         """Return a joined view of indicators"""
-        q = Query(from_table="Indicators", limit=1000)
+        q = Query(from_table="Indicators", limit=-1)
         return self.db.query(q).rows
 
     def get_databases(self):
         """Return a joined view of databases"""
-        q = Query(from_table="Databases", limit=1000)
+        q = Query(from_table="Databases", limit=-1)
         return self.db.query(q).rows
 
     def get_indicator_indicator_data_collection_details(self):
         """Return a joined view of indicator data collection detailss"""
-        q = Query(from_table="IndicatorDataCollectionDetails", limit=1000)
+        q = Query(from_table="IndicatorDataCollectionDetails", limit=-1)
         return self.db.query(q).rows
 
     def get_indicator_criteria(self):
         """Return a joined view of indicator criteria"""
-        q = Query(from_table="IndicatorCriteria", limit=1000)
+        q = Query(from_table="IndicatorCriteria", limit=-1)
         return self.db.query(q).rows
-    
+
     def get_indicator_criteria_scores(self):
         """Return a joined view of indicator criteria scores"""
-        q = Query(from_table="IndicatorCriteriaScores", limit=1000)
+        q = Query(from_table="IndicatorCriteriaScores", limit=-1)
         return self.db.query(q).rows
-    
-    def get_dimensions(self):
-        """Return a joined view of indicator dimensions"""
-        q = Query(from_table="Indicators",
-                  select_cols=["dimension", "has_category"], limit=1000)
-        
-        dimensions = [dict(s) for s in set(frozenset(d.items()) for d in self.db.query(q).rows)]
-        sorted_dimensions = sorted(dimensions, key=lambda i: (i["dimension"], i["has_category"]))
-                        
-        return sorted_dimensions
-    
+
+    def export_to_excel(self, output_path: str):
+        """Export the database contents to an Excel file with one sheet per collection."""
+        collections = self.db.list_collections()
+        with pd.ExcelWriter(output_path, engine='openpyxl') as writer:
+            for collection in collections:
+                df = pd.DataFrame(collection.rows_iter())
+                df.to_excel(writer, sheet_name=collection.target_class_name, index=False)
+
