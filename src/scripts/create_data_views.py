@@ -7,7 +7,7 @@ from linkml.generators.docgen import DocGenerator, SchemaView, DiagramType
 
 from indicator_datastore import DataStore
 
-def create_indicator_hiearchy_json(indicators):
+def create_indicator_hiearchy_json(indicators, categories_dict):
     # Output file
     outfile_path_sunburst = "docs/data/indicators_sunburst_chart_data.json"
     outfile_path_tree = "docs/data/indicators_tree_chart_data.json"
@@ -19,15 +19,16 @@ def create_indicator_hiearchy_json(indicators):
             hierarchy[e['dimension']] = {}
         if e['has_category'] not in hierarchy[e['dimension']]:
             hierarchy[e['dimension']][e['has_category']] = []
-        hierarchy[e['dimension']][e['has_category']].append(e)    
+        hierarchy[e['dimension']][e['has_category']].append(e)
 
     # Convert hierarchy
     sunburst_data = []
     for dimension, categories in hierarchy.items():
         dimension_node = {"name": dimension, "children": []}
         for category_id, ents in categories.items():
+             category_name = categories_dict[category_id]['name']
              category_node = {
-                 "name": category_id,
+                 "name": category_name,
                  "children": [{"name": ent['name'], "value": 1} for ent in ents]
                  }
              dimension_node["children"].append(category_node)
@@ -169,7 +170,7 @@ if __name__ == "__main__":
             database_indicators.setdefault(record['in_database'], []).append(record)
 
         enum_dict = datastore.create_enum_dict()
-        create_indicator_hiearchy_json(indicators)
+        create_indicator_hiearchy_json(indicators, indicator_categories_dict)
         create_supply_chain_indicator_hiearchy_json(indicators)
 
         render_template(

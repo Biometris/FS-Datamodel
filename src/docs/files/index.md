@@ -20,10 +20,6 @@ The aim is to establish a harmonised data model for structured collection of met
     .then(r => r.json())
     .then(data => {
       var option = {
-        radius: [0, '95%'],
-        emphasis: {
-          focus: 'ancestor'
-        },
         tooltip: {
             show: true,
             trigger: 'item',
@@ -35,6 +31,9 @@ The aim is to establish a harmonised data model for structured collection of met
           type: 'sunburst',
           data: data,
           radius: [0, '95%'],
+          emphasis: {
+            focus: 'ancestor'
+          },
           label: {
             overflow: 'break'
           },
@@ -50,39 +49,26 @@ The aim is to establish a harmonised data model for structured collection of met
             },
             {
               r0: '35%',
-              r: '55%',
+              r: '70%',
               label: {
-                rotate: 'tangential',
                 overflow: 'break',
                 formatter: function(params) {
                   const name = params.name;
-                  return name.length > 12 ? name.slice(0,12) + '…' : name;
-                }
-              }
-            },
-             {
-              r0: '55%',
-              r: '75%',
-              label: {
-                rotate: 'tangential',
-                overflow: 'break',
-                formatter: function(params) {
-                  const name = params.name;
-                  return name.length > 12 ? name.slice(0,12) + '…' : name;
+                  return name.length > 20 ? name.slice(0,20) + '…' : name;
                 }
               }
             },
             {
-              r0: '75%',
-              r: '90%',
+              r0: '70%',
+              r: '72%',
               label: {
-                rotate: 'tangential',
+                position: 'outside',
                 overflow: 'break',
                 padding: 3,
                 silent: false,
                 formatter: function(params) {
                   const name = params.name;
-                  return name.length > 12 ? name.slice(0,12) + '…' : name;
+                  return name.length > 30 ? name.slice(0,30) + '…' : name;
                 }
               },
               tooltip: {
