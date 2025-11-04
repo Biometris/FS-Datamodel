@@ -42,11 +42,40 @@ for column in xlsx_combined.columns:
 
 # Helper function to create identifiers
 def to_identifier(xlsx_combined, column_name):
-    return xlsx_combined[column_name].str.title().replace("[^a-zA-Z0-9]", "", regex=True)
+    result = xlsx_combined[column_name].str.title().replace("[^a-zA-Z0-9]", "", regex=True)
+    result = result.str.slice(0, 30)
+    return result
 
 # Helper function to create identifiers
 def escape(xlsx_combined, column_name):
     return xlsx_combined[column_name].str.replace("[“”]", "\"", regex=True)
+
+# Helper function to create identifiers
+def map_spatial_granularity(xlsx_combined):
+    result = []
+    for record in xlsx_combined["Data available on regional level?"]:
+        items = ["Country"]
+        if (record):
+            items.append("NUTS1")
+        result.append(items)
+    return result
+
+# Helper function to create identifiers
+def map_sustainability_impact(xlsx_combined, column_name):
+    # Map datapoints
+    impact_mapping = {
+        "-": "Negative",
+        "+": "Positive"
+    }
+    result = []
+    for record in xlsx_combined[column_name]:
+        if isinstance(record, float):
+            result.append("Undefined")
+        else:
+            record = re.sub("[^+-]", "", record)
+            result.append(impact_mapping.get(record, "Undefined"))
+
+    return result
 
 # Map supply chain components
 ### TODO: This should ideally be correct in input. Check and throw error?
@@ -73,7 +102,7 @@ indicator_data = {
     "dimension": to_identifier(xlsx_combined, "dimension"),
     "has_category": to_identifier(xlsx_combined, "category"),
     "supply_chain_component": supply_chain_components,
-    "sustainability_impact": xlsx_combined["Impact on sustainability"]
+    "sustainability_impact": map_sustainability_impact(xlsx_combined, "Impact on sustainability")
 }
 
 # Change data orientation

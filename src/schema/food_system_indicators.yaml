@@ -58,6 +58,7 @@ classes:
       - supply_chain_component
       - measurement_unit
       - has_category
+      - sustainability_impact
     slot_usage:
       id:
         description:
@@ -226,6 +227,12 @@ slots:
       Specifies the category for the indicator.
     range: IndicatorCategory
     required: true
+
+  sustainability_impact:
+      title: sustainability impact
+      description:
+        Description of the sustainability impact the indicator measures.
+      range: SustainabilityImpactType
 
   score_for_indicator:
     is_a: node property
@@ -534,3 +541,18 @@ enums:
       Excellent:
         description:
           Excellent.
+
+  SustainabilityImpactType:
+    title: sustainability impact type
+    description: >-
+      The type of sustainability impact the indicator measures.
+    permissible_values:
+      Positive:
+        title: positive
+        description: Positive impact on sustainability.
+      Negative:
+        title: negative
+        description: Negative impact on sustainability.
+      Undefined:
+        title: undefined
+        description: Undefined impact on sustainability.
