@@ -34,9 +34,6 @@ The aim is to establish a harmonised data model for structured collection of met
           emphasis: {
             focus: 'ancestor'
           },
-          label: {
-            overflow: 'break'
-          },
           levels: [
             {},
             {
@@ -49,7 +46,7 @@ The aim is to establish a harmonised data model for structured collection of met
             },
             {
               r0: '35%',
-              r: '70%',
+              r: '92%',
               label: {
                 overflow: 'break',
                 formatter: function(params) {
@@ -59,16 +56,13 @@ The aim is to establish a harmonised data model for structured collection of met
               }
             },
             {
-              r0: '70%',
-              r: '72%',
-              label: {
-                position: 'outside',
+              r0: '92%',
+              r: '98%',
+              label:  {
                 overflow: 'break',
-                padding: 3,
-                silent: false,
                 formatter: function(params) {
                   const name = params.name;
-                  return name.length > 30 ? name.slice(0,30) + '…' : name;
+                  return ' ';
                 }
               },
               tooltip: {
@@ -76,6 +70,9 @@ The aim is to establish a harmonised data model for structured collection of met
                 formatter: function(params) {
                   return params.name + ': ' + (params.value || '');
                 }
+              },
+              itemStyle: {
+                borderWidth: 3
               }
             }
           ]
