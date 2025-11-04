@@ -10,7 +10,7 @@
   description: ''
   database_link: https://www.fao.org/faostat/en/#data/OA
   update_frequency: Other
-- id: AgriFoodDataPortalDirectorateGeneralForAgricultureAndRuralDevelopment
+- id: AgriFoodDataPortalDirectorateGeneralForAgriculture
   name: Agri-food data portal (Directorate-General for Agriculture and Rural Development)
   author: ''
   description: ''
@@ -22,7 +22,7 @@
   description: ''
   database_link: https://data.worldbank.org/indicator/PV.EST?view=chart
   update_frequency: Yearly
-- id: DataModellingPlatformOfResourceEconomicsJrcLasarteLpezEtAl2023
+- id: DataModellingPlatformOfResourceEconomicsJrcLasarte
   name: Data-Modelling platform of resource economics (JRC) / Lasarte-López et al.
     (2023)
   author: ''
@@ -41,20 +41,20 @@
   description: ''
   database_link: https://datam.jrc.ec.europa.eu/datam/mashup/EU_ESTIMATED_AGRICULTURAL_BALANCE_SHEETS/
   update_frequency: Yearly
-- id: Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment
+- id: Cap202327ResultIndicatorsEuropeanCommissionDirecto
   name: 'CAP 2023 - 27: Result indicators (European Commission, Directorate-General
     for Agriculture and Rural Development)'
   author: ''
   description: ''
   database_link: https://agridata.ec.europa.eu/extensions/DashboardCapPlan/result_indicators.html
   update_frequency: Yearly
-- id: EuropeanDatabaseOfSalesOfVeterinaryAntmicrobialAgentsEma
+- id: EuropeanDatabaseOfSalesOfVeterinaryAntmicrobialAge
   name: European database of sales of veterinary antmicrobial agents (EMA)
   author: ''
   description: ''
   database_link: https://esvacbi.ema.europa.eu/analytics/saw.dll?Dashboard
   update_frequency: Yearly
-- id: DirectorateGeneralForAgricultureAndRuralDevelopment
+- id: DirectorateGeneralForAgricultureAndRuralDevelopmen
   name: Directorate-General for Agriculture and Rural Development
   author: ''
   description: ''
@@ -96,7 +96,7 @@
   description: ''
   database_link: https://www.who.int/europe/publications/i/item/WHO-EURO-2022-6594-46360-67071
   update_frequency: Other
-- id: DirectorateGeneralForCommunicationsNetworksContentAndTechnology
+- id: DirectorateGeneralForCommunicationsNetworksContent
   name: Directorate-General for Communications Networks, Content and Technology
   author: ''
   description: ''

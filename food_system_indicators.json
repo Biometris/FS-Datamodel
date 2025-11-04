@@ -112,6 +112,10 @@
                         "array",
                         "null"
                     ]
+                },
+                "sustainability_impact": {
+                    "$ref": "#/$defs/SustainabilityImpactType",
+                    "description": "Description of the sustainability impact the indicator measures."
                 }
             },
             "required": [
@@ -479,6 +483,16 @@
                 "Health"
             ],
             "title": "SustainabilityDimension",
+            "type": "string"
+        },
+        "SustainabilityImpactType": {
+            "description": "The type of sustainability impact the indicator measures.",
+            "enum": [
+                "Positive",
+                "Negative",
+                "Undefined"
+            ],
+            "title": "SustainabilityImpactType",
             "type": "string"
         },
         "TimeGranularity": {

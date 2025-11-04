@@ -102,6 +102,10 @@ linkml:Sparqlpath xsd:string
              <https://w3id.org/linkml/examples/fsiSupplyChainComponentType#DisposalRecycling> ] * ;
           <https://w3id.org/linkml/examples/fsimeasurement_unit> @<https://w3id.org/linkml/examples/fsiUnit> ? ;
           <https://w3id.org/linkml/examples/fsihas_category> @<https://w3id.org/linkml/examples/fsiIndicatorCategory> ;
+          <https://w3id.org/linkml/examples/fsisustainability_impact> [
+             <https://w3id.org/linkml/examples/fsiSustainabilityImpactType#Positive>
+             <https://w3id.org/linkml/examples/fsiSustainabilityImpactType#Negative>
+             <https://w3id.org/linkml/examples/fsiSustainabilityImpactType#Undefined> ] ? ;
           rdfs:label @<https://w3id.org/linkml/examples/fsiLabelType> ? ;
           dct:description @<https://w3id.org/linkml/examples/fsiNarrativeText> ?
        ) ;

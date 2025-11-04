@@ -54,6 +54,13 @@ enum SustainabilityDimension
     Health
   }
 
+enum SustainabilityImpactType
+  {
+    Positive
+    Negative
+    Undefined
+  }
+
 enum TimeGranularity
   {
     EveryTwoYears
@@ -88,6 +95,7 @@ type Indicator
     supplyChainComponent: [SupplyChainComponentType]
     measurementUnit: Unit
     hasCategory: IndicatorCategory!
+    sustainabilityImpact: SustainabilityImpactType
     id: String!
     name: LabelType
     description: NarrativeText

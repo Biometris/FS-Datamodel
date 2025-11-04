@@ -432,87 +432,6 @@
       ]
     },
     {
-      "name": "FoodProcessing",
-      "children": [
-        {
-          "name": "Real GDP per capita (sdg_08_10)",
-          "value": 1
-        },
-        {
-          "name": "Balance of trade",
-          "value": 1
-        },
-        {
-          "name": "Labour productivity in the agricultural/beverages/fishing and aquaculture/food sector",
-          "value": 1
-        },
-        {
-          "name": "(Gross) value added along the food chain (by sector; Agriculture, Fishing and Aquaculture, Food and Beverage selectable)",
-          "value": 1
-        },
-        {
-          "name": "Products under EU quality schemes (per scheme: PDO, PGI, TSG, GI)",
-          "value": 1
-        },
-        {
-          "name": "Indicator of Food Price Anomalies (IFPA), by Food CPI",
-          "value": 1
-        },
-        {
-          "name": "Self-sufficiency rate per member state (by food product)",
-          "value": 1
-        },
-        {
-          "name": "Water exploitation index, plus (WEI+) (sdg_06_60)",
-          "value": 1
-        },
-        {
-          "name": "Water use in the manufacturing industry by activity and supply category: Manufacture of food products and beverages",
-          "value": 1
-        },
-        {
-          "name": "Organic operators (by status of the registration process)",
-          "value": 1
-        },
-        {
-          "name": "Organic production of animal products (by product)",
-          "value": 1
-        },
-        {
-          "name": "Processors of organic products by NACE Rev. 2 activity(C)",
-          "value": 1
-        },
-        {
-          "name": "Emissions (e.g. CO2) from the individual stages of the food value chain",
-          "value": 1
-        },
-        {
-          "name": "Emissions from pre and post agricultural production",
-          "value": 1
-        },
-        {
-          "name": "Air pollutants by source sector (\"Food and beverages industry\" selectable)",
-          "value": 1
-        },
-        {
-          "name": "Food waste and food waste prevention by NACE Rev. 2 activity",
-          "value": 1
-        },
-        {
-          "name": "Prevalence of anemia among children (% of children ages 6-59 months)",
-          "value": 1
-        },
-        {
-          "name": "Consumption of iodized salt",
-          "value": 1
-        },
-        {
-          "name": "Share of people employed in agriculture/beverage/fishing and aquaculture/food (vs. EU27)",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Retail",
       "children": [
         {
@@ -605,6 +524,87 @@
         },
         {
           "name": "Percentage of children under 5 years of age who are stunted (modelled estimates)",
+          "value": 1
+        },
+        {
+          "name": "Share of people employed in agriculture/beverage/fishing and aquaculture/food (vs. EU27)",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "FoodProcessing",
+      "children": [
+        {
+          "name": "Real GDP per capita (sdg_08_10)",
+          "value": 1
+        },
+        {
+          "name": "Balance of trade",
+          "value": 1
+        },
+        {
+          "name": "Labour productivity in the agricultural/beverages/fishing and aquaculture/food sector",
+          "value": 1
+        },
+        {
+          "name": "(Gross) value added along the food chain (by sector; Agriculture, Fishing and Aquaculture, Food and Beverage selectable)",
+          "value": 1
+        },
+        {
+          "name": "Products under EU quality schemes (per scheme: PDO, PGI, TSG, GI)",
+          "value": 1
+        },
+        {
+          "name": "Indicator of Food Price Anomalies (IFPA), by Food CPI",
+          "value": 1
+        },
+        {
+          "name": "Self-sufficiency rate per member state (by food product)",
+          "value": 1
+        },
+        {
+          "name": "Water exploitation index, plus (WEI+) (sdg_06_60)",
+          "value": 1
+        },
+        {
+          "name": "Water use in the manufacturing industry by activity and supply category: Manufacture of food products and beverages",
+          "value": 1
+        },
+        {
+          "name": "Organic operators (by status of the registration process)",
+          "value": 1
+        },
+        {
+          "name": "Organic production of animal products (by product)",
+          "value": 1
+        },
+        {
+          "name": "Processors of organic products by NACE Rev. 2 activity(C)",
+          "value": 1
+        },
+        {
+          "name": "Emissions (e.g. CO2) from the individual stages of the food value chain",
+          "value": 1
+        },
+        {
+          "name": "Emissions from pre and post agricultural production",
+          "value": 1
+        },
+        {
+          "name": "Air pollutants by source sector (\"Food and beverages industry\" selectable)",
+          "value": 1
+        },
+        {
+          "name": "Food waste and food waste prevention by NACE Rev. 2 activity",
+          "value": 1
+        },
+        {
+          "name": "Prevalence of anemia among children (% of children ages 6-59 months)",
+          "value": 1
+        },
+        {
+          "name": "Consumption of iodized salt",
           "value": 1
         },
         {

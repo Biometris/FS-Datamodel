@@ -2,1918 +2,1862 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/databases_table/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_categories/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_criteria_table/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details_table/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_scores/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/databases/AgriFoodDataPortal/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/databases/AgriFoodDataPortalDirectorateGeneralForAgricultureAndRuralDevelopment/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/databases/AgriFoodDataPortalDirectorateGeneralForAgriculture/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/databases/Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/databases/Cap202327ResultIndicatorsEuropeanCommissionDirecto/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/databases/DataModellingPlatformOfResourceEconomics/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/databases/DataModellingPlatformOfResourceEconomicsJrcLasarteLpezEtAl2023/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/databases/DataModellingPlatformOfResourceEconomicsJrcLasarte/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/databases/DirectorateGeneralForAgricultureAndRuralDevelopment/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/databases/DirectorateGeneralForAgricultureAndRuralDevelopmen/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/databases/DirectorateGeneralForCommunicationsNetworksContentAndTechnology/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/databases/DirectorateGeneralForCommunicationsNetworksContent/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/databases/EcEuropeanPlatformOnLifeCycleAssessmentEplca/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/databases/EfsaComprehensiveEuropeanFoodConsumptionDatabase/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/databases/EuFoodSystemMonitoringDashboardJrc/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/databases/EuropeanDatabaseOfSalesOfVeterinaryAntmicrobialAgentsEma/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/databases/EuropeanDatabaseOfSalesOfVeterinaryAntmicrobialAge/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/databases/Eurostat/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/databases/Faostat/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/databases/MertensEtAl2019/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/databases/Who2022/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/databases/Who2024/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/databases/WorldBankGroup/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/AgriFoodDataPortalDirectorateGeneralForAgricultureAndRuralDevelopment_FarmersIncomeComparedToWagesInTheRestOfTheEconomy/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/AgriFoodDataPortalDirectorateGeneralForAgriculture_FarmersIncomeComparedToWagesInTheRestOfTheEconomy/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/AgriFoodDataPortalDirectorateGeneralForAgricultureAndRuralDevelopment_ProductsUnderEuQualitySchemesPerSchemePdoPgiTsgGi/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/AgriFoodDataPortalDirectorateGeneralForAgriculture_ProductsUnderEuQualitySchemesPerSchemePdoPgiTsgGi/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/AgriFoodDataPortal_AgriculturalTrainingOfFarmManagersCategorizedByOnlyPracticalAgriculturalExperienceBasicAgriculturalTrainingAndFullAgriculturalTraining/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/AgriFoodDataPortal_AgriculturalTrainingOfFarmManagersCategorizedByOnl/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment_AdaptationToClimateChange/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Cap202327ResultIndicatorsEuropeanCommissionDirecto_AdaptationToClimateChange/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment_CarbonStorageInSoilsAndBiomass/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Cap202327ResultIndicatorsEuropeanCommissionDirecto_CarbonStorageInSoilsAndBiomass/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment_DevelopmentOfOrganicAgriculture/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Cap202327ResultIndicatorsEuropeanCommissionDirecto_DevelopmentOfOrganicAgriculture/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment_EnvironmentalOrClimateRelatedPerformanceThroughInvestmentInRuralAreas/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Cap202327ResultIndicatorsEuropeanCommissionDirecto_EnvironmentalOrClimateRelatedPerformanceThroughInv/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment_EnvironmentalPerformanceInTheLivestockSector/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Cap202327ResultIndicatorsEuropeanCommissionDirecto_EnvironmentalPerformanceInTheLivestockSector/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment_FarmModernisation/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Cap202327ResultIndicatorsEuropeanCommissionDirecto_FarmModernisation/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment_GenerationalRenewal/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Cap202327ResultIndicatorsEuropeanCommissionDirecto_GenerationalRenewal/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment_ImprovingAirQuality/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Cap202327ResultIndicatorsEuropeanCommissionDirecto_ImprovingAirQuality/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment_ImprovingAnimalWelfare/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Cap202327ResultIndicatorsEuropeanCommissionDirecto_ImprovingAnimalWelfare/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment_InvestmentRelatedToNaturalResources/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Cap202327ResultIndicatorsEuropeanCommissionDirecto_InvestmentRelatedToNaturalResources/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment_InvestmentsRelatedToBiodiversity/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Cap202327ResultIndicatorsEuropeanCommissionDirecto_InvestmentsRelatedToBiodiversity/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment_InvestmentsRelatedToClimate/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Cap202327ResultIndicatorsEuropeanCommissionDirecto_InvestmentsRelatedToClimate/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment_LimitingAntimicrobialUse/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Cap202327ResultIndicatorsEuropeanCommissionDirecto_LimitingAntimicrobialUse/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment_PreservingHabitatsAndSpecies/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Cap202327ResultIndicatorsEuropeanCommissionDirecto_PreservingHabitatsAndSpecies/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment_RedistributionToSmallerFarms/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Cap202327ResultIndicatorsEuropeanCommissionDirecto_RedistributionToSmallerFarms/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment_ReducingEmissionsInTheLivestockSector/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Cap202327ResultIndicatorsEuropeanCommissionDirecto_ReducingEmissionsInTheLivestockSector/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment_SustainableAndReducedUseOfPesticides/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Cap202327ResultIndicatorsEuropeanCommissionDirecto_SustainableAndReducedUseOfPesticides/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/DataModellingPlatformOfResourceEconomicsJrcLasarteLpezEtAl2023_LabourProductivityInTheAgriculturalBeveragesFishingAndAquacultureFoodSector/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/DataModellingPlatformOfResourceEconomicsJrcLasarte_LabourProductivityInTheAgriculturalBeveragesFishin/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/DataModellingPlatformOfResourceEconomicsJrcLasarteLpezEtAl2023_ShareOfPeopleEmployedInAgricultureBeverageFishingAndAquacultureFoodVsEu27/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/DataModellingPlatformOfResourceEconomicsJrcLasarte_ShareOfPeopleEmployedInAgricultureBeverageFishingA/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/DataModellingPlatformOfResourceEconomics_SelfSufficiencyRatePerMemberStateByFoodProduct/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/DirectorateGeneralForAgricultureAndRuralDevelopment_ShareOfLayingHensByWayOfKeepingEnrichedCageFreeRangeBarnOrganic/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/DirectorateGeneralForAgricultureAndRuralDevelopmen_ShareOfLayingHensByWayOfKeepingEnrichedCageFreeRan/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/DirectorateGeneralForCommunicationsNetworksContentAndTechnology_RuralNgaNextGenerationAccessBroadbandCoverageAvailability/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/DirectorateGeneralForCommunicationsNetworksContent_RuralNgaNextGenerationAccessBroadbandCoverageAvail/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/EcEuropeanPlatformOnLifeCycleAssessmentEplca_ConsumptionFootprintFood/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/EfsaComprehensiveEuropeanFoodConsumptionDatabase_DailyConsumptionOfLegumesDifferentPopulationGroupsSelectable/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/EfsaComprehensiveEuropeanFoodConsumptionDatabase_DailyConsumptionOfLegumesDifferentPopulationGroups/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/EfsaComprehensiveEuropeanFoodConsumptionDatabase_DailyConsumptionOfMeatAndMeatProductsDifferentPopulationGroupsSelectable/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/EfsaComprehensiveEuropeanFoodConsumptionDatabase_DailyConsumptionOfMeatAndMeatProductsDifferentPopu/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/EfsaComprehensiveEuropeanFoodConsumptionDatabase_DailyConsumptionOfMilkAndDairyProductsDifferentPopulationGroupsSelectable/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/EfsaComprehensiveEuropeanFoodConsumptionDatabase_DailyConsumptionOfMilkAndDairyProductsDifferentPop/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/EfsaComprehensiveEuropeanFoodConsumptionDatabase_DailyConsumptionOfSoftDrinksDifferentPopulationGroupsSelectable/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/EfsaComprehensiveEuropeanFoodConsumptionDatabase_DailyConsumptionOfSoftDrinksDifferentPopulationGro/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/EuFoodSystemMonitoringDashboardJrc_GrossValueAddedAlongTheFoodChainBySectorAgricultureFishingAndAquacultureFoodAndBeverageSelectable/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/EuFoodSystemMonitoringDashboardJrc_GrossValueAddedAlongTheFoodChainBySectorAgricultur/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/EuropeanDatabaseOfSalesOfVeterinaryAntmicrobialAgentsEma_SalesOfAntimicrobialsForFoodProducingAnimals/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/EuropeanDatabaseOfSalesOfVeterinaryAntmicrobialAge_SalesOfAntimicrobialsForFoodProducingAnimals/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_AdjustedGrossDisposableIncomeOfHouseholdsPerCapita/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_AgriculturalRealFactorIncomePerAnnualWorkUnitAwuSdg0220/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_AgriculturalRealFactorIncomePerAnnualWorkUnitAwuSd/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_AirPollutantsBySourceSectorFoodAndBeveragesIndustrySelectable/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_AirPollutantsBySourceSectorFoodAndBeveragesIndustr/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_AmmoniaEmissionsFromAgricultureSdg0260/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_AreaAtRiskOfSevereSoilErosionByWaterSdg1550/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_AreaUnderOrganicFarmingSdg0240/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_BalanceOfTrade/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_BodyMassIndexBmiBySexAgeAndDegreeOfUrbanisation/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_BodyMassIndexBmiBySexAgeAndEducationalAttainmentLevel/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_BodyMassIndexBmiBySexAgeAndEducationalAttainmentLe/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_BodyMassIndexBmiBySexAgeAndIncomeQuintile/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_ChangeOfConsumerFoodPrices/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_CommonFarmlandBirdIndex/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_ConsumptionOfInorganicFertilizers/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_DailyConsumptionOfFruitAndVegetablesBySexAgeAndBodyMassIndex/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_DailyConsumptionOfFruitAndVegetablesBySexAgeAndBod/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_DailyConsumptionOfFruitAndVegetablesBySexAgeAndDegreeOfUrbanisation/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_DailyConsumptionOfFruitAndVegetablesBySexAgeAndDeg/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_DailyConsumptionOfFruitAndVegetablesBySexAgeAndEducationalAttainmentLevelHlthEhisFv3E/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_DailyConsumptionOfFruitAndVegetablesBySexAgeAndEdu/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_DailyConsumptionOfFruitAndVegetablesBySexAgeAndIncomeQuintile/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_DailyConsumptionOfFruitAndVegetablesBySexAgeAndInc/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_DroughtImpactAreaOnEcosystemsSdg1542/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_EmploymentRateBySexSdg0830/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_EmploymentRatesBySexAgeEducationalAttainmentLevelCountryOfBirthAndDegreeOfUrbanisation/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_EmploymentRatesBySexAgeEducationalAttainmentLevelC/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_EstimatedSoilLossByWaterErosionByLandCoverType/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_FinalEnergyConsumptionByAgricultureForestryPerHectareOfUtilisedAgriculturalArea/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_FinalEnergyConsumptionByAgricultureForestryPerHect/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_FoodWasteAndFoodWastePreventionByNaceRev2Activity/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_FrequencyOfDrinkingPureFruitOrVegetableJuiceBySexAgeAndEducationalAttainmentLevel/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_FrequencyOfDrinkingPureFruitOrVegetableJuiceBySexA/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_FrequencyOfDrinkingSugarSweetenedSoftDrinksBySexAgeAndBodyMassIndex/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_FrequencyOfDrinkingSugarSweetenedSoftDrinksBySexAg/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_FrequencyOfDrinkingSugarSweetenedSoftDrinksBySexAgeAndEducationalAttainmentLevel/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_FrequencyOfFruitAndVegetablesConsumptionBySexAgeAn/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_FrequencyOfFruitAndVegetablesConsumptionBySexAgeAndBodyMassIndex/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_GovernmentSupportToAgriculturalResearchAndDevelopm/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_FrequencyOfFruitAndVegetablesConsumptionBySexAgeAndDegreeOfUrbanisation/</loc>
-         <lastmod>2025-11-03</lastmod>
-    </url>
-    <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_FrequencyOfFruitAndVegetablesConsumptionBySexAgeAndEducationalAttainmentLevel/</loc>
-         <lastmod>2025-11-03</lastmod>
-    </url>
-    <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_FrequencyOfFruitAndVegetablesConsumptionBySexAgeAndIncomeQuintile/</loc>
-         <lastmod>2025-11-03</lastmod>
-    </url>
-    <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_GovernmentSupportToAgriculturalResearchAndDevelopmentSdg0230/</loc>
-         <lastmod>2025-11-03</lastmod>
-    </url>
-    <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_GreenhouseGasEmissionsBySourceSectorAgricultureSelectable/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_GreenhouseGasEmissionsBySourceSectorAgricultureSel/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_GreenhouseGasEmissionsFromAgriculture/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_GrossNutrientBalancePerHectareUaaNitrogen/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_GrossNutrientBalancePerHectareUaaPhosphorus/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_HarmonisedRiskIndicator1ForPesticidesByCategorisationOfActiveSubstances/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_HarmonisedRiskIndicator1ForPesticidesByCategorisat/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_HouseholdFinalConsumptionExpenditureByPurposeShareOfFoodExpenditure/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_HouseholdFinalConsumptionExpenditureByPurposeShare/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_IndexOfRealNetAgriculturalEntrepreneurialIncomePerUnpaidAnnualWorkUnitIndicatorB/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_IndexOfRealNetAgriculturalEntrepreneurialIncomePer/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_IndexOfTheRealIncomeOfFactorsInAgriculturePerAnnualWorkUnitIndicatorA/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_IndexOfTheRealIncomeOfFactorsInAgriculturePerAnnua/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_LivestockDensityIndex/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_LongTermUnemploymentBySex/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_NetEntrepreneurialIncomeOfAgricultureIndicatorC/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_NitrateInGroundwater/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_NitrateInGroundwaterSdg0640/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_ObesityRateByBodyMassIndexBmiSdg0210/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_OrganicAnimalFarmingByUtilisedAgriculturalAreaLivestockUnitEconomicSizeOfTheFarmAndNuts2Region/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_OrganicAnimalFarmingByUtilisedAgriculturalAreaLive/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_OrganicCropAreaByAgriculturalProductionMethodsAndCrops/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_OrganicCropAreaByAgriculturalProductionMethodsAndC/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_OrganicCropProductionByCrops/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_OrganicCropsByUtilisedAgriculturalAreaEconomicSizeOfTheFarmAndNuts2Region/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_OrganicCropsByUtilisedAgriculturalAreaEconomicSize/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_OrganicLivestock/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_OrganicOperatorsByStatusOfTheRegistrationProcess/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_OrganicProductionOfAnimalProductsByProduct/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_OrganicProductionOfAquacultureProducts/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_PersonDistributionByBodyMassIndexEducationalAttainmentLevelSexAndAge/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_PersonDistributionByBodyMassIndexEducationalAttain/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_PersonsAtRiskOfPovertyOrSocialExclusionByDegreeOfUrbanisationSdg0110ABrokenDownByCitiesTownsAndSuburbsAndRuralAreas/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_PersonsAtRiskOfPovertyOrSocialExclusionByDegreeOfU/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_PersonsAtRiskOfPovertyOrSocialExclusionSdg0110/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_PersonsEatingFruitVegetablesOrSaladByEducationalAttainmentLevelRiskOfPovertyThresholdMostFrequentActivityStatusAndSex/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_PersonsEatingFruitVegetablesOrSaladByEducationalAt/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_PersonsLivingInHouseholdsWithVeryLowWorkIntensityByAgeGroupSdg0140/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_PersonsLivingInHouseholdsWithVeryLowWorkIntensityB/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_PriceIndicesOfTheMeansOfAgriculturalProductionInput/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_PriceIndicesOfTheMeansOfAgriculturalProductionInpu/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_ProcessorsOfOrganicProductsByNaceRev2ActivityC/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_RealGdpPerCapitaSdg0810/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_SalesOfPesticidesByTypeOfPesticide/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_ShareOfLandcoverTypesAffectedBySevereErosion/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_UnemploymentRatesBySexAgeAndEducationalAttainmentLevel/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_UnemploymentRatesBySexAgeAndEducationalAttainmentL/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_UseAndRiskOfChemicalPesticidesSdg0253/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_WaterExploitationIndexPlusWeiSdg0660/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_WaterUseInTheManufacturingIndustryByActivityAndSupplyCategoryManufactureOfFoodProductsAndBeverages/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Eurostat_WaterUseInTheManufacturingIndustryByActivityAndSup/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_AgricultureOrientationIndexAoiForGovernmentExpenditures/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_AgricultureOrientationIndexAoiForGovernmentExpendi/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_AgricultureShareOfGovernmentExpenditure/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_AgricultureValueAddedShareOfGdp/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_AnnualPopulation/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_AverageDietaryEnergySupplyAdequacy3YearAverage/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_AverageFatSupply3YearAverage/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_AverageIncomeOfLargeScaleFoodProducers/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_AverageIncomeOfSmallScaleFoodProducers/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_AverageProteinSupply3YearAverage/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_AverageSupplyOfProteinOfAnimalOrigin3YearAverage/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_CerealImportDependencyRatio3YearAverage/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_CoefficientOfVariationOfHabitualCaloricConsumptionDistributionRealNumber/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_CoefficientOfVariationOfHabitualCaloricConsumption/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_ConsumerPricesFoodIndices2015100/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_CostOfAHealthyDietCohdPppDollarPerPersonPerDay/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_DietaryEnergySupplyUsedInTheEstimationOfPrevalenceOfUndernourishment/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_DietaryEnergySupplyUsedInTheEstimationOfPrevalence/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_DietaryEnergySupplyUsedInTheEstimationOfPrevalenceOfUndernourishment3YearAverage/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_EmissionIntensityOfCommodityEGMeatOfCattleWithTheB/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_EmissionIntensityOfCommodityEGMeatOfCattleWithTheBoneFreshOrChilledOrCerealsExcludingRice/</loc>
-         <lastmod>2025-11-03</lastmod>
-    </url>
-    <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_EmissionsEGCo2FromTheIndividualStagesOfTheFoodValueChain/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_EmissionsEGCo2FromTheIndividualStagesOfTheFoodValu/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_EmissionsFromCropsCh4/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_EmissionsFromCropsN2O/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_EmissionsFromLivestockCh4/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_EmissionsFromLivestockN2O/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_EmissionsFromPreAndPostAgriculturalProduction/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_EmissionsIndicatorsResultingFromAgricultureSeveralEGEmissionsPerCapitaFromPreAndPostProductionEmissionsPerCapitaFromLivestock/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_EmissionsIndicatorsResultingFromAgricultureSeveral/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_EnergyUseInAgriculture/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_FoodPriceInflation/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_FoodSupplyQuantityByFoodGroupEGSelectableVegetablesFruitsMeat/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_FoodSupplyQuantityByFoodGroupEGSelectableVegetable/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_GrossDomesticProductPerCapitaPppConstant2017International/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_GrossDomesticProductPerCapitaPppConstant2017Intern/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_IncidenceOfCaloricLossesAtRetailDistributionLevel/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_IndicatorOfFoodPriceAnomaliesIfpaByFoodCpi/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_LegalGuaranteesToWomenSEqualRightsToLandOwnershipAndOrControl/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_LegalGuaranteesToWomenSEqualRightsToLandOwnershipA/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_LivestockUnitsPerAgriculturalLandAreaMajorLivestockTypes/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_LivestockUnitsPerAgriculturalLandAreaMajorLivestoc/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_NumberOfLocalBreedsForWhichSufficientGeneticResourcesAreStoredForReconstitution/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_NumberOfLocalBreedsForWhichSufficientGeneticResour/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_NumberOfPeopleUnableToAffordAHealthyDietNua/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_PerCapitaFoodSupplyVariabilityKcalCapDay/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_PercentOfArableLandEquippedForIrrigation3YearAverage/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_PercentOfArableLandEquippedForIrrigation3YearAvera/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_PercentageOfChildrenUnder5YearsOfAgeWhoAreOverweightModelledEstimates/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_PercentageOfChildrenUnder5YearsOfAgeWhoAreOverweig/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_PercentageOfChildrenUnder5YearsOfAgeWhoAreStuntedModelledEstimates/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_PercentageOfChildrenUnder5YearsOfAgeWhoAreStuntedM/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_PercentageOfPopulationUsingAtLeastBasicDrinkingWaterServices/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_PercentageOfPopulationUsingAtLeastBasicDrinkingWat/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_PercentageOfPopulationUsingAtLeastBasicSanitationServices/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_PercentageOfPopulationUsingAtLeastBasicSanitationS/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_PercentageOfPopulationUsingSafelyManagedDrinkingWaterServices/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_PercentageOfPopulationUsingSafelyManagedDrinkingWa/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_PercentageOfPopulationUsingSafelyManagedSanitationServices/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_PercentageOfPopulationUsingSafelyManagedSanitation/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_PesticideUsePerAreaOfCroplandOrPerValueOfAgriculturalProductionOrPerCapita/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_PesticideUsePerAreaOfCroplandOrPerValueOfAgricultu/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_PlantGeneticResourcesAccessionsStoredExSitu/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_PrevalenceOfAnemiaAmongWomenOfReproductiveAge1549Years/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_PrevalenceOfAnemiaAmongWomenOfReproductiveAge1549Y/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_PrevalenceOfModerateOrSevereFoodInsecurityInTheTotalPopulation3YearAverage/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_PrevalenceOfModerateOrSevereFoodInsecurityInTheTot/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_PrevalenceOfObesityInTheAdultPopulation18YearsAndOlder/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_PrevalenceOfObesityInTheAdultPopulation18YearsAndO/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_PrevalenceOfSevereFoodInsecurityInTheTotalPopulation3YearAverage/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_PrevalenceOfSevereFoodInsecurityInTheTotalPopulati/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_PrevalenceOfUnaffordabilityPua/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_PrevalenceOfUndernourishment3YearAverage/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_ProductivityOfLargeScaleFoodProducers/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_ProductivityOfSmallScaleFoodProducers/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_ProportionOfAgriculturalLandAreaThatHasAchievedAnAcceptableOrDesirableLevelOfFarmOutputValuePerHectare/</loc>
-         <lastmod>2025-11-03</lastmod>
-    </url>
-    <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_ProportionOfAgriculturalLandAreaThatHasAchievedAnAcceptableOrDesirableLevelOfFoodSecurity/</loc>
-         <lastmod>2025-11-03</lastmod>
-    </url>
-    <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_ProportionOfAgriculturalLandAreaThatHasAchievedAnAcceptableOrDesirableLevelOfNetFarmIncome/</loc>
-         <lastmod>2025-11-03</lastmod>
-    </url>
-    <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_ProportionOfAgriculturalLandAreaThatHasAchievedAnAcceptableOrDesirableLevelOfWageRateInAgriculture/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_ProportionOfAgriculturalLandAreaThatHasAchievedAnA/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_ProteinSupplyQuantityOfAnimalProducts/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_ProteinSupplyQuantityOfVegetalProducts/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_RailLinesDensityTotalRouteInKmPer100SquareKmOfLandArea/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_RailLinesDensityTotalRouteInKmPer100SquareKmOfLand/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_UseOfNutrientNitrogenNFertilizersPerAreaOfCropland/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_UseOfNutrientPhosphateP2O5FertilizersPerAreaOfCropland/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_UseOfNutrientPhosphateP2O5FertilizersPerAreaOfCrop/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Faostat_UseOfNutrientPotashK2OFertilizersPerAreaOfCropland/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/MertensEtAl2019_ContributionOfMeatProductsToDailyEnergyIntake/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/MertensEtAl2019_ContributionOfRuminantMeatProductsToDailyEnergyIntake/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/MertensEtAl2019_ContributionOfRuminantMeatProductsToDailyEnergyInt/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Who2022_DailyConcumptionOfFreshFruitAmong69YearOlds/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Who2022_DailyConcumptionOfVegetablesAmong69YearOlds/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Who2022_FrequentConsumptionOfSoftDrinks3DaysWeekAmong69YearOlds/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Who2022_FrequentConsumptionOfSoftDrinks3DaysWeekAmong69Yea/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Who2024_PrevalenceOfOverweightAndObesityAmongBoysAndGirlsAged79Years/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/Who2024_PrevalenceOfOverweightAndObesityAmongBoysAndGirlsA/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/WorldBankGroup_AdjustedNetNationalIncomePerCapitaConstant2015Us/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/WorldBankGroup_AffordabilityOfAHealthyDietRatioOfCostToFoodExpenditures/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/WorldBankGroup_AffordabilityOfAHealthyDietRatioOfCostToFoodExpend/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/WorldBankGroup_AgriculturalLandOfLandArea/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/WorldBankGroup_AnnualFreshwaterWithdrawalsAgricultureOfTotalFreshwaterWithdrawal/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/WorldBankGroup_AnnualFreshwaterWithdrawalsAgricultureOfTotalFresh/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/WorldBankGroup_ConsumptionOfIodizedSalt/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/WorldBankGroup_DiabetesPrevalence/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/WorldBankGroup_DisasterRiskReductionProgressScore15Scale5Best/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/WorldBankGroup_EmploymentInAgricultureOfTotalEmploymentModeledIloEstimate/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/WorldBankGroup_EmploymentInAgricultureOfTotalEmploymentModeledIlo/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/WorldBankGroup_FertilizerConsumption/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/WorldBankGroup_FoodProductionIndex/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/WorldBankGroup_IncomeEqualityIncomeDistribution/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/WorldBankGroup_IncomeShareHeldByHighest20/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/WorldBankGroup_IncomeShareHeldByLowest20/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/WorldBankGroup_IndividualsUsingTheInternet/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/WorldBankGroup_InflationConsumerPricesAnnual/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/WorldBankGroup_LaborForceParticipationRateFemale/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/WorldBankGroup_LivestockProductionIndex/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/WorldBankGroup_MobileCellularSubscriptionsPer100People/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/WorldBankGroup_PoliticalStabilityAndAbsenceOfViolenceTerrorismEstimate/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/WorldBankGroup_PoliticalStabilityAndAbsenceOfViolenceTerrorismEst/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/WorldBankGroup_PopulationAges1564/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/WorldBankGroup_PrevalenceOfAnemiaAmongChildrenOfChildrenAges659Months/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/WorldBankGroup_PrevalenceOfAnemiaAmongChildrenOfChildrenAges659Mo/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/WorldBankGroup_PrevalenceOfUnderweightChildren/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/WorldBankGroup_ProportionOfPeopleLivingBelow50PercentOfMedianIncome/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/WorldBankGroup_ProportionOfPeopleLivingBelow50PercentOfMedianInco/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/WorldBankGroup_ResearchAndDevelopmentExpenditure/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/WorldBankGroup_UnemploymentTotalOfTotalLaborForceModeledIloEstimate/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicator_data_collection_details/WorldBankGroup_UnemploymentTotalOfTotalLaborForceModeledIloEstima/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/AdaptationToClimateChange/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/AdjustedGrossDisposableIncomeOfHouseholdsPerCapita/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/AdjustedNetNationalIncomePerCapitaConstant2015Us/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/AffordabilityOfAHealthyDietRatioOfCostToFoodExpenditures/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/AffordabilityOfAHealthyDietRatioOfCostToFoodExpend/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/AgriculturalLandOfLandArea/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/AgriculturalRealFactorIncomePerAnnualWorkUnitAwuSdg0220/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/AgriculturalRealFactorIncomePerAnnualWorkUnitAwuSd/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/AgriculturalTrainingOfFarmManagersCategorizedByOnlyPracticalAgriculturalExperienceBasicAgriculturalTrainingAndFullAgriculturalTraining/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/AgriculturalTrainingOfFarmManagersCategorizedByOnl/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/AgricultureOrientationIndexAoiForGovernmentExpenditures/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/AgricultureOrientationIndexAoiForGovernmentExpendi/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/AgricultureShareOfGovernmentExpenditure/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/AgricultureValueAddedShareOfGdp/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/AirPollutantsBySourceSectorFoodAndBeveragesIndustrySelectable/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/AirPollutantsBySourceSectorFoodAndBeveragesIndustr/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/AmmoniaEmissionsFromAgricultureSdg0260/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/AnnualFreshwaterWithdrawalsAgricultureOfTotalFreshwaterWithdrawal/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/AnnualFreshwaterWithdrawalsAgricultureOfTotalFresh/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/AnnualPopulation/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/AreaAtRiskOfSevereSoilErosionByWaterSdg1550/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/AreaUnderOrganicFarmingSdg0240/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/AverageDietaryEnergySupplyAdequacy3YearAverage/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/AverageFatSupply3YearAverage/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/AverageIncomeOfLargeScaleFoodProducers/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/AverageIncomeOfSmallScaleFoodProducers/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/AverageProteinSupply3YearAverage/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/AverageSupplyOfProteinOfAnimalOrigin3YearAverage/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/BalanceOfTrade/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/BodyMassIndexBmiBySexAgeAndDegreeOfUrbanisation/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/BodyMassIndexBmiBySexAgeAndEducationalAttainmentLevel/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/BodyMassIndexBmiBySexAgeAndEducationalAttainmentLe/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/BodyMassIndexBmiBySexAgeAndIncomeQuintile/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/CarbonStorageInSoilsAndBiomass/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/CerealImportDependencyRatio3YearAverage/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/ChangeOfConsumerFoodPrices/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/CoefficientOfVariationOfHabitualCaloricConsumptionDistributionRealNumber/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/CoefficientOfVariationOfHabitualCaloricConsumption/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/CommonFarmlandBirdIndex/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/ConsumerPricesFoodIndices2015100/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/ConsumptionFootprintFood/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/ConsumptionOfInorganicFertilizers/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/ConsumptionOfIodizedSalt/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/ContributionOfMeatProductsToDailyEnergyIntake/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/ContributionOfRuminantMeatProductsToDailyEnergyIntake/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/ContributionOfRuminantMeatProductsToDailyEnergyInt/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/CostOfAHealthyDietCohdPppDollarPerPersonPerDay/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/DailyConcumptionOfFreshFruitAmong69YearOlds/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/DailyConcumptionOfVegetablesAmong69YearOlds/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/DailyConsumptionOfFruitAndVegetablesBySexAgeAndBodyMassIndex/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/DailyConsumptionOfFruitAndVegetablesBySexAgeAndBod/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/DailyConsumptionOfFruitAndVegetablesBySexAgeAndDegreeOfUrbanisation/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/DailyConsumptionOfFruitAndVegetablesBySexAgeAndDeg/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/DailyConsumptionOfFruitAndVegetablesBySexAgeAndEducationalAttainmentLevelHlthEhisFv3E/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/DailyConsumptionOfFruitAndVegetablesBySexAgeAndEdu/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/DailyConsumptionOfFruitAndVegetablesBySexAgeAndIncomeQuintile/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/DailyConsumptionOfFruitAndVegetablesBySexAgeAndInc/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/DailyConsumptionOfLegumesDifferentPopulationGroupsSelectable/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/DailyConsumptionOfLegumesDifferentPopulationGroups/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/DailyConsumptionOfMeatAndMeatProductsDifferentPopulationGroupsSelectable/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/DailyConsumptionOfMeatAndMeatProductsDifferentPopu/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/DailyConsumptionOfMilkAndDairyProductsDifferentPopulationGroupsSelectable/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/DailyConsumptionOfMilkAndDairyProductsDifferentPop/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/DailyConsumptionOfSoftDrinksDifferentPopulationGroupsSelectable/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/DailyConsumptionOfSoftDrinksDifferentPopulationGro/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/DevelopmentOfOrganicAgriculture/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/DiabetesPrevalence/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/DietaryEnergySupplyUsedInTheEstimationOfPrevalenceOfUndernourishment/</loc>
-         <lastmod>2025-11-03</lastmod>
-    </url>
-    <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/DietaryEnergySupplyUsedInTheEstimationOfPrevalenceOfUndernourishment3YearAverage/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/DietaryEnergySupplyUsedInTheEstimationOfPrevalence/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/DisasterRiskReductionProgressScore15Scale5Best/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/DroughtImpactAreaOnEcosystemsSdg1542/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/EmissionIntensityOfCommodityEGMeatOfCattleWithTheBoneFreshOrChilledOrCerealsExcludingRice/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/EmissionIntensityOfCommodityEGMeatOfCattleWithTheB/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/EmissionsEGCo2FromTheIndividualStagesOfTheFoodValueChain/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/EmissionsEGCo2FromTheIndividualStagesOfTheFoodValu/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/EmissionsFromCropsCh4/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/EmissionsFromCropsN2O/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/EmissionsFromLivestockCh4/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/EmissionsFromLivestockN2O/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/EmissionsFromPreAndPostAgriculturalProduction/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/EmissionsIndicatorsResultingFromAgricultureSeveralEGEmissionsPerCapitaFromPreAndPostProductionEmissionsPerCapitaFromLivestock/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/EmissionsIndicatorsResultingFromAgricultureSeveral/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/EmploymentInAgricultureOfTotalEmploymentModeledIloEstimate/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/EmploymentInAgricultureOfTotalEmploymentModeledIlo/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/EmploymentRateBySexSdg0830/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/EmploymentRatesBySexAgeEducationalAttainmentLevelCountryOfBirthAndDegreeOfUrbanisation/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/EmploymentRatesBySexAgeEducationalAttainmentLevelC/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/EnergyUseInAgriculture/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/EnvironmentalOrClimateRelatedPerformanceThroughInvestmentInRuralAreas/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/EnvironmentalOrClimateRelatedPerformanceThroughInv/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/EnvironmentalPerformanceInTheLivestockSector/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/EstimatedSoilLossByWaterErosionByLandCoverType/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/FarmModernisation/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/FarmersIncomeComparedToWagesInTheRestOfTheEconomy/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/FertilizerConsumption/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/FinalEnergyConsumptionByAgricultureForestryPerHectareOfUtilisedAgriculturalArea/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/FinalEnergyConsumptionByAgricultureForestryPerHect/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/FoodPriceInflation/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/FoodProductionIndex/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/FoodSupplyQuantityByFoodGroupEGSelectableVegetablesFruitsMeat/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/FoodSupplyQuantityByFoodGroupEGSelectableVegetable/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/FoodWasteAndFoodWastePreventionByNaceRev2Activity/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/FrequencyOfDrinkingPureFruitOrVegetableJuiceBySexAgeAndEducationalAttainmentLevel/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/FrequencyOfDrinkingPureFruitOrVegetableJuiceBySexA/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/FrequencyOfDrinkingSugarSweetenedSoftDrinksBySexAgeAndBodyMassIndex/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/FrequencyOfDrinkingSugarSweetenedSoftDrinksBySexAg/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/FrequencyOfDrinkingSugarSweetenedSoftDrinksBySexAgeAndEducationalAttainmentLevel/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/FrequencyOfFruitAndVegetablesConsumptionBySexAgeAn/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/FrequencyOfFruitAndVegetablesConsumptionBySexAgeAndBodyMassIndex/</loc>
-         <lastmod>2025-11-03</lastmod>
-    </url>
-    <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/FrequencyOfFruitAndVegetablesConsumptionBySexAgeAndDegreeOfUrbanisation/</loc>
-         <lastmod>2025-11-03</lastmod>
-    </url>
-    <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/FrequencyOfFruitAndVegetablesConsumptionBySexAgeAndEducationalAttainmentLevel/</loc>
-         <lastmod>2025-11-03</lastmod>
-    </url>
-    <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/FrequencyOfFruitAndVegetablesConsumptionBySexAgeAndIncomeQuintile/</loc>
-         <lastmod>2025-11-03</lastmod>
-    </url>
-    <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/FrequentConsumptionOfSoftDrinks3DaysWeekAmong69YearOlds/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/FrequentConsumptionOfSoftDrinks3DaysWeekAmong69Yea/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/GenerationalRenewal/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/GovernmentSupportToAgriculturalResearchAndDevelopmentSdg0230/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/GovernmentSupportToAgriculturalResearchAndDevelopm/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/GreenhouseGasEmissionsBySourceSectorAgricultureSelectable/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/GreenhouseGasEmissionsBySourceSectorAgricultureSel/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/GreenhouseGasEmissionsFromAgriculture/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/GrossDomesticProductPerCapitaPppConstant2017International/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/GrossDomesticProductPerCapitaPppConstant2017Intern/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/GrossNutrientBalancePerHectareUaaNitrogen/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/GrossNutrientBalancePerHectareUaaPhosphorus/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/GrossValueAddedAlongTheFoodChainBySectorAgricultureFishingAndAquacultureFoodAndBeverageSelectable/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/GrossValueAddedAlongTheFoodChainBySectorAgricultur/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/HarmonisedRiskIndicator1ForPesticidesByCategorisationOfActiveSubstances/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/HarmonisedRiskIndicator1ForPesticidesByCategorisat/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/HouseholdFinalConsumptionExpenditureByPurposeShareOfFoodExpenditure/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/HouseholdFinalConsumptionExpenditureByPurposeShare/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/ImprovingAirQuality/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/ImprovingAnimalWelfare/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/IncidenceOfCaloricLossesAtRetailDistributionLevel/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/IncomeEqualityIncomeDistribution/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/IncomeShareHeldByHighest20/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/IncomeShareHeldByLowest20/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/IndexOfRealNetAgriculturalEntrepreneurialIncomePerUnpaidAnnualWorkUnitIndicatorB/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/IndexOfRealNetAgriculturalEntrepreneurialIncomePer/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/IndexOfTheRealIncomeOfFactorsInAgriculturePerAnnualWorkUnitIndicatorA/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/IndexOfTheRealIncomeOfFactorsInAgriculturePerAnnua/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/IndicatorOfFoodPriceAnomaliesIfpaByFoodCpi/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/IndividualsUsingTheInternet/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/InflationConsumerPricesAnnual/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/InvestmentRelatedToNaturalResources/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/InvestmentsRelatedToBiodiversity/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/InvestmentsRelatedToClimate/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/LaborForceParticipationRateFemale/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/LabourProductivityInTheAgriculturalBeveragesFishingAndAquacultureFoodSector/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/LabourProductivityInTheAgriculturalBeveragesFishin/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/LegalGuaranteesToWomenSEqualRightsToLandOwnershipAndOrControl/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/LegalGuaranteesToWomenSEqualRightsToLandOwnershipA/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/LimitingAntimicrobialUse/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/LivestockDensityIndex/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/LivestockProductionIndex/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/LivestockUnitsPerAgriculturalLandAreaMajorLivestockTypes/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/LivestockUnitsPerAgriculturalLandAreaMajorLivestoc/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/LongTermUnemploymentBySex/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/MobileCellularSubscriptionsPer100People/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/NetEntrepreneurialIncomeOfAgricultureIndicatorC/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/NitrateInGroundwater/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/NitrateInGroundwaterSdg0640/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/NumberOfLocalBreedsForWhichSufficientGeneticResourcesAreStoredForReconstitution/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/NumberOfLocalBreedsForWhichSufficientGeneticResour/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/NumberOfPeopleUnableToAffordAHealthyDietNua/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/ObesityRateByBodyMassIndexBmiSdg0210/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/OrganicAnimalFarmingByUtilisedAgriculturalAreaLivestockUnitEconomicSizeOfTheFarmAndNuts2Region/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/OrganicAnimalFarmingByUtilisedAgriculturalAreaLive/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/OrganicCropAreaByAgriculturalProductionMethodsAndCrops/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/OrganicCropAreaByAgriculturalProductionMethodsAndC/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/OrganicCropProductionByCrops/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/OrganicCropsByUtilisedAgriculturalAreaEconomicSizeOfTheFarmAndNuts2Region/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/OrganicCropsByUtilisedAgriculturalAreaEconomicSize/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/OrganicLivestock/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/OrganicOperatorsByStatusOfTheRegistrationProcess/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/OrganicProductionOfAnimalProductsByProduct/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/OrganicProductionOfAquacultureProducts/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/PerCapitaFoodSupplyVariabilityKcalCapDay/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/PercentOfArableLandEquippedForIrrigation3YearAverage/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/PercentOfArableLandEquippedForIrrigation3YearAvera/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/PercentageOfChildrenUnder5YearsOfAgeWhoAreOverweightModelledEstimates/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/PercentageOfChildrenUnder5YearsOfAgeWhoAreOverweig/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/PercentageOfChildrenUnder5YearsOfAgeWhoAreStuntedModelledEstimates/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/PercentageOfChildrenUnder5YearsOfAgeWhoAreStuntedM/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/PercentageOfPopulationUsingAtLeastBasicDrinkingWaterServices/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/PercentageOfPopulationUsingAtLeastBasicDrinkingWat/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/PercentageOfPopulationUsingAtLeastBasicSanitationServices/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/PercentageOfPopulationUsingAtLeastBasicSanitationS/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/PercentageOfPopulationUsingSafelyManagedDrinkingWaterServices/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/PercentageOfPopulationUsingSafelyManagedDrinkingWa/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/PercentageOfPopulationUsingSafelyManagedSanitationServices/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/PercentageOfPopulationUsingSafelyManagedSanitation/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/PersonDistributionByBodyMassIndexEducationalAttainmentLevelSexAndAge/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/PersonDistributionByBodyMassIndexEducationalAttain/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/PersonsAtRiskOfPovertyOrSocialExclusionByDegreeOfUrbanisationSdg0110ABrokenDownByCitiesTownsAndSuburbsAndRuralAreas/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/PersonsAtRiskOfPovertyOrSocialExclusionByDegreeOfU/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/PersonsAtRiskOfPovertyOrSocialExclusionSdg0110/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/PersonsEatingFruitVegetablesOrSaladByEducationalAttainmentLevelRiskOfPovertyThresholdMostFrequentActivityStatusAndSex/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/PersonsEatingFruitVegetablesOrSaladByEducationalAt/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/PersonsLivingInHouseholdsWithVeryLowWorkIntensityByAgeGroupSdg0140/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/PersonsLivingInHouseholdsWithVeryLowWorkIntensityB/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/PesticideUsePerAreaOfCroplandOrPerValueOfAgriculturalProductionOrPerCapita/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/PesticideUsePerAreaOfCroplandOrPerValueOfAgricultu/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/PlantGeneticResourcesAccessionsStoredExSitu/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/PoliticalStabilityAndAbsenceOfViolenceTerrorismEstimate/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/PoliticalStabilityAndAbsenceOfViolenceTerrorismEst/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/PopulationAges1564/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/PreservingHabitatsAndSpecies/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/PrevalenceOfAnemiaAmongChildrenOfChildrenAges659Months/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/PrevalenceOfAnemiaAmongChildrenOfChildrenAges659Mo/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/PrevalenceOfAnemiaAmongWomenOfReproductiveAge1549Years/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/PrevalenceOfAnemiaAmongWomenOfReproductiveAge1549Y/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/PrevalenceOfModerateOrSevereFoodInsecurityInTheTotalPopulation3YearAverage/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/PrevalenceOfModerateOrSevereFoodInsecurityInTheTot/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/PrevalenceOfObesityInTheAdultPopulation18YearsAndOlder/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/PrevalenceOfObesityInTheAdultPopulation18YearsAndO/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/PrevalenceOfOverweightAndObesityAmongBoysAndGirlsAged79Years/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/PrevalenceOfOverweightAndObesityAmongBoysAndGirlsA/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/PrevalenceOfSevereFoodInsecurityInTheTotalPopulation3YearAverage/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/PrevalenceOfSevereFoodInsecurityInTheTotalPopulati/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/PrevalenceOfUnaffordabilityPua/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/PrevalenceOfUndernourishment3YearAverage/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/PrevalenceOfUnderweightChildren/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/PriceIndicesOfTheMeansOfAgriculturalProductionInput/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/PriceIndicesOfTheMeansOfAgriculturalProductionInpu/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/ProcessorsOfOrganicProductsByNaceRev2ActivityC/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/ProductivityOfLargeScaleFoodProducers/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/ProductivityOfSmallScaleFoodProducers/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/ProductsUnderEuQualitySchemesPerSchemePdoPgiTsgGi/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/ProportionOfAgriculturalLandAreaThatHasAchievedAnAcceptableOrDesirableLevelOfFarmOutputValuePerHectare/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/ProportionOfAgriculturalLandAreaThatHasAchievedAnA/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/ProportionOfAgriculturalLandAreaThatHasAchievedAnAcceptableOrDesirableLevelOfFoodSecurity/</loc>
-         <lastmod>2025-11-03</lastmod>
-    </url>
-    <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/ProportionOfAgriculturalLandAreaThatHasAchievedAnAcceptableOrDesirableLevelOfNetFarmIncome/</loc>
-         <lastmod>2025-11-03</lastmod>
-    </url>
-    <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/ProportionOfAgriculturalLandAreaThatHasAchievedAnAcceptableOrDesirableLevelOfWageRateInAgriculture/</loc>
-         <lastmod>2025-11-03</lastmod>
-    </url>
-    <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/ProportionOfPeopleLivingBelow50PercentOfMedianIncome/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/ProportionOfPeopleLivingBelow50PercentOfMedianInco/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/ProteinSupplyQuantityOfAnimalProducts/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/ProteinSupplyQuantityOfVegetalProducts/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/RailLinesDensityTotalRouteInKmPer100SquareKmOfLandArea/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/RailLinesDensityTotalRouteInKmPer100SquareKmOfLand/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/RealGdpPerCapitaSdg0810/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/RedistributionToSmallerFarms/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/ReducingEmissionsInTheLivestockSector/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/ResearchAndDevelopmentExpenditure/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/RuralNgaNextGenerationAccessBroadbandCoverageAvailability/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/RuralNgaNextGenerationAccessBroadbandCoverageAvail/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/SalesOfAntimicrobialsForFoodProducingAnimals/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/SalesOfPesticidesByTypeOfPesticide/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/SelfSufficiencyRatePerMemberStateByFoodProduct/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/ShareOfLandcoverTypesAffectedBySevereErosion/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/ShareOfLayingHensByWayOfKeepingEnrichedCageFreeRangeBarnOrganic/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/ShareOfLayingHensByWayOfKeepingEnrichedCageFreeRan/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/ShareOfPeopleEmployedInAgricultureBeverageFishingAndAquacultureFoodVsEu27/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/ShareOfPeopleEmployedInAgricultureBeverageFishingA/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/SustainableAndReducedUseOfPesticides/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/UnemploymentRatesBySexAgeAndEducationalAttainmentLevel/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/UnemploymentRatesBySexAgeAndEducationalAttainmentL/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/UnemploymentTotalOfTotalLaborForceModeledIloEstimate/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/UnemploymentTotalOfTotalLaborForceModeledIloEstima/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/UseAndRiskOfChemicalPesticidesSdg0253/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/UseOfNutrientNitrogenNFertilizersPerAreaOfCropland/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/UseOfNutrientPhosphateP2O5FertilizersPerAreaOfCropland/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/UseOfNutrientPhosphateP2O5FertilizersPerAreaOfCrop/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/UseOfNutrientPotashK2OFertilizersPerAreaOfCropland/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/indicators/WaterExploitationIndexPlusWeiSdg0660/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
-         <loc>https://biometris.github.io/FS-Datamodel/indicators/WaterUseInTheManufacturingIndustryByActivityAndSupplyCategoryManufactureOfFoodProductsAndBeverages/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <loc>https://biometris.github.io/FS-Datamodel/indicators/WaterUseInTheManufacturingIndustryByActivityAndSup/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Boolean/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/CriterionCategory/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Curie/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Database/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Date/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/DateOrDatetime/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Datetime/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Decimal/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Double/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Entity/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Float/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Indicator/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/IndicatorCategory/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/IndicatorCriterion/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/IndicatorDataCollectionDetails/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/IndicatorDatapoint/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/IndicatorcriteriaScore/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Integer/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/IriType/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Jsonpath/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Jsonpointer/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/LabelType/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/NarrativeText/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Ncname/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Nodeidentifier/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Objectidentifier/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/QuantityValue/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/ScoreCategory/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Sparqlpath/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/SpatialGranularity/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/SpatialScopeType/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/String/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/SupplyChainComponentType/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/SustainabilityDimension/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
+    </url>
+    <url>
+         <loc>https://biometris.github.io/FS-Datamodel/model/SustainabilityImpactType/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Time/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/TimeGranularity/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Unit/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Uri/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/Uriorcurie/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/category/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/comment/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/data_link/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/database_link/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/description/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/dimension/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/food_system_indicators/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/glossary/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/has_category/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/has_numeric_value/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/has_unit/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/id/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/in_database/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/iri/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/measurement_of/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/measurement_unit/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/measures_indicator/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/model_diagram/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/name/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/newest_datapoint/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/node_property/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/oldest_datapoint/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/part_of_collection/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/score/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/score_for_indicator/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/scores_criterion/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/spatial_granularity/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/spatial_scope/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/supply_chain_component/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
+    </url>
+    <url>
+         <loc>https://biometris.github.io/FS-Datamodel/model/sustainability_impact/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/time_granularity/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://biometris.github.io/FS-Datamodel/model/update_frequency/</loc>
-         <lastmod>2025-11-03</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
 </urlset>

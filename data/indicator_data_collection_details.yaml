@@ -1,32 +1,32 @@
-- id: Eurostat_AgriculturalRealFactorIncomePerAnnualWorkUnitAwuSdg0220
+- id: Eurostat_AgriculturalRealFactorIncomePerAnnualWorkUnitAwuSd
   name: Eurostat-Agricultural real factor income per annual work unit (AWU) (sdg_02_20)
   description: ''
   in_database: Eurostat
-  measures_indicator: AgriculturalRealFactorIncomePerAnnualWorkUnitAwuSdg0220
+  measures_indicator: AgriculturalRealFactorIncomePerAnnualWorkUnitAwuSd
   data_link: https://ec.europa.eu/eurostat/databrowser/view/sdg_02_20/default/table?lang=en
   oldest_datapoint: ''
   newest_datapoint: 2024
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Eurostat_IndexOfTheRealIncomeOfFactorsInAgriculturePerAnnualWorkUnitIndicatorA
+- id: Eurostat_IndexOfTheRealIncomeOfFactorsInAgriculturePerAnnua
   name: Eurostat-Index of the real income of factors in agriculture per annual work
     unit (Indicator A)
   description: ''
   in_database: Eurostat
-  measures_indicator: IndexOfTheRealIncomeOfFactorsInAgriculturePerAnnualWorkUnitIndicatorA
+  measures_indicator: IndexOfTheRealIncomeOfFactorsInAgriculturePerAnnua
   data_link: https://ec.europa.eu/eurostat/databrowser/view/aact_eaa06/default/table?lang=en
   oldest_datapoint: ''
   newest_datapoint: 2024
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Eurostat_IndexOfRealNetAgriculturalEntrepreneurialIncomePerUnpaidAnnualWorkUnitIndicatorB
+- id: Eurostat_IndexOfRealNetAgriculturalEntrepreneurialIncomePer
   name: Eurostat-Index of real net agricultural entrepreneurial income, per unpaid
     annual work unit (Indicator B)
   description: ''
   in_database: Eurostat
-  measures_indicator: IndexOfRealNetAgriculturalEntrepreneurialIncomePerUnpaidAnnualWorkUnitIndicatorB
+  measures_indicator: IndexOfRealNetAgriculturalEntrepreneurialIncomePer
   data_link: https://ec.europa.eu/eurostat/databrowser/view/aact_eaa06/default/table?lang=en
   oldest_datapoint: ''
   newest_datapoint: 2024
@@ -44,23 +44,23 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Faostat_ProportionOfAgriculturalLandAreaThatHasAchievedAnAcceptableOrDesirableLevelOfNetFarmIncome
+- id: Faostat_ProportionOfAgriculturalLandAreaThatHasAchievedAnA
   name: FAOSTAT-Proportion of agricultural land area that has achieved an acceptable
-    or desirable level of net farm income
+    or desirable level of wage rate in agriculture
   description: ''
   in_database: Faostat
-  measures_indicator: ProportionOfAgriculturalLandAreaThatHasAchievedAnAcceptableOrDesirableLevelOfNetFarmIncome
+  measures_indicator: ProportionOfAgriculturalLandAreaThatHasAchievedAnA
   data_link: https://www.fao.org/faostat/en/#data/SDGB
   oldest_datapoint: ''
   newest_datapoint: 2020-2022
   time_granularity: Other
   spatial_granularity: Country
   spatial_scope: Eu
-- id: AgriFoodDataPortalDirectorateGeneralForAgricultureAndRuralDevelopment_FarmersIncomeComparedToWagesInTheRestOfTheEconomy
+- id: AgriFoodDataPortalDirectorateGeneralForAgriculture_FarmersIncomeComparedToWagesInTheRestOfTheEconomy
   name: Agri-food Data Portal (Directorate-General for Agriculture and Rural Development)-Farmers'
     income compared to wages in the rest of the economy
   description: ''
-  in_database: AgriFoodDataPortalDirectorateGeneralForAgricultureAndRuralDevelopment
+  in_database: AgriFoodDataPortalDirectorateGeneralForAgriculture
   measures_indicator: FarmersIncomeComparedToWagesInTheRestOfTheEconomy
   data_link: https://agridata.ec.europa.eu/extensions/DashboardIndicators/JobsGrowth.html
   oldest_datapoint: ''
@@ -68,11 +68,11 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Eurostat_GovernmentSupportToAgriculturalResearchAndDevelopmentSdg0230
+- id: Eurostat_GovernmentSupportToAgriculturalResearchAndDevelopm
   name: Eurostat-Government support to agricultural research and development (sdg_02_30)
   description: ''
   in_database: Eurostat
-  measures_indicator: GovernmentSupportToAgriculturalResearchAndDevelopmentSdg0230
+  measures_indicator: GovernmentSupportToAgriculturalResearchAndDevelopm
   data_link: https://ec.europa.eu/eurostat/databrowser/view/sdg_02_30/default/table?lang=en
   oldest_datapoint: ''
   newest_datapoint: 2023 (2024 for a few countries)
@@ -112,11 +112,11 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Faostat_AgricultureOrientationIndexAoiForGovernmentExpenditures
+- id: Faostat_AgricultureOrientationIndexAoiForGovernmentExpendi
   name: FAOSTAT-Agriculture orientation index (AOI) for government expenditures
   description: ''
   in_database: Faostat
-  measures_indicator: AgricultureOrientationIndexAoiForGovernmentExpenditures
+  measures_indicator: AgricultureOrientationIndexAoiForGovernmentExpendi
   data_link: https://www.fao.org/faostat/en/#data/SDGB
   oldest_datapoint: ''
   newest_datapoint: 2022
@@ -134,36 +134,36 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: DataModellingPlatformOfResourceEconomicsJrcLasarteLpezEtAl2023_LabourProductivityInTheAgriculturalBeveragesFishingAndAquacultureFoodSector
+- id: DataModellingPlatformOfResourceEconomicsJrcLasarte_LabourProductivityInTheAgriculturalBeveragesFishin
   name: Data-Modelling platform of resource economics (JRC) / Lasarte-López et al.
     (2023)-Labour productivity in the agricultural/beverages/fishing and aquaculture/food
     sector
   description: ''
-  in_database: DataModellingPlatformOfResourceEconomicsJrcLasarteLpezEtAl2023
-  measures_indicator: LabourProductivityInTheAgriculturalBeveragesFishingAndAquacultureFoodSector
+  in_database: DataModellingPlatformOfResourceEconomicsJrcLasarte
+  measures_indicator: LabourProductivityInTheAgriculturalBeveragesFishin
   data_link: https://datam.jrc.ec.europa.eu/datam/mashup/BIOECONOMICS/
   oldest_datapoint: ''
   newest_datapoint: 2021
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: EuFoodSystemMonitoringDashboardJrc_GrossValueAddedAlongTheFoodChainBySectorAgricultureFishingAndAquacultureFoodAndBeverageSelectable
+- id: EuFoodSystemMonitoringDashboardJrc_GrossValueAddedAlongTheFoodChainBySectorAgricultur
   name: EU Food System Monitoring Dashboard (JRC)-(Gross) value added along the food
     chain (by sector; Agriculture, Fishing and Aquaculture, Food and Beverage selectable)
   description: ''
   in_database: EuFoodSystemMonitoringDashboardJrc
-  measures_indicator: GrossValueAddedAlongTheFoodChainBySectorAgricultureFishingAndAquacultureFoodAndBeverageSelectable
+  measures_indicator: GrossValueAddedAlongTheFoodChainBySectorAgricultur
   data_link: https://datam.jrc.ec.europa.eu/datam/mashup/EU_FOOD_SYSTEM_MONITORING/index.html
   oldest_datapoint: ''
   newest_datapoint: 2021
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: AgriFoodDataPortalDirectorateGeneralForAgricultureAndRuralDevelopment_ProductsUnderEuQualitySchemesPerSchemePdoPgiTsgGi
+- id: AgriFoodDataPortalDirectorateGeneralForAgriculture_ProductsUnderEuQualitySchemesPerSchemePdoPgiTsgGi
   name: 'Agri-food data portal (Directorate-General for Agriculture and Rural Development)-Products
     under EU quality schemes (per scheme: PDO, PGI, TSG, GI)'
   description: ''
-  in_database: AgriFoodDataPortalDirectorateGeneralForAgricultureAndRuralDevelopment
+  in_database: AgriFoodDataPortalDirectorateGeneralForAgriculture
   measures_indicator: ProductsUnderEuQualitySchemesPerSchemePdoPgiTsgGi
   data_link: https://agridata.ec.europa.eu/extensions/DashboardIndicators/AddingValue.html
   oldest_datapoint: ''
@@ -281,34 +281,34 @@
   time_granularity: Monthly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Eurostat_PriceIndicesOfTheMeansOfAgriculturalProductionInput
+- id: Eurostat_PriceIndicesOfTheMeansOfAgriculturalProductionInpu
   name: Eurostat-Price indices of the means of agricultural production, input
   description: ''
   in_database: Eurostat
-  measures_indicator: PriceIndicesOfTheMeansOfAgriculturalProductionInput
+  measures_indicator: PriceIndicesOfTheMeansOfAgriculturalProductionInpu
   data_link: https://ec.europa.eu/eurostat/databrowser/view/APRI_PI15_INA/default/table?lang=en&category=agr.apri.apri_pi.apri_pi15
   oldest_datapoint: ''
   newest_datapoint: 2023
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Eurostat_HouseholdFinalConsumptionExpenditureByPurposeShareOfFoodExpenditure
+- id: Eurostat_HouseholdFinalConsumptionExpenditureByPurposeShare
   name: 'Eurostat-Household final consumption expenditure by purpose: Share of food
     expenditure'
   description: ''
   in_database: Eurostat
-  measures_indicator: HouseholdFinalConsumptionExpenditureByPurposeShareOfFoodExpenditure
+  measures_indicator: HouseholdFinalConsumptionExpenditureByPurposeShare
   data_link: https://ec.europa.eu/eurostat/databrowser/view/nama_10_co3_p3__custom_15873711/default/table?lang=en
   oldest_datapoint: ''
   newest_datapoint: 2022-2023, depending on country
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: WorldBankGroup_AffordabilityOfAHealthyDietRatioOfCostToFoodExpenditures
+- id: WorldBankGroup_AffordabilityOfAHealthyDietRatioOfCostToFoodExpend
   name: 'World Bank Group-Affordability of a healthy diet: ratio of cost to food expenditures'
   description: ''
   in_database: WorldBankGroup
-  measures_indicator: AffordabilityOfAHealthyDietRatioOfCostToFoodExpenditures
+  measures_indicator: AffordabilityOfAHealthyDietRatioOfCostToFoodExpend
   data_link: https://databank.worldbank.org/source/food-prices-for-nutrition#
   oldest_datapoint: ''
   newest_datapoint: 2021
@@ -349,12 +349,12 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Eurostat_FinalEnergyConsumptionByAgricultureForestryPerHectareOfUtilisedAgriculturalArea
+- id: Eurostat_FinalEnergyConsumptionByAgricultureForestryPerHect
   name: Eurostat-Final energy consumption by agriculture/forestry per hectare of utilised
     agricultural area
   description: ''
   in_database: Eurostat
-  measures_indicator: FinalEnergyConsumptionByAgricultureForestryPerHectareOfUtilisedAgriculturalArea
+  measures_indicator: FinalEnergyConsumptionByAgricultureForestryPerHect
   data_link: https://ec.europa.eu/eurostat/databrowser/view/tai04/default/table?lang=en
   oldest_datapoint: ''
   newest_datapoint: 2023
@@ -394,12 +394,12 @@
   time_granularity: Other
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Eurostat_WaterUseInTheManufacturingIndustryByActivityAndSupplyCategoryManufactureOfFoodProductsAndBeverages
+- id: Eurostat_WaterUseInTheManufacturingIndustryByActivityAndSup
   name: 'Eurostat-Water use in the manufacturing industry by activity and supply category:
     Manufacture of food products and beverages'
   description: ''
   in_database: Eurostat
-  measures_indicator: WaterUseInTheManufacturingIndustryByActivityAndSupplyCategoryManufactureOfFoodProductsAndBeverages
+  measures_indicator: WaterUseInTheManufacturingIndustryByActivityAndSup
   data_link: https://ec.europa.eu/eurostat/databrowser/view/env_wat_ind__custom_13324556/default/table?lang=en
   oldest_datapoint: ''
   newest_datapoint: 2022
@@ -428,24 +428,24 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Faostat_NumberOfLocalBreedsForWhichSufficientGeneticResourcesAreStoredForReconstitution
+- id: Faostat_NumberOfLocalBreedsForWhichSufficientGeneticResour
   name: FAOSTAT-Number of local breeds for which sufficient genetic resources are
     stored for reconstitution
   description: ''
   in_database: Faostat
-  measures_indicator: NumberOfLocalBreedsForWhichSufficientGeneticResourcesAreStoredForReconstitution
+  measures_indicator: NumberOfLocalBreedsForWhichSufficientGeneticResour
   data_link: https://www.fao.org/faostat/en/#data/SDGB
   oldest_datapoint: ''
   newest_datapoint: 2024
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: WorldBankGroup_AnnualFreshwaterWithdrawalsAgricultureOfTotalFreshwaterWithdrawal
+- id: WorldBankGroup_AnnualFreshwaterWithdrawalsAgricultureOfTotalFresh
   name: World Bank Group-Annual freshwater withdrawals, agriculture (% of total freshwater
     withdrawal)
   description: ''
   in_database: WorldBankGroup
-  measures_indicator: AnnualFreshwaterWithdrawalsAgricultureOfTotalFreshwaterWithdrawal
+  measures_indicator: AnnualFreshwaterWithdrawalsAgricultureOfTotalFresh
   data_link: https://data.worldbank.org/indicator/ER.H2O.FWAG.ZS
   oldest_datapoint: ''
   newest_datapoint: 2021
@@ -463,11 +463,11 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment_InvestmentsRelatedToBiodiversity
+- id: Cap202327ResultIndicatorsEuropeanCommissionDirecto_InvestmentsRelatedToBiodiversity
   name: 'CAP 2023 - 27: Result indicators (European Commission, Directorate-General
     for Agriculture and Rural Development)-Investments related to biodiversity'
   description: ''
-  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment
+  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirecto
   measures_indicator: InvestmentsRelatedToBiodiversity
   data_link: https://agridata.ec.europa.eu/extensions/DashboardCapPlan/result_indicators.html
   oldest_datapoint: ''
@@ -486,24 +486,24 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Eurostat_OrganicCropsByUtilisedAgriculturalAreaEconomicSizeOfTheFarmAndNuts2Region
+- id: Eurostat_OrganicCropsByUtilisedAgriculturalAreaEconomicSize
   name: Eurostat-Organic crops by utilised agricultural area, economic size of the
     farm and NUTS 2 region
   description: ''
   in_database: Eurostat
-  measures_indicator: OrganicCropsByUtilisedAgriculturalAreaEconomicSizeOfTheFarmAndNuts2Region
+  measures_indicator: OrganicCropsByUtilisedAgriculturalAreaEconomicSize
   data_link: https://ec.europa.eu/eurostat/databrowser/view/ef_lus_org/default/table?lang=en
   oldest_datapoint: ''
   newest_datapoint: 2020
   time_granularity: Other
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Eurostat_OrganicAnimalFarmingByUtilisedAgriculturalAreaLivestockUnitEconomicSizeOfTheFarmAndNuts2Region
+- id: Eurostat_OrganicAnimalFarmingByUtilisedAgriculturalAreaLive
   name: Eurostat-Organic animal farming by utilised agricultural area, livestock unit,
     economic size of the farm and NUTS 2 region
   description: ''
   in_database: Eurostat
-  measures_indicator: OrganicAnimalFarmingByUtilisedAgriculturalAreaLivestockUnitEconomicSizeOfTheFarmAndNuts2Region
+  measures_indicator: OrganicAnimalFarmingByUtilisedAgriculturalAreaLive
   data_link: https://ec.europa.eu/eurostat/databrowser/view/ef_lsk_org/default/table?lang=en
   oldest_datapoint: ''
   newest_datapoint: 2020
@@ -521,11 +521,11 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Eurostat_OrganicCropAreaByAgriculturalProductionMethodsAndCrops
+- id: Eurostat_OrganicCropAreaByAgriculturalProductionMethodsAndC
   name: Eurostat-Organic crop area by agricultural production methods and crops
   description: ''
   in_database: Eurostat
-  measures_indicator: OrganicCropAreaByAgriculturalProductionMethodsAndCrops
+  measures_indicator: OrganicCropAreaByAgriculturalProductionMethodsAndC
   data_link: https://ec.europa.eu/eurostat/databrowser/view/org_cropar/default/table?lang=en
   oldest_datapoint: ''
   newest_datapoint: 2022-2023
@@ -609,48 +609,48 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Eurostat_GreenhouseGasEmissionsBySourceSectorAgricultureSelectable
+- id: Eurostat_GreenhouseGasEmissionsBySourceSectorAgricultureSel
   name: Eurostat-Greenhouse gas emissions by source sector (Agriculture selectable)
   description: ''
   in_database: Eurostat
-  measures_indicator: GreenhouseGasEmissionsBySourceSectorAgricultureSelectable
+  measures_indicator: GreenhouseGasEmissionsBySourceSectorAgricultureSel
   data_link: https://ec.europa.eu/eurostat/databrowser/view/env_air_gge__custom_16667299/default/table?lang=en
   oldest_datapoint: ''
   newest_datapoint: 2023
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Faostat_EmissionsEGCo2FromTheIndividualStagesOfTheFoodValueChain
+- id: Faostat_EmissionsEGCo2FromTheIndividualStagesOfTheFoodValu
   name: FAOSTAT-Emissions (e.g. CO2) from the individual stages of the food value
     chain
   description: ''
   in_database: Faostat
-  measures_indicator: EmissionsEGCo2FromTheIndividualStagesOfTheFoodValueChain
+  measures_indicator: EmissionsEGCo2FromTheIndividualStagesOfTheFoodValu
   data_link: https://www.fao.org/faostat/en/#data/GT
   oldest_datapoint: ''
   newest_datapoint: 2022
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Faostat_EmissionsIndicatorsResultingFromAgricultureSeveralEGEmissionsPerCapitaFromPreAndPostProductionEmissionsPerCapitaFromLivestock
+- id: Faostat_EmissionsIndicatorsResultingFromAgricultureSeveral
   name: 'FAOSTAT-Emissions indicators; resulting from agriculture (several, e.g.:
     -Emissions per capita from pre- and post-production -Emissions per capita from
     livestock, …)'
   description: ''
   in_database: Faostat
-  measures_indicator: EmissionsIndicatorsResultingFromAgricultureSeveralEGEmissionsPerCapitaFromPreAndPostProductionEmissionsPerCapitaFromLivestock
+  measures_indicator: EmissionsIndicatorsResultingFromAgricultureSeveral
   data_link: https://www.fao.org/faostat/en/#data/EM
   oldest_datapoint: ''
   newest_datapoint: 2022
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Faostat_EmissionIntensityOfCommodityEGMeatOfCattleWithTheBoneFreshOrChilledOrCerealsExcludingRice
+- id: Faostat_EmissionIntensityOfCommodityEGMeatOfCattleWithTheB
   name: FAOSTAT-Emission intensity of commodity (e.g. meat of cattle with the bone,
     fresh or chilled or cereals excluding rice)
   description: ''
   in_database: Faostat
-  measures_indicator: EmissionIntensityOfCommodityEGMeatOfCattleWithTheBoneFreshOrChilledOrCerealsExcludingRice
+  measures_indicator: EmissionIntensityOfCommodityEGMeatOfCattleWithTheB
   data_link: https://www.fao.org/faostat/en/#data/EI
   oldest_datapoint: ''
   newest_datapoint: 2022
@@ -712,11 +712,11 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Eurostat_AirPollutantsBySourceSectorFoodAndBeveragesIndustrySelectable
+- id: Eurostat_AirPollutantsBySourceSectorFoodAndBeveragesIndustr
   name: Eurostat-Air pollutants by source sector ("Food and beverages industry" selectable)
   description: ''
   in_database: Eurostat
-  measures_indicator: AirPollutantsBySourceSectorFoodAndBeveragesIndustrySelectable
+  measures_indicator: AirPollutantsBySourceSectorFoodAndBeveragesIndustr
   data_link: https://ec.europa.eu/eurostat/databrowser/view/env_air_emis__custom_13333522/default/table?lang=en
   oldest_datapoint: ''
   newest_datapoint: 2022
@@ -745,35 +745,35 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Eurostat_HarmonisedRiskIndicator1ForPesticidesByCategorisationOfActiveSubstances
+- id: Eurostat_HarmonisedRiskIndicator1ForPesticidesByCategorisat
   name: Eurostat-Harmonised risk indicator 1 for pesticides by categorisation of active
     substances
   description: ''
   in_database: Eurostat
-  measures_indicator: HarmonisedRiskIndicator1ForPesticidesByCategorisationOfActiveSubstances
+  measures_indicator: HarmonisedRiskIndicator1ForPesticidesByCategorisat
   data_link: https://ec.europa.eu/eurostat/databrowser/view/aei_hri/default/table?lang=en
   oldest_datapoint: ''
   newest_datapoint: 2022
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Faostat_PesticideUsePerAreaOfCroplandOrPerValueOfAgriculturalProductionOrPerCapita
+- id: Faostat_PesticideUsePerAreaOfCroplandOrPerValueOfAgricultu
   name: FAOSTAT-Pesticide use per area of cropland or per value of agricultural production
     or per capita
   description: ''
   in_database: Faostat
-  measures_indicator: PesticideUsePerAreaOfCroplandOrPerValueOfAgriculturalProductionOrPerCapita
+  measures_indicator: PesticideUsePerAreaOfCroplandOrPerValueOfAgricultu
   data_link: https://www.fao.org/faostat/en/#data/RP
   oldest_datapoint: ''
   newest_datapoint: 2022
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: EuropeanDatabaseOfSalesOfVeterinaryAntmicrobialAgentsEma_SalesOfAntimicrobialsForFoodProducingAnimals
+- id: EuropeanDatabaseOfSalesOfVeterinaryAntmicrobialAge_SalesOfAntimicrobialsForFoodProducingAnimals
   name: European database of sales of veterinary antmicrobial agents (EMA)-Sales of
     antimicrobials for food-producing animals
   description: ''
-  in_database: EuropeanDatabaseOfSalesOfVeterinaryAntmicrobialAgentsEma
+  in_database: EuropeanDatabaseOfSalesOfVeterinaryAntmicrobialAge
   measures_indicator: SalesOfAntimicrobialsForFoodProducingAnimals
   data_link: https://esvacbi.ema.europa.eu/analytics/saw.dll?Dashboard
   oldest_datapoint: ''
@@ -803,11 +803,11 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Faostat_UseOfNutrientPhosphateP2O5FertilizersPerAreaOfCropland
+- id: Faostat_UseOfNutrientPhosphateP2O5FertilizersPerAreaOfCrop
   name: FAOSTAT-Use of Nutrient phosphate P2O5 fertilizers per area of cropland
   description: ''
   in_database: Faostat
-  measures_indicator: UseOfNutrientPhosphateP2O5FertilizersPerAreaOfCropland
+  measures_indicator: UseOfNutrientPhosphateP2O5FertilizersPerAreaOfCrop
   data_link: https://www.fao.org/faostat/en/#data/RFN
   oldest_datapoint: ''
   newest_datapoint: 2021/2022 (dependent on country)
@@ -869,11 +869,11 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Faostat_LivestockUnitsPerAgriculturalLandAreaMajorLivestockTypes
+- id: Faostat_LivestockUnitsPerAgriculturalLandAreaMajorLivestoc
   name: FAOSTAT-Livestock units per agricultural land area (major livestock types)
   description: ''
   in_database: Faostat
-  measures_indicator: LivestockUnitsPerAgriculturalLandAreaMajorLivestockTypes
+  measures_indicator: LivestockUnitsPerAgriculturalLandAreaMajorLivestoc
   data_link: https://www.fao.org/faostat/en/#data/EK
   oldest_datapoint: ''
   newest_datapoint: 2022
@@ -891,12 +891,12 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: DirectorateGeneralForAgricultureAndRuralDevelopment_ShareOfLayingHensByWayOfKeepingEnrichedCageFreeRangeBarnOrganic
+- id: DirectorateGeneralForAgricultureAndRuralDevelopmen_ShareOfLayingHensByWayOfKeepingEnrichedCageFreeRan
   name: Directorate-General for Agriculture and Rural Development-Share of laying
     hens by way of keeping (Enriched cage, Free range, Barn, Organic)
   description: ''
-  in_database: DirectorateGeneralForAgricultureAndRuralDevelopment
-  measures_indicator: ShareOfLayingHensByWayOfKeepingEnrichedCageFreeRangeBarnOrganic
+  in_database: DirectorateGeneralForAgricultureAndRuralDevelopmen
+  measures_indicator: ShareOfLayingHensByWayOfKeepingEnrichedCageFreeRan
   data_link: https://agriculture.ec.europa.eu/farming/animal-products/eggs_en
   oldest_datapoint: ''
   newest_datapoint: 2012
@@ -936,11 +936,11 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment_FarmModernisation
+- id: Cap202327ResultIndicatorsEuropeanCommissionDirecto_FarmModernisation
   name: 'CAP 2023 - 27: Result indicators (European Commission, Directorate-General
     for Agriculture and Rural Development)-Farm modernisation'
   description: ''
-  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment
+  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirecto
   measures_indicator: FarmModernisation
   data_link: https://agridata.ec.europa.eu/extensions/DashboardCapPlan/result_indicators.html
   oldest_datapoint: ''
@@ -948,11 +948,11 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment_AdaptationToClimateChange
+- id: Cap202327ResultIndicatorsEuropeanCommissionDirecto_AdaptationToClimateChange
   name: 'CAP 2023 - 27: Result indicators (European Commission, Directorate-General
     for Agriculture and Rural Development)-Adaptation to climate change'
   description: ''
-  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment
+  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirecto
   measures_indicator: AdaptationToClimateChange
   data_link: https://agridata.ec.europa.eu/extensions/DashboardCapPlan/result_indicators.html
   oldest_datapoint: ''
@@ -960,11 +960,11 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment_ReducingEmissionsInTheLivestockSector
+- id: Cap202327ResultIndicatorsEuropeanCommissionDirecto_ReducingEmissionsInTheLivestockSector
   name: 'CAP 2023 - 27: Result indicators (European Commission, Directorate-General
     for Agriculture and Rural Development)-Reducing emissions in the livestock sector'
   description: ''
-  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment
+  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirecto
   measures_indicator: ReducingEmissionsInTheLivestockSector
   data_link: https://agridata.ec.europa.eu/extensions/DashboardCapPlan/result_indicators.html
   oldest_datapoint: ''
@@ -972,11 +972,11 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment_CarbonStorageInSoilsAndBiomass
+- id: Cap202327ResultIndicatorsEuropeanCommissionDirecto_CarbonStorageInSoilsAndBiomass
   name: 'CAP 2023 - 27: Result indicators (European Commission, Directorate-General
     for Agriculture and Rural Development)-Carbon storage in soils and biomass'
   description: ''
-  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment
+  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirecto
   measures_indicator: CarbonStorageInSoilsAndBiomass
   data_link: https://agridata.ec.europa.eu/extensions/DashboardCapPlan/result_indicators.html
   oldest_datapoint: ''
@@ -984,11 +984,11 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment_InvestmentsRelatedToClimate
+- id: Cap202327ResultIndicatorsEuropeanCommissionDirecto_InvestmentsRelatedToClimate
   name: 'CAP 2023 - 27: Result indicators (European Commission, Directorate-General
     for Agriculture and Rural Development)-Investments related to climate'
   description: ''
-  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment
+  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirecto
   measures_indicator: InvestmentsRelatedToClimate
   data_link: https://agridata.ec.europa.eu/extensions/DashboardCapPlan/result_indicators.html
   oldest_datapoint: ''
@@ -996,11 +996,11 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment_ImprovingAirQuality
+- id: Cap202327ResultIndicatorsEuropeanCommissionDirecto_ImprovingAirQuality
   name: 'CAP 2023 - 27: Result indicators (European Commission, Directorate-General
     for Agriculture and Rural Development)-Improving air quality'
   description: ''
-  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment
+  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirecto
   measures_indicator: ImprovingAirQuality
   data_link: https://agridata.ec.europa.eu/extensions/DashboardCapPlan/result_indicators.html
   oldest_datapoint: ''
@@ -1008,11 +1008,11 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment_SustainableAndReducedUseOfPesticides
+- id: Cap202327ResultIndicatorsEuropeanCommissionDirecto_SustainableAndReducedUseOfPesticides
   name: 'CAP 2023 - 27: Result indicators (European Commission, Directorate-General
     for Agriculture and Rural Development)-Sustainable and reduced use of pesticides'
   description: ''
-  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment
+  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirecto
   measures_indicator: SustainableAndReducedUseOfPesticides
   data_link: https://agridata.ec.europa.eu/extensions/DashboardCapPlan/result_indicators.html
   oldest_datapoint: ''
@@ -1020,12 +1020,12 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment_EnvironmentalPerformanceInTheLivestockSector
+- id: Cap202327ResultIndicatorsEuropeanCommissionDirecto_EnvironmentalPerformanceInTheLivestockSector
   name: 'CAP 2023 - 27: Result indicators (European Commission, Directorate-General
     for Agriculture and Rural Development)-Environmental performance in the livestock
     sector'
   description: ''
-  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment
+  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirecto
   measures_indicator: EnvironmentalPerformanceInTheLivestockSector
   data_link: https://agridata.ec.europa.eu/extensions/DashboardCapPlan/result_indicators.html
   oldest_datapoint: ''
@@ -1033,11 +1033,11 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment_InvestmentRelatedToNaturalResources
+- id: Cap202327ResultIndicatorsEuropeanCommissionDirecto_InvestmentRelatedToNaturalResources
   name: 'CAP 2023 - 27: Result indicators (European Commission, Directorate-General
     for Agriculture and Rural Development)-Investment related to natural resources'
   description: ''
-  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment
+  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirecto
   measures_indicator: InvestmentRelatedToNaturalResources
   data_link: https://agridata.ec.europa.eu/extensions/DashboardCapPlan/result_indicators.html
   oldest_datapoint: ''
@@ -1045,24 +1045,24 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment_EnvironmentalOrClimateRelatedPerformanceThroughInvestmentInRuralAreas
+- id: Cap202327ResultIndicatorsEuropeanCommissionDirecto_EnvironmentalOrClimateRelatedPerformanceThroughInv
   name: 'CAP 2023 - 27: Result indicators (European Commission, Directorate-General
     for Agriculture and Rural Development)-Environmental or climate-related performance
     through investment in rural areas'
   description: ''
-  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment
-  measures_indicator: EnvironmentalOrClimateRelatedPerformanceThroughInvestmentInRuralAreas
+  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirecto
+  measures_indicator: EnvironmentalOrClimateRelatedPerformanceThroughInv
   data_link: https://agridata.ec.europa.eu/extensions/DashboardCapPlan/result_indicators.html
   oldest_datapoint: ''
   newest_datapoint: no data available yet
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment_DevelopmentOfOrganicAgriculture
+- id: Cap202327ResultIndicatorsEuropeanCommissionDirecto_DevelopmentOfOrganicAgriculture
   name: 'CAP 2023 - 27: Result indicators (European Commission, Directorate-General
     for Agriculture and Rural Development)-Development of organic agriculture'
   description: ''
-  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment
+  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirecto
   measures_indicator: DevelopmentOfOrganicAgriculture
   data_link: https://agridata.ec.europa.eu/extensions/DashboardCapPlan/result_indicators.html
   oldest_datapoint: ''
@@ -1070,11 +1070,11 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment_PreservingHabitatsAndSpecies
+- id: Cap202327ResultIndicatorsEuropeanCommissionDirecto_PreservingHabitatsAndSpecies
   name: 'CAP 2023 - 27: Result indicators (European Commission, Directorate-General
     for Agriculture and Rural Development)-Preserving habitats and species'
   description: ''
-  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment
+  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirecto
   measures_indicator: PreservingHabitatsAndSpecies
   data_link: https://agridata.ec.europa.eu/extensions/DashboardCapPlan/result_indicators.html
   oldest_datapoint: ''
@@ -1082,11 +1082,11 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment_GenerationalRenewal
+- id: Cap202327ResultIndicatorsEuropeanCommissionDirecto_GenerationalRenewal
   name: 'CAP 2023 - 27: Result indicators (European Commission, Directorate-General
     for Agriculture and Rural Development)-Generational renewal'
   description: ''
-  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment
+  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirecto
   measures_indicator: GenerationalRenewal
   data_link: https://agridata.ec.europa.eu/extensions/DashboardCapPlan/result_indicators.html
   oldest_datapoint: ''
@@ -1094,11 +1094,11 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment_LimitingAntimicrobialUse
+- id: Cap202327ResultIndicatorsEuropeanCommissionDirecto_LimitingAntimicrobialUse
   name: 'CAP 2023 - 27: Result indicators (European Commission, Directorate-General
     for Agriculture and Rural Development)-Limiting antimicrobial use'
   description: ''
-  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment
+  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirecto
   measures_indicator: LimitingAntimicrobialUse
   data_link: https://agridata.ec.europa.eu/extensions/DashboardCapPlan/result_indicators.html
   oldest_datapoint: ''
@@ -1106,11 +1106,11 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment_ImprovingAnimalWelfare
+- id: Cap202327ResultIndicatorsEuropeanCommissionDirecto_ImprovingAnimalWelfare
   name: 'CAP 2023 - 27: Result indicators (European Commission, Directorate-General
     for Agriculture and Rural Development)-Improving animal welfare'
   description: ''
-  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment
+  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirecto
   measures_indicator: ImprovingAnimalWelfare
   data_link: https://agridata.ec.europa.eu/extensions/DashboardCapPlan/result_indicators.html
   oldest_datapoint: ''
@@ -1118,11 +1118,11 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment_RedistributionToSmallerFarms
+- id: Cap202327ResultIndicatorsEuropeanCommissionDirecto_RedistributionToSmallerFarms
   name: 'CAP 2023 - 27: Result indicators (European Commission, Directorate-General
     for Agriculture and Rural Development)-Redistribution to smaller farms'
   description: ''
-  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirectorateGeneralForAgricultureAndRuralDevelopment
+  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirecto
   measures_indicator: RedistributionToSmallerFarms
   data_link: https://agridata.ec.europa.eu/extensions/DashboardCapPlan/result_indicators.html
   oldest_datapoint: ''
@@ -1141,13 +1141,13 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: AgriFoodDataPortal_AgriculturalTrainingOfFarmManagersCategorizedByOnlyPracticalAgriculturalExperienceBasicAgriculturalTrainingAndFullAgriculturalTraining
+- id: AgriFoodDataPortal_AgriculturalTrainingOfFarmManagersCategorizedByOnl
   name: Agri-food data portal-Agricultural training of farm managers (categorized
     by "Only practical agricultural experience", "Basic agricultural training" and
     "Full agricultural training")
   description: ''
   in_database: AgriFoodDataPortal
-  measures_indicator: AgriculturalTrainingOfFarmManagersCategorizedByOnlyPracticalAgriculturalExperienceBasicAgriculturalTrainingAndFullAgriculturalTraining
+  measures_indicator: AgriculturalTrainingOfFarmManagersCategorizedByOnl
   data_link: https://agridata.ec.europa.eu/extensions/IndicatorsSectorial/AgriculturalTrainingOfFarmManagers.html
   oldest_datapoint: ''
   newest_datapoint: 2020
@@ -1199,23 +1199,23 @@
   time_granularity: Other
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Eurostat_PersonDistributionByBodyMassIndexEducationalAttainmentLevelSexAndAge
+- id: Eurostat_PersonDistributionByBodyMassIndexEducationalAttain
   name: Eurostat-Person distribution by body mass index, educational attainment level,
     sex and age
   description: ''
   in_database: Eurostat
-  measures_indicator: PersonDistributionByBodyMassIndexEducationalAttainmentLevelSexAndAge
+  measures_indicator: PersonDistributionByBodyMassIndexEducationalAttain
   data_link: https://ec.europa.eu/eurostat/databrowser/view/ilc_hch10/default/table?lang=en
   oldest_datapoint: ''
   newest_datapoint: 2022
   time_granularity: Other
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Eurostat_BodyMassIndexBmiBySexAgeAndEducationalAttainmentLevel
+- id: Eurostat_BodyMassIndexBmiBySexAgeAndEducationalAttainmentLe
   name: Eurostat-Body mass index (BMI) by sex, age and educational attainment level
   description: ''
   in_database: Eurostat
-  measures_indicator: BodyMassIndexBmiBySexAgeAndEducationalAttainmentLevel
+  measures_indicator: BodyMassIndexBmiBySexAgeAndEducationalAttainmentLe
   data_link: https://ec.europa.eu/eurostat/databrowser/view/hlth_ehis_bm1e/default/table?lang=en&category=hlth.hlth_det.hlth_bmi
   oldest_datapoint: ''
   newest_datapoint: 2019
@@ -1233,58 +1233,58 @@
   time_granularity: Other
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Faostat_PrevalenceOfObesityInTheAdultPopulation18YearsAndOlder
+- id: Faostat_PrevalenceOfObesityInTheAdultPopulation18YearsAndO
   name: FAOSTAT-Prevalence of obesity in the adult population (18 years and older)
   description: ''
   in_database: Faostat
-  measures_indicator: PrevalenceOfObesityInTheAdultPopulation18YearsAndOlder
+  measures_indicator: PrevalenceOfObesityInTheAdultPopulation18YearsAndO
   data_link: https://www.fao.org/faostat/en/#data/FS
   oldest_datapoint: ''
   newest_datapoint: 2022
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Faostat_PercentageOfChildrenUnder5YearsOfAgeWhoAreOverweightModelledEstimates
+- id: Faostat_PercentageOfChildrenUnder5YearsOfAgeWhoAreOverweig
   name: FAOSTAT-Percentage of children under 5 years of age who are overweight (modelled
     estimates)
   description: ''
   in_database: Faostat
-  measures_indicator: PercentageOfChildrenUnder5YearsOfAgeWhoAreOverweightModelledEstimates
+  measures_indicator: PercentageOfChildrenUnder5YearsOfAgeWhoAreOverweig
   data_link: https://www.fao.org/faostat/en/#data/FS
   oldest_datapoint: ''
   newest_datapoint: 2022
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Who2024_PrevalenceOfOverweightAndObesityAmongBoysAndGirlsAged79Years
+- id: Who2024_PrevalenceOfOverweightAndObesityAmongBoysAndGirlsA
   name: WHO (2024)-Prevalence of overweight and obesity among boys and girls aged
     7-9 years
   description: ''
   in_database: Who2024
-  measures_indicator: PrevalenceOfOverweightAndObesityAmongBoysAndGirlsAged79Years
+  measures_indicator: PrevalenceOfOverweightAndObesityAmongBoysAndGirlsA
   data_link: https://www.who.int/europe/publications/m/item/brief-review-of-results-from-round-6-of-cosi-2022-2024
   oldest_datapoint: ''
   newest_datapoint: 2022-2024
   time_granularity: Other
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Faostat_PrevalenceOfAnemiaAmongWomenOfReproductiveAge1549Years
+- id: Faostat_PrevalenceOfAnemiaAmongWomenOfReproductiveAge1549Y
   name: FAOSTAT-Prevalence of anemia among women of reproductive age (15-49 years)
   description: ''
   in_database: Faostat
-  measures_indicator: PrevalenceOfAnemiaAmongWomenOfReproductiveAge1549Years
+  measures_indicator: PrevalenceOfAnemiaAmongWomenOfReproductiveAge1549Y
   data_link: https://www.fao.org/faostat/en/#data/FS
   oldest_datapoint: ''
   newest_datapoint: 2019
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: WorldBankGroup_PrevalenceOfAnemiaAmongChildrenOfChildrenAges659Months
+- id: WorldBankGroup_PrevalenceOfAnemiaAmongChildrenOfChildrenAges659Mo
   name: World Bank Group-Prevalence of anemia among children (% of children ages 6-59
     months)
   description: ''
   in_database: WorldBankGroup
-  measures_indicator: PrevalenceOfAnemiaAmongChildrenOfChildrenAges659Months
+  measures_indicator: PrevalenceOfAnemiaAmongChildrenOfChildrenAges659Mo
   data_link: https://data.worldbank.org/indicator/SH.ANM.CHLD.ZS?view=chart
   oldest_datapoint: ''
   newest_datapoint: 2019
@@ -1313,192 +1313,144 @@
   time_granularity: Other
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Eurostat_DailyConsumptionOfFruitAndVegetablesBySexAgeAndEducationalAttainmentLevelHlthEhisFv3E
+- id: Eurostat_DailyConsumptionOfFruitAndVegetablesBySexAgeAndEdu
   name: Eurostat-Daily consumption of fruit and vegetables by sex, age and educational
     attainment level (hlth_ehis_fv3e)
   description: ''
   in_database: Eurostat
-  measures_indicator: DailyConsumptionOfFruitAndVegetablesBySexAgeAndEducationalAttainmentLevelHlthEhisFv3E
+  measures_indicator: DailyConsumptionOfFruitAndVegetablesBySexAgeAndEdu
   data_link: https://ec.europa.eu/eurostat/databrowser/view/hlth_ehis_fv3e/default/table?lang=en
   oldest_datapoint: ''
   newest_datapoint: 2019
   time_granularity: Other
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Eurostat_DailyConsumptionOfFruitAndVegetablesBySexAgeAndIncomeQuintile
+- id: Eurostat_DailyConsumptionOfFruitAndVegetablesBySexAgeAndInc
   name: Eurostat-Daily consumption of fruit and vegetables by sex, age and income
     quintile
   description: ''
   in_database: Eurostat
-  measures_indicator: DailyConsumptionOfFruitAndVegetablesBySexAgeAndIncomeQuintile
+  measures_indicator: DailyConsumptionOfFruitAndVegetablesBySexAgeAndInc
   data_link: https://ec.europa.eu/eurostat/databrowser/view/hlth_ehis_fv3i/default/table?lang=en&category=hlth.hlth_det.hlth_cfv
   oldest_datapoint: ''
   newest_datapoint: 2019
   time_granularity: Other
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Eurostat_DailyConsumptionOfFruitAndVegetablesBySexAgeAndDegreeOfUrbanisation
+- id: Eurostat_DailyConsumptionOfFruitAndVegetablesBySexAgeAndDeg
   name: Eurostat-Daily consumption of fruit and vegetables by sex, age and degree
     of urbanisation
   description: ''
   in_database: Eurostat
-  measures_indicator: DailyConsumptionOfFruitAndVegetablesBySexAgeAndDegreeOfUrbanisation
+  measures_indicator: DailyConsumptionOfFruitAndVegetablesBySexAgeAndDeg
   data_link: https://ec.europa.eu/eurostat/databrowser/view/hlth_ehis_fv3u__custom_13561236/default/table?lang=en&page=time:2014
   oldest_datapoint: ''
   newest_datapoint: 2019
   time_granularity: Other
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Eurostat_DailyConsumptionOfFruitAndVegetablesBySexAgeAndBodyMassIndex
+- id: Eurostat_DailyConsumptionOfFruitAndVegetablesBySexAgeAndBod
   name: Eurostat-Daily consumption of fruit and vegetables by sex, age and body mass
     index
   description: ''
   in_database: Eurostat
-  measures_indicator: DailyConsumptionOfFruitAndVegetablesBySexAgeAndBodyMassIndex
+  measures_indicator: DailyConsumptionOfFruitAndVegetablesBySexAgeAndBod
   data_link: https://ec.europa.eu/eurostat/databrowser/view/hlth_ehis_fv3m__custom_13561931/default/table?lang=en
   oldest_datapoint: ''
   newest_datapoint: 2019
   time_granularity: Other
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Eurostat_PersonsEatingFruitVegetablesOrSaladByEducationalAttainmentLevelRiskOfPovertyThresholdMostFrequentActivityStatusAndSex
+- id: Eurostat_PersonsEatingFruitVegetablesOrSaladByEducationalAt
   name: Eurostat-Persons eating fruit, vegetables or salad by educational attainment
     level, risk of poverty threshold, most frequent activity status and sex
   description: ''
   in_database: Eurostat
-  measures_indicator: PersonsEatingFruitVegetablesOrSaladByEducationalAttainmentLevelRiskOfPovertyThresholdMostFrequentActivityStatusAndSex
+  measures_indicator: PersonsEatingFruitVegetablesOrSaladByEducationalAt
   data_link: https://ec.europa.eu/eurostat/databrowser/view/ilc_hch11__custom_13514343/default/table?lang=en
   oldest_datapoint: ''
   newest_datapoint: 2022
   time_granularity: Other
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Eurostat_FrequencyOfFruitAndVegetablesConsumptionBySexAgeAndDegreeOfUrbanisation
-  name: Eurostat-Frequency of fruit and vegetables consumption by sex, age and degree
-    of urbanisation
-  description: ''
-  in_database: Eurostat
-  measures_indicator: FrequencyOfFruitAndVegetablesConsumptionBySexAgeAndDegreeOfUrbanisation
-  data_link: https://ec.europa.eu/eurostat/databrowser/view/hlth_ehis_fv1u/default/table?lang=en&category=hlth.hlth_det.hlth_cfv
-  oldest_datapoint: ''
-  newest_datapoint: 2019
-  time_granularity: Other
-  spatial_granularity: Country
-  spatial_scope: Eu
-- id: Eurostat_FrequencyOfFruitAndVegetablesConsumptionBySexAgeAndEducationalAttainmentLevel
-  name: Eurostat-Frequency of fruit and vegetables consumption by sex, age and educational
-    attainment level
-  description: ''
-  in_database: Eurostat
-  measures_indicator: FrequencyOfFruitAndVegetablesConsumptionBySexAgeAndEducationalAttainmentLevel
-  data_link: https://ec.europa.eu/eurostat/databrowser/view/hlth_ehis_fv1e/default/table?lang=en&category=hlth.hlth_det.hlth_cfv
-  oldest_datapoint: ''
-  newest_datapoint: 2019
-  time_granularity: Other
-  spatial_granularity: Country
-  spatial_scope: Eu
-- id: Eurostat_FrequencyOfFruitAndVegetablesConsumptionBySexAgeAndIncomeQuintile
-  name: Eurostat-Frequency of fruit and vegetables consumption by sex, age and income
-    quintile
-  description: ''
-  in_database: Eurostat
-  measures_indicator: FrequencyOfFruitAndVegetablesConsumptionBySexAgeAndIncomeQuintile
-  data_link: https://ec.europa.eu/eurostat/databrowser/view/hlth_ehis_fv1i/default/table?lang=en&category=hlth.hlth_det.hlth_cfv
-  oldest_datapoint: ''
-  newest_datapoint: 2019
-  time_granularity: Other
-  spatial_granularity: Country
-  spatial_scope: Eu
-- id: Eurostat_FrequencyOfFruitAndVegetablesConsumptionBySexAgeAndBodyMassIndex
+- id: Eurostat_FrequencyOfFruitAndVegetablesConsumptionBySexAgeAn
   name: Eurostat-Frequency of fruit and vegetables consumption by sex, age and body
     mass index
   description: ''
   in_database: Eurostat
-  measures_indicator: FrequencyOfFruitAndVegetablesConsumptionBySexAgeAndBodyMassIndex
+  measures_indicator: FrequencyOfFruitAndVegetablesConsumptionBySexAgeAn
   data_link: https://ec.europa.eu/eurostat/databrowser/view/hlth_ehis_fv1m/default/table?lang=en&category=hlth.hlth_det.hlth_cfv
   oldest_datapoint: ''
   newest_datapoint: 2019
   time_granularity: Other
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Eurostat_FrequencyOfDrinkingSugarSweetenedSoftDrinksBySexAgeAndEducationalAttainmentLevel
-  name: Eurostat-Frequency of drinking sugar-sweetened soft drinks by sex, age and
-    educational attainment level
-  description: ''
-  in_database: Eurostat
-  measures_indicator: FrequencyOfDrinkingSugarSweetenedSoftDrinksBySexAgeAndEducationalAttainmentLevel
-  data_link: https://ec.europa.eu/eurostat/databrowser/view/hlth_ehis_fv7e/default/table?lang=en&category=hlth.hlth_det.hlth_cfv
-  oldest_datapoint: ''
-  newest_datapoint: 2019
-  time_granularity: Other
-  spatial_granularity: Country
-  spatial_scope: Eu
-- id: Eurostat_FrequencyOfDrinkingSugarSweetenedSoftDrinksBySexAgeAndBodyMassIndex
+- id: Eurostat_FrequencyOfDrinkingSugarSweetenedSoftDrinksBySexAg
   name: Eurostat-Frequency of drinking sugar-sweetened soft drinks by sex, age and
     body mass index
   description: ''
   in_database: Eurostat
-  measures_indicator: FrequencyOfDrinkingSugarSweetenedSoftDrinksBySexAgeAndBodyMassIndex
+  measures_indicator: FrequencyOfDrinkingSugarSweetenedSoftDrinksBySexAg
   data_link: https://ec.europa.eu/eurostat/databrowser/view/hlth_ehis_fv7m/default/table?lang=en&category=hlth.hlth_det.hlth_cfv
   oldest_datapoint: ''
   newest_datapoint: 2019
   time_granularity: Other
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Eurostat_FrequencyOfDrinkingPureFruitOrVegetableJuiceBySexAgeAndEducationalAttainmentLevel
+- id: Eurostat_FrequencyOfDrinkingPureFruitOrVegetableJuiceBySexA
   name: Eurostat-Frequency of drinking pure fruit or vegetable juice by sex, age and
     educational attainment level
   description: ''
   in_database: Eurostat
-  measures_indicator: FrequencyOfDrinkingPureFruitOrVegetableJuiceBySexAgeAndEducationalAttainmentLevel
+  measures_indicator: FrequencyOfDrinkingPureFruitOrVegetableJuiceBySexA
   data_link: https://ec.europa.eu/eurostat/databrowser/view/hlth_ehis_fv5e/default/table?lang=en&category=hlth.hlth_det.hlth_cfv
   oldest_datapoint: ''
   newest_datapoint: 2020
   time_granularity: Other
   spatial_granularity: Country
   spatial_scope: Eu
-- id: EfsaComprehensiveEuropeanFoodConsumptionDatabase_DailyConsumptionOfMeatAndMeatProductsDifferentPopulationGroupsSelectable
+- id: EfsaComprehensiveEuropeanFoodConsumptionDatabase_DailyConsumptionOfMeatAndMeatProductsDifferentPopu
   name: EFSA Comprehensive European Food Consumption Database-Daily consumption of
     meat and meat products (different population groups selectable)
   description: ''
   in_database: EfsaComprehensiveEuropeanFoodConsumptionDatabase
-  measures_indicator: DailyConsumptionOfMeatAndMeatProductsDifferentPopulationGroupsSelectable
+  measures_indicator: DailyConsumptionOfMeatAndMeatProductsDifferentPopu
   data_link: https://www.efsa.europa.eu/en/microstrategy/foodex2-level-1
   oldest_datapoint: ''
   newest_datapoint: 'depends on resp. country; e.g. 2019: Romania / 2007: Germany'
   time_granularity: Other
   spatial_granularity: Country
   spatial_scope: Eu
-- id: EfsaComprehensiveEuropeanFoodConsumptionDatabase_DailyConsumptionOfLegumesDifferentPopulationGroupsSelectable
+- id: EfsaComprehensiveEuropeanFoodConsumptionDatabase_DailyConsumptionOfLegumesDifferentPopulationGroups
   name: EFSA Comprehensive European Food Consumption Database-Daily consumption of
     legumes (different population groups selectable)
   description: ''
   in_database: EfsaComprehensiveEuropeanFoodConsumptionDatabase
-  measures_indicator: DailyConsumptionOfLegumesDifferentPopulationGroupsSelectable
+  measures_indicator: DailyConsumptionOfLegumesDifferentPopulationGroups
   data_link: https://www.efsa.europa.eu/en/microstrategy/foodex2-level-2
   oldest_datapoint: ''
   newest_datapoint: 'depends on resp. country; e.g. 2019: Romania / 2007: Germany'
   time_granularity: Other
   spatial_granularity: Country
   spatial_scope: Eu
-- id: EfsaComprehensiveEuropeanFoodConsumptionDatabase_DailyConsumptionOfMilkAndDairyProductsDifferentPopulationGroupsSelectable
+- id: EfsaComprehensiveEuropeanFoodConsumptionDatabase_DailyConsumptionOfMilkAndDairyProductsDifferentPop
   name: EFSA Comprehensive European Food Consumption Database-Daily consumption of
     milk and dairy products (different population groups selectable)
   description: ''
   in_database: EfsaComprehensiveEuropeanFoodConsumptionDatabase
-  measures_indicator: DailyConsumptionOfMilkAndDairyProductsDifferentPopulationGroupsSelectable
+  measures_indicator: DailyConsumptionOfMilkAndDairyProductsDifferentPop
   data_link: https://www.efsa.europa.eu/en/microstrategy/foodex2-level-1
   oldest_datapoint: ''
   newest_datapoint: 'depends on resp. country; e.g. 2019: Romania / 2007: Germany'
   time_granularity: Other
   spatial_granularity: Country
   spatial_scope: Eu
-- id: EfsaComprehensiveEuropeanFoodConsumptionDatabase_DailyConsumptionOfSoftDrinksDifferentPopulationGroupsSelectable
+- id: EfsaComprehensiveEuropeanFoodConsumptionDatabase_DailyConsumptionOfSoftDrinksDifferentPopulationGro
   name: EFSA Comprehensive European Food Consumption Database-Daily consumption of
     soft drinks (different population groups selectable)
   description: ''
   in_database: EfsaComprehensiveEuropeanFoodConsumptionDatabase
-  measures_indicator: DailyConsumptionOfSoftDrinksDifferentPopulationGroupsSelectable
+  measures_indicator: DailyConsumptionOfSoftDrinksDifferentPopulationGro
   data_link: https://www.efsa.europa.eu/en/microstrategy/foodex2-level-3
   oldest_datapoint: ''
   newest_datapoint: 'depends on resp. country; e.g. 2019: Romania / 2007: Germany'
@@ -1516,12 +1468,12 @@
   time_granularity: Other
   spatial_granularity: Country
   spatial_scope: Eu
-- id: MertensEtAl2019_ContributionOfRuminantMeatProductsToDailyEnergyIntake
+- id: MertensEtAl2019_ContributionOfRuminantMeatProductsToDailyEnergyInt
   name: Mertens et al. (2019)-Contribution of ruminant meat products to daily energy
     intake
   description: ''
   in_database: MertensEtAl2019
-  measures_indicator: ContributionOfRuminantMeatProductsToDailyEnergyIntake
+  measures_indicator: ContributionOfRuminantMeatProductsToDailyEnergyInt
   data_link: https://www.sciencedirect.com/science/article/pii/S0959652619326873
   oldest_datapoint: ''
   newest_datapoint: depends on resp. country
@@ -1561,11 +1513,11 @@
   time_granularity: Other
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Who2022_FrequentConsumptionOfSoftDrinks3DaysWeekAmong69YearOlds
+- id: Who2022_FrequentConsumptionOfSoftDrinks3DaysWeekAmong69Yea
   name: WHO (2022)-Frequent consumption of soft drinks (>3 days/week) among 6-9-year-olds
   description: ''
   in_database: Who2022
-  measures_indicator: FrequentConsumptionOfSoftDrinks3DaysWeekAmong69YearOlds
+  measures_indicator: FrequentConsumptionOfSoftDrinks3DaysWeekAmong69Yea
   data_link: https://www.who.int/europe/publications/i/item/WHO-EURO-2022-6594-46360-67071
   oldest_datapoint: ''
   newest_datapoint: 2018-2020
@@ -1583,44 +1535,44 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Faostat_PercentageOfPopulationUsingSafelyManagedDrinkingWaterServices
+- id: Faostat_PercentageOfPopulationUsingSafelyManagedDrinkingWa
   name: FAOSTAT-Percentage of population using safely managed drinking water services
   description: ''
   in_database: Faostat
-  measures_indicator: PercentageOfPopulationUsingSafelyManagedDrinkingWaterServices
+  measures_indicator: PercentageOfPopulationUsingSafelyManagedDrinkingWa
   data_link: https://www.fao.org/faostat/en/#data/FS
   oldest_datapoint: ''
   newest_datapoint: 2022
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Faostat_PercentageOfPopulationUsingAtLeastBasicDrinkingWaterServices
+- id: Faostat_PercentageOfPopulationUsingAtLeastBasicDrinkingWat
   name: FAOSTAT-Percentage of population using at least basic drinking water services
   description: ''
   in_database: Faostat
-  measures_indicator: PercentageOfPopulationUsingAtLeastBasicDrinkingWaterServices
+  measures_indicator: PercentageOfPopulationUsingAtLeastBasicDrinkingWat
   data_link: https://www.fao.org/faostat/en/#data/FS
   oldest_datapoint: ''
   newest_datapoint: 2022
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Faostat_PercentageOfPopulationUsingSafelyManagedSanitationServices
+- id: Faostat_PercentageOfPopulationUsingSafelyManagedSanitation
   name: FAOSTAT-Percentage of population using safely managed sanitation services
   description: ''
   in_database: Faostat
-  measures_indicator: PercentageOfPopulationUsingSafelyManagedSanitationServices
+  measures_indicator: PercentageOfPopulationUsingSafelyManagedSanitation
   data_link: https://www.fao.org/faostat/en/#data/FS
   oldest_datapoint: ''
   newest_datapoint: 2022
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Faostat_PercentageOfPopulationUsingAtLeastBasicSanitationServices
+- id: Faostat_PercentageOfPopulationUsingAtLeastBasicSanitationS
   name: FAOSTAT-Percentage of population using at least basic sanitation services
   description: ''
   in_database: Faostat
-  measures_indicator: PercentageOfPopulationUsingAtLeastBasicSanitationServices
+  measures_indicator: PercentageOfPopulationUsingAtLeastBasicSanitationS
   data_link: https://www.fao.org/faostat/en/#data/FS
   oldest_datapoint: ''
   newest_datapoint: 2022
@@ -1638,75 +1590,63 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Faostat_PercentageOfChildrenUnder5YearsOfAgeWhoAreStuntedModelledEstimates
+- id: Faostat_PercentageOfChildrenUnder5YearsOfAgeWhoAreStuntedM
   name: FAOSTAT-Percentage of children under 5 years of age who are stunted (modelled
     estimates)
   description: ''
   in_database: Faostat
-  measures_indicator: PercentageOfChildrenUnder5YearsOfAgeWhoAreStuntedModelledEstimates
+  measures_indicator: PercentageOfChildrenUnder5YearsOfAgeWhoAreStuntedM
   data_link: https://www.fao.org/faostat/en/#data/FS
   oldest_datapoint: ''
   newest_datapoint: 2022
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Faostat_PrevalenceOfSevereFoodInsecurityInTheTotalPopulation3YearAverage
+- id: Faostat_PrevalenceOfSevereFoodInsecurityInTheTotalPopulati
   name: FAOSTAT-Prevalence of severe food insecurity in the total population (3-year
     average)
   description: ''
   in_database: Faostat
-  measures_indicator: PrevalenceOfSevereFoodInsecurityInTheTotalPopulation3YearAverage
+  measures_indicator: PrevalenceOfSevereFoodInsecurityInTheTotalPopulati
   data_link: https://www.fao.org/faostat/en/#data/FS
   oldest_datapoint: ''
   newest_datapoint: 2021-2023
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Faostat_PrevalenceOfModerateOrSevereFoodInsecurityInTheTotalPopulation3YearAverage
+- id: Faostat_PrevalenceOfModerateOrSevereFoodInsecurityInTheTot
   name: FAOSTAT-Prevalence of moderate or severe food insecurity in the total population
     (3-year average)
   description: ''
   in_database: Faostat
-  measures_indicator: PrevalenceOfModerateOrSevereFoodInsecurityInTheTotalPopulation3YearAverage
+  measures_indicator: PrevalenceOfModerateOrSevereFoodInsecurityInTheTot
   data_link: https://www.fao.org/faostat/en/#data/FS
   oldest_datapoint: ''
   newest_datapoint: 2021-2023
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Faostat_GrossDomesticProductPerCapitaPppConstant2017International
+- id: Faostat_GrossDomesticProductPerCapitaPppConstant2017Intern
   name: FAOSTAT-Gross domestic product per capita, PPP, (constant 2017 international
     $)
   description: ''
   in_database: Faostat
-  measures_indicator: GrossDomesticProductPerCapitaPppConstant2017International
+  measures_indicator: GrossDomesticProductPerCapitaPppConstant2017Intern
   data_link: https://www.fao.org/faostat/en/#data/FS
   oldest_datapoint: ''
   newest_datapoint: 2022
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Faostat_RailLinesDensityTotalRouteInKmPer100SquareKmOfLandArea
+- id: Faostat_RailLinesDensityTotalRouteInKmPer100SquareKmOfLand
   name: FAOSTAT-Rail lines density (total route in km per 100 square km of land area)
   description: ''
   in_database: Faostat
-  measures_indicator: RailLinesDensityTotalRouteInKmPer100SquareKmOfLandArea
+  measures_indicator: RailLinesDensityTotalRouteInKmPer100SquareKmOfLand
   data_link: https://www.fao.org/faostat/en/#data/FS
   oldest_datapoint: ''
   newest_datapoint: 2021
   time_granularity: Yearly
-  spatial_granularity: Country
-  spatial_scope: Eu
-- id: Faostat_ProportionOfAgriculturalLandAreaThatHasAchievedAnAcceptableOrDesirableLevelOfFoodSecurity
-  name: FAOSTAT-Proportion of agricultural land area that has achieved an acceptable
-    or desirable level of food security
-  description: ''
-  in_database: Faostat
-  measures_indicator: ProportionOfAgriculturalLandAreaThatHasAchievedAnAcceptableOrDesirableLevelOfFoodSecurity
-  data_link: https://www.fao.org/faostat/en/#data/SDGB
-  oldest_datapoint: ''
-  newest_datapoint: 2020-2022
-  time_granularity: Other
   spatial_granularity: Country
   spatial_scope: Eu
 - id: Faostat_AverageDietaryEnergySupplyAdequacy3YearAverage
@@ -1720,23 +1660,12 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Faostat_DietaryEnergySupplyUsedInTheEstimationOfPrevalenceOfUndernourishment
-  name: FAOSTAT-Dietary energy supply used in the estimation of prevalence of undernourishment
-  description: ''
-  in_database: Faostat
-  measures_indicator: DietaryEnergySupplyUsedInTheEstimationOfPrevalenceOfUndernourishment
-  data_link: https://www.fao.org/faostat/en/#data/FS
-  oldest_datapoint: ''
-  newest_datapoint: 2023
-  time_granularity: Yearly
-  spatial_granularity: Country
-  spatial_scope: Eu
-- id: Faostat_DietaryEnergySupplyUsedInTheEstimationOfPrevalenceOfUndernourishment3YearAverage
+- id: Faostat_DietaryEnergySupplyUsedInTheEstimationOfPrevalence
   name: FAOSTAT-Dietary energy supply used in the estimation of prevalence of undernourishment
     (3-year average)
   description: ''
   in_database: Faostat
-  measures_indicator: DietaryEnergySupplyUsedInTheEstimationOfPrevalenceOfUndernourishment3YearAverage
+  measures_indicator: DietaryEnergySupplyUsedInTheEstimationOfPrevalence
   data_link: https://www.fao.org/faostat/en/#data/FS
   oldest_datapoint: ''
   newest_datapoint: 2021-2023
@@ -1798,18 +1727,6 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Faostat_ProportionOfAgriculturalLandAreaThatHasAchievedAnAcceptableOrDesirableLevelOfFarmOutputValuePerHectare
-  name: FAOSTAT-Proportion of agricultural land area that has achieved an acceptable
-    or desirable level of farm output value per hectare
-  description: ''
-  in_database: Faostat
-  measures_indicator: ProportionOfAgriculturalLandAreaThatHasAchievedAnAcceptableOrDesirableLevelOfFarmOutputValuePerHectare
-  data_link: https://www.fao.org/faostat/en/#data/SDGB
-  oldest_datapoint: ''
-  newest_datapoint: 2020-2022
-  time_granularity: Other
-  spatial_granularity: Country
-  spatial_scope: Eu
 - id: WorldBankGroup_AgriculturalLandOfLandArea
   name: World Bank Group-Agricultural land (% of land area)
   description: ''
@@ -1854,12 +1771,12 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Faostat_FoodSupplyQuantityByFoodGroupEGSelectableVegetablesFruitsMeat
+- id: Faostat_FoodSupplyQuantityByFoodGroupEGSelectableVegetable
   name: 'FAOSTAT-Food supply quantity by food group (e.g. selectable: Vegetables,
     Fruits, Meat)'
   description: ''
   in_database: Faostat
-  measures_indicator: FoodSupplyQuantityByFoodGroupEGSelectableVegetablesFruitsMeat
+  measures_indicator: FoodSupplyQuantityByFoodGroupEGSelectableVegetable
   data_link: https://www.fao.org/faostat/en/#data/FBS
   oldest_datapoint: ''
   newest_datapoint: 2022
@@ -1877,11 +1794,11 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Faostat_PercentOfArableLandEquippedForIrrigation3YearAverage
+- id: Faostat_PercentOfArableLandEquippedForIrrigation3YearAvera
   name: FAOSTAT-Percent of arable land equipped for irrigation (3-year average)
   description: ''
   in_database: Faostat
-  measures_indicator: PercentOfArableLandEquippedForIrrigation3YearAverage
+  measures_indicator: PercentOfArableLandEquippedForIrrigation3YearAvera
   data_link: https://www.fao.org/faostat/en/#data/FS
   oldest_datapoint: ''
   newest_datapoint: 2020-2022
@@ -1899,25 +1816,25 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: WorldBankGroup_EmploymentInAgricultureOfTotalEmploymentModeledIloEstimate
+- id: WorldBankGroup_EmploymentInAgricultureOfTotalEmploymentModeledIlo
   name: World Bank Group-Employment in agriculture (% of total employment) (modeled
     ILO estimate)
   description: ''
   in_database: WorldBankGroup
-  measures_indicator: EmploymentInAgricultureOfTotalEmploymentModeledIloEstimate
+  measures_indicator: EmploymentInAgricultureOfTotalEmploymentModeledIlo
   data_link: https://data.worldbank.org/indicator/SL.AGR.EMPL.ZS?view=chart
   oldest_datapoint: ''
   newest_datapoint: 2023
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: DataModellingPlatformOfResourceEconomicsJrcLasarteLpezEtAl2023_ShareOfPeopleEmployedInAgricultureBeverageFishingAndAquacultureFoodVsEu27
+- id: DataModellingPlatformOfResourceEconomicsJrcLasarte_ShareOfPeopleEmployedInAgricultureBeverageFishingA
   name: Data-Modelling platform of resource economics (JRC) / Lasarte-López et al.
     (2023)-Share of people employed in agriculture/beverage/fishing and aquaculture/food
     (vs. EU27)
   description: ''
-  in_database: DataModellingPlatformOfResourceEconomicsJrcLasarteLpezEtAl2023
-  measures_indicator: ShareOfPeopleEmployedInAgricultureBeverageFishingAndAquacultureFoodVsEu27
+  in_database: DataModellingPlatformOfResourceEconomicsJrcLasarte
+  measures_indicator: ShareOfPeopleEmployedInAgricultureBeverageFishingA
   data_link: https://datam.jrc.ec.europa.eu/datam/mashup/BIOECONOMICS/
   oldest_datapoint: ''
   newest_datapoint: 2021
@@ -1946,36 +1863,24 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Faostat_ProportionOfAgriculturalLandAreaThatHasAchievedAnAcceptableOrDesirableLevelOfWageRateInAgriculture
-  name: FAOSTAT-Proportion of agricultural land area that has achieved an acceptable
-    or desirable level of wage rate in agriculture
-  description: ''
-  in_database: Faostat
-  measures_indicator: ProportionOfAgriculturalLandAreaThatHasAchievedAnAcceptableOrDesirableLevelOfWageRateInAgriculture
-  data_link: https://www.fao.org/faostat/en/#data/SDGB
-  oldest_datapoint: ''
-  newest_datapoint: 2020-2022
-  time_granularity: Other
-  spatial_granularity: Country
-  spatial_scope: Eu
-- id: Eurostat_EmploymentRatesBySexAgeEducationalAttainmentLevelCountryOfBirthAndDegreeOfUrbanisation
+- id: Eurostat_EmploymentRatesBySexAgeEducationalAttainmentLevelC
   name: Eurostat-Employment rates by sex, age, educational attainment level, country
     of birth and degree of urbanisation
   description: ''
   in_database: Eurostat
-  measures_indicator: EmploymentRatesBySexAgeEducationalAttainmentLevelCountryOfBirthAndDegreeOfUrbanisation
+  measures_indicator: EmploymentRatesBySexAgeEducationalAttainmentLevelC
   data_link: https://ec.europa.eu/eurostat/databrowser/view/lfst_r_eredcobu/default/table?lang=en
   oldest_datapoint: ''
   newest_datapoint: 2024
   time_granularity: Other
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Eurostat_PersonsLivingInHouseholdsWithVeryLowWorkIntensityByAgeGroupSdg0140
+- id: Eurostat_PersonsLivingInHouseholdsWithVeryLowWorkIntensityB
   name: Eurostat-Persons living in households with very low work intensity, by age
     group (sdg_01_40)
   description: ''
   in_database: Eurostat
-  measures_indicator: PersonsLivingInHouseholdsWithVeryLowWorkIntensityByAgeGroupSdg0140
+  measures_indicator: PersonsLivingInHouseholdsWithVeryLowWorkIntensityB
   data_link: https://ec.europa.eu/eurostat/databrowser/view/sdg_01_40/default/table?lang=en
   oldest_datapoint: ''
   newest_datapoint: 2024
@@ -1993,11 +1898,11 @@
   time_granularity: Other
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Eurostat_UnemploymentRatesBySexAgeAndEducationalAttainmentLevel
+- id: Eurostat_UnemploymentRatesBySexAgeAndEducationalAttainmentL
   name: Eurostat-Unemployment rates by sex, age and educational attainment level
   description: ''
   in_database: Eurostat
-  measures_indicator: UnemploymentRatesBySexAgeAndEducationalAttainmentLevel
+  measures_indicator: UnemploymentRatesBySexAgeAndEducationalAttainmentL
   data_link: https://ec.europa.eu/eurostat/databrowser/view/lfsq_urgaed/default/table?lang=en
   oldest_datapoint: ''
   newest_datapoint: 2024
@@ -2015,12 +1920,12 @@
   time_granularity: Other
   spatial_granularity: Country
   spatial_scope: Eu
-- id: WorldBankGroup_UnemploymentTotalOfTotalLaborForceModeledIloEstimate
+- id: WorldBankGroup_UnemploymentTotalOfTotalLaborForceModeledIloEstima
   name: World Bank Group-Unemployment, total (% of total labor force) (modeled ILO
     estimate)
   description: ''
   in_database: WorldBankGroup
-  measures_indicator: UnemploymentTotalOfTotalLaborForceModeledIloEstimate
+  measures_indicator: UnemploymentTotalOfTotalLaborForceModeledIloEstima
   data_link: https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?view=chart
   oldest_datapoint: ''
   newest_datapoint: 2024
@@ -2049,12 +1954,12 @@
   time_granularity: Other
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Eurostat_PersonsAtRiskOfPovertyOrSocialExclusionByDegreeOfUrbanisationSdg0110ABrokenDownByCitiesTownsAndSuburbsAndRuralAreas
+- id: Eurostat_PersonsAtRiskOfPovertyOrSocialExclusionByDegreeOfU
   name: Eurostat-Persons at risk of poverty or social exclusion by degree of urbanisation
     (sdg_01_10a) (broken down by Cities, Towns and suburbs and Rural areas)
   description: ''
   in_database: Eurostat
-  measures_indicator: PersonsAtRiskOfPovertyOrSocialExclusionByDegreeOfUrbanisationSdg0110ABrokenDownByCitiesTownsAndSuburbsAndRuralAreas
+  measures_indicator: PersonsAtRiskOfPovertyOrSocialExclusionByDegreeOfU
   data_link: https://ec.europa.eu/eurostat/databrowser/view/sdg_01_10a/default/table?lang=en
   oldest_datapoint: ''
   newest_datapoint: 2024
@@ -2083,23 +1988,23 @@
   time_granularity: Other
   spatial_granularity: Country
   spatial_scope: Eu
-- id: WorldBankGroup_ProportionOfPeopleLivingBelow50PercentOfMedianIncome
+- id: WorldBankGroup_ProportionOfPeopleLivingBelow50PercentOfMedianInco
   name: World Bank Group-Proportion of people living below 50 percent of median income
   description: ''
   in_database: WorldBankGroup
-  measures_indicator: ProportionOfPeopleLivingBelow50PercentOfMedianIncome
+  measures_indicator: ProportionOfPeopleLivingBelow50PercentOfMedianInco
   data_link: https://data.worldbank.org/indicator/SI.DST.50MD?view=chart
   oldest_datapoint: ''
   newest_datapoint: 2017-2022, dependent on country
   time_granularity: Other
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Faostat_CoefficientOfVariationOfHabitualCaloricConsumptionDistributionRealNumber
+- id: Faostat_CoefficientOfVariationOfHabitualCaloricConsumption
   name: FAOSTAT-Coefficient of variation of habitual caloric consumption distribution
     (real number)
   description: ''
   in_database: Faostat
-  measures_indicator: CoefficientOfVariationOfHabitualCaloricConsumptionDistributionRealNumber
+  measures_indicator: CoefficientOfVariationOfHabitualCaloricConsumption
   data_link: https://www.fao.org/faostat/en/#data/FS
   oldest_datapoint: ''
   newest_datapoint: 2023
@@ -2117,12 +2022,12 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Faostat_LegalGuaranteesToWomenSEqualRightsToLandOwnershipAndOrControl
+- id: Faostat_LegalGuaranteesToWomenSEqualRightsToLandOwnershipA
   name: FAOSTAT-Legal guarantees to women’s equal rights to land ownership and/or
     control
   description: ''
   in_database: Faostat
-  measures_indicator: LegalGuaranteesToWomenSEqualRightsToLandOwnershipAndOrControl
+  measures_indicator: LegalGuaranteesToWomenSEqualRightsToLandOwnershipA
   data_link: https://www.fao.org/faostat/en/#data/SDGB
   oldest_datapoint: ''
   newest_datapoint: 2021/2022/2019
@@ -2173,23 +2078,23 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: WorldBankGroup_PoliticalStabilityAndAbsenceOfViolenceTerrorismEstimate
+- id: WorldBankGroup_PoliticalStabilityAndAbsenceOfViolenceTerrorismEst
   name: 'World Bank Group-Political Stability and Absence of Violence/Terrorism: Estimate'
   description: ''
   in_database: WorldBankGroup
-  measures_indicator: PoliticalStabilityAndAbsenceOfViolenceTerrorismEstimate
+  measures_indicator: PoliticalStabilityAndAbsenceOfViolenceTerrorismEst
   data_link: https://data.worldbank.org/indicator/PV.EST?view=chart
   oldest_datapoint: ''
   newest_datapoint: 2023
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: DirectorateGeneralForCommunicationsNetworksContentAndTechnology_RuralNgaNextGenerationAccessBroadbandCoverageAvailability
+- id: DirectorateGeneralForCommunicationsNetworksContent_RuralNgaNextGenerationAccessBroadbandCoverageAvail
   name: Directorate-General for Communications Networks, Content and Technology-Rural
     NGA (Next Generation Access) broadband coverage/availability
   description: ''
-  in_database: DirectorateGeneralForCommunicationsNetworksContentAndTechnology
-  measures_indicator: RuralNgaNextGenerationAccessBroadbandCoverageAvailability
+  in_database: DirectorateGeneralForCommunicationsNetworksContent
+  measures_indicator: RuralNgaNextGenerationAccessBroadbandCoverageAvail
   data_link: https://digital-decade-desi.digital-strategy.ec.europa.eu/datasets/key-indicators/charts/analyse-one-indicator-and-compare-countries?indicator=bb_rngacov&indicatorGroup=broadband&breakdown=total_pophh&period=2022&unit=pc_hh_all&country=AT,BE,BG,HR,CY,CZ,DK,EE,EU,FI,FR,DE,EL,HU,IS,IE,IT,LV,LT,LU,MT,NL,NO,PL,PT,RO,SK,SI,ES,SE,UK
   oldest_datapoint: ''
   newest_datapoint: 2022

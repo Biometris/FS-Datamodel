@@ -635,6 +635,30 @@
           "description": "Excellent."
         }
       ]
+    },
+    {
+      "name": "SustainabilityImpactType",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiSustainabilityImpactType",
+      "description": "The type of sustainability impact the indicator measures.",
+      "title": "sustainability impact type",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "permissible_values": [
+        {
+          "text": "Positive",
+          "description": "Positive impact on sustainability.",
+          "title": "positive"
+        },
+        {
+          "text": "Negative",
+          "description": "Negative impact on sustainability.",
+          "title": "negative"
+        },
+        {
+          "text": "Undefined",
+          "description": "Undefined impact on sustainability.",
+          "title": "undefined"
+        }
+      ]
     }
   ],
   "slots": [
@@ -832,6 +856,20 @@
       ],
       "range": "IndicatorCategory",
       "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "sustainability_impact",
+      "definition_uri": "https://w3id.org/linkml/examples/fsisustainability_impact",
+      "description": "Description of the sustainability impact the indicator measures.",
+      "title": "sustainability impact",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "slot_uri": "https://w3id.org/linkml/examples/fsisustainability_impact",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "SustainabilityImpactType",
       "@type": "SlotDefinition"
     },
     {
@@ -1301,6 +1339,7 @@
         "supply_chain_component",
         "measurement_unit",
         "has_category",
+        "sustainability_impact",
         "Indicator_id",
         "Indicator_name",
         "Indicator_description"
@@ -1430,9 +1469,9 @@
   ],
   "metamodel_version": "1.7.0",
   "source_file": "food_system_indicators.yaml",
-  "source_file_date": "2025-11-03T22:36:56",
-  "source_file_size": 13926,
-  "generation_date": "2025-11-03T22:37:36",
+  "source_file_date": "2025-11-04T08:33:20",
+  "source_file_size": 14613,
+  "generation_date": "2025-11-04T08:34:07",
   "@type": "SchemaDefinition",
   "@context": [
     "project/jsonld/food_system_indicators.context.jsonld",
