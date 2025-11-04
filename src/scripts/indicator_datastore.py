@@ -3,6 +3,7 @@ from linkml_store import Client
 from linkml_store.utils.format_utils import load_objects
 from linkml_store.api.queries import Query
 import pandas as pd
+import yaml
 
 class DataStore:
     def __init__(
@@ -135,4 +136,35 @@ class DataStore:
             for collection in collections:
                 df = pd.DataFrame(collection.rows_iter())
                 df.to_excel(writer, sheet_name=collection.target_class_name, index=False)
+            glossary_terms = self.get_glossary_terms()
+            df = pd.DataFrame(glossary_terms)
+            df.to_excel(writer, sheet_name="Glossary", index=False)
 
+    def export_glossary_yaml(self, output_file):
+        glossary_terms = self.get_glossary_terms()
+        with open(output_file, "w", encoding="utf-8") as f:
+            yaml.dump(glossary_terms, f, sort_keys=False, allow_unicode=True)
+
+    def get_glossary_terms(self):
+        sv = self.db.schema_view
+
+        # Build glossary
+        records = []
+        for c in sv.all_classes().values():
+            if 'association' not in sv.class_ancestors(c.name) and not sv.is_mixin(c.name):
+                if c.name not in ["Any", "Entity"]:
+                    record = {
+                        "id": str(c.name),
+                        "name": str(c.title),
+                        "description": str(c.description)
+                    }
+                    records.append(record)
+        for e in sv.all_enums().values():
+            record = {
+                "id": str(e.name),
+                "name": str(e.title),
+                "description": str(e.description)
+            }
+            records.append(record)
+
+        return records

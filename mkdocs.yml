@@ -19,6 +19,7 @@ nav:
     - Indicator criterion categories: model/CriterionCategory.md
     - Indicator criteria: indicator_criteria_table.md
     - Indicator scores: indicator_scores.md
+  - Downloads: downloads.md
 docs_dir: docs
 site_url: https://biometris.github.io/FS-Datamodel
 repo_url: https://github.com/biometris/FS-Datamodel

@@ -1,6 +1,6 @@
 import os
-from pathlib import Path
 import json
+from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
 
 from linkml.generators.docgen import DocGenerator, SchemaView, DiagramType
@@ -113,7 +113,8 @@ if __name__ == "__main__":
     indicator_data_collection_details_data_path = "data/indicator_data_collection_details.yaml"
     criterion_data_path = "data/criteria.yaml"
     indicatorscores_data_path = "data/indicatorscores.yaml"
-    excel_export_path = "docs/data/exported_indicator_datastore.xlsx"
+    excel_export_path = "docs/data/indicator_data_export.xlsx"
+    glossary_export_path = "docs/data/glossary.yaml"
 
     # Setup data store
     datastore = DataStore(
@@ -241,3 +242,7 @@ if __name__ == "__main__":
 
         # Export entire datastore to Excel
         datastore.export_to_excel(excel_export_path)
+
+        # Export glossary terms
+        datastore.export_glossary_yaml(glossary_export_path)
+
