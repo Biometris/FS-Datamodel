@@ -1,0 +1,58 @@
+- id: IndicatorCategory
+  name: indicator category
+  description: The category the indicator belongs to.
+- id: Indicator
+  name: indicator
+  description: A quantitative measure used to assess the state, performance, or progress
+    of a specific aspect of the food system in relation to sustainability objectives.
+- id: IndicatorDataCollectionDetails
+  name: indicator data collection details
+  description: Details on the collection of indicator data within a certain database/dataset.
+- id: Database
+  name: database
+  description: Database containing data corresponding to an indicator.
+- id: IndicatorDatapoint
+  name: indicator datapoint
+  description: A food system indicator datapoint is a measured value or statistic
+    that provides quantitative information for a specific sustainability indicator
+    at a given time and place, used to track the performance or state of the food
+    system.
+- id: QuantityValue
+  name: quantity value
+  description: A value of an attribute that is quantitative and measurable, expressed
+    as a combination of a unit and a numeric value
+- id: IndicatorCriterion
+  name: indicator criterion
+  description: Criterion used for indicator selection.
+- id: IndicatorcriteriaScore
+  name: indicator criterion score
+  description: Score for an indicator for an indicator selection criterion.
+- id: IndicatorCategories
+  name: None
+  description: None
+- id: SustainabilityDimension
+  name: sustainability dimension
+  description: A core pillar of sustainability (environment, society, economy, or
+    health) that groups indicators to evaluate different aspects of sustainable development
+    within the food system.
+- id: SpatialScopeType
+  name: spatial scope type
+  description: The spatial scope for which the indicator is defined.
+- id: SupplyChainComponentType
+  name: supply chain component type
+  description: The supply chain component for which the indicator is relevant.
+- id: TimeGranularity
+  name: time granularity
+  description: Time granularity for measuring and updating data.
+- id: SpatialGranularity
+  name: spatial granularity
+  description: The granularity for which the indicator is measured.
+- id: CriterionCategory
+  name: criterion category
+  description: Category of an indicator selection criterion.
+- id: ScoreCategory
+  name: score category
+  description: Score category.
+- id: SustainabilityImpactType
+  name: sustainability impact type
+  description: The type of sustainability impact the indicator measures.
