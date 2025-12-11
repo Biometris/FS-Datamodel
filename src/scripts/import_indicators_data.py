@@ -48,7 +48,12 @@ def to_identifier(xlsx_combined, column_name):
 
 # Helper function to create identifiers
 def escape(xlsx_combined, column_name):
-    return xlsx_combined[column_name].str.replace("[“”]", "\"", regex=True)
+    return xlsx_combined[column_name] \
+        .str.replace("[\u201C\u201D]", "\"", regex=True) \
+        .str.replace("\u2013", "-", regex=True) \
+        .str.replace("\u2018", "'", regex=True) \
+        .str.replace("\u2019", "'", regex=True) \
+        .str.replace("\n", " ", regex=True)
 
 # Helper function to create identifiers
 def map_spatial_granularity(xlsx_combined):
@@ -91,12 +96,13 @@ for lst in xlsx_combined["Related stage of the food supply chain"].str.split("[;
         components = [(re.sub("[^a-zA-Z0-9]", "", str.title())) for str in lst]
         components = [component_mapping.get(component, component) for component in components]
         components = list(set(components)) if not isinstance(components[0], list) else components[0]
+        components.sort()
         supply_chain_components.append(components)
 
 # Build the final indicator data structure
 indicator_data = {
     "id": to_identifier(xlsx_combined, "Indicator"),
-    "name": xlsx_combined["Indicator"],
+    "name": escape(xlsx_combined, "Indicator"),
     "description": escape(xlsx_combined, "Definition"),
     "definition": "",
     "measurement_unit": xlsx_combined["Unit"],
@@ -113,7 +119,7 @@ indicators = pd.DataFrame(indicator_data).to_dict(orient='records')
 indicators = [{i:j for i,j in indicator.items() if j == j} for indicator in indicators]
 
 # Write to YAML
-yaml_output = yaml.dump(indicators, sort_keys=False, indent=2, allow_unicode=True)
+yaml_output = yaml.dump(indicators, sort_keys=False, indent=2, allow_unicode=True, width=float("inf"))
 with open(fout_indicator_definitions, "w", encoding="utf-8") as f:
     f.write(yaml_output)
 
@@ -129,7 +135,7 @@ indicator_categories = pd.DataFrame(indicator_categories) \
     .to_dict(orient='records')
 
 # Write to YAML
-yaml_output = yaml.dump(indicator_categories, sort_keys=False, indent=2, allow_unicode=True)
+yaml_output = yaml.dump(indicator_categories, sort_keys=False, indent=2, allow_unicode=True, width=float("inf"))
 with open(fout_indicator_category_definitions, "w", encoding="utf-8") as f:
     f.write(yaml_output)
 
@@ -165,7 +171,7 @@ databases = pd.DataFrame(databases).to_dict(orient='records')
 databases = list({db['id']:db for db in databases}.values())
 
 # Write to YAML
-yaml_output = yaml.dump(databases, sort_keys=False, indent=2, allow_unicode=True)
+yaml_output = yaml.dump(databases, sort_keys=False, indent=2, allow_unicode=True, width=float("inf"))
 with open(fout_databases, "w", encoding="utf-8") as f:
     f.write(yaml_output)
 
@@ -189,6 +195,6 @@ data_collection_details = pd.DataFrame(data_collection_details).to_dict(orient='
 data_collection_details = list({dcd['id']:dcd for dcd in data_collection_details}.values())
 
 # Write to YAML
-yaml_output = yaml.dump(data_collection_details, sort_keys=False, indent=2, allow_unicode=True)
+yaml_output = yaml.dump(data_collection_details, sort_keys=False, indent=2, allow_unicode=True, width=float("inf"))
 with open(fout_data_collection_details, "w", encoding="utf-8") as f:
     f.write(yaml_output)

@@ -23,8 +23,7 @@
   database_link: https://data.worldbank.org/indicator/PV.EST?view=chart
   update_frequency: Yearly
 - id: DataModellingPlatformOfResourceEconomicsJrcLasarte
-  name: Data-Modelling platform of resource economics (JRC) / Lasarte-López et al.
-    (2023)
+  name: Data-Modelling platform of resource economics (JRC) / Lasarte-López et al. (2023)
   author: ''
   description: ''
   database_link: https://datam.jrc.ec.europa.eu/datam/mashup/BIOECONOMICS/
@@ -42,8 +41,7 @@
   database_link: https://datam.jrc.ec.europa.eu/datam/mashup/EU_ESTIMATED_AGRICULTURAL_BALANCE_SHEETS/
   update_frequency: Yearly
 - id: Cap202327ResultIndicatorsEuropeanCommissionDirecto
-  name: 'CAP 2023 - 27: Result indicators (European Commission, Directorate-General
-    for Agriculture and Rural Development)'
+  name: 'CAP 2023 - 27: Result indicators (European Commission, Directorate-General for Agriculture and Rural Development)'
   author: ''
   description: ''
   database_link: https://agridata.ec.europa.eu/extensions/DashboardCapPlan/result_indicators.html
