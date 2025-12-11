@@ -40,6 +40,14 @@ for column in xlsx_combined.columns:
     if xlsx_combined[column].dtype == "object":
         xlsx_combined[column] = xlsx_combined[column].map(lambda x : " ".join(x.split()) if isinstance(x, str) else x)
 
+# Helper field to remove empty fields 
+def skip_empty_field(records, field):
+    for row in records:
+        v = row.get(field)
+        if v is None or v == "" or (isinstance(v, float) and pd.isna(v)):
+            row.pop(field, None)
+    return records
+
 # Helper function to create identifiers
 def to_identifier(xlsx_combined, column_name):
     result = xlsx_combined[column_name] \
@@ -114,12 +122,36 @@ for lst in xlsx_combined["Related stage of the food supply chain"].str.split("[;
         components.sort()
         supply_chain_components.append(components)
 
+# Map EU SDG indicator codes
+eu_sdg_indicator_mappings = {
+    "FSI_0000": "EU_SDG_02_20",
+    "FSI_0006": "EU_SDG_02_30",
+    "FSI_0007": "EU_SDG_08_10",
+    "FSI_0029": "EU_SDG_15_50",
+    "FSI_0030": "EU_SDG_06_60",
+    "FSI_0042": "EU_SDG_02_40",
+    "FSI_0052": "EU_SDG_02_60",
+    "FSI_0064": "EU_SDG_02_53",
+    "FSI_0076": "EU_SDG_15_42",
+    "FSI_0103": "EU_SDG_02_10",
+    "FSI_0137": "EU_SDG_06_40",
+    "FSI_0172": "EU_SDG_01_40",
+    "FSI_0173": "EU_SDG_08_30",
+    "FSI_0177": "EU_SDG_01_10",
+    "FSI_0179": "EU_SDG_01_10a"
+}
+eu_sdg_indicator_codes = []
+for idx, record in fsi_identifiers.items():
+    code = indicator_code_map[record]
+    eu_sdg_indicator_codes.append(eu_sdg_indicator_mappings.get(code, ''))
+
 # Build the final indicator data structure
 indicator_data = {
     "id": to_fsi_identifier(xlsx_combined, "Indicator"),
     "name": escape(xlsx_combined, "Indicator"),
     "description": escape(xlsx_combined, "Definition"),
     "definition": "",
+    "eu2025_sdg_indicator_code": eu_sdg_indicator_codes,
     "measurement_unit": xlsx_combined["Unit"],
     "dimension": to_identifier(xlsx_combined, "dimension"),
     "has_category": to_identifier(xlsx_combined, "category"),
@@ -132,6 +164,9 @@ indicators = pd.DataFrame(indicator_data).to_dict(orient='records')
 
 # Remove missing values.
 indicators = [{i:j for i,j in indicator.items() if j == j} for indicator in indicators]
+
+# Remove undefined SDG indicator codes
+indicators = skip_empty_field(indicators, "eu2025_sdg_indicator_code")
 
 # Write to YAML
 yaml_output = yaml.dump(indicators, sort_keys=False, indent=2, allow_unicode=True, width=float("inf"))

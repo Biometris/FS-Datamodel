@@ -19,3 +19,7 @@ hide:
 **Category**: {{ indicator['has_category'] }}
 
 **Unit of measurement**: {{ indicator['measurement_unit'] }}
+
+{% if indicator['eu2025_sdg_indicator_code'] %}
+  **EU 2025 SDG Indicator**: {{ indicator['eu2025_sdg_indicator_code'] }}
+{%- endif %}

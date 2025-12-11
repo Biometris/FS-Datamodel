@@ -55,6 +55,7 @@ classes:
       A quantitative measure used to assess the state, performance, or progress of a specific aspect of the food system in relation to sustainability objectives.
     slots:
       - definition
+      - eu2025_sdg_indicator_code
       - dimension
       - supply_chain_component
       - measurement_unit
@@ -286,6 +287,13 @@ slots:
     description:
       Unit of measurement.
     range: unit
+
+  eu2025_sdg_indicator_code:
+    title: EU (2025) SDG indicator code
+    description:
+      Indicates whether the indicator is included in the 2025 edition of the EU Sustainable Development Goals indicator set, and provides the corresponding EU SDG indicator code.
+    range: Eu2025SdgIndicator
+    required: false
 
   data_link:
     title: data link
@@ -564,3 +572,26 @@ enums:
       Undefined:
         title: undefined
         description: Undefined impact on sustainability.
+
+  Eu2025SdgIndicator:
+    title: EU SDG indicators
+    description: Indicators of the 2025 edition of the EU sustainable development goals (SDG) monitoring report.
+    see_also:
+      - https://ec.europa.eu/eurostat/web/sdi/quality
+      - https://ec.europa.eu/eurostat/documents/276524/16797281/EU-SDG-indicator-review-report-2025.pdf
+    permissible_values:
+      EU_SDG_01_10:
+      EU_SDG_01_10a:
+      EU_SDG_01_40:
+      EU_SDG_02_10:
+      EU_SDG_02_20:
+      EU_SDG_02_30:
+      EU_SDG_02_40:
+      EU_SDG_02_60:
+      EU_SDG_02_53:
+      EU_SDG_08_10:
+      EU_SDG_06_40:
+      EU_SDG_06_60:
+      EU_SDG_08_30:
+      EU_SDG_15_42:
+      EU_SDG_15_50:
