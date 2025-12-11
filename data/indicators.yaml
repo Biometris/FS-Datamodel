@@ -10,6 +10,7 @@
     of labour productivity in agriculture. The data stem from the Economic Accounts
     for Agriculture (EAA), which provide detailed information on agricultural sector
     income.
+  definition: ''
   measurement_unit: Euro per annual work unit (AWU)
   dimension: Economy
   has_category: FarmersIncome
@@ -21,6 +22,7 @@
     A)
   description: '"This yardstick corresponds to the real net value added at factor
     cost of agriculture per total AWU" Reference metadata: https://ec.europa.eu/eurostat/cache/metadata/en/aact_esms.htm'
+  definition: ''
   measurement_unit: Index, 2015 =100 Index, 2010 = 100 Index, n-1 = 100
   dimension: Economy
   has_category: FarmersIncome
@@ -32,6 +34,7 @@
     unit (Indicator B)
   description: '"This indicator presents the changes in net entrepreneurial income
     over time, per non-salaried AWU." Reference metadata: https://ec.europa.eu/eurostat/cache/metadata/en/aact_esms.htm'
+  definition: ''
   measurement_unit: Index, 2015 =100 Index, 2010 = 100 Index, n-1 = 100
   dimension: Economy
   has_category: FarmersIncome
@@ -43,6 +46,7 @@
   description: '"This income aggregate is presented as an absolute value (or in the
     form of an index in real terms). It allows comparability over time of the income
     of the agricultural industry between Member States." Reference metadata: https://ec.europa.eu/eurostat/cache/metadata/en/aact_esms.htm'
+  definition: ''
   measurement_unit: Index, 2015 =100 Index, 2010 = 100 Index, n-1 = 100
   dimension: Economy
   has_category: FarmersIncome
@@ -53,6 +57,7 @@
   name: Proportion of agricultural land area that has achieved an acceptable or desirable
     level of net farm income
   description: 'see metadata (section 2.4.1): https://files-faostat.fao.org/production/SDGB/Metadata.xlsx'
+  definition: ''
   measurement_unit: '%'
   dimension: Economy
   has_category: FarmersIncome
@@ -73,6 +78,7 @@
     labour, i.e., the average income opportunities that a person would have outside
     of agriculture. The Agricultural entrepreneurial income can be negative (in SK
     e.g.). In this case the share is not calculated. (https://agridata.ec.europa.eu/Qlik_Downloads/Jobs-Growth-sources.htm)
+  definition: ''
   measurement_unit: '%'
   dimension: Economy
   has_category: FarmersIncome
@@ -87,6 +93,7 @@
     governments place on the public funding of R&D. GBARD data are compiled using
     the guidelines laid out in the OECD’s Frascati Manual from 2015 and the European
     Business Statistics Methodological Manual for R&D statistics of 2023.
+  definition: ''
   measurement_unit: Million euro and euro per inhabitant (current prices)
   dimension: Economy
   has_category: Competitiveness
@@ -105,6 +112,7 @@
     economic welfare. For example, neither does GDP include most unpaid household
     work nor does GDP take account of negative effects of economic activity, like
     environmental degradation.
+  definition: ''
   measurement_unit: Chain linked volumes (2010) in EUR and % change on previous year
     (per capita)
   dimension: Economy
@@ -124,6 +132,7 @@
     value terms and measured "cost, insurance, freight" (CIF ). "Goods" means all
     movable property including electric current. Data are expressed in million euros.
     Data are presented in the calendar and seasonally adjusted form.
+  definition: ''
   measurement_unit: Million euros
   dimension: Economy
   has_category: Competitiveness
@@ -135,6 +144,7 @@
 - id: AgricultureValueAddedShareOfGdp
   name: Agriculture value added share of GDP
   description: 'see metadata (section 2.a.1): https://files-faostat.fao.org/production/SDGB/Metadata.xlsx'
+  definition: ''
   measurement_unit: '%'
   dimension: Economy
   has_category: Competitiveness
@@ -151,6 +161,7 @@
     Government Expenditures according to the Government Finance Statistics (GFS) and
     the Classification of the Functions of Government (COFOG), and Agriculture value
     added share of GDP according to the System of National Accounts (SNA).
+  definition: ''
   measurement_unit: Index
   dimension: Economy
   has_category: Competitiveness
@@ -163,6 +174,7 @@
     as a percent of GDP. They include both capital and current expenditures in the
     four main sectors: Business enterprise, Government, Higher education and Private
     non-profit. R&D covers basic research, applied research, and experimental development.'
+  definition: ''
   measurement_unit: '% of GDP'
   dimension: Economy
   has_category: Competitiveness
@@ -172,6 +184,7 @@
   name: Labour productivity in the agricultural/beverages/fishing and aquaculture/food
     sector
   description: 'For definitions, data sources etc., see the following website: https://datam.jrc.ec.europa.eu/datam/mashup/BIOECONOMICS/index.html'
+  definition: ''
   measurement_unit: Value added per person employed in the respective sector (1000
     € / person)
   dimension: Economy
@@ -200,6 +213,7 @@
     dataset, this indicator can provide valuable insights on the share of value added
     that is captured at each step of the supply chain. Monitored over time, it can
     assess progress towards the transition to a sustainable food system.'
+  definition: ''
   measurement_unit: '% of GDP'
   dimension: Economy
   has_category: Competitiveness
@@ -215,6 +229,7 @@
     Indication TSG = Traditional Speciality Guaranteed GI = Geographical Indication
     The Focus Area 3A of Rural Development Programmes is improving competitiveness
     of primary producers by better integrating them into the agri-food chain. https://agridata.ec.europa.eu/Qlik_Downloads/Adding-Value-sources.htm
+  definition: ''
   measurement_unit: Number of products
   dimension: Economy
   has_category: Competitiveness
@@ -240,12 +255,13 @@
     ensures that the adjusted disposable of all countries is valued at a uniform price
     level and thus reflects only differences in the actual volume of the economy.
     -> From "Reference metadata": https://ec.europa.eu/eurostat/cache/metadata/en/tec00113_esmsip2.htm'
+  definition: ''
   measurement_unit: Purchasing power standard (PPS, EU27 from 2020), per inhabitant
   dimension: Economy
   has_category: FoodAffordability
   supply_chain_component:
-  - Retail
   - Consumption
+  - Retail
   sustainability_impact: Positive
 - id: ConsumerPricesFoodIndices2015100
   name: Consumer Prices, Food Indices (2015 = 100)
@@ -255,22 +271,24 @@
     basket of consumer food and beverage of constant quality and similar characteristics,
     with the products in the basket being selected to be representative of households’
     expenditure during a specified period.
+  definition: ''
   measurement_unit: Index number of Food CPI
   dimension: Economy
   has_category: FoodAffordability
   supply_chain_component:
-  - Retail
   - Consumption
+  - Retail
   sustainability_impact: Negative
 - id: FoodPriceInflation
   name: Food price inflation
   description: Not available
+  definition: ''
   measurement_unit: '%'
   dimension: Economy
   has_category: FoodAffordability
   supply_chain_component:
-  - Retail
   - Consumption
+  - Retail
   sustainability_impact: Negative
 - id: CostOfAHealthyDietCohdPppDollarPerPersonPerDay
   name: Cost of a healthy diet (CoHD), PPP dollar per person per day
@@ -279,12 +297,13 @@
     dietary guidelines (FBDGs), for a representative person within energy balance
     at 2 330 kcal/day. The cost of a healthy diet is converted to international dollars
     using purchasing power parity (PPP).
+  definition: ''
   measurement_unit: international dollars per person per day (using PPP)
   dimension: Economy
   has_category: FoodAffordability
   supply_chain_component:
-  - Retail
   - Consumption
+  - Retail
   sustainability_impact: Negative
 - id: PrevalenceOfUnaffordabilityPua
   name: Prevalence of unaffordability (PUA)
@@ -295,12 +314,13 @@
     basic non-food goods and services (n). The PUA indicator is obtained by contrasting
     the threshold r against country-specific income distribution data that are provided
     by the World Bank’s Poverty and Inequality Platform (PIP).
+  definition: ''
   measurement_unit: '%'
   dimension: Economy
   has_category: FoodAffordability
   supply_chain_component:
-  - Retail
   - Consumption
+  - Retail
   sustainability_impact: Negative
 - id: NumberOfPeopleUnableToAffordAHealthyDietNua
   name: Number of people unable to afford a healthy diet (NUA)
@@ -308,12 +328,13 @@
     afford a healthy diet. The NUA indicator is computed by multiplying PUA by the
     reference population size taken from the 2022 revision of the World Population
     Prospects.
+  definition: ''
   measurement_unit: million people
   dimension: Economy
   has_category: FoodAffordability
   supply_chain_component:
-  - Retail
   - Consumption
+  - Retail
   sustainability_impact: Negative
 - id: IndicatorOfFoodPriceAnomaliesIfpaByFoodCpi
   name: Indicator of Food Price Anomalies (IFPA), by Food CPI
@@ -324,13 +345,14 @@
     account seasonality in agricultural markets and inflation, allowing to answer
     the question of whether or not a change in price is abnormal for any particular
     period.
+  definition: ''
   measurement_unit: Consumer Price Index (CPI)
   dimension: Economy
   has_category: FoodAffordability
   supply_chain_component:
   - PrimaryProduction
-  - Retail
   - Consumption
+  - Retail
   - FoodProcessing
   sustainability_impact: Negative
 - id: InflationConsumerPricesAnnual
@@ -339,12 +361,13 @@
     percentage change in the cost to the average consumer of acquiring a basket of
     goods and services that may be fixed or changed at specified intervals, such as
     yearly. The Laspeyres formula is generally used.
+  definition: ''
   measurement_unit: '% per year'
   dimension: Economy
   has_category: FoodAffordability
   supply_chain_component:
-  - Retail
   - Consumption
+  - Retail
   sustainability_impact: Negative
 - id: AdjustedNetNationalIncomePerCapitaConstant2015Us
   name: Adjusted net national income per capita (constant 2015 US$)
@@ -360,24 +383,26 @@
     assets. Growth rates of adjusted net national income are computed from constant
     price series deflated using the gross national expenditure (formerly domestic
     absorption) deflator.
+  definition: ''
   measurement_unit: constant 2015 US$; weighted average
   dimension: Economy
   has_category: FoodAffordability
   supply_chain_component:
-  - Retail
   - Consumption
+  - Retail
   sustainability_impact: Positive
 - id: ChangeOfConsumerFoodPrices
   name: Change of consumer food prices
   description: 'Reference metadata: https://ec.europa.eu/eurostat/cache/metadata/en/prc_fsc_idx_esms.htm#shortstat_conc_defDisseminated
     Also see the metadata provided by the JRC EU Food System Monitoring Dashboard
     for the indicator "Consumer food inflation": https://datam.jrc.ec.europa.eu/datam/mashup/EU_FOOD_SYSTEM_MONITORING/index.html'
+  definition: ''
   measurement_unit: '% (annual percentage change by month)'
   dimension: Economy
   has_category: FoodAffordability
   supply_chain_component:
-  - Retail
   - Consumption
+  - Retail
   sustainability_impact: Negative
 - id: PriceIndicesOfTheMeansOfAgriculturalProductionInpu
   name: Price indices of the means of agricultural production, input
@@ -390,6 +415,7 @@
     The base price of an index is 100 by agreement, meaning that, for instance, an
     index equal to 110 reflects an increase in the absolute price of 10% and an index
     equal to 95 a decrease of 5%.
+  definition: ''
   measurement_unit: Index, 2015=100
   dimension: Economy
   has_category: FoodAffordability
@@ -400,6 +426,7 @@
   name: 'Household final consumption expenditure by purpose: Share of food expenditure'
   description: See the information provided by the JRC EU Food System Monitoring Dashboard
     for the indicator "Share of household spending on food". https://datam.jrc.ec.europa.eu/datam/mashup/EU_FOOD_SYSTEM_MONITORING/index.html
+  definition: ''
   measurement_unit: '% of total'
   dimension: Economy
   has_category: FoodAffordability
@@ -414,6 +441,7 @@
     physical and economic access to sufficient quantities of locally available items
     for an active and healthy life. It also provides indicators on the cost and affordability
     of an energy-sufficient diet and of a nutrient-adequate diet.
+  definition: ''
   measurement_unit: Ratio
   dimension: Economy
   has_category: FoodAffordability
@@ -424,6 +452,7 @@
   name: Self-sufficiency rate per member state (by food product)
   description: See the metadata provided by the JRC EU Food System Monitoring Dashboard
     for the indicator "Self-sufficiency rates - commodities". https://datam.jrc.ec.europa.eu/datam/mashup/EU_FOOD_SYSTEM_MONITORING/index.html
+  definition: ''
   measurement_unit: Self-sufficiency rate (%)
   dimension: Economy
   has_category: EconomicResilience
@@ -440,6 +469,7 @@
     by water of more than 10 tonnes per hectare, a country will have a zero value.
     Soil erosion may still be occurring in areas of those countries, but at a rate
     of less than 10 tonnes per hectare. Reference metadata: https://ec.europa.eu/eurostat/cache/metadata/en/sdg_15_50_esmsip2.htm'
+  definition: ''
   measurement_unit: '% of the non-artificial erodible area (Where there is no land
     that is at risk of soil erosion by water of more than 10 tonnes per hectare, a
     country will have a zero value)'
@@ -464,6 +494,7 @@
     The indicator is produced by the EEA based on modelling data from the WISE SoE-Water
     quantity database (WISE 3) and other open sources (Eurostat, OECD) and including
     gap filling methods.
+  definition: ''
   measurement_unit: '% of renewable water resources'
   dimension: Environment
   has_category: ConservOfNaturalResources
@@ -476,6 +507,7 @@
     area
   description: This indicator expresses the sum of the energy supplied to agriculture
     for all energy uses.
+  definition: ''
   measurement_unit: Tonnes of oil equivalent per hectare of UAA
   dimension: Environment
   has_category: ConservOfNaturalResources
@@ -502,6 +534,7 @@
     the environment of livestock farming is not only depending on the amount of livestock,
     but also depends on farming practices. An increase in the livestock index, therefore
     does not necessarily needs to lead to environmental degradation.'
+  definition: ''
   measurement_unit: Livestock units (LSU) per hectare of utilised agricultural area
     (UAA)
   dimension: Environment
@@ -535,6 +568,7 @@
     accepted rates of natural soil formation. The main factors affecting the rates
     of soil erosion by water are precipitation, soil type, topography, land use and
     land management. [...]'
+  definition: ''
   measurement_unit: Tonnes per hectare per year
   dimension: Environment
   has_category: ConservOfNaturalResources
@@ -552,6 +586,7 @@
     affected area are shown in percentages which indicate the share of area under
     severe soil erosion of the selected land cover class. The erosion rate "severe"
     is defined as the estimated erosion > 10 tonnes/hectares/year.'
+  definition: ''
   measurement_unit: '%'
   dimension: Environment
   has_category: ConservOfNaturalResources
@@ -561,6 +596,7 @@
 - id: WaterUseInTheManufacturingIndustryByActivityAndSup
   name: 'Water use in the manufacturing industry by activity and supply category:
     Manufacture of food products and beverages'
+  definition: ''
   measurement_unit: Million cubic metres
   dimension: Environment
   has_category: ConservOfNaturalResources
@@ -570,6 +606,7 @@
 - id: EnergyUseInAgriculture
   name: Energy use in agriculture
   description: NA
+  definition: ''
   measurement_unit: TJ
   dimension: Environment
   has_category: ConservOfNaturalResources
@@ -600,6 +637,7 @@
     have been endorsed by the FAO Commission on Genetic Resources for Food and Agriculture
     at its Fourteenth Regular Session (http://www.fao.org/docrep/meeting/028/mg538e.pdf).
     Concepts: For more details, consult https://unstats.un.org/sdgs/metadata/files/Metadata-02-05-01a.pdf'
+  definition: ''
   measurement_unit: Number
   dimension: Environment
   has_category: ConservOfNaturalResources
@@ -631,6 +669,7 @@
     separated by visual appraisal from other similarly defined groups within the same
     species, or a group for which geographical and/or cultural separation from phenotypically
     similar groups has led to acceptance of its separate identity.'
+  definition: ''
   measurement_unit: Number
   dimension: Environment
   has_category: ConservOfNaturalResources
@@ -650,6 +689,7 @@
     considerable or where water reuse is significant. Withdrawals for agriculture
     and industry are total withdrawals for irrigation and livestock production and
     for direct industrial use (including for cooling thermoelectric plants).
+  definition: ''
   measurement_unit: '% of total freshwater withdrawal'
   dimension: Environment
   has_category: ConservOfNaturalResources
@@ -665,6 +705,7 @@
     common to all the national lists of farmland birds. Starting from reference year
     2015, these indices are collected from the EU Member States by the OECD, whether
     or not they are members of OECD.
+  definition: ''
   measurement_unit: Index, 2000=100
   dimension: Environment
   has_category: BiodiversityConservation
@@ -675,6 +716,7 @@
   name: Investments related to biodiversity
   description: Share of farms benefitting from CAP investment support contributing
     to biodiversity
+  definition: ''
   measurement_unit: '%'
   dimension: Environment
   has_category: BiodiversityConservation
@@ -690,6 +732,7 @@
     and marketing of organic products, as well as for governing imports of organic
     products into the EU. The detailed rules for the implementation of this Regulation
     are laid down in Commission Regulation (EC) No 889/2008.
+  definition: ''
   measurement_unit: '% of total utilised agricultural area (UAA)'
   dimension: Environment
   has_category: OrganicFarming
@@ -699,6 +742,7 @@
 - id: OrganicCropsByUtilisedAgriculturalAreaEconomicSize
   name: Organic crops by utilised agricultural area, economic size of the farm and
     NUTS 2 region
+  definition: ''
   measurement_unit: Hectare / Holdings
   dimension: Environment
   has_category: OrganicFarming
@@ -708,6 +752,7 @@
 - id: OrganicAnimalFarmingByUtilisedAgriculturalAreaLive
   name: Organic animal farming by utilised agricultural area, livestock unit, economic
     size of the farm and NUTS 2 region
+  definition: ''
   measurement_unit: Livestock unit (LSU -> 1 LSU = the grazing equivalent of one adult
     dairy cow) / Head (animal) / Holding
   dimension: Environment
@@ -721,6 +766,7 @@
     holdings, aquaculture production units), processors, importers, exporters and
     other operators (wholesalers, retailers, etc.) -> See the linked reference metadata:
     https://ec.europa.eu/eurostat/cache/metadata/en/org_esms.htm'
+  definition: ''
   measurement_unit: Number
   dimension: Environment
   has_category: OrganicFarming
@@ -731,6 +777,7 @@
 - id: OrganicCropAreaByAgriculturalProductionMethodsAndC
   name: Organic crop area by agricultural production methods and crops
   description: 'NA; see the linked reference metadata: https://ec.europa.eu/eurostat/cache/metadata/en/org_esms.htm'
+  definition: ''
   measurement_unit: Hectare / Percentage of UAA
   dimension: Environment
   has_category: OrganicFarming
@@ -740,6 +787,7 @@
 - id: OrganicCropProductionByCrops
   name: Organic crop production by crops
   description: 'NA; see the linked reference metadata: https://ec.europa.eu/eurostat/cache/metadata/en/org_esms.htm'
+  definition: ''
   measurement_unit: Tonnes
   dimension: Environment
   has_category: OrganicFarming
@@ -750,6 +798,7 @@
   name: Organic livestock
   description: 'Certified organic livestock expressed in heads of live animals; see
     the linked reference metadata: https://ec.europa.eu/eurostat/cache/metadata/en/org_esms.htm'
+  definition: ''
   measurement_unit: Head (animals)
   dimension: Environment
   has_category: OrganicFarming
@@ -759,6 +808,7 @@
 - id: OrganicProductionOfAnimalProductsByProduct
   name: Organic production of animal products (by product)
   description: 'NA; see the linked reference metadata: https://ec.europa.eu/eurostat/cache/metadata/en/org_esms.htm'
+  definition: ''
   measurement_unit: Tonnes
   dimension: Environment
   has_category: OrganicFarming
@@ -769,6 +819,7 @@
 - id: OrganicProductionOfAquacultureProducts
   name: Organic production of aquaculture products
   description: 'NA; see the linked reference metadata: https://ec.europa.eu/eurostat/cache/metadata/en/org_esms.htm'
+  definition: ''
   measurement_unit: Tonnes live weight
   dimension: Environment
   has_category: OrganicFarming
@@ -778,6 +829,7 @@
 - id: ProcessorsOfOrganicProductsByNaceRev2ActivityC
   name: Processors of organic products by NACE Rev. 2 activity(C)
   description: 'NA; see the linked reference metadata: https://ec.europa.eu/eurostat/cache/metadata/en/org_esms.htm'
+  definition: ''
   measurement_unit: Number
   dimension: Environment
   has_category: OrganicFarming
@@ -795,6 +847,7 @@
     compiled by EU Member States. Data on the utilised agricultural area (UAA) stem
     from Eurostat’s annual crop statistics. The definition of this indicator is based
     on the common agricultural policy (CAP) indicator C45 Emissions from agriculture.
+  definition: ''
   measurement_unit: Tons and kg per hectare utilised agricultural area (UAA)
   dimension: Environment
   has_category: GhgEmissions
@@ -806,6 +859,7 @@
   description: This indicator tracks trends in greenhouse gas (GHG) emissions by agriculture,
     estimated and reported under the United Nations Framework Convention on Climate
     Change (UNFCCC), the Kyoto Protocol and the Decision 525/2013/EC.
+  definition: ''
   measurement_unit: Share of GHG in %
   dimension: Environment
   has_category: GhgEmissions
@@ -815,6 +869,7 @@
 - id: GreenhouseGasEmissionsBySourceSectorAgricultureSel
   name: Greenhouse gas emissions by source sector (Agriculture selectable)
   description: 'NA; see the linked reference metadata: https://ec.europa.eu/eurostat/cache/metadata/en/env_air_gge_esms.htm'
+  definition: ''
   measurement_unit: Thousand tonnes
   dimension: Environment
   has_category: GhgEmissions
@@ -826,6 +881,7 @@
   description: 'The following stages of the value chain are (among others) selectable:
     Food Processing, Food Packaging, Food Retail, Food Household Consumption, Food
     Transport'
+  definition: ''
   measurement_unit: kt
   dimension: Environment
   has_category: GhgEmissions
@@ -844,6 +900,7 @@
     sectoral shares of total national greenhouse gas (GHG) emissions as well as three
     indicators of emissions intensity: per capita emissions; emissions per value of
     agricultural production; and emissions per area of agricultural land.'
+  definition: ''
   measurement_unit: Tonnes/capita
   dimension: Environment
   has_category: GhgEmissions
@@ -858,6 +915,7 @@
     indicator is defined as greenhouse gas emissions per kg of product. Data are available
     for a set of agricultural commodities (e.g. rice and other cereals, meat, milk,
     eggs), by country, with global coverage and relative to the period 1961–2020.
+  definition: ''
   measurement_unit: kg CO2eq/kg
   dimension: Environment
   has_category: GhgEmissions
@@ -871,6 +929,7 @@
     Manure left on pastures; Manure management; and Manure applied to soils. Estimates
     are computed following the Tier 1 method of the 2006 IPCC Guidelines for National
     greenhouse gas Inventories (IPCC, 2006).
+  definition: ''
   measurement_unit: kt
   dimension: Environment
   has_category: GhgEmissions
@@ -884,6 +943,7 @@
     Manure left on pastures; Manure management; and Manure applied to soils. Estimates
     are computed following the Tier 1 method of the 2006 IPCC Guidelines for National
     greenhouse gas Inventories (IPCC, 2006).
+  definition: ''
   measurement_unit: kt
   dimension: Environment
   has_category: GhgEmissions
@@ -898,6 +958,7 @@
     mineral and chemical fertilizers, to soils. Estimates are computed at Tier 1 following
     the 2006 IPCC Guidelines for National greenhouse gas (GHG) Inventories (IPCC,
     2006).
+  definition: ''
   measurement_unit: kt
   dimension: Environment
   has_category: GhgEmissions
@@ -912,6 +973,7 @@
     mineral and chemical fertilizers, to soils. Estimates are computed at Tier 1 following
     the 2006 IPCC Guidelines for National greenhouse gas (GHG) Inventories (IPCC,
     2006).
+  definition: ''
   measurement_unit: kt
   dimension: Environment
   has_category: GhgEmissions
@@ -923,6 +985,7 @@
   description: '-Different stages of the food value chain selectable: e.g., Fertilizers/Pesticides
     Manufacturing, Food Processing, Food Household Consumption, … -Different emission
     types selectable: CO2, CH4, N2O'
+  definition: ''
   measurement_unit: kt
   dimension: Environment
   has_category: GhgEmissions
@@ -946,6 +1009,7 @@
     reported to the European Environment Agency (EEA). The EU inventory is fully consistent
     with national air pollution inventories compiled by the EU Member States. For
     more information, see the linked reference metadata: https://ec.europa.eu/eurostat/cache/metadata/en/env_air_emis_esms.htm#shortstat_conc_defDisseminated'
+  definition: ''
   measurement_unit: Tonnes
   dimension: Environment
   has_category: AirPollutants
@@ -961,6 +1025,7 @@
     the market (sold), and therefore used, in each Member State, and the hazard properties
     of these active substances. The data are presented as an index relative to the
     average results for the period 2015 to 2017.
+  definition: ''
   measurement_unit: Index 2015-2017 average = 100 (Index relative to the average results
     for the period 2015 to 2017)
   dimension: Environment
@@ -975,6 +1040,7 @@
     based on the term "placing on the market" as defined in Regulation (EC) No 1107/2009
     of the European Parliament and of the Council of 21 October 2009 concerning the
     placing of plant protection products on the market.
+  definition: ''
   measurement_unit: Active substances in kilograms (kg) (Both, agricultural and non-agricultural
     uses of plant production products are covered)
   dimension: Environment
@@ -1004,6 +1070,7 @@
     Eurostat also calculates the national Harmonised risk indicator on behalf of Member
     States as a service. Member States make the information available to the public
     before 30 August each year. Reference metadata: https://ec.europa.eu/eurostat/databrowser/view/aei_hri/default/table?lang=en'
+  definition: ''
   measurement_unit: Index, 2011-2013 average = 100 (Index relattive to a baseline
     of 100)
   dimension: Environment
@@ -1017,6 +1084,7 @@
   description: Total pesticides, covering insecticides, fungicides and bactericides
     (including seed treatments), herbicides, plant growth regulators, rodenticides,
     mineral oils, disinfectants and others.
+  definition: ''
   measurement_unit: kg/ha g/International $ kg/capita
   dimension: Environment
   has_category: PesticideAndAntibioticUse
@@ -1027,6 +1095,7 @@
   name: Sales of antimicrobials for food-producing animals
   description: Sales for food-producing animals (including horses), in mg per population
     correction unit (mg/PCU), by country, for 2022
+  definition: ''
   measurement_unit: mg/PCU (PCU=Population Correction Unit)
   dimension: Environment
   has_category: PesticideAndAntibioticUse
@@ -1051,6 +1120,7 @@
     of P can build up soil P saturation, in which case even negligible new fertiliser
     inputs may increase pollution. For statistical concepts and definition, see the
     reference metadata: https://ec.europa.eu/eurostat/cache/metadata/en/aei_fm_usefert_esms.htm'
+  definition: ''
   measurement_unit: Tonnes of N and of P
   dimension: Environment
   has_category: FertilizerUse
@@ -1060,6 +1130,7 @@
 - id: UseOfNutrientNitrogenNFertilizersPerAreaOfCropland
   name: Use of Nutrient nitrogen N fertilizers per area of cropland
   description: Total nitrogen (N) from all fertilizer products
+  definition: ''
   measurement_unit: kg/ha
   dimension: Environment
   has_category: FertilizerUse
@@ -1069,6 +1140,7 @@
 - id: UseOfNutrientPhosphateP2O5FertilizersPerAreaOfCrop
   name: Use of Nutrient phosphate P2O5 fertilizers per area of cropland
   description: Total phosphate (P2O5) from all fertilizer products
+  definition: ''
   measurement_unit: kg/ha
   dimension: Environment
   has_category: FertilizerUse
@@ -1078,6 +1150,7 @@
 - id: UseOfNutrientPotashK2OFertilizersPerAreaOfCropland
   name: Use of Nutrient potash K2O fertilizers per area of cropland
   description: Total potash (K2O) from all fertilizer products
+  definition: ''
   measurement_unit: kg/ha
   dimension: Environment
   has_category: FertilizerUse
@@ -1096,6 +1169,7 @@
     areas are counted once), temporary meadows for mowing or for pasture, land under
     market or kitchen gardens, and land temporarily fallow. Land abandoned as a result
     of shifting cultivation is excluded.
+  definition: ''
   measurement_unit: kg/ha of arable land
   dimension: Environment
   has_category: FertilizerUse
@@ -1109,6 +1183,7 @@
     Gross input of manure, and Other inputs The outputs are: Removal of nutrients
     with the harvest of crops, Removal of nutrients through the harvest and grazing
     of fodder, and Crop residues removed from the field.'
+  definition: ''
   measurement_unit: kg/ha
   dimension: Environment
   has_category: FertilizerUse
@@ -1122,6 +1197,7 @@
     Gross input of manure, and Other inputs The outputs are: Removal of nutrients
     with the harvest of crops, Removal of nutrients through the harvest and grazing
     of fodder, and Crop residues removed from the field.'
+  definition: ''
   measurement_unit: kg/ha
   dimension: Environment
   has_category: FertilizerUse
@@ -1140,6 +1216,7 @@
     to insufficient precipitation, as opposed to hydrological droughts, which occur
     when low water supplies become apparent in streams, reservoirs, and groundwater
     levels, usually after many months of meteorological drought.
+  definition: ''
   measurement_unit: km2 area affected % of total area
   dimension: Environment
   has_category: ImpactsOfClimateChange
@@ -1148,6 +1225,7 @@
   sustainability_impact: Negative
 - id: LivestockUnitsPerAgriculturalLandAreaMajorLivestoc
   name: Livestock units per agricultural land area (major livestock types)
+  definition: ''
   measurement_unit: LSU/ha
   dimension: Environment
   has_category: AnimalKeeping
@@ -1156,6 +1234,7 @@
   sustainability_impact: Negative
 - id: LivestockProductionIndex
   name: Livestock production index
+  definition: ''
   measurement_unit: Index (2014-2016 = 100)
   dimension: Environment
   has_category: AnimalKeeping
@@ -1164,6 +1243,7 @@
   sustainability_impact: Negative
 - id: ShareOfLayingHensByWayOfKeepingEnrichedCageFreeRan
   name: Share of laying hens by way of keeping (Enriched cage, Free range, Barn, Organic)
+  definition: ''
   measurement_unit: Share of reported way of keeping in total (in %)
   dimension: Environment
   has_category: AnimalKeeping
@@ -1185,18 +1265,20 @@
     losses at stages of the food supply chain where certain products have not yet
     become food. Only includes "food waste", not "food loss" (see definition in the
     commentary).
+  definition: ''
   measurement_unit: Kilogram per capita / Tonnes of fresh mass
   dimension: Environment
   has_category: FoodWasteFoodLoss
   supply_chain_component:
-  - DisposalRecycling
   - PrimaryProduction
+  - DisposalRecycling
   - Consumption
   - Retail
   - FoodProcessing
   sustainability_impact: Negative
 - id: IncidenceOfCaloricLossesAtRetailDistributionLevel
   name: Incidence of caloric losses at retail distribution level
+  definition: ''
   measurement_unit: '%'
   dimension: Environment
   has_category: FoodWasteFoodLoss
@@ -1211,6 +1293,7 @@
     (mainly agriculture). The EU drinking water standard is limited to 50 mg NO3/L
     to avoid threats to human health. The distribution of measured groundwater bodies
     might mask exceedance of nitrate levels in certain polluted areas.
+  definition: ''
   measurement_unit: mg NO3/L
   dimension: Environment
   has_category: WaterQuality
@@ -1221,6 +1304,7 @@
   name: Farm modernisation
   description: Share of farmers receiving investment support to restructure and modernise,
     including to improve resource efficiency
+  definition: ''
   measurement_unit: '%'
   dimension: Environment
   has_category: SusDevelopmentPrimaryProd
@@ -1231,6 +1315,7 @@
   name: Adaptation to climate change
   description: Share of utilised agricultural area (UAA) under supported commitments
     to improve climate adaptation
+  definition: ''
   measurement_unit: '%'
   dimension: Environment
   has_category: SusDevelopmentPrimaryProd
@@ -1241,6 +1326,7 @@
   name: Reducing emissions in the livestock sector
   description: Share of livestock units (LU) under supported commitments to reduce
     emissions of greenhouse gases and/or ammonia, including manure management
+  definition: ''
   measurement_unit: '%'
   dimension: Environment
   has_category: SusDevelopmentPrimaryProd
@@ -1253,6 +1339,7 @@
     to reduce emissions or to maintain or enhance carbon storage (including permanent
     grassland, permanent crops with permanent green cover, agricultural land in wetland
     and peatland)
+  definition: ''
   measurement_unit: '%'
   dimension: Environment
   has_category: SusDevelopmentPrimaryProd
@@ -1264,6 +1351,7 @@
   description: Share of farms benefitting from CAP investment support contributing
     to climate change mitigation and adaptation, and to the production of renewable
     energy or biomaterials
+  definition: ''
   measurement_unit: '%'
   dimension: Environment
   has_category: SusDevelopmentPrimaryProd
@@ -1274,6 +1362,7 @@
   name: Improving air quality
   description: Share of utilised agricultural area (UAA) under supported commitments
     to reduce ammonia emission
+  definition: ''
   measurement_unit: '%'
   dimension: Environment
   has_category: SusDevelopmentPrimaryProd
@@ -1285,6 +1374,7 @@
   description: Share of Utilised Agricultural Area (UAA) under supported specific
     commitments which lead to a sustainable use of pesticides in order to reduce risks
     and impacts of pesticides, such as pesticides leakage
+  definition: ''
   measurement_unit: '%'
   dimension: Environment
   has_category: SusDevelopmentPrimaryProd
@@ -1295,6 +1385,7 @@
   name: Environmental performance in the livestock sector
   description: Share of livestock units (LU) under supported commitments to improve
     environmental sustainability
+  definition: ''
   measurement_unit: '%'
   dimension: Environment
   has_category: SusDevelopmentPrimaryProd
@@ -1305,6 +1396,7 @@
   name: Investment related to natural resources
   description: Share of farms benefitting from CAP productive and non-productive investment
     support related to care for the natural resource
+  definition: ''
   measurement_unit: '%'
   dimension: Environment
   has_category: SusDevelopmentPrimaryProd
@@ -1315,6 +1407,7 @@
   name: Environmental or climate-related performance through investment in rural areas
   description: Number of operations contributing to environmental sustainability and
     the achievement of climate mitigation and adaptation goals in rural areas
+  definition: ''
   measurement_unit: Number of operations
   dimension: Environment
   has_category: SusDevelopmentPrimaryProd
@@ -1325,6 +1418,7 @@
   name: Development of organic agriculture
   description: Share of utilised agricultural area (UAA) supported by the CAP for
     organic farming with a split between maintenance and conversion
+  definition: ''
   measurement_unit: '%'
   dimension: Environment
   has_category: SusDevelopmentPrimaryProd
@@ -1336,6 +1430,7 @@
   description: Share of utilised agricultural area (UAA) under supported commitments
     for supporting biodiversity conservation or restoration including high-nature-value
     farming practices
+  definition: ''
   measurement_unit: '%'
   dimension: Environment
   has_category: SusDevelopmentPrimaryProd
@@ -1346,6 +1441,7 @@
   name: Generational renewal
   description: Number of young farmers benefitting from setting up with support from
     the CAP, including a gender breakdown
+  definition: ''
   measurement_unit: Number of young farmers
   dimension: Environment
   has_category: SusDevelopmentPrimaryProd
@@ -1356,6 +1452,7 @@
   name: Limiting antimicrobial use
   description: Share of livestock units (LU) concerned by supported actions to limit
     the use of antimicrobials (prevention/reduction)
+  definition: ''
   measurement_unit: '%'
   dimension: Environment
   has_category: SusDevelopmentPrimaryProd
@@ -1366,6 +1463,7 @@
   name: Improving animal welfare
   description: Share of livestock units (LU) covered by supported actions to improve
     animal welfare
+  definition: ''
   measurement_unit: '%'
   dimension: Environment
   has_category: SusDevelopmentPrimaryProd
@@ -1376,6 +1474,7 @@
   name: Redistribution to smaller farms
   description: Percentage of additional direct payments per hectare for eligible farms
     below average farme size (compared to average)
+  definition: ''
   measurement_unit: '%'
   dimension: Environment
   has_category: SusDevelopmentPrimaryProd
@@ -1385,6 +1484,7 @@
 - id: AgricultureShareOfGovernmentExpenditure
   name: Agriculture share of Government Expenditure
   description: 'see metadata (section 2.a.1): https://files-faostat.fao.org/production/SDGB/Metadata.xlsx'
+  definition: ''
   measurement_unit: '%'
   dimension: Environment
   has_category: SusDevelopmentPrimaryProd
@@ -1407,6 +1507,7 @@
     and completed at an agricultural college, university or other institute of higher
     education in agriculture, horticulture, viticulture, sylviculture, pisciculture,
     veterinary science, agricultural technology or an associated subject.'
+  definition: ''
   measurement_unit: '% (share of total managers)'
   dimension: Environment
   has_category: SusDevelopmentPrimaryProd
@@ -1422,6 +1523,7 @@
     in 2005. Assessments of Priority 1 include four indicators that reflect the degree
     to which countries have prioritized disaster risk reduction and the strengthening
     of relevant institutions.
+  definition: ''
   measurement_unit: Score (1-5; 5 = best)
   dimension: Environment
   has_category: EcologicalResilience
@@ -1434,6 +1536,7 @@
     trade. The Consumption Footprint has a full bottom-up approach (process-based
     life cycle assessment) and considers the impacts of the consumption of citizens
     in the areas of food, mobility, housing, household goods and appliances.
+  definition: ''
   measurement_unit: Points (single weighted score; impact per capita or per country
     selectable)
   dimension: Environment
@@ -1450,6 +1553,7 @@
     18.5), normal weight (BMI between 18.5 and less than 25), and pre-obese (BMI between
     25 and less than 30). The category overweight (BMI equal or greater than 25) combines
     the two categories pre-obese and obese.'
+  definition: ''
   measurement_unit: '% of population aged 18 or over, by body mass index (BMI), classified
     into overweight, pre-obese or obese'
   dimension: Health
@@ -1465,6 +1569,7 @@
     are used: - Underweight: BMI less than 18.5 - Normal weight: BMI between 18.5
     and less than 25 - Pre-obese: BMI between 25 and less than 30 - Obese: BMI equal
     or greater than 30'
+  definition: ''
   measurement_unit: '% of population aged 15 and over, classified into underweight,
     normal, pre-obese, obese'
   dimension: Health
@@ -1481,6 +1586,7 @@
     data are available. It is calculated as a person’s weight (in kilograms) divided
     by the square of his or her height (in metres): BMI = weight (kg) / [height *
     height] (m²).'
+  definition: ''
   measurement_unit: '% of population aged 16 and over by educational attainment level,
     sex and age, classified into underweight, normal, overweight, pre-obese, obese'
   dimension: Health
@@ -1496,6 +1602,7 @@
     are used: - Underweight: BMI less than 18.5 - Normal weight: BMI between 18.5
     and less than 25 - Pre-obese: BMI between 25 and less than 30 - Obese: BMI equal
     or greater than 30 - Overweight: BMI equal or greater than 25 (Pre-obese + Obese)'
+  definition: ''
   measurement_unit: '% of population aged 15 and over, by educational attainment level,
     sex and age, classified into underweight, normal, pre-obese, obese, overweight'
   dimension: Health
@@ -1511,6 +1618,7 @@
     are used: - Underweight: BMI less than 18.5 - Normal weight: BMI between 18.5
     and less than 25 - Pre-obese: BMI between 25 and less than 30 - Obese: BMI equal
     or greater than 30 - Overweight: BMI equal or greater than 25 (Pre-obese + Obese)'
+  definition: ''
   measurement_unit: '% of population aged 15 and over, by income quintile, sex and
     age, classified into underweight, normal, pre-obese, obese, overweight'
   dimension: Health
@@ -1522,6 +1630,7 @@
   name: Prevalence of obesity in the adult population (18 years and older)
   description: Percentage of adults aged 18 and over whose Body Mass Index (BMI) is
     more than 30 kg/m2.
+  definition: ''
   measurement_unit: '%'
   dimension: Health
   has_category: NutritionalHealthOutcomes
@@ -1532,6 +1641,7 @@
   name: Percentage of children under 5 years of age who are overweight (modelled estimates)
   description: Weight-for-height more than 2 standard deviations of the WHO Child
     Growth Standards median among children aged 0-59 months.
+  definition: ''
   measurement_unit: '%'
   dimension: Health
   has_category: NutritionalHealthOutcomes
@@ -1541,6 +1651,7 @@
 - id: PrevalenceOfOverweightAndObesityAmongBoysAndGirlsA
   name: Prevalence of overweight and obesity among boys and girls aged 7-9 years
   description: 'Information on COSI from Leibniz-Institut (Germany): https://www.bips-institut.de/en/research/projects/detail-view.html?projID=1034&cHash=7091b4f6b96a260495d207d5bd034e2b'
+  definition: ''
   measurement_unit: '%'
   dimension: Health
   has_category: NutritionalHealthOutcomes
@@ -1552,6 +1663,7 @@
   description: Prevalence of anemia among women of reproductive age refers to the
     combined prevalence of both non-pregnant with haemoglobin levels below 12 g/dL
     and pregnant women with haemoglobin levels below 11 g/dL.
+  definition: ''
   measurement_unit: '%'
   dimension: Health
   has_category: NutritionalHealthOutcomes
@@ -1563,6 +1675,7 @@
   description: Prevalence of anemia, children ages 6-59 months, is the percentage
     of children ages 6-59 months whose hemoglobin level is less than 110 grams per
     liter, adjusted for altitude.
+  definition: ''
   measurement_unit: '% of children ages 6-59 months'
   dimension: Health
   has_category: NutritionalHealthOutcomes
@@ -1576,6 +1689,7 @@
     age 5 whose weight for age is more than two standard deviations below the median
     for the international reference population ages 0-59 months. The data are based
     on the WHO's 2006 Child Growth Standards.
+  definition: ''
   measurement_unit: '% of children under 5'
   dimension: Health
   has_category: NutritionalHealthOutcomes
@@ -1587,6 +1701,7 @@
   description: Diabetes prevalence refers to the percentage of people ages 20-79 who
     have type 1 or type 2 diabetes. It is calculated by adjusting to a standard population
     age-structure.
+  definition: ''
   measurement_unit: '% of population ages 20 to 79'
   dimension: Health
   has_category: NutritionalHealthOutcomes
@@ -1600,6 +1715,7 @@
     of fruit and vegetables consumed per day. The following modalities are used: ''Not
     eating fruit or vegetables daily, 1 to 4 portions per day, 5 or more portions
     per day''.'
+  definition: ''
   measurement_unit: '% of population (aged 15 and over) per daily consumption frequency
     (consumption of 0 portions, 1 to 4 portions, 5 portions or more)'
   dimension: Health
@@ -1613,6 +1729,7 @@
     of fruit and vegetables consumed per day. The following modalities are used: ''Not
     eating fruit or vegetables daily, 1 to 4 portions per day, 5 or more portions
     per day''.'
+  definition: ''
   measurement_unit: '% of population (aged 15 and over) per daily consumption frequency
     (consumption of 0 portions, 1 to 4 portions, 5 portions or more)'
   dimension: Health
@@ -1626,6 +1743,7 @@
     of fruit and vegetables consumed per day. The following modalities are used: ''Not
     eating fruit or vegetables daily, 1 to 4 portions per day, 5 or more portions
     per day''.'
+  definition: ''
   measurement_unit: '% of population (aged 15 and over) per daily consumption frequency
     (consumption of 0 portions, 1 to 4 portions, 5 portions or more)'
   dimension: Health
@@ -1639,6 +1757,7 @@
     of fruit and vegetables consumed per day. The following modalities are used: ''Not
     eating fruit or vegetables daily, 1 to 4 portions per day, 5 or more portions
     per day''.'
+  definition: ''
   measurement_unit: '% of population (aged 15 and over) per daily consumption frequency
     (consumption of 0 portions, 1 to 4 portions, 5 portions or more)'
   dimension: Health
@@ -1653,6 +1772,7 @@
     (juice excluded) and vegetables or salad (potatoes, soups and juice excluded).
     Reference period: A typical week in a given season. Mode of data collection: Personal
     interview.'
+  definition: ''
   measurement_unit: '% of population (aged 16 and over) per weekly consumption frequency
     (once a day, at least twice a day, less than once a week, from 1 to 3 times a
     week, from 4 to 6 times a week, never)'
@@ -1666,6 +1786,7 @@
   description: 'Distribution of the population according to the frequency of consumption
     of fruit and vegetables. The following modalities are used: ''Once or more a day,
     4 to 6 times a week, 1 to 3 times a week, Less than once a week or never''.'
+  definition: ''
   measurement_unit: '% of population (aged 15 and over) per weekly consumption frequency
     (at least once a day, from 1 to 3 times a week, from 4 to 6 times a week, never
     or occasionally)'
@@ -1680,6 +1801,7 @@
   description: 'Distribution of the population according to the frequency of consumption
     of fruit and vegetables. The following modalities are used: ''Once or more a day,
     4 to 6 times a week, 1 to 3 times a week, Less than once a week or never''.'
+  definition: ''
   measurement_unit: '% of population (aged 15 and over) per weekly consumption frequency
     (at least once a day, from 1 to 3 times a week, from 4 to 6 times a week, never
     or occasionally)'
@@ -1693,6 +1815,7 @@
   description: 'Distribution of the population according to the frequency of consumption
     of fruit and vegetables. The following modalities are used: ''Once or more a day,
     4 to 6 times a week, 1 to 3 times a week, Less than once a week or never''.'
+  definition: ''
   measurement_unit: '% of population (aged 15 and over) per weekly consumption frequency
     (at least once a day, from 1 to 3 times a week, from 4 to 6 times a week, never
     or occasionally)'
@@ -1706,6 +1829,7 @@
   description: 'Distribution of the population according to the frequency of consumption
     of fruit and vegetables. The following modalities are used: ''Once or more a day,
     4 to 6 times a week, 1 to 3 times a week, Less than once a week or never''.'
+  definition: ''
   measurement_unit: '% of population (aged 15 and over) per weekly consumption frequency
     (at least once a day, from 1 to 3 times a week, from 4 to 6 times a week, never
     or occasionally)'
@@ -1721,6 +1845,7 @@
     sugar-sweetened soft drinks. The following modalities are used: ''Once or more
     a day, 4 to 6 times a week, 1 to 3 times a week, Never or occasionally'' (only
     in wave 3).'
+  definition: ''
   measurement_unit: '% of population (aged 15 and over) per weekly consumption frequency
     (at least once a day, from 1 to 3 times a week, from 4 to 6 times a week, never
     or occasionally)'
@@ -1736,6 +1861,7 @@
     sugar-sweetened soft drinks. The following modalities are used: ''Once or more
     a day, 4 to 6 times a week, 1 to 3 times a week, Never or occasionally'' (only
     in wave 3).'
+  definition: ''
   measurement_unit: '% of population (aged 15 and over) per weekly consumption frequency
     (at least once a day, from 1 to 3 times a week, from 4 to 6 times a week, never
     or occasionally)'
@@ -1751,6 +1877,7 @@
     of the population according to the frequency of drinking pure fruit or vegetable
     juice. The following modalities are used: ''Once or more a day, 4 to 6 times a
     week, 1 to 3 times a week, Never or occasionally'' (only in wave 3).'
+  definition: ''
   measurement_unit: '% of population (aged 15 and over) per weekly consumption frequency
     (at least once a day, from 1 to 3 times a week, from 4 to 6 times a week, never
     or occasionally)'
@@ -1762,6 +1889,7 @@
 - id: DailyConsumptionOfMeatAndMeatProductsDifferentPopu
   name: Daily consumption of meat and meat products (different population groups selectable)
   description: Median/mean amount consumed per day
+  definition: ''
   measurement_unit: g/day
   dimension: Health
   has_category: NutritionalBehaviour
@@ -1771,6 +1899,7 @@
 - id: DailyConsumptionOfLegumesDifferentPopulationGroups
   name: Daily consumption of legumes (different population groups selectable)
   description: Median/mean amount consumed per day
+  definition: ''
   measurement_unit: g/day
   dimension: Health
   has_category: NutritionalBehaviour
@@ -1781,6 +1910,7 @@
   name: Daily consumption of milk and dairy products (different population groups
     selectable)
   description: Median/mean amount consumed per day
+  definition: ''
   measurement_unit: g/day
   dimension: Health
   has_category: NutritionalBehaviour
@@ -1790,6 +1920,7 @@
 - id: DailyConsumptionOfSoftDrinksDifferentPopulationGro
   name: Daily consumption of soft drinks (different population groups selectable)
   description: Median/mean amount consumed per day
+  definition: ''
   measurement_unit: g/day
   dimension: Health
   has_category: NutritionalBehaviour
@@ -1800,6 +1931,7 @@
   name: Contribution of meat products to daily energy intake
   description: Intake of energy, total meat intake and proportion of ruminant meat
     have been found by the authors to be the main contributors to environmental footprints.
+  definition: ''
   measurement_unit: '%en or gram per 2,000kcal'
   dimension: Health
   has_category: NutritionalBehaviour
@@ -1810,6 +1942,7 @@
   name: Contribution of ruminant meat products to daily energy intake
   description: Intake of energy, total meat intake and proportion of ruminant meat
     have been found by the authors to be the main contributors to environmental footprints.
+  definition: ''
   measurement_unit: '%en or gram per 2,000kcal'
   dimension: Health
   has_category: NutritionalBehaviour
@@ -1820,13 +1953,14 @@
   name: Consumption of iodized salt
   description: Percentage of households which have salt they used for cooking that
     tested positive (>0ppm) for presence of iodine.
+  definition: ''
   measurement_unit: '% of households'
   dimension: Health
   has_category: NutritionalBehaviour
   supply_chain_component:
-  - FoodProcessing
-  - Retail
   - Consumption
+  - Retail
+  - FoodProcessing
   sustainability_impact: Positive
 - id: DailyConcumptionOfFreshFruitAmong69YearOlds
   name: Daily concumption of fresh fruit among 6–9-year-olds
@@ -1840,6 +1974,7 @@
     that the level of fruit and vegetable consumption in the WHO European Region is
     still poor (20), and all international and national authorities advise plentiful
     consumption of fruit and vegetables as part of healthy diets.
+  definition: ''
   measurement_unit: '%'
   dimension: Health
   has_category: NutritionalBehaviour
@@ -1858,6 +1993,7 @@
     that the level of fruit and vegetable consumption in the WHO European Region is
     still poor (20), and all international and national authorities advise plentiful
     consumption of fruit and vegetables as part of healthy diets.
+  definition: ''
   measurement_unit: '%'
   dimension: Health
   has_category: NutritionalBehaviour
@@ -1871,6 +2007,7 @@
     sugars (21), and soft drinks are a major contributor. High intake of sugar-sweetened
     drinks is associated with a greater risk of weight gain and obesity (22,23) and
     has a detrimental impact on dental health (24).
+  definition: ''
   measurement_unit: '%'
   dimension: Health
   has_category: NutritionalBehaviour
@@ -1886,6 +2023,7 @@
     areas, can have negative impacts on the use of water for human consumption and
     other purposes. The data stem from the EEA Waterbase database on the status and
     quality of Europe's rivers.
+  definition: ''
   measurement_unit: mg NO3 per litre
   dimension: Health
   has_category: FoodQualitySafety
@@ -1899,6 +2037,7 @@
     priority chemical contamination. Improved water sources include piped water, boreholes
     or tubewells, protected dug wells, protected springs, and packaged or delivered
     water.
+  definition: ''
   measurement_unit: '%'
   dimension: Health
   has_category: FoodQualitySafety
@@ -1911,6 +2050,7 @@
     This indicator encompasses people using basic drinking water services as well
     as those using safely managed drinking water services. Basic drinking water services
     is defined as drinking water from an improved source.
+  definition: ''
   measurement_unit: '%'
   dimension: Health
   has_category: FoodQualitySafety
@@ -1922,6 +2062,7 @@
   description: The percentage of the population using safely managed sanitation facilities
     which are not shared with other households and where excreta are safely disposed
     in situ or transported and treated off-site.
+  definition: ''
   measurement_unit: '%'
   dimension: Health
   has_category: FoodQualitySafety
@@ -1936,6 +2077,7 @@
     as not shared with other household. Safely managed sanitation facilities are defined
     as improved facilities that are not shared with other households and where excreta
     are safely disposed of in situ or removed and treated offsite.
+  definition: ''
   measurement_unit: '%'
   dimension: Health
   has_category: FoodQualitySafety
@@ -1951,23 +2093,25 @@
     daily dietary energy consumption with a threshold level called the minimum dietary
     energy Requirement. Both are based on the notion of an average individual in the
     reference population.
+  definition: ''
   measurement_unit: '%'
   dimension: Health
   has_category: Malnutrition
   supply_chain_component:
-  - Retail
   - Consumption
+  - Retail
   sustainability_impact: Negative
 - id: PercentageOfChildrenUnder5YearsOfAgeWhoAreStuntedM
   name: Percentage of children under 5 years of age who are stunted (modelled estimates)
   description: Percentage of stunting (height-for-age less than -2 standard deviations
     of the WHO Child Growth Standards median) among children aged 0-59 months.
+  definition: ''
   measurement_unit: '%'
   dimension: Health
   has_category: Malnutrition
   supply_chain_component:
-  - Retail
   - Consumption
+  - Retail
   sustainability_impact: Negative
 - id: PrevalenceOfSevereFoodInsecurityInTheTotalPopulati
   name: Prevalence of severe food insecurity in the total population (3-year average)
@@ -1988,6 +2132,7 @@
     have skipped meals, having gone hungry, or having to go for a whole day without
     eating because of a lack of money or other resources. It is an indicator of lack
     of food access.
+  definition: ''
   measurement_unit: '%'
   dimension: Health
   has_category: FoodAccess
@@ -2013,6 +2158,7 @@
     low quality diets and might have been forced to also reduce the quantity of food
     they would normally eat because of a lack of money or other resources. It is an
     indicator of lack of food access.
+  definition: ''
   measurement_unit: '%'
   dimension: Health
   has_category: FoodAccess
@@ -2030,6 +2176,7 @@
     without making deductions for depreciation of fabricated assets or for depletion
     and degradation of natural resources. Data are in constant 2011 international
     dollars.
+  definition: ''
   measurement_unit: Int$/cap
   dimension: Health
   has_category: FoodAccess
@@ -2041,6 +2188,7 @@
   description: Rail lines density corresponds to the ratio between the length of railway
     route available for train service, irrespective of the number of parallel tracks
     (rail lines, total route in km) with the area of the country.
+  definition: ''
   measurement_unit: km
   dimension: Health
   has_category: FoodAccess
@@ -2051,6 +2199,7 @@
   name: Proportion of agricultural land area that has achieved an acceptable or desirable
     level of food security
   description: 'see metadata (section 2.4.1): https://files-faostat.fao.org/production/SDGB/Metadata.xlsx'
+  definition: ''
   measurement_unit: '%'
   dimension: Health
   has_category: FoodAccess
@@ -2064,6 +2213,7 @@
     supply of calories for food consumption is normalized by the average dietary energy
     requirement estimated for its population to provide an index of adequacy of the
     food supply in terms of calories.
+  definition: ''
   measurement_unit: '%'
   dimension: Health
   has_category: FoodAvailability
@@ -2075,6 +2225,7 @@
   description: National average dietary energy supply (DES) (expressed in calories
     per caput per day) used in the estimation of prevalence of undernourishment. The
     data may be different from the DES data published in the Food Balance Sheets domain.
+  definition: ''
   measurement_unit: kcal/cap/d
   dimension: Health
   has_category: FoodAvailability
@@ -2087,6 +2238,7 @@
   description: National average dietary energy supply (DES) (expressed in calories
     per caput per day) used in the estimation of prevalence of undernourishment. The
     data may be different from the DES data published in the Food Balance Sheets domain
+  definition: ''
   measurement_unit: kcal/cap/d
   dimension: Health
   has_category: FoodAvailability
@@ -2096,6 +2248,7 @@
 - id: AverageProteinSupply3YearAverage
   name: Average protein supply (3-year average)
   description: National average protein supply (expressed in grams per caput per day).
+  definition: ''
   measurement_unit: g/cap/d
   dimension: Health
   has_category: FoodAvailability
@@ -2107,6 +2260,7 @@
   description: 'National average protein supply (expressed in grams per caput per
     day). It includes the following groups: meat; offals; animal fats and products;
     milk and products; eggs, fish, seafood and products; and acquatic products, other.'
+  definition: ''
   measurement_unit: g/cap/d
   dimension: Health
   has_category: FoodAvailability
@@ -2116,6 +2270,7 @@
 - id: AverageFatSupply3YearAverage
   name: Average fat supply (3-year average)
   description: National average fat supply (expressed in grams per caput per day).
+  definition: ''
   measurement_unit: g/cap/d
   dimension: Health
   has_category: FoodAvailability
@@ -2125,6 +2280,7 @@
 - id: ProductivityOfLargeScaleFoodProducers
   name: Productivity of large-scale food producers
   description: 'see metadata (section 2.3.1): https://files-faostat.fao.org/production/SDGB/Metadata.xlsx'
+  definition: ''
   measurement_unit: US Dollar, converted using purchasing power parities per capita
   dimension: Health
   has_category: FoodAvailability
@@ -2134,6 +2290,7 @@
 - id: ProductivityOfSmallScaleFoodProducers
   name: Productivity of small-scale food producers
   description: 'see metadata (section 2.3.1): https://files-faostat.fao.org/production/SDGB/Metadata.xlsx'
+  definition: ''
   measurement_unit: US Dollar, converted using purchasing power parities per capita
   dimension: Health
   has_category: FoodAvailability
@@ -2144,6 +2301,7 @@
   name: Proportion of agricultural land area that has achieved an acceptable or desirable
     level of farm output value per hectare
   description: 'see metadata (section 2.4.1): https://files-faostat.fao.org/production/SDGB/Metadata.xlsx'
+  definition: ''
   measurement_unit: '%'
   dimension: Health
   has_category: FoodAvailability
@@ -2163,6 +2321,7 @@
     fruit trees, nut trees, and vines, but excludes land under trees grown for wood
     or timber. Permanent pasture is land used for five or more years for forage, including
     natural and cultivated crops.
+  definition: ''
   measurement_unit: '% of land area'
   dimension: Health
   has_category: FoodAvailability
@@ -2174,6 +2333,7 @@
   description: Food production index covers food crops that are considered edible
     and that contain nutrients. Coffee and tea are excluded because, although edible,
     they have no nutritive value.
+  definition: ''
   measurement_unit: 2014-2016 = 100
   dimension: Health
   has_category: FoodAvailability
@@ -2198,6 +2358,7 @@
     food supplies are expressed in terms of quantity and - by applying appropriate
     food composition factors for all primary and processed products - also in terms
     of caloric value and protein and fat content.
+  definition: ''
   measurement_unit: g/capita/day
   dimension: Health
   has_category: FoodAvailability
@@ -2222,6 +2383,7 @@
     food supplies are expressed in terms of quantity and - by applying appropriate
     food composition factors for all primary and processed products - also in terms
     of caloric value and protein and fat content.
+  definition: ''
   measurement_unit: g/capita/day
   dimension: Health
   has_category: FoodAvailability
@@ -2247,6 +2409,7 @@
     food supplies are expressed in terms of quantity and - by applying appropriate
     food composition factors for all primary and processed products - also in terms
     of caloric value and protein and fat content.
+  definition: ''
   measurement_unit: kg/capita/year
   dimension: Health
   has_category: FoodAvailability
@@ -2257,6 +2420,7 @@
   name: Per capita food supply variability (kcal/cap/day)
   description: Per capita food supply variability corresponds to the variability of
     the "food supply in kcal/caput/day" as disseminated in FAOSTAT.
+  definition: ''
   measurement_unit: kcal/cap/d
   dimension: Health
   has_category: FoodStability
@@ -2267,6 +2431,7 @@
   name: Percent of arable land equipped for irrigation (3-year average)
   description: Ratio between arable land equipped for irrigation and total arable
     land.
+  definition: ''
   measurement_unit: '%'
   dimension: Health
   has_category: FoodStability
@@ -2281,6 +2446,7 @@
     production + cereal imports - cereal exports) * 100 Given this formula the indicator
     assumes only values <= 100. Negative values indicate that the country is a net
     exporter of cereals.
+  definition: ''
   measurement_unit: '%'
   dimension: Health
   has_category: FoodStability
@@ -2295,6 +2461,7 @@
     a job, or to working-time arrangement. The agriculture sector consists of activities
     in agriculture, hunting, forestry and fishing, in accordance with division 1 (ISIC
     2) or categories A-B (ISIC 3) or category A (ISIC 4).
+  definition: ''
   measurement_unit: '% of total employment'
   dimension: Society
   has_category: EmploymInAgricFoodSector
@@ -2306,6 +2473,7 @@
     (vs. EU27)
   description: Share of employed people is calculated by dividing the number of employees
     in the sector in the respective country by the total number in the EU
+  definition: ''
   measurement_unit: '% (compared to EU27)'
   dimension: Society
   has_category: EmploymInAgricFoodSector
@@ -2318,6 +2486,7 @@
 - id: AverageIncomeOfLargeScaleFoodProducers
   name: Average income of large-scale food producers
   description: 'see metadata (section 2.3.2): https://files-faostat.fao.org/production/SDGB/Metadata.xlsx'
+  definition: ''
   measurement_unit: US Dollar, converted using purchasing power parities
   dimension: Society
   has_category: WorkingCondAgricFoodSect
@@ -2327,6 +2496,7 @@
 - id: AverageIncomeOfSmallScaleFoodProducers
   name: Average income of small-scale food producers
   description: 'see metadata (section 2.3.2): https://files-faostat.fao.org/production/SDGB/Metadata.xlsx'
+  definition: ''
   measurement_unit: US Dollar, converted using purchasing power parities
   dimension: Society
   has_category: WorkingCondAgricFoodSect
@@ -2337,6 +2507,7 @@
   name: Proportion of agricultural land area that has achieved an acceptable or desirable
     level of wage rate in agriculture
   description: 'see metadata (section 2.4.1): https://files-faostat.fao.org/production/SDGB/Metadata.xlsx'
+  definition: ''
   measurement_unit: '%'
   dimension: Society
   has_category: WorkingCondAgricFoodSect
@@ -2347,6 +2518,7 @@
   name: Employment rates by sex, age, educational attainment level, country of birth
     and degree of urbanisation
   description: 'NA; See the linked Reference metadata: https://ec.europa.eu/eurostat/cache/metadata/en/reg_lmk_esms.htm'
+  definition: ''
   measurement_unit: '% of population aged 15 to 64'
   dimension: Society
   has_category: GeneralUnEmployment
@@ -2363,6 +2535,7 @@
     pension); and people in the age bracket 60 to 64 who are inactive and living in
     a household where the main income is pensions, are not taken into account. The
     indicator is part of the multidimensional poverty index.
+  definition: ''
   measurement_unit: '% of population / Thousand persons i. age group less than 65
     ii. age group less than 18'
   dimension: Society
@@ -2379,6 +2552,7 @@
     group. The employment rate of women is calculated by dividing the number of women
     aged 20 to 64 in employment by the total female population of the same age group.
     The indicators are based on the EU Labour Force Survey.
+  definition: ''
   measurement_unit: '% of population aged 20 to 64 by sex'
   dimension: Society
   has_category: GeneralUnEmployment
@@ -2388,6 +2562,7 @@
 - id: UnemploymentRatesBySexAgeAndEducationalAttainmentL
   name: Unemployment rates by sex, age and educational attainment level
   description: 'NA; See the linked Reference metadata: https://ec.europa.eu/eurostat/cache/metadata/en/lfsq_esms.htm#shortsource_typeDisseminated'
+  definition: ''
   measurement_unit: '% of population aged 15 to 74 by sex'
   dimension: Society
   has_category: GeneralUnEmployment
@@ -2397,6 +2572,7 @@
 - id: LongTermUnemploymentBySex
   name: Long-term unemployment by sex
   description: 'NA; See the linked Reference metadata: https://ec.europa.eu/eurostat/cache/metadata/en/lfsi_esms.htm'
+  definition: ''
   measurement_unit: '% of unemployment / % of population in the labour force / Thousand
     persons'
   dimension: Society
@@ -2408,6 +2584,7 @@
   name: Unemployment, total (% of total labor force) (modeled ILO estimate)
   description: Unemployment refers to the share of the labor force that is without
     work but available for and seeking employment.
+  definition: ''
   measurement_unit: '% of total labor force'
   dimension: Society
   has_category: GeneralUnEmployment
@@ -2436,6 +2613,7 @@
     are those aged 0-64 living in households where the adults (aged 18-64) work 20
     % or less of their total work potential during the past year. In order to measure
     child poverty, the indicator is available for the age group 0-17.'
+  definition: ''
   measurement_unit: '% of population / Thousand persons i. total ii. less than 18
     years'
   dimension: Society
@@ -2454,6 +2632,7 @@
     equality, expressed as a percentage of the maximum area under the line. Thus a
     Gini index of 0 represents perfect equality, while an index of 100 implies perfect
     inequality.
+  definition: ''
   measurement_unit: Gini index
   dimension: Society
   has_category: IncomeDistributPovertyRisk
@@ -2472,6 +2651,7 @@
     (LAU or communes) into three types of area: • Cities (densely populated areas)
     • Towns and suburbs (intermediate density areas) • Rural areas (thinly populated
     areas).'
+  definition: ''
   measurement_unit: '% of population'
   dimension: Society
   has_category: IncomeDistributPovertyRisk
@@ -2493,6 +2673,7 @@
     data were collected or, when the data collection period bridged two calendar years,
     the year data collection started. Percentage shares by quintile may not sum to
     100 because of rounding.
+  definition: ''
   measurement_unit: '% (percentage share of income)'
   dimension: Society
   has_category: IncomeDistributPovertyRisk
@@ -2514,6 +2695,7 @@
     data were collected or, when the data collection period bridged two calendar years,
     the year data collection started. Percentage shares by quintile may not sum to
     100 because of rounding.
+  definition: ''
   measurement_unit: '% (percentage share of income)'
   dimension: Society
   has_category: IncomeDistributPovertyRisk
@@ -2530,6 +2712,7 @@
     year is the year in which the underlying household survey data was collected.
     In cases for which the data collection period bridged two calendar years, the
     first year in which data were collected is reported.
+  definition: ''
   measurement_unit: '%'
   dimension: Society
   has_category: IncomeDistributPovertyRisk
@@ -2545,6 +2728,7 @@
     and income/expenditure. When appropriate data for directly estimating the variability
     of food consumption are not readily available, indirect procedures are used by
     FAO to estimate a suitable value for this parameter.
+  definition: ''
   measurement_unit: real number
   dimension: Society
   has_category: FoodEquity
@@ -2557,6 +2741,7 @@
     15+) (modeled ILO estimate); Labor force participation rate is the proportion
     of the population ages 15 and older that is economically active: all people who
     supply labor for the production of goods and services during a specified period.'
+  definition: ''
   measurement_unit: '% of female population ages 15+'
   dimension: Society
   has_category: GenderEquity
@@ -2578,6 +2763,7 @@
     the existence of an explicit protection of women''s land rights Proxy F: Mandatory
     quotas for women’s participation in land management and administration institutions
     or in public functions more generally Concepts: For more details, consult https://unstats.un.org/sdgs/metadata/files/Metadata-05-0A-02.pdf'
+  definition: ''
   measurement_unit: 'Score 1 to 6: lowest to highest evidence'
   dimension: Society
   has_category: GenderEquity
@@ -2592,6 +2778,7 @@
     data refers to the World Population Prospects: The 2019 Revision from the UN Population
     Division. 2. Urban/rural population data refers to the World Urbanization Prospects:
     The 2018 Revision from the UN Population Division. /'
+  definition: ''
   measurement_unit: number (1000 people)
   dimension: Society
   has_category: Demography
@@ -2602,6 +2789,7 @@
   description: Total population between the ages 15 to 64 as a percentage of the total
     population. Population is based on the de facto definition of population, which
     counts all residents regardless of legal status or citizenship.
+  definition: ''
   measurement_unit: '% of total population'
   dimension: Society
   has_category: Demography
@@ -2612,6 +2800,7 @@
   description: Internet users are individuals who have used the Internet (from any
     location) in the last 3 months. The Internet can be used via a computer, mobile
     phone, personal digital assistant, games machine, digital TV etc.
+  definition: ''
   measurement_unit: '% of popoulation'
   dimension: Society
   has_category: SocialResilience
@@ -2629,6 +2818,7 @@
     telepoint, radio paging and telemetry services. Mobile cellular subscriptions
     (per 100 people) indicator is derived by all mobile subscriptions divided by the
     country's population and multiplied by 100.
+  definition: ''
   measurement_unit: Number per 100 people
   dimension: Society
   has_category: SocialResilience
@@ -2641,6 +2831,7 @@
     including terrorism. Estimate gives the country's score on the aggregate indicator,
     in units of a standard normal distribution, i.e. ranging from approximately -2.5
     to 2.5.
+  definition: ''
   measurement_unit: score ranging from -2.5 to 2.5
   dimension: Society
   has_category: SocialResilience
@@ -2653,6 +2844,7 @@
     FTTH, FTTB, Cable Docsis 3.0, VDSL and other superfast broadband (at least 30
     Mbps download). Rural areas are defined as those with less than 100 people per
     km2.'
+  definition: ''
   measurement_unit: '% of households'
   dimension: Society
   has_category: RuralDevelopment

@@ -7,6 +7,13 @@ hide:
 
 {{ indicator['description'] }}
 
+**Definition**: 
+{%- if indicator['definition'] %} 
+  {{ indicator['definition'] }}
+{%- else %}
+  <i>Not available.</i>
+{%- endif %}
+
 **Dimension**: {{ enum_dict['SustainabilityDimension'][indicator['dimension']] }}
 
 **Category**: {{ indicator['has_category'] }}

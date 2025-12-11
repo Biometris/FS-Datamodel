@@ -54,6 +54,7 @@ classes:
     description: >-
       A quantitative measure used to assess the state, performance, or progress of a specific aspect of the food system in relation to sustainability objectives.
     slots:
+      - definition
       - dimension
       - supply_chain_component
       - measurement_unit
@@ -69,6 +70,9 @@ classes:
       description:
         description:
           Concise text that provides the meaning of the identifier.
+      definition:
+        description:
+          A precise and formal statement that defines the indicator category, explaining its scope, purpose, and distinguishing characteristics.
                 
   IndicatorDataCollectionDetails:
     is_a: Entity
@@ -143,7 +147,6 @@ slots:
     domain: Entity
 
   description:
-    aliases: ['definition']
     range: narrative_text
     description: >-
       A human-readable description of an entity.
@@ -151,6 +154,11 @@ slots:
     exact_mappings:
       - IAO:0000115
       - skos:definitions
+
+  definition:
+    range: narrative_text
+    description: >-
+      A (precise) formal definition.
 
   comment:
     range: narrative_text
@@ -352,13 +360,13 @@ types:
     uri: xsd:string
     typeof: string
     description: >-
-      A string that provides a human-readable name for an entity
+      A string that provides a human-readable name for an entity.
 
   narrative_text:
     uri: xsd:string
     typeof: string
     description: >-
-      A string that provides a human-readable description of something
+      A string that provides a human-readable description of something.
 
   unit:
     typeof: string

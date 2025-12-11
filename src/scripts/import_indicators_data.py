@@ -43,7 +43,7 @@ for column in xlsx_combined.columns:
 # Helper function to create identifiers
 def to_identifier(xlsx_combined, column_name):
     result = xlsx_combined[column_name].str.title().replace("[^a-zA-Z0-9]", "", regex=True)
-    result = result.str.slice(0, 30)
+    result = result.str.slice(0, 50)
     return result
 
 # Helper function to create identifiers
@@ -98,6 +98,7 @@ indicator_data = {
     "id": to_identifier(xlsx_combined, "Indicator"),
     "name": xlsx_combined["Indicator"],
     "description": escape(xlsx_combined, "Definition"),
+    "definition": "",
     "measurement_unit": xlsx_combined["Unit"],
     "dimension": to_identifier(xlsx_combined, "dimension"),
     "has_category": to_identifier(xlsx_combined, "category"),
