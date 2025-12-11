@@ -42,8 +42,24 @@ for column in xlsx_combined.columns:
 
 # Helper function to create identifiers
 def to_identifier(xlsx_combined, column_name):
-    result = xlsx_combined[column_name].str.title().replace("[^a-zA-Z0-9]", "", regex=True)
-    result = result.str.slice(0, 50)
+    result = xlsx_combined[column_name] \
+        .str.title().replace("[^a-zA-Z0-9]", "", regex=True) \
+        .str.slice(0, 50)
+    return result
+
+# Create mapping from original indicator names to FSI indicator codes
+indicator_code_map = {}
+fsi_identifiers = to_identifier(xlsx_combined, "Indicator")
+for idx, record in fsi_identifiers.items():
+    code = record
+    indicator_code_map[code] = f"FSI_{idx:04d}"
+
+# Helper function to create food system indicator identifiers
+def to_fsi_identifier(xlsx_combined, column_name):
+    records = to_identifier(xlsx_combined, column_name)
+    result = []
+    for record in records:
+        result.append(indicator_code_map[record])
     return result
 
 # Helper function to create identifiers
@@ -79,7 +95,6 @@ def map_sustainability_impact(xlsx_combined, column_name):
         else:
             record = re.sub("[^+-]", "", record)
             result.append(impact_mapping.get(record, "Undefined"))
-
     return result
 
 # Map supply chain components
@@ -101,7 +116,7 @@ for lst in xlsx_combined["Related stage of the food supply chain"].str.split("[;
 
 # Build the final indicator data structure
 indicator_data = {
-    "id": to_identifier(xlsx_combined, "Indicator"),
+    "id": to_fsi_identifier(xlsx_combined, "Indicator"),
     "name": escape(xlsx_combined, "Indicator"),
     "description": escape(xlsx_combined, "Definition"),
     "definition": "",
@@ -181,7 +196,7 @@ data_collection_details = {
     "name": xlsx_combined["Source"] + "-" + xlsx_combined["Indicator"],
     "description": "",
     "in_database": to_identifier(xlsx_combined, "Source"),
-    "measures_indicator": to_identifier(xlsx_combined, "Indicator"),
+    "measures_indicator": to_fsi_identifier(xlsx_combined, "Indicator"),
     "data_link": xlsx_combined["Link"],
     "oldest_datapoint": "",
     "newest_datapoint": xlsx_combined["Latest data availability"],
