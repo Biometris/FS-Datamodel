@@ -1,0 +1,110 @@
+Orig,EU_Unit
+"Euro per annual work unit (AWU)", EUR_AWU
+"Index, 2015 =100 Index, 2010 = 100 Index, n-1 = 100", I2015;I2010;I_N_1
+"%", PC
+"Million euro and euro per inhabitant (current prices)", MIO_EUR;EUR_HAB
+"Chain linked volumes (2010) in EUR and % change on previous year (per capita)",CLV10_EUR_HAB
+"Million euros",MIO_EUR
+"Index",INX
+"% of GDP",PC_GDP
+"Value added per person employed in the respective sector (1000 € / person)",
+"Number of products",NR
+"Purchasing power standard (PPS, EU27 from 2020), per inhabitant",PPS_EU27_2020
+"Index number of Food CPI",
+"international dollars per person per day (using PPP)",
+"million people",MIO_PER
+"Consumer Price Index (CPI)",
+"% per year",PC_Y
+"constant 2015 US$; weighted average",
+"% (annual percentage change by month)",
+"Index, 2015=100",I15
+"% of total",PC_TOT
+"Ratio",RAT
+"Self-sufficiency rate (%)",RT
+"% of the non-artificial erodible area (Where there is no land that is at risk of soil erosion by water of more than 10 tonnes per hectare, a country will have a zero value)",
+"% of renewable water resources",
+"Tonnes of oil equivalent per hectare of UAA",
+"Livestock units (LSU) per hectare of utilised agricultural area (UAA)",
+"Tonnes per hectare per year",
+"Million cubic metres",MIO_M3
+"TJ",
+"Number",NR
+"% of total freshwater withdrawal",
+"Index, 2000=100",I00
+"% of total utilised agricultural area (UAA)",
+"Hectare / Holdings",
+"Livestock unit (LSU -> 1 LSU = the grazing equivalent of one adult dairy cow) / Head (animal) / Holding",
+"Hectare / Percentage of UAA",
+"Tonnes",T
+"Head (animals)",
+"Tonnes live weight",
+"Tons and kg per hectare utilised agricultural area (UAA)",
+"Share of GHG in %",
+"Thousand tonnes",
+"kt",1000T
+"Tonnes/capita",
+"kg CO2eq/kg",
+"Index 2015-2017 average = 100 (Index relative to the average results for the period 2015 to 2017)",
+"Active substances in kilograms (kg) (Both, agricultural and non-agricultural uses of plant production products are covered)",
+"Index, 2011-2013 average = 100 (Index relattive to a baseline of 100)",
+"kg/ha g/International $ kg/capita",
+"mg/PCU (PCU=Population Correction Unit)",
+"Tonnes of N and of P",
+"kg/ha",KG_HA
+"kg/ha of arable land",
+"km2 area affected % of total area",
+"LSU/ha",
+"Index (2014-2016 = 100)",
+"Share of reported way of keeping in total (in %)",
+"Kilogram per capita / Tonnes of fresh mass",
+"mg NO3/L",
+"Number of operations",
+"Number of young farmers",
+"% (share of total managers)",
+"Score (1-5; 5 = best)",
+"Points (single weighted score; impact per capita or per country selectable)",
+"% of population aged 18 or over, by body mass index (BMI), classified into overweight, pre-obese or obese",
+"% of population aged 15 and over, classified into underweight, normal, pre-obese, obese",
+"% of population aged 16 and over by educational attainment level, sex and age, classified into underweight, normal, overweight, pre-obese, obese",
+"% of population aged 15 and over, by educational attainment level, sex and age, classified into underweight, normal, pre-obese, obese, overweight",
+"% of population aged 15 and over, by income quintile, sex and age, classified into underweight, normal, pre-obese, obese, overweight",
+"% of children ages 6-59 months",
+"% of children under 5",
+"% of population ages 20 to 79",
+"% of population (aged 15 and over) per daily consumption frequency (consumption of 0 portions, 1 to 4 portions, 5 portions or more)",
+"% of population (aged 16 and over) per weekly consumption frequency (once a day, at least twice a day, less than once a week, from 1 to 3 times a week, from 4 to 6 times a week, never)",
+"% of population (aged 15 and over) per weekly consumption frequency (at least once a day, from 1 to 3 times a week, from 4 to 6 times a week, never or occasionally)",
+"g/day",
+"%en or gram per 2,000kcal",
+"% of households",
+"mg NO3 per litre",
+"Int$/cap",
+"km",KM
+"kcal/cap/d",
+"g/cap/d",
+"US Dollar, converted using purchasing power parities per capita",
+"% of land area",PC_AREA
+"2014-2016 = 100",
+"g/capita/day",
+"kg/capita/year",
+"% of total employment",
+"% (compared to EU27)",
+"US Dollar, converted using purchasing power parities",
+"% of population aged 15 to 64",
+"% of population / Thousand persons i. age group less than 65 ii. age group less than 18",
+"% of population aged 20 to 64 by sex",
+"% of population aged 15 to 74 by sex",
+"% of unemployment / % of population in the labour force / Thousand persons",
+"% of total labor force",
+"% of population / Thousand persons i. total ii. less than 18 years",
+"Gini index",
+"% of population",
+"% (percentage share of income)",
+"real number",
+"% of female population ages 15+",
+"Score 1 to 6: lowest to highest evidence",
+"number (1000 people)",
+"% of total population",
+"% of popoulation",
+"Number per 100 people",
+"score ranging from -2.5 to 2.5",

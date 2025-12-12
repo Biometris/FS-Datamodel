@@ -1,5 +1,6 @@
 @prefix UO: <http://purl.obolibrary.org/obo/UO_> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix euunit: <http://dd.eionet.europa.eu/vocabulary/eurostat/unit/> .
 @prefix fsi: <https://w3id.org/linkml/examples/fsi> .
 @prefix linkml: <https://w3id.org/linkml/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -10,21 +11,21 @@
 fsi:Entity a sh:NodeShape ;
     sh:closed false ;
     sh:description "Root class for all things and informational relationships, real or imagined." ;
-    sh:ignoredProperties ( fsi:measurement_unit fsi:spatial_granularity fsi:database_link fsi:has_category fsi:update_frequency fsi:measures_indicator fsi:measurement_of fsi:category fsi:data_link fsi:in_database fsi:part_of_collection fsi:has_unit fsi:oldest_datapoint fsi:newest_datapoint fsi:supply_chain_component fsi:spatial_scope fsi:dimension rdf:type fsi:time_granularity fsi:sustainability_impact fsi:has_numeric_value ) ;
+    sh:ignoredProperties ( fsi:sustainability_impact fsi:spatial_granularity fsi:part_of_collection fsi:category fsi:time_granularity rdf:type fsi:has_unit fsi:update_frequency fsi:measurement_units fsi:has_numeric_value fsi:has_category fsi:spatial_scope fsi:database_link fsi:supply_chain_component fsi:dimension fsi:eu2025_sdg_indicator_code fsi:oldest_datapoint fsi:measures_indicator fsi:data_link fsi:definition fsi:in_database fsi:measurement_unit_description fsi:measurement_of fsi:newest_datapoint ) ;
     sh:name "entity" ;
     sh:property [ sh:datatype xsd:string ;
+            sh:description "A human-readable name for an attribute or entity." ;
+            sh:maxCount 1 ;
+            sh:name "name" ;
+            sh:nodeKind sh:Literal ;
+            sh:order 2 ;
+            sh:path rdfs:label ],
+        [ sh:datatype xsd:string ;
             sh:description "A human-readable description of an entity." ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 3 ;
             sh:path dct:description ],
-        [ sh:datatype xsd:string ;
-            sh:description "A unique identifier for an entity." ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 0 ;
-            sh:path fsi:id ],
         [ sh:datatype xsd:string ;
             sh:description "An IRI for an entity. This is determined by the id using expansion rules." ;
             sh:maxCount 1 ;
@@ -32,12 +33,12 @@ fsi:Entity a sh:NodeShape ;
             sh:order 1 ;
             sh:path fsi:iri ],
         [ sh:datatype xsd:string ;
-            sh:description "A human-readable name for an attribute or entity." ;
+            sh:description "A unique identifier for an entity." ;
             sh:maxCount 1 ;
-            sh:name "name" ;
+            sh:minCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 2 ;
-            sh:path rdfs:label ] ;
+            sh:order 0 ;
+            sh:path fsi:id ] ;
     sh:targetClass fsi:Entity .
 
 fsi:IndicatorDatapoint a sh:NodeShape ;
@@ -45,34 +46,12 @@ fsi:IndicatorDatapoint a sh:NodeShape ;
     sh:description "A food system indicator datapoint is a measured value or statistic that provides quantitative information for a specific sustainability indicator at a given time and place, used to track the performance or state of the food system." ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:name "indicator datapoint" ;
-    sh:property [ sh:datatype xsd:double ;
-            sh:description "connects a quantity value to a number" ;
+    sh:property [ sh:datatype xsd:string ;
+            sh:description "An IRI for an entity. This is determined by the id using expansion rules." ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 3 ;
-            sh:path fsi:has_numeric_value ],
-        [ sh:datatype UO:0000000 ;
-            sh:description "connects a quantity value to a unit" ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 2 ;
-            sh:path fsi:has_unit ],
-        [ sh:class fsi:Indicator ;
-            sh:description "Indicator." ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:name "measurement of" ;
-            sh:nodeKind sh:IRI ;
-            sh:order 0 ;
-            sh:path fsi:measurement_of ],
-        [ sh:class fsi:IndicatorDataCollectionDetails ;
-            sh:description "Data collection which this measurement is part of." ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:name "part of collection" ;
-            sh:nodeKind sh:IRI ;
-            sh:order 1 ;
-            sh:path fsi:part_of_collection ],
+            sh:order 5 ;
+            sh:path fsi:iri ],
         [ sh:datatype xsd:string ;
             sh:description "A human-readable name for an attribute or entity." ;
             sh:maxCount 1 ;
@@ -86,6 +65,14 @@ fsi:IndicatorDatapoint a sh:NodeShape ;
             sh:nodeKind sh:Literal ;
             sh:order 7 ;
             sh:path dct:description ],
+        [ sh:class fsi:Indicator ;
+            sh:description "Indicator." ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:name "measurement of" ;
+            sh:nodeKind sh:IRI ;
+            sh:order 0 ;
+            sh:path fsi:measurement_of ],
         [ sh:datatype xsd:string ;
             sh:description "Unique identifier of the datapoint." ;
             sh:maxCount 1 ;
@@ -93,12 +80,26 @@ fsi:IndicatorDatapoint a sh:NodeShape ;
             sh:nodeKind sh:Literal ;
             sh:order 4 ;
             sh:path fsi:id ],
-        [ sh:datatype xsd:string ;
-            sh:description "An IRI for an entity. This is determined by the id using expansion rules." ;
+        [ sh:datatype xsd:double ;
+            sh:description "connects a quantity value to a number" ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 5 ;
-            sh:path fsi:iri ] ;
+            sh:order 3 ;
+            sh:path fsi:has_numeric_value ],
+        [ sh:class fsi:IndicatorDataCollectionDetails ;
+            sh:description "Data collection which this measurement is part of." ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:name "part of collection" ;
+            sh:nodeKind sh:IRI ;
+            sh:order 1 ;
+            sh:path fsi:part_of_collection ],
+        [ sh:datatype UO:0000000 ;
+            sh:description "connects a quantity value to a unit" ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 2 ;
+            sh:path fsi:has_unit ] ;
     sh:targetClass fsi:IndicatorDatapoint .
 
 fsi:IndicatorcriteriaScore a sh:NodeShape ;
@@ -106,18 +107,19 @@ fsi:IndicatorcriteriaScore a sh:NodeShape ;
     sh:description "Score for an indicator for an indicator selection criterion." ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:name "indicator criterion score" ;
-    sh:property [ sh:description "score for an indicator selection criterion for an indicator." ;
+    sh:property [ sh:class fsi:IndicatorCriterion ;
+            sh:description "Indicator criterion." ;
+            sh:maxCount 1 ;
+            sh:name "scores criterion" ;
+            sh:nodeKind sh:IRI ;
+            sh:order 1 ;
+            sh:path fsi:scores_criterion ],
+        [ sh:description "score for an indicator selection criterion for an indicator." ;
             sh:in ( "VeryPoor" "Poor" "Moderate" "Good" "Excellent" ) ;
             sh:maxCount 1 ;
             sh:name "score" ;
             sh:order 2 ;
             sh:path fsi:score ],
-        [ sh:datatype xsd:string ;
-            sh:description "A comment about an entity." ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 3 ;
-            sh:path fsi:comment ],
         [ sh:class fsi:Indicator ;
             sh:description "Indicator." ;
             sh:maxCount 1 ;
@@ -125,45 +127,32 @@ fsi:IndicatorcriteriaScore a sh:NodeShape ;
             sh:nodeKind sh:IRI ;
             sh:order 0 ;
             sh:path fsi:score_for_indicator ],
-        [ sh:class fsi:IndicatorCriterion ;
-            sh:description "Indicator criterion." ;
+        [ sh:datatype xsd:string ;
+            sh:description "A comment about an entity." ;
             sh:maxCount 1 ;
-            sh:name "scores criterion" ;
-            sh:nodeKind sh:IRI ;
-            sh:order 1 ;
-            sh:path fsi:scores_criterion ] ;
+            sh:nodeKind sh:Literal ;
+            sh:order 3 ;
+            sh:path fsi:comment ] ;
     sh:targetClass fsi:IndicatorcriteriaScore .
 
 fsi:QuantityValue a sh:NodeShape ;
     sh:closed true ;
     sh:description "A value of an attribute that is quantitative and measurable, expressed as a combination of a unit and a numeric value" ;
-    sh:ignoredProperties ( fsi:part_of_collection fsi:measurement_of rdf:type ) ;
+    sh:ignoredProperties ( fsi:part_of_collection rdf:type fsi:measurement_of ) ;
     sh:name "quantity value" ;
     sh:property [ sh:datatype xsd:string ;
-            sh:description "An IRI for an entity. This is determined by the id using expansion rules." ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 3 ;
-            sh:path fsi:iri ],
-        [ sh:datatype xsd:string ;
-            sh:description "A unique identifier for an entity." ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 2 ;
-            sh:path fsi:id ],
-        [ sh:datatype xsd:double ;
-            sh:description "connects a quantity value to a number" ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 1 ;
-            sh:path fsi:has_numeric_value ],
-        [ sh:datatype xsd:string ;
             sh:description "A human-readable description of an entity." ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 5 ;
             sh:path dct:description ],
+        [ sh:datatype xsd:string ;
+            sh:description "A human-readable name for an attribute or entity." ;
+            sh:maxCount 1 ;
+            sh:name "name" ;
+            sh:nodeKind sh:Literal ;
+            sh:order 4 ;
+            sh:path rdfs:label ],
         [ sh:datatype UO:0000000 ;
             sh:description "connects a quantity value to a unit" ;
             sh:maxCount 1 ;
@@ -171,12 +160,24 @@ fsi:QuantityValue a sh:NodeShape ;
             sh:order 0 ;
             sh:path fsi:has_unit ],
         [ sh:datatype xsd:string ;
-            sh:description "A human-readable name for an attribute or entity." ;
+            sh:description "A unique identifier for an entity." ;
             sh:maxCount 1 ;
-            sh:name "name" ;
+            sh:minCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 4 ;
-            sh:path rdfs:label ] ;
+            sh:order 2 ;
+            sh:path fsi:id ],
+        [ sh:datatype xsd:string ;
+            sh:description "An IRI for an entity. This is determined by the id using expansion rules." ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 3 ;
+            sh:path fsi:iri ],
+        [ sh:datatype xsd:double ;
+            sh:description "connects a quantity value to a number" ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 1 ;
+            sh:path fsi:has_numeric_value ] ;
     sh:targetClass fsi:QuantityValue .
 
 fsi:Database a sh:NodeShape ;
@@ -191,12 +192,11 @@ fsi:Database a sh:NodeShape ;
             sh:order 1 ;
             sh:path fsi:update_frequency ],
         [ sh:datatype xsd:string ;
-            sh:description "Link to the database" ;
+            sh:description "A human-readable description of an entity." ;
             sh:maxCount 1 ;
-            sh:name "database link" ;
             sh:nodeKind sh:Literal ;
-            sh:order 0 ;
-            sh:path fsi:database_link ],
+            sh:order 5 ;
+            sh:path dct:description ],
         [ sh:datatype xsd:string ;
             sh:description "An IRI for an entity. This is determined by the id using expansion rules." ;
             sh:maxCount 1 ;
@@ -204,25 +204,26 @@ fsi:Database a sh:NodeShape ;
             sh:order 3 ;
             sh:path fsi:iri ],
         [ sh:datatype xsd:string ;
-            sh:description "A human-readable description of an entity." ;
+            sh:description "Link to the database" ;
             sh:maxCount 1 ;
+            sh:name "database link" ;
             sh:nodeKind sh:Literal ;
-            sh:order 5 ;
-            sh:path dct:description ],
-        [ sh:datatype xsd:string ;
-            sh:description "A human-readable name for an attribute or entity." ;
-            sh:maxCount 1 ;
-            sh:name "name" ;
-            sh:nodeKind sh:Literal ;
-            sh:order 4 ;
-            sh:path rdfs:label ],
+            sh:order 0 ;
+            sh:path fsi:database_link ],
         [ sh:datatype xsd:string ;
             sh:description "A unique identifier for an entity." ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 2 ;
-            sh:path fsi:id ] ;
+            sh:path fsi:id ],
+        [ sh:datatype xsd:string ;
+            sh:description "A human-readable name for an attribute or entity." ;
+            sh:maxCount 1 ;
+            sh:name "name" ;
+            sh:nodeKind sh:Literal ;
+            sh:order 4 ;
+            sh:path rdfs:label ] ;
     sh:targetClass fsi:Database .
 
 fsi:IndicatorCategory a sh:NodeShape ;
@@ -231,17 +232,18 @@ fsi:IndicatorCategory a sh:NodeShape ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:name "indicator category" ;
     sh:property [ sh:datatype xsd:string ;
+            sh:description "Denomination of the indicator category." ;
+            sh:maxCount 1 ;
+            sh:name "name" ;
+            sh:nodeKind sh:Literal ;
+            sh:order 2 ;
+            sh:path rdfs:label ],
+        [ sh:datatype xsd:string ;
             sh:description "An IRI for an entity. This is determined by the id using expansion rules." ;
             sh:maxCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 1 ;
             sh:path fsi:iri ],
-        [ sh:datatype xsd:string ;
-            sh:description "Concise text that provides the meaning of the indicator category." ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 3 ;
-            sh:path dct:description ],
         [ sh:datatype xsd:string ;
             sh:description "Unique identifier of the indicator category." ;
             sh:maxCount 1 ;
@@ -250,12 +252,11 @@ fsi:IndicatorCategory a sh:NodeShape ;
             sh:order 0 ;
             sh:path fsi:id ],
         [ sh:datatype xsd:string ;
-            sh:description "Denomination of the indicator category." ;
+            sh:description "Concise text that provides the meaning of the indicator category." ;
             sh:maxCount 1 ;
-            sh:name "name" ;
             sh:nodeKind sh:Literal ;
-            sh:order 2 ;
-            sh:path rdfs:label ] ;
+            sh:order 3 ;
+            sh:path dct:description ] ;
     sh:targetClass fsi:IndicatorCategory .
 
 fsi:IndicatorCriterion a sh:NodeShape ;
@@ -270,12 +271,6 @@ fsi:IndicatorCriterion a sh:NodeShape ;
             sh:order 4 ;
             sh:path dct:description ],
         [ sh:datatype xsd:string ;
-            sh:description "An IRI for an entity. This is determined by the id using expansion rules." ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 2 ;
-            sh:path fsi:iri ],
-        [ sh:datatype xsd:string ;
             sh:description "A human-readable name for an attribute or entity." ;
             sh:maxCount 1 ;
             sh:name "name" ;
@@ -288,6 +283,12 @@ fsi:IndicatorCriterion a sh:NodeShape ;
             sh:name "category" ;
             sh:order 0 ;
             sh:path fsi:category ],
+        [ sh:datatype xsd:string ;
+            sh:description "An IRI for an entity. This is determined by the id using expansion rules." ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 2 ;
+            sh:path fsi:iri ],
         [ sh:datatype xsd:string ;
             sh:description "A unique identifier for an entity." ;
             sh:maxCount 1 ;
@@ -303,58 +304,12 @@ fsi:IndicatorDataCollectionDetails a sh:NodeShape ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:name "indicator data collection details" ;
     sh:property [ sh:datatype xsd:string ;
-            sh:description "A human-readable description of an entity." ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 11 ;
-            sh:path dct:description ],
-        [ sh:datatype xsd:string ;
-            sh:description "Link to the data for the indicator" ;
-            sh:maxCount 1 ;
-            sh:name "data link" ;
-            sh:nodeKind sh:Literal ;
-            sh:order 7 ;
-            sh:path fsi:data_link ],
-        [ sh:datatype xsd:string ;
             sh:description "A unique identifier for an entity." ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:nodeKind sh:Literal ;
             sh:order 8 ;
             sh:path fsi:id ],
-        [ sh:description "Spatial granularity/resolution of the datapoints." ;
-            sh:in ( "MacroRegions" "Country" "NUTS1" "NUTS2" "NUTS3" "LAU" ) ;
-            sh:maxCount 1 ;
-            sh:name "spatial resolution of the (collected) datapoints" ;
-            sh:order 6 ;
-            sh:path fsi:spatial_granularity ],
-        [ sh:class fsi:Database ;
-            sh:description "Specifies the database which the entity is part of." ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:name "in database" ;
-            sh:nodeKind sh:IRI ;
-            sh:order 1 ;
-            sh:path fsi:in_database ],
-        [ sh:datatype xsd:string ;
-            sh:description "An IRI for an entity. This is determined by the id using expansion rules." ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:order 9 ;
-            sh:path fsi:iri ],
-        [ sh:description "Spatial scope of the data collection." ;
-            sh:in ( "Global" "Eu" "EuMemberStates" "Regional" "Local" ) ;
-            sh:maxCount 1 ;
-            sh:name "spatial scope of the data collection" ;
-            sh:order 5 ;
-            sh:path fsi:spatial_scope ],
-        [ sh:datatype xsd:string ;
-            sh:description "A human-readable name for an attribute or entity." ;
-            sh:maxCount 1 ;
-            sh:name "name" ;
-            sh:nodeKind sh:Literal ;
-            sh:order 10 ;
-            sh:path rdfs:label ],
         [ sh:datatype linkml:DateOrDatetime ;
             sh:description "Newest datapoint for which the indicator is measured." ;
             sh:maxCount 1 ;
@@ -370,19 +325,65 @@ fsi:IndicatorDataCollectionDetails a sh:NodeShape ;
             sh:nodeKind sh:IRI ;
             sh:order 0 ;
             sh:path fsi:measures_indicator ],
+        [ sh:datatype xsd:string ;
+            sh:description "A human-readable description of an entity." ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 11 ;
+            sh:path dct:description ],
         [ sh:description "Time granularity between the datapoints." ;
             sh:in ( "EveryTwoYears" "Yearly" "Monthly" "Weekly" "Other" ) ;
             sh:maxCount 1 ;
             sh:name "time granularity between the datapoints." ;
             sh:order 4 ;
             sh:path fsi:time_granularity ],
+        [ sh:class fsi:Database ;
+            sh:description "Specifies the database which the entity is part of." ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:name "in database" ;
+            sh:nodeKind sh:IRI ;
+            sh:order 1 ;
+            sh:path fsi:in_database ],
+        [ sh:datatype xsd:string ;
+            sh:description "An IRI for an entity. This is determined by the id using expansion rules." ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 9 ;
+            sh:path fsi:iri ],
+        [ sh:datatype xsd:string ;
+            sh:description "A human-readable name for an attribute or entity." ;
+            sh:maxCount 1 ;
+            sh:name "name" ;
+            sh:nodeKind sh:Literal ;
+            sh:order 10 ;
+            sh:path rdfs:label ],
         [ sh:datatype linkml:DateOrDatetime ;
             sh:description "Oldest datapoint for which the indicator is measured." ;
             sh:maxCount 1 ;
             sh:name "oldest datapoint" ;
             sh:nodeKind sh:Literal ;
             sh:order 2 ;
-            sh:path fsi:oldest_datapoint ] ;
+            sh:path fsi:oldest_datapoint ],
+        [ sh:description "Spatial scope of the data collection." ;
+            sh:in ( "Global" "Eu" "EuMemberStates" "Regional" "Local" ) ;
+            sh:maxCount 1 ;
+            sh:name "spatial scope of the data collection" ;
+            sh:order 5 ;
+            sh:path fsi:spatial_scope ],
+        [ sh:datatype xsd:string ;
+            sh:description "Link to the data for the indicator" ;
+            sh:maxCount 1 ;
+            sh:name "data link" ;
+            sh:nodeKind sh:Literal ;
+            sh:order 7 ;
+            sh:path fsi:data_link ],
+        [ sh:description "Spatial granularity/resolution of the datapoints." ;
+            sh:in ( "MacroRegions" "Country" "NUTS1" "NUTS2" "NUTS3" "LAU" ) ;
+            sh:maxCount 1 ;
+            sh:name "spatial resolution of the (collected) datapoints" ;
+            sh:order 6 ;
+            sh:path fsi:spatial_granularity ] ;
     sh:targetClass fsi:IndicatorDataCollectionDetails .
 
 fsi:Indicator a sh:NodeShape ;
@@ -390,64 +391,81 @@ fsi:Indicator a sh:NodeShape ;
     sh:description "A quantitative measure used to assess the state, performance, or progress of a specific aspect of the food system in relation to sustainability objectives." ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:name "indicator" ;
-    sh:property [ sh:datatype UO:0000000 ;
-            sh:description "Unit of measurement." ;
+    sh:property [ sh:datatype xsd:string ;
+            sh:description "An IRI for an entity. This is determined by the id using expansion rules." ;
             sh:maxCount 1 ;
-            sh:name "unit of measurement" ;
             sh:nodeKind sh:Literal ;
-            sh:order 2 ;
-            sh:path fsi:measurement_unit ],
-        [ sh:description "Reference to the dimension that the indicator belongs to." ;
-            sh:in ( "Environment" "Economy" "Society" "Health" ) ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:name "dimension" ;
-            sh:order 0 ;
-            sh:path fsi:dimension ],
+            sh:order 9 ;
+            sh:path fsi:iri ],
         [ sh:datatype xsd:string ;
-            sh:description "Denomination of the indicator." ;
+            sh:description "Concise text that provides the meaning of the identifier." ;
             sh:maxCount 1 ;
-            sh:name "name" ;
             sh:nodeKind sh:Literal ;
+            sh:order 11 ;
+            sh:path dct:description ],
+        [ sh:description "Description of the sustainability impact the indicator measures." ;
+            sh:in ( "Positive" "Negative" "Undefined" ) ;
+            sh:maxCount 1 ;
+            sh:name "sustainability impact" ;
             sh:order 7 ;
-            sh:path rdfs:label ],
+            sh:path fsi:sustainability_impact ],
+        [ sh:datatype xsd:string ;
+            sh:description "A precise and formal statement that defines the indicator category, explaining its scope, purpose, and distinguishing characteristics." ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:order 0 ;
+            sh:path fsi:definition ],
+        [ sh:description "Reference to the supply chain component(s) for which the indicator is relevant." ;
+            sh:in ( "PrimaryProduction" "FoodProcessing" "Consumption" "Retail" "Transport" "DisposalRecycling" ) ;
+            sh:name "supply chain component(s)" ;
+            sh:order 3 ;
+            sh:path fsi:supply_chain_component ],
         [ sh:datatype xsd:string ;
             sh:description "Unique identifier of the indicator." ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:order 5 ;
+            sh:order 8 ;
             sh:path fsi:id ],
-        [ sh:description "Reference to the supply chain component(s) for which the indicator is relevant." ;
-            sh:in ( "PrimaryProduction" "FoodProcessing" "Consumption" "Retail" "Transport" "DisposalRecycling" ) ;
-            sh:name "supply chain component(s)" ;
-            sh:order 1 ;
-            sh:path fsi:supply_chain_component ],
-        [ sh:description "Description of the sustainability impact the indicator measures." ;
-            sh:in ( "Positive" "Negative" "Undefined" ) ;
-            sh:maxCount 1 ;
-            sh:name "sustainability impact" ;
-            sh:order 4 ;
-            sh:path fsi:sustainability_impact ],
         [ sh:class fsi:IndicatorCategory ;
             sh:description "Specifies the category for the indicator." ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:name "indicator category" ;
             sh:nodeKind sh:IRI ;
-            sh:order 3 ;
-            sh:path fsi:has_category ],
-        [ sh:datatype xsd:string ;
-            sh:description "An IRI for an entity. This is determined by the id using expansion rules." ;
-            sh:maxCount 1 ;
-            sh:nodeKind sh:Literal ;
             sh:order 6 ;
-            sh:path fsi:iri ],
-        [ sh:datatype xsd:string ;
-            sh:description "Concise text that provides the meaning of the identifier." ;
+            sh:path fsi:has_category ],
+        [ sh:datatype UO:0000000 ;
+            sh:description "Textual description of the indicator unit of measurement." ;
             sh:maxCount 1 ;
+            sh:name "unit(s) of measurement description" ;
             sh:nodeKind sh:Literal ;
-            sh:order 8 ;
-            sh:path dct:description ] ;
+            sh:order 4 ;
+            sh:path fsi:measurement_unit_description ],
+        [ sh:description "Indicates whether the indicator is included in the 2025 edition of the EU Sustainable Development Goals indicator set, and provides the corresponding EU SDG indicator code." ;
+            sh:in ( "EU_SDG_01_10" "EU_SDG_01_10a" "EU_SDG_01_40" "EU_SDG_02_10" "EU_SDG_02_20" "EU_SDG_02_30" "EU_SDG_02_40" "EU_SDG_02_60" "EU_SDG_02_53" "EU_SDG_08_10" "EU_SDG_06_40" "EU_SDG_06_60" "EU_SDG_08_30" "EU_SDG_15_42" "EU_SDG_15_50" ) ;
+            sh:maxCount 1 ;
+            sh:name "EU (2025) SDG indicator code" ;
+            sh:order 1 ;
+            sh:path fsi:eu2025_sdg_indicator_code ],
+        [ sh:datatype xsd:string ;
+            sh:description "Denomination of the indicator." ;
+            sh:maxCount 1 ;
+            sh:name "name" ;
+            sh:nodeKind sh:Literal ;
+            sh:order 10 ;
+            sh:path rdfs:label ],
+        [ sh:description "Indicator unit(s) of measurement." ;
+            sh:in ( euunit:NBR euunit:NR euunit:NR_HAB euunit:NR_GDP euunit:1000 euunit:THS euunit:MIO euunit:MRD euunit:BN euunit:HAB euunit:100HAB euunit:1000HAB euunit:100000HAB euunit:I2000_HAB euunit:I2005_HAB euunit:MIO_HAB euunit:HAB_PER_ euunit:HAB_KM2 euunit:KM_1000KM2 euunit:EUR_KG euunit:EUR_CLV00_KG euunit:EUR_CLV05_KG euunit:EUR_HA euunit:EUR_HAB euunit:EUR_HAB_EU euunit:EUR_HAB_CLV00 euunit:EUR_HAB_CLV05 euunit:EUR_HAB_KP00 euunit:EUR_HRS euunit:NAC_HA euunit:NAC_HAB euunit:NAC_HAB_CLV00 euunit:NAC_HAB_CLV05 euunit:NAC_HRS euunit:PPS_KG euunit:PPS_HAB euunit:PPS_HAB_EU euunit:EUR euunit:THS_EUR euunit:1000EUR euunit:MIO-EUR euunit:MIO_EUR_KP00 euunit:MIO_EUR_KP10 euunit:MIO_EUR_KP11 euunit:MIO_EUR_KP_PRE euunit:MIO_EUR_CLV2000 euunit:MIO_EUR_CLV2005 euunit:MIO_EUR_AVG_3Y2008 euunit:EUR_M3_CLV2005 euunit:MRD_EUR euunit:BN_EUR euunit:CT euunit:ECU euunit:NAC euunit:1000NAC euunit:THS_NAC euunit:MIO_NAC euunit:MIO_NAC_KP00 euunit:MIO_NAC_KP_PRE euunit:MIO_NAC_CLV2000 euunit:MIO_NAC_CLV2005 euunit:MRD_NAC euunit:BN_NAC euunit:NAT euunit:MIO_NAT euunit:PPS euunit:PPS_KP00_HAB euunit:PPS_HAB_KP05 euunit:MIO_PPS euunit:MIO_PPS_KP00 euunit:MIO_PPS_KP05 euunit:MIO_PPCS euunit:PPCS_HAB euunit:GDP_EUR euunit:T euunit:T_HAB euunit:1000T euunit:THS_T euunit:1000T_DAY euunit:T_O2_DAY euunit:T_CO2_EQVT euunit:KG_HAB euunit:GR_HAB euunit:TPW euunit:TLW euunit:T_AI euunit:MIO_T euunit:EUR_T euunit:NAC_T euunit:T_HA euunit:KGOE_1000EUR euunit:KGOE_M2 euunit:1000TOE euunit:THS_TOE euunit:MIO_TOE euunit:KTOE euunit:MTOE euunit:GT euunit:THS_GT euunit:MIO_GTKM euunit:THS_TKM euunit:1000TKM euunit:MIO_TKM euunit:MIO_TKM_OFF euunit:PASS euunit:1000PASS euunit:1000PASF euunit:1000PASC euunit:1000PAST euunit:MIO_PKM euunit:PC euunit:PC_AREA euunit:PC_POP euunit:PC_POP_Y20_29 euunit:PC_POP_Y25_29 euunit:PC_POP_GRAD euunit:PC_POP_PART euunit:PC_POP_STUD euunit:PC_POP_FSTUD euunit:PC_POP_UP95 euunit:PC_POP_LW95 euunit:PC_ACT euunit:PC_ACT_HC euunit:PC_ACT_FTE euunit:PC_INAC euunit:PC_MOB euunit:PC_TSC euunit:PC_EMP euunit:PC_EMP_HC euunit:PC_EMP_FTE euunit:PC_UNE euunit:PC_GDP euunit:PC_BEN euunit:PC_EXP euunit:PC_REC euunit:PC_CHE euunit:PC_WRL euunit:PC_TOT euunit:PC_TAX euunit:PC_TOT_HRS euunit:PC_HH euunit:PC_CANT euunit:PC_EMP_CUSE euunit:PC_EMP_IACC euunit:PC_ENT euunit:PC_ENT_CUSE euunit:PC_ENT_IACC euunit:PC_ENT_ISELL euunit:PC_TURN euunit:PC_HH_IACC euunit:PC_IND euunit:PC_IND_C3 euunit:PC_IND_CEVR euunit:PC_IND_ILT12 euunit:PC_IND_IU3 euunit:PC_IND_CTMT3YX euunit:PC_IND_CIANY euunit:PC_PNT euunit:PC_IND_BLT12 euunit:PC_IND_BMT12X euunit:PC_IND_UMPH euunit:PC_IND_IUPH1 euunit:PC_IND_IUMFXP euunit:PC_IND_AVPAYX euunit:PC_ENT_IBUY euunit:PC_ENT_PURCH euunit:PC_ENT_OBUY euunit:PC_ENT_OSELL euunit:PC_ENT_ITSPRCR euunit:PC_ENT_ITSPRCR2 euunit:PC_ENT_ITSPVAC euunit:PC_ENT_ITUSRCR euunit:PC_VAL_ISELL euunit:PC_FAT euunit:PC_PRO euunit:PC_TOT_PERS euunit:PC_TOT_HAB euunit:PC_TOT_FTE euunit:PC_TOT_JOB euunit:PC_SAV euunit:IDX euunit:I2010 euunit:I2009 euunit:I2008 euunit:I2006 euunit:I2005 euunit:I2001 euunit:I2000 euunit:I10 euunit:I09 euunit:I08 euunit:I06 euunit:I05 euunit:I01 euunit:I00 euunit:I99Q01 euunit:I99 euunit:I96 euunit:I95 euunit:I90 euunit:I_EU27 euunit:I_EU15 euunit:I_LAST euunit:I_NAT euunit:I_N_1 euunit:PCH_PRE euunit:PCH_SM euunit:PCH_SAME euunit:PCH_ANN euunit:PCH_PRE_CPI00_NAC euunit:PCH_PRE_CPI05_NAC euunit:PCH_PRE_CPI00_EUR euunit:PCH_PRE_CPI05_EUR euunit:PCH_SAME_CPI00_NAC euunit:PCH_SAME_CPI05_NAC euunit:PCH_SAME_CPI00_EUR euunit:PCH_SAME_CPI05_EUR euunit:PCH_PRE_EUR euunit:PCH_PRE_HAB euunit:PCH_PRE_FTE euunit:PCH_PRE_HRS euunit:PCH_PRE_JOB euunit:PCH_SAME_HAB euunit:PCH_SAME_FTE euunit:PCH_SAME_HRS euunit:PCH_SAME_JOB euunit:PCH_PRE_PERS euunit:PCH_SAME_PERS euunit:PCH_PRE_PERS_SWDA euunit:PCH_SAME_PERS_NSA euunit:TOT_DISCH euunit:TOT_INPAT euunit:100000_INPAT euunit:ALOS euunit:DAYS_HOSP euunit:ONE_DAY euunit:AVG euunit:MV12R euunit:RT euunit:SDTH_RT euunit:CDTH_RT euunit:INC_RT euunit:SINC_RT euunit:LTU_UNE_RT euunit:LTU_UNE_RS euunit:INT_RT euunit:REL1 euunit:REL2 euunit:REL3 euunit:REL4 euunit:REL5 euunit:REL6 euunit:REL7 euunit:REL8 euunit:REL9 euunit:REL10 euunit:REL11 euunit:REL12 euunit:CVA euunit:CV1 euunit:CV2 euunit:CV3 euunit:CV4 euunit:CV5 euunit:CV6 euunit:CV7 euunit:CV8 euunit:CV9 euunit:CV10 euunit:CV11 euunit:CV12 euunit:CPI00_NAC euunit:CPI05_NAC euunit:CPI00_EUR euunit:CPI05_EUR euunit:IPP85 euunit:IPP96 euunit:IPPE96 euunit:I_MED euunit:I_MEAN euunit:HICP2005 euunit:M euunit:M2 euunit:M3 euunit:1000M3 euunit:THS_M3 euunit:MIO_M3 euunit:M3_HAB euunit:KM euunit:KM2 euunit:HA euunit:HA_AA euunit:ESU euunit:ESU_SGM euunit:1000HA euunit:THS_HA euunit:TEU euunit:1000TEU euunit:THS_TEU euunit:1000TEU_KM euunit:GR euunit:GR_PKM euunit:GR_FTKM euunit:GR_TTKM euunit:G_FTKM euunit:G_PKM euunit:G_TKM euunit:KG euunit:MIO_KG euunit:LT euunit:L euunit:1000HLT euunit:THS_HL euunit:OZ euunit:MIO_OZ euunit:KW euunit:1000KW euunit:MW euunit:GW euunit:KWH euunit:EUR_KWH euunit:GWH euunit:KCAL euunit:TJ euunit:TJ_GCV euunit:GJ_GCV euunit:MN euunit:1000MN euunit:THS_MN euunit:HOUR euunit:HR euunit:DAY euunit:MONTH euunit:MTH euunit:YR euunit:HD euunit:THS_HD euunit:1000HD euunit:1000TC euunit:AWU euunit:1000AWU euunit:THS_AWU euunit:HOLD euunit:MACH euunit:LSU euunit:HC euunit:NB_TOT euunit:NB_TOT_BERD euunit:NB_TOT_GERD euunit:MIO_ACT euunit:1000HRS euunit:THS_HR euunit:MIO_HRS euunit:MIO_HR euunit:JOB euunit:1000JOB euunit:MIO_JOB euunit:NBR_PAYMT euunit:FTE euunit:1000FTE euunit:HC_HAB euunit:FTE_HAB euunit:HAB_HC euunit:HAB_FTE euunit:PCE euunit:PER euunit:PERS euunit:1000PERS euunit:MIO_PERS euunit:SAL_Y euunit:SAL_M euunit:SAL_H euunit:TSAL_Y euunit:TOT_Y euunit:Y_WORKER euunit:M_WORKER euunit:H_WORKER euunit:P_KM2 euunit:AAPR euunit:APRC euunit:TOTAL euunit:1000-PERS-SA euunit:1000-PERS-NSA euunit:BAL euunit:MIO-EUR-SA euunit:MIO_EUR_NSA euunit:IVU-NSA euunit:IVOL-SA euunit:IVOL-NSA euunit:RT1 euunit:RT1_NBR euunit:RT1_GT euunit:RT12 euunit:RT1-ABS-SA euunit:RT12-ABS-NSA euunit:RT1-IVU-NSA euunit:RT12-IVU-NSA euunit:RT1-IVOL-SA euunit:RT12-IVOL-NSA euunit:RT1-SA euunit:RT1-SWDA euunit:RT4-NSA euunit:RT12-NSA euunit:RT4 euunit:PC_EU27 euunit:PC_EU25 euunit:PC_EU25_EUR_HAB euunit:PC_EU27_EUR_HAB euunit:PC_EU27_PPS_HAB euunit:PC_EU15_PPS_EMP euunit:PC_EU27_PPS_EMP euunit:PC_EU15_PPS_HRS euunit:PC_EU27_PPS_HRS euunit:PC_EU25_MIO_EUR euunit:PC_EU27_MIO_EUR euunit:PC_EU27_MIO_PPS euunit:PC_EA_MIO_EUR euunit:PC_EA_MIO_PPS euunit:PC_EA12_MIO_EUR euunit:PC_EA16_MIO_EUR euunit:PC_EA16_MIO_PPS euunit:PC_EA17_MIO_EUR euunit:PC_EA17_MIO_PPS euunit:MOVE euunit:FLIGHT euunit:NBR_CAR euunit:MIO_VEH_KM euunit:1000VEH_KM euunit:MIO_VKM euunit:THS_VKM euunit:1000_BTO euunit:1000_JRNY euunit:1000TRN_KM euunit:SEAT euunit:1000SEAT euunit:MIO_SEAT_KM_OFF euunit:VES_MOV euunit:1000VES_KM euunit:NBR_REG euunit:PC_REG euunit:NBR_INVEST euunit:NBR_COMP euunit:PC_HH_IACCX euunit:PC_HH_BROADX euunit:MIO_EUR_SWDA euunit:TVAL_SA euunit:I2000_NSA euunit:I2005_SA euunit:I2005_NSA euunit:I2006_NSA euunit:I2008_SWDA euunit:I2010_SA euunit:I2010_NSA euunit:PCH_M1 euunit:PCH_M1_NSA euunit:PCH_M1_SA euunit:PCH_Q1_NSA euunit:PCH_Q1_SA euunit:PCH_Q1_SWDA euunit:PCH_Q4_NSA euunit:PCH_Q4_WDA euunit:PCH_M12 euunit:PCH_M12_NSA euunit:PCH_M12_WDA euunit:AVG_3Y euunit:PCH_1Y euunit:PCH_3Y euunit:PCH_5Y euunit:PCH_10Y euunit:PCH_MV12 euunit:PPS_PWW euunit:PC_ENT_WEB euunit:PC_ENT_RFID euunit:PC_ETURN euunit:PC_ENT_AEBUY euunit:PC_ENT_AESELL euunit:PC_ENT_ADE euunit:PC_ENT_SISC euunit:PC_IND_IUEVR euunit:PC_ENT_SECPOL euunit:PC_IND_SCSOFT euunit:PC_IND_SCUAVX euunit:TIME_SP euunit:PTP_TIME euunit:PTP_RT euunit:MIO_M3_Y euunit:CAP_1000T_Y euunit:PC_ENT_ECOM euunit:PC_ENT_IGOV2PRHMX euunit:PC_ENT_IGOV2RT euunit:PC_GDP_3Y euunit:PCH_WRL_5Y euunit:1000POP euunit:PC_IND_IUMC euunit:PC_IND_IUMD euunit:PC_IND_IUMDX euunit:PC_IND_IUHD euunit:PC_EMP_IUSE euunit:PC_EMP_PMD euunit:PC_ENT_PMD euunit:PC_AWSVAL euunit:PC_EMP_CUSE2 euunit:P_HHAB euunit:P_THAB euunit:P_HTHAB euunit:PCH_WRL_1Y euunit:I99_1Q euunit:AAR euunit:PC_OECD euunit:PCH_OECD_5Y euunit:MPPS_KM2 euunit:EUR_KGOE euunit:PC_IGRTX euunit:PC_IGRTX_NAPX euunit:PC_PNT_3Y euunit:I08_WDA euunit:EUR_HAB_KP05 euunit:MIO_EUR_KP05 euunit:MIO_NAC_KP05 euunit:PPS_HAB_KP00 euunit:O2_TD euunit:PC_GEXP euunit:PC_HC euunit:PC_FTE euunit:TSWU euunit:THM euunit:GWD_THM euunit:PC_IND_IUGOV12 euunit:T_DAY euunit:T_PE_DAY euunit:P_MHAB euunit:EUR_KG_CLV00 euunit:EUR_KG_CLV05 euunit:PC_EU28 euunit:PC_EU28_EUR_HAB euunit:PC_EU28_PPS_HAB euunit:PC_EU28_PPS_EMP euunit:TD euunit:PE_TD euunit:PC_GBA euunit:I_LY euunit:I_1Y euunit:SEI euunit:SDI euunit:PCH_5Y_CPI05_NAC euunit:THS_M2 euunit:THS_PER euunit:PC_EU28_PPS_HRS euunit:PC_EU28_PPS_HR euunit:PC_EU27_PPS_HR euunit:PC_EU28_MIO_EUR euunit:PC_EU28_MIO_PPS euunit:PC_EU28_MEUR euunit:PC_EU27_MEUR euunit:PC_EU25_MEUR euunit:PC_EU28_MPPS euunit:PC_EU27_MPPS euunit:PC_EA_MPPS euunit:PC_EA_MEUR euunit:PC_EA18_MIO_EUR euunit:PC_EA18_MIO_PPS euunit:PC_EA18_MEUR euunit:PC_EA17_MEUR euunit:PC_EA16_MEUR euunit:PC_EA12_MEUR euunit:PC_EA18_MPPS euunit:PC_EA17_MPPS euunit:PC_EA16_MPPS euunit:MNAC_CP euunit:MEUR_CP euunit:MPPS_CP euunit:MNAC_PYP euunit:MEUR_PYP euunit:MNAC_CLV10 euunit:MEUR_CLV10 euunit:MNAC_CLV05 euunit:MEUR_CLV05 euunit:PC_STU euunit:PC_FSTU euunit:PC_Y25-29 euunit:PC_Y20-29 euunit:PC_TOT_PER euunit:PC_TOT_HW euunit:I05_EUR euunit:I10_EUR euunit:I05_PER euunit:I05_HW euunit:I05_JOB euunit:I05_FTE euunit:I10_PER euunit:I10_HW euunit:I10_JOB euunit:I10_FTE euunit:PPCH_PRE euunit:PPCH_SM euunit:PCH_SM_EUR euunit:PCH_PRE_PER euunit:PCH_PRE_HW euunit:PCH_SM_PER euunit:PCH_SM_HW euunit:PCH_SM_JOB euunit:PCH_SM_FTE euunit:CPI10_PCH_PRE_NAC euunit:CPI10_PCH_PRE_EUR euunit:CPI05_PCH_PRE_NAC euunit:CPI05_PCH_PRE_EUR euunit:CPI10_PCH_SM_NAC euunit:CPI10_PCH_SM_EUR euunit:CPI05_PCH_SM_NAC euunit:CPI05_PCH_SM_EUR euunit:RT_UNE euunit:CPI10_NAC euunit:CPI10_EUR euunit:HW euunit:THS_HW euunit:THS_JOB euunit:THS_FTE euunit:PC_EU28_PPS_HW euunit:PC_EU27_PPS_HW euunit:VKM euunit:CP_MEUR euunit:CP_MNAC euunit:CP_MPPS euunit:PC_EU28_MEUR_CP euunit:PC_EU28_MPPS_CP euunit:CLV05_MNAC euunit:CLV05_MEUR euunit:CLV10_MNAC euunit:CLV10_MEUR euunit:PYP_MNAC euunit:PYP_MEUR euunit:CLV_I05 euunit:CLV_I10 euunit:CLV_PCH_PRE euunit:CLV_PCH_SM euunit:CLV_PCH_ANN euunit:CON_PPCH_PRE euunit:CON_PPCH_SM euunit:PD05_NAC euunit:PD_PCH_PRE_NAC euunit:PD_PCH_SM_NAC euunit:PD_EUR euunit:PD_PCH_PRE_EUR euunit:PD_PCH_SM_EUR euunit:CP_MEUR_HAB euunit:CP_MNAC_HAB euunit:CP_MPPS_HAB euunit:CP_PC_EU28_MEUR euunit:CP_PC_EU28_MPPS euunit:CLV05_MEUR_HAB euunit:CLV_I05_HAB euunit:CLV_I10_HAB euunit:CLV_PCH_PRE_HAB euunit:CLV_PCH_SM_HAB euunit:CRC_MEUR euunit:CRC_MNAC euunit:PYR_MNAC euunit:PYR_MEUR euunit:PC_EU28_EUR euunit:PC_EU28_PPS euunit:PD10_NAC euunit:PD10_EUR euunit:PD05_EUR euunit:CP_EUR_HAB euunit:CP_NAC_HAB euunit:CP_PPS_HAB euunit:CP_PC_EU28_EUR euunit:CP_PC_EU28_PPS euunit:CLV05_EUR_HAB euunit:CLV10_EUR_HAB euunit:PPS_KGOE euunit:PPS_M3 euunit:I_EU euunit:I_EU28 euunit:G euunit:PAS euunit:THS_PAS euunit:THS_PASF euunit:THS_PASC euunit:THS_PASE euunit:PC_ENT_CC euunit:PC_ENT_CCX euunit:PC_ENT_INV3SBG euunit:PC_ENT_RFID1 euunit:PC_IND_CC euunit:PC_IND_CC_AW euunit:PC_IND_CC_CCS euunit:PC_IND_CC_CCSX euunit:RT_PRE euunit:RT_PRE_GT euunit:RT_PRE_NR euunit:P_BGDP euunit:INX euunit:PCH_5Y_CPI10_NAC euunit:PC_Y18-59 euunit:PC_Y_LT60 euunit:INX_M euunit:INX_Q euunit:INX_A_AVG euunit:P_BERD euunit:P_GERD euunit:RCH_M euunit:RCH_Q euunit:RCH_A euunit:RCH_A_AVG euunit:RCH_MV12MA euunit:HAB_P euunit:HC_HTHAB euunit:FTE_HTHAB euunit:CUM_DIFF_THS euunit:RCH_MV12MAVR euunit:KGOE_TEUR euunit:RTG euunit:PPCH_3Y euunit:P_SAL_Y euunit:P_SAL_M euunit:P_SAL_H euunit:PC_UP95 euunit:PC_LW95 euunit:PC_GVA euunit:EUR_KG_CLV10 euunit:PC_ENT_AWSELL euunit:PC_ENT_AWSELLX euunit:RT_INC euunit:RT_SINC euunit:GDP_BEUR euunit:P_MACT euunit:PC_TSCO euunit:PC_TSCO_X_ISCO euunit:CP_MUSD euunit:PYP_MUSD euunit:CP_I10 euunit:CP_PCH_PRE euunit:CP_PCH_SM euunit:HLD euunit:MEUR_KP00 euunit:THS_SEAT euunit:KM_TKM2 euunit:I12 euunit:MEUR_NSA euunit:PC_GDP_NSA euunit:PC_GDP_SWDA euunit:MEUR_KP11 euunit:MEUR_KP_PRE euunit:GDP_HAB euunit:PC_GDP_HAB euunit:PC_GNI euunit:PC_PEXP euunit:CFU euunit:KGOE euunit:TOE euunit:TKM euunit:THS_CD08 euunit:HL euunit:KP_I10 euunit:KP_PCH_PRE euunit:KP_PCH_SM euunit:PPCS_HAB_EU euunit:THS_TD euunit:PM euunit:PC_UAA euunit:PC_IND_BUY3 euunit:RK euunit:THS_TEUKM euunit:THS_KW euunit:THS_JRNY euunit:THS_BTO euunit:THS_TRKM euunit:THS_VESKM euunit:NR_INV euunit:NR_COMP euunit:PC_ENT_SECPOL1 euunit:CLV_PY_MNAC euunit:CLV_PY_MEUR euunit:TCO2E euunit:MEUR_KP05 euunit:MNAC_KP05 euunit:I2010_SCA euunit:PCH_M1_SCA euunit:PCH_M12_CA euunit:PCH_Q1_SCA euunit:PCH_Q4_CA euunit:I2015 euunit:I15 euunit:RT1-SCA euunit:RT12-CA euunit:PCH_PRE_PERS_SCA euunit:NR_ENT euunit:MIO_EUR_SCA euunit:PC_GDP_SCA euunit:SUM_4Q euunit:RT_R4Q euunit:HICP2015 euunit:TCO2E_HAB euunit:EUR_M3_CLV10 euunit:THS_L euunit:G_HAB euunit:G_EUR_CP euunit:G_EUR_CLV10 euunit:KG_EUR_CP euunit:KG_EUR_CLV10 euunit:SGM_ESU euunit:THS_PER_SA euunit:THS_PER_NSA euunit:RCH_C_AVG euunit:PC_S euunit:PC_ENT_FIXBB euunit:HR_SAL euunit:I10_NAC_CP euunit:PCH_PRE_NAC_CP euunit:IW euunit:API euunit:RCH_A_C euunit:FARM euunit:TOE_MEUR_PPS euunit:EUR_TOE euunit:PC_ENT_ADS euunit:MEUR_KP10 euunit:MNAC_KP10 euunit:PC_IND_IUG_TV euunit:PC_EMP_PMD1 euunit:EUR_BGDP euunit:EUR_HAB_KP10 euunit:PPS_BGDP euunit:RT_A euunit:PC_ENT_PMD1 euunit:AVG_A euunit:MTCO2E euunit:I_ESD euunit:PC_ENT_SM euunit:PPS_HH euunit:P_AE euunit:P_HH euunit:PC_DI euunit:PC_LSU euunit:PC_ENT_BD euunit:EUR_AE euunit:EUR_HH euunit:NAC_AE euunit:NAC_HH euunit:PPS_AE euunit:I15_NSA euunit:KG_HA euunit:PC_ELF euunit:PC_ENT_AWSEU euunit:PC_IND_BFFOR euunit:MIO_PER euunit:PC_WMN euunit:EUR_AWU euunit:I15_NAC_CP euunit:KG_TEUR_CLV10 euunit:PPS_HAB_EU28 euunit:DEGC euunit:PH euunit:CLV10_EUR_AWU euunit:PC_NAEA euunit:PC_SAL euunit:PC_SAL_TEMP euunit:M2_HAB euunit:KM2_HAB euunit:MCG_M3 euunit:I2015_SCA euunit:I2015_NSA euunit:PC_DT euunit:EUR_HAB_EU27_2019 euunit:PPS_EU27_2019 euunit:MIO_PPS_EU27_2019 euunit:PPS_EU27_2019_HAB euunit:PPS_HAB_EU27_2019 euunit:RT_PRE_EUR euunit:RT_PRE_NAC euunit:PC_EU27_2019 euunit:PC_EU27_2019_MEUR_CP euunit:PC_EU27_2019_MPPS_CP euunit:PC_EU28_HAB_MEUR_CP euunit:PC_EU27_2019_HAB_MEUR_CP euunit:PC_EU28_HAB_MPPS_CP euunit:PC_EU27_2019_HAB_MPPS_CP euunit:CP_MPPS_EU27_2019 euunit:CP_PPS_EU27_2019_HAB euunit:M_KM2 euunit:KM_THAB euunit:I03 euunit:P_TCAR euunit:CH_A_KM2 euunit:PC_RIMG euunit:PC_ENT_P3D euunit:PC_ENT_RBTS euunit:PC_IND_IUP2P_WRK euunit:PC_IND_MPP euunit:PC_IND_ILT12_SSF euunit:PC_IND_WH euunit:PC_IND_WM euunit:PC_IND_MDW euunit:THS_TY euunit:MIO_M3D euunit:BN_M3Y euunit:MWH euunit:KJ_M3 euunit:MJ_T_GCV euunit:MJ_T_NCV euunit:KJ_M3_NCV euunit:KJ_M3_GCV euunit:D_RT_M euunit:I16 euunit:PCH_Q4_SCA euunit:KGOE_TEUR_PPS euunit:TOE_MEUR euunit:RT_M_DIF euunit:PCH_SM_PER_NSA euunit:PCH_SM_PER_SCA euunit:KGOE_HAB euunit:TOE_HAB euunit:KJ euunit:MJ euunit:MJ_HAB euunit:GJ euunit:GJ_HAB euunit:TJ_HAB euunit:PC_ENT_SECPOL2 euunit:PC_IND_SECOITPP euunit:I15_PER euunit:I15_HW euunit:I15_JOB euunit:KP_I15 euunit:CLV_I15 euunit:PER_KM2 euunit:CLV15_MEUR euunit:CLV15_MNAC euunit:CLV_I15_HAB euunit:CLV15_EUR_HAB euunit:PD15_EUR euunit:PD15_NAC euunit:RAT euunit:PPS_3Y_AVG euunit:PCH_PRE_RV euunit:PCH_3Y_AVG_RV euunit:MG_L euunit:EUR_HAB_EU27_2020 euunit:PPS_EU27_2020 euunit:MIO_PPS_EU27_2020 euunit:PPS_EU27_2020_HAB euunit:PPS_HAB_EU27_2020 euunit:PC_EU27_2020 euunit:PC_EU27_2007 euunit:PC_EU27_2020_EUR_HAB euunit:PC_EU27_2007_EUR_HAB euunit:PC_EU27_2020_PPS_HAB euunit:PC_EU27_2007_PPS_HAB euunit:PC_EU27_2020_PPS_EMP euunit:PC_EU27_2007_PPS_EMP euunit:PC_EU27_2007_PPS_HRS euunit:PC_EU27_2020_MEUR euunit:PC_EU27_2007_MEUR euunit:PC_EU27_2020_MPPS euunit:PC_EU27_2007_MPPS euunit:PC_EU27_2020_MEUR_CP euunit:PC_EU27_2020_MPPS_CP euunit:PC_EU27_2020_HAB_MEUR_CP euunit:PC_EU27_2020_HAB_MPPS_CP euunit:CP_MPPS_EU27_2020 euunit:CP_PPS_EU27_2020_HAB euunit:CP_PC_EU27_2020_EUR euunit:CP_PC_EU27_2020_PPS euunit:PCH_RV euunit:MEUR_HAB euunit:PC_ENT_BDA euunit:PC_ENT_BDAAM euunit:PC_ENT_IOT euunit:PC_ENT_AWS_CMP euunit:PC_ENT_IUSE euunit:PC_ENT_ITSPVAC2 euunit:PC_IND_BHHS euunit:PC_IND_BPG_ANY euunit:PC_IND_BRA euunit:PC_IND_BTPS euunit:PC_IND_IOT_BDKX euunit:PC_IND_IOT_DX euunit:PC_IND_MPP1 euunit:I15-17_AVG euunit:I11-13_AVG euunit:I13 euunit:PC_Y euunit:TJ_NCV euunit:I98 euunit:TVAL_MEUR euunit:PCH_LV_M_16-19 euunit:EUR_KG_CLV15 euunit:EUR_HM2 euunit:EUR_HD euunit:EUR_HHD euunit:EUR_HIVE euunit:T_KM2 euunit:MIO_M2 euunit:TJ_TM3_NCV euunit:I21 euunit:I20 euunit:I18 euunit:I91 euunit:I10_Q euunit:I15_Q euunit:I10_A_AVG euunit:I15_A_AVG euunit:THS_T_4Q euunit:THS_TEU_4Q euunit:MIO_EMP euunit:MIO_SAL euunit:THS_HH euunit:PB euunit:P_HAB euunit:HD_AVG euunit:PLC euunit:HIVE euunit:RT_SMQ euunit:PC_Y_LT65 euunit:PC_INAC_WWRK euunit:PC_ENT_IOT1 euunit:PC_SAL_AESELL euunit:PC_EMP_AESELL euunit:PC_ENT_AI_EC euunit:PC_ENT_AI_TANY euunit:PC_ENT_AI_TX euunit:PC_ENT_CVD_IEM euunit:PC_ENT_CVD_IRA euunit:PC_ENT_CVD_IRM euunit:PC_IND_BGT3_IU3 euunit:PC_IND_TIC euunit:PC_IND_TICX euunit:PC_IND_UDI euunit:PC_EMP_PREEMP_M12 euunit:PC_EMP_PREEMP euunit:PC_PER_HPB euunit:PC_PER_ACC euunit:PCH_SM_2Y euunit:PCH_SM_19 euunit:PCH_5Y_CPI15_NAC euunit:PCH_M24 euunit:PC_POP_NPT euunit:PC_ENT_RA euunit:PC_ENT_RM euunit:PC_ENT_RBT euunit:KG_L euunit:PC_OECD_EU euunit:PCH_OECD_EU_5Y euunit:MIO_SKM euunit:PC_ENT_DAOWN ) ;
+            sh:name "units of measurement" ;
+            sh:order 5 ;
+            sh:path fsi:measurement_units ],
+        [ sh:description "Reference to the dimension that the indicator belongs to." ;
+            sh:in ( "Environment" "Economy" "Society" "Health" ) ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:name "dimension" ;
+            sh:order 2 ;
+            sh:path fsi:dimension ] ;
     sh:targetClass fsi:Indicator .
 

@@ -30,6 +30,10 @@
 - id: IndicatorCategories
   name: None
   description: None
+- id: IndicatorMeasurementUnit
+  name: Eurostat unit of measurement
+  description: Food system indicator units of measurement imported from the Eurostat
+    unit of measure dictionary/vocabulary.
 - id: SustainabilityDimension
   name: sustainability dimension
   description: A core pillar of sustainability (environment, society, economy, or
@@ -56,3 +60,7 @@
 - id: SustainabilityImpactType
   name: sustainability impact type
   description: The type of sustainability impact the indicator measures.
+- id: Eu2025SdgIndicator
+  name: EU SDG indicators
+  description: Indicators of the 2025 edition of the EU sustainable development goals
+    (SDG) monitoring report.

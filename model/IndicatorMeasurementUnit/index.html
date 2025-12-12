@@ -1,0 +1,5991 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://biometris.github.io/FS-Datamodel/model/IndicatorMeasurementUnit/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Eurostat unit of measurement - FS Data Model</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../style.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#eurostat-unit-of-measurement" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="FS Data Model" class="md-header__button md-logo" aria-label="FS Data Model" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            FS Data Model
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Eurostat unit of measurement
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/biometris/FS-Datamodel" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="FS Data Model" class="md-nav__button md-logo" aria-label="FS Data Model" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    FS Data Model
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/biometris/FS-Datamodel" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data model
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Data model
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../model_diagram/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Diagram
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../indicators/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Indicator definitions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../indicator_categories/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Indicator categories
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../databases_table/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Indicator databases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../indicator_data_collection_details_table/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Indicator data collection details
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Indicator selection details
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Indicator selection details
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CriterionCategory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Indicator criterion categories
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../indicator_criteria_table/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Indicator criteria
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../indicator_scores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Indicator scores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../downloads/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Downloads
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#possible-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Possible values
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="eurostat-unit-of-measurement">Eurostat unit of measurement</h1>
+<p><em>Food system indicator units of measurement imported from the Eurostat unit of measure dictionary/vocabulary.</em></p>
+<h2 id="possible-values">Possible values</h2>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>URI</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NBR</td>
+<td>euunit:NBR</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>NR</td>
+<td>euunit:NR</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>NR_HAB</td>
+<td>euunit:NR_HAB</td>
+<td>Number per inhabitant</td>
+</tr>
+<tr>
+<td>NR_GDP</td>
+<td>euunit:NR_GDP</td>
+<td>Number per GDP</td>
+</tr>
+<tr>
+<td>1000</td>
+<td>euunit:1000</td>
+<td>Thousands</td>
+</tr>
+<tr>
+<td>THS</td>
+<td>euunit:THS</td>
+<td>Thousand</td>
+</tr>
+<tr>
+<td>MIO</td>
+<td>euunit:MIO</td>
+<td>Million</td>
+</tr>
+<tr>
+<td>MRD</td>
+<td>euunit:MRD</td>
+<td>Milliards</td>
+</tr>
+<tr>
+<td>BN</td>
+<td>euunit:BN</td>
+<td>Billion</td>
+</tr>
+<tr>
+<td>HAB</td>
+<td>euunit:HAB</td>
+<td>Inhabitant/person/capita</td>
+</tr>
+<tr>
+<td>100HAB</td>
+<td>euunit:100HAB</td>
+<td>Per 100 inhabitants</td>
+</tr>
+<tr>
+<td>1000HAB</td>
+<td>euunit:1000HAB</td>
+<td>Per 1 000 inhabitants</td>
+</tr>
+<tr>
+<td>100000HAB</td>
+<td>euunit:100000HAB</td>
+<td>Per 100,000 inhabitants</td>
+</tr>
+<tr>
+<td>I2000_HAB</td>
+<td>euunit:I2000_HAB</td>
+<td>Index per inhabitant, 2000=100</td>
+</tr>
+<tr>
+<td>I2005_HAB</td>
+<td>euunit:I2005_HAB</td>
+<td>Index per inhabitant, 2005=100</td>
+</tr>
+<tr>
+<td>MIO_HAB</td>
+<td>euunit:MIO_HAB</td>
+<td>Per million of inhabitants</td>
+</tr>
+<tr>
+<td>HAB_PER_</td>
+<td>euunit:HAB_PER_</td>
+<td>Inhabitants per ...</td>
+</tr>
+<tr>
+<td>HAB_KM2</td>
+<td>euunit:HAB_KM2</td>
+<td>Inhabitants per square kilometre</td>
+</tr>
+<tr>
+<td>KM_1000KM2</td>
+<td>euunit:KM_1000KM2</td>
+<td>Kilometres per 1 000 km2</td>
+</tr>
+<tr>
+<td>EUR_KG</td>
+<td>euunit:EUR_KG</td>
+<td>Euro per kilogram</td>
+</tr>
+<tr>
+<td>EUR_CLV00_KG</td>
+<td>euunit:EUR_CLV00_KG</td>
+<td>Euro per kilogram (Euro: chain-linked volumes, reference year 2000, at 2000 exchange rates)</td>
+</tr>
+<tr>
+<td>EUR_CLV05_KG</td>
+<td>euunit:EUR_CLV05_KG</td>
+<td>Euro per kilogram (Euro: chain-linked volumes, reference year 2005, at 2005 exchange rates)</td>
+</tr>
+<tr>
+<td>EUR_HA</td>
+<td>euunit:EUR_HA</td>
+<td>Euro per hectare</td>
+</tr>
+<tr>
+<td>EUR_HAB</td>
+<td>euunit:EUR_HAB</td>
+<td>Euro per inhabitant</td>
+</tr>
+<tr>
+<td>EUR_HAB_EU</td>
+<td>euunit:EUR_HAB_EU</td>
+<td>Euro per inhabitant in percentage of the EU average</td>
+</tr>
+<tr>
+<td>EUR_HAB_CLV00</td>
+<td>euunit:EUR_HAB_CLV00</td>
+<td>Euro per inhabitant, volume reference and exchange rates 2000</td>
+</tr>
+<tr>
+<td>EUR_HAB_CLV05</td>
+<td>euunit:EUR_HAB_CLV05</td>
+<td>Euro per inhabitant, volume reference and exchange rates 2005</td>
+</tr>
+<tr>
+<td>EUR_HAB_KP00</td>
+<td>euunit:EUR_HAB_KP00</td>
+<td>Euro per inhabitant (at constant 2000 prices)</td>
+</tr>
+<tr>
+<td>EUR_HRS</td>
+<td>euunit:EUR_HRS</td>
+<td>Euro per hour worked</td>
+</tr>
+<tr>
+<td>NAC_HA</td>
+<td>euunit:NAC_HA</td>
+<td>National currency per hectare</td>
+</tr>
+<tr>
+<td>NAC_HAB</td>
+<td>euunit:NAC_HAB</td>
+<td>National currency per inhabitant</td>
+</tr>
+<tr>
+<td>NAC_HAB_CLV00</td>
+<td>euunit:NAC_HAB_CLV00</td>
+<td>National currency per inhabitant, volume reference exchange rates 2000</td>
+</tr>
+<tr>
+<td>NAC_HAB_CLV05</td>
+<td>euunit:NAC_HAB_CLV05</td>
+<td>National currency per inhabitant, volume reference exchange rates 2005</td>
+</tr>
+<tr>
+<td>NAC_HRS</td>
+<td>euunit:NAC_HRS</td>
+<td>National currency per hour worked</td>
+</tr>
+<tr>
+<td>PPS_KG</td>
+<td>euunit:PPS_KG</td>
+<td>Purchasing power standard (PPS) per kilogram</td>
+</tr>
+<tr>
+<td>PPS_HAB</td>
+<td>euunit:PPS_HAB</td>
+<td>Purchasing power standard (PPS) per inhabitant</td>
+</tr>
+<tr>
+<td>PPS_HAB_EU</td>
+<td>euunit:PPS_HAB_EU</td>
+<td>Purchasing power standard (PPS) per inhabitant in percentage of the EU average</td>
+</tr>
+<tr>
+<td>EUR</td>
+<td>euunit:EUR</td>
+<td>Euro</td>
+</tr>
+<tr>
+<td>THS_EUR</td>
+<td>euunit:THS_EUR</td>
+<td>Thousand euro</td>
+</tr>
+<tr>
+<td>1000EUR</td>
+<td>euunit:1000EUR</td>
+<td>Thousands of euro</td>
+</tr>
+<tr>
+<td>MIO_EUR</td>
+<td>euunit:MIO-EUR</td>
+<td>Millions of euro (from 1.1.1999)/ECU (up to 31.12.1998)</td>
+</tr>
+<tr>
+<td>MIO_EUR_KP00</td>
+<td>euunit:MIO_EUR_KP00</td>
+<td>Million euro (at constant 2000 prices)</td>
+</tr>
+<tr>
+<td>MIO_EUR_KP10</td>
+<td>euunit:MIO_EUR_KP10</td>
+<td>Million euro (at constant 2010 prices)</td>
+</tr>
+<tr>
+<td>MIO_EUR_KP11</td>
+<td>euunit:MIO_EUR_KP11</td>
+<td>Million euro (at constant 2011 prices)</td>
+</tr>
+<tr>
+<td>MIO_EUR_KP_PRE</td>
+<td>euunit:MIO_EUR_KP_PRE</td>
+<td>Million euro (at prices of the previous year)</td>
+</tr>
+<tr>
+<td>MIO_EUR_CLV2000</td>
+<td>euunit:MIO_EUR_CLV2000</td>
+<td>Million euro, chain-linked volumes, reference year 2000 (at 2000 exchange rates)</td>
+</tr>
+<tr>
+<td>MIO_EUR_CLV2005</td>
+<td>euunit:MIO_EUR_CLV2005</td>
+<td>Million euro, chain-linked volumes, reference year 2005 (at 2005 exchange rates)</td>
+</tr>
+<tr>
+<td>MIO_EUR_AVG_3Y2008</td>
+<td>euunit:MIO_EUR_AVG_3Y2008</td>
+<td>Millions of euro, annual average 2008 - 2010</td>
+</tr>
+<tr>
+<td>EUR_M3_CLV2005</td>
+<td>euunit:EUR_M3_CLV2005</td>
+<td>Euro per cubic metre (Euro: chain-linked volumes, reference year 2005, at 2005 exchange rates)</td>
+</tr>
+<tr>
+<td>MRD_EUR</td>
+<td>euunit:MRD_EUR</td>
+<td>Milliards of euro (from 1.1.1999)/ECU (up to 31.12.1998)</td>
+</tr>
+<tr>
+<td>BN_EUR</td>
+<td>euunit:BN_EUR</td>
+<td>Billion euro</td>
+</tr>
+<tr>
+<td>CT</td>
+<td>euunit:CT</td>
+<td>Euro cent</td>
+</tr>
+<tr>
+<td>ECU</td>
+<td>euunit:ECU</td>
+<td>European currency unit (Ecu)</td>
+</tr>
+<tr>
+<td>NAC</td>
+<td>euunit:NAC</td>
+<td>National currency</td>
+</tr>
+<tr>
+<td>1000NAC</td>
+<td>euunit:1000NAC</td>
+<td>Thousands of national currency (including 'euro fixed' series for euro area countries)</td>
+</tr>
+<tr>
+<td>THS_NAC</td>
+<td>euunit:THS_NAC</td>
+<td>Thousand units of national currency</td>
+</tr>
+<tr>
+<td>MIO_NAC</td>
+<td>euunit:MIO_NAC</td>
+<td>Million units of national currency</td>
+</tr>
+<tr>
+<td>MIO_NAC_KP00</td>
+<td>euunit:MIO_NAC_KP00</td>
+<td>Million units of national currency at constant 2000 prices</td>
+</tr>
+<tr>
+<td>MIO_NAC_KP_PRE</td>
+<td>euunit:MIO_NAC_KP_PRE</td>
+<td>Million units of national currency at prices of the previous year</td>
+</tr>
+<tr>
+<td>MIO_NAC_CLV2000</td>
+<td>euunit:MIO_NAC_CLV2000</td>
+<td>Million units of national currency, chain-linked volumes, reference year 2000</td>
+</tr>
+<tr>
+<td>MIO_NAC_CLV2005</td>
+<td>euunit:MIO_NAC_CLV2005</td>
+<td>Million units of national currency, chain-linked volumes, reference year 2005</td>
+</tr>
+<tr>
+<td>MRD_NAC</td>
+<td>euunit:MRD_NAC</td>
+<td>Milliards of national currency (including 'euro fixed' series for euro area countries)</td>
+</tr>
+<tr>
+<td>BN_NAC</td>
+<td>euunit:BN_NAC</td>
+<td>Billion units of national currency</td>
+</tr>
+<tr>
+<td>NAT</td>
+<td>euunit:NAT</td>
+<td>National currency (former currencies of the euro area countries)</td>
+</tr>
+<tr>
+<td>MIO_NAT</td>
+<td>euunit:MIO_NAT</td>
+<td>Million units of national currency (former currencies of the euro area countries)</td>
+</tr>
+<tr>
+<td>PPS</td>
+<td>euunit:PPS</td>
+<td>Purchasing power standard (PPS)</td>
+</tr>
+<tr>
+<td>PPS_KP00_HAB</td>
+<td>euunit:PPS_KP00_HAB</td>
+<td>Purchasing Power Standard per inhabitant at constant 2000 prices</td>
+</tr>
+<tr>
+<td>PPS_HAB_KP05</td>
+<td>euunit:PPS_HAB_KP05</td>
+<td>Purchasing power standard (PPS) per inhabitant at constant 2005 prices</td>
+</tr>
+<tr>
+<td>MIO_PPS</td>
+<td>euunit:MIO_PPS</td>
+<td>Million purchasing power standards (PPS)</td>
+</tr>
+<tr>
+<td>MIO_PPS_KP00</td>
+<td>euunit:MIO_PPS_KP00</td>
+<td>Million purchasing power standards (PPS) at 2000 prices</td>
+</tr>
+<tr>
+<td>MIO_PPS_KP05</td>
+<td>euunit:MIO_PPS_KP05</td>
+<td>Million purchasing power standards (PPS) at 2005 prices</td>
+</tr>
+<tr>
+<td>MIO_PPCS</td>
+<td>euunit:MIO_PPCS</td>
+<td>Million purchasing power standards based on final consumption</td>
+</tr>
+<tr>
+<td>PPCS_HAB</td>
+<td>euunit:PPCS_HAB</td>
+<td>Purchasing power standard based on final consumption per inhabitant</td>
+</tr>
+<tr>
+<td>GDP_EUR</td>
+<td>euunit:GDP_EUR</td>
+<td>Nominal GDP; absolute level in milliards of euro</td>
+</tr>
+<tr>
+<td>T</td>
+<td>euunit:T</td>
+<td>Tonne</td>
+</tr>
+<tr>
+<td>T_HAB</td>
+<td>euunit:T_HAB</td>
+<td>Tonnes per capita</td>
+</tr>
+<tr>
+<td>1000T</td>
+<td>euunit:1000T</td>
+<td>Thousands of tonnes</td>
+</tr>
+<tr>
+<td>THS_T</td>
+<td>euunit:THS_T</td>
+<td>Thousand tonnes</td>
+</tr>
+<tr>
+<td>1000T_DAY</td>
+<td>euunit:1000T_DAY</td>
+<td>1000 tonnes per day</td>
+</tr>
+<tr>
+<td>T_O2_DAY</td>
+<td>euunit:T_O2_DAY</td>
+<td>Tonnes O2/day</td>
+</tr>
+<tr>
+<td>T_CO2_EQVT</td>
+<td>euunit:T_CO2_EQVT</td>
+<td>Tonnes of CO2-equivalent</td>
+</tr>
+<tr>
+<td>KG_HAB</td>
+<td>euunit:KG_HAB</td>
+<td>Kilograms per capita</td>
+</tr>
+<tr>
+<td>GR_HAB</td>
+<td>euunit:GR_HAB</td>
+<td>Grams per capita</td>
+</tr>
+<tr>
+<td>TPW</td>
+<td>euunit:TPW</td>
+<td>Tonnes product weight</td>
+</tr>
+<tr>
+<td>TLW</td>
+<td>euunit:TLW</td>
+<td>Tonnes live weight</td>
+</tr>
+<tr>
+<td>T_AI</td>
+<td>euunit:T_AI</td>
+<td>Tonnes of active ingredient</td>
+</tr>
+<tr>
+<td>MIO_T</td>
+<td>euunit:MIO_T</td>
+<td>Million tonnes</td>
+</tr>
+<tr>
+<td>EUR_T</td>
+<td>euunit:EUR_T</td>
+<td>Euro per tonne</td>
+</tr>
+<tr>
+<td>NAC_T</td>
+<td>euunit:NAC_T</td>
+<td>National currency per tonne</td>
+</tr>
+<tr>
+<td>T_HA</td>
+<td>euunit:T_HA</td>
+<td>Tonnes per hectare</td>
+</tr>
+<tr>
+<td>KGOE_1000EUR</td>
+<td>euunit:KGOE_1000EUR</td>
+<td>Kilogram of oil equivalent per 1000 euro</td>
+</tr>
+<tr>
+<td>KGOE_M2</td>
+<td>euunit:KGOE_M2</td>
+<td>Kilograms of oil equivalent (KGOE) per square metre</td>
+</tr>
+<tr>
+<td>1000TOE</td>
+<td>euunit:1000TOE</td>
+<td>Thousand tonnes of oil equivalent (TOE)</td>
+</tr>
+<tr>
+<td>THS_TOE</td>
+<td>euunit:THS_TOE</td>
+<td>Thousand TOE (tonnes of oil equivalent)</td>
+</tr>
+<tr>
+<td>MIO_TOE</td>
+<td>euunit:MIO_TOE</td>
+<td>Million tonnes of oil equivalent (TOE)</td>
+</tr>
+<tr>
+<td>KTOE</td>
+<td>euunit:KTOE</td>
+<td>Thousand tonnes of oil equivalent</td>
+</tr>
+<tr>
+<td>MTOE</td>
+<td>euunit:MTOE</td>
+<td>Million tonnes of oil equivalent</td>
+</tr>
+<tr>
+<td>GT</td>
+<td>euunit:GT</td>
+<td>Gross tonnage (GT)</td>
+</tr>
+<tr>
+<td>THS_GT</td>
+<td>euunit:THS_GT</td>
+<td>Gross tonnage (GT) in thousand</td>
+</tr>
+<tr>
+<td>MIO_GTKM</td>
+<td>euunit:MIO_GTKM</td>
+<td>Million gross tonne-kilometres</td>
+</tr>
+<tr>
+<td>THS_TKM</td>
+<td>euunit:THS_TKM</td>
+<td>Thousand tonne-kilometre (TKM)</td>
+</tr>
+<tr>
+<td>1000TKM</td>
+<td>euunit:1000TKM</td>
+<td>Thousands of Tonne-kilometre</td>
+</tr>
+<tr>
+<td>MIO_TKM</td>
+<td>euunit:MIO_TKM</td>
+<td>Million tonne-kilometre (TKM)</td>
+</tr>
+<tr>
+<td>MIO_TKM_OFF</td>
+<td>euunit:MIO_TKM_OFF</td>
+<td>Millions of Tonne-Kilometre offered</td>
+</tr>
+<tr>
+<td>PASS</td>
+<td>euunit:PASS</td>
+<td>Passengers</td>
+</tr>
+<tr>
+<td>1000PASS</td>
+<td>euunit:1000PASS</td>
+<td>1000 Passengers</td>
+</tr>
+<tr>
+<td>1000PASF</td>
+<td>euunit:1000PASF</td>
+<td>1000 passengers (excluding cruise passengers)</td>
+</tr>
+<tr>
+<td>1000PASC</td>
+<td>euunit:1000PASC</td>
+<td>1000 cruise passengers starting and ending a cruise</td>
+</tr>
+<tr>
+<td>1000PAST</td>
+<td>euunit:1000PAST</td>
+<td>1000 cruise passengers on excursion</td>
+</tr>
+<tr>
+<td>MIO_PKM</td>
+<td>euunit:MIO_PKM</td>
+<td>Millions of passenger-kilometres</td>
+</tr>
+<tr>
+<td>PC</td>
+<td>euunit:PC</td>
+<td>Percentage</td>
+</tr>
+<tr>
+<td>PC_AREA</td>
+<td>euunit:PC_AREA</td>
+<td>Percentage of area</td>
+</tr>
+<tr>
+<td>PC_POP</td>
+<td>euunit:PC_POP</td>
+<td>Percentage of total population</td>
+</tr>
+<tr>
+<td>PC_POP_Y20_29</td>
+<td>euunit:PC_POP_Y20_29</td>
+<td>Population - as a percentage of the population aged 20-29</td>
+</tr>
+<tr>
+<td>PC_POP_Y25_29</td>
+<td>euunit:PC_POP_Y25_29</td>
+<td>Population - as a percentage of the population aged 25-29</td>
+</tr>
+<tr>
+<td>PC_POP_GRAD</td>
+<td>euunit:PC_POP_GRAD</td>
+<td>Population - as a percentage of total graduation</td>
+</tr>
+<tr>
+<td>PC_POP_PART</td>
+<td>euunit:PC_POP_PART</td>
+<td>Population - as a percentage of total participation</td>
+</tr>
+<tr>
+<td>PC_POP_STUD</td>
+<td>euunit:PC_POP_STUD</td>
+<td>Population - as a % of total students</td>
+</tr>
+<tr>
+<td>PC_POP_FSTUD</td>
+<td>euunit:PC_POP_FSTUD</td>
+<td>Population - as a % of total foreign students</td>
+</tr>
+<tr>
+<td>PC_POP_UP95</td>
+<td>euunit:PC_POP_UP95</td>
+<td>Percentage of total population - upper boundary of the 95% confidence interval</td>
+</tr>
+<tr>
+<td>PC_POP_LW95</td>
+<td>euunit:PC_POP_LW95</td>
+<td>Percentage of total population - lower boundary of the 95% confidence interval</td>
+</tr>
+<tr>
+<td>PC_ACT</td>
+<td>euunit:PC_ACT</td>
+<td>Percentage of population in the labour force</td>
+</tr>
+<tr>
+<td>PC_ACT_HC</td>
+<td>euunit:PC_ACT_HC</td>
+<td>Percentage of population in the labour force - numerator in head count (HC)</td>
+</tr>
+<tr>
+<td>PC_ACT_FTE</td>
+<td>euunit:PC_ACT_FTE</td>
+<td>Percentage of population in the labour force - numerator in full-time equivalent (FTE)</td>
+</tr>
+<tr>
+<td>PC_INAC</td>
+<td>euunit:PC_INAC</td>
+<td>Percentage of population outside the labour force</td>
+</tr>
+<tr>
+<td>PC_MOB</td>
+<td>euunit:PC_MOB</td>
+<td>Percentage of job-to-job mobile HRST</td>
+</tr>
+<tr>
+<td>PC_TSC</td>
+<td>euunit:PC_TSC</td>
+<td>Percentage of total revenues from taxes and social contributions</td>
+</tr>
+<tr>
+<td>PC_EMP</td>
+<td>euunit:PC_EMP</td>
+<td>Percentage of total employment</td>
+</tr>
+<tr>
+<td>PC_EMP_HC</td>
+<td>euunit:PC_EMP_HC</td>
+<td>Percentage of total employment - numerator in head count (HC)</td>
+</tr>
+<tr>
+<td>PC_EMP_FTE</td>
+<td>euunit:PC_EMP_FTE</td>
+<td>Percentage of total employment - numerator in full-time equivalent (FTE)</td>
+</tr>
+<tr>
+<td>PC_UNE</td>
+<td>euunit:PC_UNE</td>
+<td>Percentage of unemployment</td>
+</tr>
+<tr>
+<td>PC_GDP</td>
+<td>euunit:PC_GDP</td>
+<td>Percentage of gross domestic product (GDP)</td>
+</tr>
+<tr>
+<td>PC_BEN</td>
+<td>euunit:PC_BEN</td>
+<td>Percentage of total benefits</td>
+</tr>
+<tr>
+<td>PC_EXP</td>
+<td>euunit:PC_EXP</td>
+<td>Percentage of total expenditure</td>
+</tr>
+<tr>
+<td>PC_REC</td>
+<td>euunit:PC_REC</td>
+<td>Percentage of total receipts</td>
+</tr>
+<tr>
+<td>PC_CHE</td>
+<td>euunit:PC_CHE</td>
+<td>Percentual share of total current health expenditure (CHE)</td>
+</tr>
+<tr>
+<td>PC_WRL</td>
+<td>euunit:PC_WRL</td>
+<td>Percentage of world total</td>
+</tr>
+<tr>
+<td>PC_TOT</td>
+<td>euunit:PC_TOT</td>
+<td>Percentage of total</td>
+</tr>
+<tr>
+<td>PC_TAX</td>
+<td>euunit:PC_TAX</td>
+<td>Percentage of total taxation</td>
+</tr>
+<tr>
+<td>PC_TOT_HRS</td>
+<td>euunit:PC_TOT_HRS</td>
+<td>Percentage of total (based on hours worked)</td>
+</tr>
+<tr>
+<td>PC_HH</td>
+<td>euunit:PC_HH</td>
+<td>Percentage of households</td>
+</tr>
+<tr>
+<td>PC_CANT</td>
+<td>euunit:PC_CANT</td>
+<td>Cannot afford - percentage</td>
+</tr>
+<tr>
+<td>PC_EMP_CUSE</td>
+<td>euunit:PC_EMP_CUSE</td>
+<td>Percentage of persons employed using a computer</td>
+</tr>
+<tr>
+<td>PC_EMP_IACC</td>
+<td>euunit:PC_EMP_IACC</td>
+<td>Percentage of persons employed working in an enterprise with internet access</td>
+</tr>
+<tr>
+<td>PC_ENT</td>
+<td>euunit:PC_ENT</td>
+<td>Percentage of enterprises</td>
+</tr>
+<tr>
+<td>PC_ENT_CUSE</td>
+<td>euunit:PC_ENT_CUSE</td>
+<td>Percentage of the enterprises which use a computer</td>
+</tr>
+<tr>
+<td>PC_ENT_IACC</td>
+<td>euunit:PC_ENT_IACC</td>
+<td>Percentage of the enterprises with internet access</td>
+</tr>
+<tr>
+<td>PC_ENT_ISELL</td>
+<td>euunit:PC_ENT_ISELL</td>
+<td>Percentage of the enterprises which sold over the internet over the last calendar year</td>
+</tr>
+<tr>
+<td>PC_TURN</td>
+<td>euunit:PC_TURN</td>
+<td>Percentage of turnover</td>
+</tr>
+<tr>
+<td>PC_HH_IACC</td>
+<td>euunit:PC_HH_IACC</td>
+<td>Percentage of households with internet access at home</td>
+</tr>
+<tr>
+<td>PC_IND</td>
+<td>euunit:PC_IND</td>
+<td>Percentage of individuals</td>
+</tr>
+<tr>
+<td>PC_IND_C3</td>
+<td>euunit:PC_IND_C3</td>
+<td>Percentage of individuals who used a computer within the last 3 months</td>
+</tr>
+<tr>
+<td>PC_IND_CEVR</td>
+<td>euunit:PC_IND_CEVR</td>
+<td>Percentage of individuals who used a computer, ever</td>
+</tr>
+<tr>
+<td>PC_IND_ILT12</td>
+<td>euunit:PC_IND_ILT12</td>
+<td>Percentage of individuals who used internet within the last year</td>
+</tr>
+<tr>
+<td>PC_IND_IU3</td>
+<td>euunit:PC_IND_IU3</td>
+<td>Percentage of individuals who used internet in the last 3 months</td>
+</tr>
+<tr>
+<td>PC_IND_CTMT3YX</td>
+<td>euunit:PC_IND_CTMT3YX</td>
+<td>Percentage of individuals who have taken a computer course more than 3 years ago or never</td>
+</tr>
+<tr>
+<td>PC_IND_CIANY</td>
+<td>euunit:PC_IND_CIANY</td>
+<td>Percentage of individuals who have done at least one of the listed computer or internet activities</td>
+</tr>
+<tr>
+<td>PC_PNT</td>
+<td>euunit:PC_PNT</td>
+<td>Percentage point</td>
+</tr>
+<tr>
+<td>PC_IND_BLT12</td>
+<td>euunit:PC_IND_BLT12</td>
+<td>Percentage of individuals who ordered goods or services, over the internet, for private use, in the last year</td>
+</tr>
+<tr>
+<td>PC_IND_BMT12X</td>
+<td>euunit:PC_IND_BMT12X</td>
+<td>Percentage of individuals who ordered goods or services, over the internet, for private use, more than a year ago or who never did</td>
+</tr>
+<tr>
+<td>PC_IND_UMPH</td>
+<td>euunit:PC_IND_UMPH</td>
+<td>Percentage of individuals who use a mobile phone</td>
+</tr>
+<tr>
+<td>PC_IND_IUPH1</td>
+<td>euunit:PC_IND_IUPH1</td>
+<td>Percentage of individuals who used internet for telephoning or video calls in the last 3 months</td>
+</tr>
+<tr>
+<td>PC_IND_IUMFXP</td>
+<td>euunit:PC_IND_IUMFXP</td>
+<td>Percentage of individuals who downloaded/listened to/watched/exchanged/podcasted music or films in the last 3 months</td>
+</tr>
+<tr>
+<td>PC_IND_AVPAYX</td>
+<td>euunit:PC_IND_AVPAYX</td>
+<td>Percentage of individuals who didn't pay for online audiovisual contents in the last 3 months</td>
+</tr>
+<tr>
+<td>PC_ENT_IBUY</td>
+<td>euunit:PC_ENT_IBUY</td>
+<td>Percentage of enterprises which purchased over the internet over the last calendar year</td>
+</tr>
+<tr>
+<td>PC_ENT_PURCH</td>
+<td>euunit:PC_ENT_PURCH</td>
+<td>Percentage of total purchases</td>
+</tr>
+<tr>
+<td>PC_ENT_OBUY</td>
+<td>euunit:PC_ENT_OBUY</td>
+<td>Percentage of enterprises which purchased over networks other than the internet over the last calendar year</td>
+</tr>
+<tr>
+<td>PC_ENT_OSELL</td>
+<td>euunit:PC_ENT_OSELL</td>
+<td>Percentage of enterprises which sold over networks other than the internet over the last calendar year</td>
+</tr>
+<tr>
+<td>PC_ENT_ITSPRCR</td>
+<td>euunit:PC_ENT_ITSPRCR</td>
+<td>Percentage of enterprises which recruited or tried to recruit personnel for jobs requiring ICT specialist skills</td>
+</tr>
+<tr>
+<td>PC_ENT_ITSPRCR2</td>
+<td>euunit:PC_ENT_ITSPRCR2</td>
+<td>Percentage of enterprises which recruited / tried to recruit personnel for jobs requiring ICT specialist skills (reduced comparability with 2007)</td>
+</tr>
+<tr>
+<td>PC_ENT_ITSPVAC</td>
+<td>euunit:PC_ENT_ITSPVAC</td>
+<td>Percentage of enterprises which had hard-to-fill vacancies for jobs requiring ICT specialist skills</td>
+</tr>
+<tr>
+<td>PC_ENT_ITUSRCR</td>
+<td>euunit:PC_ENT_ITUSRCR</td>
+<td>Percentage of enterprises which recruited or tried to recruit personnel for jobs requiring skills in the use of ICT</td>
+</tr>
+<tr>
+<td>PC_VAL_ISELL</td>
+<td>euunit:PC_VAL_ISELL</td>
+<td>Percentage of internet sales</td>
+</tr>
+<tr>
+<td>PC_FAT</td>
+<td>euunit:PC_FAT</td>
+<td>Fat content (% of product weight)</td>
+</tr>
+<tr>
+<td>PC_PRO</td>
+<td>euunit:PC_PRO</td>
+<td>Protein content (% of product weight)</td>
+</tr>
+<tr>
+<td>PC_TOT_PERS</td>
+<td>euunit:PC_TOT_PERS</td>
+<td>Percentage of total (based on persons)</td>
+</tr>
+<tr>
+<td>PC_TOT_HAB</td>
+<td>euunit:PC_TOT_HAB</td>
+<td>Percentage of total (based on inhabitants)</td>
+</tr>
+<tr>
+<td>PC_TOT_FTE</td>
+<td>euunit:PC_TOT_FTE</td>
+<td>Percentage of total (based on full-time equivalents)</td>
+</tr>
+<tr>
+<td>PC_TOT_JOB</td>
+<td>euunit:PC_TOT_JOB</td>
+<td>Percentage of total (based on jobs)</td>
+</tr>
+<tr>
+<td>PC_SAV</td>
+<td>euunit:PC_SAV</td>
+<td>Percentage of savings</td>
+</tr>
+<tr>
+<td>IDX</td>
+<td>euunit:IDX</td>
+<td>Index</td>
+</tr>
+<tr>
+<td>I2010</td>
+<td>euunit:I2010</td>
+<td>Index, 2010=100</td>
+</tr>
+<tr>
+<td>I2009</td>
+<td>euunit:I2009</td>
+<td>Index, 2009=100</td>
+</tr>
+<tr>
+<td>I2008</td>
+<td>euunit:I2008</td>
+<td>Index, 2008=100</td>
+</tr>
+<tr>
+<td>I2006</td>
+<td>euunit:I2006</td>
+<td>Index, 2006=100</td>
+</tr>
+<tr>
+<td>I2005</td>
+<td>euunit:I2005</td>
+<td>Index, 2005=100</td>
+</tr>
+<tr>
+<td>I2001</td>
+<td>euunit:I2001</td>
+<td>Index, 2001=100</td>
+</tr>
+<tr>
+<td>I2000</td>
+<td>euunit:I2000</td>
+<td>Index, 2000=100</td>
+</tr>
+<tr>
+<td>I10</td>
+<td>euunit:I10</td>
+<td>Index, 2010=100</td>
+</tr>
+<tr>
+<td>I09</td>
+<td>euunit:I09</td>
+<td>Index, 2009=100</td>
+</tr>
+<tr>
+<td>I08</td>
+<td>euunit:I08</td>
+<td>Index, 2008=100</td>
+</tr>
+<tr>
+<td>I06</td>
+<td>euunit:I06</td>
+<td>Index, 2006=100</td>
+</tr>
+<tr>
+<td>I05</td>
+<td>euunit:I05</td>
+<td>Index, 2005=100</td>
+</tr>
+<tr>
+<td>I01</td>
+<td>euunit:I01</td>
+<td>Index, 2001=100</td>
+</tr>
+<tr>
+<td>I00</td>
+<td>euunit:I00</td>
+<td>Index, 2000=100</td>
+</tr>
+<tr>
+<td>I99Q01</td>
+<td>euunit:I99Q01</td>
+<td>Index, first quarter 1999=100</td>
+</tr>
+<tr>
+<td>I99</td>
+<td>euunit:I99</td>
+<td>Index, 1999=100</td>
+</tr>
+<tr>
+<td>I96</td>
+<td>euunit:I96</td>
+<td>Index, 1996=100</td>
+</tr>
+<tr>
+<td>I95</td>
+<td>euunit:I95</td>
+<td>Index, 1995=100</td>
+</tr>
+<tr>
+<td>I90</td>
+<td>euunit:I90</td>
+<td>Index, 1990=100</td>
+</tr>
+<tr>
+<td>I_EU27</td>
+<td>euunit:I_EU27</td>
+<td>Index, EU27=100</td>
+</tr>
+<tr>
+<td>I_EU15</td>
+<td>euunit:I_EU15</td>
+<td>Index, EU15=100</td>
+</tr>
+<tr>
+<td>I_LAST</td>
+<td>euunit:I_LAST</td>
+<td>Index, latest year = 100</td>
+</tr>
+<tr>
+<td>I_NAT</td>
+<td>euunit:I_NAT</td>
+<td>National base year</td>
+</tr>
+<tr>
+<td>I_N_1</td>
+<td>euunit:I_N_1</td>
+<td>Index, n-1 = 100</td>
+</tr>
+<tr>
+<td>PCH_PRE</td>
+<td>euunit:PCH_PRE</td>
+<td>Percentage change on previous period</td>
+</tr>
+<tr>
+<td>PCH_SM</td>
+<td>euunit:PCH_SM</td>
+<td>Percentage change compared to same period in previous year</td>
+</tr>
+<tr>
+<td>PCH_SAME</td>
+<td>euunit:PCH_SAME</td>
+<td>Percentage change compared to same period in previous year</td>
+</tr>
+<tr>
+<td>PCH_ANN</td>
+<td>euunit:PCH_ANN</td>
+<td>Annualized percentage change on previous period</td>
+</tr>
+<tr>
+<td>PCH_PRE_CPI00_NAC</td>
+<td>euunit:PCH_PRE_CPI00_NAC</td>
+<td>Price index - percentage change on previous period, based on 2000=100 and national currency</td>
+</tr>
+<tr>
+<td>PCH_PRE_CPI05_NAC</td>
+<td>euunit:PCH_PRE_CPI05_NAC</td>
+<td>Price index - percentage change on previous period, based on 2005=100 and national currency</td>
+</tr>
+<tr>
+<td>PCH_PRE_CPI00_EUR</td>
+<td>euunit:PCH_PRE_CPI00_EUR</td>
+<td>Price index - percentage change on previous period, based on 2000=100 and the euro</td>
+</tr>
+<tr>
+<td>PCH_PRE_CPI05_EUR</td>
+<td>euunit:PCH_PRE_CPI05_EUR</td>
+<td>Price index - percentage change on previous period, based on 2005=100 and the euro</td>
+</tr>
+<tr>
+<td>PCH_SAME_CPI00_NAC</td>
+<td>euunit:PCH_SAME_CPI00_NAC</td>
+<td>Price index - percentage change compared to same period in previous year, based on 2000=100 and national currency</td>
+</tr>
+<tr>
+<td>PCH_SAME_CPI05_NAC</td>
+<td>euunit:PCH_SAME_CPI05_NAC</td>
+<td>Price index - percentage change compared to same period in previous year, based on 2005=100 and national currency</td>
+</tr>
+<tr>
+<td>PCH_SAME_CPI00_EUR</td>
+<td>euunit:PCH_SAME_CPI00_EUR</td>
+<td>Price index - percentage change compared to same period in previous year, based on 2000=100 and the euro</td>
+</tr>
+<tr>
+<td>PCH_SAME_CPI05_EUR</td>
+<td>euunit:PCH_SAME_CPI05_EUR</td>
+<td>Price index - percentage change compared to same period in previous year, based on 2005=100 and the euro</td>
+</tr>
+<tr>
+<td>PCH_PRE_EUR</td>
+<td>euunit:PCH_PRE_EUR</td>
+<td>Percentage change on previous period, euro</td>
+</tr>
+<tr>
+<td>PCH_PRE_HAB</td>
+<td>euunit:PCH_PRE_HAB</td>
+<td>Percentage change on previous period (based on inhabitants)</td>
+</tr>
+<tr>
+<td>PCH_PRE_FTE</td>
+<td>euunit:PCH_PRE_FTE</td>
+<td>Percentage change on previous period (based on full-time equivalents)</td>
+</tr>
+<tr>
+<td>PCH_PRE_HRS</td>
+<td>euunit:PCH_PRE_HRS</td>
+<td>Percentage change on previous period (based on hours worked)</td>
+</tr>
+<tr>
+<td>PCH_PRE_JOB</td>
+<td>euunit:PCH_PRE_JOB</td>
+<td>Percentage change on previous period (based on jobs)</td>
+</tr>
+<tr>
+<td>PCH_SAME_HAB</td>
+<td>euunit:PCH_SAME_HAB</td>
+<td>Percentage change compared to same period in previous year (based on inhabitants)</td>
+</tr>
+<tr>
+<td>PCH_SAME_FTE</td>
+<td>euunit:PCH_SAME_FTE</td>
+<td>Percentage change compared to same period in previous year (based on full-time equivalents)</td>
+</tr>
+<tr>
+<td>PCH_SAME_HRS</td>
+<td>euunit:PCH_SAME_HRS</td>
+<td>Percentage change compared to same period in previous year (based on hours worked)</td>
+</tr>
+<tr>
+<td>PCH_SAME_JOB</td>
+<td>euunit:PCH_SAME_JOB</td>
+<td>Percentage change compared to same period in previous year (based on employment)</td>
+</tr>
+<tr>
+<td>PCH_PRE_PERS</td>
+<td>euunit:PCH_PRE_PERS</td>
+<td>Percentage change on previous period (based on persons)</td>
+</tr>
+<tr>
+<td>PCH_SAME_PERS</td>
+<td>euunit:PCH_SAME_PERS</td>
+<td>Percentage change compared to same period in previous year (based on persons)</td>
+</tr>
+<tr>
+<td>PCH_PRE_PERS_SWDA</td>
+<td>euunit:PCH_PRE_PERS_SWDA</td>
+<td>Percentage change over previous period (based on persons, SWDA)</td>
+</tr>
+<tr>
+<td>PCH_SAME_PERS_NSA</td>
+<td>euunit:PCH_SAME_PERS_NSA</td>
+<td>Percentage change compared to same period in previous year (based on persons, NSA)</td>
+</tr>
+<tr>
+<td>TOT_DISCH</td>
+<td>euunit:TOT_DISCH</td>
+<td>All discharges (inpatients and day cases)</td>
+</tr>
+<tr>
+<td>TOT_INPAT</td>
+<td>euunit:TOT_INPAT</td>
+<td>In-patients (total number)</td>
+</tr>
+<tr>
+<td>100000_INPAT</td>
+<td>euunit:100000_INPAT</td>
+<td>In-patients per 100,000 inhabitants</td>
+</tr>
+<tr>
+<td>ALOS</td>
+<td>euunit:ALOS</td>
+<td>In-patient average length of stay (in days)</td>
+</tr>
+<tr>
+<td>DAYS_HOSP</td>
+<td>euunit:DAYS_HOSP</td>
+<td>Hospital days of in-patients</td>
+</tr>
+<tr>
+<td>ONE_DAY</td>
+<td>euunit:ONE_DAY</td>
+<td>Day cases (total number)</td>
+</tr>
+<tr>
+<td>AVG</td>
+<td>euunit:AVG</td>
+<td>Average</td>
+</tr>
+<tr>
+<td>MV12R</td>
+<td>euunit:MV12R</td>
+<td>Moving 12-months average rate of change</td>
+</tr>
+<tr>
+<td>RT</td>
+<td>euunit:RT</td>
+<td>Rate</td>
+</tr>
+<tr>
+<td>SDTH_RT</td>
+<td>euunit:SDTH_RT</td>
+<td>Standardised death rate</td>
+</tr>
+<tr>
+<td>CDTH_RT</td>
+<td>euunit:CDTH_RT</td>
+<td>Crude death rate</td>
+</tr>
+<tr>
+<td>INC_RT</td>
+<td>euunit:INC_RT</td>
+<td>Incidence rate</td>
+</tr>
+<tr>
+<td>SINC_RT</td>
+<td>euunit:SINC_RT</td>
+<td>Standardised incidence rate</td>
+</tr>
+<tr>
+<td>LTU_UNE_RT</td>
+<td>euunit:LTU_UNE_RT</td>
+<td>Long-term unemployment rate</td>
+</tr>
+<tr>
+<td>LTU_UNE_RS</td>
+<td>euunit:LTU_UNE_RS</td>
+<td>Long-term unemployment as a percentage of the total unemployment</td>
+</tr>
+<tr>
+<td>INT_RT</td>
+<td>euunit:INT_RT</td>
+<td>Interest rate</td>
+</tr>
+<tr>
+<td>REL1</td>
+<td>euunit:REL1</td>
+<td>Relative value, relating to all enterprises</td>
+</tr>
+<tr>
+<td>REL2</td>
+<td>euunit:REL2</td>
+<td>Relative value, relating to innovating enterprises</td>
+</tr>
+<tr>
+<td>REL3</td>
+<td>euunit:REL3</td>
+<td>Relative value, relating to product innovators</td>
+</tr>
+<tr>
+<td>REL4</td>
+<td>euunit:REL4</td>
+<td>Relative value, relating to process innovators</td>
+</tr>
+<tr>
+<td>REL5</td>
+<td>euunit:REL5</td>
+<td>Relative value, relating to service innovators</td>
+</tr>
+<tr>
+<td>REL6</td>
+<td>euunit:REL6</td>
+<td>Relative value, relating to total innovation expenditure</td>
+</tr>
+<tr>
+<td>REL7</td>
+<td>euunit:REL7</td>
+<td>Relative value, relating to innovating enterprises with innovation cooperation</td>
+</tr>
+<tr>
+<td>REL8</td>
+<td>euunit:REL8</td>
+<td>Relative value, relating to innovating enterprises with seriously delayed projects</td>
+</tr>
+<tr>
+<td>REL9</td>
+<td>euunit:REL9</td>
+<td>Relative value, relating to innovating enterprises with abolished projects</td>
+</tr>
+<tr>
+<td>REL10</td>
+<td>euunit:REL10</td>
+<td>Relative value, relating to innovating enterprises with not even started projects</td>
+</tr>
+<tr>
+<td>REL11</td>
+<td>euunit:REL11</td>
+<td>Relative value, relating to enterprises in the corresponding level of export intensity</td>
+</tr>
+<tr>
+<td>REL12</td>
+<td>euunit:REL12</td>
+<td>Relative value, relating to enterprises in the corresponding type of firm</td>
+</tr>
+<tr>
+<td>CVA</td>
+<td>euunit:CVA</td>
+<td>Coefficient of variation for absolute value</td>
+</tr>
+<tr>
+<td>CV1</td>
+<td>euunit:CV1</td>
+<td>Coefficient of variation for relative value, relating to all enterprises</td>
+</tr>
+<tr>
+<td>CV2</td>
+<td>euunit:CV2</td>
+<td>Coefficient of variation for relative value, relating to innovating enterprises</td>
+</tr>
+<tr>
+<td>CV3</td>
+<td>euunit:CV3</td>
+<td>Coefficient of variation for relative value, relating to product innovators</td>
+</tr>
+<tr>
+<td>CV4</td>
+<td>euunit:CV4</td>
+<td>Coefficient of variation for relative value, relating to process innovators</td>
+</tr>
+<tr>
+<td>CV5</td>
+<td>euunit:CV5</td>
+<td>Coefficient of variation for relative value, relating to service innovators</td>
+</tr>
+<tr>
+<td>CV6</td>
+<td>euunit:CV6</td>
+<td>Coefficient of variation for relative value, relating to total innovation expenditure</td>
+</tr>
+<tr>
+<td>CV7</td>
+<td>euunit:CV7</td>
+<td>Coefficient of variation for relative value, relating to enterprises with innovation cooperation</td>
+</tr>
+<tr>
+<td>CV8</td>
+<td>euunit:CV8</td>
+<td>Coefficient of variation for relative value, relating to innovating enterprises with seriously delayed projects</td>
+</tr>
+<tr>
+<td>CV9</td>
+<td>euunit:CV9</td>
+<td>Coefficient of variation for relative value, relating to innovating enterprises with abolished projects</td>
+</tr>
+<tr>
+<td>CV10</td>
+<td>euunit:CV10</td>
+<td>Coefficient of variation for relative value, relating to innovating enterprises with not even started projects</td>
+</tr>
+<tr>
+<td>CV11</td>
+<td>euunit:CV11</td>
+<td>Coefficient of variation for relative value, relating to enterprises in the corresponding level of export intensity</td>
+</tr>
+<tr>
+<td>CV12</td>
+<td>euunit:CV12</td>
+<td>Coefficient of variation for relative value, relating to enterprises in the corresponding type of firm</td>
+</tr>
+<tr>
+<td>CPI00_NAC</td>
+<td>euunit:CPI00_NAC</td>
+<td>Price index, 2000=100, national currency</td>
+</tr>
+<tr>
+<td>CPI05_NAC</td>
+<td>euunit:CPI05_NAC</td>
+<td>Price index, 2005=100, national currency</td>
+</tr>
+<tr>
+<td>CPI00_EUR</td>
+<td>euunit:CPI00_EUR</td>
+<td>Price index, 2000=100, euro</td>
+</tr>
+<tr>
+<td>CPI05_EUR</td>
+<td>euunit:CPI05_EUR</td>
+<td>Price index, 2005=100, euro</td>
+</tr>
+<tr>
+<td>IPP85</td>
+<td>euunit:IPP85</td>
+<td>Index of purchasing power of the ECU, non-harmonised (1985=100)</td>
+</tr>
+<tr>
+<td>IPP96</td>
+<td>euunit:IPP96</td>
+<td>Index of purchasing power of the ECU, non-harmonised (1996=100)</td>
+</tr>
+<tr>
+<td>IPPE96</td>
+<td>euunit:IPPE96</td>
+<td>Index of purchasing power of the euro, harmonised (1996=100) (ECU up to 31.12.1998)</td>
+</tr>
+<tr>
+<td>I_MED</td>
+<td>euunit:I_MED</td>
+<td>Income index (compared to national median)</td>
+</tr>
+<tr>
+<td>I_MEAN</td>
+<td>euunit:I_MEAN</td>
+<td>Income index (compared to national mean)</td>
+</tr>
+<tr>
+<td>HICP2005</td>
+<td>euunit:HICP2005</td>
+<td>Harmonized consumer price index, 2005=100</td>
+</tr>
+<tr>
+<td>M</td>
+<td>euunit:M</td>
+<td>Metre</td>
+</tr>
+<tr>
+<td>M2</td>
+<td>euunit:M2</td>
+<td>Square metre</td>
+</tr>
+<tr>
+<td>M3</td>
+<td>euunit:M3</td>
+<td>Cubic metre</td>
+</tr>
+<tr>
+<td>1000M3</td>
+<td>euunit:1000M3</td>
+<td>Thousands of cubic metres</td>
+</tr>
+<tr>
+<td>THS_M3</td>
+<td>euunit:THS_M3</td>
+<td>Thousand cubic metres</td>
+</tr>
+<tr>
+<td>MIO_M3</td>
+<td>euunit:MIO_M3</td>
+<td>Million cubic metres</td>
+</tr>
+<tr>
+<td>M3_HAB</td>
+<td>euunit:M3_HAB</td>
+<td>Cubic metres per inhabitant</td>
+</tr>
+<tr>
+<td>KM</td>
+<td>euunit:KM</td>
+<td>Kilometre</td>
+</tr>
+<tr>
+<td>KM2</td>
+<td>euunit:KM2</td>
+<td>Square kilometre</td>
+</tr>
+<tr>
+<td>HA</td>
+<td>euunit:HA</td>
+<td>Hectare</td>
+</tr>
+<tr>
+<td>HA_AA</td>
+<td>euunit:HA_AA</td>
+<td>ha (Agricultural area)</td>
+</tr>
+<tr>
+<td>ESU</td>
+<td>euunit:ESU</td>
+<td>European size unit (ESU)</td>
+</tr>
+<tr>
+<td>ESU_SGM</td>
+<td>euunit:ESU_SGM</td>
+<td>ESU (Economic size)</td>
+</tr>
+<tr>
+<td>1000HA</td>
+<td>euunit:1000HA</td>
+<td>Thousands of hectares</td>
+</tr>
+<tr>
+<td>THS_HA</td>
+<td>euunit:THS_HA</td>
+<td>Thousand hectares</td>
+</tr>
+<tr>
+<td>TEU</td>
+<td>euunit:TEU</td>
+<td>Twenty-foot equivalent unit (TEU)</td>
+</tr>
+<tr>
+<td>1000TEU</td>
+<td>euunit:1000TEU</td>
+<td>Thousands of TEUs (Twenty-foot Equivalent Units)</td>
+</tr>
+<tr>
+<td>THS_TEU</td>
+<td>euunit:THS_TEU</td>
+<td>Thousand twenty-foot equivalent unit (TEU)</td>
+</tr>
+<tr>
+<td>1000TEU_KM</td>
+<td>euunit:1000TEU_KM</td>
+<td>Thousands of TEUs (Twenty-foot Equivalent Units)/Km</td>
+</tr>
+<tr>
+<td>GR</td>
+<td>euunit:GR</td>
+<td>Grams</td>
+</tr>
+<tr>
+<td>GR_PKM</td>
+<td>euunit:GR_PKM</td>
+<td>Grams of CO2 per passenger-kilometer</td>
+</tr>
+<tr>
+<td>GR_FTKM</td>
+<td>euunit:GR_FTKM</td>
+<td>Grams of CO2 per freight tonne-kilometer</td>
+</tr>
+<tr>
+<td>GR_TTKM</td>
+<td>euunit:GR_TTKM</td>
+<td>Grams of CO2 per total tonne-kilometer</td>
+</tr>
+<tr>
+<td>G_FTKM</td>
+<td>euunit:G_FTKM</td>
+<td>Grams per freight tonne-kilometre</td>
+</tr>
+<tr>
+<td>G_PKM</td>
+<td>euunit:G_PKM</td>
+<td>Grams per passenger-kilometre</td>
+</tr>
+<tr>
+<td>G_TKM</td>
+<td>euunit:G_TKM</td>
+<td>Grams per tonne-kilometre</td>
+</tr>
+<tr>
+<td>KG</td>
+<td>euunit:KG</td>
+<td>Kilogram</td>
+</tr>
+<tr>
+<td>MIO_KG</td>
+<td>euunit:MIO_KG</td>
+<td>Millions of kilograms</td>
+</tr>
+<tr>
+<td>LT</td>
+<td>euunit:LT</td>
+<td>Litres</td>
+</tr>
+<tr>
+<td>L</td>
+<td>euunit:L</td>
+<td>Litre</td>
+</tr>
+<tr>
+<td>1000HLT</td>
+<td>euunit:1000HLT</td>
+<td>1000 hectolitre</td>
+</tr>
+<tr>
+<td>THS_HL</td>
+<td>euunit:THS_HL</td>
+<td>Thousand hectolitres</td>
+</tr>
+<tr>
+<td>OZ</td>
+<td>euunit:OZ</td>
+<td>Ounce</td>
+</tr>
+<tr>
+<td>MIO_OZ</td>
+<td>euunit:MIO_OZ</td>
+<td>Millions of ounces</td>
+</tr>
+<tr>
+<td>KW</td>
+<td>euunit:KW</td>
+<td>Kilowatt</td>
+</tr>
+<tr>
+<td>1000KW</td>
+<td>euunit:1000KW</td>
+<td>1000 Kilowatt</td>
+</tr>
+<tr>
+<td>MW</td>
+<td>euunit:MW</td>
+<td>Megawatt</td>
+</tr>
+<tr>
+<td>GW</td>
+<td>euunit:GW</td>
+<td>Gigawatt</td>
+</tr>
+<tr>
+<td>KWH</td>
+<td>euunit:KWH</td>
+<td>Kilowatt-hour</td>
+</tr>
+<tr>
+<td>EUR_KWH</td>
+<td>euunit:EUR_KWH</td>
+<td>Euro per kilowatt-hour (kWh)</td>
+</tr>
+<tr>
+<td>GWH</td>
+<td>euunit:GWH</td>
+<td>Gigawatt-hour</td>
+</tr>
+<tr>
+<td>KCAL</td>
+<td>euunit:KCAL</td>
+<td>Kilocalorie</td>
+</tr>
+<tr>
+<td>TJ</td>
+<td>euunit:TJ</td>
+<td>Terajoule</td>
+</tr>
+<tr>
+<td>TJ_GCV</td>
+<td>euunit:TJ_GCV</td>
+<td>Terajoule (gross calorific value - GCV)</td>
+</tr>
+<tr>
+<td>GJ_GCV</td>
+<td>euunit:GJ_GCV</td>
+<td>Gigajoule (gross calorific value - GCV)</td>
+</tr>
+<tr>
+<td>MN</td>
+<td>euunit:MN</td>
+<td>Minute</td>
+</tr>
+<tr>
+<td>1000MN</td>
+<td>euunit:1000MN</td>
+<td>1000 minutes</td>
+</tr>
+<tr>
+<td>THS_MN</td>
+<td>euunit:THS_MN</td>
+<td>Thousand minutes</td>
+</tr>
+<tr>
+<td>HOUR</td>
+<td>euunit:HOUR</td>
+<td>Hour</td>
+</tr>
+<tr>
+<td>HR</td>
+<td>euunit:HR</td>
+<td>Hour</td>
+</tr>
+<tr>
+<td>DAY</td>
+<td>euunit:DAY</td>
+<td>Day</td>
+</tr>
+<tr>
+<td>MONTH</td>
+<td>euunit:MONTH</td>
+<td>Month</td>
+</tr>
+<tr>
+<td>MTH</td>
+<td>euunit:MTH</td>
+<td>Month</td>
+</tr>
+<tr>
+<td>YR</td>
+<td>euunit:YR</td>
+<td>Year</td>
+</tr>
+<tr>
+<td>HD</td>
+<td>euunit:HD</td>
+<td>Head (animal)</td>
+</tr>
+<tr>
+<td>THS_HD</td>
+<td>euunit:THS_HD</td>
+<td>Thousand heads (animals)</td>
+</tr>
+<tr>
+<td>1000HD</td>
+<td>euunit:1000HD</td>
+<td>1000 heads (animals)</td>
+</tr>
+<tr>
+<td>1000TC</td>
+<td>euunit:1000TC</td>
+<td>1000 tonnes carcasse</td>
+</tr>
+<tr>
+<td>AWU</td>
+<td>euunit:AWU</td>
+<td>Annual working unit (AWU)</td>
+</tr>
+<tr>
+<td>1000AWU</td>
+<td>euunit:1000AWU</td>
+<td>1000 annual working units</td>
+</tr>
+<tr>
+<td>THS_AWU</td>
+<td>euunit:THS_AWU</td>
+<td>Thousand annual working units (AWU)</td>
+</tr>
+<tr>
+<td>HOLD</td>
+<td>euunit:HOLD</td>
+<td>Number of holdings</td>
+</tr>
+<tr>
+<td>MACH</td>
+<td>euunit:MACH</td>
+<td>Machine</td>
+</tr>
+<tr>
+<td>LSU</td>
+<td>euunit:LSU</td>
+<td>Livestock unit (LSU)</td>
+</tr>
+<tr>
+<td>HC</td>
+<td>euunit:HC</td>
+<td>Head count</td>
+</tr>
+<tr>
+<td>NB_TOT</td>
+<td>euunit:NB_TOT</td>
+<td>All (no breakdown)</td>
+</tr>
+<tr>
+<td>NB_TOT_BERD</td>
+<td>euunit:NB_TOT_BERD</td>
+<td>Total number of patent applications by milliard EUR of Business enterprise sector's R&amp;D expenditure (BERD)</td>
+</tr>
+<tr>
+<td>NB_TOT_GERD</td>
+<td>euunit:NB_TOT_GERD</td>
+<td>Total number of patent applications by milliard EUR of total R&amp;D expenditure (GERD)</td>
+</tr>
+<tr>
+<td>MIO_ACT</td>
+<td>euunit:MIO_ACT</td>
+<td>Per million labour force</td>
+</tr>
+<tr>
+<td>1000HRS</td>
+<td>euunit:1000HRS</td>
+<td>Thousands of hours worked</td>
+</tr>
+<tr>
+<td>THS_HR</td>
+<td>euunit:THS_HR</td>
+<td>Thousand hours</td>
+</tr>
+<tr>
+<td>MIO_HRS</td>
+<td>euunit:MIO_HRS</td>
+<td>Millions of hours</td>
+</tr>
+<tr>
+<td>MIO_HR</td>
+<td>euunit:MIO_HR</td>
+<td>Million hours</td>
+</tr>
+<tr>
+<td>JOB</td>
+<td>euunit:JOB</td>
+<td>Jobs</td>
+</tr>
+<tr>
+<td>1000JOB</td>
+<td>euunit:1000JOB</td>
+<td>Thousands of jobs</td>
+</tr>
+<tr>
+<td>MIO_JOB</td>
+<td>euunit:MIO_JOB</td>
+<td>Millions of jobs</td>
+</tr>
+<tr>
+<td>NBR_PAYMT</td>
+<td>euunit:NBR_PAYMT</td>
+<td>Number of payments</td>
+</tr>
+<tr>
+<td>FTE</td>
+<td>euunit:FTE</td>
+<td>Full-time equivalent (FTE)</td>
+</tr>
+<tr>
+<td>1000FTE</td>
+<td>euunit:1000FTE</td>
+<td>Thousands full-time equivalents</td>
+</tr>
+<tr>
+<td>HC_HAB</td>
+<td>euunit:HC_HAB</td>
+<td>Head count per 100 000 inhabitants</td>
+</tr>
+<tr>
+<td>FTE_HAB</td>
+<td>euunit:FTE_HAB</td>
+<td>Full time equivalent per 100 000 inhabitants</td>
+</tr>
+<tr>
+<td>HAB_HC</td>
+<td>euunit:HAB_HC</td>
+<td>Inhabitants per ... (head count)</td>
+</tr>
+<tr>
+<td>HAB_FTE</td>
+<td>euunit:HAB_FTE</td>
+<td>Inhabitants per ... (full time equivalent)</td>
+</tr>
+<tr>
+<td>PCE</td>
+<td>euunit:PCE</td>
+<td>Piece</td>
+</tr>
+<tr>
+<td>PER</td>
+<td>euunit:PER</td>
+<td>Person</td>
+</tr>
+<tr>
+<td>PERS</td>
+<td>euunit:PERS</td>
+<td>Persons</td>
+</tr>
+<tr>
+<td>1000PERS</td>
+<td>euunit:1000PERS</td>
+<td>1000 persons</td>
+</tr>
+<tr>
+<td>MIO_PERS</td>
+<td>euunit:MIO_PERS</td>
+<td>Millions of persons</td>
+</tr>
+<tr>
+<td>SAL_Y</td>
+<td>euunit:SAL_Y</td>
+<td>Per employee in full-time units, per year</td>
+</tr>
+<tr>
+<td>SAL_M</td>
+<td>euunit:SAL_M</td>
+<td>Per employee in full-time units, per month</td>
+</tr>
+<tr>
+<td>SAL_H</td>
+<td>euunit:SAL_H</td>
+<td>Per employee in full-time units, per hour</td>
+</tr>
+<tr>
+<td>TSAL_Y</td>
+<td>euunit:TSAL_Y</td>
+<td>Total for all employees, per year</td>
+</tr>
+<tr>
+<td>TOT_Y</td>
+<td>euunit:TOT_Y</td>
+<td>Total per year</td>
+</tr>
+<tr>
+<td>Y_WORKER</td>
+<td>euunit:Y_WORKER</td>
+<td>Per employee (excluding apprentices) in full-time units, per year</td>
+</tr>
+<tr>
+<td>M_WORKER</td>
+<td>euunit:M_WORKER</td>
+<td>Per employee (excluding apprentices) in full-time units, per month</td>
+</tr>
+<tr>
+<td>H_WORKER</td>
+<td>euunit:H_WORKER</td>
+<td>Per employee (excluding apprentices) in full-time units, per hour</td>
+</tr>
+<tr>
+<td>P_KM2</td>
+<td>euunit:P_KM2</td>
+<td>Per square kilometre</td>
+</tr>
+<tr>
+<td>AAPR</td>
+<td>euunit:AAPR</td>
+<td>Annualised agreed percentage rate</td>
+</tr>
+<tr>
+<td>APRC</td>
+<td>euunit:APRC</td>
+<td>Annual percentage rate of charge</td>
+</tr>
+<tr>
+<td>TOTAL</td>
+<td>euunit:TOTAL</td>
+<td>Total</td>
+</tr>
+<tr>
+<td>1000_PERS_SA</td>
+<td>euunit:1000-PERS-SA</td>
+<td>Thousands of persons - seasonally adjusted</td>
+</tr>
+<tr>
+<td>1000_PERS_NSA</td>
+<td>euunit:1000-PERS-NSA</td>
+<td>Thousands of persons - not seasonally adjusted</td>
+</tr>
+<tr>
+<td>BAL</td>
+<td>euunit:BAL</td>
+<td>Balance</td>
+</tr>
+<tr>
+<td>MIO_EUR_SA</td>
+<td>euunit:MIO-EUR-SA</td>
+<td>Trade value - million of euro - seasonally and working day adjusted</td>
+</tr>
+<tr>
+<td>MIO_EUR_NSA</td>
+<td>euunit:MIO_EUR_NSA</td>
+<td>Million euro (NSA)</td>
+</tr>
+<tr>
+<td>IVU_NSA</td>
+<td>euunit:IVU-NSA</td>
+<td>Unit value index (2015=100) - not seasonally adjusted</td>
+</tr>
+<tr>
+<td>IVOL_SA</td>
+<td>euunit:IVOL-SA</td>
+<td>Volume index (2015=100) - seasonally and working day adjusted</td>
+</tr>
+<tr>
+<td>IVOL_NSA</td>
+<td>euunit:IVOL-NSA</td>
+<td>Volume index (2015=100) - not seasonally adjusted</td>
+</tr>
+<tr>
+<td>RT1</td>
+<td>euunit:RT1</td>
+<td>Growth rate on previous period (t/t-1)</td>
+</tr>
+<tr>
+<td>RT1_NBR</td>
+<td>euunit:RT1_NBR</td>
+<td>Growth rate on previous period (t/t-1) for number of vessels</td>
+</tr>
+<tr>
+<td>RT1_GT</td>
+<td>euunit:RT1_GT</td>
+<td>Growth rate over previous period (t/t-1) for gross tonnage of vessels</td>
+</tr>
+<tr>
+<td>RT12</td>
+<td>euunit:RT12</td>
+<td>Growth rate (t/t-12)</td>
+</tr>
+<tr>
+<td>RT1_ABS_SA</td>
+<td>euunit:RT1-ABS-SA</td>
+<td>Trade value - growth rate (m/m-1) - seasonally and working day adjusted</td>
+</tr>
+<tr>
+<td>RT12_ABS_NSA</td>
+<td>euunit:RT12-ABS-NSA</td>
+<td>Trade value - growth rate (m/m-12) - not seasonally adjusted</td>
+</tr>
+<tr>
+<td>RT1_IVU_NSA</td>
+<td>euunit:RT1-IVU-NSA</td>
+<td>Unit value index (2015=100) - growth rate (m/m-1) - not seasonally adjusted</td>
+</tr>
+<tr>
+<td>RT12_IVU_NSA</td>
+<td>euunit:RT12-IVU-NSA</td>
+<td>Unit value index (2015=100) - growth rate (m/m-12) - not seasonally adjusted</td>
+</tr>
+<tr>
+<td>RT1_IVOL_SA</td>
+<td>euunit:RT1-IVOL-SA</td>
+<td>Volume index (2015=100) - growth rate (m/m-1) - seasonally and working day adjusted</td>
+</tr>
+<tr>
+<td>RT12_IVOL_NSA</td>
+<td>euunit:RT12-IVOL-NSA</td>
+<td>Volume index (2015=100) - growth rate (m/m-12) - not seasonally adjusted</td>
+</tr>
+<tr>
+<td>RT1_SA</td>
+<td>euunit:RT1-SA</td>
+<td>Percentage change (t/t-1) - seasonally adjusted data</td>
+</tr>
+<tr>
+<td>RT1_SWDA</td>
+<td>euunit:RT1-SWDA</td>
+<td>Percentage change t/t-1 - seasonally and working day adjusted data</td>
+</tr>
+<tr>
+<td>RT4_NSA</td>
+<td>euunit:RT4-NSA</td>
+<td>Percentage change (t/t-4) - not seasonally adjusted data</td>
+</tr>
+<tr>
+<td>RT12_NSA</td>
+<td>euunit:RT12-NSA</td>
+<td>Percentage change (t/t-12) - not seasonally adjusted data</td>
+</tr>
+<tr>
+<td>RT4</td>
+<td>euunit:RT4</td>
+<td>Growth rate on the same quarter in previous year</td>
+</tr>
+<tr>
+<td>PC_EU27</td>
+<td>euunit:PC_EU27</td>
+<td>Percentage of EU27 (2007-2013) total</td>
+</tr>
+<tr>
+<td>PC_EU25</td>
+<td>euunit:PC_EU25</td>
+<td>Percentage of EU25 (2004-2006) total</td>
+</tr>
+<tr>
+<td>PC_EU25_EUR_HAB</td>
+<td>euunit:PC_EU25_EUR_HAB</td>
+<td>Percentage of EU25 (2004-2006) total (based on euro per inhabitant)</td>
+</tr>
+<tr>
+<td>PC_EU27_EUR_HAB</td>
+<td>euunit:PC_EU27_EUR_HAB</td>
+<td>Percentage of EU27 (2007-2013) total (based on euro per inhabitant)</td>
+</tr>
+<tr>
+<td>PC_EU27_PPS_HAB</td>
+<td>euunit:PC_EU27_PPS_HAB</td>
+<td>Percentage of EU27 (2007-2013) total (based on purchasing power standards per inhabitant)</td>
+</tr>
+<tr>
+<td>PC_EU15_PPS_EMP</td>
+<td>euunit:PC_EU15_PPS_EMP</td>
+<td>Percentage of EU15 (1995-2004) total (based on purchasing power standards per employed person)</td>
+</tr>
+<tr>
+<td>PC_EU27_PPS_EMP</td>
+<td>euunit:PC_EU27_PPS_EMP</td>
+<td>Percentage of EU27 (2007-2013) total (based on purchasing power standards per employed person)</td>
+</tr>
+<tr>
+<td>PC_EU15_PPS_HRS</td>
+<td>euunit:PC_EU15_PPS_HRS</td>
+<td>Percentage of EU15 total (based on PPS per hours worked)</td>
+</tr>
+<tr>
+<td>PC_EU27_PPS_HRS</td>
+<td>euunit:PC_EU27_PPS_HRS</td>
+<td>Percentage of EU27 (2007-2013) total (based on purchasing power standards per hours worked)</td>
+</tr>
+<tr>
+<td>PC_EU25_MIO_EUR</td>
+<td>euunit:PC_EU25_MIO_EUR</td>
+<td>Percentage of EU25 total (based on millions euro)</td>
+</tr>
+<tr>
+<td>PC_EU27_MIO_EUR</td>
+<td>euunit:PC_EU27_MIO_EUR</td>
+<td>Percentage of EU27 total (based on millions euro)</td>
+</tr>
+<tr>
+<td>PC_EU27_MIO_PPS</td>
+<td>euunit:PC_EU27_MIO_PPS</td>
+<td>Percentage of EU27 total (based on millions PPS)</td>
+</tr>
+<tr>
+<td>PC_EA_MIO_EUR</td>
+<td>euunit:PC_EA_MIO_EUR</td>
+<td>Percentage of euro area total (based on millions euro)</td>
+</tr>
+<tr>
+<td>PC_EA_MIO_PPS</td>
+<td>euunit:PC_EA_MIO_PPS</td>
+<td>Percentage of euro area total (based on millions PPS)</td>
+</tr>
+<tr>
+<td>PC_EA12_MIO_EUR</td>
+<td>euunit:PC_EA12_MIO_EUR</td>
+<td>Percentage of EA12 total (based on millions euro)</td>
+</tr>
+<tr>
+<td>PC_EA16_MIO_EUR</td>
+<td>euunit:PC_EA16_MIO_EUR</td>
+<td>Percentage of EA16 total (based on millions euro)</td>
+</tr>
+<tr>
+<td>PC_EA16_MIO_PPS</td>
+<td>euunit:PC_EA16_MIO_PPS</td>
+<td>Percentage of EA16 total (based on millions PPS)</td>
+</tr>
+<tr>
+<td>PC_EA17_MIO_EUR</td>
+<td>euunit:PC_EA17_MIO_EUR</td>
+<td>Percentage of EA17 total (based on millions euro)</td>
+</tr>
+<tr>
+<td>PC_EA17_MIO_PPS</td>
+<td>euunit:PC_EA17_MIO_PPS</td>
+<td>Percentage of EA17 total (based on millions PPS)</td>
+</tr>
+<tr>
+<td>MOVE</td>
+<td>euunit:MOVE</td>
+<td>Movement</td>
+</tr>
+<tr>
+<td>FLIGHT</td>
+<td>euunit:FLIGHT</td>
+<td>Flight</td>
+</tr>
+<tr>
+<td>NBR_CAR</td>
+<td>euunit:NBR_CAR</td>
+<td>Number of cars</td>
+</tr>
+<tr>
+<td>MIO_VEH_KM</td>
+<td>euunit:MIO_VEH_KM</td>
+<td>Millions of Vehicle-kilometre</td>
+</tr>
+<tr>
+<td>1000VEH_KM</td>
+<td>euunit:1000VEH_KM</td>
+<td>1000 Vehicle-kilometre</td>
+</tr>
+<tr>
+<td>MIO_VKM</td>
+<td>euunit:MIO_VKM</td>
+<td>Million vehicle-kilometres (VKM)</td>
+</tr>
+<tr>
+<td>THS_VKM</td>
+<td>euunit:THS_VKM</td>
+<td>Thousand vehicle-kilometres (VKM)</td>
+</tr>
+<tr>
+<td>1000_BTO</td>
+<td>euunit:1000_BTO</td>
+<td>1000 Basic transport operations</td>
+</tr>
+<tr>
+<td>1000_JRNY</td>
+<td>euunit:1000_JRNY</td>
+<td>1000 Journeys</td>
+</tr>
+<tr>
+<td>1000TRN_KM</td>
+<td>euunit:1000TRN_KM</td>
+<td>1000 Train-kilometre</td>
+</tr>
+<tr>
+<td>SEAT</td>
+<td>euunit:SEAT</td>
+<td>Seats and berths</td>
+</tr>
+<tr>
+<td>1000SEAT</td>
+<td>euunit:1000SEAT</td>
+<td>1000 Seats</td>
+</tr>
+<tr>
+<td>MIO_SEAT_KM_OFF</td>
+<td>euunit:MIO_SEAT_KM_OFF</td>
+<td>Millions of Seats/Km offered</td>
+</tr>
+<tr>
+<td>VES_MOV</td>
+<td>euunit:VES_MOV</td>
+<td>Vessel movements</td>
+</tr>
+<tr>
+<td>1000VES_KM</td>
+<td>euunit:1000VES_KM</td>
+<td>Thousands of vessels/Km</td>
+</tr>
+<tr>
+<td>NBR_REG</td>
+<td>euunit:NBR_REG</td>
+<td>Number of regions</td>
+</tr>
+<tr>
+<td>PC_REG</td>
+<td>euunit:PC_REG</td>
+<td>Percentage of regions</td>
+</tr>
+<tr>
+<td>NBR_INVEST</td>
+<td>euunit:NBR_INVEST</td>
+<td>Number of investments</td>
+</tr>
+<tr>
+<td>NBR_COMP</td>
+<td>euunit:NBR_COMP</td>
+<td>Number of companies</td>
+</tr>
+<tr>
+<td>PC_HH_IACCX</td>
+<td>euunit:PC_HH_IACCX</td>
+<td>Percentage of households without internet access at home</td>
+</tr>
+<tr>
+<td>PC_HH_BROADX</td>
+<td>euunit:PC_HH_BROADX</td>
+<td>Percentage of households without broadband access</td>
+</tr>
+<tr>
+<td>MIO_EUR_SWDA</td>
+<td>euunit:MIO_EUR_SWDA</td>
+<td>Millions of euro (SWDA)</td>
+</tr>
+<tr>
+<td>TVAL_SA</td>
+<td>euunit:TVAL_SA</td>
+<td>Trade value in million euro (SA)</td>
+</tr>
+<tr>
+<td>I2000_NSA</td>
+<td>euunit:I2000_NSA</td>
+<td>Index, 2000=100 (NSA)</td>
+</tr>
+<tr>
+<td>I2005_SA</td>
+<td>euunit:I2005_SA</td>
+<td>Index, 2005=100 (SA)</td>
+</tr>
+<tr>
+<td>I2005_NSA</td>
+<td>euunit:I2005_NSA</td>
+<td>Index, 2005=100 (NSA)</td>
+</tr>
+<tr>
+<td>I2006_NSA</td>
+<td>euunit:I2006_NSA</td>
+<td>Index, 2006=100 (NSA)</td>
+</tr>
+<tr>
+<td>I2008_SWDA</td>
+<td>euunit:I2008_SWDA</td>
+<td>Index, 2008=100 (SWDA)</td>
+</tr>
+<tr>
+<td>I2010_SA</td>
+<td>euunit:I2010_SA</td>
+<td>Index, 2010=100 (SA)</td>
+</tr>
+<tr>
+<td>I2010_NSA</td>
+<td>euunit:I2010_NSA</td>
+<td>Index, 2010=100 (NSA)</td>
+</tr>
+<tr>
+<td>PCH_M1</td>
+<td>euunit:PCH_M1</td>
+<td>Percentage change m/m-1</td>
+</tr>
+<tr>
+<td>PCH_M1_NSA</td>
+<td>euunit:PCH_M1_NSA</td>
+<td>Percentage change m/m-1 (NSA)</td>
+</tr>
+<tr>
+<td>PCH_M1_SA</td>
+<td>euunit:PCH_M1_SA</td>
+<td>Percentage change m/m-1 (SA)</td>
+</tr>
+<tr>
+<td>PCH_Q1_NSA</td>
+<td>euunit:PCH_Q1_NSA</td>
+<td>Percentage change q/q-1 (NSA)</td>
+</tr>
+<tr>
+<td>PCH_Q1_SA</td>
+<td>euunit:PCH_Q1_SA</td>
+<td>Percentage change q/q-1 (SA)</td>
+</tr>
+<tr>
+<td>PCH_Q1_SWDA</td>
+<td>euunit:PCH_Q1_SWDA</td>
+<td>Percentage change q/q-1 (SWDA)</td>
+</tr>
+<tr>
+<td>PCH_Q4_NSA</td>
+<td>euunit:PCH_Q4_NSA</td>
+<td>Percentage change q/q-4 (NSA)</td>
+</tr>
+<tr>
+<td>PCH_Q4_WDA</td>
+<td>euunit:PCH_Q4_WDA</td>
+<td>Percentage change q/q-4 (WDA)</td>
+</tr>
+<tr>
+<td>PCH_M12</td>
+<td>euunit:PCH_M12</td>
+<td>Percentage change m/m-12</td>
+</tr>
+<tr>
+<td>PCH_M12_NSA</td>
+<td>euunit:PCH_M12_NSA</td>
+<td>Percentage change m/m-12 (NSA)</td>
+</tr>
+<tr>
+<td>PCH_M12_WDA</td>
+<td>euunit:PCH_M12_WDA</td>
+<td>Percentage change m/m-12 (WDA)</td>
+</tr>
+<tr>
+<td>AVG_3Y</td>
+<td>euunit:AVG_3Y</td>
+<td>Three-year average</td>
+</tr>
+<tr>
+<td>PCH_1Y</td>
+<td>euunit:PCH_1Y</td>
+<td>Percentage change (t/t-1)</td>
+</tr>
+<tr>
+<td>PCH_3Y</td>
+<td>euunit:PCH_3Y</td>
+<td>Percentage change (t/t-3)</td>
+</tr>
+<tr>
+<td>PCH_5Y</td>
+<td>euunit:PCH_5Y</td>
+<td>Percentage change (t/t-5)</td>
+</tr>
+<tr>
+<td>PCH_10Y</td>
+<td>euunit:PCH_10Y</td>
+<td>Percentage change (t/t-10)</td>
+</tr>
+<tr>
+<td>PCH_MV12</td>
+<td>euunit:PCH_MV12</td>
+<td>Percentage change - 12-months average</td>
+</tr>
+<tr>
+<td>PPS_PWW</td>
+<td>euunit:PPS_PWW</td>
+<td>Purchasing power standard (PPS) per person wanting to work</td>
+</tr>
+<tr>
+<td>PC_ENT_WEB</td>
+<td>euunit:PC_ENT_WEB</td>
+<td>Percentage of the enterprises having a website</td>
+</tr>
+<tr>
+<td>PC_ENT_RFID</td>
+<td>euunit:PC_ENT_RFID</td>
+<td>Percentage of the enterprises using RFID</td>
+</tr>
+<tr>
+<td>PC_ETURN</td>
+<td>euunit:PC_ETURN</td>
+<td>Percentage of turnover from e-commerce</td>
+</tr>
+<tr>
+<td>PC_ENT_AEBUY</td>
+<td>euunit:PC_ENT_AEBUY</td>
+<td>Percentage of enterprises sending e-commerce orders over the last calendar year</td>
+</tr>
+<tr>
+<td>PC_ENT_AESELL</td>
+<td>euunit:PC_ENT_AESELL</td>
+<td>Percentage of enterprises receiving e-commerce orders over the last calendar year</td>
+</tr>
+<tr>
+<td>PC_ENT_ADE</td>
+<td>euunit:PC_ENT_ADE</td>
+<td>Percentage of enterprises using ADE</td>
+</tr>
+<tr>
+<td>PC_ENT_SISC</td>
+<td>euunit:PC_ENT_SISC</td>
+<td>Percentage of enterprises sharing information electronically on the supply chain management</td>
+</tr>
+<tr>
+<td>PC_IND_IUEVR</td>
+<td>euunit:PC_IND_IUEVR</td>
+<td>Percentage of individuals who used internet, ever</td>
+</tr>
+<tr>
+<td>PC_ENT_SECPOL</td>
+<td>euunit:PC_ENT_SECPOL</td>
+<td>Percentage of enterprises with an ICT security policy</td>
+</tr>
+<tr>
+<td>PC_IND_SCSOFT</td>
+<td>euunit:PC_IND_SCSOFT</td>
+<td>Percentage of individuals who used security software or tool</td>
+</tr>
+<tr>
+<td>PC_IND_SCUAVX</td>
+<td>euunit:PC_IND_SCUAVX</td>
+<td>Percentage of individuals who don't update their security products</td>
+</tr>
+<tr>
+<td>TIME_SP</td>
+<td>euunit:TIME_SP</td>
+<td>Time spent (hh:mm)</td>
+</tr>
+<tr>
+<td>PTP_TIME</td>
+<td>euunit:PTP_TIME</td>
+<td>Participation time (hh:mm)</td>
+</tr>
+<tr>
+<td>PTP_RT</td>
+<td>euunit:PTP_RT</td>
+<td>Participation rate (%)</td>
+</tr>
+<tr>
+<td>MIO_M3_Y</td>
+<td>euunit:MIO_M3_Y</td>
+<td>Millions of cubic metres per year</td>
+</tr>
+<tr>
+<td>CAP_1000T_Y</td>
+<td>euunit:CAP_1000T_Y</td>
+<td>Annual capacity/inputs in 1000T</td>
+</tr>
+<tr>
+<td>PC_ENT_ECOM</td>
+<td>euunit:PC_ENT_ECOM</td>
+<td>Percentage of enterprises which sent/received orders via any computer networks</td>
+</tr>
+<tr>
+<td>PC_ENT_IGOV2PRHMX</td>
+<td>euunit:PC_ENT_IGOV2PRHMX</td>
+<td>Percentage of enterprises not using internet for offering goods/services in their own country's public authorities' electronic procurement systems</td>
+</tr>
+<tr>
+<td>PC_ENT_IGOV2RT</td>
+<td>euunit:PC_ENT_IGOV2RT</td>
+<td>Percentage of enterprises using internet to return filled in forms electronically to public authorities</td>
+</tr>
+<tr>
+<td>PC_GDP_3Y</td>
+<td>euunit:PC_GDP_3Y</td>
+<td>Percentage of GDP - three-year average</td>
+</tr>
+<tr>
+<td>PCH_WRL_5Y</td>
+<td>euunit:PCH_WRL_5Y</td>
+<td>Percentage of world total - 5-year change</td>
+</tr>
+<tr>
+<td>1000POP</td>
+<td>euunit:1000POP</td>
+<td>Per 1 000 population</td>
+</tr>
+<tr>
+<td>PC_IND_IUMC</td>
+<td>euunit:PC_IND_IUMC</td>
+<td>Percentage of individuals who have used a portable computer to access internet</td>
+</tr>
+<tr>
+<td>PC_IND_IUMD</td>
+<td>euunit:PC_IND_IUMD</td>
+<td>Percentage of individuals who used a handheld device or portable computer to access internet</td>
+</tr>
+<tr>
+<td>PC_IND_IUMDX</td>
+<td>euunit:PC_IND_IUMDX</td>
+<td>Percentage of individuals who didn't use a handheld device or portable computer to access internet</td>
+</tr>
+<tr>
+<td>PC_IND_IUHD</td>
+<td>euunit:PC_IND_IUHD</td>
+<td>Percentage of individuals who used a handheld device to access internet</td>
+</tr>
+<tr>
+<td>PC_EMP_IUSE</td>
+<td>euunit:PC_EMP_IUSE</td>
+<td>Percentage of persons employed using a computer with access to the www</td>
+</tr>
+<tr>
+<td>PC_EMP_PMD</td>
+<td>euunit:PC_EMP_PMD</td>
+<td>Percentage of persons employed working in enterprises which provide mobile devices</td>
+</tr>
+<tr>
+<td>PC_ENT_PMD</td>
+<td>euunit:PC_ENT_PMD</td>
+<td>Percentage of enterprises providing to persons employed portable devices that allow a mobile connection to the internet</td>
+</tr>
+<tr>
+<td>PC_AWSVAL</td>
+<td>euunit:PC_AWSVAL</td>
+<td>Percentage of web sales</td>
+</tr>
+<tr>
+<td>PC_EMP_CUSE2</td>
+<td>euunit:PC_EMP_CUSE2</td>
+<td>Percentage of persons employed working in enterprises which use computers</td>
+</tr>
+<tr>
+<td>P_HHAB</td>
+<td>euunit:P_HHAB</td>
+<td>Per hundred inhabitants</td>
+</tr>
+<tr>
+<td>P_THAB</td>
+<td>euunit:P_THAB</td>
+<td>Per thousand inhabitants</td>
+</tr>
+<tr>
+<td>P_HTHAB</td>
+<td>euunit:P_HTHAB</td>
+<td>Per hundred thousand inhabitants</td>
+</tr>
+<tr>
+<td>PCH_WRL_1Y</td>
+<td>euunit:PCH_WRL_1Y</td>
+<td>Percentage of world total - 1-year change</td>
+</tr>
+<tr>
+<td>I99_1Q</td>
+<td>euunit:I99_1Q</td>
+<td>Index, first quarter 1999=100</td>
+</tr>
+<tr>
+<td>AAR</td>
+<td>euunit:AAR</td>
+<td>Annualised agreed rate (AAR)</td>
+</tr>
+<tr>
+<td>PC_OECD</td>
+<td>euunit:PC_OECD</td>
+<td>Percentage of OECD total</td>
+</tr>
+<tr>
+<td>PCH_OECD_5Y</td>
+<td>euunit:PCH_OECD_5Y</td>
+<td>Percentage of OECD total - 5-year change</td>
+</tr>
+<tr>
+<td>MPPS_KM2</td>
+<td>euunit:MPPS_KM2</td>
+<td>Million purchasing power standards (PPS) per square kilometre</td>
+</tr>
+<tr>
+<td>EUR_KGOE</td>
+<td>euunit:EUR_KGOE</td>
+<td>Euro per kilogram of oil equivalent (KGOE)</td>
+</tr>
+<tr>
+<td>PC_IGRTX</td>
+<td>euunit:PC_IGRTX</td>
+<td>Percentage of individuals who have used internet but not for sending filled forms to public authorities</td>
+</tr>
+<tr>
+<td>PC_IGRTX_NAPX</td>
+<td>euunit:PC_IGRTX_NAPX</td>
+<td>Percentage of individuals who have used internet but not for sending filled forms to public authorities although they had to</td>
+</tr>
+<tr>
+<td>PC_PNT_3Y</td>
+<td>euunit:PC_PNT_3Y</td>
+<td>Percentage points (t, t-3)</td>
+</tr>
+<tr>
+<td>I08_WDA</td>
+<td>euunit:I08_WDA</td>
+<td>Index, 2008=100, working day adjusted (WDA)</td>
+</tr>
+<tr>
+<td>EUR_HAB_KP05</td>
+<td>euunit:EUR_HAB_KP05</td>
+<td>Euro per inhabitant (at constant 2005 prices)</td>
+</tr>
+<tr>
+<td>MIO_EUR_KP05</td>
+<td>euunit:MIO_EUR_KP05</td>
+<td>Million euro (at constant 2005 prices)</td>
+</tr>
+<tr>
+<td>MIO_NAC_KP05</td>
+<td>euunit:MIO_NAC_KP05</td>
+<td>Million units of national currency at constant 2005 prices</td>
+</tr>
+<tr>
+<td>PPS_HAB_KP00</td>
+<td>euunit:PPS_HAB_KP00</td>
+<td>Purchasing power standard (PPS) per inhabitant at constant 2000 prices</td>
+</tr>
+<tr>
+<td>O2_TD</td>
+<td>euunit:O2_TD</td>
+<td>Tonnes of O2 per day</td>
+</tr>
+<tr>
+<td>PC_GEXP</td>
+<td>euunit:PC_GEXP</td>
+<td>Percentage of government expenditure</td>
+</tr>
+<tr>
+<td>PC_HC</td>
+<td>euunit:PC_HC</td>
+<td>Percentage based on head count (HC)</td>
+</tr>
+<tr>
+<td>PC_FTE</td>
+<td>euunit:PC_FTE</td>
+<td>Percentage based on full-time equivalents (FTE)</td>
+</tr>
+<tr>
+<td>TSWU</td>
+<td>euunit:TSWU</td>
+<td>Tonnes of separative work units</td>
+</tr>
+<tr>
+<td>THM</td>
+<td>euunit:THM</td>
+<td>Tonnes of heavy metal</td>
+</tr>
+<tr>
+<td>GWD_THM</td>
+<td>euunit:GWD_THM</td>
+<td>Gigawatt-days per tonne of heavy metal</td>
+</tr>
+<tr>
+<td>PC_IND_IUGOV12</td>
+<td>euunit:PC_IND_IUGOV12</td>
+<td>Percentage of e-government users</td>
+</tr>
+<tr>
+<td>T_DAY</td>
+<td>euunit:T_DAY</td>
+<td>Tonnes per day</td>
+</tr>
+<tr>
+<td>T_PE_DAY</td>
+<td>euunit:T_PE_DAY</td>
+<td>Tons of population equivalent per day</td>
+</tr>
+<tr>
+<td>P_MHAB</td>
+<td>euunit:P_MHAB</td>
+<td>Per million inhabitants</td>
+</tr>
+<tr>
+<td>EUR_KG_CLV00</td>
+<td>euunit:EUR_KG_CLV00</td>
+<td>Euro per kilogram, chain linked volumes  (2000)</td>
+</tr>
+<tr>
+<td>EUR_KG_CLV05</td>
+<td>euunit:EUR_KG_CLV05</td>
+<td>Euro per kilogram, chain linked volumes (2005)</td>
+</tr>
+<tr>
+<td>PC_EU28</td>
+<td>euunit:PC_EU28</td>
+<td>Percentage of EU28 (2013-2020) total</td>
+</tr>
+<tr>
+<td>PC_EU28_EUR_HAB</td>
+<td>euunit:PC_EU28_EUR_HAB</td>
+<td>Percentage of EU28 (2013-2020) total (based on euro per inhabitant)</td>
+</tr>
+<tr>
+<td>PC_EU28_PPS_HAB</td>
+<td>euunit:PC_EU28_PPS_HAB</td>
+<td>Percentage of EU28 (2013-2020) total (based on purchasing power standards per inhabitant)</td>
+</tr>
+<tr>
+<td>PC_EU28_PPS_EMP</td>
+<td>euunit:PC_EU28_PPS_EMP</td>
+<td>Percentage of EU28 (2013-2020) total (based on purchasing power standards per employed person)</td>
+</tr>
+<tr>
+<td>TD</td>
+<td>euunit:TD</td>
+<td>Tonnes per day</td>
+</tr>
+<tr>
+<td>PE_TD</td>
+<td>euunit:PE_TD</td>
+<td>Tonnes of population equivalent per day</td>
+</tr>
+<tr>
+<td>PC_GBA</td>
+<td>euunit:PC_GBA</td>
+<td>Percentage of total GBAORD</td>
+</tr>
+<tr>
+<td>I_LY</td>
+<td>euunit:I_LY</td>
+<td>Index, latest year = 100</td>
+</tr>
+<tr>
+<td>I_1Y</td>
+<td>euunit:I_1Y</td>
+<td>Index, t-1 = 100</td>
+</tr>
+<tr>
+<td>SEI</td>
+<td>euunit:SEI</td>
+<td>Shannon evenness index</td>
+</tr>
+<tr>
+<td>SDI</td>
+<td>euunit:SDI</td>
+<td>Shannon diversity index</td>
+</tr>
+<tr>
+<td>PCH_5Y_CPI05_NAC</td>
+<td>euunit:PCH_5Y_CPI05_NAC</td>
+<td>Price index - percentage change (t/t-5), based on 2005=100 and national currency</td>
+</tr>
+<tr>
+<td>THS_M2</td>
+<td>euunit:THS_M2</td>
+<td>Thousand square metres</td>
+</tr>
+<tr>
+<td>THS_PER</td>
+<td>euunit:THS_PER</td>
+<td>Thousand persons</td>
+</tr>
+<tr>
+<td>PC_EU28_PPS_HRS</td>
+<td>euunit:PC_EU28_PPS_HRS</td>
+<td>Percentage of EU28 total (based on purchasing power standards per hours worked)</td>
+</tr>
+<tr>
+<td>PC_EU28_PPS_HR</td>
+<td>euunit:PC_EU28_PPS_HR</td>
+<td>PC_EU28_PPS_HR</td>
+</tr>
+<tr>
+<td>PC_EU27_PPS_HR</td>
+<td>euunit:PC_EU27_PPS_HR</td>
+<td>PC_EU27_PPS_HR</td>
+</tr>
+<tr>
+<td>PC_EU28_MIO_EUR</td>
+<td>euunit:PC_EU28_MIO_EUR</td>
+<td>Percentage of EU28 total (based on million euro)</td>
+</tr>
+<tr>
+<td>PC_EU28_MIO_PPS</td>
+<td>euunit:PC_EU28_MIO_PPS</td>
+<td>Percentage of EU28 total (based on million PPS)</td>
+</tr>
+<tr>
+<td>PC_EU28_MEUR</td>
+<td>euunit:PC_EU28_MEUR</td>
+<td>Percentage of EU28 (2013-2020) total (based on million euro)</td>
+</tr>
+<tr>
+<td>PC_EU27_MEUR</td>
+<td>euunit:PC_EU27_MEUR</td>
+<td>Percentage of EU27 (2007-2013) total (based on million euro)</td>
+</tr>
+<tr>
+<td>PC_EU25_MEUR</td>
+<td>euunit:PC_EU25_MEUR</td>
+<td>Percentage of EU25 (2004-2006) total (based on million euro)</td>
+</tr>
+<tr>
+<td>PC_EU28_MPPS</td>
+<td>euunit:PC_EU28_MPPS</td>
+<td>Percentage of EU28 (2013-2020) total (based on million purchasing power standards)</td>
+</tr>
+<tr>
+<td>PC_EU27_MPPS</td>
+<td>euunit:PC_EU27_MPPS</td>
+<td>Percentage of EU27 (2007-2013) total (based on million purchasing power standards)</td>
+</tr>
+<tr>
+<td>PC_EA_MPPS</td>
+<td>euunit:PC_EA_MPPS</td>
+<td>Percentage of euro area total (based on million purchasing power standards)</td>
+</tr>
+<tr>
+<td>PC_EA_MEUR</td>
+<td>euunit:PC_EA_MEUR</td>
+<td>Percentage of euro area total (based on million euro)</td>
+</tr>
+<tr>
+<td>PC_EA18_MIO_EUR</td>
+<td>euunit:PC_EA18_MIO_EUR</td>
+<td>Percentage of EA18 total (based on million euro)</td>
+</tr>
+<tr>
+<td>PC_EA18_MIO_PPS</td>
+<td>euunit:PC_EA18_MIO_PPS</td>
+<td>Percentage of EA18 total (based on million PPS)</td>
+</tr>
+<tr>
+<td>PC_EA18_MEUR</td>
+<td>euunit:PC_EA18_MEUR</td>
+<td>Percentage of EA18 (2014) total (based on million euro)</td>
+</tr>
+<tr>
+<td>PC_EA17_MEUR</td>
+<td>euunit:PC_EA17_MEUR</td>
+<td>Percentage of EA17 (2011-2013) total (based on million euro)</td>
+</tr>
+<tr>
+<td>PC_EA16_MEUR</td>
+<td>euunit:PC_EA16_MEUR</td>
+<td>Percentage of EA16 (2009-2010) total (based on million euro)</td>
+</tr>
+<tr>
+<td>PC_EA12_MEUR</td>
+<td>euunit:PC_EA12_MEUR</td>
+<td>Percentage of EA12 (2001-2006) total (based on million euro)</td>
+</tr>
+<tr>
+<td>PC_EA18_MPPS</td>
+<td>euunit:PC_EA18_MPPS</td>
+<td>Percentage of EA18 (2014) total (based on million purchasing power standards)</td>
+</tr>
+<tr>
+<td>PC_EA17_MPPS</td>
+<td>euunit:PC_EA17_MPPS</td>
+<td>Percentage of EA17 (2011-2013) total (based on million purchasing power standards)</td>
+</tr>
+<tr>
+<td>PC_EA16_MPPS</td>
+<td>euunit:PC_EA16_MPPS</td>
+<td>Percentage of EA16 (2009-2010) total (based on million purchasing power standards)</td>
+</tr>
+<tr>
+<td>MNAC_CP</td>
+<td>euunit:MNAC_CP</td>
+<td>Million units of national currency, current prices</td>
+</tr>
+<tr>
+<td>MEUR_CP</td>
+<td>euunit:MEUR_CP</td>
+<td>Million euro, current prices</td>
+</tr>
+<tr>
+<td>MPPS_CP</td>
+<td>euunit:MPPS_CP</td>
+<td>Million PPS, current prices</td>
+</tr>
+<tr>
+<td>MNAC_PYP</td>
+<td>euunit:MNAC_PYP</td>
+<td>Million units of national currency, previous year prices</td>
+</tr>
+<tr>
+<td>MEUR_PYP</td>
+<td>euunit:MEUR_PYP</td>
+<td>Million euro, previous year prices</td>
+</tr>
+<tr>
+<td>MNAC_CLV10</td>
+<td>euunit:MNAC_CLV10</td>
+<td>Million units of national currency, chain linked volumes (2010)</td>
+</tr>
+<tr>
+<td>MEUR_CLV10</td>
+<td>euunit:MEUR_CLV10</td>
+<td>Million euro, chain-linked volumes, reference year 2010 (at 2010 exchange rates)</td>
+</tr>
+<tr>
+<td>MNAC_CLV05</td>
+<td>euunit:MNAC_CLV05</td>
+<td>Million units of national currency, chain linked volumes (2005)</td>
+</tr>
+<tr>
+<td>MEUR_CLV05</td>
+<td>euunit:MEUR_CLV05</td>
+<td>Million euro, chain linked volumes (2005)</td>
+</tr>
+<tr>
+<td>PC_STU</td>
+<td>euunit:PC_STU</td>
+<td>Percentage of total tertiary students</td>
+</tr>
+<tr>
+<td>PC_FSTU</td>
+<td>euunit:PC_FSTU</td>
+<td>Percentage of total foreign tertiary students</td>
+</tr>
+<tr>
+<td>PC_Y25_29</td>
+<td>euunit:PC_Y25-29</td>
+<td>Percentage of total population aged 25-29</td>
+</tr>
+<tr>
+<td>PC_Y20_29</td>
+<td>euunit:PC_Y20-29</td>
+<td>Percentage of total population aged 20-29</td>
+</tr>
+<tr>
+<td>PC_TOT_PER</td>
+<td>euunit:PC_TOT_PER</td>
+<td>Percentage of total (based on persons)</td>
+</tr>
+<tr>
+<td>PC_TOT_HW</td>
+<td>euunit:PC_TOT_HW</td>
+<td>Percentage of total (based on hours worked)</td>
+</tr>
+<tr>
+<td>I05_EUR</td>
+<td>euunit:I05_EUR</td>
+<td>Index, 2005=100, euro</td>
+</tr>
+<tr>
+<td>I10_EUR</td>
+<td>euunit:I10_EUR</td>
+<td>Index, 2010=100, euro</td>
+</tr>
+<tr>
+<td>I05_PER</td>
+<td>euunit:I05_PER</td>
+<td>Index, 2005=100 (based on persons)</td>
+</tr>
+<tr>
+<td>I05_HW</td>
+<td>euunit:I05_HW</td>
+<td>Index, 2005=100 (based on hours worked)</td>
+</tr>
+<tr>
+<td>I05_JOB</td>
+<td>euunit:I05_JOB</td>
+<td>Index, 2005=100 (based on jobs)</td>
+</tr>
+<tr>
+<td>I05_FTE</td>
+<td>euunit:I05_FTE</td>
+<td>Index, 2005=100 (based on full-time equivalents)</td>
+</tr>
+<tr>
+<td>I10_PER</td>
+<td>euunit:I10_PER</td>
+<td>Index, 2010=100 (based on persons)</td>
+</tr>
+<tr>
+<td>I10_HW</td>
+<td>euunit:I10_HW</td>
+<td>Index, 2010=100 (based on hours worked)</td>
+</tr>
+<tr>
+<td>I10_JOB</td>
+<td>euunit:I10_JOB</td>
+<td>Index, 2010=100 (based on jobs)</td>
+</tr>
+<tr>
+<td>I10_FTE</td>
+<td>euunit:I10_FTE</td>
+<td>Index, 2010=100 (based on full-time equivalents)</td>
+</tr>
+<tr>
+<td>PPCH_PRE</td>
+<td>euunit:PPCH_PRE</td>
+<td>Percentage point change on previous period, contribution to GDP growth</td>
+</tr>
+<tr>
+<td>PPCH_SM</td>
+<td>euunit:PPCH_SM</td>
+<td>Percentage point change compared to same period in previous year, contribution to GDP growth</td>
+</tr>
+<tr>
+<td>PCH_SM_EUR</td>
+<td>euunit:PCH_SM_EUR</td>
+<td>Percentage change compared to same period in previous year, euro</td>
+</tr>
+<tr>
+<td>PCH_PRE_PER</td>
+<td>euunit:PCH_PRE_PER</td>
+<td>Percentage change on previous period (based on persons)</td>
+</tr>
+<tr>
+<td>PCH_PRE_HW</td>
+<td>euunit:PCH_PRE_HW</td>
+<td>Percentage change on previous period (based on hours worked)</td>
+</tr>
+<tr>
+<td>PCH_SM_PER</td>
+<td>euunit:PCH_SM_PER</td>
+<td>Percentage change compared to same period in previous year (based on persons)</td>
+</tr>
+<tr>
+<td>PCH_SM_HW</td>
+<td>euunit:PCH_SM_HW</td>
+<td>Percentage change compared to same period in previous year (based on hours worked)</td>
+</tr>
+<tr>
+<td>PCH_SM_JOB</td>
+<td>euunit:PCH_SM_JOB</td>
+<td>Percentage change compared to same period in previous year (based on jobs)</td>
+</tr>
+<tr>
+<td>PCH_SM_FTE</td>
+<td>euunit:PCH_SM_FTE</td>
+<td>Percentage change compared to same period in previous year (based on full-time equivalents)</td>
+</tr>
+<tr>
+<td>CPI10_PCH_PRE_NAC</td>
+<td>euunit:CPI10_PCH_PRE_NAC</td>
+<td>Price index, percentage change on previous period, national currency</td>
+</tr>
+<tr>
+<td>CPI10_PCH_PRE_EUR</td>
+<td>euunit:CPI10_PCH_PRE_EUR</td>
+<td>Price index, percentage change on previous period, euro</td>
+</tr>
+<tr>
+<td>CPI05_PCH_PRE_NAC</td>
+<td>euunit:CPI05_PCH_PRE_NAC</td>
+<td>Price index, percentage change on previous period, national currency</td>
+</tr>
+<tr>
+<td>CPI05_PCH_PRE_EUR</td>
+<td>euunit:CPI05_PCH_PRE_EUR</td>
+<td>Price index, percentage change on previous period, euro</td>
+</tr>
+<tr>
+<td>CPI10_PCH_SM_NAC</td>
+<td>euunit:CPI10_PCH_SM_NAC</td>
+<td>Price index, percentage change compared to same period in previous year, national currency</td>
+</tr>
+<tr>
+<td>CPI10_PCH_SM_EUR</td>
+<td>euunit:CPI10_PCH_SM_EUR</td>
+<td>Price index, percentage change compared to same period in previous year, euro</td>
+</tr>
+<tr>
+<td>CPI05_PCH_SM_NAC</td>
+<td>euunit:CPI05_PCH_SM_NAC</td>
+<td>Price index, percentage change compared to same period in previous year, national currency</td>
+</tr>
+<tr>
+<td>CPI05_PCH_SM_EUR</td>
+<td>euunit:CPI05_PCH_SM_EUR</td>
+<td>Price index, percentage change compared to same period in previous year, euro</td>
+</tr>
+<tr>
+<td>RT_UNE</td>
+<td>euunit:RT_UNE</td>
+<td>Unemployment rate</td>
+</tr>
+<tr>
+<td>CPI10_NAC</td>
+<td>euunit:CPI10_NAC</td>
+<td>Price index, 2010=100, national currency</td>
+</tr>
+<tr>
+<td>CPI10_EUR</td>
+<td>euunit:CPI10_EUR</td>
+<td>Price index, 2010=100, euro</td>
+</tr>
+<tr>
+<td>HW</td>
+<td>euunit:HW</td>
+<td>Hours worked</td>
+</tr>
+<tr>
+<td>THS_HW</td>
+<td>euunit:THS_HW</td>
+<td>Thousand hours worked</td>
+</tr>
+<tr>
+<td>THS_JOB</td>
+<td>euunit:THS_JOB</td>
+<td>Thousand jobs</td>
+</tr>
+<tr>
+<td>THS_FTE</td>
+<td>euunit:THS_FTE</td>
+<td>Thousand full-time equivalents (FTE)</td>
+</tr>
+<tr>
+<td>PC_EU28_PPS_HW</td>
+<td>euunit:PC_EU28_PPS_HW</td>
+<td>PC_EU28_PPS_HW</td>
+</tr>
+<tr>
+<td>PC_EU27_PPS_HW</td>
+<td>euunit:PC_EU27_PPS_HW</td>
+<td>PC_EU27_PPS_HW</td>
+</tr>
+<tr>
+<td>VKM</td>
+<td>euunit:VKM</td>
+<td>Vehicle-kilometre (VKM)</td>
+</tr>
+<tr>
+<td>CP_MEUR</td>
+<td>euunit:CP_MEUR</td>
+<td>Current prices, million euro</td>
+</tr>
+<tr>
+<td>CP_MNAC</td>
+<td>euunit:CP_MNAC</td>
+<td>Current prices, million units of national currency</td>
+</tr>
+<tr>
+<td>CP_MPPS</td>
+<td>euunit:CP_MPPS</td>
+<td>Current prices, million purchasing power standards</td>
+</tr>
+<tr>
+<td>PC_EU28_MEUR_CP</td>
+<td>euunit:PC_EU28_MEUR_CP</td>
+<td>Percentage of EU28 (2013-2020) total (based on million euro), current prices</td>
+</tr>
+<tr>
+<td>PC_EU28_MPPS_CP</td>
+<td>euunit:PC_EU28_MPPS_CP</td>
+<td>Percentage of EU28 (2013-2020) total (based on million purchasing power standards), current prices</td>
+</tr>
+<tr>
+<td>CLV05_MNAC</td>
+<td>euunit:CLV05_MNAC</td>
+<td>Chain linked volumes (2005), million units of national currency</td>
+</tr>
+<tr>
+<td>CLV05_MEUR</td>
+<td>euunit:CLV05_MEUR</td>
+<td>Chain linked volumes (2005), million euro</td>
+</tr>
+<tr>
+<td>CLV10_MNAC</td>
+<td>euunit:CLV10_MNAC</td>
+<td>Chain linked volumes (2010), million units of national currency</td>
+</tr>
+<tr>
+<td>CLV10_MEUR</td>
+<td>euunit:CLV10_MEUR</td>
+<td>Chain linked volumes (2010), million euro</td>
+</tr>
+<tr>
+<td>PYP_MNAC</td>
+<td>euunit:PYP_MNAC</td>
+<td>Previous year prices, million units of national currency</td>
+</tr>
+<tr>
+<td>PYP_MEUR</td>
+<td>euunit:PYP_MEUR</td>
+<td>Previous year prices, million euro</td>
+</tr>
+<tr>
+<td>CLV_I05</td>
+<td>euunit:CLV_I05</td>
+<td>Chain linked volumes, index 2005=100</td>
+</tr>
+<tr>
+<td>CLV_I10</td>
+<td>euunit:CLV_I10</td>
+<td>Chain linked volumes, index 2010=100</td>
+</tr>
+<tr>
+<td>CLV_PCH_PRE</td>
+<td>euunit:CLV_PCH_PRE</td>
+<td>Chain linked volumes, percentage change on previous period</td>
+</tr>
+<tr>
+<td>CLV_PCH_SM</td>
+<td>euunit:CLV_PCH_SM</td>
+<td>Chain linked volumes, percentage change compared to same period in previous year</td>
+</tr>
+<tr>
+<td>CLV_PCH_ANN</td>
+<td>euunit:CLV_PCH_ANN</td>
+<td>Chain linked volumes, annualized percentage change on previous period</td>
+</tr>
+<tr>
+<td>CON_PPCH_PRE</td>
+<td>euunit:CON_PPCH_PRE</td>
+<td>Contribution to GDP growth, percentage point change on previous period</td>
+</tr>
+<tr>
+<td>CON_PPCH_SM</td>
+<td>euunit:CON_PPCH_SM</td>
+<td>Contribution to GDP growth, percentage point change compared to same period in previous year</td>
+</tr>
+<tr>
+<td>PD05_NAC</td>
+<td>euunit:PD05_NAC</td>
+<td>Price index (implicit deflator), 2005=100, national currency</td>
+</tr>
+<tr>
+<td>PD_PCH_PRE_NAC</td>
+<td>euunit:PD_PCH_PRE_NAC</td>
+<td>Price index (implicit deflator), percentage change on previous period, national currency</td>
+</tr>
+<tr>
+<td>PD_PCH_SM_NAC</td>
+<td>euunit:PD_PCH_SM_NAC</td>
+<td>Price index (implicit deflator), percentage change compared to same period in previous year, national currency</td>
+</tr>
+<tr>
+<td>PD_EUR</td>
+<td>euunit:PD_EUR</td>
+<td>Price deflator, 2010=100, euro</td>
+</tr>
+<tr>
+<td>PD_PCH_PRE_EUR</td>
+<td>euunit:PD_PCH_PRE_EUR</td>
+<td>Price index (implicit deflator), percentage change on previous period, euro</td>
+</tr>
+<tr>
+<td>PD_PCH_SM_EUR</td>
+<td>euunit:PD_PCH_SM_EUR</td>
+<td>Price index (implicit deflator), percentage change compared to same period in previous year, euro</td>
+</tr>
+<tr>
+<td>CP_MEUR_HAB</td>
+<td>euunit:CP_MEUR_HAB</td>
+<td>Current prices, million euro  per capita</td>
+</tr>
+<tr>
+<td>CP_MNAC_HAB</td>
+<td>euunit:CP_MNAC_HAB</td>
+<td>Current prices, million units of national currency  per capita</td>
+</tr>
+<tr>
+<td>CP_MPPS_HAB</td>
+<td>euunit:CP_MPPS_HAB</td>
+<td>Current prices, million PPS  per capita</td>
+</tr>
+<tr>
+<td>CP_PC_EU28_MEUR</td>
+<td>euunit:CP_PC_EU28_MEUR</td>
+<td>Current prices, percentage of EU28 total (based on million euro per capita)</td>
+</tr>
+<tr>
+<td>CP_PC_EU28_MPPS</td>
+<td>euunit:CP_PC_EU28_MPPS</td>
+<td>Current prices, percentage of EU28 total (based on million PPS per capita)</td>
+</tr>
+<tr>
+<td>CLV05_MEUR_HAB</td>
+<td>euunit:CLV05_MEUR_HAB</td>
+<td>Chain linked volumes (2005), million euro per capita</td>
+</tr>
+<tr>
+<td>CLV_I05_HAB</td>
+<td>euunit:CLV_I05_HAB</td>
+<td>Chain linked volumes, Index 2005=100, per capita</td>
+</tr>
+<tr>
+<td>CLV_I10_HAB</td>
+<td>euunit:CLV_I10_HAB</td>
+<td>Chain linked volumes, Index 2010=100, per capita</td>
+</tr>
+<tr>
+<td>CLV_PCH_PRE_HAB</td>
+<td>euunit:CLV_PCH_PRE_HAB</td>
+<td>Chain linked volumes, percentage change on previous period, per capita</td>
+</tr>
+<tr>
+<td>CLV_PCH_SM_HAB</td>
+<td>euunit:CLV_PCH_SM_HAB</td>
+<td>Chain linked volumes, percentage change compared to same period in previous year, per capita</td>
+</tr>
+<tr>
+<td>CRC_MEUR</td>
+<td>euunit:CRC_MEUR</td>
+<td>Current replacement costs, million euro</td>
+</tr>
+<tr>
+<td>CRC_MNAC</td>
+<td>euunit:CRC_MNAC</td>
+<td>Current replacement costs, million units of national currency</td>
+</tr>
+<tr>
+<td>PYR_MNAC</td>
+<td>euunit:PYR_MNAC</td>
+<td>Previous year replacement costs, million units of national currency</td>
+</tr>
+<tr>
+<td>PYR_MEUR</td>
+<td>euunit:PYR_MEUR</td>
+<td>Previous year replacement costs, million euro</td>
+</tr>
+<tr>
+<td>PC_EU28_EUR</td>
+<td>euunit:PC_EU28_EUR</td>
+<td>Percentage of EU28 total (based on GDP in CP in euro)</td>
+</tr>
+<tr>
+<td>PC_EU28_PPS</td>
+<td>euunit:PC_EU28_PPS</td>
+<td>Percentage of EU28 total (based on GDP in CP in PPS)</td>
+</tr>
+<tr>
+<td>PD10_NAC</td>
+<td>euunit:PD10_NAC</td>
+<td>Price index (implicit deflator), 2010=100, national currency</td>
+</tr>
+<tr>
+<td>PD10_EUR</td>
+<td>euunit:PD10_EUR</td>
+<td>Price index (implicit deflator), 2010=100, euro</td>
+</tr>
+<tr>
+<td>PD05_EUR</td>
+<td>euunit:PD05_EUR</td>
+<td>Price index (implicit deflator), 2005=100, euro</td>
+</tr>
+<tr>
+<td>CP_EUR_HAB</td>
+<td>euunit:CP_EUR_HAB</td>
+<td>Current prices, euro per capita</td>
+</tr>
+<tr>
+<td>CP_NAC_HAB</td>
+<td>euunit:CP_NAC_HAB</td>
+<td>Current prices, units of national currency per capita</td>
+</tr>
+<tr>
+<td>CP_PPS_HAB</td>
+<td>euunit:CP_PPS_HAB</td>
+<td>Current prices, purchasing power standard per capita</td>
+</tr>
+<tr>
+<td>CP_PC_EU28_EUR</td>
+<td>euunit:CP_PC_EU28_EUR</td>
+<td>Current prices, percentage of EU28 (2013-2020) total (based on euro per capita)</td>
+</tr>
+<tr>
+<td>CP_PC_EU28_PPS</td>
+<td>euunit:CP_PC_EU28_PPS</td>
+<td>Current prices, percentage of EU28 (2013-2020) total (based on purchasing power standards per capita)</td>
+</tr>
+<tr>
+<td>CLV05_EUR_HAB</td>
+<td>euunit:CLV05_EUR_HAB</td>
+<td>Chain linked volumes (2005), euro per capita</td>
+</tr>
+<tr>
+<td>CLV10_EUR_HAB</td>
+<td>euunit:CLV10_EUR_HAB</td>
+<td>Chain linked volumes (2010), euro per capita</td>
+</tr>
+<tr>
+<td>PPS_KGOE</td>
+<td>euunit:PPS_KGOE</td>
+<td>Purchasing power standard (PPS) per kilogram of oil equivalent</td>
+</tr>
+<tr>
+<td>PPS_M3</td>
+<td>euunit:PPS_M3</td>
+<td>Purchasing power standard (PPS) per cubic metre</td>
+</tr>
+<tr>
+<td>I_EU</td>
+<td>euunit:I_EU</td>
+<td>Index, EU=100</td>
+</tr>
+<tr>
+<td>I_EU28</td>
+<td>euunit:I_EU28</td>
+<td>Index, EU28=100</td>
+</tr>
+<tr>
+<td>G</td>
+<td>euunit:G</td>
+<td>Gram</td>
+</tr>
+<tr>
+<td>PAS</td>
+<td>euunit:PAS</td>
+<td>Passenger</td>
+</tr>
+<tr>
+<td>THS_PAS</td>
+<td>euunit:THS_PAS</td>
+<td>Thousand passengers</td>
+</tr>
+<tr>
+<td>THS_PASF</td>
+<td>euunit:THS_PASF</td>
+<td>Thousand passengers (excluding cruise passengers)</td>
+</tr>
+<tr>
+<td>THS_PASC</td>
+<td>euunit:THS_PASC</td>
+<td>Thousand cruise passengers starting and ending a cruise</td>
+</tr>
+<tr>
+<td>THS_PASE</td>
+<td>euunit:THS_PASE</td>
+<td>Thousand cruise passengers on excursion</td>
+</tr>
+<tr>
+<td>PC_ENT_CC</td>
+<td>euunit:PC_ENT_CC</td>
+<td>Percentage of enterprises buying CC services</td>
+</tr>
+<tr>
+<td>PC_ENT_CCX</td>
+<td>euunit:PC_ENT_CCX</td>
+<td>Percentage of enterprises not buying CC services</td>
+</tr>
+<tr>
+<td>PC_ENT_INV3SBG</td>
+<td>euunit:PC_ENT_INV3SBG</td>
+<td>Percentage of enterprises sending invoices B2BG</td>
+</tr>
+<tr>
+<td>PC_ENT_RFID1</td>
+<td>euunit:PC_ENT_RFID1</td>
+<td>Percentage of enterprises using RFID (as of 2014)</td>
+</tr>
+<tr>
+<td>PC_IND_CC</td>
+<td>euunit:PC_IND_CC</td>
+<td>Percentage of individuals who used cloud services for file storage</td>
+</tr>
+<tr>
+<td>PC_IND_CC_AW</td>
+<td>euunit:PC_IND_CC_AW</td>
+<td>Percentage of individuals who used internet, were aware of cloud services but did not use them</td>
+</tr>
+<tr>
+<td>PC_IND_CC_CCS</td>
+<td>euunit:PC_IND_CC_CCS</td>
+<td>Percentage of individuals who used internet and cloud services for file saving or sharing</td>
+</tr>
+<tr>
+<td>PC_IND_CC_CCSX</td>
+<td>euunit:PC_IND_CC_CCSX</td>
+<td>Percentage of individuals who used internet but not cloud services</td>
+</tr>
+<tr>
+<td>RT_PRE</td>
+<td>euunit:RT_PRE</td>
+<td>Growth rate on previous period (t/t-1)</td>
+</tr>
+<tr>
+<td>RT_PRE_GT</td>
+<td>euunit:RT_PRE_GT</td>
+<td>Growth rate on previous period (t/t-1) for gross tonnage of vessels</td>
+</tr>
+<tr>
+<td>RT_PRE_NR</td>
+<td>euunit:RT_PRE_NR</td>
+<td>Growth rate on previous period (t/t-1) for number of vessels</td>
+</tr>
+<tr>
+<td>P_BGDP</td>
+<td>euunit:P_BGDP</td>
+<td>Per billion GDP</td>
+</tr>
+<tr>
+<td>INX</td>
+<td>euunit:INX</td>
+<td>Index</td>
+</tr>
+<tr>
+<td>PCH_5Y_CPI10_NAC</td>
+<td>euunit:PCH_5Y_CPI10_NAC</td>
+<td>Price index - percentage change (t/t-5), based on 2010=100 and national currency</td>
+</tr>
+<tr>
+<td>PC_Y18_59</td>
+<td>euunit:PC_Y18-59</td>
+<td>Percentage of total population aged 18-59</td>
+</tr>
+<tr>
+<td>PC_Y_LT60</td>
+<td>euunit:PC_Y_LT60</td>
+<td>Percentage of total population aged less than 60</td>
+</tr>
+<tr>
+<td>INX_M</td>
+<td>euunit:INX_M</td>
+<td>Monthly index</td>
+</tr>
+<tr>
+<td>INX_Q</td>
+<td>euunit:INX_Q</td>
+<td>Quarterly index</td>
+</tr>
+<tr>
+<td>INX_A_AVG</td>
+<td>euunit:INX_A_AVG</td>
+<td>Annual average index</td>
+</tr>
+<tr>
+<td>P_BERD</td>
+<td>euunit:P_BERD</td>
+<td>Per billion euro of business enterprise expenditure on R&amp;D (BERD)</td>
+</tr>
+<tr>
+<td>P_GERD</td>
+<td>euunit:P_GERD</td>
+<td>Per billion euro of gross domestic expenditure on R&amp;D (GERD)</td>
+</tr>
+<tr>
+<td>RCH_M</td>
+<td>euunit:RCH_M</td>
+<td>Monthly rate of change</td>
+</tr>
+<tr>
+<td>RCH_Q</td>
+<td>euunit:RCH_Q</td>
+<td>Quarterly rate of change</td>
+</tr>
+<tr>
+<td>RCH_A</td>
+<td>euunit:RCH_A</td>
+<td>Annual rate of change</td>
+</tr>
+<tr>
+<td>RCH_A_AVG</td>
+<td>euunit:RCH_A_AVG</td>
+<td>Annual average rate of change</td>
+</tr>
+<tr>
+<td>RCH_MV12MA</td>
+<td>euunit:RCH_MV12MA</td>
+<td>Moving 12 months average rate of change</td>
+</tr>
+<tr>
+<td>HAB_P</td>
+<td>euunit:HAB_P</td>
+<td>Inhabitants per ...</td>
+</tr>
+<tr>
+<td>HC_HTHAB</td>
+<td>euunit:HC_HTHAB</td>
+<td>Head count per hundred thousand inhabitants</td>
+</tr>
+<tr>
+<td>FTE_HTHAB</td>
+<td>euunit:FTE_HTHAB</td>
+<td>Full time equivalent per hundred thousand inhabitants</td>
+</tr>
+<tr>
+<td>CUM_DIFF_THS</td>
+<td>euunit:CUM_DIFF_THS</td>
+<td>Cumulated difference in thousand</td>
+</tr>
+<tr>
+<td>RCH_MV12MAVR</td>
+<td>euunit:RCH_MV12MAVR</td>
+<td>Moving 12 months average rate of change</td>
+</tr>
+<tr>
+<td>KGOE_TEUR</td>
+<td>euunit:KGOE_TEUR</td>
+<td>Kilograms of oil equivalent (KGOE) per thousand euro</td>
+</tr>
+<tr>
+<td>RTG</td>
+<td>euunit:RTG</td>
+<td>Rating (0-10)</td>
+</tr>
+<tr>
+<td>PPCH_3Y</td>
+<td>euunit:PPCH_3Y</td>
+<td>Percentage point change (t-(t-3))</td>
+</tr>
+<tr>
+<td>P_SAL_Y</td>
+<td>euunit:P_SAL_Y</td>
+<td>Per employee in full-time equivalents, per year</td>
+</tr>
+<tr>
+<td>P_SAL_M</td>
+<td>euunit:P_SAL_M</td>
+<td>Per employee in full-time equivalents, per month</td>
+</tr>
+<tr>
+<td>P_SAL_H</td>
+<td>euunit:P_SAL_H</td>
+<td>Per employee in full-time equivalents, per hour</td>
+</tr>
+<tr>
+<td>PC_UP95</td>
+<td>euunit:PC_UP95</td>
+<td>Percentage of total population - upper boundary of the 95% confidence interval</td>
+</tr>
+<tr>
+<td>PC_LW95</td>
+<td>euunit:PC_LW95</td>
+<td>Percentage of total population - lower boundary of the 95% confidence interval</td>
+</tr>
+<tr>
+<td>PC_GVA</td>
+<td>euunit:PC_GVA</td>
+<td>Percentage of gross value added (GVA)</td>
+</tr>
+<tr>
+<td>EUR_KG_CLV10</td>
+<td>euunit:EUR_KG_CLV10</td>
+<td>Euro per kilogram, chain linked volumes (2010)</td>
+</tr>
+<tr>
+<td>PC_ENT_AWSELL</td>
+<td>euunit:PC_ENT_AWSELL</td>
+<td>Percentage of enterprises with web sales</td>
+</tr>
+<tr>
+<td>PC_ENT_AWSELLX</td>
+<td>euunit:PC_ENT_AWSELLX</td>
+<td>Percentage of enterprises without web sales</td>
+</tr>
+<tr>
+<td>RT_INC</td>
+<td>euunit:RT_INC</td>
+<td>Incidence rate</td>
+</tr>
+<tr>
+<td>RT_SINC</td>
+<td>euunit:RT_SINC</td>
+<td>Standardised incidence rate</td>
+</tr>
+<tr>
+<td>GDP_BEUR</td>
+<td>euunit:GDP_BEUR</td>
+<td>Nominal GDP in billion euro</td>
+</tr>
+<tr>
+<td>P_MACT</td>
+<td>euunit:P_MACT</td>
+<td>Per million of population in the labour force</td>
+</tr>
+<tr>
+<td>PC_TSCO</td>
+<td>euunit:PC_TSCO</td>
+<td>Percentage of total revenues from taxes and social contributions (including imputed social contributions)</td>
+</tr>
+<tr>
+<td>PC_TSCO_X_ISCO</td>
+<td>euunit:PC_TSCO_X_ISCO</td>
+<td>Percentage of total revenues from taxes and social contributions (excluding imputed social contributions)</td>
+</tr>
+<tr>
+<td>CP_MUSD</td>
+<td>euunit:CP_MUSD</td>
+<td>Current prices, million US dollars</td>
+</tr>
+<tr>
+<td>PYP_MUSD</td>
+<td>euunit:PYP_MUSD</td>
+<td>Previous year prices, million US dollars</td>
+</tr>
+<tr>
+<td>CP_I10</td>
+<td>euunit:CP_I10</td>
+<td>Constant prices, index 2010=100</td>
+</tr>
+<tr>
+<td>CP_PCH_PRE</td>
+<td>euunit:CP_PCH_PRE</td>
+<td>Constant prices, percentage change over previous period</td>
+</tr>
+<tr>
+<td>CP_PCH_SM</td>
+<td>euunit:CP_PCH_SM</td>
+<td>Constant prices, percentage change compared to same period in previous year</td>
+</tr>
+<tr>
+<td>HLD</td>
+<td>euunit:HLD</td>
+<td>Holding</td>
+</tr>
+<tr>
+<td>MEUR_KP00</td>
+<td>euunit:MEUR_KP00</td>
+<td>Million euro (at constant 2000 prices)</td>
+</tr>
+<tr>
+<td>THS_SEAT</td>
+<td>euunit:THS_SEAT</td>
+<td>Thousand seats</td>
+</tr>
+<tr>
+<td>KM_TKM2</td>
+<td>euunit:KM_TKM2</td>
+<td>Kilometres per thousand square kilometres</td>
+</tr>
+<tr>
+<td>I12</td>
+<td>euunit:I12</td>
+<td>Index, 2012=100</td>
+</tr>
+<tr>
+<td>MEUR_NSA</td>
+<td>euunit:MEUR_NSA</td>
+<td>Million euro (NSA)</td>
+</tr>
+<tr>
+<td>PC_GDP_NSA</td>
+<td>euunit:PC_GDP_NSA</td>
+<td>Percentage of gross domestic product (GDP), (NSA)</td>
+</tr>
+<tr>
+<td>PC_GDP_SWDA</td>
+<td>euunit:PC_GDP_SWDA</td>
+<td>Percentage of gross domestic product (GDP), (SWDA)</td>
+</tr>
+<tr>
+<td>MEUR_KP11</td>
+<td>euunit:MEUR_KP11</td>
+<td>Million euro (at constant 2011 prices)</td>
+</tr>
+<tr>
+<td>MEUR_KP_PRE</td>
+<td>euunit:MEUR_KP_PRE</td>
+<td>Million euro (at prices of the previous year)</td>
+</tr>
+<tr>
+<td>GDP_HAB</td>
+<td>euunit:GDP_HAB</td>
+<td>GDP per capita</td>
+</tr>
+<tr>
+<td>PC_GDP_HAB</td>
+<td>euunit:PC_GDP_HAB</td>
+<td>Percentage of gross domestic product (GDP) per capita</td>
+</tr>
+<tr>
+<td>PC_GNI</td>
+<td>euunit:PC_GNI</td>
+<td>Percentage of gross national income (GNI)</td>
+</tr>
+<tr>
+<td>PC_PEXP</td>
+<td>euunit:PC_PEXP</td>
+<td>Percentage of total public expenditure</td>
+</tr>
+<tr>
+<td>CFU</td>
+<td>euunit:CFU</td>
+<td>Colony-forming unit (CFU)</td>
+</tr>
+<tr>
+<td>KGOE</td>
+<td>euunit:KGOE</td>
+<td>Kilogram of oil equivalent (KGOE)</td>
+</tr>
+<tr>
+<td>TOE</td>
+<td>euunit:TOE</td>
+<td>Tonnes of oil equivalent (TOE)</td>
+</tr>
+<tr>
+<td>TKM</td>
+<td>euunit:TKM</td>
+<td>Tonne-kilometre (TKM)</td>
+</tr>
+<tr>
+<td>THS_CD08</td>
+<td>euunit:THS_CD08</td>
+<td>Cumulative difference from 2008, in thousands</td>
+</tr>
+<tr>
+<td>HL</td>
+<td>euunit:HL</td>
+<td>Hectolitre</td>
+</tr>
+<tr>
+<td>KP_I10</td>
+<td>euunit:KP_I10</td>
+<td>Constant prices, index 2010=100</td>
+</tr>
+<tr>
+<td>KP_PCH_PRE</td>
+<td>euunit:KP_PCH_PRE</td>
+<td>Constant prices, percentage change on previous period</td>
+</tr>
+<tr>
+<td>KP_PCH_SM</td>
+<td>euunit:KP_PCH_SM</td>
+<td>Constant prices, percentage change compared to same period in previous year</td>
+</tr>
+<tr>
+<td>PPCS_HAB_EU</td>
+<td>euunit:PPCS_HAB_EU</td>
+<td>Purchasing power consumption standards per inhabitant in percentage of the EU average</td>
+</tr>
+<tr>
+<td>THS_TD</td>
+<td>euunit:THS_TD</td>
+<td>Thousand tonnes per day</td>
+</tr>
+<tr>
+<td>PM</td>
+<td>euunit:PM</td>
+<td>Per mille</td>
+</tr>
+<tr>
+<td>PC_UAA</td>
+<td>euunit:PC_UAA</td>
+<td>Percentage of total utilised agricultural area</td>
+</tr>
+<tr>
+<td>PC_IND_BUY3</td>
+<td>euunit:PC_IND_BUY3</td>
+<td>Percentage of individuals who purchased online in the last 3 months</td>
+</tr>
+<tr>
+<td>RK</td>
+<td>euunit:RK</td>
+<td>Rank</td>
+</tr>
+<tr>
+<td>THS_TEUKM</td>
+<td>euunit:THS_TEUKM</td>
+<td>Thousand TEU-kilometres</td>
+</tr>
+<tr>
+<td>THS_KW</td>
+<td>euunit:THS_KW</td>
+<td>Thousand kilowatts</td>
+</tr>
+<tr>
+<td>THS_JRNY</td>
+<td>euunit:THS_JRNY</td>
+<td>Thousand journeys</td>
+</tr>
+<tr>
+<td>THS_BTO</td>
+<td>euunit:THS_BTO</td>
+<td>Thousand basic transport operations</td>
+</tr>
+<tr>
+<td>THS_TRKM</td>
+<td>euunit:THS_TRKM</td>
+<td>Thousand train-kilometres</td>
+</tr>
+<tr>
+<td>THS_VESKM</td>
+<td>euunit:THS_VESKM</td>
+<td>Thousand vessel-kilometres</td>
+</tr>
+<tr>
+<td>NR_INV</td>
+<td>euunit:NR_INV</td>
+<td>Number of investments</td>
+</tr>
+<tr>
+<td>NR_COMP</td>
+<td>euunit:NR_COMP</td>
+<td>Number of companies</td>
+</tr>
+<tr>
+<td>PC_ENT_SECPOL1</td>
+<td>euunit:PC_ENT_SECPOL1</td>
+<td>Percentage of enterprises with an ICT security policy (as of 2015)</td>
+</tr>
+<tr>
+<td>CLV_PY_MNAC</td>
+<td>euunit:CLV_PY_MNAC</td>
+<td>Chain linked volumes, previous year, million units of national currency</td>
+</tr>
+<tr>
+<td>CLV_PY_MEUR</td>
+<td>euunit:CLV_PY_MEUR</td>
+<td>Chain linked volumes, previous year, million euro</td>
+</tr>
+<tr>
+<td>TCO2E</td>
+<td>euunit:TCO2E</td>
+<td>Tonnes of CO2 equivalent</td>
+</tr>
+<tr>
+<td>MEUR_KP05</td>
+<td>euunit:MEUR_KP05</td>
+<td>Million euro (at constant 2005 prices)</td>
+</tr>
+<tr>
+<td>MNAC_KP05</td>
+<td>euunit:MNAC_KP05</td>
+<td>Million units of national currency at constant 2005 prices</td>
+</tr>
+<tr>
+<td>I2010_SCA</td>
+<td>euunit:I2010_SCA</td>
+<td>Index, 2010=100 (SCA)</td>
+</tr>
+<tr>
+<td>PCH_M1_SCA</td>
+<td>euunit:PCH_M1_SCA</td>
+<td>Percentage change m/m-1 (SCA)</td>
+</tr>
+<tr>
+<td>PCH_M12_CA</td>
+<td>euunit:PCH_M12_CA</td>
+<td>Percentage change m/m-12 (CA)</td>
+</tr>
+<tr>
+<td>PCH_Q1_SCA</td>
+<td>euunit:PCH_Q1_SCA</td>
+<td>Percentage change q/q-1 (SCA)</td>
+</tr>
+<tr>
+<td>PCH_Q4_CA</td>
+<td>euunit:PCH_Q4_CA</td>
+<td>Percentage change q/q-4 (CA)</td>
+</tr>
+<tr>
+<td>I2015</td>
+<td>euunit:I2015</td>
+<td>Index, 2015=100</td>
+</tr>
+<tr>
+<td>I15</td>
+<td>euunit:I15</td>
+<td>Index, 2015=100</td>
+</tr>
+<tr>
+<td>RT1_SCA</td>
+<td>euunit:RT1-SCA</td>
+<td>Percentage change (t/t-1) - seasonally and calendar adjusted data</td>
+</tr>
+<tr>
+<td>RT12_CA</td>
+<td>euunit:RT12-CA</td>
+<td>Percentage change (t/t-12) - calendar adjusted data, not seasonally adjusted data</td>
+</tr>
+<tr>
+<td>PCH_PRE_PERS_SCA</td>
+<td>euunit:PCH_PRE_PERS_SCA</td>
+<td>Percentage change on previous period (based on persons, SCA)</td>
+</tr>
+<tr>
+<td>NR_ENT</td>
+<td>euunit:NR_ENT</td>
+<td>Number of enterprises</td>
+</tr>
+<tr>
+<td>MIO_EUR_SCA</td>
+<td>euunit:MIO_EUR_SCA</td>
+<td>Million euro (SCA)</td>
+</tr>
+<tr>
+<td>PC_GDP_SCA</td>
+<td>euunit:PC_GDP_SCA</td>
+<td>Percentage of gross domestic product (GDP), (SCA)</td>
+</tr>
+<tr>
+<td>SUM_4Q</td>
+<td>euunit:SUM_4Q</td>
+<td>Sum of the last 4 quarters</td>
+</tr>
+<tr>
+<td>RT_R4Q</td>
+<td>euunit:RT_R4Q</td>
+<td>Rolling 4-quarter growth rate</td>
+</tr>
+<tr>
+<td>HICP2015</td>
+<td>euunit:HICP2015</td>
+<td>Harmonized consumer price index, 2015=100</td>
+</tr>
+<tr>
+<td>TCO2E_HAB</td>
+<td>euunit:TCO2E_HAB</td>
+<td>Tonnes of CO2 equivalent per capita</td>
+</tr>
+<tr>
+<td>EUR_M3_CLV10</td>
+<td>euunit:EUR_M3_CLV10</td>
+<td>Euro per cubic metre (Euro: chain-linked volumes, reference year 2010, at 2010 exchange rates)</td>
+</tr>
+<tr>
+<td>THS_L</td>
+<td>euunit:THS_L</td>
+<td>Thousand litres</td>
+</tr>
+<tr>
+<td>G_HAB</td>
+<td>euunit:G_HAB</td>
+<td>Grams per capita</td>
+</tr>
+<tr>
+<td>G_EUR_CP</td>
+<td>euunit:G_EUR_CP</td>
+<td>Grams per euro, current prices</td>
+</tr>
+<tr>
+<td>G_EUR_CLV10</td>
+<td>euunit:G_EUR_CLV10</td>
+<td>Grams per euro, chain linked volumes (2010)</td>
+</tr>
+<tr>
+<td>KG_EUR_CP</td>
+<td>euunit:KG_EUR_CP</td>
+<td>Kilograms per euro, current prices</td>
+</tr>
+<tr>
+<td>KG_EUR_CLV10</td>
+<td>euunit:KG_EUR_CLV10</td>
+<td>Kilograms per euro, chain linked volumes (2010)</td>
+</tr>
+<tr>
+<td>SGM_ESU</td>
+<td>euunit:SGM_ESU</td>
+<td>Standard gross margin (SGM) in economic size unit (ESU)</td>
+</tr>
+<tr>
+<td>THS_PER_SA</td>
+<td>euunit:THS_PER_SA</td>
+<td>Thousand persons - seasonally adjusted</td>
+</tr>
+<tr>
+<td>THS_PER_NSA</td>
+<td>euunit:THS_PER_NSA</td>
+<td>Thousand persons - not seasonally adjusted</td>
+</tr>
+<tr>
+<td>RCH_C_AVG</td>
+<td>euunit:RCH_C_AVG</td>
+<td>Cumulative average rate of change (t/t0, %)</td>
+</tr>
+<tr>
+<td>PC_S</td>
+<td>euunit:PC_S</td>
+<td>Standardised percentage</td>
+</tr>
+<tr>
+<td>PC_ENT_FIXBB</td>
+<td>euunit:PC_ENT_FIXBB</td>
+<td>Percentage of enterprises using a fixed broadband connection</td>
+</tr>
+<tr>
+<td>HR_SAL</td>
+<td>euunit:HR_SAL</td>
+<td>Hours per employee</td>
+</tr>
+<tr>
+<td>I10_NAC_CP</td>
+<td>euunit:I10_NAC_CP</td>
+<td>Index, 2010=100, national currency, current prices</td>
+</tr>
+<tr>
+<td>PCH_PRE_NAC_CP</td>
+<td>euunit:PCH_PRE_NAC_CP</td>
+<td>Percentage change on previous period, national currency, current prices</td>
+</tr>
+<tr>
+<td>IW</td>
+<td>euunit:IW</td>
+<td>Item weight</td>
+</tr>
+<tr>
+<td>API</td>
+<td>euunit:API</td>
+<td>Administered price item</td>
+</tr>
+<tr>
+<td>RCH_A_C</td>
+<td>euunit:RCH_A_C</td>
+<td>Compound annual rate of change</td>
+</tr>
+<tr>
+<td>FARM</td>
+<td>euunit:FARM</td>
+<td>Farm</td>
+</tr>
+<tr>
+<td>TOE_MEUR_PPS</td>
+<td>euunit:TOE_MEUR_PPS</td>
+<td>Tonnes of oil equivalent (TOE) per million euro in purchasing power standards (PPS)</td>
+</tr>
+<tr>
+<td>EUR_TOE</td>
+<td>euunit:EUR_TOE</td>
+<td>Euro per tonne of oil equivalent (TOE)</td>
+</tr>
+<tr>
+<td>PC_ENT_ADS</td>
+<td>euunit:PC_ENT_ADS</td>
+<td>Percentage of enterprises using internet ads</td>
+</tr>
+<tr>
+<td>MEUR_KP10</td>
+<td>euunit:MEUR_KP10</td>
+<td>Million euro (at constant 2010 prices)</td>
+</tr>
+<tr>
+<td>MNAC_KP10</td>
+<td>euunit:MNAC_KP10</td>
+<td>Million units of national currency at constant 2010 prices</td>
+</tr>
+<tr>
+<td>PC_IND_IUG_TV</td>
+<td>euunit:PC_IND_IUG_TV</td>
+<td>Percentage of individuals who used the internet on a smart TV (directly connected to the internet)</td>
+</tr>
+<tr>
+<td>PC_EMP_PMD1</td>
+<td>euunit:PC_EMP_PMD1</td>
+<td>Percentage of persons employed working in enterprises which provide mobile devices (as of 2016)</td>
+</tr>
+<tr>
+<td>EUR_BGDP</td>
+<td>euunit:EUR_BGDP</td>
+<td>Euro per billion GDP</td>
+</tr>
+<tr>
+<td>EUR_HAB_KP10</td>
+<td>euunit:EUR_HAB_KP10</td>
+<td>Euro per inhabitant (at constant 2010 prices)</td>
+</tr>
+<tr>
+<td>PPS_BGDP</td>
+<td>euunit:PPS_BGDP</td>
+<td>Purchasing power standard (PPS) per billion GDP</td>
+</tr>
+<tr>
+<td>RT_A</td>
+<td>euunit:RT_A</td>
+<td>Annual rate</td>
+</tr>
+<tr>
+<td>PC_ENT_PMD1</td>
+<td>euunit:PC_ENT_PMD1</td>
+<td>Percentage of enterprises providing to persons employed portable devices that allow a mobile connection to the internet (as of 2016)</td>
+</tr>
+<tr>
+<td>AVG_A</td>
+<td>euunit:AVG_A</td>
+<td>Annual average</td>
+</tr>
+<tr>
+<td>MTCO2E</td>
+<td>euunit:MTCO2E</td>
+<td>Million tonnes of CO2 equivalent</td>
+</tr>
+<tr>
+<td>I_ESD</td>
+<td>euunit:I_ESD</td>
+<td>Index, EU effort sharing decision base year=100</td>
+</tr>
+<tr>
+<td>PC_ENT_SM</td>
+<td>euunit:PC_ENT_SM</td>
+<td>Percentage of enterprises using social media</td>
+</tr>
+<tr>
+<td>PPS_HH</td>
+<td>euunit:PPS_HH</td>
+<td>Purchasing power standard (PPS) per household</td>
+</tr>
+<tr>
+<td>P_AE</td>
+<td>euunit:P_AE</td>
+<td>Per adult equivalent</td>
+</tr>
+<tr>
+<td>P_HH</td>
+<td>euunit:P_HH</td>
+<td>Per household</td>
+</tr>
+<tr>
+<td>PC_DI</td>
+<td>euunit:PC_DI</td>
+<td>Percentage of disposable income</td>
+</tr>
+<tr>
+<td>PC_LSU</td>
+<td>euunit:PC_LSU</td>
+<td>Percentage of total livestock units</td>
+</tr>
+<tr>
+<td>PC_ENT_BD</td>
+<td>euunit:PC_ENT_BD</td>
+<td>Percentage of enterprises analysing big data</td>
+</tr>
+<tr>
+<td>EUR_AE</td>
+<td>euunit:EUR_AE</td>
+<td>Euro per adult equivalent</td>
+</tr>
+<tr>
+<td>EUR_HH</td>
+<td>euunit:EUR_HH</td>
+<td>Euro per household</td>
+</tr>
+<tr>
+<td>NAC_AE</td>
+<td>euunit:NAC_AE</td>
+<td>National currency per adult equivalent</td>
+</tr>
+<tr>
+<td>NAC_HH</td>
+<td>euunit:NAC_HH</td>
+<td>National currency per household</td>
+</tr>
+<tr>
+<td>PPS_AE</td>
+<td>euunit:PPS_AE</td>
+<td>Purchasing power standard (PPS) per adult equivalent</td>
+</tr>
+<tr>
+<td>I15_NSA</td>
+<td>euunit:I15_NSA</td>
+<td>Index, 2015=100 (NSA)</td>
+</tr>
+<tr>
+<td>KG_HA</td>
+<td>euunit:KG_HA</td>
+<td>Kilograms per hectare</td>
+</tr>
+<tr>
+<td>PC_ELF</td>
+<td>euunit:PC_ELF</td>
+<td>Percentage of extended labour force</td>
+</tr>
+<tr>
+<td>PC_ENT_AWSEU</td>
+<td>euunit:PC_ENT_AWSEU</td>
+<td>Percentage of enterprises with web sales to other EU countries</td>
+</tr>
+<tr>
+<td>PC_IND_BFFOR</td>
+<td>euunit:PC_IND_BFFOR</td>
+<td>Percentage of individuals who purchased online from sellers from other countries (EU or non-EU)</td>
+</tr>
+<tr>
+<td>MIO_PER</td>
+<td>euunit:MIO_PER</td>
+<td>Million persons</td>
+</tr>
+<tr>
+<td>PC_WMN</td>
+<td>euunit:PC_WMN</td>
+<td>Percentage of women</td>
+</tr>
+<tr>
+<td>EUR_AWU</td>
+<td>euunit:EUR_AWU</td>
+<td>Euro per annual work unit (AWU)</td>
+</tr>
+<tr>
+<td>I15_NAC_CP</td>
+<td>euunit:I15_NAC_CP</td>
+<td>Index, 2015=100, national currency, current prices</td>
+</tr>
+<tr>
+<td>KG_TEUR_CLV10</td>
+<td>euunit:KG_TEUR_CLV10</td>
+<td>Kilograms per thousand euro, chain linked volumes (2010)</td>
+</tr>
+<tr>
+<td>PPS_HAB_EU28</td>
+<td>euunit:PPS_HAB_EU28</td>
+<td>Purchasing power standard (PPS) per inhabitant in percentage of the EU28 (2013-2020) average</td>
+</tr>
+<tr>
+<td>DEGC</td>
+<td>euunit:DEGC</td>
+<td>Degree Celsius</td>
+</tr>
+<tr>
+<td>PH</td>
+<td>euunit:PH</td>
+<td>pH value</td>
+</tr>
+<tr>
+<td>CLV10_EUR_AWU</td>
+<td>euunit:CLV10_EUR_AWU</td>
+<td>Chain linked volumes (2010), euro per annual work unit (AWU)</td>
+</tr>
+<tr>
+<td>PC_NAEA</td>
+<td>euunit:PC_NAEA</td>
+<td>Percentage of the non-artificial erosive area</td>
+</tr>
+<tr>
+<td>PC_SAL</td>
+<td>euunit:PC_SAL</td>
+<td>Percentage of employees</td>
+</tr>
+<tr>
+<td>PC_SAL_TEMP</td>
+<td>euunit:PC_SAL_TEMP</td>
+<td>Percentage of employees with a temporary job</td>
+</tr>
+<tr>
+<td>M2_HAB</td>
+<td>euunit:M2_HAB</td>
+<td>Square metres per capita</td>
+</tr>
+<tr>
+<td>KM2_HAB</td>
+<td>euunit:KM2_HAB</td>
+<td>Square kilometres per capita</td>
+</tr>
+<tr>
+<td>MCG_M3</td>
+<td>euunit:MCG_M3</td>
+<td>Micrograms per cubic metre</td>
+</tr>
+<tr>
+<td>I2015_SCA</td>
+<td>euunit:I2015_SCA</td>
+<td>Index, 2015=100 (SCA)</td>
+</tr>
+<tr>
+<td>I2015_NSA</td>
+<td>euunit:I2015_NSA</td>
+<td>Index, 2015=100 (NSA)</td>
+</tr>
+<tr>
+<td>PC_DT</td>
+<td>euunit:PC_DT</td>
+<td>Distance to target in percentage</td>
+</tr>
+<tr>
+<td>EUR_HAB_EU27_2019</td>
+<td>euunit:EUR_HAB_EU27_2019</td>
+<td>Euro per inhabitant in percentage of the EU27 (from 2020) average</td>
+</tr>
+<tr>
+<td>PPS_EU27_2019</td>
+<td>euunit:PPS_EU27_2019</td>
+<td>Purchasing power standard (PPS, EU27 from 2020)</td>
+</tr>
+<tr>
+<td>MIO_PPS_EU27_2019</td>
+<td>euunit:MIO_PPS_EU27_2019</td>
+<td>Million purchasing power standards (PPS, EU27 from 2020)</td>
+</tr>
+<tr>
+<td>PPS_EU27_2019_HAB</td>
+<td>euunit:PPS_EU27_2019_HAB</td>
+<td>Purchasing power standard (PPS, EU27 from 2020), per inhabitant</td>
+</tr>
+<tr>
+<td>PPS_HAB_EU27_2019</td>
+<td>euunit:PPS_HAB_EU27_2019</td>
+<td>Purchasing power standard (PPS, EU27 from 2020), per inhabitant in percentage of the EU27 (from 2020) average</td>
+</tr>
+<tr>
+<td>RT_PRE_EUR</td>
+<td>euunit:RT_PRE_EUR</td>
+<td>Growth rate on previous period (t/t-1) for values in euro</td>
+</tr>
+<tr>
+<td>RT_PRE_NAC</td>
+<td>euunit:RT_PRE_NAC</td>
+<td>Growth rate on previous period (t/t-1) for values in national currency</td>
+</tr>
+<tr>
+<td>PC_EU27_2019</td>
+<td>euunit:PC_EU27_2019</td>
+<td>Percentage of EU27 (without United Kingdom) total</td>
+</tr>
+<tr>
+<td>PC_EU27_2019_MEUR_CP</td>
+<td>euunit:PC_EU27_2019_MEUR_CP</td>
+<td>Percentage of EU27 (from 2020) total (based on million euro), current prices</td>
+</tr>
+<tr>
+<td>PC_EU27_2019_MPPS_CP</td>
+<td>euunit:PC_EU27_2019_MPPS_CP</td>
+<td>Percentage of EU27 (from 2020) total (based on million purchasing power standards), current prices</td>
+</tr>
+<tr>
+<td>PC_EU28_HAB_MEUR_CP</td>
+<td>euunit:PC_EU28_HAB_MEUR_CP</td>
+<td>Percentage of EU28 (2013-2020) total per capita (based on million euro), current prices</td>
+</tr>
+<tr>
+<td>PC_EU27_2019_HAB_MEUR_CP</td>
+<td>euunit:PC_EU27_2019_HAB_MEUR_CP</td>
+<td>Percentage of EU27 (from 2020) total per capita (based on million euro, EU27 from 2020), current prices</td>
+</tr>
+<tr>
+<td>PC_EU28_HAB_MPPS_CP</td>
+<td>euunit:PC_EU28_HAB_MPPS_CP</td>
+<td>Percentage of EU28 (2013-2020) total per capita (based on million purchasing power standards), current prices</td>
+</tr>
+<tr>
+<td>PC_EU27_2019_HAB_MPPS_CP</td>
+<td>euunit:PC_EU27_2019_HAB_MPPS_CP</td>
+<td>Percentage of EU27 (from 2020) total per capita (based on million purchasing power standards, EU27 from 2020), current prices</td>
+</tr>
+<tr>
+<td>CP_MPPS_EU27_2019</td>
+<td>euunit:CP_MPPS_EU27_2019</td>
+<td>Current prices, million purchasing power standards (PPS, EU27 from 2020)</td>
+</tr>
+<tr>
+<td>CP_PPS_EU27_2019_HAB</td>
+<td>euunit:CP_PPS_EU27_2019_HAB</td>
+<td>Current prices, purchasing power standard (PPS, EU27 from 2020) per capita</td>
+</tr>
+<tr>
+<td>M_KM2</td>
+<td>euunit:M_KM2</td>
+<td>Metres per square kilometre</td>
+</tr>
+<tr>
+<td>KM_THAB</td>
+<td>euunit:KM_THAB</td>
+<td>Kilometres per thousand inhabitants</td>
+</tr>
+<tr>
+<td>I03</td>
+<td>euunit:I03</td>
+<td>Index, 2003=100</td>
+</tr>
+<tr>
+<td>P_TCAR</td>
+<td>euunit:P_TCAR</td>
+<td>Per thousand passenger cars</td>
+</tr>
+<tr>
+<td>CH_A_KM2</td>
+<td>euunit:CH_A_KM2</td>
+<td>Annual change in square kilometres</td>
+</tr>
+<tr>
+<td>PC_RIMG</td>
+<td>euunit:PC_RIMG</td>
+<td>Percentage of total recent immigrants</td>
+</tr>
+<tr>
+<td>PC_ENT_P3D</td>
+<td>euunit:PC_ENT_P3D</td>
+<td>Percentage of enterprises with 3D printing</td>
+</tr>
+<tr>
+<td>PC_ENT_RBTS</td>
+<td>euunit:PC_ENT_RBTS</td>
+<td>Percentage of enterprises using service robots</td>
+</tr>
+<tr>
+<td>PC_IND_IUP2P_WRK</td>
+<td>euunit:PC_IND_IUP2P_WRK</td>
+<td>Percentage of individuals who have obtained paid work by using an intermediary website or apps</td>
+</tr>
+<tr>
+<td>PC_IND_MPP</td>
+<td>euunit:PC_IND_MPP</td>
+<td>Percentage of individuals who use a smartphone for private purposes</td>
+</tr>
+<tr>
+<td>PC_IND_ILT12_SSF</td>
+<td>euunit:PC_IND_ILT12_SSF</td>
+<td>Percentage of employees and self-employed who used internet within the last year</td>
+</tr>
+<tr>
+<td>PC_IND_WH</td>
+<td>euunit:PC_IND_WH</td>
+<td>Percentage of individuals working from home</td>
+</tr>
+<tr>
+<td>PC_IND_WM</td>
+<td>euunit:PC_IND_WM</td>
+<td>Percentage of individuals working at an external site or on the move</td>
+</tr>
+<tr>
+<td>PC_IND_MDW</td>
+<td>euunit:PC_IND_MDW</td>
+<td>Percentage of individuals who, at work, use any type of computers, portable devices or computerised equipment or machinery</td>
+</tr>
+<tr>
+<td>THS_TY</td>
+<td>euunit:THS_TY</td>
+<td>Thousand tonnes per year</td>
+</tr>
+<tr>
+<td>MIO_M3D</td>
+<td>euunit:MIO_M3D</td>
+<td>Million cubic metres per day</td>
+</tr>
+<tr>
+<td>BN_M3Y</td>
+<td>euunit:BN_M3Y</td>
+<td>Billion cubic metres per year</td>
+</tr>
+<tr>
+<td>MWH</td>
+<td>euunit:MWH</td>
+<td>Megawatt-hour</td>
+</tr>
+<tr>
+<td>KJ_M3</td>
+<td>euunit:KJ_M3</td>
+<td>Kilojoule per cubic metre</td>
+</tr>
+<tr>
+<td>MJ_T_GCV</td>
+<td>euunit:MJ_T_GCV</td>
+<td>Megajoule per tonne (gross calorific value - GCV)</td>
+</tr>
+<tr>
+<td>MJ_T_NCV</td>
+<td>euunit:MJ_T_NCV</td>
+<td>Megajoule per tonne (net calorific value - NCV)</td>
+</tr>
+<tr>
+<td>KJ_M3_NCV</td>
+<td>euunit:KJ_M3_NCV</td>
+<td>Kilojoule per cubic metre (net calorific value - NCV)</td>
+</tr>
+<tr>
+<td>KJ_M3_GCV</td>
+<td>euunit:KJ_M3_GCV</td>
+<td>Kilojoule per cubic metre (gross calorific value - GCV)</td>
+</tr>
+<tr>
+<td>D_RT_M</td>
+<td>euunit:D_RT_M</td>
+<td>Monthly rates difference</td>
+</tr>
+<tr>
+<td>I16</td>
+<td>euunit:I16</td>
+<td>Index, 2016=100</td>
+</tr>
+<tr>
+<td>PCH_Q4_SCA</td>
+<td>euunit:PCH_Q4_SCA</td>
+<td>Percentage change q/q-4 (SCA)</td>
+</tr>
+<tr>
+<td>KGOE_TEUR_PPS</td>
+<td>euunit:KGOE_TEUR_PPS</td>
+<td>Kilograms of oil equivalent (KGOE) per thousand euro in purchasing power standards (PPS)</td>
+</tr>
+<tr>
+<td>TOE_MEUR</td>
+<td>euunit:TOE_MEUR</td>
+<td>Tonnes of oil equivalent (TOE) per million euro</td>
+</tr>
+<tr>
+<td>RT_M_DIF</td>
+<td>euunit:RT_M_DIF</td>
+<td>Monthly rate differences between HICP and HICP at constant taxes</td>
+</tr>
+<tr>
+<td>PCH_SM_PER_NSA</td>
+<td>euunit:PCH_SM_PER_NSA</td>
+<td>Percentage change compared to same period in previous year (based on persons, NSA)</td>
+</tr>
+<tr>
+<td>PCH_SM_PER_SCA</td>
+<td>euunit:PCH_SM_PER_SCA</td>
+<td>Percentage change compared to same period in previous year (based on persons, SCA)</td>
+</tr>
+<tr>
+<td>KGOE_HAB</td>
+<td>euunit:KGOE_HAB</td>
+<td>Kilograms of oil equivalent (KGOE) per capita</td>
+</tr>
+<tr>
+<td>TOE_HAB</td>
+<td>euunit:TOE_HAB</td>
+<td>Tonnes of oil equivalent (TOE) per capita</td>
+</tr>
+<tr>
+<td>KJ</td>
+<td>euunit:KJ</td>
+<td>Kilojoule</td>
+</tr>
+<tr>
+<td>MJ</td>
+<td>euunit:MJ</td>
+<td>Megajoule</td>
+</tr>
+<tr>
+<td>MJ_HAB</td>
+<td>euunit:MJ_HAB</td>
+<td>Megajoule per capita</td>
+</tr>
+<tr>
+<td>GJ</td>
+<td>euunit:GJ</td>
+<td>Gigajoule</td>
+</tr>
+<tr>
+<td>GJ_HAB</td>
+<td>euunit:GJ_HAB</td>
+<td>Gigajoule per capita</td>
+</tr>
+<tr>
+<td>TJ_HAB</td>
+<td>euunit:TJ_HAB</td>
+<td>Terajoule per capita</td>
+</tr>
+<tr>
+<td>PC_ENT_SECPOL2</td>
+<td>euunit:PC_ENT_SECPOL2</td>
+<td>Percentage of enterprises with  document(s) on measures, practices or procedures on ICT security (as of 2019)</td>
+</tr>
+<tr>
+<td>PC_IND_SECOITPP</td>
+<td>euunit:PC_IND_SECOITPP</td>
+<td>Percentage of individuals who have experienced online identity theft, phishing or pharming</td>
+</tr>
+<tr>
+<td>I15_PER</td>
+<td>euunit:I15_PER</td>
+<td>Index, 2015=100 (based on persons)</td>
+</tr>
+<tr>
+<td>I15_HW</td>
+<td>euunit:I15_HW</td>
+<td>Index, 2015=100 (based on hours worked)</td>
+</tr>
+<tr>
+<td>I15_JOB</td>
+<td>euunit:I15_JOB</td>
+<td>Index, 2015=100 (based on jobs)</td>
+</tr>
+<tr>
+<td>KP_I15</td>
+<td>euunit:KP_I15</td>
+<td>Constant prices, index 2015=100</td>
+</tr>
+<tr>
+<td>CLV_I15</td>
+<td>euunit:CLV_I15</td>
+<td>Chain linked volumes, index 2015=100</td>
+</tr>
+<tr>
+<td>PER_KM2</td>
+<td>euunit:PER_KM2</td>
+<td>Persons per square kilometre</td>
+</tr>
+<tr>
+<td>CLV15_MEUR</td>
+<td>euunit:CLV15_MEUR</td>
+<td>Chain linked volumes (2015), million euro</td>
+</tr>
+<tr>
+<td>CLV15_MNAC</td>
+<td>euunit:CLV15_MNAC</td>
+<td>Chain linked volumes (2015), million units of national currency</td>
+</tr>
+<tr>
+<td>CLV_I15_HAB</td>
+<td>euunit:CLV_I15_HAB</td>
+<td>Chain linked volumes, Index 2015=100, per capita</td>
+</tr>
+<tr>
+<td>CLV15_EUR_HAB</td>
+<td>euunit:CLV15_EUR_HAB</td>
+<td>Chain linked volumes (2015), euro per capita</td>
+</tr>
+<tr>
+<td>PD15_EUR</td>
+<td>euunit:PD15_EUR</td>
+<td>Price index (implicit deflator), 2015=100, euro</td>
+</tr>
+<tr>
+<td>PD15_NAC</td>
+<td>euunit:PD15_NAC</td>
+<td>Price index (implicit deflator), 2015=100, national currency</td>
+</tr>
+<tr>
+<td>RAT</td>
+<td>euunit:RAT</td>
+<td>Ratio</td>
+</tr>
+<tr>
+<td>PPS_3Y_AVG</td>
+<td>euunit:PPS_3Y_AVG</td>
+<td>Purchasing power standard (PPS), three-year average</td>
+</tr>
+<tr>
+<td>PCH_PRE_RV</td>
+<td>euunit:PCH_PRE_RV</td>
+<td>Percentage change on previous period, real values</td>
+</tr>
+<tr>
+<td>PCH_3Y_AVG_RV</td>
+<td>euunit:PCH_3Y_AVG_RV</td>
+<td>Percentage change, three-year average, real values</td>
+</tr>
+<tr>
+<td>MG_L</td>
+<td>euunit:MG_L</td>
+<td>Milligrams per litre</td>
+</tr>
+<tr>
+<td>EUR_HAB_EU27_2020</td>
+<td>euunit:EUR_HAB_EU27_2020</td>
+<td>Euro per inhabitant in percentage of the EU27 (from 2020) average</td>
+</tr>
+<tr>
+<td>PPS_EU27_2020</td>
+<td>euunit:PPS_EU27_2020</td>
+<td>Purchasing power standard (PPS, EU27 from 2020)</td>
+</tr>
+<tr>
+<td>MIO_PPS_EU27_2020</td>
+<td>euunit:MIO_PPS_EU27_2020</td>
+<td>Million purchasing power standards (PPS, EU27 from 2020)</td>
+</tr>
+<tr>
+<td>PPS_EU27_2020_HAB</td>
+<td>euunit:PPS_EU27_2020_HAB</td>
+<td>Purchasing power standard (PPS, EU27 from 2020), per inhabitant</td>
+</tr>
+<tr>
+<td>PPS_HAB_EU27_2020</td>
+<td>euunit:PPS_HAB_EU27_2020</td>
+<td>Purchasing power standard (PPS, EU27 from 2020), per inhabitant in percentage of the EU27 (from 2020) average</td>
+</tr>
+<tr>
+<td>PC_EU27_2020</td>
+<td>euunit:PC_EU27_2020</td>
+<td>Percentage of EU27 (from 2020) total</td>
+</tr>
+<tr>
+<td>PC_EU27_2007</td>
+<td>euunit:PC_EU27_2007</td>
+<td>Percentage of EU27 (2007-2013) total</td>
+</tr>
+<tr>
+<td>PC_EU27_2020_EUR_HAB</td>
+<td>euunit:PC_EU27_2020_EUR_HAB</td>
+<td>Percentage of EU27 (from 2020) total (based on euro per inhabitant)</td>
+</tr>
+<tr>
+<td>PC_EU27_2007_EUR_HAB</td>
+<td>euunit:PC_EU27_2007_EUR_HAB</td>
+<td>Percentage of EU27 (2007-2013) total (based on euro per inhabitant)</td>
+</tr>
+<tr>
+<td>PC_EU27_2020_PPS_HAB</td>
+<td>euunit:PC_EU27_2020_PPS_HAB</td>
+<td>Percentage of EU27 (from 2020) total (based on purchasing power standards per inhabitant)</td>
+</tr>
+<tr>
+<td>PC_EU27_2007_PPS_HAB</td>
+<td>euunit:PC_EU27_2007_PPS_HAB</td>
+<td>Percentage of EU27 (2007-2013) total (based on purchasing power standards per inhabitant)</td>
+</tr>
+<tr>
+<td>PC_EU27_2020_PPS_EMP</td>
+<td>euunit:PC_EU27_2020_PPS_EMP</td>
+<td>Percentage of EU27 (from 2020) total (based on purchasing power standards per employed person)</td>
+</tr>
+<tr>
+<td>PC_EU27_2007_PPS_EMP</td>
+<td>euunit:PC_EU27_2007_PPS_EMP</td>
+<td>Percentage of EU27 (2007-2013) total (based on purchasing power standards per employed person)</td>
+</tr>
+<tr>
+<td>PC_EU27_2007_PPS_HRS</td>
+<td>euunit:PC_EU27_2007_PPS_HRS</td>
+<td>Percentage of EU27 (2007-2013) total (based on purchasing power standards per hours worked)</td>
+</tr>
+<tr>
+<td>PC_EU27_2020_MEUR</td>
+<td>euunit:PC_EU27_2020_MEUR</td>
+<td>Percentage of EU27 (from 2020) total (based on million euro)</td>
+</tr>
+<tr>
+<td>PC_EU27_2007_MEUR</td>
+<td>euunit:PC_EU27_2007_MEUR</td>
+<td>Percentage of EU27 (2007-2013) total (based on million euro)</td>
+</tr>
+<tr>
+<td>PC_EU27_2020_MPPS</td>
+<td>euunit:PC_EU27_2020_MPPS</td>
+<td>Percentage of EU27 (from 2020) total (based on million purchasing power standards)</td>
+</tr>
+<tr>
+<td>PC_EU27_2007_MPPS</td>
+<td>euunit:PC_EU27_2007_MPPS</td>
+<td>Percentage of EU27 (2007-2013) total (based on million purchasing power standards)</td>
+</tr>
+<tr>
+<td>PC_EU27_2020_MEUR_CP</td>
+<td>euunit:PC_EU27_2020_MEUR_CP</td>
+<td>Percentage of EU27 (from 2020) total (based on million euro), current prices</td>
+</tr>
+<tr>
+<td>PC_EU27_2020_MPPS_CP</td>
+<td>euunit:PC_EU27_2020_MPPS_CP</td>
+<td>Percentage of EU27 (from 2020) total (based on million purchasing power standards), current prices</td>
+</tr>
+<tr>
+<td>PC_EU27_2020_HAB_MEUR_CP</td>
+<td>euunit:PC_EU27_2020_HAB_MEUR_CP</td>
+<td>Percentage of EU27 (from 2020) total per capita (based on million euro, EU27 from 2020), current prices</td>
+</tr>
+<tr>
+<td>PC_EU27_2020_HAB_MPPS_CP</td>
+<td>euunit:PC_EU27_2020_HAB_MPPS_CP</td>
+<td>Percentage of EU27 (from 2020) total per capita (based on million purchasing power standards, EU27 from 2020), current prices</td>
+</tr>
+<tr>
+<td>CP_MPPS_EU27_2020</td>
+<td>euunit:CP_MPPS_EU27_2020</td>
+<td>Current prices, million purchasing power standards (PPS, EU27 from 2020)</td>
+</tr>
+<tr>
+<td>CP_PPS_EU27_2020_HAB</td>
+<td>euunit:CP_PPS_EU27_2020_HAB</td>
+<td>Current prices, purchasing power standard (PPS, EU27 from 2020) per capita</td>
+</tr>
+<tr>
+<td>CP_PC_EU27_2020_EUR</td>
+<td>euunit:CP_PC_EU27_2020_EUR</td>
+<td>Current prices, percentage of EU27 (from 2020) total (based on euro per capita)</td>
+</tr>
+<tr>
+<td>CP_PC_EU27_2020_PPS</td>
+<td>euunit:CP_PC_EU27_2020_PPS</td>
+<td>Current prices, percentage of EU27 (from 2020) total (based on purchasing power standards per capita)</td>
+</tr>
+<tr>
+<td>PCH_RV</td>
+<td>euunit:PCH_RV</td>
+<td>Percentage change, real values</td>
+</tr>
+<tr>
+<td>MEUR_HAB</td>
+<td>euunit:MEUR_HAB</td>
+<td>Million euro per inhabitant</td>
+</tr>
+<tr>
+<td>PC_ENT_BDA</td>
+<td>euunit:PC_ENT_BDA</td>
+<td>Percentage of enterprises analysing big data internally or externally</td>
+</tr>
+<tr>
+<td>PC_ENT_BDAAM</td>
+<td>euunit:PC_ENT_BDAAM</td>
+<td>Percentage of enterprises analysing big data internally using any method</td>
+</tr>
+<tr>
+<td>PC_ENT_IOT</td>
+<td>euunit:PC_ENT_IOT</td>
+<td>Percentage of enterprises using Internet of Things</td>
+</tr>
+<tr>
+<td>PC_ENT_AWS_CMP</td>
+<td>euunit:PC_ENT_AWS_CMP</td>
+<td>Percentage of enterprises with web sales via e-commerce marketplaces</td>
+</tr>
+<tr>
+<td>PC_ENT_IUSE</td>
+<td>euunit:PC_ENT_IUSE</td>
+<td>Percentage of enterprises where persons employed have access to the internet</td>
+</tr>
+<tr>
+<td>PC_ENT_ITSPVAC2</td>
+<td>euunit:PC_ENT_ITSPVAC2</td>
+<td>Percentage of enterprises with hard-to-fill vacancies for jobs requiring ICT specialist skills (as of 2020)</td>
+</tr>
+<tr>
+<td>PC_IND_BHHS</td>
+<td>euunit:PC_IND_BHHS</td>
+<td>Percentage of individuals who purchased online household services</td>
+</tr>
+<tr>
+<td>PC_IND_BPG_ANY</td>
+<td>euunit:PC_IND_BPG_ANY</td>
+<td>Percentage of individuals who purchased online physical goods</td>
+</tr>
+<tr>
+<td>PC_IND_BRA</td>
+<td>euunit:PC_IND_BRA</td>
+<td>Percentage of individuals who rented accommodation online from an enterprise or a private person</td>
+</tr>
+<tr>
+<td>PC_IND_BTPS</td>
+<td>euunit:PC_IND_BTPS</td>
+<td>Percentage of individuals who purchased online transport service from a transport enterprise or a private person</td>
+</tr>
+<tr>
+<td>PC_IND_IOT_BDKX</td>
+<td>euunit:PC_IND_IOT_BDKX</td>
+<td>Percentage of individuals who have not used any internet-connected device or systems although they knew about them</td>
+</tr>
+<tr>
+<td>PC_IND_IOT_DX</td>
+<td>euunit:PC_IND_IOT_DX</td>
+<td>Percentage of individuals who have not used any internet-connected devices or systems</td>
+</tr>
+<tr>
+<td>PC_IND_MPP1</td>
+<td>euunit:PC_IND_MPP1</td>
+<td>Percentage of individuals who use a smartphone for private purposes (3 months)</td>
+</tr>
+<tr>
+<td>I15_17_AVG</td>
+<td>euunit:I15-17_AVG</td>
+<td>Index, 2015-2017 average =100</td>
+</tr>
+<tr>
+<td>I11_13_AVG</td>
+<td>euunit:I11-13_AVG</td>
+<td>Index, 2011-2013 average =100</td>
+</tr>
+<tr>
+<td>I13</td>
+<td>euunit:I13</td>
+<td>Index, 2013=100</td>
+</tr>
+<tr>
+<td>PC_Y</td>
+<td>euunit:PC_Y</td>
+<td>Percentage in the year</td>
+</tr>
+<tr>
+<td>TJ_NCV</td>
+<td>euunit:TJ_NCV</td>
+<td>Terajoule (net calorific value - NCV)</td>
+</tr>
+<tr>
+<td>I98</td>
+<td>euunit:I98</td>
+<td>Index, 1998=100</td>
+</tr>
+<tr>
+<td>TVAL_MEUR</td>
+<td>euunit:TVAL_MEUR</td>
+<td>Trade value in million euro</td>
+</tr>
+<tr>
+<td>PCH_LV_M_16_19</td>
+<td>euunit:PCH_LV_M_16-19</td>
+<td>Percentage change of the current month compared to the lowest value for the corresponding month in the period 2016-2019</td>
+</tr>
+<tr>
+<td>EUR_KG_CLV15</td>
+<td>euunit:EUR_KG_CLV15</td>
+<td>Euro per kilogram, chain linked volumes (2015)</td>
+</tr>
+<tr>
+<td>EUR_HM2</td>
+<td>euunit:EUR_HM2</td>
+<td>Euro per hundred square metres</td>
+</tr>
+<tr>
+<td>EUR_HD</td>
+<td>euunit:EUR_HD</td>
+<td>Euro per head (animal)</td>
+</tr>
+<tr>
+<td>EUR_HHD</td>
+<td>euunit:EUR_HHD</td>
+<td>Euro per hundred heads (animals)</td>
+</tr>
+<tr>
+<td>EUR_HIVE</td>
+<td>euunit:EUR_HIVE</td>
+<td>Euro per beehive</td>
+</tr>
+<tr>
+<td>T_KM2</td>
+<td>euunit:T_KM2</td>
+<td>Tonnes per square kilometre</td>
+</tr>
+<tr>
+<td>MIO_M2</td>
+<td>euunit:MIO_M2</td>
+<td>Million square metres</td>
+</tr>
+<tr>
+<td>TJ_TM3_NCV</td>
+<td>euunit:TJ_TM3_NCV</td>
+<td>Terajoule per thousand cubic metres (net calorific value - NCV)</td>
+</tr>
+<tr>
+<td>I21</td>
+<td>euunit:I21</td>
+<td>Index, 2021=100</td>
+</tr>
+<tr>
+<td>I20</td>
+<td>euunit:I20</td>
+<td>Index, 2020=100</td>
+</tr>
+<tr>
+<td>I18</td>
+<td>euunit:I18</td>
+<td>Index, 2018=100</td>
+</tr>
+<tr>
+<td>I91</td>
+<td>euunit:I91</td>
+<td>Index, 1991=100</td>
+</tr>
+<tr>
+<td>I10_Q</td>
+<td>euunit:I10_Q</td>
+<td>Quarterly index, 2010=100</td>
+</tr>
+<tr>
+<td>I15_Q</td>
+<td>euunit:I15_Q</td>
+<td>Quarterly index, 2015=100</td>
+</tr>
+<tr>
+<td>I10_A_AVG</td>
+<td>euunit:I10_A_AVG</td>
+<td>Annual average index, 2010=100</td>
+</tr>
+<tr>
+<td>I15_A_AVG</td>
+<td>euunit:I15_A_AVG</td>
+<td>Annual average index, 2015=100</td>
+</tr>
+<tr>
+<td>THS_T_4Q</td>
+<td>euunit:THS_T_4Q</td>
+<td>Sum of the last 4 quarters (in thousand tonnes)</td>
+</tr>
+<tr>
+<td>THS_TEU_4Q</td>
+<td>euunit:THS_TEU_4Q</td>
+<td>Sum of the last 4 quarters (in TEUs)</td>
+</tr>
+<tr>
+<td>MIO_EMP</td>
+<td>euunit:MIO_EMP</td>
+<td>Millions of persons employed</td>
+</tr>
+<tr>
+<td>MIO_SAL</td>
+<td>euunit:MIO_SAL</td>
+<td>Millions of employees</td>
+</tr>
+<tr>
+<td>THS_HH</td>
+<td>euunit:THS_HH</td>
+<td>Thousand households</td>
+</tr>
+<tr>
+<td>PB</td>
+<td>euunit:PB</td>
+<td>Planetary Boundary</td>
+</tr>
+<tr>
+<td>P_HAB</td>
+<td>euunit:P_HAB</td>
+<td>Per inhabitant</td>
+</tr>
+<tr>
+<td>HD_AVG</td>
+<td>euunit:HD_AVG</td>
+<td>Average of heads</td>
+</tr>
+<tr>
+<td>PLC</td>
+<td>euunit:PLC</td>
+<td>Place</td>
+</tr>
+<tr>
+<td>HIVE</td>
+<td>euunit:HIVE</td>
+<td>Beehives</td>
+</tr>
+<tr>
+<td>RT_SMQ</td>
+<td>euunit:RT_SMQ</td>
+<td>Growth rate on the same quarter in previous year</td>
+</tr>
+<tr>
+<td>PC_Y_LT65</td>
+<td>euunit:PC_Y_LT65</td>
+<td>Percentage of total population aged less than 65</td>
+</tr>
+<tr>
+<td>PC_INAC_WWRK</td>
+<td>euunit:PC_INAC_WWRK</td>
+<td>Percentage of population outside the labour force and wanting to work</td>
+</tr>
+<tr>
+<td>PC_ENT_IOT1</td>
+<td>euunit:PC_ENT_IOT1</td>
+<td>Percentage of enterprises using Internet of Things (as of 2021)</td>
+</tr>
+<tr>
+<td>PC_SAL_AESELL</td>
+<td>euunit:PC_SAL_AESELL</td>
+<td>Percentage of the employees working in enterprises which received orders via computer networks</td>
+</tr>
+<tr>
+<td>PC_EMP_AESELL</td>
+<td>euunit:PC_EMP_AESELL</td>
+<td>Percentage of persons employed working in enterprises which received orders via computer networks</td>
+</tr>
+<tr>
+<td>PC_ENT_AI_EC</td>
+<td>euunit:PC_ENT_AI_EC</td>
+<td>Percentage of the enterprises which ever considered to use any of the AI technologies</td>
+</tr>
+<tr>
+<td>PC_ENT_AI_TANY</td>
+<td>euunit:PC_ENT_AI_TANY</td>
+<td>Percentage of the enterprises using at least one AI technologies</td>
+</tr>
+<tr>
+<td>PC_ENT_AI_TX</td>
+<td>euunit:PC_ENT_AI_TX</td>
+<td>Percentage of the enterprises using no AI technologies</td>
+</tr>
+<tr>
+<td>PC_ENT_CVD_IEM</td>
+<td>euunit:PC_ENT_CVD_IEM</td>
+<td>Percentage of the enterprises which increased the percentage of persons employed having remote access to their e-mail system</td>
+</tr>
+<tr>
+<td>PC_ENT_CVD_IRA</td>
+<td>euunit:PC_ENT_CVD_IRA</td>
+<td>Percentage of the enterprises which increased the percentage of persons employed having remote access their ICT systems other than e-mail</td>
+</tr>
+<tr>
+<td>PC_ENT_CVD_IRM</td>
+<td>euunit:PC_ENT_CVD_IRM</td>
+<td>Percentage of the enterprises which increased the number of their remote meetings</td>
+</tr>
+<tr>
+<td>PC_IND_BGT3_IU3</td>
+<td>euunit:PC_IND_BGT3_IU3</td>
+<td>Percentage of individuals who used internet and did not purchase online in the last 3 months</td>
+</tr>
+<tr>
+<td>PC_IND_TIC</td>
+<td>euunit:PC_IND_TIC</td>
+<td>Percentage of individuals who checked the truthfulness of the information or content found on the internet news sites or social media</td>
+</tr>
+<tr>
+<td>PC_IND_TICX</td>
+<td>euunit:PC_IND_TICX</td>
+<td>Percentage of individuals who did not check the truthfulness of the information or content found on the internet news sites or social media</td>
+</tr>
+<tr>
+<td>PC_IND_UDI</td>
+<td>euunit:PC_IND_UDI</td>
+<td>Percentage of individuals who saw untrue or doubtful information or content on the internet news sites or social media</td>
+</tr>
+<tr>
+<td>PC_EMP_PREEMP_M12</td>
+<td>euunit:PC_EMP_PREEMP_M12</td>
+<td>Percentage of persons employed and previously employed within 12 months</td>
+</tr>
+<tr>
+<td>PC_EMP_PREEMP</td>
+<td>euunit:PC_EMP_PREEMP</td>
+<td>Percentage of persons employed and previously employed</td>
+</tr>
+<tr>
+<td>PC_PER_HPB</td>
+<td>euunit:PC_PER_HPB</td>
+<td>Percentage of persons reporting a health problem</td>
+</tr>
+<tr>
+<td>PC_PER_ACC</td>
+<td>euunit:PC_PER_ACC</td>
+<td>Percentage of persons reporting an accident</td>
+</tr>
+<tr>
+<td>PCH_SM_2Y</td>
+<td>euunit:PCH_SM_2Y</td>
+<td>Percentage change compared to same period two years ago</td>
+</tr>
+<tr>
+<td>PCH_SM_19</td>
+<td>euunit:PCH_SM_19</td>
+<td>Percentage change compared to same month in 2019</td>
+</tr>
+<tr>
+<td>PCH_5Y_CPI15_NAC</td>
+<td>euunit:PCH_5Y_CPI15_NAC</td>
+<td>Price index - percentage change (t/t-5), based on 2015=100 and national currency</td>
+</tr>
+<tr>
+<td>PCH_M24</td>
+<td>euunit:PCH_M24</td>
+<td>Percentage change m/m-24</td>
+</tr>
+<tr>
+<td>PC_POP_NPT</td>
+<td>euunit:PC_POP_NPT</td>
+<td>Percentage of population not participating in tourism</td>
+</tr>
+<tr>
+<td>PC_ENT_RA</td>
+<td>euunit:PC_ENT_RA</td>
+<td>Percentage of enterprises with persons employed having remote access</td>
+</tr>
+<tr>
+<td>PC_ENT_RM</td>
+<td>euunit:PC_ENT_RM</td>
+<td>Percentage of enterprises conducting remote meetings</td>
+</tr>
+<tr>
+<td>PC_ENT_RBT</td>
+<td>euunit:PC_ENT_RBT</td>
+<td>Percentage of enterprises using industrial or service robots</td>
+</tr>
+<tr>
+<td>KG_L</td>
+<td>euunit:KG_L</td>
+<td>Kilograms per liter</td>
+</tr>
+<tr>
+<td>PC_OECD_EU</td>
+<td>euunit:PC_OECD_EU</td>
+<td>Percentage of the total of OECD countries and EU Member States not in OECD</td>
+</tr>
+<tr>
+<td>PCH_OECD_EU_5Y</td>
+<td>euunit:PCH_OECD_EU_5Y</td>
+<td>Percentage of the total of OECD countries and EU Member States not in OECD - 5-year change</td>
+</tr>
+<tr>
+<td>MIO_SKM</td>
+<td>euunit:MIO_SKM</td>
+<td>Million seat-kilometre</td>
+</tr>
+<tr>
+<td>PC_ENT_DAOWN</td>
+<td>euunit:PC_ENT_DAOWN</td>
+<td>Percentage of enterprises which performed Data Analytics by the enterprise's own employees</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.tabs.link"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/echarts@6.0.0/dist/echarts.min.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+      
+        <script src="../../js/tablesort.js"></script>
+      
+    
+  </body>
+</html>
