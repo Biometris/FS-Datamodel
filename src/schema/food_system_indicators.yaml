@@ -14,8 +14,10 @@ prefixes:
   schema: http://schema.org/
   skos: http://www.w3.org/2004/02/skos/core#
   UO: http://purl.obolibrary.org/obo/UO_
+  euunit: http://dd.eionet.europa.eu/vocabulary/eurostat/unit/
 imports:
   - linkml:types
+  - eurostat-unit-enums
 default_range: string
 default_prefix: fsi
 
@@ -58,7 +60,8 @@ classes:
       - eu2025_sdg_indicator_code
       - dimension
       - supply_chain_component
-      - measurement_unit
+      - measurement_unit_description
+      - measurement_units
       - has_category
       - sustainability_impact
     slot_usage:
@@ -270,23 +273,30 @@ slots:
 
   dimension:
     title: dimension
-    description:
+    description: >-
       Reference to the dimension that the indicator belongs to.
     required: true
     range: SustainabilityDimension
 
   supply_chain_component:
     title: supply chain component(s)
-    description:
+    description: >-
       Reference to the supply chain component(s) for which the indicator is relevant.
     range: SupplyChainComponentType
     multivalued: true
 
-  measurement_unit:
-    title: unit of measurement
-    description:
-      Unit of measurement.
+  measurement_unit_description:
+    title: unit(s) of measurement description
+    description: >-
+      Textual description of the indicator unit of measurement.
     range: unit
+
+  measurement_units:
+    title: units of measurement
+    range: IndicatorMeasurementUnit
+    description: >-
+      Indicator unit(s) of measurement.
+    multivalued: true
 
   eu2025_sdg_indicator_code:
     title: EU (2025) SDG indicator code

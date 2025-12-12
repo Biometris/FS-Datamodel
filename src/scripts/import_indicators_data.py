@@ -1,4 +1,5 @@
 import yaml
+import csv
 import pandas as pd
 import re
 
@@ -40,6 +41,18 @@ for column in xlsx_combined.columns:
     if xlsx_combined[column].dtype == "object":
         xlsx_combined[column] = xlsx_combined[column].map(lambda x : " ".join(x.split()) if isinstance(x, str) else x)
 
+# Helper function to get unit mappings
+def build_unit_mapping(csv_path):
+    mapping = {}
+    with open(csv_path, encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            orig = row["Orig"].strip()
+            eu_units_raw = row["EU_Unit"].strip()
+            units = [u.strip() for u in eu_units_raw.split(";") if u.strip()]
+            mapping[orig] = units
+    return mapping
+
 # Helper field to remove empty fields 
 def skip_empty_field(records, field):
     for row in records:
@@ -74,6 +87,7 @@ def to_fsi_identifier(xlsx_combined, column_name):
 def escape(xlsx_combined, column_name):
     return xlsx_combined[column_name] \
         .str.replace("[\u201C\u201D]", "\"", regex=True) \
+        .str.replace("\u00d7", "x", regex=True) \
         .str.replace("\u2013", "-", regex=True) \
         .str.replace("\u2018", "'", regex=True) \
         .str.replace("\u2019", "'", regex=True) \
@@ -104,6 +118,19 @@ def map_sustainability_impact(xlsx_combined, column_name):
             record = re.sub("[^+-]", "", record)
             result.append(impact_mapping.get(record, "Undefined"))
     return result
+
+# Build unit mappings
+csv_file = "data/measurement_unit_mappings.csv"
+units_mapping = build_unit_mapping(csv_file)
+measurement_units = []
+for record in xlsx_combined["Unit"]:
+    units = units_mapping.get(record.strip(), None)
+    if units:
+        units = list(set(units)) if not isinstance(units[0], list) else units[0]
+        units.sort()
+        measurement_units.append(units)
+    else:
+        measurement_units.append([])
 
 # Map supply chain components
 ### TODO: This should ideally be correct in input. Check and throw error?
@@ -152,7 +179,8 @@ indicator_data = {
     "description": escape(xlsx_combined, "Definition"),
     "definition": "",
     "eu2025_sdg_indicator_code": eu_sdg_indicator_codes,
-    "measurement_unit": xlsx_combined["Unit"],
+    "measurement_unit_description": xlsx_combined["Unit"],
+    "measurement_units": measurement_units,
     "dimension": to_identifier(xlsx_combined, "dimension"),
     "has_category": to_identifier(xlsx_combined, "category"),
     "supply_chain_component": supply_chain_components,

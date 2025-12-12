@@ -5,21 +5,45 @@ hide:
 
 # {{indicator['name']}}
 
-{{ indicator['description'] }}
+{% if indicator['description'] %} 
+  {{ indicator['description'] }}
+{% else %}
+  *Description not available*
+{% endif %}
 
 **Definition**: 
-{%- if indicator['definition'] %} 
+{% if indicator['definition'] %} 
   {{ indicator['definition'] }}
-{%- else %}
-  <i>Not available.</i>
-{%- endif %}
+{% else %}
+  *Not available*
+{% endif %}
 
 **Dimension**: {{ enum_dict['SustainabilityDimension'][indicator['dimension']] }}
 
 **Category**: {{ indicator['has_category'] }}
 
-**Unit of measurement**: {{ indicator['measurement_unit'] }}
+**Unit(s) of measurement description**:
+{% if indicator['measurement_unit_description'] %} 
+  {{ indicator['measurement_unit_description'] }}
+{% else %}
+  *Not available*
+{% endif %}
+
+**Unit of measurement**:
+{% if indicator['measurement_units'] %}
+  {% for mu in indicator['measurement_units'] %}
+  - [{{ enum_dict['IndicatorMeasurementUnit'][mu] }}](../../model/IndicatorMeasurementUnit)
+  {% endfor %}
+{% else %}
+  - *Not specified*
+{% endif %}
 
 {% if indicator['eu2025_sdg_indicator_code'] %}
   **EU 2025 SDG Indicator**: {{ indicator['eu2025_sdg_indicator_code'] }}
 {%- endif %}
+
+**Supply chain components**:
+
+{% for scp in indicator['supply_chain_component'] %}
+- [{{ enum_dict['SupplyChainComponentType'][scp] }}](../../model/SupplyChainComponentType)
+{% endfor %}

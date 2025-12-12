@@ -3,17 +3,17 @@ hide:
   - toc
 ---
 
-| Dimensions | Category | Name | Unit | Description | Definition | Supply chain components | Sustainability impact |
-|------------|----------|------|------|-------------|------------|-------------------------|-----------------------|
+| Dimensions | Category | Name | Unit(s) | Description | Definition | Supply chain components | Sustainability impact |
+|------------|----------|------|---------|-------------|------------|-------------------------|-----------------------|
 {% for indicator in indicators -%}
   {%- set id = indicator['id'] -%}
   {%- set name = indicator['name'] -%}
   {%- set description = indicator['description'] -%}
   {%- set definition = indicator['definition'] -%}
-  {%- set unit = indicator['measurement_unit'] -%}
+  {%- set units = indicator['measurement_units'] -%}
   {%- set sustainability_impact = enum_dict['SustainabilityImpactType'][indicator['sustainability_impact']] -%}
   {%- set dimension = enum_dict['SustainabilityDimension'][indicator['dimension']] -%}
   {%- set category_id = indicator['has_category'] -%}
   {%- set category_name = categories_dict[indicator['has_category']]['title'] -%}
-| [{{ dimension }}](../model/SustainabilityDimension) | [{{category_name}}](../indicator_categories) | [{{name}}](../indicators/{{id}}) | {{unit}} | {{ description | replace("\n", "") }} | {{ definition }} | {% for scp in indicator['supply_chain_component'] %} [{{ enum_dict['SupplyChainComponentType'][scp] }}](../SupplyChainComponentType) {% endfor %} | {{sustainability_impact}} |
+| [{{ dimension }}](../model/SustainabilityDimension) | [{{category_name}}](../indicator_categories) | [{{name}}](../indicators/{{id}}) | {% for mu in units %} [{{ enum_dict['IndicatorMeasurementUnit'][mu] }}](../model/IndicatorMeasurementUnit) {% endfor %} | {{ description | replace("\n", "") }} | {{ definition }} | {% for scp in indicator['supply_chain_component'] %} [{{ enum_dict['SupplyChainComponentType'][scp] }}](../model/SupplyChainComponentType) {% endfor %} | {{sustainability_impact}} |
 {% endfor %}
