@@ -4,6 +4,7 @@ The aim is to establish a harmonised data model for structured collection of met
 
 ## Indicators by category
 
+
 <div id="indicators-sunburst-chart" style="width: 100; height: 600px;"></div>
 
 ## Supply chain component hierarchy tree
@@ -11,6 +12,5 @@ The aim is to establish a harmonised data model for structured collection of met
 <div id="indicators-tree-chart" style="width: 100; height: 600px;"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+<script type="text/javascript" src="js/indicators_sunburst_chart.js"></script>
 <script type="text/javascript" src="js/indicators_supply_chain_chart.js"></script>
-<script type="text/javascript" scr="js/indicators_sunburst_chart.js"></script>
-

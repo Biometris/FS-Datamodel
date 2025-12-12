@@ -16,7 +16,7 @@
 {%- if 'association' not in schemaview.class_ancestors(c.name) and not schemaview.is_mixin(c.name) -%}
 {%- if c.name not in ["Any", "Entity" ] -%}
 | {{ gen._markdown_link(gen.name(c), c.title | capitalize, "") }} | {{c.description}} | Class |
-{%- endif -%}
+{% endif -%}
 {%- endif -%}
 {% endfor %}
 
