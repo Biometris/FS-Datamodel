@@ -1,3 +1,4 @@
+from typing import Set
 from linkml_runtime import SchemaView
 from linkml_store import Client
 from linkml_store.utils.format_utils import load_objects
@@ -30,7 +31,7 @@ class DataStore:
         self.add_database_data(indicator_data_collection_details_file, "IndicatorDataCollectionDetails", "IndicatorDataCollectionDetails")
         self.add_database_data(databases_file, "Database", "Databases")
         self.add_database_data(criteria_file, "IndicatorCriterion", "IndicatorCriteria")
-        self.add_database_data(indicatorscores_file, "IndicatorcriteriaScore", "IndicatorCriteriaScores")
+        #self.add_database_data(indicatorscores_file, "IndicatorcriteriaScore", "IndicatorCriteriaScores")
 
         # Validate cross-links
         print("\nRunning validation...")
@@ -85,7 +86,10 @@ class DataStore:
             enum = self.db.schema_view.get_enum(e)
             permissible_values = enum.permissible_values
             enum_dict[enum.name] = {
-                pv: (permissible_values[pv].title if permissible_values[pv].title else permissible_values[pv].description) for pv in permissible_values
+                pv: {
+                    'title': permissible_values[pv].title if permissible_values[pv].title else permissible_values[pv].text,
+                    'description': permissible_values[pv].description
+                } for pv in permissible_values
             }
 
         for s in view.all_slots():
@@ -129,16 +133,28 @@ class DataStore:
         q = Query(from_table="IndicatorCriteriaScores", limit=-1)
         return self.db.query(q).rows
 
-    def export_to_excel(self, output_path: str):
+    def export_to_excel(self, output_path: str, table_names: Set[str] = None):
         """Export the database contents to an Excel file with one sheet per collection."""
         collections = self.db.list_collections()
         with pd.ExcelWriter(output_path, engine='openpyxl') as writer:
-            for collection in collections:
-                df = pd.DataFrame(collection.rows_iter())
-                df.to_excel(writer, sheet_name=collection.target_class_name, index=False)
+            # Glossary sheet
             glossary_terms = self.get_glossary_terms()
-            df = pd.DataFrame(glossary_terms)
-            df.to_excel(writer, sheet_name="Glossary", index=False)
+            if not table_names or "Glossary" in table_names:
+                df = pd.DataFrame(glossary_terms)
+                df.to_excel(writer, sheet_name="Glossary", index=False)
+
+            # Class (data) sheets
+            for collection in collections:
+                if not table_names or collection.target_class_name in table_names:
+                    df = pd.DataFrame(collection.rows_iter())
+                    df.to_excel(writer, sheet_name=collection.target_class_name, index=False)
+
+            # Enum sheets
+            for enum_type in self.db.schema_view.all_enums().values():
+                if not table_names or enum_type.name in table_names:
+                    enum_terms = self.get_enum_definitions(enum_type)
+                    df = pd.DataFrame(enum_terms)
+                    df.to_excel(writer, sheet_name=enum_type.name, index=False)
 
     def export_glossary_yaml(self, output_file):
         glossary_terms = self.get_glossary_terms()
@@ -146,9 +162,8 @@ class DataStore:
             yaml.dump(glossary_terms, f, sort_keys=False, allow_unicode=True)
 
     def get_glossary_terms(self):
-        sv = self.db.schema_view
-
         # Build glossary
+        sv = self.db.schema_view
         records = []
         for c in sv.all_classes().values():
             if 'association' not in sv.class_ancestors(c.name) and not sv.is_mixin(c.name):
@@ -167,4 +182,15 @@ class DataStore:
             }
             records.append(record)
 
+        return records
+
+    def get_enum_definitions(self, enum_type):
+        records = []
+        for pv in enum_type.permissible_values.values():
+            record = {
+                "id": str(pv.text),
+                #"meaning": str(pv.meaning) if pv.meaning else '',
+                "description": str(pv.description) if pv.description else ''
+            }
+            records.append(record)
         return records

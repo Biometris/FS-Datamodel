@@ -18,7 +18,7 @@ hide:
   *Not available*
 {% endif %}
 
-**Dimension**: {{ enum_dict['SustainabilityDimension'][indicator['dimension']] }}
+**Dimension**: {{ enum_dict['SustainabilityDimension'][indicator['dimension']]['title'] }}
 
 **Category**: {{ indicator['has_category'] }}
 
@@ -32,7 +32,7 @@ hide:
 **Unit of measurement**:
 {% if indicator['measurement_units'] %}
   {% for mu in indicator['measurement_units'] %}
-  - [{{ enum_dict['IndicatorMeasurementUnit'][mu] }}](../../model/IndicatorMeasurementUnit)
+  - [{{ enum_dict['IndicatorMeasurementUnit'][mu]['title'] }}](../../model/IndicatorMeasurementUnit)
   {% endfor %}
 {% else %}
   - *Not specified*
@@ -45,5 +45,5 @@ hide:
 **Supply chain components**:
 
 {% for scp in indicator['supply_chain_component'] %}
-- [{{ enum_dict['SupplyChainComponentType'][scp] }}](../../model/SupplyChainComponentType)
+- [{{ enum_dict['SupplyChainComponentType'][scp]['title'] }}](../../model/SupplyChainComponentType)
 {% endfor %}

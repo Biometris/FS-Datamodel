@@ -11,9 +11,9 @@ hide:
   {%- set description = indicator['description'] -%}
   {%- set definition = indicator['definition'] -%}
   {%- set units = indicator['measurement_units'] -%}
-  {%- set sustainability_impact = enum_dict['SustainabilityImpactType'][indicator['sustainability_impact']] -%}
-  {%- set dimension = enum_dict['SustainabilityDimension'][indicator['dimension']] -%}
+  {%- set sustainability_impact = enum_dict['SustainabilityImpactType'][indicator['sustainability_impact']]['title'] -%}
+  {%- set dimension = enum_dict['SustainabilityDimension'][indicator['dimension']]['title'] -%}
   {%- set category_id = indicator['has_category'] -%}
-  {%- set category_name = categories_dict[indicator['has_category']]['title'] -%}
-| [{{ dimension }}](../model/SustainabilityDimension) | [{{category_name}}](../indicator_categories) | [{{name}}](../indicators/{{id}}) | {% for mu in units %} [{{ enum_dict['IndicatorMeasurementUnit'][mu] }}](../model/IndicatorMeasurementUnit) {% endfor %} | {{ description | replace("\n", "") }} | {{ definition }} | {% for scp in indicator['supply_chain_component'] %} [{{ enum_dict['SupplyChainComponentType'][scp] }}](../model/SupplyChainComponentType) {% endfor %} | {{sustainability_impact}} |
+  {%- set category_name = categories_dict[indicator['has_category']]['name'] -%}
+| [{{ dimension }}](../model/SustainabilityDimension) | [{{category_name}}](../indicator_categories) | [{{name}}](../indicators/{{id}}) | {% for mu in units %} [{{ enum_dict['IndicatorMeasurementUnit'][mu]['title'] }}](../model/IndicatorMeasurementUnit) {% endfor %} | {{ description | replace("\n", "") }} | {{ definition }} | {% for scp in indicator['supply_chain_component'] %} [{{ enum_dict['SupplyChainComponentType'][scp]['title'] }}](../model/SupplyChainComponentType) {% endfor %} | {{sustainability_impact}} |
 {% endfor %}

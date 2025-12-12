@@ -532,21 +532,22 @@ enums:
     title: criterion category
     description: Category of an indicator selection criterion.
     permissible_values:
+      CoherenceOnFramework:
+        title: coherence on framework
+        description: >-
+          Ensure a coherent and comprehensive representation of the food system.
       GoalOrientedAndPolicyRelevant:
+        title: goal alignment, transition monitoring and decision-usefulness
         description:
-          Goal oriented and policy relevant.
+          Ensure indicators align with sustainability goals, SRIA objectives, and support clear, actionable decision-making.
       SoundMethodologies:
+        title: sound methodologies
         description:
-          Sound methodologies.
-      AvailabilityAndAccessibility:
-        description:
-          Availability and accessibility.
+          To ensure indicators are reliable, comparable, and scientifically validated, supporting cross-country comparisons and integration into global frameworks, data interoperability, adherence to FAIR principles to improve data accessibility and usability.
       GeographicalCoverageAndTimeliness:
-        description:
-          Geographical coverage and timeliness.
-      OperationalFeasibility:
-        description:
-          Operational feasibility.
+        title: Geographical coverage and timeliness
+        description: >-
+          To ensure that indicators are based on accessible, interoperable, geographically comprehensive, and timely data that support effective and informed monitoring.
 
   ScoreCategory:
     title: score category

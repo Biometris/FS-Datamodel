@@ -107,14 +107,18 @@ def render_template(
 
 if __name__ == "__main__":
     schema_path = "src/schema/food_system_indicators.yaml"
+
     indicator_data_path = "data/indicators.yaml"
     indicator_categories_data_path = "data/indicator_categories.yaml"
     database_data_path = "data/databases.yaml"
     indicator_data_collection_details_data_path = "data/indicator_data_collection_details.yaml"
     criterion_data_path = "data/criteria.yaml"
     indicatorscores_data_path = "data/indicatorscores.yaml"
-    excel_export_path = "docs/data/indicator_data_export.xlsx"
-    glossary_export_path = "docs/data/glossary.yaml"
+
+    data_export_path = "docs/data"
+    excel_export_path = os.path.join(data_export_path, "indicator_data_export.xlsx")
+    selection_criteria_excel_export_path = os.path.join(data_export_path, "indicator_criteria_export.xlsx")
+    glossary_export_path = os.path.join(data_export_path, "glossary.yaml")
 
     # Setup data store
     datastore = DataStore(
@@ -229,7 +233,8 @@ if __name__ == "__main__":
 
         criteria = datastore.get_indicator_criteria()
         render_template(
-            template_name = 'indicator_criteria_table',
+            template_name = 'indicator_criteria',
+            xlsx_download_path = '../data/indicator_criteria_export.xlsx',
             criteria = criteria,
             enum_dict = enum_dict
         )
@@ -242,6 +247,12 @@ if __name__ == "__main__":
 
         # Export entire datastore to Excel
         datastore.export_to_excel(excel_export_path)
+
+        # Export indicator selection criteria
+        datastore.export_to_excel(
+            selection_criteria_excel_export_path,
+            table_names = {'IndicatorCriterion', 'CriterionCategory'}
+        )
 
         # Export glossary terms
         datastore.export_glossary_yaml(glossary_export_path)

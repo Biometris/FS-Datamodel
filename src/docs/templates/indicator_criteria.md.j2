@@ -1,0 +1,15 @@
+
+[[Export xlsx]]({{xlsx_download_path}})
+
+{% for key, value in enum_dict['CriterionCategory'].items() %}
+## {{value['title'] | upper}}
+
+{{value['description']}}
+
+{% for c in criteria -%}
+{%- if c['category'] == key %}
+{{ loop.index }}. **{{ c.get("name") }}**: {{ c.get("description") }}
+{% endif -%}
+{% endfor -%}
+
+{% endfor %}
