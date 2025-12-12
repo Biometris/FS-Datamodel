@@ -591,24 +591,24 @@
       "from_schema": "https://w3id.org/linkml/examples/fsi",
       "permissible_values": [
         {
+          "text": "CoherenceOnFramework",
+          "description": "Ensure a coherent and comprehensive representation of the food system.",
+          "title": "coherence on framework"
+        },
+        {
           "text": "GoalOrientedAndPolicyRelevant",
-          "description": "Goal oriented and policy relevant."
+          "description": "Ensure indicators align with sustainability goals, SRIA objectives, and support clear, actionable decision-making.",
+          "title": "goal alignment, transition monitoring and decision-usefulness"
         },
         {
           "text": "SoundMethodologies",
-          "description": "Sound methodologies."
-        },
-        {
-          "text": "AvailabilityAndAccessibility",
-          "description": "Availability and accessibility."
+          "description": "To ensure indicators are reliable, comparable, and scientifically validated, supporting cross-country comparisons and integration into global frameworks, data interoperability, adherence to FAIR principles to improve data accessibility and usability.",
+          "title": "sound methodologies"
         },
         {
           "text": "GeographicalCoverageAndTimeliness",
-          "description": "Geographical coverage and timeliness."
-        },
-        {
-          "text": "OperationalFeasibility",
-          "description": "Operational feasibility."
+          "description": "To ensure that indicators are based on accessible, interoperable, geographically comprehensive, and timely data that support effective and informed monitoring.",
+          "title": "Geographical coverage and timeliness"
         }
       ]
     },
@@ -6825,9 +6825,9 @@
   ],
   "metamodel_version": "1.7.0",
   "source_file": "food_system_indicators.yaml",
-  "source_file_date": "2025-12-12T07:55:38",
-  "source_file_size": 16270,
-  "generation_date": "2025-12-12T07:56:23",
+  "source_file_date": "2025-12-12T15:41:59",
+  "source_file_size": 16855,
+  "generation_date": "2025-12-12T15:42:38",
   "@type": "SchemaDefinition",
   "@context": [
     "project/jsonld/food_system_indicators.context.jsonld",

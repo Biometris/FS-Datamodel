@@ -317,11 +317,10 @@ linkml:Sparqlpath xsd:string
     (  $<https://w3id.org/linkml/examples/fsiIndicatorCriterion_tes> (  &<https://w3id.org/linkml/examples/fsiEntity_tes> ;
           rdf:type [ <https://w3id.org/linkml/examples/fsiEntity> ] ? ;
           <https://w3id.org/linkml/examples/fsicategory> [
+             <https://w3id.org/linkml/examples/fsiCriterionCategory#CoherenceOnFramework>
              <https://w3id.org/linkml/examples/fsiCriterionCategory#GoalOrientedAndPolicyRelevant>
              <https://w3id.org/linkml/examples/fsiCriterionCategory#SoundMethodologies>
-             <https://w3id.org/linkml/examples/fsiCriterionCategory#AvailabilityAndAccessibility>
-             <https://w3id.org/linkml/examples/fsiCriterionCategory#GeographicalCoverageAndTimeliness>
-             <https://w3id.org/linkml/examples/fsiCriterionCategory#OperationalFeasibility> ] ?
+             <https://w3id.org/linkml/examples/fsiCriterionCategory#GeographicalCoverageAndTimeliness> ] ?
        ) ;
        rdf:type [ <https://w3id.org/linkml/examples/fsiIndicatorCriterion> ]
     )

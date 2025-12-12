@@ -3,11 +3,10 @@
         "CriterionCategory": {
             "description": "Category of an indicator selection criterion.",
             "enum": [
+                "CoherenceOnFramework",
                 "GoalOrientedAndPolicyRelevant",
                 "SoundMethodologies",
-                "AvailabilityAndAccessibility",
-                "GeographicalCoverageAndTimeliness",
-                "OperationalFeasibility"
+                "GeographicalCoverageAndTimeliness"
             ],
             "title": "CriterionCategory",
             "type": "string"

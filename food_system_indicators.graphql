@@ -1,11 +1,10 @@
 # metamodel_version: 1.7.0
 enum CriterionCategory
   {
+    CoherenceOnFramework
     GoalOrientedAndPolicyRelevant
     SoundMethodologies
-    AvailabilityAndAccessibility
     GeographicalCoverageAndTimeliness
-    OperationalFeasibility
   }
 
 enum Eu2025SdgIndicator
