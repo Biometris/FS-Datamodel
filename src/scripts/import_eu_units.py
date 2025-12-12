@@ -44,7 +44,7 @@ def csv_to_linkml_enum(csv_path):
             if definition:
                 pv["description"] = definition
             else:
-                pv = {"description": label}
+                pv["description"] = label
 
             pv["meaning"] = f"{CURIE_PREFIX}:{notation}"
             

@@ -11,3366 +11,4600 @@ enums:
       unit of measure dictionary/vocabulary.
     permissible_values:
       NBR:
+        title: Number
         description: Number
         meaning: euunit:NBR
       NR:
+        title: Number
         description: Number
         meaning: euunit:NR
       NR_HAB:
+        title: Number per inhabitant
         description: Number per inhabitant
         meaning: euunit:NR_HAB
       NR_GDP:
+        title: Number per GDP
         description: Number per GDP
         meaning: euunit:NR_GDP
       '1000':
+        title: Thousands
         description: Thousands
         meaning: euunit:1000
       THS:
+        title: Thousand
         description: Thousand
         meaning: euunit:THS
       MIO:
+        title: Million
         description: Million
         meaning: euunit:MIO
       MRD:
+        title: Milliards
         description: Milliards
         meaning: euunit:MRD
       BN:
+        title: Billion
         description: Billion
         meaning: euunit:BN
       HAB:
+        title: Inhabitant/person/capita
         description: Inhabitant/person/capita
         meaning: euunit:HAB
       100HAB:
+        title: Per 100 inhabitants
         description: Per 100 inhabitants
         meaning: euunit:100HAB
       1000HAB:
+        title: Per 1 000 inhabitants
         description: Per 1 000 inhabitants
         meaning: euunit:1000HAB
       100000HAB:
+        title: Per 100,000 inhabitants
         description: Per 100,000 inhabitants
         meaning: euunit:100000HAB
       I2000_HAB:
+        title: Index per inhabitant, 2000=100
         description: Index per inhabitant, 2000=100
         meaning: euunit:I2000_HAB
       I2005_HAB:
+        title: Index per inhabitant, 2005=100
         description: Index per inhabitant, 2005=100
         meaning: euunit:I2005_HAB
       MIO_HAB:
+        title: Per million of inhabitants
         description: Per million of inhabitants
         meaning: euunit:MIO_HAB
       HAB_PER_:
+        title: Inhabitants per ...
         description: Inhabitants per ...
         meaning: euunit:HAB_PER_
       HAB_KM2:
+        title: Inhabitants per square kilometre
         description: Inhabitants per square kilometre
         meaning: euunit:HAB_KM2
       KM_1000KM2:
+        title: Kilometres per 1 000 km2
         description: Kilometres per 1 000 km2
         meaning: euunit:KM_1000KM2
       EUR_KG:
+        title: Euro per kilogram
         description: Euro per kilogram
         meaning: euunit:EUR_KG
       EUR_CLV00_KG:
+        title: 'Euro per kilogram (Euro: chain-linked volumes, reference year 2000,
+          at 2000 exchange rates)'
         description: 'Euro per kilogram (Euro: chain-linked volumes, reference year
           2000, at 2000 exchange rates)'
         meaning: euunit:EUR_CLV00_KG
       EUR_CLV05_KG:
+        title: 'Euro per kilogram (Euro: chain-linked volumes, reference year 2005,
+          at 2005 exchange rates)'
         description: 'Euro per kilogram (Euro: chain-linked volumes, reference year
           2005, at 2005 exchange rates)'
         meaning: euunit:EUR_CLV05_KG
       EUR_HA:
+        title: Euro per hectare
         description: Euro per hectare
         meaning: euunit:EUR_HA
       EUR_HAB:
+        title: Euro per inhabitant
         description: Euro per inhabitant
         meaning: euunit:EUR_HAB
       EUR_HAB_EU:
+        title: Euro per inhabitant in percentage of the EU average
         description: Euro per inhabitant in percentage of the EU average
         meaning: euunit:EUR_HAB_EU
       EUR_HAB_CLV00:
+        title: Euro per inhabitant, volume reference and exchange rates 2000
         description: Euro per inhabitant, volume reference and exchange rates 2000
         meaning: euunit:EUR_HAB_CLV00
       EUR_HAB_CLV05:
+        title: Euro per inhabitant, volume reference and exchange rates 2005
         description: Euro per inhabitant, volume reference and exchange rates 2005
         meaning: euunit:EUR_HAB_CLV05
       EUR_HAB_KP00:
+        title: Euro per inhabitant (at constant 2000 prices)
         description: Euro per inhabitant (at constant 2000 prices)
         meaning: euunit:EUR_HAB_KP00
       EUR_HRS:
+        title: Euro per hour worked
         description: Euro per hour worked
         meaning: euunit:EUR_HRS
       NAC_HA:
+        title: National currency per hectare
         description: National currency per hectare
         meaning: euunit:NAC_HA
       NAC_HAB:
+        title: National currency per inhabitant
         description: National currency per inhabitant
         meaning: euunit:NAC_HAB
       NAC_HAB_CLV00:
+        title: National currency per inhabitant, volume reference exchange rates 2000
         description: National currency per inhabitant, volume reference exchange rates
           2000
         meaning: euunit:NAC_HAB_CLV00
       NAC_HAB_CLV05:
+        title: National currency per inhabitant, volume reference exchange rates 2005
         description: National currency per inhabitant, volume reference exchange rates
           2005
         meaning: euunit:NAC_HAB_CLV05
       NAC_HRS:
+        title: National currency per hour worked
         description: National currency per hour worked
         meaning: euunit:NAC_HRS
       PPS_KG:
+        title: Purchasing power standard (PPS) per kilogram
         description: Purchasing power standard (PPS) per kilogram
         meaning: euunit:PPS_KG
       PPS_HAB:
+        title: Purchasing power standard (PPS) per inhabitant
         description: Purchasing power standard (PPS) per inhabitant
         meaning: euunit:PPS_HAB
       PPS_HAB_EU:
+        title: Purchasing power standard (PPS) per inhabitant in percentage of the
+          EU average
         description: Purchasing power standard (PPS) per inhabitant in percentage
           of the EU average
         meaning: euunit:PPS_HAB_EU
       EUR:
+        title: Euro
         description: Euro
         meaning: euunit:EUR
       THS_EUR:
+        title: Thousand euro
         description: Thousand euro
         meaning: euunit:THS_EUR
       1000EUR:
+        title: Thousands of euro
         description: Thousands of euro
         meaning: euunit:1000EUR
       MIO_EUR:
+        title: Millions of euro (from 1.1.1999)/ECU (up to 31.12.1998)
         description: Millions of euro (from 1.1.1999)/ECU (up to 31.12.1998)
         meaning: euunit:MIO-EUR
       MIO_EUR_KP00:
+        title: Million euro (at constant 2000 prices)
         description: Million euro (at constant 2000 prices)
         meaning: euunit:MIO_EUR_KP00
       MIO_EUR_KP10:
+        title: Million euro (at constant 2010 prices)
         description: Million euro (at constant 2010 prices)
         meaning: euunit:MIO_EUR_KP10
       MIO_EUR_KP11:
+        title: Million euro (at constant 2011 prices)
         description: Million euro (at constant 2011 prices)
         meaning: euunit:MIO_EUR_KP11
       MIO_EUR_KP_PRE:
+        title: Million euro (at prices of the previous year)
         description: Million euro (at prices of the previous year)
         meaning: euunit:MIO_EUR_KP_PRE
       MIO_EUR_CLV2000:
+        title: Million euro, chain-linked volumes, reference year 2000 (at 2000 exchange
+          rates)
         description: Million euro, chain-linked volumes, reference year 2000 (at 2000
           exchange rates)
         meaning: euunit:MIO_EUR_CLV2000
       MIO_EUR_CLV2005:
+        title: Million euro, chain-linked volumes, reference year 2005 (at 2005 exchange
+          rates)
         description: Million euro, chain-linked volumes, reference year 2005 (at 2005
           exchange rates)
         meaning: euunit:MIO_EUR_CLV2005
       MIO_EUR_AVG_3Y2008:
+        title: Millions of euro, annual average 2008 - 2010
         description: Millions of euro, annual average 2008 - 2010
         meaning: euunit:MIO_EUR_AVG_3Y2008
       EUR_M3_CLV2005:
+        title: 'Euro per cubic metre (Euro: chain-linked volumes, reference year 2005,
+          at 2005 exchange rates)'
         description: 'Euro per cubic metre (Euro: chain-linked volumes, reference
           year 2005, at 2005 exchange rates)'
         meaning: euunit:EUR_M3_CLV2005
       MRD_EUR:
+        title: Milliards of euro (from 1.1.1999)/ECU (up to 31.12.1998)
         description: Milliards of euro (from 1.1.1999)/ECU (up to 31.12.1998)
         meaning: euunit:MRD_EUR
       BN_EUR:
+        title: Billion euro
         description: Billion euro
         meaning: euunit:BN_EUR
       CT:
+        title: Euro cent
         description: Euro cent
         meaning: euunit:CT
       ECU:
+        title: European currency unit (Ecu)
         description: European currency unit (Ecu)
         meaning: euunit:ECU
       NAC:
+        title: National currency
         description: National currency
         meaning: euunit:NAC
       1000NAC:
+        title: Thousands of national currency (including 'euro fixed' series for euro
+          area countries)
         description: Thousands of national currency (including 'euro fixed' series
           for euro area countries)
         meaning: euunit:1000NAC
       THS_NAC:
+        title: Thousand units of national currency
         description: Thousand units of national currency
         meaning: euunit:THS_NAC
       MIO_NAC:
+        title: Million units of national currency
         description: Million units of national currency
         meaning: euunit:MIO_NAC
       MIO_NAC_KP00:
+        title: Million units of national currency at constant 2000 prices
         description: Million units of national currency at constant 2000 prices
         meaning: euunit:MIO_NAC_KP00
       MIO_NAC_KP_PRE:
+        title: Million units of national currency at prices of the previous year
         description: Million units of national currency at prices of the previous
           year
         meaning: euunit:MIO_NAC_KP_PRE
       MIO_NAC_CLV2000:
+        title: Million units of national currency, chain-linked volumes, reference
+          year 2000
         description: Million units of national currency, chain-linked volumes, reference
           year 2000
         meaning: euunit:MIO_NAC_CLV2000
       MIO_NAC_CLV2005:
+        title: Million units of national currency, chain-linked volumes, reference
+          year 2005
         description: Million units of national currency, chain-linked volumes, reference
           year 2005
         meaning: euunit:MIO_NAC_CLV2005
       MRD_NAC:
+        title: Milliards of national currency (including 'euro fixed' series for euro
+          area countries)
         description: Milliards of national currency (including 'euro fixed' series
           for euro area countries)
         meaning: euunit:MRD_NAC
       BN_NAC:
+        title: Billion units of national currency
         description: Billion units of national currency
         meaning: euunit:BN_NAC
       NAT:
+        title: National currency (former currencies of the euro area countries)
         description: National currency (former currencies of the euro area countries)
         meaning: euunit:NAT
       MIO_NAT:
+        title: Million units of national currency (former currencies of the euro area
+          countries)
         description: Million units of national currency (former currencies of the
           euro area countries)
         meaning: euunit:MIO_NAT
       PPS:
+        title: Purchasing power standard (PPS)
         description: Purchasing power standard (PPS)
         meaning: euunit:PPS
       PPS_KP00_HAB:
+        title: Purchasing Power Standard per inhabitant at constant 2000 prices
         description: Purchasing Power Standard per inhabitant at constant 2000 prices
         meaning: euunit:PPS_KP00_HAB
       PPS_HAB_KP05:
+        title: Purchasing power standard (PPS) per inhabitant at constant 2005 prices
         description: Purchasing power standard (PPS) per inhabitant at constant 2005
           prices
         meaning: euunit:PPS_HAB_KP05
       MIO_PPS:
+        title: Million purchasing power standards (PPS)
         description: Million purchasing power standards (PPS)
         meaning: euunit:MIO_PPS
       MIO_PPS_KP00:
+        title: Million purchasing power standards (PPS) at 2000 prices
         description: Million purchasing power standards (PPS) at 2000 prices
         meaning: euunit:MIO_PPS_KP00
       MIO_PPS_KP05:
+        title: Million purchasing power standards (PPS) at 2005 prices
         description: Million purchasing power standards (PPS) at 2005 prices
         meaning: euunit:MIO_PPS_KP05
       MIO_PPCS:
+        title: Million purchasing power standards based on final consumption
         description: Million purchasing power standards based on final consumption
         meaning: euunit:MIO_PPCS
       PPCS_HAB:
+        title: Purchasing power standard based on final consumption per inhabitant
         description: Purchasing power standard based on final consumption per inhabitant
         meaning: euunit:PPCS_HAB
       GDP_EUR:
+        title: Nominal GDP; absolute level in milliards of euro
         description: Nominal GDP; absolute level in milliards of euro
         meaning: euunit:GDP_EUR
       T:
+        title: Tonne
         description: Tonne
         meaning: euunit:T
       T_HAB:
+        title: Tonnes per capita
         description: Tonnes per capita
         meaning: euunit:T_HAB
       1000T:
+        title: Thousands of tonnes
         description: Thousands of tonnes
         meaning: euunit:1000T
       THS_T:
+        title: Thousand tonnes
         description: Thousand tonnes
         meaning: euunit:THS_T
       1000T_DAY:
+        title: 1000 tonnes per day
         description: 1000 tonnes per day
         meaning: euunit:1000T_DAY
       T_O2_DAY:
+        title: Tonnes O2/day
         description: Tonnes O2/day
         meaning: euunit:T_O2_DAY
       T_CO2_EQVT:
+        title: Tonnes of CO2-equivalent
         description: Tonnes of CO2-equivalent
         meaning: euunit:T_CO2_EQVT
       KG_HAB:
+        title: Kilograms per capita
         description: Kilograms per capita
         meaning: euunit:KG_HAB
       GR_HAB:
+        title: Grams per capita
         description: Grams per capita
         meaning: euunit:GR_HAB
       TPW:
+        title: Tonnes product weight
         description: Tonnes product weight
         meaning: euunit:TPW
       TLW:
+        title: Tonnes live weight
         description: Tonnes live weight
         meaning: euunit:TLW
       T_AI:
+        title: Tonnes of active ingredient
         description: Tonnes of active ingredient
         meaning: euunit:T_AI
       MIO_T:
+        title: Million tonnes
         description: Million tonnes
         meaning: euunit:MIO_T
       EUR_T:
+        title: Euro per tonne
         description: Euro per tonne
         meaning: euunit:EUR_T
       NAC_T:
+        title: National currency per tonne
         description: National currency per tonne
         meaning: euunit:NAC_T
       T_HA:
+        title: Tonnes per hectare
         description: Tonnes per hectare
         meaning: euunit:T_HA
       KGOE_1000EUR:
+        title: Kilogram of oil equivalent per 1000 euro
         description: Kilogram of oil equivalent per 1000 euro
         meaning: euunit:KGOE_1000EUR
       KGOE_M2:
+        title: Kilograms of oil equivalent (KGOE) per square metre
         description: Kilograms of oil equivalent (KGOE) per square metre
         meaning: euunit:KGOE_M2
       1000TOE:
+        title: Thousand tonnes of oil equivalent (TOE)
         description: Thousand tonnes of oil equivalent (TOE)
         meaning: euunit:1000TOE
       THS_TOE:
+        title: Thousand TOE (tonnes of oil equivalent)
         description: Thousand TOE (tonnes of oil equivalent)
         meaning: euunit:THS_TOE
       MIO_TOE:
+        title: Million tonnes of oil equivalent (TOE)
         description: Million tonnes of oil equivalent (TOE)
         meaning: euunit:MIO_TOE
       KTOE:
+        title: Thousand tonnes of oil equivalent
         description: Thousand tonnes of oil equivalent
         meaning: euunit:KTOE
       MTOE:
+        title: Million tonnes of oil equivalent
         description: Million tonnes of oil equivalent
         meaning: euunit:MTOE
       GT:
+        title: Gross tonnage (GT)
         description: Gross tonnage (GT)
         meaning: euunit:GT
       THS_GT:
+        title: Gross tonnage (GT) in thousand
         description: Gross tonnage (GT) in thousand
         meaning: euunit:THS_GT
       MIO_GTKM:
+        title: Million gross tonne-kilometres
         description: Million gross tonne-kilometres
         meaning: euunit:MIO_GTKM
       THS_TKM:
+        title: Thousand tonne-kilometre (TKM)
         description: Thousand tonne-kilometre (TKM)
         meaning: euunit:THS_TKM
       1000TKM:
+        title: Thousands of Tonne-kilometre
         description: Thousands of Tonne-kilometre
         meaning: euunit:1000TKM
       MIO_TKM:
+        title: Million tonne-kilometre (TKM)
         description: Million tonne-kilometre (TKM)
         meaning: euunit:MIO_TKM
       MIO_TKM_OFF:
+        title: Millions of Tonne-Kilometre offered
         description: Millions of Tonne-Kilometre offered
         meaning: euunit:MIO_TKM_OFF
       PASS:
+        title: Passengers
         description: Passengers
         meaning: euunit:PASS
       1000PASS:
+        title: 1000 Passengers
         description: 1000 Passengers
         meaning: euunit:1000PASS
       1000PASF:
+        title: 1000 passengers (excluding cruise passengers)
         description: 1000 passengers (excluding cruise passengers)
         meaning: euunit:1000PASF
       1000PASC:
+        title: 1000 cruise passengers starting and ending a cruise
         description: 1000 cruise passengers starting and ending a cruise
         meaning: euunit:1000PASC
       1000PAST:
+        title: 1000 cruise passengers on excursion
         description: 1000 cruise passengers on excursion
         meaning: euunit:1000PAST
       MIO_PKM:
+        title: Millions of passenger-kilometres
         description: Millions of passenger-kilometres
         meaning: euunit:MIO_PKM
       PC:
+        title: Percentage
         description: Percentage
         meaning: euunit:PC
       PC_AREA:
+        title: Percentage of area
         description: Percentage of area
         meaning: euunit:PC_AREA
       PC_POP:
+        title: Percentage of total population
         description: Percentage of total population
         meaning: euunit:PC_POP
       PC_POP_Y20_29:
+        title: Population - as a percentage of the population aged 20-29
         description: Population - as a percentage of the population aged 20-29
         meaning: euunit:PC_POP_Y20_29
       PC_POP_Y25_29:
+        title: Population - as a percentage of the population aged 25-29
         description: Population - as a percentage of the population aged 25-29
         meaning: euunit:PC_POP_Y25_29
       PC_POP_GRAD:
+        title: Population - as a percentage of total graduation
         description: Population - as a percentage of total graduation
         meaning: euunit:PC_POP_GRAD
       PC_POP_PART:
+        title: Population - as a percentage of total participation
         description: Population - as a percentage of total participation
         meaning: euunit:PC_POP_PART
       PC_POP_STUD:
+        title: Population - as a % of total students
         description: Population - as a % of total students
         meaning: euunit:PC_POP_STUD
       PC_POP_FSTUD:
+        title: Population - as a % of total foreign students
         description: Population - as a % of total foreign students
         meaning: euunit:PC_POP_FSTUD
       PC_POP_UP95:
+        title: Percentage of total population - upper boundary of the 95% confidence
+          interval
         description: Percentage of total population - upper boundary of the 95% confidence
           interval
         meaning: euunit:PC_POP_UP95
       PC_POP_LW95:
+        title: Percentage of total population - lower boundary of the 95% confidence
+          interval
         description: Percentage of total population - lower boundary of the 95% confidence
           interval
         meaning: euunit:PC_POP_LW95
       PC_ACT:
+        title: Percentage of population in the labour force
         description: Percentage of population in the labour force
         meaning: euunit:PC_ACT
       PC_ACT_HC:
+        title: Percentage of population in the labour force - numerator in head count
+          (HC)
         description: Percentage of population in the labour force - numerator in head
           count (HC)
         meaning: euunit:PC_ACT_HC
       PC_ACT_FTE:
+        title: Percentage of population in the labour force - numerator in full-time
+          equivalent (FTE)
         description: Percentage of population in the labour force - numerator in full-time
           equivalent (FTE)
         meaning: euunit:PC_ACT_FTE
       PC_INAC:
+        title: Percentage of population outside the labour force
         description: Percentage of population outside the labour force
         meaning: euunit:PC_INAC
       PC_MOB:
+        title: Percentage of job-to-job mobile HRST
         description: Percentage of job-to-job mobile HRST
         meaning: euunit:PC_MOB
       PC_TSC:
+        title: Percentage of total revenues from taxes and social contributions
         description: Percentage of total revenues from taxes and social contributions
         meaning: euunit:PC_TSC
       PC_EMP:
+        title: Percentage of total employment
         description: Percentage of total employment
         meaning: euunit:PC_EMP
       PC_EMP_HC:
+        title: Percentage of total employment - numerator in head count (HC)
         description: Percentage of total employment - numerator in head count (HC)
         meaning: euunit:PC_EMP_HC
       PC_EMP_FTE:
+        title: Percentage of total employment - numerator in full-time equivalent
+          (FTE)
         description: Percentage of total employment - numerator in full-time equivalent
           (FTE)
         meaning: euunit:PC_EMP_FTE
       PC_UNE:
+        title: Percentage of unemployment
         description: Percentage of unemployment
         meaning: euunit:PC_UNE
       PC_GDP:
+        title: Percentage of gross domestic product (GDP)
         description: Percentage of gross domestic product (GDP)
         meaning: euunit:PC_GDP
       PC_BEN:
+        title: Percentage of total benefits
         description: Percentage of total benefits
         meaning: euunit:PC_BEN
       PC_EXP:
+        title: Percentage of total expenditure
         description: Percentage of total expenditure
         meaning: euunit:PC_EXP
       PC_REC:
+        title: Percentage of total receipts
         description: Percentage of total receipts
         meaning: euunit:PC_REC
       PC_CHE:
+        title: Percentual share of total current health expenditure (CHE)
         description: Percentual share of total current health expenditure (CHE)
         meaning: euunit:PC_CHE
       PC_WRL:
+        title: Percentage of world total
         description: Percentage of world total
         meaning: euunit:PC_WRL
       PC_TOT:
+        title: Percentage of total
         description: Percentage of total
         meaning: euunit:PC_TOT
       PC_TAX:
+        title: Percentage of total taxation
         description: Percentage of total taxation
         meaning: euunit:PC_TAX
       PC_TOT_HRS:
+        title: Percentage of total (based on hours worked)
         description: Percentage of total (based on hours worked)
         meaning: euunit:PC_TOT_HRS
       PC_HH:
+        title: Percentage of households
         description: Percentage of households
         meaning: euunit:PC_HH
       PC_CANT:
+        title: Cannot afford - percentage
         description: Cannot afford - percentage
         meaning: euunit:PC_CANT
       PC_EMP_CUSE:
+        title: Percentage of persons employed using a computer
         description: Percentage of persons employed using a computer
         meaning: euunit:PC_EMP_CUSE
       PC_EMP_IACC:
+        title: Percentage of persons employed working in an enterprise with internet
+          access
         description: Percentage of persons employed working in an enterprise with
           internet access
         meaning: euunit:PC_EMP_IACC
       PC_ENT:
+        title: Percentage of enterprises
         description: Percentage of enterprises
         meaning: euunit:PC_ENT
       PC_ENT_CUSE:
+        title: Percentage of the enterprises which use a computer
         description: Percentage of the enterprises which use a computer
         meaning: euunit:PC_ENT_CUSE
       PC_ENT_IACC:
+        title: Percentage of the enterprises with internet access
         description: Percentage of the enterprises with internet access
         meaning: euunit:PC_ENT_IACC
       PC_ENT_ISELL:
+        title: Percentage of the enterprises which sold over the internet over the
+          last calendar year
         description: Percentage of the enterprises which sold over the internet over
           the last calendar year
         meaning: euunit:PC_ENT_ISELL
       PC_TURN:
+        title: Percentage of turnover
         description: Percentage of turnover
         meaning: euunit:PC_TURN
       PC_HH_IACC:
+        title: Percentage of households with internet access at home
         description: Percentage of households with internet access at home
         meaning: euunit:PC_HH_IACC
       PC_IND:
+        title: Percentage of individuals
         description: Percentage of individuals
         meaning: euunit:PC_IND
       PC_IND_C3:
+        title: Percentage of individuals who used a computer within the last 3 months
         description: Percentage of individuals who used a computer within the last
           3 months
         meaning: euunit:PC_IND_C3
       PC_IND_CEVR:
+        title: Percentage of individuals who used a computer, ever
         description: Percentage of individuals who used a computer, ever
         meaning: euunit:PC_IND_CEVR
       PC_IND_ILT12:
+        title: Percentage of individuals who used internet within the last year
         description: Percentage of individuals who used internet within the last year
         meaning: euunit:PC_IND_ILT12
       PC_IND_IU3:
+        title: Percentage of individuals who used internet in the last 3 months
         description: Percentage of individuals who used internet in the last 3 months
         meaning: euunit:PC_IND_IU3
       PC_IND_CTMT3YX:
+        title: Percentage of individuals who have taken a computer course more than
+          3 years ago or never
         description: Percentage of individuals who have taken a computer course more
           than 3 years ago or never
         meaning: euunit:PC_IND_CTMT3YX
       PC_IND_CIANY:
+        title: Percentage of individuals who have done at least one of the listed
+          computer or internet activities
         description: Percentage of individuals who have done at least one of the listed
           computer or internet activities
         meaning: euunit:PC_IND_CIANY
       PC_PNT:
+        title: Percentage point
         description: Percentage point
         meaning: euunit:PC_PNT
       PC_IND_BLT12:
+        title: Percentage of individuals who ordered goods or services, over the internet,
+          for private use, in the last year
         description: Percentage of individuals who ordered goods or services, over
           the internet, for private use, in the last year
         meaning: euunit:PC_IND_BLT12
       PC_IND_BMT12X:
+        title: Percentage of individuals who ordered goods or services, over the internet,
+          for private use, more than a year ago or who never did
         description: Percentage of individuals who ordered goods or services, over
           the internet, for private use, more than a year ago or who never did
         meaning: euunit:PC_IND_BMT12X
       PC_IND_UMPH:
+        title: Percentage of individuals who use a mobile phone
         description: Percentage of individuals who use a mobile phone
         meaning: euunit:PC_IND_UMPH
       PC_IND_IUPH1:
+        title: Percentage of individuals who used internet for telephoning or video
+          calls in the last 3 months
         description: Percentage of individuals who used internet for telephoning or
           video calls in the last 3 months
         meaning: euunit:PC_IND_IUPH1
       PC_IND_IUMFXP:
+        title: Percentage of individuals who downloaded/listened to/watched/exchanged/podcasted
+          music or films in the last 3 months
         description: Percentage of individuals who downloaded/listened to/watched/exchanged/podcasted
           music or films in the last 3 months
         meaning: euunit:PC_IND_IUMFXP
       PC_IND_AVPAYX:
+        title: Percentage of individuals who didn't pay for online audiovisual contents
+          in the last 3 months
         description: Percentage of individuals who didn't pay for online audiovisual
           contents in the last 3 months
         meaning: euunit:PC_IND_AVPAYX
       PC_ENT_IBUY:
+        title: Percentage of enterprises which purchased over the internet over the
+          last calendar year
         description: Percentage of enterprises which purchased over the internet over
           the last calendar year
         meaning: euunit:PC_ENT_IBUY
       PC_ENT_PURCH:
+        title: Percentage of total purchases
         description: Percentage of total purchases
         meaning: euunit:PC_ENT_PURCH
       PC_ENT_OBUY:
+        title: Percentage of enterprises which purchased over networks other than
+          the internet over the last calendar year
         description: Percentage of enterprises which purchased over networks other
           than the internet over the last calendar year
         meaning: euunit:PC_ENT_OBUY
       PC_ENT_OSELL:
+        title: Percentage of enterprises which sold over networks other than the internet
+          over the last calendar year
         description: Percentage of enterprises which sold over networks other than
           the internet over the last calendar year
         meaning: euunit:PC_ENT_OSELL
       PC_ENT_ITSPRCR:
+        title: Percentage of enterprises which recruited or tried to recruit personnel
+          for jobs requiring ICT specialist skills
         description: Percentage of enterprises which recruited or tried to recruit
           personnel for jobs requiring ICT specialist skills
         meaning: euunit:PC_ENT_ITSPRCR
       PC_ENT_ITSPRCR2:
+        title: Percentage of enterprises which recruited / tried to recruit personnel
+          for jobs requiring ICT specialist skills (reduced comparability with 2007)
         description: Percentage of enterprises which recruited / tried to recruit
           personnel for jobs requiring ICT specialist skills (reduced comparability
           with 2007)
         meaning: euunit:PC_ENT_ITSPRCR2
       PC_ENT_ITSPVAC:
+        title: Percentage of enterprises which had hard-to-fill vacancies for jobs
+          requiring ICT specialist skills
         description: Percentage of enterprises which had hard-to-fill vacancies for
           jobs requiring ICT specialist skills
         meaning: euunit:PC_ENT_ITSPVAC
       PC_ENT_ITUSRCR:
+        title: Percentage of enterprises which recruited or tried to recruit personnel
+          for jobs requiring skills in the use of ICT
         description: Percentage of enterprises which recruited or tried to recruit
           personnel for jobs requiring skills in the use of ICT
         meaning: euunit:PC_ENT_ITUSRCR
       PC_VAL_ISELL:
+        title: Percentage of internet sales
         description: Percentage of internet sales
         meaning: euunit:PC_VAL_ISELL
       PC_FAT:
+        title: Fat content (% of product weight)
         description: Fat content (% of product weight)
         meaning: euunit:PC_FAT
       PC_PRO:
+        title: Protein content (% of product weight)
         description: Protein content (% of product weight)
         meaning: euunit:PC_PRO
       PC_TOT_PERS:
+        title: Percentage of total (based on persons)
         description: Percentage of total (based on persons)
         meaning: euunit:PC_TOT_PERS
       PC_TOT_HAB:
+        title: Percentage of total (based on inhabitants)
         description: Percentage of total (based on inhabitants)
         meaning: euunit:PC_TOT_HAB
       PC_TOT_FTE:
+        title: Percentage of total (based on full-time equivalents)
         description: Percentage of total (based on full-time equivalents)
         meaning: euunit:PC_TOT_FTE
       PC_TOT_JOB:
+        title: Percentage of total (based on jobs)
         description: Percentage of total (based on jobs)
         meaning: euunit:PC_TOT_JOB
       PC_SAV:
+        title: Percentage of savings
         description: Percentage of savings
         meaning: euunit:PC_SAV
       IDX:
+        title: Index
         description: Index
         meaning: euunit:IDX
       I2010:
+        title: Index, 2010=100
         description: Index, 2010=100
         meaning: euunit:I2010
       I2009:
+        title: Index, 2009=100
         description: Index, 2009=100
         meaning: euunit:I2009
       I2008:
+        title: Index, 2008=100
         description: Index, 2008=100
         meaning: euunit:I2008
       I2006:
+        title: Index, 2006=100
         description: Index, 2006=100
         meaning: euunit:I2006
       I2005:
+        title: Index, 2005=100
         description: Index, 2005=100
         meaning: euunit:I2005
       I2001:
+        title: Index, 2001=100
         description: Index, 2001=100
         meaning: euunit:I2001
       I2000:
+        title: Index, 2000=100
         description: Index, 2000=100
         meaning: euunit:I2000
       I10:
+        title: Index, 2010=100
         description: Index, 2010=100
         meaning: euunit:I10
       I09:
+        title: Index, 2009=100
         description: Index, 2009=100
         meaning: euunit:I09
       I08:
+        title: Index, 2008=100
         description: Index, 2008=100
         meaning: euunit:I08
       I06:
+        title: Index, 2006=100
         description: Index, 2006=100
         meaning: euunit:I06
       I05:
+        title: Index, 2005=100
         description: Index, 2005=100
         meaning: euunit:I05
       I01:
+        title: Index, 2001=100
         description: Index, 2001=100
         meaning: euunit:I01
       I00:
+        title: Index, 2000=100
         description: Index, 2000=100
         meaning: euunit:I00
       I99Q01:
+        title: Index, first quarter 1999=100
         description: Index, first quarter 1999=100
         meaning: euunit:I99Q01
       I99:
+        title: Index, 1999=100
         description: Index, 1999=100
         meaning: euunit:I99
       I96:
+        title: Index, 1996=100
         description: Index, 1996=100
         meaning: euunit:I96
       I95:
+        title: Index, 1995=100
         description: Index, 1995=100
         meaning: euunit:I95
       I90:
+        title: Index, 1990=100
         description: Index, 1990=100
         meaning: euunit:I90
       I_EU27:
+        title: Index, EU27=100
         description: Index, EU27=100
         meaning: euunit:I_EU27
       I_EU15:
+        title: Index, EU15=100
         description: Index, EU15=100
         meaning: euunit:I_EU15
       I_LAST:
+        title: Index, latest year = 100
         description: Index, latest year = 100
         meaning: euunit:I_LAST
       I_NAT:
+        title: National base year
         description: National base year
         meaning: euunit:I_NAT
       I_N_1:
+        title: Index, n-1 = 100
         description: Index, n-1 = 100
         meaning: euunit:I_N_1
       PCH_PRE:
+        title: Percentage change on previous period
         description: Percentage change on previous period
         meaning: euunit:PCH_PRE
       PCH_SM:
+        title: Percentage change compared to same period in previous year
         description: Percentage change compared to same period in previous year
         meaning: euunit:PCH_SM
       PCH_SAME:
+        title: Percentage change compared to same period in previous year
         description: Percentage change compared to same period in previous year
         meaning: euunit:PCH_SAME
       PCH_ANN:
+        title: Annualized percentage change on previous period
         description: Annualized percentage change on previous period
         meaning: euunit:PCH_ANN
       PCH_PRE_CPI00_NAC:
+        title: Price index - percentage change on previous period, based on 2000=100
+          and national currency
         description: Price index - percentage change on previous period, based on
           2000=100 and national currency
         meaning: euunit:PCH_PRE_CPI00_NAC
       PCH_PRE_CPI05_NAC:
+        title: Price index - percentage change on previous period, based on 2005=100
+          and national currency
         description: Price index - percentage change on previous period, based on
           2005=100 and national currency
         meaning: euunit:PCH_PRE_CPI05_NAC
       PCH_PRE_CPI00_EUR:
+        title: Price index - percentage change on previous period, based on 2000=100
+          and the euro
         description: Price index - percentage change on previous period, based on
           2000=100 and the euro
         meaning: euunit:PCH_PRE_CPI00_EUR
       PCH_PRE_CPI05_EUR:
+        title: Price index - percentage change on previous period, based on 2005=100
+          and the euro
         description: Price index - percentage change on previous period, based on
           2005=100 and the euro
         meaning: euunit:PCH_PRE_CPI05_EUR
       PCH_SAME_CPI00_NAC:
+        title: Price index - percentage change compared to same period in previous
+          year, based on 2000=100 and national currency
         description: Price index - percentage change compared to same period in previous
           year, based on 2000=100 and national currency
         meaning: euunit:PCH_SAME_CPI00_NAC
       PCH_SAME_CPI05_NAC:
+        title: Price index - percentage change compared to same period in previous
+          year, based on 2005=100 and national currency
         description: Price index - percentage change compared to same period in previous
           year, based on 2005=100 and national currency
         meaning: euunit:PCH_SAME_CPI05_NAC
       PCH_SAME_CPI00_EUR:
+        title: Price index - percentage change compared to same period in previous
+          year, based on 2000=100 and the euro
         description: Price index - percentage change compared to same period in previous
           year, based on 2000=100 and the euro
         meaning: euunit:PCH_SAME_CPI00_EUR
       PCH_SAME_CPI05_EUR:
+        title: Price index - percentage change compared to same period in previous
+          year, based on 2005=100 and the euro
         description: Price index - percentage change compared to same period in previous
           year, based on 2005=100 and the euro
         meaning: euunit:PCH_SAME_CPI05_EUR
       PCH_PRE_EUR:
+        title: Percentage change on previous period, euro
         description: Percentage change on previous period, euro
         meaning: euunit:PCH_PRE_EUR
       PCH_PRE_HAB:
+        title: Percentage change on previous period (based on inhabitants)
         description: Percentage change on previous period (based on inhabitants)
         meaning: euunit:PCH_PRE_HAB
       PCH_PRE_FTE:
+        title: Percentage change on previous period (based on full-time equivalents)
         description: Percentage change on previous period (based on full-time equivalents)
         meaning: euunit:PCH_PRE_FTE
       PCH_PRE_HRS:
+        title: Percentage change on previous period (based on hours worked)
         description: Percentage change on previous period (based on hours worked)
         meaning: euunit:PCH_PRE_HRS
       PCH_PRE_JOB:
+        title: Percentage change on previous period (based on jobs)
         description: Percentage change on previous period (based on jobs)
         meaning: euunit:PCH_PRE_JOB
       PCH_SAME_HAB:
+        title: Percentage change compared to same period in previous year (based on
+          inhabitants)
         description: Percentage change compared to same period in previous year (based
           on inhabitants)
         meaning: euunit:PCH_SAME_HAB
       PCH_SAME_FTE:
+        title: Percentage change compared to same period in previous year (based on
+          full-time equivalents)
         description: Percentage change compared to same period in previous year (based
           on full-time equivalents)
         meaning: euunit:PCH_SAME_FTE
       PCH_SAME_HRS:
+        title: Percentage change compared to same period in previous year (based on
+          hours worked)
         description: Percentage change compared to same period in previous year (based
           on hours worked)
         meaning: euunit:PCH_SAME_HRS
       PCH_SAME_JOB:
+        title: Percentage change compared to same period in previous year (based on
+          employment)
         description: Percentage change compared to same period in previous year (based
           on employment)
         meaning: euunit:PCH_SAME_JOB
       PCH_PRE_PERS:
+        title: Percentage change on previous period (based on persons)
         description: Percentage change on previous period (based on persons)
         meaning: euunit:PCH_PRE_PERS
       PCH_SAME_PERS:
+        title: Percentage change compared to same period in previous year (based on
+          persons)
         description: Percentage change compared to same period in previous year (based
           on persons)
         meaning: euunit:PCH_SAME_PERS
       PCH_PRE_PERS_SWDA:
+        title: Percentage change over previous period (based on persons, SWDA)
         description: Percentage change over previous period (based on persons, SWDA)
         meaning: euunit:PCH_PRE_PERS_SWDA
       PCH_SAME_PERS_NSA:
+        title: Percentage change compared to same period in previous year (based on
+          persons, NSA)
         description: Percentage change compared to same period in previous year (based
           on persons, NSA)
         meaning: euunit:PCH_SAME_PERS_NSA
       TOT_DISCH:
+        title: All discharges (inpatients and day cases)
         description: All discharges (inpatients and day cases)
         meaning: euunit:TOT_DISCH
       TOT_INPAT:
+        title: In-patients (total number)
         description: In-patients (total number)
         meaning: euunit:TOT_INPAT
       100000_INPAT:
+        title: In-patients per 100,000 inhabitants
         description: In-patients per 100,000 inhabitants
         meaning: euunit:100000_INPAT
       ALOS:
+        title: In-patient average length of stay (in days)
         description: In-patient average length of stay (in days)
         meaning: euunit:ALOS
       DAYS_HOSP:
+        title: Hospital days of in-patients
         description: Hospital days of in-patients
         meaning: euunit:DAYS_HOSP
       ONE_DAY:
+        title: Day cases (total number)
         description: Day cases (total number)
         meaning: euunit:ONE_DAY
       AVG:
+        title: Average
         description: Average
         meaning: euunit:AVG
       MV12R:
+        title: Moving 12-months average rate of change
         description: Moving 12-months average rate of change
         meaning: euunit:MV12R
       RT:
+        title: Rate
         description: Rate
         meaning: euunit:RT
       SDTH_RT:
+        title: Standardised death rate
         description: Standardised death rate
         meaning: euunit:SDTH_RT
       CDTH_RT:
+        title: Crude death rate
         description: Crude death rate
         meaning: euunit:CDTH_RT
       INC_RT:
+        title: Incidence rate
         description: Incidence rate
         meaning: euunit:INC_RT
       SINC_RT:
+        title: Standardised incidence rate
         description: Standardised incidence rate
         meaning: euunit:SINC_RT
       LTU_UNE_RT:
+        title: Long-term unemployment rate
         description: Long-term unemployment rate
         meaning: euunit:LTU_UNE_RT
       LTU_UNE_RS:
+        title: Long-term unemployment as a percentage of the total unemployment
         description: Long-term unemployment as a percentage of the total unemployment
         meaning: euunit:LTU_UNE_RS
       INT_RT:
+        title: Interest rate
         description: Interest rate
         meaning: euunit:INT_RT
       REL1:
+        title: Relative value, relating to all enterprises
         description: Relative value, relating to all enterprises
         meaning: euunit:REL1
       REL2:
+        title: Relative value, relating to innovating enterprises
         description: Relative value, relating to innovating enterprises
         meaning: euunit:REL2
       REL3:
+        title: Relative value, relating to product innovators
         description: Relative value, relating to product innovators
         meaning: euunit:REL3
       REL4:
+        title: Relative value, relating to process innovators
         description: Relative value, relating to process innovators
         meaning: euunit:REL4
       REL5:
+        title: Relative value, relating to service innovators
         description: Relative value, relating to service innovators
         meaning: euunit:REL5
       REL6:
+        title: Relative value, relating to total innovation expenditure
         description: Relative value, relating to total innovation expenditure
         meaning: euunit:REL6
       REL7:
+        title: Relative value, relating to innovating enterprises with innovation
+          cooperation
         description: Relative value, relating to innovating enterprises with innovation
           cooperation
         meaning: euunit:REL7
       REL8:
+        title: Relative value, relating to innovating enterprises with seriously delayed
+          projects
         description: Relative value, relating to innovating enterprises with seriously
           delayed projects
         meaning: euunit:REL8
       REL9:
+        title: Relative value, relating to innovating enterprises with abolished projects
         description: Relative value, relating to innovating enterprises with abolished
           projects
         meaning: euunit:REL9
       REL10:
+        title: Relative value, relating to innovating enterprises with not even started
+          projects
         description: Relative value, relating to innovating enterprises with not even
           started projects
         meaning: euunit:REL10
       REL11:
+        title: Relative value, relating to enterprises in the corresponding level
+          of export intensity
         description: Relative value, relating to enterprises in the corresponding
           level of export intensity
         meaning: euunit:REL11
       REL12:
+        title: Relative value, relating to enterprises in the corresponding type of
+          firm
         description: Relative value, relating to enterprises in the corresponding
           type of firm
         meaning: euunit:REL12
       CVA:
+        title: Coefficient of variation for absolute value
         description: Coefficient of variation for absolute value
         meaning: euunit:CVA
       CV1:
+        title: Coefficient of variation for relative value, relating to all enterprises
         description: Coefficient of variation for relative value, relating to all
           enterprises
         meaning: euunit:CV1
       CV2:
+        title: Coefficient of variation for relative value, relating to innovating
+          enterprises
         description: Coefficient of variation for relative value, relating to innovating
           enterprises
         meaning: euunit:CV2
       CV3:
+        title: Coefficient of variation for relative value, relating to product innovators
         description: Coefficient of variation for relative value, relating to product
           innovators
         meaning: euunit:CV3
       CV4:
+        title: Coefficient of variation for relative value, relating to process innovators
         description: Coefficient of variation for relative value, relating to process
           innovators
         meaning: euunit:CV4
       CV5:
+        title: Coefficient of variation for relative value, relating to service innovators
         description: Coefficient of variation for relative value, relating to service
           innovators
         meaning: euunit:CV5
       CV6:
+        title: Coefficient of variation for relative value, relating to total innovation
+          expenditure
         description: Coefficient of variation for relative value, relating to total
           innovation expenditure
         meaning: euunit:CV6
       CV7:
+        title: Coefficient of variation for relative value, relating to enterprises
+          with innovation cooperation
         description: Coefficient of variation for relative value, relating to enterprises
           with innovation cooperation
         meaning: euunit:CV7
       CV8:
+        title: Coefficient of variation for relative value, relating to innovating
+          enterprises with seriously delayed projects
         description: Coefficient of variation for relative value, relating to innovating
           enterprises with seriously delayed projects
         meaning: euunit:CV8
       CV9:
+        title: Coefficient of variation for relative value, relating to innovating
+          enterprises with abolished projects
         description: Coefficient of variation for relative value, relating to innovating
           enterprises with abolished projects
         meaning: euunit:CV9
       CV10:
+        title: Coefficient of variation for relative value, relating to innovating
+          enterprises with not even started projects
         description: Coefficient of variation for relative value, relating to innovating
           enterprises with not even started projects
         meaning: euunit:CV10
       CV11:
+        title: Coefficient of variation for relative value, relating to enterprises
+          in the corresponding level of export intensity
         description: Coefficient of variation for relative value, relating to enterprises
           in the corresponding level of export intensity
         meaning: euunit:CV11
       CV12:
+        title: Coefficient of variation for relative value, relating to enterprises
+          in the corresponding type of firm
         description: Coefficient of variation for relative value, relating to enterprises
           in the corresponding type of firm
         meaning: euunit:CV12
       CPI00_NAC:
+        title: Price index, 2000=100, national currency
         description: Price index, 2000=100, national currency
         meaning: euunit:CPI00_NAC
       CPI05_NAC:
+        title: Price index, 2005=100, national currency
         description: Price index, 2005=100, national currency
         meaning: euunit:CPI05_NAC
       CPI00_EUR:
+        title: Price index, 2000=100, euro
         description: Price index, 2000=100, euro
         meaning: euunit:CPI00_EUR
       CPI05_EUR:
+        title: Price index, 2005=100, euro
         description: Price index, 2005=100, euro
         meaning: euunit:CPI05_EUR
       IPP85:
+        title: Index of purchasing power of the ECU, non-harmonised (1985=100)
         description: Index of purchasing power of the ECU, non-harmonised (1985=100)
         meaning: euunit:IPP85
       IPP96:
+        title: Index of purchasing power of the ECU, non-harmonised (1996=100)
         description: Index of purchasing power of the ECU, non-harmonised (1996=100)
         meaning: euunit:IPP96
       IPPE96:
+        title: Index of purchasing power of the euro, harmonised (1996=100) (ECU up
+          to 31.12.1998)
         description: Index of purchasing power of the euro, harmonised (1996=100)
           (ECU up to 31.12.1998)
         meaning: euunit:IPPE96
       I_MED:
+        title: Income index (compared to national median)
         description: Income index (compared to national median)
         meaning: euunit:I_MED
       I_MEAN:
+        title: Income index (compared to national mean)
         description: Income index (compared to national mean)
         meaning: euunit:I_MEAN
       HICP2005:
+        title: Harmonized consumer price index, 2005=100
         description: Harmonized consumer price index, 2005=100
         meaning: euunit:HICP2005
       M:
+        title: Metre
         description: Metre
         meaning: euunit:M
       M2:
+        title: Square metre
         description: Square metre
         meaning: euunit:M2
       M3:
+        title: Cubic metre
         description: Cubic metre
         meaning: euunit:M3
       1000M3:
+        title: Thousands of cubic metres
         description: Thousands of cubic metres
         meaning: euunit:1000M3
       THS_M3:
+        title: Thousand cubic metres
         description: Thousand cubic metres
         meaning: euunit:THS_M3
       MIO_M3:
+        title: Million cubic metres
         description: Million cubic metres
         meaning: euunit:MIO_M3
       M3_HAB:
+        title: Cubic metres per inhabitant
         description: Cubic metres per inhabitant
         meaning: euunit:M3_HAB
       KM:
+        title: Kilometre
         description: Kilometre
         meaning: euunit:KM
       KM2:
+        title: Square kilometre
         description: Square kilometre
         meaning: euunit:KM2
       HA:
+        title: Hectare
         description: Hectare
         meaning: euunit:HA
       HA_AA:
+        title: ha (Agricultural area)
         description: ha (Agricultural area)
         meaning: euunit:HA_AA
       ESU:
+        title: European size unit (ESU)
         description: European size unit (ESU)
         meaning: euunit:ESU
       ESU_SGM:
+        title: ESU (Economic size)
         description: ESU (Economic size)
         meaning: euunit:ESU_SGM
       1000HA:
+        title: Thousands of hectares
         description: Thousands of hectares
         meaning: euunit:1000HA
       THS_HA:
+        title: Thousand hectares
         description: Thousand hectares
         meaning: euunit:THS_HA
       TEU:
+        title: Twenty-foot equivalent unit (TEU)
         description: Twenty-foot equivalent unit (TEU)
         meaning: euunit:TEU
       1000TEU:
+        title: Thousands of TEUs (Twenty-foot Equivalent Units)
         description: Thousands of TEUs (Twenty-foot Equivalent Units)
         meaning: euunit:1000TEU
       THS_TEU:
+        title: Thousand twenty-foot equivalent unit (TEU)
         description: Thousand twenty-foot equivalent unit (TEU)
         meaning: euunit:THS_TEU
       1000TEU_KM:
+        title: Thousands of TEUs (Twenty-foot Equivalent Units)/Km
         description: Thousands of TEUs (Twenty-foot Equivalent Units)/Km
         meaning: euunit:1000TEU_KM
       GR:
+        title: Grams
         description: Grams
         meaning: euunit:GR
       GR_PKM:
+        title: Grams of CO2 per passenger-kilometer
         description: Grams of CO2 per passenger-kilometer
         meaning: euunit:GR_PKM
       GR_FTKM:
+        title: Grams of CO2 per freight tonne-kilometer
         description: Grams of CO2 per freight tonne-kilometer
         meaning: euunit:GR_FTKM
       GR_TTKM:
+        title: Grams of CO2 per total tonne-kilometer
         description: Grams of CO2 per total tonne-kilometer
         meaning: euunit:GR_TTKM
       G_FTKM:
+        title: Grams per freight tonne-kilometre
         description: Grams per freight tonne-kilometre
         meaning: euunit:G_FTKM
       G_PKM:
+        title: Grams per passenger-kilometre
         description: Grams per passenger-kilometre
         meaning: euunit:G_PKM
       G_TKM:
+        title: Grams per tonne-kilometre
         description: Grams per tonne-kilometre
         meaning: euunit:G_TKM
       KG:
+        title: Kilogram
         description: Kilogram
         meaning: euunit:KG
       MIO_KG:
+        title: Millions of kilograms
         description: Millions of kilograms
         meaning: euunit:MIO_KG
       LT:
+        title: Litres
         description: Litres
         meaning: euunit:LT
       L:
+        title: Litre
         description: Litre
         meaning: euunit:L
       1000HLT:
+        title: 1000 hectolitre
         description: 1000 hectolitre
         meaning: euunit:1000HLT
       THS_HL:
+        title: Thousand hectolitres
         description: Thousand hectolitres
         meaning: euunit:THS_HL
       OZ:
+        title: Ounce
         description: Ounce
         meaning: euunit:OZ
       MIO_OZ:
+        title: Millions of ounces
         description: Millions of ounces
         meaning: euunit:MIO_OZ
       KW:
+        title: Kilowatt
         description: Kilowatt
         meaning: euunit:KW
       1000KW:
+        title: 1000 Kilowatt
         description: 1000 Kilowatt
         meaning: euunit:1000KW
       MW:
+        title: Megawatt
         description: Megawatt
         meaning: euunit:MW
       GW:
+        title: Gigawatt
         description: Gigawatt
         meaning: euunit:GW
       KWH:
+        title: Kilowatt-hour
         description: Kilowatt-hour
         meaning: euunit:KWH
       EUR_KWH:
+        title: Euro per kilowatt-hour (kWh)
         description: Euro per kilowatt-hour (kWh)
         meaning: euunit:EUR_KWH
       GWH:
+        title: Gigawatt-hour
         description: Gigawatt-hour
         meaning: euunit:GWH
       KCAL:
+        title: Kilocalorie
         description: Kilocalorie
         meaning: euunit:KCAL
       TJ:
+        title: Terajoule
         description: Terajoule
         meaning: euunit:TJ
       TJ_GCV:
+        title: Terajoule (gross calorific value - GCV)
         description: Terajoule (gross calorific value - GCV)
         meaning: euunit:TJ_GCV
       GJ_GCV:
+        title: Gigajoule (gross calorific value - GCV)
         description: Gigajoule (gross calorific value - GCV)
         meaning: euunit:GJ_GCV
       MN:
+        title: Minute
         description: Minute
         meaning: euunit:MN
       1000MN:
+        title: 1000 minutes
         description: 1000 minutes
         meaning: euunit:1000MN
       THS_MN:
+        title: Thousand minutes
         description: Thousand minutes
         meaning: euunit:THS_MN
       HOUR:
+        title: Hour
         description: Hour
         meaning: euunit:HOUR
       HR:
+        title: Hour
         description: Hour
         meaning: euunit:HR
       DAY:
+        title: Day
         description: Day
         meaning: euunit:DAY
       MONTH:
+        title: Month
         description: Month
         meaning: euunit:MONTH
       MTH:
+        title: Month
         description: Month
         meaning: euunit:MTH
       YR:
+        title: Year
         description: Year
         meaning: euunit:YR
       HD:
+        title: Head (animal)
         description: Head (animal)
         meaning: euunit:HD
       THS_HD:
+        title: Thousand heads (animals)
         description: Thousand heads (animals)
         meaning: euunit:THS_HD
       1000HD:
+        title: 1000 heads (animals)
         description: 1000 heads (animals)
         meaning: euunit:1000HD
       1000TC:
+        title: 1000 tonnes carcasse
         description: 1000 tonnes carcasse
         meaning: euunit:1000TC
       AWU:
+        title: Annual working unit (AWU)
         description: Annual working unit (AWU)
         meaning: euunit:AWU
       1000AWU:
+        title: 1000 annual working units
         description: 1000 annual working units
         meaning: euunit:1000AWU
       THS_AWU:
+        title: Thousand annual working units (AWU)
         description: Thousand annual working units (AWU)
         meaning: euunit:THS_AWU
       HOLD:
+        title: Number of holdings
         description: Number of holdings
         meaning: euunit:HOLD
       MACH:
+        title: Machine
         description: Machine
         meaning: euunit:MACH
       LSU:
+        title: Livestock unit (LSU)
         description: Livestock unit (LSU)
         meaning: euunit:LSU
       HC:
+        title: Head count
         description: Head count
         meaning: euunit:HC
       NB_TOT:
+        title: All (no breakdown)
         description: All (no breakdown)
         meaning: euunit:NB_TOT
       NB_TOT_BERD:
+        title: Total number of patent applications by milliard EUR of Business enterprise
+          sector's R&D expenditure (BERD)
         description: Total number of patent applications by milliard EUR of Business
           enterprise sector's R&D expenditure (BERD)
         meaning: euunit:NB_TOT_BERD
       NB_TOT_GERD:
+        title: Total number of patent applications by milliard EUR of total R&D expenditure
+          (GERD)
         description: Total number of patent applications by milliard EUR of total
           R&D expenditure (GERD)
         meaning: euunit:NB_TOT_GERD
       MIO_ACT:
+        title: Per million labour force
         description: Per million labour force
         meaning: euunit:MIO_ACT
       1000HRS:
+        title: Thousands of hours worked
         description: Thousands of hours worked
         meaning: euunit:1000HRS
       THS_HR:
+        title: Thousand hours
         description: Thousand hours
         meaning: euunit:THS_HR
       MIO_HRS:
+        title: Millions of hours
         description: Millions of hours
         meaning: euunit:MIO_HRS
       MIO_HR:
+        title: Million hours
         description: Million hours
         meaning: euunit:MIO_HR
       JOB:
+        title: Jobs
         description: Jobs
         meaning: euunit:JOB
       1000JOB:
+        title: Thousands of jobs
         description: Thousands of jobs
         meaning: euunit:1000JOB
       MIO_JOB:
+        title: Millions of jobs
         description: Millions of jobs
         meaning: euunit:MIO_JOB
       NBR_PAYMT:
+        title: Number of payments
         description: Number of payments
         meaning: euunit:NBR_PAYMT
       FTE:
+        title: Full-time equivalent (FTE)
         description: Full-time equivalent (FTE)
         meaning: euunit:FTE
       1000FTE:
+        title: Thousands full-time equivalents
         description: Thousands full-time equivalents
         meaning: euunit:1000FTE
       HC_HAB:
+        title: Head count per 100 000 inhabitants
         description: Head count per 100 000 inhabitants
         meaning: euunit:HC_HAB
       FTE_HAB:
+        title: Full time equivalent per 100 000 inhabitants
         description: Full time equivalent per 100 000 inhabitants
         meaning: euunit:FTE_HAB
       HAB_HC:
+        title: Inhabitants per ... (head count)
         description: Inhabitants per ... (head count)
         meaning: euunit:HAB_HC
       HAB_FTE:
+        title: Inhabitants per ... (full time equivalent)
         description: Inhabitants per ... (full time equivalent)
         meaning: euunit:HAB_FTE
       PCE:
+        title: Piece
         description: Piece
         meaning: euunit:PCE
       PER:
+        title: Person
         description: Person
         meaning: euunit:PER
       PERS:
+        title: Persons
         description: Persons
         meaning: euunit:PERS
       1000PERS:
+        title: 1000 persons
         description: 1000 persons
         meaning: euunit:1000PERS
       MIO_PERS:
+        title: Millions of persons
         description: Millions of persons
         meaning: euunit:MIO_PERS
       SAL_Y:
+        title: Per employee in full-time units, per year
         description: Per employee in full-time units, per year
         meaning: euunit:SAL_Y
       SAL_M:
+        title: Per employee in full-time units, per month
         description: Per employee in full-time units, per month
         meaning: euunit:SAL_M
       SAL_H:
+        title: Per employee in full-time units, per hour
         description: Per employee in full-time units, per hour
         meaning: euunit:SAL_H
       TSAL_Y:
+        title: Total for all employees, per year
         description: Total for all employees, per year
         meaning: euunit:TSAL_Y
       TOT_Y:
+        title: Total per year
         description: Total per year
         meaning: euunit:TOT_Y
       Y_WORKER:
+        title: Per employee (excluding apprentices) in full-time units, per year
         description: Per employee (excluding apprentices) in full-time units, per
           year
         meaning: euunit:Y_WORKER
       M_WORKER:
+        title: Per employee (excluding apprentices) in full-time units, per month
         description: Per employee (excluding apprentices) in full-time units, per
           month
         meaning: euunit:M_WORKER
       H_WORKER:
+        title: Per employee (excluding apprentices) in full-time units, per hour
         description: Per employee (excluding apprentices) in full-time units, per
           hour
         meaning: euunit:H_WORKER
       P_KM2:
+        title: Per square kilometre
         description: Per square kilometre
         meaning: euunit:P_KM2
       AAPR:
+        title: Annualised agreed percentage rate
         description: Annualised agreed percentage rate
         meaning: euunit:AAPR
       APRC:
+        title: Annual percentage rate of charge
         description: Annual percentage rate of charge
         meaning: euunit:APRC
       TOTAL:
+        title: Total
         description: Total
         meaning: euunit:TOTAL
       1000_PERS_SA:
+        title: Thousands of persons - seasonally adjusted
         description: Thousands of persons - seasonally adjusted
         meaning: euunit:1000-PERS-SA
       1000_PERS_NSA:
+        title: Thousands of persons - not seasonally adjusted
         description: Thousands of persons - not seasonally adjusted
         meaning: euunit:1000-PERS-NSA
       BAL:
+        title: Balance
         description: Balance
         meaning: euunit:BAL
       MIO_EUR_SA:
+        title: Trade value - million of euro - seasonally and working day adjusted
         description: Trade value - million of euro - seasonally and working day adjusted
         meaning: euunit:MIO-EUR-SA
       MIO_EUR_NSA:
+        title: Million euro (NSA)
         description: Million euro (NSA)
         meaning: euunit:MIO_EUR_NSA
       IVU_NSA:
+        title: Unit value index (2015=100) - not seasonally adjusted
         description: Unit value index (2015=100) - not seasonally adjusted
         meaning: euunit:IVU-NSA
       IVOL_SA:
+        title: Volume index (2015=100) - seasonally and working day adjusted
         description: Volume index (2015=100) - seasonally and working day adjusted
         meaning: euunit:IVOL-SA
       IVOL_NSA:
+        title: Volume index (2015=100) - not seasonally adjusted
         description: Volume index (2015=100) - not seasonally adjusted
         meaning: euunit:IVOL-NSA
       RT1:
+        title: Growth rate on previous period (t/t-1)
         description: Growth rate on previous period (t/t-1)
         meaning: euunit:RT1
       RT1_NBR:
+        title: Growth rate on previous period (t/t-1) for number of vessels
         description: Growth rate on previous period (t/t-1) for number of vessels
         meaning: euunit:RT1_NBR
       RT1_GT:
+        title: Growth rate over previous period (t/t-1) for gross tonnage of vessels
         description: Growth rate over previous period (t/t-1) for gross tonnage of
           vessels
         meaning: euunit:RT1_GT
       RT12:
+        title: Growth rate (t/t-12)
         description: Growth rate (t/t-12)
         meaning: euunit:RT12
       RT1_ABS_SA:
+        title: Trade value - growth rate (m/m-1) - seasonally and working day adjusted
         description: Trade value - growth rate (m/m-1) - seasonally and working day
           adjusted
         meaning: euunit:RT1-ABS-SA
       RT12_ABS_NSA:
+        title: Trade value - growth rate (m/m-12) - not seasonally adjusted
         description: Trade value - growth rate (m/m-12) - not seasonally adjusted
         meaning: euunit:RT12-ABS-NSA
       RT1_IVU_NSA:
+        title: Unit value index (2015=100) - growth rate (m/m-1) - not seasonally
+          adjusted
         description: Unit value index (2015=100) - growth rate (m/m-1) - not seasonally
           adjusted
         meaning: euunit:RT1-IVU-NSA
       RT12_IVU_NSA:
+        title: Unit value index (2015=100) - growth rate (m/m-12) - not seasonally
+          adjusted
         description: Unit value index (2015=100) - growth rate (m/m-12) - not seasonally
           adjusted
         meaning: euunit:RT12-IVU-NSA
       RT1_IVOL_SA:
+        title: Volume index (2015=100) - growth rate (m/m-1) - seasonally and working
+          day adjusted
         description: Volume index (2015=100) - growth rate (m/m-1) - seasonally and
           working day adjusted
         meaning: euunit:RT1-IVOL-SA
       RT12_IVOL_NSA:
+        title: Volume index (2015=100) - growth rate (m/m-12) - not seasonally adjusted
         description: Volume index (2015=100) - growth rate (m/m-12) - not seasonally
           adjusted
         meaning: euunit:RT12-IVOL-NSA
       RT1_SA:
+        title: Percentage change (t/t-1) - seasonally adjusted data
         description: Percentage change (t/t-1) - seasonally adjusted data
         meaning: euunit:RT1-SA
       RT1_SWDA:
+        title: Percentage change t/t-1 - seasonally and working day adjusted data
         description: Percentage change t/t-1 - seasonally and working day adjusted
           data
         meaning: euunit:RT1-SWDA
       RT4_NSA:
+        title: Percentage change (t/t-4) - not seasonally adjusted data
         description: Percentage change (t/t-4) - not seasonally adjusted data
         meaning: euunit:RT4-NSA
       RT12_NSA:
+        title: Percentage change (t/t-12) - not seasonally adjusted data
         description: Percentage change (t/t-12) - not seasonally adjusted data
         meaning: euunit:RT12-NSA
       RT4:
+        title: Growth rate on the same quarter in previous year
         description: Growth rate on the same quarter in previous year
         meaning: euunit:RT4
       PC_EU27:
+        title: Percentage of EU27 (2007-2013) total
         description: Percentage of EU27 (2007-2013) total
         meaning: euunit:PC_EU27
       PC_EU25:
+        title: Percentage of EU25 (2004-2006) total
         description: Percentage of EU25 (2004-2006) total
         meaning: euunit:PC_EU25
       PC_EU25_EUR_HAB:
+        title: Percentage of EU25 (2004-2006) total (based on euro per inhabitant)
         description: Percentage of EU25 (2004-2006) total (based on euro per inhabitant)
         meaning: euunit:PC_EU25_EUR_HAB
       PC_EU27_EUR_HAB:
+        title: Percentage of EU27 (2007-2013) total (based on euro per inhabitant)
         description: Percentage of EU27 (2007-2013) total (based on euro per inhabitant)
         meaning: euunit:PC_EU27_EUR_HAB
       PC_EU27_PPS_HAB:
+        title: Percentage of EU27 (2007-2013) total (based on purchasing power standards
+          per inhabitant)
         description: Percentage of EU27 (2007-2013) total (based on purchasing power
           standards per inhabitant)
         meaning: euunit:PC_EU27_PPS_HAB
       PC_EU15_PPS_EMP:
+        title: Percentage of EU15 (1995-2004) total (based on purchasing power standards
+          per employed person)
         description: Percentage of EU15 (1995-2004) total (based on purchasing power
           standards per employed person)
         meaning: euunit:PC_EU15_PPS_EMP
       PC_EU27_PPS_EMP:
+        title: Percentage of EU27 (2007-2013) total (based on purchasing power standards
+          per employed person)
         description: Percentage of EU27 (2007-2013) total (based on purchasing power
           standards per employed person)
         meaning: euunit:PC_EU27_PPS_EMP
       PC_EU15_PPS_HRS:
+        title: Percentage of EU15 total (based on PPS per hours worked)
         description: Percentage of EU15 total (based on PPS per hours worked)
         meaning: euunit:PC_EU15_PPS_HRS
       PC_EU27_PPS_HRS:
+        title: Percentage of EU27 (2007-2013) total (based on purchasing power standards
+          per hours worked)
         description: Percentage of EU27 (2007-2013) total (based on purchasing power
           standards per hours worked)
         meaning: euunit:PC_EU27_PPS_HRS
       PC_EU25_MIO_EUR:
+        title: Percentage of EU25 total (based on millions euro)
         description: Percentage of EU25 total (based on millions euro)
         meaning: euunit:PC_EU25_MIO_EUR
       PC_EU27_MIO_EUR:
+        title: Percentage of EU27 total (based on millions euro)
         description: Percentage of EU27 total (based on millions euro)
         meaning: euunit:PC_EU27_MIO_EUR
       PC_EU27_MIO_PPS:
+        title: Percentage of EU27 total (based on millions PPS)
         description: Percentage of EU27 total (based on millions PPS)
         meaning: euunit:PC_EU27_MIO_PPS
       PC_EA_MIO_EUR:
+        title: Percentage of euro area total (based on millions euro)
         description: Percentage of euro area total (based on millions euro)
         meaning: euunit:PC_EA_MIO_EUR
       PC_EA_MIO_PPS:
+        title: Percentage of euro area total (based on millions PPS)
         description: Percentage of euro area total (based on millions PPS)
         meaning: euunit:PC_EA_MIO_PPS
       PC_EA12_MIO_EUR:
+        title: Percentage of EA12 total (based on millions euro)
         description: Percentage of EA12 total (based on millions euro)
         meaning: euunit:PC_EA12_MIO_EUR
       PC_EA16_MIO_EUR:
+        title: Percentage of EA16 total (based on millions euro)
         description: Percentage of EA16 total (based on millions euro)
         meaning: euunit:PC_EA16_MIO_EUR
       PC_EA16_MIO_PPS:
+        title: Percentage of EA16 total (based on millions PPS)
         description: Percentage of EA16 total (based on millions PPS)
         meaning: euunit:PC_EA16_MIO_PPS
       PC_EA17_MIO_EUR:
+        title: Percentage of EA17 total (based on millions euro)
         description: Percentage of EA17 total (based on millions euro)
         meaning: euunit:PC_EA17_MIO_EUR
       PC_EA17_MIO_PPS:
+        title: Percentage of EA17 total (based on millions PPS)
         description: Percentage of EA17 total (based on millions PPS)
         meaning: euunit:PC_EA17_MIO_PPS
       MOVE:
+        title: Movement
         description: Movement
         meaning: euunit:MOVE
       FLIGHT:
+        title: Flight
         description: Flight
         meaning: euunit:FLIGHT
       NBR_CAR:
+        title: Number of cars
         description: Number of cars
         meaning: euunit:NBR_CAR
       MIO_VEH_KM:
+        title: Millions of Vehicle-kilometre
         description: Millions of Vehicle-kilometre
         meaning: euunit:MIO_VEH_KM
       1000VEH_KM:
+        title: 1000 Vehicle-kilometre
         description: 1000 Vehicle-kilometre
         meaning: euunit:1000VEH_KM
       MIO_VKM:
+        title: Million vehicle-kilometres (VKM)
         description: Million vehicle-kilometres (VKM)
         meaning: euunit:MIO_VKM
       THS_VKM:
+        title: Thousand vehicle-kilometres (VKM)
         description: Thousand vehicle-kilometres (VKM)
         meaning: euunit:THS_VKM
       1000_BTO:
+        title: 1000 Basic transport operations
         description: 1000 Basic transport operations
         meaning: euunit:1000_BTO
       1000_JRNY:
+        title: 1000 Journeys
         description: 1000 Journeys
         meaning: euunit:1000_JRNY
       1000TRN_KM:
+        title: 1000 Train-kilometre
         description: 1000 Train-kilometre
         meaning: euunit:1000TRN_KM
       SEAT:
+        title: Seats and berths
         description: Seats and berths
         meaning: euunit:SEAT
       1000SEAT:
+        title: 1000 Seats
         description: 1000 Seats
         meaning: euunit:1000SEAT
       MIO_SEAT_KM_OFF:
+        title: Millions of Seats/Km offered
         description: Millions of Seats/Km offered
         meaning: euunit:MIO_SEAT_KM_OFF
       VES_MOV:
+        title: Vessel movements
         description: Vessel movements
         meaning: euunit:VES_MOV
       1000VES_KM:
+        title: Thousands of vessels/Km
         description: Thousands of vessels/Km
         meaning: euunit:1000VES_KM
       NBR_REG:
+        title: Number of regions
         description: Number of regions
         meaning: euunit:NBR_REG
       PC_REG:
+        title: Percentage of regions
         description: Percentage of regions
         meaning: euunit:PC_REG
       NBR_INVEST:
+        title: Number of investments
         description: Number of investments
         meaning: euunit:NBR_INVEST
       NBR_COMP:
+        title: Number of companies
         description: Number of companies
         meaning: euunit:NBR_COMP
       PC_HH_IACCX:
+        title: Percentage of households without internet access at home
         description: Percentage of households without internet access at home
         meaning: euunit:PC_HH_IACCX
       PC_HH_BROADX:
+        title: Percentage of households without broadband access
         description: Percentage of households without broadband access
         meaning: euunit:PC_HH_BROADX
       MIO_EUR_SWDA:
+        title: Millions of euro (SWDA)
         description: Millions of euro (SWDA)
         meaning: euunit:MIO_EUR_SWDA
       TVAL_SA:
+        title: Trade value in million euro (SA)
         description: Trade value in million euro (SA)
         meaning: euunit:TVAL_SA
       I2000_NSA:
+        title: Index, 2000=100 (NSA)
         description: Index, 2000=100 (NSA)
         meaning: euunit:I2000_NSA
       I2005_SA:
+        title: Index, 2005=100 (SA)
         description: Index, 2005=100 (SA)
         meaning: euunit:I2005_SA
       I2005_NSA:
+        title: Index, 2005=100 (NSA)
         description: Index, 2005=100 (NSA)
         meaning: euunit:I2005_NSA
       I2006_NSA:
+        title: Index, 2006=100 (NSA)
         description: Index, 2006=100 (NSA)
         meaning: euunit:I2006_NSA
       I2008_SWDA:
+        title: Index, 2008=100 (SWDA)
         description: Index, 2008=100 (SWDA)
         meaning: euunit:I2008_SWDA
       I2010_SA:
+        title: Index, 2010=100 (SA)
         description: Index, 2010=100 (SA)
         meaning: euunit:I2010_SA
       I2010_NSA:
+        title: Index, 2010=100 (NSA)
         description: Index, 2010=100 (NSA)
         meaning: euunit:I2010_NSA
       PCH_M1:
+        title: Percentage change m/m-1
         description: Percentage change m/m-1
         meaning: euunit:PCH_M1
       PCH_M1_NSA:
+        title: Percentage change m/m-1 (NSA)
         description: Percentage change m/m-1 (NSA)
         meaning: euunit:PCH_M1_NSA
       PCH_M1_SA:
+        title: Percentage change m/m-1 (SA)
         description: Percentage change m/m-1 (SA)
         meaning: euunit:PCH_M1_SA
       PCH_Q1_NSA:
+        title: Percentage change q/q-1 (NSA)
         description: Percentage change q/q-1 (NSA)
         meaning: euunit:PCH_Q1_NSA
       PCH_Q1_SA:
+        title: Percentage change q/q-1 (SA)
         description: Percentage change q/q-1 (SA)
         meaning: euunit:PCH_Q1_SA
       PCH_Q1_SWDA:
+        title: Percentage change q/q-1 (SWDA)
         description: Percentage change q/q-1 (SWDA)
         meaning: euunit:PCH_Q1_SWDA
       PCH_Q4_NSA:
+        title: Percentage change q/q-4 (NSA)
         description: Percentage change q/q-4 (NSA)
         meaning: euunit:PCH_Q4_NSA
       PCH_Q4_WDA:
+        title: Percentage change q/q-4 (WDA)
         description: Percentage change q/q-4 (WDA)
         meaning: euunit:PCH_Q4_WDA
       PCH_M12:
+        title: Percentage change m/m-12
         description: Percentage change m/m-12
         meaning: euunit:PCH_M12
       PCH_M12_NSA:
+        title: Percentage change m/m-12 (NSA)
         description: Percentage change m/m-12 (NSA)
         meaning: euunit:PCH_M12_NSA
       PCH_M12_WDA:
+        title: Percentage change m/m-12 (WDA)
         description: Percentage change m/m-12 (WDA)
         meaning: euunit:PCH_M12_WDA
       AVG_3Y:
+        title: Three-year average
         description: Three-year average
         meaning: euunit:AVG_3Y
       PCH_1Y:
+        title: Percentage change (t/t-1)
         description: Percentage change (t/t-1)
         meaning: euunit:PCH_1Y
       PCH_3Y:
+        title: Percentage change (t/t-3)
         description: Percentage change (t/t-3)
         meaning: euunit:PCH_3Y
       PCH_5Y:
+        title: Percentage change (t/t-5)
         description: Percentage change (t/t-5)
         meaning: euunit:PCH_5Y
       PCH_10Y:
+        title: Percentage change (t/t-10)
         description: Percentage change (t/t-10)
         meaning: euunit:PCH_10Y
       PCH_MV12:
+        title: Percentage change - 12-months average
         description: Percentage change - 12-months average
         meaning: euunit:PCH_MV12
       PPS_PWW:
+        title: Purchasing power standard (PPS) per person wanting to work
         description: Purchasing power standard (PPS) per person wanting to work
         meaning: euunit:PPS_PWW
       PC_ENT_WEB:
+        title: Percentage of the enterprises having a website
         description: Percentage of the enterprises having a website
         meaning: euunit:PC_ENT_WEB
       PC_ENT_RFID:
+        title: Percentage of the enterprises using RFID
         description: Percentage of the enterprises using RFID
         meaning: euunit:PC_ENT_RFID
       PC_ETURN:
+        title: Percentage of turnover from e-commerce
         description: Percentage of turnover from e-commerce
         meaning: euunit:PC_ETURN
       PC_ENT_AEBUY:
+        title: Percentage of enterprises sending e-commerce orders over the last calendar
+          year
         description: Percentage of enterprises sending e-commerce orders over the
           last calendar year
         meaning: euunit:PC_ENT_AEBUY
       PC_ENT_AESELL:
+        title: Percentage of enterprises receiving e-commerce orders over the last
+          calendar year
         description: Percentage of enterprises receiving e-commerce orders over the
           last calendar year
         meaning: euunit:PC_ENT_AESELL
       PC_ENT_ADE:
+        title: Percentage of enterprises using ADE
         description: Percentage of enterprises using ADE
         meaning: euunit:PC_ENT_ADE
       PC_ENT_SISC:
+        title: Percentage of enterprises sharing information electronically on the
+          supply chain management
         description: Percentage of enterprises sharing information electronically
           on the supply chain management
         meaning: euunit:PC_ENT_SISC
       PC_IND_IUEVR:
+        title: Percentage of individuals who used internet, ever
         description: Percentage of individuals who used internet, ever
         meaning: euunit:PC_IND_IUEVR
       PC_ENT_SECPOL:
+        title: Percentage of enterprises with an ICT security policy
         description: Percentage of enterprises with an ICT security policy
         meaning: euunit:PC_ENT_SECPOL
       PC_IND_SCSOFT:
+        title: Percentage of individuals who used security software or tool
         description: Percentage of individuals who used security software or tool
         meaning: euunit:PC_IND_SCSOFT
       PC_IND_SCUAVX:
+        title: Percentage of individuals who don't update their security products
         description: Percentage of individuals who don't update their security products
         meaning: euunit:PC_IND_SCUAVX
       TIME_SP:
+        title: Time spent (hh:mm)
         description: Time spent (hh:mm)
         meaning: euunit:TIME_SP
       PTP_TIME:
+        title: Participation time (hh:mm)
         description: Participation time (hh:mm)
         meaning: euunit:PTP_TIME
       PTP_RT:
+        title: Participation rate (%)
         description: Participation rate (%)
         meaning: euunit:PTP_RT
       MIO_M3_Y:
+        title: Millions of cubic metres per year
         description: Millions of cubic metres per year
         meaning: euunit:MIO_M3_Y
       CAP_1000T_Y:
+        title: Annual capacity/inputs in 1000T
         description: Annual capacity/inputs in 1000T
         meaning: euunit:CAP_1000T_Y
       PC_ENT_ECOM:
+        title: Percentage of enterprises which sent/received orders via any computer
+          networks
         description: Percentage of enterprises which sent/received orders via any
           computer networks
         meaning: euunit:PC_ENT_ECOM
       PC_ENT_IGOV2PRHMX:
+        title: Percentage of enterprises not using internet for offering goods/services
+          in their own country's public authorities' electronic procurement systems
         description: Percentage of enterprises not using internet for offering goods/services
           in their own country's public authorities' electronic procurement systems
         meaning: euunit:PC_ENT_IGOV2PRHMX
       PC_ENT_IGOV2RT:
+        title: Percentage of enterprises using internet to return filled in forms
+          electronically to public authorities
         description: Percentage of enterprises using internet to return filled in
           forms electronically to public authorities
         meaning: euunit:PC_ENT_IGOV2RT
       PC_GDP_3Y:
+        title: Percentage of GDP - three-year average
         description: Percentage of GDP - three-year average
         meaning: euunit:PC_GDP_3Y
       PCH_WRL_5Y:
+        title: Percentage of world total - 5-year change
         description: Percentage of world total - 5-year change
         meaning: euunit:PCH_WRL_5Y
       1000POP:
+        title: Per 1 000 population
         description: Per 1 000 population
         meaning: euunit:1000POP
       PC_IND_IUMC:
+        title: Percentage of individuals who have used a portable computer to access
+          internet
         description: Percentage of individuals who have used a portable computer to
           access internet
         meaning: euunit:PC_IND_IUMC
       PC_IND_IUMD:
+        title: Percentage of individuals who used a handheld device or portable computer
+          to access internet
         description: Percentage of individuals who used a handheld device or portable
           computer to access internet
         meaning: euunit:PC_IND_IUMD
       PC_IND_IUMDX:
+        title: Percentage of individuals who didn't use a handheld device or portable
+          computer to access internet
         description: Percentage of individuals who didn't use a handheld device or
           portable computer to access internet
         meaning: euunit:PC_IND_IUMDX
       PC_IND_IUHD:
+        title: Percentage of individuals who used a handheld device to access internet
         description: Percentage of individuals who used a handheld device to access
           internet
         meaning: euunit:PC_IND_IUHD
       PC_EMP_IUSE:
+        title: Percentage of persons employed using a computer with access to the
+          www
         description: Percentage of persons employed using a computer with access to
           the www
         meaning: euunit:PC_EMP_IUSE
       PC_EMP_PMD:
+        title: Percentage of persons employed working in enterprises which provide
+          mobile devices
         description: Percentage of persons employed working in enterprises which provide
           mobile devices
         meaning: euunit:PC_EMP_PMD
       PC_ENT_PMD:
+        title: Percentage of enterprises providing to persons employed portable devices
+          that allow a mobile connection to the internet
         description: Percentage of enterprises providing to persons employed portable
           devices that allow a mobile connection to the internet
         meaning: euunit:PC_ENT_PMD
       PC_AWSVAL:
+        title: Percentage of web sales
         description: Percentage of web sales
         meaning: euunit:PC_AWSVAL
       PC_EMP_CUSE2:
+        title: Percentage of persons employed working in enterprises which use computers
         description: Percentage of persons employed working in enterprises which use
           computers
         meaning: euunit:PC_EMP_CUSE2
       P_HHAB:
+        title: Per hundred inhabitants
         description: Per hundred inhabitants
         meaning: euunit:P_HHAB
       P_THAB:
+        title: Per thousand inhabitants
         description: Per thousand inhabitants
         meaning: euunit:P_THAB
       P_HTHAB:
+        title: Per hundred thousand inhabitants
         description: Per hundred thousand inhabitants
         meaning: euunit:P_HTHAB
       PCH_WRL_1Y:
+        title: Percentage of world total - 1-year change
         description: Percentage of world total - 1-year change
         meaning: euunit:PCH_WRL_1Y
       I99_1Q:
+        title: Index, first quarter 1999=100
         description: Index, first quarter 1999=100
         meaning: euunit:I99_1Q
       AAR:
+        title: Annualised agreed rate (AAR)
         description: Annualised agreed rate (AAR)
         meaning: euunit:AAR
       PC_OECD:
+        title: Percentage of OECD total
         description: Percentage of OECD total
         meaning: euunit:PC_OECD
       PCH_OECD_5Y:
+        title: Percentage of OECD total - 5-year change
         description: Percentage of OECD total - 5-year change
         meaning: euunit:PCH_OECD_5Y
       MPPS_KM2:
+        title: Million purchasing power standards (PPS) per square kilometre
         description: Million purchasing power standards (PPS) per square kilometre
         meaning: euunit:MPPS_KM2
       EUR_KGOE:
+        title: Euro per kilogram of oil equivalent (KGOE)
         description: Euro per kilogram of oil equivalent (KGOE)
         meaning: euunit:EUR_KGOE
       PC_IGRTX:
+        title: Percentage of individuals who have used internet but not for sending
+          filled forms to public authorities
         description: Percentage of individuals who have used internet but not for
           sending filled forms to public authorities
         meaning: euunit:PC_IGRTX
       PC_IGRTX_NAPX:
+        title: Percentage of individuals who have used internet but not for sending
+          filled forms to public authorities although they had to
         description: Percentage of individuals who have used internet but not for
           sending filled forms to public authorities although they had to
         meaning: euunit:PC_IGRTX_NAPX
       PC_PNT_3Y:
+        title: Percentage points (t, t-3)
         description: Percentage points (t, t-3)
         meaning: euunit:PC_PNT_3Y
       I08_WDA:
+        title: Index, 2008=100, working day adjusted (WDA)
         description: Index, 2008=100, working day adjusted (WDA)
         meaning: euunit:I08_WDA
       EUR_HAB_KP05:
+        title: Euro per inhabitant (at constant 2005 prices)
         description: Euro per inhabitant (at constant 2005 prices)
         meaning: euunit:EUR_HAB_KP05
       MIO_EUR_KP05:
+        title: Million euro (at constant 2005 prices)
         description: Million euro (at constant 2005 prices)
         meaning: euunit:MIO_EUR_KP05
       MIO_NAC_KP05:
+        title: Million units of national currency at constant 2005 prices
         description: Million units of national currency at constant 2005 prices
         meaning: euunit:MIO_NAC_KP05
       PPS_HAB_KP00:
+        title: Purchasing power standard (PPS) per inhabitant at constant 2000 prices
         description: Purchasing power standard (PPS) per inhabitant at constant 2000
           prices
         meaning: euunit:PPS_HAB_KP00
       O2_TD:
+        title: Tonnes of O2 per day
         description: Tonnes of O2 per day
         meaning: euunit:O2_TD
       PC_GEXP:
+        title: Percentage of government expenditure
         description: Percentage of government expenditure
         meaning: euunit:PC_GEXP
       PC_HC:
+        title: Percentage based on head count (HC)
         description: Percentage based on head count (HC)
         meaning: euunit:PC_HC
       PC_FTE:
+        title: Percentage based on full-time equivalents (FTE)
         description: Percentage based on full-time equivalents (FTE)
         meaning: euunit:PC_FTE
       TSWU:
+        title: Tonnes of separative work units
         description: Tonnes of separative work units
         meaning: euunit:TSWU
       THM:
+        title: Tonnes of heavy metal
         description: Tonnes of heavy metal
         meaning: euunit:THM
       GWD_THM:
+        title: Gigawatt-days per tonne of heavy metal
         description: Gigawatt-days per tonne of heavy metal
         meaning: euunit:GWD_THM
       PC_IND_IUGOV12:
+        title: Percentage of e-government users
         description: Percentage of e-government users
         meaning: euunit:PC_IND_IUGOV12
       T_DAY:
+        title: Tonnes per day
         description: Tonnes per day
         meaning: euunit:T_DAY
       T_PE_DAY:
+        title: Tons of population equivalent per day
         description: Tons of population equivalent per day
         meaning: euunit:T_PE_DAY
       P_MHAB:
+        title: Per million inhabitants
         description: Per million inhabitants
         meaning: euunit:P_MHAB
       EUR_KG_CLV00:
+        title: Euro per kilogram, chain linked volumes  (2000)
         description: Euro per kilogram, chain linked volumes  (2000)
         meaning: euunit:EUR_KG_CLV00
       EUR_KG_CLV05:
+        title: Euro per kilogram, chain linked volumes (2005)
         description: Euro per kilogram, chain linked volumes (2005)
         meaning: euunit:EUR_KG_CLV05
       PC_EU28:
+        title: Percentage of EU28 (2013-2020) total
         description: Percentage of EU28 (2013-2020) total
         meaning: euunit:PC_EU28
       PC_EU28_EUR_HAB:
+        title: Percentage of EU28 (2013-2020) total (based on euro per inhabitant)
         description: Percentage of EU28 (2013-2020) total (based on euro per inhabitant)
         meaning: euunit:PC_EU28_EUR_HAB
       PC_EU28_PPS_HAB:
+        title: Percentage of EU28 (2013-2020) total (based on purchasing power standards
+          per inhabitant)
         description: Percentage of EU28 (2013-2020) total (based on purchasing power
           standards per inhabitant)
         meaning: euunit:PC_EU28_PPS_HAB
       PC_EU28_PPS_EMP:
+        title: Percentage of EU28 (2013-2020) total (based on purchasing power standards
+          per employed person)
         description: Percentage of EU28 (2013-2020) total (based on purchasing power
           standards per employed person)
         meaning: euunit:PC_EU28_PPS_EMP
       TD:
+        title: Tonnes per day
         description: Tonnes per day
         meaning: euunit:TD
       PE_TD:
+        title: Tonnes of population equivalent per day
         description: Tonnes of population equivalent per day
         meaning: euunit:PE_TD
       PC_GBA:
+        title: Percentage of total GBAORD
         description: Percentage of total GBAORD
         meaning: euunit:PC_GBA
       I_LY:
+        title: Index, latest year = 100
         description: Index, latest year = 100
         meaning: euunit:I_LY
       I_1Y:
+        title: Index, t-1 = 100
         description: Index, t-1 = 100
         meaning: euunit:I_1Y
       SEI:
+        title: Shannon evenness index
         description: Shannon evenness index
         meaning: euunit:SEI
       SDI:
+        title: Shannon diversity index
         description: Shannon diversity index
         meaning: euunit:SDI
       PCH_5Y_CPI05_NAC:
+        title: Price index - percentage change (t/t-5), based on 2005=100 and national
+          currency
         description: Price index - percentage change (t/t-5), based on 2005=100 and
           national currency
         meaning: euunit:PCH_5Y_CPI05_NAC
       THS_M2:
+        title: Thousand square metres
         description: Thousand square metres
         meaning: euunit:THS_M2
       THS_PER:
+        title: Thousand persons
         description: Thousand persons
         meaning: euunit:THS_PER
       PC_EU28_PPS_HRS:
+        title: Percentage of EU28 total (based on purchasing power standards per hours
+          worked)
         description: Percentage of EU28 total (based on purchasing power standards
           per hours worked)
         meaning: euunit:PC_EU28_PPS_HRS
       PC_EU28_PPS_HR:
+        title: PC_EU28_PPS_HR
         description: PC_EU28_PPS_HR
         meaning: euunit:PC_EU28_PPS_HR
       PC_EU27_PPS_HR:
+        title: PC_EU27_PPS_HR
         description: PC_EU27_PPS_HR
         meaning: euunit:PC_EU27_PPS_HR
       PC_EU28_MIO_EUR:
+        title: Percentage of EU28 total (based on million euro)
         description: Percentage of EU28 total (based on million euro)
         meaning: euunit:PC_EU28_MIO_EUR
       PC_EU28_MIO_PPS:
+        title: Percentage of EU28 total (based on million PPS)
         description: Percentage of EU28 total (based on million PPS)
         meaning: euunit:PC_EU28_MIO_PPS
       PC_EU28_MEUR:
+        title: Percentage of EU28 (2013-2020) total (based on million euro)
         description: Percentage of EU28 (2013-2020) total (based on million euro)
         meaning: euunit:PC_EU28_MEUR
       PC_EU27_MEUR:
+        title: Percentage of EU27 (2007-2013) total (based on million euro)
         description: Percentage of EU27 (2007-2013) total (based on million euro)
         meaning: euunit:PC_EU27_MEUR
       PC_EU25_MEUR:
+        title: Percentage of EU25 (2004-2006) total (based on million euro)
         description: Percentage of EU25 (2004-2006) total (based on million euro)
         meaning: euunit:PC_EU25_MEUR
       PC_EU28_MPPS:
+        title: Percentage of EU28 (2013-2020) total (based on million purchasing power
+          standards)
         description: Percentage of EU28 (2013-2020) total (based on million purchasing
           power standards)
         meaning: euunit:PC_EU28_MPPS
       PC_EU27_MPPS:
+        title: Percentage of EU27 (2007-2013) total (based on million purchasing power
+          standards)
         description: Percentage of EU27 (2007-2013) total (based on million purchasing
           power standards)
         meaning: euunit:PC_EU27_MPPS
       PC_EA_MPPS:
+        title: Percentage of euro area total (based on million purchasing power standards)
         description: Percentage of euro area total (based on million purchasing power
           standards)
         meaning: euunit:PC_EA_MPPS
       PC_EA_MEUR:
+        title: Percentage of euro area total (based on million euro)
         description: Percentage of euro area total (based on million euro)
         meaning: euunit:PC_EA_MEUR
       PC_EA18_MIO_EUR:
+        title: Percentage of EA18 total (based on million euro)
         description: Percentage of EA18 total (based on million euro)
         meaning: euunit:PC_EA18_MIO_EUR
       PC_EA18_MIO_PPS:
+        title: Percentage of EA18 total (based on million PPS)
         description: Percentage of EA18 total (based on million PPS)
         meaning: euunit:PC_EA18_MIO_PPS
       PC_EA18_MEUR:
+        title: Percentage of EA18 (2014) total (based on million euro)
         description: Percentage of EA18 (2014) total (based on million euro)
         meaning: euunit:PC_EA18_MEUR
       PC_EA17_MEUR:
+        title: Percentage of EA17 (2011-2013) total (based on million euro)
         description: Percentage of EA17 (2011-2013) total (based on million euro)
         meaning: euunit:PC_EA17_MEUR
       PC_EA16_MEUR:
+        title: Percentage of EA16 (2009-2010) total (based on million euro)
         description: Percentage of EA16 (2009-2010) total (based on million euro)
         meaning: euunit:PC_EA16_MEUR
       PC_EA12_MEUR:
+        title: Percentage of EA12 (2001-2006) total (based on million euro)
         description: Percentage of EA12 (2001-2006) total (based on million euro)
         meaning: euunit:PC_EA12_MEUR
       PC_EA18_MPPS:
+        title: Percentage of EA18 (2014) total (based on million purchasing power
+          standards)
         description: Percentage of EA18 (2014) total (based on million purchasing
           power standards)
         meaning: euunit:PC_EA18_MPPS
       PC_EA17_MPPS:
+        title: Percentage of EA17 (2011-2013) total (based on million purchasing power
+          standards)
         description: Percentage of EA17 (2011-2013) total (based on million purchasing
           power standards)
         meaning: euunit:PC_EA17_MPPS
       PC_EA16_MPPS:
+        title: Percentage of EA16 (2009-2010) total (based on million purchasing power
+          standards)
         description: Percentage of EA16 (2009-2010) total (based on million purchasing
           power standards)
         meaning: euunit:PC_EA16_MPPS
       MNAC_CP:
+        title: Million units of national currency, current prices
         description: Million units of national currency, current prices
         meaning: euunit:MNAC_CP
       MEUR_CP:
+        title: Million euro, current prices
         description: Million euro, current prices
         meaning: euunit:MEUR_CP
       MPPS_CP:
+        title: Million PPS, current prices
         description: Million PPS, current prices
         meaning: euunit:MPPS_CP
       MNAC_PYP:
+        title: Million units of national currency, previous year prices
         description: Million units of national currency, previous year prices
         meaning: euunit:MNAC_PYP
       MEUR_PYP:
+        title: Million euro, previous year prices
         description: Million euro, previous year prices
         meaning: euunit:MEUR_PYP
       MNAC_CLV10:
+        title: Million units of national currency, chain linked volumes (2010)
         description: Million units of national currency, chain linked volumes (2010)
         meaning: euunit:MNAC_CLV10
       MEUR_CLV10:
+        title: Million euro, chain-linked volumes, reference year 2010 (at 2010 exchange
+          rates)
         description: Million euro, chain-linked volumes, reference year 2010 (at 2010
           exchange rates)
         meaning: euunit:MEUR_CLV10
       MNAC_CLV05:
+        title: Million units of national currency, chain linked volumes (2005)
         description: Million units of national currency, chain linked volumes (2005)
         meaning: euunit:MNAC_CLV05
       MEUR_CLV05:
+        title: Million euro, chain linked volumes (2005)
         description: Million euro, chain linked volumes (2005)
         meaning: euunit:MEUR_CLV05
       PC_STU:
+        title: Percentage of total tertiary students
         description: Percentage of total tertiary students
         meaning: euunit:PC_STU
       PC_FSTU:
+        title: Percentage of total foreign tertiary students
         description: Percentage of total foreign tertiary students
         meaning: euunit:PC_FSTU
       PC_Y25_29:
+        title: Percentage of total population aged 25-29
         description: Percentage of total population aged 25-29
         meaning: euunit:PC_Y25-29
       PC_Y20_29:
+        title: Percentage of total population aged 20-29
         description: Percentage of total population aged 20-29
         meaning: euunit:PC_Y20-29
       PC_TOT_PER:
+        title: Percentage of total (based on persons)
         description: Percentage of total (based on persons)
         meaning: euunit:PC_TOT_PER
       PC_TOT_HW:
+        title: Percentage of total (based on hours worked)
         description: Percentage of total (based on hours worked)
         meaning: euunit:PC_TOT_HW
       I05_EUR:
+        title: Index, 2005=100, euro
         description: Index, 2005=100, euro
         meaning: euunit:I05_EUR
       I10_EUR:
+        title: Index, 2010=100, euro
         description: Index, 2010=100, euro
         meaning: euunit:I10_EUR
       I05_PER:
+        title: Index, 2005=100 (based on persons)
         description: Index, 2005=100 (based on persons)
         meaning: euunit:I05_PER
       I05_HW:
+        title: Index, 2005=100 (based on hours worked)
         description: Index, 2005=100 (based on hours worked)
         meaning: euunit:I05_HW
       I05_JOB:
+        title: Index, 2005=100 (based on jobs)
         description: Index, 2005=100 (based on jobs)
         meaning: euunit:I05_JOB
       I05_FTE:
+        title: Index, 2005=100 (based on full-time equivalents)
         description: Index, 2005=100 (based on full-time equivalents)
         meaning: euunit:I05_FTE
       I10_PER:
+        title: Index, 2010=100 (based on persons)
         description: Index, 2010=100 (based on persons)
         meaning: euunit:I10_PER
       I10_HW:
+        title: Index, 2010=100 (based on hours worked)
         description: Index, 2010=100 (based on hours worked)
         meaning: euunit:I10_HW
       I10_JOB:
+        title: Index, 2010=100 (based on jobs)
         description: Index, 2010=100 (based on jobs)
         meaning: euunit:I10_JOB
       I10_FTE:
+        title: Index, 2010=100 (based on full-time equivalents)
         description: Index, 2010=100 (based on full-time equivalents)
         meaning: euunit:I10_FTE
       PPCH_PRE:
+        title: Percentage point change on previous period, contribution to GDP growth
         description: Percentage point change on previous period, contribution to GDP
           growth
         meaning: euunit:PPCH_PRE
       PPCH_SM:
+        title: Percentage point change compared to same period in previous year, contribution
+          to GDP growth
         description: Percentage point change compared to same period in previous year,
           contribution to GDP growth
         meaning: euunit:PPCH_SM
       PCH_SM_EUR:
+        title: Percentage change compared to same period in previous year, euro
         description: Percentage change compared to same period in previous year, euro
         meaning: euunit:PCH_SM_EUR
       PCH_PRE_PER:
+        title: Percentage change on previous period (based on persons)
         description: Percentage change on previous period (based on persons)
         meaning: euunit:PCH_PRE_PER
       PCH_PRE_HW:
+        title: Percentage change on previous period (based on hours worked)
         description: Percentage change on previous period (based on hours worked)
         meaning: euunit:PCH_PRE_HW
       PCH_SM_PER:
+        title: Percentage change compared to same period in previous year (based on
+          persons)
         description: Percentage change compared to same period in previous year (based
           on persons)
         meaning: euunit:PCH_SM_PER
       PCH_SM_HW:
+        title: Percentage change compared to same period in previous year (based on
+          hours worked)
         description: Percentage change compared to same period in previous year (based
           on hours worked)
         meaning: euunit:PCH_SM_HW
       PCH_SM_JOB:
+        title: Percentage change compared to same period in previous year (based on
+          jobs)
         description: Percentage change compared to same period in previous year (based
           on jobs)
         meaning: euunit:PCH_SM_JOB
       PCH_SM_FTE:
+        title: Percentage change compared to same period in previous year (based on
+          full-time equivalents)
         description: Percentage change compared to same period in previous year (based
           on full-time equivalents)
         meaning: euunit:PCH_SM_FTE
       CPI10_PCH_PRE_NAC:
+        title: Price index, percentage change on previous period, national currency
         description: Price index, percentage change on previous period, national currency
         meaning: euunit:CPI10_PCH_PRE_NAC
       CPI10_PCH_PRE_EUR:
+        title: Price index, percentage change on previous period, euro
         description: Price index, percentage change on previous period, euro
         meaning: euunit:CPI10_PCH_PRE_EUR
       CPI05_PCH_PRE_NAC:
+        title: Price index, percentage change on previous period, national currency
         description: Price index, percentage change on previous period, national currency
         meaning: euunit:CPI05_PCH_PRE_NAC
       CPI05_PCH_PRE_EUR:
+        title: Price index, percentage change on previous period, euro
         description: Price index, percentage change on previous period, euro
         meaning: euunit:CPI05_PCH_PRE_EUR
       CPI10_PCH_SM_NAC:
+        title: Price index, percentage change compared to same period in previous
+          year, national currency
         description: Price index, percentage change compared to same period in previous
           year, national currency
         meaning: euunit:CPI10_PCH_SM_NAC
       CPI10_PCH_SM_EUR:
+        title: Price index, percentage change compared to same period in previous
+          year, euro
         description: Price index, percentage change compared to same period in previous
           year, euro
         meaning: euunit:CPI10_PCH_SM_EUR
       CPI05_PCH_SM_NAC:
+        title: Price index, percentage change compared to same period in previous
+          year, national currency
         description: Price index, percentage change compared to same period in previous
           year, national currency
         meaning: euunit:CPI05_PCH_SM_NAC
       CPI05_PCH_SM_EUR:
+        title: Price index, percentage change compared to same period in previous
+          year, euro
         description: Price index, percentage change compared to same period in previous
           year, euro
         meaning: euunit:CPI05_PCH_SM_EUR
       RT_UNE:
+        title: Unemployment rate
         description: Unemployment rate
         meaning: euunit:RT_UNE
       CPI10_NAC:
+        title: Price index, 2010=100, national currency
         description: Price index, 2010=100, national currency
         meaning: euunit:CPI10_NAC
       CPI10_EUR:
+        title: Price index, 2010=100, euro
         description: Price index, 2010=100, euro
         meaning: euunit:CPI10_EUR
       HW:
+        title: Hours worked
         description: Hours worked
         meaning: euunit:HW
       THS_HW:
+        title: Thousand hours worked
         description: Thousand hours worked
         meaning: euunit:THS_HW
       THS_JOB:
+        title: Thousand jobs
         description: Thousand jobs
         meaning: euunit:THS_JOB
       THS_FTE:
+        title: Thousand full-time equivalents (FTE)
         description: Thousand full-time equivalents (FTE)
         meaning: euunit:THS_FTE
       PC_EU28_PPS_HW:
+        title: PC_EU28_PPS_HW
         description: PC_EU28_PPS_HW
         meaning: euunit:PC_EU28_PPS_HW
       PC_EU27_PPS_HW:
+        title: PC_EU27_PPS_HW
         description: PC_EU27_PPS_HW
         meaning: euunit:PC_EU27_PPS_HW
       VKM:
+        title: Vehicle-kilometre (VKM)
         description: Vehicle-kilometre (VKM)
         meaning: euunit:VKM
       CP_MEUR:
+        title: Current prices, million euro
         description: Current prices, million euro
         meaning: euunit:CP_MEUR
       CP_MNAC:
+        title: Current prices, million units of national currency
         description: Current prices, million units of national currency
         meaning: euunit:CP_MNAC
       CP_MPPS:
+        title: Current prices, million purchasing power standards
         description: Current prices, million purchasing power standards
         meaning: euunit:CP_MPPS
       PC_EU28_MEUR_CP:
+        title: Percentage of EU28 (2013-2020) total (based on million euro), current
+          prices
         description: Percentage of EU28 (2013-2020) total (based on million euro),
           current prices
         meaning: euunit:PC_EU28_MEUR_CP
       PC_EU28_MPPS_CP:
+        title: Percentage of EU28 (2013-2020) total (based on million purchasing power
+          standards), current prices
         description: Percentage of EU28 (2013-2020) total (based on million purchasing
           power standards), current prices
         meaning: euunit:PC_EU28_MPPS_CP
       CLV05_MNAC:
+        title: Chain linked volumes (2005), million units of national currency
         description: Chain linked volumes (2005), million units of national currency
         meaning: euunit:CLV05_MNAC
       CLV05_MEUR:
+        title: Chain linked volumes (2005), million euro
         description: Chain linked volumes (2005), million euro
         meaning: euunit:CLV05_MEUR
       CLV10_MNAC:
+        title: Chain linked volumes (2010), million units of national currency
         description: Chain linked volumes (2010), million units of national currency
         meaning: euunit:CLV10_MNAC
       CLV10_MEUR:
+        title: Chain linked volumes (2010), million euro
         description: Chain linked volumes (2010), million euro
         meaning: euunit:CLV10_MEUR
       PYP_MNAC:
+        title: Previous year prices, million units of national currency
         description: Previous year prices, million units of national currency
         meaning: euunit:PYP_MNAC
       PYP_MEUR:
+        title: Previous year prices, million euro
         description: Previous year prices, million euro
         meaning: euunit:PYP_MEUR
       CLV_I05:
+        title: Chain linked volumes, index 2005=100
         description: Chain linked volumes, index 2005=100
         meaning: euunit:CLV_I05
       CLV_I10:
+        title: Chain linked volumes, index 2010=100
         description: Chain linked volumes, index 2010=100
         meaning: euunit:CLV_I10
       CLV_PCH_PRE:
+        title: Chain linked volumes, percentage change on previous period
         description: Chain linked volumes, percentage change on previous period
         meaning: euunit:CLV_PCH_PRE
       CLV_PCH_SM:
+        title: Chain linked volumes, percentage change compared to same period in
+          previous year
         description: Chain linked volumes, percentage change compared to same period
           in previous year
         meaning: euunit:CLV_PCH_SM
       CLV_PCH_ANN:
+        title: Chain linked volumes, annualized percentage change on previous period
         description: Chain linked volumes, annualized percentage change on previous
           period
         meaning: euunit:CLV_PCH_ANN
       CON_PPCH_PRE:
+        title: Contribution to GDP growth, percentage point change on previous period
         description: Contribution to GDP growth, percentage point change on previous
           period
         meaning: euunit:CON_PPCH_PRE
       CON_PPCH_SM:
+        title: Contribution to GDP growth, percentage point change compared to same
+          period in previous year
         description: Contribution to GDP growth, percentage point change compared
           to same period in previous year
         meaning: euunit:CON_PPCH_SM
       PD05_NAC:
+        title: Price index (implicit deflator), 2005=100, national currency
         description: Price index (implicit deflator), 2005=100, national currency
         meaning: euunit:PD05_NAC
       PD_PCH_PRE_NAC:
+        title: Price index (implicit deflator), percentage change on previous period,
+          national currency
         description: Price index (implicit deflator), percentage change on previous
           period, national currency
         meaning: euunit:PD_PCH_PRE_NAC
       PD_PCH_SM_NAC:
+        title: Price index (implicit deflator), percentage change compared to same
+          period in previous year, national currency
         description: Price index (implicit deflator), percentage change compared to
           same period in previous year, national currency
         meaning: euunit:PD_PCH_SM_NAC
       PD_EUR:
+        title: Price deflator, 2010=100, euro
         description: Price deflator, 2010=100, euro
         meaning: euunit:PD_EUR
       PD_PCH_PRE_EUR:
+        title: Price index (implicit deflator), percentage change on previous period,
+          euro
         description: Price index (implicit deflator), percentage change on previous
           period, euro
         meaning: euunit:PD_PCH_PRE_EUR
       PD_PCH_SM_EUR:
+        title: Price index (implicit deflator), percentage change compared to same
+          period in previous year, euro
         description: Price index (implicit deflator), percentage change compared to
           same period in previous year, euro
         meaning: euunit:PD_PCH_SM_EUR
       CP_MEUR_HAB:
+        title: Current prices, million euro  per capita
         description: Current prices, million euro  per capita
         meaning: euunit:CP_MEUR_HAB
       CP_MNAC_HAB:
+        title: Current prices, million units of national currency  per capita
         description: Current prices, million units of national currency  per capita
         meaning: euunit:CP_MNAC_HAB
       CP_MPPS_HAB:
+        title: Current prices, million PPS  per capita
         description: Current prices, million PPS  per capita
         meaning: euunit:CP_MPPS_HAB
       CP_PC_EU28_MEUR:
+        title: Current prices, percentage of EU28 total (based on million euro per
+          capita)
         description: Current prices, percentage of EU28 total (based on million euro
           per capita)
         meaning: euunit:CP_PC_EU28_MEUR
       CP_PC_EU28_MPPS:
+        title: Current prices, percentage of EU28 total (based on million PPS per
+          capita)
         description: Current prices, percentage of EU28 total (based on million PPS
           per capita)
         meaning: euunit:CP_PC_EU28_MPPS
       CLV05_MEUR_HAB:
+        title: Chain linked volumes (2005), million euro per capita
         description: Chain linked volumes (2005), million euro per capita
         meaning: euunit:CLV05_MEUR_HAB
       CLV_I05_HAB:
+        title: Chain linked volumes, Index 2005=100, per capita
         description: Chain linked volumes, Index 2005=100, per capita
         meaning: euunit:CLV_I05_HAB
       CLV_I10_HAB:
+        title: Chain linked volumes, Index 2010=100, per capita
         description: Chain linked volumes, Index 2010=100, per capita
         meaning: euunit:CLV_I10_HAB
       CLV_PCH_PRE_HAB:
+        title: Chain linked volumes, percentage change on previous period, per capita
         description: Chain linked volumes, percentage change on previous period, per
           capita
         meaning: euunit:CLV_PCH_PRE_HAB
       CLV_PCH_SM_HAB:
+        title: Chain linked volumes, percentage change compared to same period in
+          previous year, per capita
         description: Chain linked volumes, percentage change compared to same period
           in previous year, per capita
         meaning: euunit:CLV_PCH_SM_HAB
       CRC_MEUR:
+        title: Current replacement costs, million euro
         description: Current replacement costs, million euro
         meaning: euunit:CRC_MEUR
       CRC_MNAC:
+        title: Current replacement costs, million units of national currency
         description: Current replacement costs, million units of national currency
         meaning: euunit:CRC_MNAC
       PYR_MNAC:
+        title: Previous year replacement costs, million units of national currency
         description: Previous year replacement costs, million units of national currency
         meaning: euunit:PYR_MNAC
       PYR_MEUR:
+        title: Previous year replacement costs, million euro
         description: Previous year replacement costs, million euro
         meaning: euunit:PYR_MEUR
       PC_EU28_EUR:
+        title: Percentage of EU28 total (based on GDP in CP in euro)
         description: Percentage of EU28 total (based on GDP in CP in euro)
         meaning: euunit:PC_EU28_EUR
       PC_EU28_PPS:
+        title: Percentage of EU28 total (based on GDP in CP in PPS)
         description: Percentage of EU28 total (based on GDP in CP in PPS)
         meaning: euunit:PC_EU28_PPS
       PD10_NAC:
+        title: Price index (implicit deflator), 2010=100, national currency
         description: Price index (implicit deflator), 2010=100, national currency
         meaning: euunit:PD10_NAC
       PD10_EUR:
+        title: Price index (implicit deflator), 2010=100, euro
         description: Price index (implicit deflator), 2010=100, euro
         meaning: euunit:PD10_EUR
       PD05_EUR:
+        title: Price index (implicit deflator), 2005=100, euro
         description: Price index (implicit deflator), 2005=100, euro
         meaning: euunit:PD05_EUR
       CP_EUR_HAB:
+        title: Current prices, euro per capita
         description: Current prices, euro per capita
         meaning: euunit:CP_EUR_HAB
       CP_NAC_HAB:
+        title: Current prices, units of national currency per capita
         description: Current prices, units of national currency per capita
         meaning: euunit:CP_NAC_HAB
       CP_PPS_HAB:
+        title: Current prices, purchasing power standard per capita
         description: Current prices, purchasing power standard per capita
         meaning: euunit:CP_PPS_HAB
       CP_PC_EU28_EUR:
+        title: Current prices, percentage of EU28 (2013-2020) total (based on euro
+          per capita)
         description: Current prices, percentage of EU28 (2013-2020) total (based on
           euro per capita)
         meaning: euunit:CP_PC_EU28_EUR
       CP_PC_EU28_PPS:
+        title: Current prices, percentage of EU28 (2013-2020) total (based on purchasing
+          power standards per capita)
         description: Current prices, percentage of EU28 (2013-2020) total (based on
           purchasing power standards per capita)
         meaning: euunit:CP_PC_EU28_PPS
       CLV05_EUR_HAB:
+        title: Chain linked volumes (2005), euro per capita
         description: Chain linked volumes (2005), euro per capita
         meaning: euunit:CLV05_EUR_HAB
       CLV10_EUR_HAB:
+        title: Chain linked volumes (2010), euro per capita
         description: Chain linked volumes (2010), euro per capita
         meaning: euunit:CLV10_EUR_HAB
       PPS_KGOE:
+        title: Purchasing power standard (PPS) per kilogram of oil equivalent
         description: Purchasing power standard (PPS) per kilogram of oil equivalent
         meaning: euunit:PPS_KGOE
       PPS_M3:
+        title: Purchasing power standard (PPS) per cubic metre
         description: Purchasing power standard (PPS) per cubic metre
         meaning: euunit:PPS_M3
       I_EU:
+        title: Index, EU=100
         description: Index, EU=100
         meaning: euunit:I_EU
       I_EU28:
+        title: Index, EU28=100
         description: Index, EU28=100
         meaning: euunit:I_EU28
       G:
+        title: Gram
         description: Gram
         meaning: euunit:G
       PAS:
+        title: Passenger
         description: Passenger
         meaning: euunit:PAS
       THS_PAS:
+        title: Thousand passengers
         description: Thousand passengers
         meaning: euunit:THS_PAS
       THS_PASF:
+        title: Thousand passengers (excluding cruise passengers)
         description: Thousand passengers (excluding cruise passengers)
         meaning: euunit:THS_PASF
       THS_PASC:
+        title: Thousand cruise passengers starting and ending a cruise
         description: Thousand cruise passengers starting and ending a cruise
         meaning: euunit:THS_PASC
       THS_PASE:
+        title: Thousand cruise passengers on excursion
         description: Thousand cruise passengers on excursion
         meaning: euunit:THS_PASE
       PC_ENT_CC:
+        title: Percentage of enterprises buying CC services
         description: Percentage of enterprises buying CC services
         meaning: euunit:PC_ENT_CC
       PC_ENT_CCX:
+        title: Percentage of enterprises not buying CC services
         description: Percentage of enterprises not buying CC services
         meaning: euunit:PC_ENT_CCX
       PC_ENT_INV3SBG:
+        title: Percentage of enterprises sending invoices B2BG
         description: Percentage of enterprises sending invoices B2BG
         meaning: euunit:PC_ENT_INV3SBG
       PC_ENT_RFID1:
+        title: Percentage of enterprises using RFID (as of 2014)
         description: Percentage of enterprises using RFID (as of 2014)
         meaning: euunit:PC_ENT_RFID1
       PC_IND_CC:
+        title: Percentage of individuals who used cloud services for file storage
         description: Percentage of individuals who used cloud services for file storage
         meaning: euunit:PC_IND_CC
       PC_IND_CC_AW:
+        title: Percentage of individuals who used internet, were aware of cloud services
+          but did not use them
         description: Percentage of individuals who used internet, were aware of cloud
           services but did not use them
         meaning: euunit:PC_IND_CC_AW
       PC_IND_CC_CCS:
+        title: Percentage of individuals who used internet and cloud services for
+          file saving or sharing
         description: Percentage of individuals who used internet and cloud services
           for file saving or sharing
         meaning: euunit:PC_IND_CC_CCS
       PC_IND_CC_CCSX:
+        title: Percentage of individuals who used internet but not cloud services
         description: Percentage of individuals who used internet but not cloud services
         meaning: euunit:PC_IND_CC_CCSX
       RT_PRE:
+        title: Growth rate on previous period (t/t-1)
         description: Growth rate on previous period (t/t-1)
         meaning: euunit:RT_PRE
       RT_PRE_GT:
+        title: Growth rate on previous period (t/t-1) for gross tonnage of vessels
         description: Growth rate on previous period (t/t-1) for gross tonnage of vessels
         meaning: euunit:RT_PRE_GT
       RT_PRE_NR:
+        title: Growth rate on previous period (t/t-1) for number of vessels
         description: Growth rate on previous period (t/t-1) for number of vessels
         meaning: euunit:RT_PRE_NR
       P_BGDP:
+        title: Per billion GDP
         description: Per billion GDP
         meaning: euunit:P_BGDP
       INX:
+        title: Index
         description: Index
         meaning: euunit:INX
       PCH_5Y_CPI10_NAC:
+        title: Price index - percentage change (t/t-5), based on 2010=100 and national
+          currency
         description: Price index - percentage change (t/t-5), based on 2010=100 and
           national currency
         meaning: euunit:PCH_5Y_CPI10_NAC
       PC_Y18_59:
+        title: Percentage of total population aged 18-59
         description: Percentage of total population aged 18-59
         meaning: euunit:PC_Y18-59
       PC_Y_LT60:
+        title: Percentage of total population aged less than 60
         description: Percentage of total population aged less than 60
         meaning: euunit:PC_Y_LT60
       INX_M:
+        title: Monthly index
         description: Monthly index
         meaning: euunit:INX_M
       INX_Q:
+        title: Quarterly index
         description: Quarterly index
         meaning: euunit:INX_Q
       INX_A_AVG:
+        title: Annual average index
         description: Annual average index
         meaning: euunit:INX_A_AVG
       P_BERD:
+        title: Per billion euro of business enterprise expenditure on R&D (BERD)
         description: Per billion euro of business enterprise expenditure on R&D (BERD)
         meaning: euunit:P_BERD
       P_GERD:
+        title: Per billion euro of gross domestic expenditure on R&D (GERD)
         description: Per billion euro of gross domestic expenditure on R&D (GERD)
         meaning: euunit:P_GERD
       RCH_M:
+        title: Monthly rate of change
         description: Monthly rate of change
         meaning: euunit:RCH_M
       RCH_Q:
+        title: Quarterly rate of change
         description: Quarterly rate of change
         meaning: euunit:RCH_Q
       RCH_A:
+        title: Annual rate of change
         description: Annual rate of change
         meaning: euunit:RCH_A
       RCH_A_AVG:
+        title: Annual average rate of change
         description: Annual average rate of change
         meaning: euunit:RCH_A_AVG
       RCH_MV12MA:
+        title: Moving 12 months average rate of change
         description: Moving 12 months average rate of change
         meaning: euunit:RCH_MV12MA
       HAB_P:
+        title: Inhabitants per ...
         description: Inhabitants per ...
         meaning: euunit:HAB_P
       HC_HTHAB:
+        title: Head count per hundred thousand inhabitants
         description: Head count per hundred thousand inhabitants
         meaning: euunit:HC_HTHAB
       FTE_HTHAB:
+        title: Full time equivalent per hundred thousand inhabitants
         description: Full time equivalent per hundred thousand inhabitants
         meaning: euunit:FTE_HTHAB
       CUM_DIFF_THS:
+        title: Cumulated difference in thousand
         description: Cumulated difference in thousand
         meaning: euunit:CUM_DIFF_THS
       RCH_MV12MAVR:
+        title: Moving 12 months average rate of change
         description: Moving 12 months average rate of change
         meaning: euunit:RCH_MV12MAVR
       KGOE_TEUR:
+        title: Kilograms of oil equivalent (KGOE) per thousand euro
         description: Kilograms of oil equivalent (KGOE) per thousand euro
         meaning: euunit:KGOE_TEUR
       RTG:
+        title: Rating (0-10)
         description: Rating (0-10)
         meaning: euunit:RTG
       PPCH_3Y:
+        title: Percentage point change (t-(t-3))
         description: Percentage point change (t-(t-3))
         meaning: euunit:PPCH_3Y
       P_SAL_Y:
+        title: Per employee in full-time equivalents, per year
         description: Per employee in full-time equivalents, per year
         meaning: euunit:P_SAL_Y
       P_SAL_M:
+        title: Per employee in full-time equivalents, per month
         description: Per employee in full-time equivalents, per month
         meaning: euunit:P_SAL_M
       P_SAL_H:
+        title: Per employee in full-time equivalents, per hour
         description: Per employee in full-time equivalents, per hour
         meaning: euunit:P_SAL_H
       PC_UP95:
+        title: Percentage of total population - upper boundary of the 95% confidence
+          interval
         description: Percentage of total population - upper boundary of the 95% confidence
           interval
         meaning: euunit:PC_UP95
       PC_LW95:
+        title: Percentage of total population - lower boundary of the 95% confidence
+          interval
         description: Percentage of total population - lower boundary of the 95% confidence
           interval
         meaning: euunit:PC_LW95
       PC_GVA:
+        title: Percentage of gross value added (GVA)
         description: Percentage of gross value added (GVA)
         meaning: euunit:PC_GVA
       EUR_KG_CLV10:
+        title: Euro per kilogram, chain linked volumes (2010)
         description: Euro per kilogram, chain linked volumes (2010)
         meaning: euunit:EUR_KG_CLV10
       PC_ENT_AWSELL:
+        title: Percentage of enterprises with web sales
         description: Percentage of enterprises with web sales
         meaning: euunit:PC_ENT_AWSELL
       PC_ENT_AWSELLX:
+        title: Percentage of enterprises without web sales
         description: Percentage of enterprises without web sales
         meaning: euunit:PC_ENT_AWSELLX
       RT_INC:
+        title: Incidence rate
         description: Incidence rate
         meaning: euunit:RT_INC
       RT_SINC:
+        title: Standardised incidence rate
         description: Standardised incidence rate
         meaning: euunit:RT_SINC
       GDP_BEUR:
+        title: Nominal GDP in billion euro
         description: Nominal GDP in billion euro
         meaning: euunit:GDP_BEUR
       P_MACT:
+        title: Per million of population in the labour force
         description: Per million of population in the labour force
         meaning: euunit:P_MACT
       PC_TSCO:
+        title: Percentage of total revenues from taxes and social contributions (including
+          imputed social contributions)
         description: Percentage of total revenues from taxes and social contributions
           (including imputed social contributions)
         meaning: euunit:PC_TSCO
       PC_TSCO_X_ISCO:
+        title: Percentage of total revenues from taxes and social contributions (excluding
+          imputed social contributions)
         description: Percentage of total revenues from taxes and social contributions
           (excluding imputed social contributions)
         meaning: euunit:PC_TSCO_X_ISCO
       CP_MUSD:
+        title: Current prices, million US dollars
         description: Current prices, million US dollars
         meaning: euunit:CP_MUSD
       PYP_MUSD:
+        title: Previous year prices, million US dollars
         description: Previous year prices, million US dollars
         meaning: euunit:PYP_MUSD
       CP_I10:
+        title: Constant prices, index 2010=100
         description: Constant prices, index 2010=100
         meaning: euunit:CP_I10
       CP_PCH_PRE:
+        title: Constant prices, percentage change over previous period
         description: Constant prices, percentage change over previous period
         meaning: euunit:CP_PCH_PRE
       CP_PCH_SM:
+        title: Constant prices, percentage change compared to same period in previous
+          year
         description: Constant prices, percentage change compared to same period in
           previous year
         meaning: euunit:CP_PCH_SM
       HLD:
+        title: Holding
         description: Holding
         meaning: euunit:HLD
       MEUR_KP00:
+        title: Million euro (at constant 2000 prices)
         description: Million euro (at constant 2000 prices)
         meaning: euunit:MEUR_KP00
       THS_SEAT:
+        title: Thousand seats
         description: Thousand seats
         meaning: euunit:THS_SEAT
       KM_TKM2:
+        title: Kilometres per thousand square kilometres
         description: Kilometres per thousand square kilometres
         meaning: euunit:KM_TKM2
       I12:
+        title: Index, 2012=100
         description: Index, 2012=100
         meaning: euunit:I12
       MEUR_NSA:
+        title: Million euro (NSA)
         description: Million euro (NSA)
         meaning: euunit:MEUR_NSA
       PC_GDP_NSA:
+        title: Percentage of gross domestic product (GDP), (NSA)
         description: Percentage of gross domestic product (GDP), (NSA)
         meaning: euunit:PC_GDP_NSA
       PC_GDP_SWDA:
+        title: Percentage of gross domestic product (GDP), (SWDA)
         description: Percentage of gross domestic product (GDP), (SWDA)
         meaning: euunit:PC_GDP_SWDA
       MEUR_KP11:
+        title: Million euro (at constant 2011 prices)
         description: Million euro (at constant 2011 prices)
         meaning: euunit:MEUR_KP11
       MEUR_KP_PRE:
+        title: Million euro (at prices of the previous year)
         description: Million euro (at prices of the previous year)
         meaning: euunit:MEUR_KP_PRE
       GDP_HAB:
+        title: GDP per capita
         description: GDP per capita
         meaning: euunit:GDP_HAB
       PC_GDP_HAB:
+        title: Percentage of gross domestic product (GDP) per capita
         description: Percentage of gross domestic product (GDP) per capita
         meaning: euunit:PC_GDP_HAB
       PC_GNI:
+        title: Percentage of gross national income (GNI)
         description: Percentage of gross national income (GNI)
         meaning: euunit:PC_GNI
       PC_PEXP:
+        title: Percentage of total public expenditure
         description: Percentage of total public expenditure
         meaning: euunit:PC_PEXP
       CFU:
+        title: Colony-forming unit (CFU)
         description: Colony-forming unit (CFU)
         meaning: euunit:CFU
       KGOE:
+        title: Kilogram of oil equivalent (KGOE)
         description: Kilogram of oil equivalent (KGOE)
         meaning: euunit:KGOE
       TOE:
+        title: Tonnes of oil equivalent (TOE)
         description: Tonnes of oil equivalent (TOE)
         meaning: euunit:TOE
       TKM:
+        title: Tonne-kilometre (TKM)
         description: Tonne-kilometre (TKM)
         meaning: euunit:TKM
       THS_CD08:
+        title: Cumulative difference from 2008, in thousands
         description: Cumulative difference from 2008, in thousands
         meaning: euunit:THS_CD08
       HL:
+        title: Hectolitre
         description: Hectolitre
         meaning: euunit:HL
       KP_I10:
+        title: Constant prices, index 2010=100
         description: Constant prices, index 2010=100
         meaning: euunit:KP_I10
       KP_PCH_PRE:
+        title: Constant prices, percentage change on previous period
         description: Constant prices, percentage change on previous period
         meaning: euunit:KP_PCH_PRE
       KP_PCH_SM:
+        title: Constant prices, percentage change compared to same period in previous
+          year
         description: Constant prices, percentage change compared to same period in
           previous year
         meaning: euunit:KP_PCH_SM
       PPCS_HAB_EU:
+        title: Purchasing power consumption standards per inhabitant in percentage
+          of the EU average
         description: Purchasing power consumption standards per inhabitant in percentage
           of the EU average
         meaning: euunit:PPCS_HAB_EU
       THS_TD:
+        title: Thousand tonnes per day
         description: Thousand tonnes per day
         meaning: euunit:THS_TD
       PM:
+        title: Per mille
         description: Per mille
         meaning: euunit:PM
       PC_UAA:
+        title: Percentage of total utilised agricultural area
         description: Percentage of total utilised agricultural area
         meaning: euunit:PC_UAA
       PC_IND_BUY3:
+        title: Percentage of individuals who purchased online in the last 3 months
         description: Percentage of individuals who purchased online in the last 3
           months
         meaning: euunit:PC_IND_BUY3
       RK:
+        title: Rank
         description: Rank
         meaning: euunit:RK
       THS_TEUKM:
+        title: Thousand TEU-kilometres
         description: Thousand TEU-kilometres
         meaning: euunit:THS_TEUKM
       THS_KW:
+        title: Thousand kilowatts
         description: Thousand kilowatts
         meaning: euunit:THS_KW
       THS_JRNY:
+        title: Thousand journeys
         description: Thousand journeys
         meaning: euunit:THS_JRNY
       THS_BTO:
+        title: Thousand basic transport operations
         description: Thousand basic transport operations
         meaning: euunit:THS_BTO
       THS_TRKM:
+        title: Thousand train-kilometres
         description: Thousand train-kilometres
         meaning: euunit:THS_TRKM
       THS_VESKM:
+        title: Thousand vessel-kilometres
         description: Thousand vessel-kilometres
         meaning: euunit:THS_VESKM
       NR_INV:
+        title: Number of investments
         description: Number of investments
         meaning: euunit:NR_INV
       NR_COMP:
+        title: Number of companies
         description: Number of companies
         meaning: euunit:NR_COMP
       PC_ENT_SECPOL1:
+        title: Percentage of enterprises with an ICT security policy (as of 2015)
         description: Percentage of enterprises with an ICT security policy (as of
           2015)
         meaning: euunit:PC_ENT_SECPOL1
       CLV_PY_MNAC:
+        title: Chain linked volumes, previous year, million units of national currency
         description: Chain linked volumes, previous year, million units of national
           currency
         meaning: euunit:CLV_PY_MNAC
       CLV_PY_MEUR:
+        title: Chain linked volumes, previous year, million euro
         description: Chain linked volumes, previous year, million euro
         meaning: euunit:CLV_PY_MEUR
       TCO2E:
+        title: Tonnes of CO2 equivalent
         description: Tonnes of CO2 equivalent
         meaning: euunit:TCO2E
       MEUR_KP05:
+        title: Million euro (at constant 2005 prices)
         description: Million euro (at constant 2005 prices)
         meaning: euunit:MEUR_KP05
       MNAC_KP05:
+        title: Million units of national currency at constant 2005 prices
         description: Million units of national currency at constant 2005 prices
         meaning: euunit:MNAC_KP05
       I2010_SCA:
+        title: Index, 2010=100 (SCA)
         description: Index, 2010=100 (SCA)
         meaning: euunit:I2010_SCA
       PCH_M1_SCA:
+        title: Percentage change m/m-1 (SCA)
         description: Percentage change m/m-1 (SCA)
         meaning: euunit:PCH_M1_SCA
       PCH_M12_CA:
+        title: Percentage change m/m-12 (CA)
         description: Percentage change m/m-12 (CA)
         meaning: euunit:PCH_M12_CA
       PCH_Q1_SCA:
+        title: Percentage change q/q-1 (SCA)
         description: Percentage change q/q-1 (SCA)
         meaning: euunit:PCH_Q1_SCA
       PCH_Q4_CA:
+        title: Percentage change q/q-4 (CA)
         description: Percentage change q/q-4 (CA)
         meaning: euunit:PCH_Q4_CA
       I2015:
+        title: Index, 2015=100
         description: Index, 2015=100
         meaning: euunit:I2015
       I15:
+        title: Index, 2015=100
         description: Index, 2015=100
         meaning: euunit:I15
       RT1_SCA:
+        title: Percentage change (t/t-1) - seasonally and calendar adjusted data
         description: Percentage change (t/t-1) - seasonally and calendar adjusted
           data
         meaning: euunit:RT1-SCA
       RT12_CA:
+        title: Percentage change (t/t-12) - calendar adjusted data, not seasonally
+          adjusted data
         description: Percentage change (t/t-12) - calendar adjusted data, not seasonally
           adjusted data
         meaning: euunit:RT12-CA
       PCH_PRE_PERS_SCA:
+        title: Percentage change on previous period (based on persons, SCA)
         description: Percentage change on previous period (based on persons, SCA)
         meaning: euunit:PCH_PRE_PERS_SCA
       NR_ENT:
+        title: Number of enterprises
         description: Number of enterprises
         meaning: euunit:NR_ENT
       MIO_EUR_SCA:
+        title: Million euro (SCA)
         description: Million euro (SCA)
         meaning: euunit:MIO_EUR_SCA
       PC_GDP_SCA:
+        title: Percentage of gross domestic product (GDP), (SCA)
         description: Percentage of gross domestic product (GDP), (SCA)
         meaning: euunit:PC_GDP_SCA
       SUM_4Q:
+        title: Sum of the last 4 quarters
         description: Sum of the last 4 quarters
         meaning: euunit:SUM_4Q
       RT_R4Q:
+        title: Rolling 4-quarter growth rate
         description: Rolling 4-quarter growth rate
         meaning: euunit:RT_R4Q
       HICP2015:
+        title: Harmonized consumer price index, 2015=100
         description: Harmonized consumer price index, 2015=100
         meaning: euunit:HICP2015
       TCO2E_HAB:
+        title: Tonnes of CO2 equivalent per capita
         description: Tonnes of CO2 equivalent per capita
         meaning: euunit:TCO2E_HAB
       EUR_M3_CLV10:
+        title: 'Euro per cubic metre (Euro: chain-linked volumes, reference year 2010,
+          at 2010 exchange rates)'
         description: 'Euro per cubic metre (Euro: chain-linked volumes, reference
           year 2010, at 2010 exchange rates)'
         meaning: euunit:EUR_M3_CLV10
       THS_L:
+        title: Thousand litres
         description: Thousand litres
         meaning: euunit:THS_L
       G_HAB:
+        title: Grams per capita
         description: Grams per capita
         meaning: euunit:G_HAB
       G_EUR_CP:
+        title: Grams per euro, current prices
         description: Grams per euro, current prices
         meaning: euunit:G_EUR_CP
       G_EUR_CLV10:
+        title: Grams per euro, chain linked volumes (2010)
         description: Grams per euro, chain linked volumes (2010)
         meaning: euunit:G_EUR_CLV10
       KG_EUR_CP:
+        title: Kilograms per euro, current prices
         description: Kilograms per euro, current prices
         meaning: euunit:KG_EUR_CP
       KG_EUR_CLV10:
+        title: Kilograms per euro, chain linked volumes (2010)
         description: Kilograms per euro, chain linked volumes (2010)
         meaning: euunit:KG_EUR_CLV10
       SGM_ESU:
+        title: Standard gross margin (SGM) in economic size unit (ESU)
         description: Standard gross margin (SGM) in economic size unit (ESU)
         meaning: euunit:SGM_ESU
       THS_PER_SA:
+        title: Thousand persons - seasonally adjusted
         description: Thousand persons - seasonally adjusted
         meaning: euunit:THS_PER_SA
       THS_PER_NSA:
+        title: Thousand persons - not seasonally adjusted
         description: Thousand persons - not seasonally adjusted
         meaning: euunit:THS_PER_NSA
       RCH_C_AVG:
+        title: Cumulative average rate of change (t/t0, %)
         description: Cumulative average rate of change (t/t0, %)
         meaning: euunit:RCH_C_AVG
       PC_S:
+        title: Standardised percentage
         description: Standardised percentage
         meaning: euunit:PC_S
       PC_ENT_FIXBB:
+        title: Percentage of enterprises using a fixed broadband connection
         description: Percentage of enterprises using a fixed broadband connection
         meaning: euunit:PC_ENT_FIXBB
       HR_SAL:
+        title: Hours per employee
         description: Hours per employee
         meaning: euunit:HR_SAL
       I10_NAC_CP:
+        title: Index, 2010=100, national currency, current prices
         description: Index, 2010=100, national currency, current prices
         meaning: euunit:I10_NAC_CP
       PCH_PRE_NAC_CP:
+        title: Percentage change on previous period, national currency, current prices
         description: Percentage change on previous period, national currency, current
           prices
         meaning: euunit:PCH_PRE_NAC_CP
       IW:
+        title: Item weight
         description: Item weight
         meaning: euunit:IW
       API:
+        title: Administered price item
         description: Administered price item
         meaning: euunit:API
       RCH_A_C:
+        title: Compound annual rate of change
         description: Compound annual rate of change
         meaning: euunit:RCH_A_C
       FARM:
+        title: Farm
         description: Farm
         meaning: euunit:FARM
       TOE_MEUR_PPS:
+        title: Tonnes of oil equivalent (TOE) per million euro in purchasing power
+          standards (PPS)
         description: Tonnes of oil equivalent (TOE) per million euro in purchasing
           power standards (PPS)
         meaning: euunit:TOE_MEUR_PPS
       EUR_TOE:
+        title: Euro per tonne of oil equivalent (TOE)
         description: Euro per tonne of oil equivalent (TOE)
         meaning: euunit:EUR_TOE
       PC_ENT_ADS:
+        title: Percentage of enterprises using internet ads
         description: Percentage of enterprises using internet ads
         meaning: euunit:PC_ENT_ADS
       MEUR_KP10:
+        title: Million euro (at constant 2010 prices)
         description: Million euro (at constant 2010 prices)
         meaning: euunit:MEUR_KP10
       MNAC_KP10:
+        title: Million units of national currency at constant 2010 prices
         description: Million units of national currency at constant 2010 prices
         meaning: euunit:MNAC_KP10
       PC_IND_IUG_TV:
+        title: Percentage of individuals who used the internet on a smart TV (directly
+          connected to the internet)
         description: Percentage of individuals who used the internet on a smart TV
           (directly connected to the internet)
         meaning: euunit:PC_IND_IUG_TV
       PC_EMP_PMD1:
+        title: Percentage of persons employed working in enterprises which provide
+          mobile devices (as of 2016)
         description: Percentage of persons employed working in enterprises which provide
           mobile devices (as of 2016)
         meaning: euunit:PC_EMP_PMD1
       EUR_BGDP:
+        title: Euro per billion GDP
         description: Euro per billion GDP
         meaning: euunit:EUR_BGDP
       EUR_HAB_KP10:
+        title: Euro per inhabitant (at constant 2010 prices)
         description: Euro per inhabitant (at constant 2010 prices)
         meaning: euunit:EUR_HAB_KP10
       PPS_BGDP:
+        title: Purchasing power standard (PPS) per billion GDP
         description: Purchasing power standard (PPS) per billion GDP
         meaning: euunit:PPS_BGDP
       RT_A:
+        title: Annual rate
         description: Annual rate
         meaning: euunit:RT_A
       PC_ENT_PMD1:
+        title: Percentage of enterprises providing to persons employed portable devices
+          that allow a mobile connection to the internet (as of 2016)
         description: Percentage of enterprises providing to persons employed portable
           devices that allow a mobile connection to the internet (as of 2016)
         meaning: euunit:PC_ENT_PMD1
       AVG_A:
+        title: Annual average
         description: Annual average
         meaning: euunit:AVG_A
       MTCO2E:
+        title: Million tonnes of CO2 equivalent
         description: Million tonnes of CO2 equivalent
         meaning: euunit:MTCO2E
       I_ESD:
+        title: Index, EU effort sharing decision base year=100
         description: Index, EU effort sharing decision base year=100
         meaning: euunit:I_ESD
       PC_ENT_SM:
+        title: Percentage of enterprises using social media
         description: Percentage of enterprises using social media
         meaning: euunit:PC_ENT_SM
       PPS_HH:
+        title: Purchasing power standard (PPS) per household
         description: Purchasing power standard (PPS) per household
         meaning: euunit:PPS_HH
       P_AE:
+        title: Per adult equivalent
         description: Per adult equivalent
         meaning: euunit:P_AE
       P_HH:
+        title: Per household
         description: Per household
         meaning: euunit:P_HH
       PC_DI:
+        title: Percentage of disposable income
         description: Percentage of disposable income
         meaning: euunit:PC_DI
       PC_LSU:
+        title: Percentage of total livestock units
         description: Percentage of total livestock units
         meaning: euunit:PC_LSU
       PC_ENT_BD:
+        title: Percentage of enterprises analysing big data
         description: Percentage of enterprises analysing big data
         meaning: euunit:PC_ENT_BD
       EUR_AE:
+        title: Euro per adult equivalent
         description: Euro per adult equivalent
         meaning: euunit:EUR_AE
       EUR_HH:
+        title: Euro per household
         description: Euro per household
         meaning: euunit:EUR_HH
       NAC_AE:
+        title: National currency per adult equivalent
         description: National currency per adult equivalent
         meaning: euunit:NAC_AE
       NAC_HH:
+        title: National currency per household
         description: National currency per household
         meaning: euunit:NAC_HH
       PPS_AE:
+        title: Purchasing power standard (PPS) per adult equivalent
         description: Purchasing power standard (PPS) per adult equivalent
         meaning: euunit:PPS_AE
       I15_NSA:
+        title: Index, 2015=100 (NSA)
         description: Index, 2015=100 (NSA)
         meaning: euunit:I15_NSA
       KG_HA:
+        title: Kilograms per hectare
         description: Kilograms per hectare
         meaning: euunit:KG_HA
       PC_ELF:
+        title: Percentage of extended labour force
         description: Percentage of extended labour force
         meaning: euunit:PC_ELF
       PC_ENT_AWSEU:
+        title: Percentage of enterprises with web sales to other EU countries
         description: Percentage of enterprises with web sales to other EU countries
         meaning: euunit:PC_ENT_AWSEU
       PC_IND_BFFOR:
+        title: Percentage of individuals who purchased online from sellers from other
+          countries (EU or non-EU)
         description: Percentage of individuals who purchased online from sellers from
           other countries (EU or non-EU)
         meaning: euunit:PC_IND_BFFOR
       MIO_PER:
+        title: Million persons
         description: Million persons
         meaning: euunit:MIO_PER
       PC_WMN:
+        title: Percentage of women
         description: Percentage of women
         meaning: euunit:PC_WMN
       EUR_AWU:
+        title: Euro per annual work unit (AWU)
         description: Euro per annual work unit (AWU)
         meaning: euunit:EUR_AWU
       I15_NAC_CP:
+        title: Index, 2015=100, national currency, current prices
         description: Index, 2015=100, national currency, current prices
         meaning: euunit:I15_NAC_CP
       KG_TEUR_CLV10:
+        title: Kilograms per thousand euro, chain linked volumes (2010)
         description: Kilograms per thousand euro, chain linked volumes (2010)
         meaning: euunit:KG_TEUR_CLV10
       PPS_HAB_EU28:
+        title: Purchasing power standard (PPS) per inhabitant in percentage of the
+          EU28 (2013-2020) average
         description: Purchasing power standard (PPS) per inhabitant in percentage
           of the EU28 (2013-2020) average
         meaning: euunit:PPS_HAB_EU28
       DEGC:
+        title: Degree Celsius
         description: Degree Celsius
         meaning: euunit:DEGC
       PH:
+        title: pH value
         description: pH value
         meaning: euunit:PH
       CLV10_EUR_AWU:
+        title: Chain linked volumes (2010), euro per annual work unit (AWU)
         description: Chain linked volumes (2010), euro per annual work unit (AWU)
         meaning: euunit:CLV10_EUR_AWU
       PC_NAEA:
+        title: Percentage of the non-artificial erosive area
         description: Percentage of the non-artificial erosive area
         meaning: euunit:PC_NAEA
       PC_SAL:
+        title: Percentage of employees
         description: Percentage of employees
         meaning: euunit:PC_SAL
       PC_SAL_TEMP:
+        title: Percentage of employees with a temporary job
         description: Percentage of employees with a temporary job
         meaning: euunit:PC_SAL_TEMP
       M2_HAB:
+        title: Square metres per capita
         description: Square metres per capita
         meaning: euunit:M2_HAB
       KM2_HAB:
+        title: Square kilometres per capita
         description: Square kilometres per capita
         meaning: euunit:KM2_HAB
       MCG_M3:
+        title: Micrograms per cubic metre
         description: Micrograms per cubic metre
         meaning: euunit:MCG_M3
       I2015_SCA:
+        title: Index, 2015=100 (SCA)
         description: Index, 2015=100 (SCA)
         meaning: euunit:I2015_SCA
       I2015_NSA:
+        title: Index, 2015=100 (NSA)
         description: Index, 2015=100 (NSA)
         meaning: euunit:I2015_NSA
       PC_DT:
+        title: Distance to target in percentage
         description: Distance to target in percentage
         meaning: euunit:PC_DT
       EUR_HAB_EU27_2019:
+        title: Euro per inhabitant in percentage of the EU27 (from 2020) average
         description: Euro per inhabitant in percentage of the EU27 (from 2020) average
         meaning: euunit:EUR_HAB_EU27_2019
       PPS_EU27_2019:
+        title: Purchasing power standard (PPS, EU27 from 2020)
         description: Purchasing power standard (PPS, EU27 from 2020)
         meaning: euunit:PPS_EU27_2019
       MIO_PPS_EU27_2019:
+        title: Million purchasing power standards (PPS, EU27 from 2020)
         description: Million purchasing power standards (PPS, EU27 from 2020)
         meaning: euunit:MIO_PPS_EU27_2019
       PPS_EU27_2019_HAB:
+        title: Purchasing power standard (PPS, EU27 from 2020), per inhabitant
         description: Purchasing power standard (PPS, EU27 from 2020), per inhabitant
         meaning: euunit:PPS_EU27_2019_HAB
       PPS_HAB_EU27_2019:
+        title: Purchasing power standard (PPS, EU27 from 2020), per inhabitant in
+          percentage of the EU27 (from 2020) average
         description: Purchasing power standard (PPS, EU27 from 2020), per inhabitant
           in percentage of the EU27 (from 2020) average
         meaning: euunit:PPS_HAB_EU27_2019
       RT_PRE_EUR:
+        title: Growth rate on previous period (t/t-1) for values in euro
         description: Growth rate on previous period (t/t-1) for values in euro
         meaning: euunit:RT_PRE_EUR
       RT_PRE_NAC:
+        title: Growth rate on previous period (t/t-1) for values in national currency
         description: Growth rate on previous period (t/t-1) for values in national
           currency
         meaning: euunit:RT_PRE_NAC
       PC_EU27_2019:
+        title: Percentage of EU27 (without United Kingdom) total
         description: Percentage of EU27 (without United Kingdom) total
         meaning: euunit:PC_EU27_2019
       PC_EU27_2019_MEUR_CP:
+        title: Percentage of EU27 (from 2020) total (based on million euro), current
+          prices
         description: Percentage of EU27 (from 2020) total (based on million euro),
           current prices
         meaning: euunit:PC_EU27_2019_MEUR_CP
       PC_EU27_2019_MPPS_CP:
+        title: Percentage of EU27 (from 2020) total (based on million purchasing power
+          standards), current prices
         description: Percentage of EU27 (from 2020) total (based on million purchasing
           power standards), current prices
         meaning: euunit:PC_EU27_2019_MPPS_CP
       PC_EU28_HAB_MEUR_CP:
+        title: Percentage of EU28 (2013-2020) total per capita (based on million euro),
+          current prices
         description: Percentage of EU28 (2013-2020) total per capita (based on million
           euro), current prices
         meaning: euunit:PC_EU28_HAB_MEUR_CP
       PC_EU27_2019_HAB_MEUR_CP:
+        title: Percentage of EU27 (from 2020) total per capita (based on million euro,
+          EU27 from 2020), current prices
         description: Percentage of EU27 (from 2020) total per capita (based on million
           euro, EU27 from 2020), current prices
         meaning: euunit:PC_EU27_2019_HAB_MEUR_CP
       PC_EU28_HAB_MPPS_CP:
+        title: Percentage of EU28 (2013-2020) total per capita (based on million purchasing
+          power standards), current prices
         description: Percentage of EU28 (2013-2020) total per capita (based on million
           purchasing power standards), current prices
         meaning: euunit:PC_EU28_HAB_MPPS_CP
       PC_EU27_2019_HAB_MPPS_CP:
+        title: Percentage of EU27 (from 2020) total per capita (based on million purchasing
+          power standards, EU27 from 2020), current prices
         description: Percentage of EU27 (from 2020) total per capita (based on million
           purchasing power standards, EU27 from 2020), current prices
         meaning: euunit:PC_EU27_2019_HAB_MPPS_CP
       CP_MPPS_EU27_2019:
+        title: Current prices, million purchasing power standards (PPS, EU27 from
+          2020)
         description: Current prices, million purchasing power standards (PPS, EU27
           from 2020)
         meaning: euunit:CP_MPPS_EU27_2019
       CP_PPS_EU27_2019_HAB:
+        title: Current prices, purchasing power standard (PPS, EU27 from 2020) per
+          capita
         description: Current prices, purchasing power standard (PPS, EU27 from 2020)
           per capita
         meaning: euunit:CP_PPS_EU27_2019_HAB
       M_KM2:
+        title: Metres per square kilometre
         description: Metres per square kilometre
         meaning: euunit:M_KM2
       KM_THAB:
+        title: Kilometres per thousand inhabitants
         description: Kilometres per thousand inhabitants
         meaning: euunit:KM_THAB
       I03:
+        title: Index, 2003=100
         description: Index, 2003=100
         meaning: euunit:I03
       P_TCAR:
+        title: Per thousand passenger cars
         description: Per thousand passenger cars
         meaning: euunit:P_TCAR
       CH_A_KM2:
+        title: Annual change in square kilometres
         description: Annual change in square kilometres
         meaning: euunit:CH_A_KM2
       PC_RIMG:
+        title: Percentage of total recent immigrants
         description: Percentage of total recent immigrants
         meaning: euunit:PC_RIMG
       PC_ENT_P3D:
+        title: Percentage of enterprises with 3D printing
         description: Percentage of enterprises with 3D printing
         meaning: euunit:PC_ENT_P3D
       PC_ENT_RBTS:
+        title: Percentage of enterprises using service robots
         description: Percentage of enterprises using service robots
         meaning: euunit:PC_ENT_RBTS
       PC_IND_IUP2P_WRK:
+        title: Percentage of individuals who have obtained paid work by using an intermediary
+          website or apps
         description: Percentage of individuals who have obtained paid work by using
           an intermediary website or apps
         meaning: euunit:PC_IND_IUP2P_WRK
       PC_IND_MPP:
+        title: Percentage of individuals who use a smartphone for private purposes
         description: Percentage of individuals who use a smartphone for private purposes
         meaning: euunit:PC_IND_MPP
       PC_IND_ILT12_SSF:
+        title: Percentage of employees and self-employed who used internet within
+          the last year
         description: Percentage of employees and self-employed who used internet within
           the last year
         meaning: euunit:PC_IND_ILT12_SSF
       PC_IND_WH:
+        title: Percentage of individuals working from home
         description: Percentage of individuals working from home
         meaning: euunit:PC_IND_WH
       PC_IND_WM:
+        title: Percentage of individuals working at an external site or on the move
         description: Percentage of individuals working at an external site or on the
           move
         meaning: euunit:PC_IND_WM
       PC_IND_MDW:
+        title: Percentage of individuals who, at work, use any type of computers,
+          portable devices or computerised equipment or machinery
         description: Percentage of individuals who, at work, use any type of computers,
           portable devices or computerised equipment or machinery
         meaning: euunit:PC_IND_MDW
       THS_TY:
+        title: Thousand tonnes per year
         description: Thousand tonnes per year
         meaning: euunit:THS_TY
       MIO_M3D:
+        title: Million cubic metres per day
         description: Million cubic metres per day
         meaning: euunit:MIO_M3D
       BN_M3Y:
+        title: Billion cubic metres per year
         description: Billion cubic metres per year
         meaning: euunit:BN_M3Y
       MWH:
+        title: Megawatt-hour
         description: Megawatt-hour
         meaning: euunit:MWH
       KJ_M3:
+        title: Kilojoule per cubic metre
         description: Kilojoule per cubic metre
         meaning: euunit:KJ_M3
       MJ_T_GCV:
+        title: Megajoule per tonne (gross calorific value - GCV)
         description: Megajoule per tonne (gross calorific value - GCV)
         meaning: euunit:MJ_T_GCV
       MJ_T_NCV:
+        title: Megajoule per tonne (net calorific value - NCV)
         description: Megajoule per tonne (net calorific value - NCV)
         meaning: euunit:MJ_T_NCV
       KJ_M3_NCV:
+        title: Kilojoule per cubic metre (net calorific value - NCV)
         description: Kilojoule per cubic metre (net calorific value - NCV)
         meaning: euunit:KJ_M3_NCV
       KJ_M3_GCV:
+        title: Kilojoule per cubic metre (gross calorific value - GCV)
         description: Kilojoule per cubic metre (gross calorific value - GCV)
         meaning: euunit:KJ_M3_GCV
       D_RT_M:
+        title: Monthly rates difference
         description: Monthly rates difference
         meaning: euunit:D_RT_M
       I16:
+        title: Index, 2016=100
         description: Index, 2016=100
         meaning: euunit:I16
       PCH_Q4_SCA:
+        title: Percentage change q/q-4 (SCA)
         description: Percentage change q/q-4 (SCA)
         meaning: euunit:PCH_Q4_SCA
       KGOE_TEUR_PPS:
+        title: Kilograms of oil equivalent (KGOE) per thousand euro in purchasing
+          power standards (PPS)
         description: Kilograms of oil equivalent (KGOE) per thousand euro in purchasing
           power standards (PPS)
         meaning: euunit:KGOE_TEUR_PPS
       TOE_MEUR:
+        title: Tonnes of oil equivalent (TOE) per million euro
         description: Tonnes of oil equivalent (TOE) per million euro
         meaning: euunit:TOE_MEUR
       RT_M_DIF:
+        title: Monthly rate differences between HICP and HICP at constant taxes
         description: Monthly rate differences between HICP and HICP at constant taxes
         meaning: euunit:RT_M_DIF
       PCH_SM_PER_NSA:
+        title: Percentage change compared to same period in previous year (based on
+          persons, NSA)
         description: Percentage change compared to same period in previous year (based
           on persons, NSA)
         meaning: euunit:PCH_SM_PER_NSA
       PCH_SM_PER_SCA:
+        title: Percentage change compared to same period in previous year (based on
+          persons, SCA)
         description: Percentage change compared to same period in previous year (based
           on persons, SCA)
         meaning: euunit:PCH_SM_PER_SCA
       KGOE_HAB:
+        title: Kilograms of oil equivalent (KGOE) per capita
         description: Kilograms of oil equivalent (KGOE) per capita
         meaning: euunit:KGOE_HAB
       TOE_HAB:
+        title: Tonnes of oil equivalent (TOE) per capita
         description: Tonnes of oil equivalent (TOE) per capita
         meaning: euunit:TOE_HAB
       KJ:
+        title: Kilojoule
         description: Kilojoule
         meaning: euunit:KJ
       MJ:
+        title: Megajoule
         description: Megajoule
         meaning: euunit:MJ
       MJ_HAB:
+        title: Megajoule per capita
         description: Megajoule per capita
         meaning: euunit:MJ_HAB
       GJ:
+        title: Gigajoule
         description: Gigajoule
         meaning: euunit:GJ
       GJ_HAB:
+        title: Gigajoule per capita
         description: Gigajoule per capita
         meaning: euunit:GJ_HAB
       TJ_HAB:
+        title: Terajoule per capita
         description: Terajoule per capita
         meaning: euunit:TJ_HAB
       PC_ENT_SECPOL2:
+        title: Percentage of enterprises with  document(s) on measures, practices
+          or procedures on ICT security (as of 2019)
         description: Percentage of enterprises with  document(s) on measures, practices
           or procedures on ICT security (as of 2019)
         meaning: euunit:PC_ENT_SECPOL2
       PC_IND_SECOITPP:
+        title: Percentage of individuals who have experienced online identity theft,
+          phishing or pharming
         description: Percentage of individuals who have experienced online identity
           theft, phishing or pharming
         meaning: euunit:PC_IND_SECOITPP
       I15_PER:
+        title: Index, 2015=100 (based on persons)
         description: Index, 2015=100 (based on persons)
         meaning: euunit:I15_PER
       I15_HW:
+        title: Index, 2015=100 (based on hours worked)
         description: Index, 2015=100 (based on hours worked)
         meaning: euunit:I15_HW
       I15_JOB:
+        title: Index, 2015=100 (based on jobs)
         description: Index, 2015=100 (based on jobs)
         meaning: euunit:I15_JOB
       KP_I15:
+        title: Constant prices, index 2015=100
         description: Constant prices, index 2015=100
         meaning: euunit:KP_I15
       CLV_I15:
+        title: Chain linked volumes, index 2015=100
         description: Chain linked volumes, index 2015=100
         meaning: euunit:CLV_I15
       PER_KM2:
+        title: Persons per square kilometre
         description: Persons per square kilometre
         meaning: euunit:PER_KM2
       CLV15_MEUR:
+        title: Chain linked volumes (2015), million euro
         description: Chain linked volumes (2015), million euro
         meaning: euunit:CLV15_MEUR
       CLV15_MNAC:
+        title: Chain linked volumes (2015), million units of national currency
         description: Chain linked volumes (2015), million units of national currency
         meaning: euunit:CLV15_MNAC
       CLV_I15_HAB:
+        title: Chain linked volumes, Index 2015=100, per capita
         description: Chain linked volumes, Index 2015=100, per capita
         meaning: euunit:CLV_I15_HAB
       CLV15_EUR_HAB:
+        title: Chain linked volumes (2015), euro per capita
         description: Chain linked volumes (2015), euro per capita
         meaning: euunit:CLV15_EUR_HAB
       PD15_EUR:
+        title: Price index (implicit deflator), 2015=100, euro
         description: Price index (implicit deflator), 2015=100, euro
         meaning: euunit:PD15_EUR
       PD15_NAC:
+        title: Price index (implicit deflator), 2015=100, national currency
         description: Price index (implicit deflator), 2015=100, national currency
         meaning: euunit:PD15_NAC
       RAT:
+        title: Ratio
         description: Ratio
         meaning: euunit:RAT
       PPS_3Y_AVG:
+        title: Purchasing power standard (PPS), three-year average
         description: Purchasing power standard (PPS), three-year average
         meaning: euunit:PPS_3Y_AVG
       PCH_PRE_RV:
+        title: Percentage change on previous period, real values
         description: Percentage change on previous period, real values
         meaning: euunit:PCH_PRE_RV
       PCH_3Y_AVG_RV:
+        title: Percentage change, three-year average, real values
         description: Percentage change, three-year average, real values
         meaning: euunit:PCH_3Y_AVG_RV
       MG_L:
+        title: Milligrams per litre
         description: Milligrams per litre
         meaning: euunit:MG_L
       EUR_HAB_EU27_2020:
+        title: Euro per inhabitant in percentage of the EU27 (from 2020) average
         description: Euro per inhabitant in percentage of the EU27 (from 2020) average
         meaning: euunit:EUR_HAB_EU27_2020
       PPS_EU27_2020:
+        title: Purchasing power standard (PPS, EU27 from 2020)
         description: Purchasing power standard (PPS, EU27 from 2020)
         meaning: euunit:PPS_EU27_2020
       MIO_PPS_EU27_2020:
+        title: Million purchasing power standards (PPS, EU27 from 2020)
         description: Million purchasing power standards (PPS, EU27 from 2020)
         meaning: euunit:MIO_PPS_EU27_2020
       PPS_EU27_2020_HAB:
+        title: Purchasing power standard (PPS, EU27 from 2020), per inhabitant
         description: Purchasing power standard (PPS, EU27 from 2020), per inhabitant
         meaning: euunit:PPS_EU27_2020_HAB
       PPS_HAB_EU27_2020:
+        title: Purchasing power standard (PPS, EU27 from 2020), per inhabitant in
+          percentage of the EU27 (from 2020) average
         description: Purchasing power standard (PPS, EU27 from 2020), per inhabitant
           in percentage of the EU27 (from 2020) average
         meaning: euunit:PPS_HAB_EU27_2020
       PC_EU27_2020:
+        title: Percentage of EU27 (from 2020) total
         description: Percentage of EU27 (from 2020) total
         meaning: euunit:PC_EU27_2020
       PC_EU27_2007:
+        title: Percentage of EU27 (2007-2013) total
         description: Percentage of EU27 (2007-2013) total
         meaning: euunit:PC_EU27_2007
       PC_EU27_2020_EUR_HAB:
+        title: Percentage of EU27 (from 2020) total (based on euro per inhabitant)
         description: Percentage of EU27 (from 2020) total (based on euro per inhabitant)
         meaning: euunit:PC_EU27_2020_EUR_HAB
       PC_EU27_2007_EUR_HAB:
+        title: Percentage of EU27 (2007-2013) total (based on euro per inhabitant)
         description: Percentage of EU27 (2007-2013) total (based on euro per inhabitant)
         meaning: euunit:PC_EU27_2007_EUR_HAB
       PC_EU27_2020_PPS_HAB:
+        title: Percentage of EU27 (from 2020) total (based on purchasing power standards
+          per inhabitant)
         description: Percentage of EU27 (from 2020) total (based on purchasing power
           standards per inhabitant)
         meaning: euunit:PC_EU27_2020_PPS_HAB
       PC_EU27_2007_PPS_HAB:
+        title: Percentage of EU27 (2007-2013) total (based on purchasing power standards
+          per inhabitant)
         description: Percentage of EU27 (2007-2013) total (based on purchasing power
           standards per inhabitant)
         meaning: euunit:PC_EU27_2007_PPS_HAB
       PC_EU27_2020_PPS_EMP:
+        title: Percentage of EU27 (from 2020) total (based on purchasing power standards
+          per employed person)
         description: Percentage of EU27 (from 2020) total (based on purchasing power
           standards per employed person)
         meaning: euunit:PC_EU27_2020_PPS_EMP
       PC_EU27_2007_PPS_EMP:
+        title: Percentage of EU27 (2007-2013) total (based on purchasing power standards
+          per employed person)
         description: Percentage of EU27 (2007-2013) total (based on purchasing power
           standards per employed person)
         meaning: euunit:PC_EU27_2007_PPS_EMP
       PC_EU27_2007_PPS_HRS:
+        title: Percentage of EU27 (2007-2013) total (based on purchasing power standards
+          per hours worked)
         description: Percentage of EU27 (2007-2013) total (based on purchasing power
           standards per hours worked)
         meaning: euunit:PC_EU27_2007_PPS_HRS
       PC_EU27_2020_MEUR:
+        title: Percentage of EU27 (from 2020) total (based on million euro)
         description: Percentage of EU27 (from 2020) total (based on million euro)
         meaning: euunit:PC_EU27_2020_MEUR
       PC_EU27_2007_MEUR:
+        title: Percentage of EU27 (2007-2013) total (based on million euro)
         description: Percentage of EU27 (2007-2013) total (based on million euro)
         meaning: euunit:PC_EU27_2007_MEUR
       PC_EU27_2020_MPPS:
+        title: Percentage of EU27 (from 2020) total (based on million purchasing power
+          standards)
         description: Percentage of EU27 (from 2020) total (based on million purchasing
           power standards)
         meaning: euunit:PC_EU27_2020_MPPS
       PC_EU27_2007_MPPS:
+        title: Percentage of EU27 (2007-2013) total (based on million purchasing power
+          standards)
         description: Percentage of EU27 (2007-2013) total (based on million purchasing
           power standards)
         meaning: euunit:PC_EU27_2007_MPPS
       PC_EU27_2020_MEUR_CP:
+        title: Percentage of EU27 (from 2020) total (based on million euro), current
+          prices
         description: Percentage of EU27 (from 2020) total (based on million euro),
           current prices
         meaning: euunit:PC_EU27_2020_MEUR_CP
       PC_EU27_2020_MPPS_CP:
+        title: Percentage of EU27 (from 2020) total (based on million purchasing power
+          standards), current prices
         description: Percentage of EU27 (from 2020) total (based on million purchasing
           power standards), current prices
         meaning: euunit:PC_EU27_2020_MPPS_CP
       PC_EU27_2020_HAB_MEUR_CP:
+        title: Percentage of EU27 (from 2020) total per capita (based on million euro,
+          EU27 from 2020), current prices
         description: Percentage of EU27 (from 2020) total per capita (based on million
           euro, EU27 from 2020), current prices
         meaning: euunit:PC_EU27_2020_HAB_MEUR_CP
       PC_EU27_2020_HAB_MPPS_CP:
+        title: Percentage of EU27 (from 2020) total per capita (based on million purchasing
+          power standards, EU27 from 2020), current prices
         description: Percentage of EU27 (from 2020) total per capita (based on million
           purchasing power standards, EU27 from 2020), current prices
         meaning: euunit:PC_EU27_2020_HAB_MPPS_CP
       CP_MPPS_EU27_2020:
+        title: Current prices, million purchasing power standards (PPS, EU27 from
+          2020)
         description: Current prices, million purchasing power standards (PPS, EU27
           from 2020)
         meaning: euunit:CP_MPPS_EU27_2020
       CP_PPS_EU27_2020_HAB:
+        title: Current prices, purchasing power standard (PPS, EU27 from 2020) per
+          capita
         description: Current prices, purchasing power standard (PPS, EU27 from 2020)
           per capita
         meaning: euunit:CP_PPS_EU27_2020_HAB
       CP_PC_EU27_2020_EUR:
+        title: Current prices, percentage of EU27 (from 2020) total (based on euro
+          per capita)
         description: Current prices, percentage of EU27 (from 2020) total (based on
           euro per capita)
         meaning: euunit:CP_PC_EU27_2020_EUR
       CP_PC_EU27_2020_PPS:
+        title: Current prices, percentage of EU27 (from 2020) total (based on purchasing
+          power standards per capita)
         description: Current prices, percentage of EU27 (from 2020) total (based on
           purchasing power standards per capita)
         meaning: euunit:CP_PC_EU27_2020_PPS
       PCH_RV:
+        title: Percentage change, real values
         description: Percentage change, real values
         meaning: euunit:PCH_RV
       MEUR_HAB:
+        title: Million euro per inhabitant
         description: Million euro per inhabitant
         meaning: euunit:MEUR_HAB
       PC_ENT_BDA:
+        title: Percentage of enterprises analysing big data internally or externally
         description: Percentage of enterprises analysing big data internally or externally
         meaning: euunit:PC_ENT_BDA
       PC_ENT_BDAAM:
+        title: Percentage of enterprises analysing big data internally using any method
         description: Percentage of enterprises analysing big data internally using
           any method
         meaning: euunit:PC_ENT_BDAAM
       PC_ENT_IOT:
+        title: Percentage of enterprises using Internet of Things
         description: Percentage of enterprises using Internet of Things
         meaning: euunit:PC_ENT_IOT
       PC_ENT_AWS_CMP:
+        title: Percentage of enterprises with web sales via e-commerce marketplaces
         description: Percentage of enterprises with web sales via e-commerce marketplaces
         meaning: euunit:PC_ENT_AWS_CMP
       PC_ENT_IUSE:
+        title: Percentage of enterprises where persons employed have access to the
+          internet
         description: Percentage of enterprises where persons employed have access
           to the internet
         meaning: euunit:PC_ENT_IUSE
       PC_ENT_ITSPVAC2:
+        title: Percentage of enterprises with hard-to-fill vacancies for jobs requiring
+          ICT specialist skills (as of 2020)
         description: Percentage of enterprises with hard-to-fill vacancies for jobs
           requiring ICT specialist skills (as of 2020)
         meaning: euunit:PC_ENT_ITSPVAC2
       PC_IND_BHHS:
+        title: Percentage of individuals who purchased online household services
         description: Percentage of individuals who purchased online household services
         meaning: euunit:PC_IND_BHHS
       PC_IND_BPG_ANY:
+        title: Percentage of individuals who purchased online physical goods
         description: Percentage of individuals who purchased online physical goods
         meaning: euunit:PC_IND_BPG_ANY
       PC_IND_BRA:
+        title: Percentage of individuals who rented accommodation online from an enterprise
+          or a private person
         description: Percentage of individuals who rented accommodation online from
           an enterprise or a private person
         meaning: euunit:PC_IND_BRA
       PC_IND_BTPS:
+        title: Percentage of individuals who purchased online transport service from
+          a transport enterprise or a private person
         description: Percentage of individuals who purchased online transport service
           from a transport enterprise or a private person
         meaning: euunit:PC_IND_BTPS
       PC_IND_IOT_BDKX:
+        title: Percentage of individuals who have not used any internet-connected
+          device or systems although they knew about them
         description: Percentage of individuals who have not used any internet-connected
           device or systems although they knew about them
         meaning: euunit:PC_IND_IOT_BDKX
       PC_IND_IOT_DX:
+        title: Percentage of individuals who have not used any internet-connected
+          devices or systems
         description: Percentage of individuals who have not used any internet-connected
           devices or systems
         meaning: euunit:PC_IND_IOT_DX
       PC_IND_MPP1:
+        title: Percentage of individuals who use a smartphone for private purposes
+          (3 months)
         description: Percentage of individuals who use a smartphone for private purposes
           (3 months)
         meaning: euunit:PC_IND_MPP1
       I15_17_AVG:
+        title: Index, 2015-2017 average =100
         description: Index, 2015-2017 average =100
         meaning: euunit:I15-17_AVG
       I11_13_AVG:
+        title: Index, 2011-2013 average =100
         description: Index, 2011-2013 average =100
         meaning: euunit:I11-13_AVG
       I13:
+        title: Index, 2013=100
         description: Index, 2013=100
         meaning: euunit:I13
       PC_Y:
+        title: Percentage in the year
         description: Percentage in the year
         meaning: euunit:PC_Y
       TJ_NCV:
+        title: Terajoule (net calorific value - NCV)
         description: Terajoule (net calorific value - NCV)
         meaning: euunit:TJ_NCV
       I98:
+        title: Index, 1998=100
         description: Index, 1998=100
         meaning: euunit:I98
       TVAL_MEUR:
+        title: Trade value in million euro
         description: Trade value in million euro
         meaning: euunit:TVAL_MEUR
       PCH_LV_M_16_19:
+        title: Percentage change of the current month compared to the lowest value
+          for the corresponding month in the period 2016-2019
         description: Percentage change of the current month compared to the lowest
           value for the corresponding month in the period 2016-2019
         meaning: euunit:PCH_LV_M_16-19
       EUR_KG_CLV15:
+        title: Euro per kilogram, chain linked volumes (2015)
         description: Euro per kilogram, chain linked volumes (2015)
         meaning: euunit:EUR_KG_CLV15
       EUR_HM2:
+        title: Euro per hundred square metres
         description: Euro per hundred square metres
         meaning: euunit:EUR_HM2
       EUR_HD:
+        title: Euro per head (animal)
         description: Euro per head (animal)
         meaning: euunit:EUR_HD
       EUR_HHD:
+        title: Euro per hundred heads (animals)
         description: Euro per hundred heads (animals)
         meaning: euunit:EUR_HHD
       EUR_HIVE:
+        title: Euro per beehive
         description: Euro per beehive
         meaning: euunit:EUR_HIVE
       T_KM2:
+        title: Tonnes per square kilometre
         description: Tonnes per square kilometre
         meaning: euunit:T_KM2
       MIO_M2:
+        title: Million square metres
         description: Million square metres
         meaning: euunit:MIO_M2
       TJ_TM3_NCV:
+        title: Terajoule per thousand cubic metres (net calorific value - NCV)
         description: Terajoule per thousand cubic metres (net calorific value - NCV)
         meaning: euunit:TJ_TM3_NCV
       I21:
+        title: Index, 2021=100
         description: Index, 2021=100
         meaning: euunit:I21
       I20:
+        title: Index, 2020=100
         description: Index, 2020=100
         meaning: euunit:I20
       I18:
+        title: Index, 2018=100
         description: Index, 2018=100
         meaning: euunit:I18
       I91:
+        title: Index, 1991=100
         description: Index, 1991=100
         meaning: euunit:I91
       I10_Q:
+        title: Quarterly index, 2010=100
         description: Quarterly index, 2010=100
         meaning: euunit:I10_Q
       I15_Q:
+        title: Quarterly index, 2015=100
         description: Quarterly index, 2015=100
         meaning: euunit:I15_Q
       I10_A_AVG:
+        title: Annual average index, 2010=100
         description: Annual average index, 2010=100
         meaning: euunit:I10_A_AVG
       I15_A_AVG:
+        title: Annual average index, 2015=100
         description: Annual average index, 2015=100
         meaning: euunit:I15_A_AVG
       THS_T_4Q:
+        title: Sum of the last 4 quarters (in thousand tonnes)
         description: Sum of the last 4 quarters (in thousand tonnes)
         meaning: euunit:THS_T_4Q
       THS_TEU_4Q:
+        title: Sum of the last 4 quarters (in TEUs)
         description: Sum of the last 4 quarters (in TEUs)
         meaning: euunit:THS_TEU_4Q
       MIO_EMP:
+        title: Millions of persons employed
         description: Millions of persons employed
         meaning: euunit:MIO_EMP
       MIO_SAL:
+        title: Millions of employees
         description: Millions of employees
         meaning: euunit:MIO_SAL
       THS_HH:
+        title: Thousand households
         description: Thousand households
         meaning: euunit:THS_HH
       PB:
+        title: Planetary Boundary
         description: Planetary Boundary
         meaning: euunit:PB
       P_HAB:
+        title: Per inhabitant
         description: Per inhabitant
         meaning: euunit:P_HAB
       HD_AVG:
+        title: Average of heads
         description: Average of heads
         meaning: euunit:HD_AVG
       PLC:
+        title: Place
         description: Place
         meaning: euunit:PLC
       HIVE:
+        title: Beehives
         description: Beehives
         meaning: euunit:HIVE
       RT_SMQ:
+        title: Growth rate on the same quarter in previous year
         description: Growth rate on the same quarter in previous year
         meaning: euunit:RT_SMQ
       PC_Y_LT65:
+        title: Percentage of total population aged less than 65
         description: Percentage of total population aged less than 65
         meaning: euunit:PC_Y_LT65
       PC_INAC_WWRK:
+        title: Percentage of population outside the labour force and wanting to work
         description: Percentage of population outside the labour force and wanting
           to work
         meaning: euunit:PC_INAC_WWRK
       PC_ENT_IOT1:
+        title: Percentage of enterprises using Internet of Things (as of 2021)
         description: Percentage of enterprises using Internet of Things (as of 2021)
         meaning: euunit:PC_ENT_IOT1
       PC_SAL_AESELL:
+        title: Percentage of the employees working in enterprises which received orders
+          via computer networks
         description: Percentage of the employees working in enterprises which received
           orders via computer networks
         meaning: euunit:PC_SAL_AESELL
       PC_EMP_AESELL:
+        title: Percentage of persons employed working in enterprises which received
+          orders via computer networks
         description: Percentage of persons employed working in enterprises which received
           orders via computer networks
         meaning: euunit:PC_EMP_AESELL
       PC_ENT_AI_EC:
+        title: Percentage of the enterprises which ever considered to use any of the
+          AI technologies
         description: Percentage of the enterprises which ever considered to use any
           of the AI technologies
         meaning: euunit:PC_ENT_AI_EC
       PC_ENT_AI_TANY:
+        title: Percentage of the enterprises using at least one AI technologies
         description: Percentage of the enterprises using at least one AI technologies
         meaning: euunit:PC_ENT_AI_TANY
       PC_ENT_AI_TX:
+        title: Percentage of the enterprises using no AI technologies
         description: Percentage of the enterprises using no AI technologies
         meaning: euunit:PC_ENT_AI_TX
       PC_ENT_CVD_IEM:
+        title: Percentage of the enterprises which increased the percentage of persons
+          employed having remote access to their e-mail system
         description: Percentage of the enterprises which increased the percentage
           of persons employed having remote access to their e-mail system
         meaning: euunit:PC_ENT_CVD_IEM
       PC_ENT_CVD_IRA:
+        title: Percentage of the enterprises which increased the percentage of persons
+          employed having remote access their ICT systems other than e-mail
         description: Percentage of the enterprises which increased the percentage
           of persons employed having remote access their ICT systems other than e-mail
         meaning: euunit:PC_ENT_CVD_IRA
       PC_ENT_CVD_IRM:
+        title: Percentage of the enterprises which increased the number of their remote
+          meetings
         description: Percentage of the enterprises which increased the number of their
           remote meetings
         meaning: euunit:PC_ENT_CVD_IRM
       PC_IND_BGT3_IU3:
+        title: Percentage of individuals who used internet and did not purchase online
+          in the last 3 months
         description: Percentage of individuals who used internet and did not purchase
           online in the last 3 months
         meaning: euunit:PC_IND_BGT3_IU3
       PC_IND_TIC:
+        title: Percentage of individuals who checked the truthfulness of the information
+          or content found on the internet news sites or social media
         description: Percentage of individuals who checked the truthfulness of the
           information or content found on the internet news sites or social media
         meaning: euunit:PC_IND_TIC
       PC_IND_TICX:
+        title: Percentage of individuals who did not check the truthfulness of the
+          information or content found on the internet news sites or social media
         description: Percentage of individuals who did not check the truthfulness
           of the information or content found on the internet news sites or social
           media
         meaning: euunit:PC_IND_TICX
       PC_IND_UDI:
+        title: Percentage of individuals who saw untrue or doubtful information or
+          content on the internet news sites or social media
         description: Percentage of individuals who saw untrue or doubtful information
           or content on the internet news sites or social media
         meaning: euunit:PC_IND_UDI
       PC_EMP_PREEMP_M12:
+        title: Percentage of persons employed and previously employed within 12 months
         description: Percentage of persons employed and previously employed within
           12 months
         meaning: euunit:PC_EMP_PREEMP_M12
       PC_EMP_PREEMP:
+        title: Percentage of persons employed and previously employed
         description: Percentage of persons employed and previously employed
         meaning: euunit:PC_EMP_PREEMP
       PC_PER_HPB:
+        title: Percentage of persons reporting a health problem
         description: Percentage of persons reporting a health problem
         meaning: euunit:PC_PER_HPB
       PC_PER_ACC:
+        title: Percentage of persons reporting an accident
         description: Percentage of persons reporting an accident
         meaning: euunit:PC_PER_ACC
       PCH_SM_2Y:
+        title: Percentage change compared to same period two years ago
         description: Percentage change compared to same period two years ago
         meaning: euunit:PCH_SM_2Y
       PCH_SM_19:
+        title: Percentage change compared to same month in 2019
         description: Percentage change compared to same month in 2019
         meaning: euunit:PCH_SM_19
       PCH_5Y_CPI15_NAC:
+        title: Price index - percentage change (t/t-5), based on 2015=100 and national
+          currency
         description: Price index - percentage change (t/t-5), based on 2015=100 and
           national currency
         meaning: euunit:PCH_5Y_CPI15_NAC
       PCH_M24:
+        title: Percentage change m/m-24
         description: Percentage change m/m-24
         meaning: euunit:PCH_M24
       PC_POP_NPT:
+        title: Percentage of population not participating in tourism
         description: Percentage of population not participating in tourism
         meaning: euunit:PC_POP_NPT
       PC_ENT_RA:
+        title: Percentage of enterprises with persons employed having remote access
         description: Percentage of enterprises with persons employed having remote
           access
         meaning: euunit:PC_ENT_RA
       PC_ENT_RM:
+        title: Percentage of enterprises conducting remote meetings
         description: Percentage of enterprises conducting remote meetings
         meaning: euunit:PC_ENT_RM
       PC_ENT_RBT:
+        title: Percentage of enterprises using industrial or service robots
         description: Percentage of enterprises using industrial or service robots
         meaning: euunit:PC_ENT_RBT
       KG_L:
+        title: Kilograms per liter
         description: Kilograms per liter
         meaning: euunit:KG_L
       PC_OECD_EU:
+        title: Percentage of the total of OECD countries and EU Member States not
+          in OECD
         description: Percentage of the total of OECD countries and EU Member States
           not in OECD
         meaning: euunit:PC_OECD_EU
       PCH_OECD_EU_5Y:
+        title: Percentage of the total of OECD countries and EU Member States not
+          in OECD - 5-year change
         description: Percentage of the total of OECD countries and EU Member States
           not in OECD - 5-year change
         meaning: euunit:PCH_OECD_EU_5Y
       MIO_SKM:
+        title: Million seat-kilometre
         description: Million seat-kilometre
         meaning: euunit:MIO_SKM
       PC_ENT_DAOWN:
+        title: Percentage of enterprises which performed Data Analytics by the enterprise's
+          own employees
         description: Percentage of enterprises which performed Data Analytics by the
           enterprise's own employees
         meaning: euunit:PC_ENT_DAOWN
