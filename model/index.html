@@ -6,9 +6,11 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="https://biometris.github.io/FS-Datamodel/model/" rel="canonical"/>
+<link href=".." rel="prev"/>
+<link href="../indicators/" rel="next"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.7.0" name="generator"/>
-<title>FOOD SYSTEMS INDICATORS SCHEMA - FS Data Model</title>
+<title>Data model - FS Data Model</title>
 <link href="../assets/stylesheets/main.618322db.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
@@ -21,7 +23,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#food-systems-indicators-schema">
+<a class="md-skip" href="#data-model">
           Skip to content
         </a>
 </div>
@@ -45,7 +47,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              FOOD SYSTEMS INDICATORS SCHEMA
+              Data model
             
           </span>
 </div>
@@ -130,9 +132,9 @@
   </span>
 </a>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
-<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
 <span class="md-ellipsis">
     
   
@@ -143,38 +145,47 @@
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_2">
-<span class="md-nav__icon md-icon"></span>
-            
-  
-    Data model
-  
-
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="model_diagram/">
+<a class="md-nav__link md-nav__link--active" href="./">
 <span class="md-ellipsis">
     
   
-    Diagram
+    Data model
   
 
     
   </span>
 </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#model-diagram">
+<span class="md-ellipsis">
+      
+        Model diagram
+      
+    </span>
+</a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="glossary/">
+<a class="md-nav__link" href="#classes">
 <span class="md-ellipsis">
-    
-  
-    Glossary
-  
-
-    
-  </span>
+      
+        Classes
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#enums">
+<span class="md-ellipsis">
+      
+        Enums
+      
+    </span>
 </a>
 </li>
 </ul>
@@ -276,10 +287,19 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#glossary">
+<a class="md-nav__link" href="#classes">
 <span class="md-ellipsis">
       
-        Glossary
+        Classes
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#enums">
+<span class="md-ellipsis">
+      
+        Enums
       
     </span>
 </a>
@@ -291,7 +311,7 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="food-systems-indicators-schema">FOOD SYSTEMS INDICATORS SCHEMA</h1>
+<h1 id="data-model">DATA MODEL</h1>
 <p>Model for the indicators on the sustainability performance of food Systems within Europe.</p>
 <h2 id="model-diagram">Model diagram</h2>
 <div class="mermaid">erDiagram
@@ -363,7 +383,7 @@ IndicatorcriteriaScore ||--|o Indicator : "score_for_indicator"
 IndicatorcriteriaScore ||--|o IndicatorCriterion : "scores_criterion"
 
 </div>
-<h2 id="glossary">Glossary</h2>
+<h2 id="classes">Classes</h2>
 <table>
 <thead>
 <tr>
@@ -378,41 +398,18 @@ IndicatorcriteriaScore ||--|o IndicatorCriterion : "scores_criterion"
 <td>Database containing data corresponding to an indicator.</td>
 <td>Class</td>
 </tr>
+</tbody>
+</table>
+<h2 id="enums">Enums</h2>
+<table>
+<thead>
 <tr>
-<td><a href="Indicator/">Indicator</a></td>
-<td>A quantitative measure used to assess the state, performance, or progress of a specific aspect of the food system in relation to sustainability objectives.</td>
-<td>Class</td>
+<th>Name</th>
+<th>Description</th>
+<th>Type</th>
 </tr>
-<tr>
-<td><a href="IndicatorCategory/">Indicator category</a></td>
-<td>The category the indicator belongs to.</td>
-<td>Class</td>
-</tr>
-<tr>
-<td><a href="IndicatorcriteriaScore/">Indicator criterion score</a></td>
-<td>Score for an indicator for an indicator selection criterion.</td>
-<td>Class</td>
-</tr>
-<tr>
-<td><a href="IndicatorCriterion/">Indicator criterion</a></td>
-<td>Criterion used for indicator selection.</td>
-<td>Class</td>
-</tr>
-<tr>
-<td><a href="IndicatorDataCollectionDetails/">Indicator data collection details</a></td>
-<td>Details on the collection of indicator data within a certain database/dataset.</td>
-<td>Class</td>
-</tr>
-<tr>
-<td><a href="IndicatorDatapoint/">Indicator datapoint</a></td>
-<td>A food system indicator datapoint is a measured value or statistic that provides quantitative information for a specific sustainability indicator at a given time and place, used to track the performance or state of the food system.</td>
-<td>Class</td>
-</tr>
-<tr>
-<td><a href="QuantityValue/">Quantity value</a></td>
-<td>A value of an attribute that is quantitative and measurable, expressed as a combination of a unit and a numeric value</td>
-<td>Class</td>
-</tr>
+</thead>
+<tbody>
 <tr>
 <td><a href="CriterionCategory/">Criterion category</a></td>
 <td>Category of an indicator selection criterion.</td>

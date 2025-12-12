@@ -12,7 +12,7 @@
       
       
       
-        <link rel="next" href="model/model_diagram/">
+        <link rel="next" href="model/">
       
       
         
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#futurefoods-food-systems-data-model" class="md-skip">
+        <a href="#future-foods-sfs-indicators-data-model" class="md-skip">
           Skip to content
         </a>
       
@@ -282,10 +282,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#supply-chain-component-hierarchy-tree" class="md-nav__link">
+  <a href="#indicators-by-category" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Supply chain component hierarchy tree
+        Indicators by category
       
     </span>
   </a>
@@ -293,10 +293,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#dimension-sunburst-diagram" class="md-nav__link">
+  <a href="#supply-chain-component-hierarchy-tree" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Dimension sunburst diagram
+        Supply chain component hierarchy tree
       
     </span>
   </a>
@@ -317,20 +317,9 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
+    <li class="md-nav__item">
+      <a href="model/" class="md-nav__link">
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
-            
   
   
   <span class="md-ellipsis">
@@ -344,79 +333,7 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Data model
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="model/model_diagram/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Diagram
-  
-
-    
-  </span>
-  
-  
-
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="model/glossary/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Glossary
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -610,10 +527,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#supply-chain-component-hierarchy-tree" class="md-nav__link">
+  <a href="#indicators-by-category" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Supply chain component hierarchy tree
+        Indicators by category
       
     </span>
   </a>
@@ -621,10 +538,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#dimension-sunburst-diagram" class="md-nav__link">
+  <a href="#supply-chain-component-hierarchy-tree" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Dimension sunburst diagram
+        Supply chain component hierarchy tree
       
     </span>
   </a>
@@ -651,152 +568,17 @@
   
 
 
-<h1 id="futurefoods-food-systems-data-model">FutureFoods Food Systems Data Model</h1>
-<p>The aim is to establish a harmonised data model for structured collection of metadata on Food Systems indicators.</p>
+<h1 id="future-foods-sfs-indicators-data-model">FUTURE FOODS SFS INDICATORS DATA MODEL</h1>
+<p>The aim is to establish a harmonised data model for structured collection of metadata on sustainable food systems (SFS) indicators.</p>
+<h2 id="indicators-by-category">Indicators by category</h2>
+<div id="indicators-sunburst-chart" style="width: 100; height: 600px;"></div>
+
 <h2 id="supply-chain-component-hierarchy-tree">Supply chain component hierarchy tree</h2>
 <div id="indicators-tree-chart" style="width: 100; height: 600px;"></div>
 
-<h2 id="dimension-sunburst-diagram">Dimension sunburst diagram</h2>
-<div id="indicators-sunburst-chart" style="width: 100; height: 600px;"></div>
-
 <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
-
-<script type="text/javascript">
-  var chartDom = document.getElementById('indicators-sunburst-chart');
-  var sunburstChart = echarts.init(chartDom);
-
-  fetch("data/indicators_sunburst_chart_data.json")
-    .then(r => r.json())
-    .then(data => {
-      var option = {
-        tooltip: {
-            show: true,
-            trigger: 'item',
-            formatter: function(params) {
-                return params.name;
-            }
-        },
-        series: {
-          type: 'sunburst',
-          data: data,
-          radius: [0, '95%'],
-          emphasis: {
-            focus: 'ancestor'
-          },
-          levels: [
-            {},
-            {
-              r0: '15%',
-              r: '35%',
-              label: {
-                rotate: 'tangential',
-                overflow: 'break'
-              }
-            },
-            {
-              r0: '35%',
-              r: '92%',
-              label: {
-                overflow: 'break',
-                formatter: function(params) {
-                  const name = params.name;
-                  return name.length > 20 ? name.slice(0,20) + '…' : name;
-                }
-              }
-            },
-            {
-              r0: '92%',
-              r: '98%',
-              label:  {
-                overflow: 'break',
-                formatter: function(params) {
-                  const name = params.name;
-                  return ' ';
-                }
-              },
-              tooltip: {
-                show: true,
-                formatter: function(params) {
-                  return params.name + ': ' + (params.value || '');
-                }
-              },
-              itemStyle: {
-                borderWidth: 3
-              }
-            }
-          ]
-        }
-      };
-      sunburstChart.setOption(option);
-    });
-
-  window.addEventListener('resize', function() {
-    sunburstChart.resize();
-  });
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
-
-<script type="text/javascript">
-  var chartDom = document.getElementById('indicators-tree-chart');
-  var treeChart = echarts.init(chartDom);
-
-  fetch("data/indicators_supply_chain_chart_data.json")
-    .then(r => r.json())
-    .then(data => {
-      var option = {
-        tooltip: {
-            show: true,
-            trigger: 'item',
-            triggerOn: 'mousemove',
-            formatter: function(params) {
-                return params.name;
-            }
-        },
-        series: {
-          type: 'tree',
-          data: [data],
-          top: '1%',
-          left: '7%',
-          bottom: '1%',
-          right: '20%',
-          symbolSize: 7,
-          label: {
-            position: 'left',
-            verticalAlign: 'middle',
-            align: 'right',
-            fontSize: 9,
-            formatter: function(params) {
-                return params.name;
-              }
-          },
-          leaves: {
-            label: {
-              position: 'right',
-              verticalAlign: 'middle',
-              align: 'left',
-              overflow: 'break',
-              formatter: function(params) {
-                return params.name;
-              }
-            }
-          },
-          emphasis: {
-            focus: 'descendant'
-          },          
-          expandAndCollapse: true,
-          animationDuration: 550,
-          animationDurationUpdate: 750,
-          initialTreeDepth: 3
-        }
-      };
-      treeChart.setOption(option);
-    });
-
-  window.addEventListener('resize', function() {
-    treeChart.resize();
-  });
-</script>
+<script type="text/javascript" src="js/indicators_supply_chain_chart.js"></script>
+<script type="text/javascript" scr="js/indicators_sunburst_chart.js"></script>
 
 
 
