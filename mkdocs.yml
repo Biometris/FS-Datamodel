@@ -8,9 +8,7 @@ plugins:
   - mermaid2
 nav:
   - Home: index.md
-  - Data model:
-    - Diagram: model/model_diagram.md
-    - Glossary: model/glossary.md
+  - Data model: model/index.md
   - Indicator definitions: indicators.md
   - Indicator categories: indicator_categories.md
   - Indicator databases: databases_table.md

@@ -143,21 +143,6 @@ if __name__ == "__main__":
         'IndicatorCriterion',
         'IndicatorcriteriaScore'
     ]
-    render_template(
-        template_name = 'model_diagram',
-        schema = SchemaView(schema_path),
-        output_file = f"docs/model/model_diagram.md",
-        gen = doc_gen,
-        classes = diagram_classes
-    )
-
-    # Glossary
-    render_template(
-        template_name = 'glossary',
-        output_file = f"docs/model/glossary.md",
-        schema = SchemaView(schema_path),
-        gen = doc_gen
-    )
 
     # Validate database content.
     if datastore.validate_data():

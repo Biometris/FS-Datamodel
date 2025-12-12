@@ -1,4 +1,4 @@
-# {{ gen.schema_title() | upper }}
+# DATA MODEL
 
 {{ schema.description }}
 
@@ -8,17 +8,22 @@
 {{ gen.mermaid_diagram(class_names=['Indicator', 'IndicatorDataCollectionDetails', 'Database', 'IndicatorDatapoint', 'IndicatorCriterion', 'IndicatorcriteriaScore']) }}
 ```
 
-## Glossary
+## Classes
 
 | Name | Description | Type |
+|  --- | --- | --- |
 {% for c in schemaview.all_classes().values()|sort(attribute='name') -%}
 {%- if 'association' not in schemaview.class_ancestors(c.name) and not schemaview.is_mixin(c.name) -%}
 {%- if c.name not in ["Any", "Entity" ] -%}
-|  --- | --- | --- |
 | {{ gen._markdown_link(gen.name(c), c.title | capitalize, "") }} | {{c.description}} | Class |
 {%- endif -%}
 {%- endif -%}
 {% endfor %}
+
+## Enums
+
+| Name | Description | Type |
+|  --- | --- | --- |
 {% for e in schemaview.all_enums().values()|sort(attribute='name') -%}
 | {{ gen._markdown_link(e.name, e.title | capitalize, "") }} | {{e.description}} | Enum |
 {% endfor %}
