@@ -1,9 +1,9 @@
-/docs/
-/project/
-/project/docs/
-/tmp/
+# IDE
+.vscode/*
+
 # PyCharm files
 .idea/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -136,3 +136,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# LinkML / mkdocs
+/docs/
+/project/
+/project/docs/
+/tmp/
