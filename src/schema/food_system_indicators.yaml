@@ -39,6 +39,11 @@ classes:
     title: indicator category
     description:
       The category the indicator belongs to.
+    slots:
+      - id
+      - name
+      - description
+      - outcome_type
     slot_usage:
       id:
         description:

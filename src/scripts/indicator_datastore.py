@@ -26,11 +26,11 @@ class DataStore:
         self.db.set_schema_view(sv)
 
         # Add database data from yaml to db.
-        self.add_database_data(indicator_definitions_file, "Indicators", "Indicators")
-        self.add_database_data(indicator_categories_file, "IndicatorCategories", "IndicatorCategories")
+        self.add_database_data(indicator_definitions_file, "Indicator", "Indicators")
+        self.add_database_data(indicator_categories_file, "IndicatorCategory", "IndicatorCategories")
         self.add_database_data(indicator_data_collection_details_file, "IndicatorDataCollectionDetails", "IndicatorDataCollectionDetails")
         self.add_database_data(databases_file, "Database", "Databases")
-        self.add_database_data(criteria_file, "IndicatorCriteria", "IndicatorCriteria")
+        self.add_database_data(criteria_file, "IndicatorCriterion", "IndicatorCriteria")
         #self.add_database_data(indicatorscores_file, "IndicatorcriteriaScore", "IndicatorCriteriaScores")
 
         # Validate cross-links
@@ -145,9 +145,9 @@ class DataStore:
 
             # Class (data) sheets
             for collection in collections:
-                if not table_names or collection.target_class_name in table_names:
+                if not table_names or collection.alias in table_names:
                     df = pd.DataFrame(collection.rows_iter())
-                    df.to_excel(writer, sheet_name=collection.target_class_name, index=False)
+                    df.to_excel(writer, sheet_name=collection.alias, index=False)
 
             # Enum sheets
             for enum_type in self.db.schema_view.all_enums().values():
