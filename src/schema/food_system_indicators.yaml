@@ -60,13 +60,14 @@ classes:
       - name
       - description
       - definition
-      - eu2025_sdg_indicator_code
-      - dimension
+      - activity_type
+      - outcome_type
       - supply_chain_component
       - measurement_unit_description
       - measurement_units
       - has_category
       - sustainability_impact
+      - eu2025_sdg_indicator_code
     slot_usage:
       id:
         description:
@@ -87,6 +88,9 @@ classes:
     description: >-
       Details on the collection of indicator data within a certain database/dataset.
     slots:
+      - id
+      - name
+      - description
       - measures_indicator
       - in_database
       - oldest_datapoint
@@ -274,12 +278,19 @@ slots:
     narrow_mappings:
       - dct:title
 
-  dimension:
-    title: dimension
+  activity_type:
+    title: food system activity
+    description:
+      A reference to the food system activity that is the subject of this indicator's measurement.
+    required: false
+    range: FoodSystemActivityType
+
+  outcome_type:
+    title: outcome type
     description: >-
-      Reference to the dimension that the indicator belongs to.
+      Reference to the type of the outcome measured by the indicator.
     required: true
-    range: SustainabilityDimension
+    range: FoodSystemOutcomeType
 
   supply_chain_component:
     title: supply chain component(s)
@@ -402,27 +413,61 @@ types:
 ## --------------------
 
 enums:
-  SustainabilityDimension:
-    title: sustainability dimension
+  FoodSystemActivityType:
+    title: food system activity
     description: >-
-      A core pillar of sustainability (environment, society, economy, or health) that groups indicators to evaluate different aspects of sustainable development within the food system.
+      Food systems encompass  activities related to the food supply chains,  food environments, and food demand, as well as the use of natural resource, consumption and diets, and waste, by-products and recycling. These ultimately have an effect on  food system outcomes.
+    permissible_values:
+      FoodSupply:
+        title: food supply
+        description:
+          This includes activities across the food value chain, incl.  activities from post-harvest and processing to packaging, distribution, and retail. The food value chain operates within an enabling environment that provides the necessary conditions for its functioning, including transport infrastructure. Additionally, the food supply chain is supported by a range of business services that offer goods and services to actors within the chain, such as training, agricultural inputs, technical support, and financial services.
+      FoodEnvironment:
+        title: food environment
+        description:
+          The food environment can be understood as the physical and social environment that affects what people eat. It refers to the settings and conditions in which individuals engage with the food system to obtain and consume food. It also includes the broader social, economic, and cultural contexts that shape food choices. It includes, among others, factors such as food accessibility, availability, pricing, properties, marketing, and messaging. It covers various settings such as supermarkets, hospitality/catering, shops/retail, and out-of-home settings. Furthermore, distinctions can be made between urban and rural areas, which have for instance different distances to supermarkets and therefore access to food.
+      FoodDemand:
+        title: food demand
+        description:
+          Addresses consumer behaviour and consumer characteristics, incl. consumer preferences. Consumer characteristics can refer to attributes such as knowledge, available time, resources (purchasing power), age, sex, culture, religion, etc. Through these characteristics, consumers develop certain preferences that influence their food choices. It considers various groups (e.g., socioeconomic, demographic, etc.), along with their norms, values, and levels of food literacy.
+      UseNaturalResources:
+        title: use of natural resources
+        description:
+          This refers to the direct use of natural resources and materials that are required to support the food chain, including, among others, inputs such as water, land, crops minerals, fertilisers, energy sources, and packaging materials, among others. These resources are used across the different food supply and food environment.
+      ConsumptionAndDiets:
+        title: consumption and diets
+        description:
+          This covers food consumption and diets, for total populations, vulnerable groups. Consumption and diets are a result of the food supply, food environment,  and food demand.  It covers, among others, total diets and consumption, including for instance  amount of meat consumption, FBDG, consumption patterns. 
+
+  FoodSystemOutcomeType:
+    title: food system outcome
+    description: >-
+      Food system outcomes, being impact related to environment, economic, social and health,  are a result of food systems. This framework distinguishes five different type of food system impacts: environmental, economic, social, health, and the overarching food security and resilience.
     permissible_values:
       Environment:
-        title: environment
+        title: environmental impacts
         description:
-          Sustainability dimension that focuses on the state and management of natural resources and ecosystems, including aspects such as climate, biodiversity, pollution, and resource efficiency, to ensure the food system operates within ecological limits.
+          This covers the impact on natural resources and the biophysical drivers of the food system. It includes, among others, the impact on climate change, biodiversity loss, land, soils, use of (micro)minerals and water. It may also include an assessment against the planetary boundary framework.
       Economy:
-        title: economy
+        title: economic impacts
         description:
-          Sustainability dimension that focuses on the performance, efficiency, and resilience of economic activities within the food system, including aspects like productivity, value distribution, competitiveness, and financial viability.
+          Social impacts encompass the outcomes resulting from the interactions between society and the food system. It includes, among others, indicators related to employment and animal welfare, among others.
       Society:
-        title: society
+        title: societal impacts
         description:
-          Sustainability dimension that focuses on human well-being, equity, and societal outcomes within the food system, including aspects such as health, nutrition, fairness, labor conditions, and access to resources.
+          Social impacts encompass the outcomes resulting from the interactions between society and the food system. It includes, among others, indicators related to employment and animal welfare, among others.
       Health:
-        title: health
+        title: health impacts
         description:
-          Sustainability dimension that focucus on ... . 
+          Health impacts from especially  diets. It includes, among others, indicators related to food safety, burden of disease, number of noncommunicable diseases (NCDs) related to diets, adherence to food-based dietary guidelines (FBDGs), among others.
+      FoodSecurity:
+        title: food security
+        description:
+          Food security refers to the availability, accessibility (food affordability), and utilisation of sufficient, safe, and nutritious food that meets dietary needs and food preferences for an active and healthy life, for all people, now and in the future. It encompasses the environmental, economic, social and health outcomes.
+      Resilience:
+        title: resilience 
+        description:
+          Resilience refers to the capacity of food systems to withstand, adapt to, and recover from shocks and stresses (e.g. climate change, economic crises, conflict), while continuing to function in a sustainable and equitable way. It includes the structural conditions, policies, and governance mechanisms that enable stable and healthy food supplies now and in the future. A resilient food system provides food that is ecologically sustainable, socially just, and economically viable. It ensures continued access to healthy food for all, supports sustainable production and consumption patterns, and strengthens the ability of communities and institutions to cope with uncertainty and long-term change.
 
   SpatialScopeType:
     title: spatial scope type

@@ -6,7 +6,7 @@
   measurement_unit_description: Euro per annual work unit (AWU)
   measurement_units:
   - EUR_AWU
-  dimension: Economy
+  outcome_type: Economy
   has_category: FarmersIncome
   supply_chain_component:
   - PrimaryProduction
@@ -20,7 +20,7 @@
   - I2010
   - I2015
   - I_N_1
-  dimension: Economy
+  outcome_type: Economy
   has_category: FarmersIncome
   supply_chain_component:
   - PrimaryProduction
@@ -34,7 +34,7 @@
   - I2010
   - I2015
   - I_N_1
-  dimension: Economy
+  outcome_type: Economy
   has_category: FarmersIncome
   supply_chain_component:
   - PrimaryProduction
@@ -48,7 +48,7 @@
   - I2010
   - I2015
   - I_N_1
-  dimension: Economy
+  outcome_type: Economy
   has_category: FarmersIncome
   supply_chain_component:
   - PrimaryProduction
@@ -60,7 +60,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Economy
+  outcome_type: Economy
   has_category: FarmersIncome
   supply_chain_component:
   - PrimaryProduction
@@ -72,7 +72,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Economy
+  outcome_type: Economy
   has_category: FarmersIncome
   supply_chain_component:
   - PrimaryProduction
@@ -86,7 +86,7 @@
   measurement_units:
   - EUR_HAB
   - MIO_EUR
-  dimension: Economy
+  outcome_type: Economy
   has_category: Competitiveness
   supply_chain_component:
   - PrimaryProduction
@@ -99,7 +99,7 @@
   measurement_unit_description: Chain linked volumes (2010) in EUR and % change on previous year (per capita)
   measurement_units:
   - CLV10_EUR_HAB
-  dimension: Economy
+  outcome_type: Economy
   has_category: Competitiveness
   supply_chain_component:
   - FoodProcessing
@@ -114,7 +114,7 @@
   measurement_unit_description: Million euros
   measurement_units:
   - MIO_EUR
-  dimension: Economy
+  outcome_type: Economy
   has_category: Competitiveness
   supply_chain_component:
   - FoodProcessing
@@ -128,7 +128,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Economy
+  outcome_type: Economy
   has_category: Competitiveness
   supply_chain_component:
   - PrimaryProduction
@@ -140,7 +140,7 @@
   measurement_unit_description: Index
   measurement_units:
   - INX
-  dimension: Economy
+  outcome_type: Economy
   has_category: Competitiveness
   supply_chain_component:
   - PrimaryProduction
@@ -152,7 +152,7 @@
   measurement_unit_description: '% of GDP'
   measurement_units:
   - PC_GDP
-  dimension: Economy
+  outcome_type: Economy
   has_category: Competitiveness
   supply_chain_component: []
   sustainability_impact: Positive
@@ -162,7 +162,7 @@
   definition: ''
   measurement_unit_description: Value added per person employed in the respective sector (1000 € / person)
   measurement_units: []
-  dimension: Economy
+  outcome_type: Economy
   has_category: Competitiveness
   supply_chain_component:
   - FoodProcessing
@@ -177,7 +177,7 @@
   measurement_unit_description: '% of GDP'
   measurement_units:
   - PC_GDP
-  dimension: Economy
+  outcome_type: Economy
   has_category: Competitiveness
   supply_chain_component:
   - FoodProcessing
@@ -192,7 +192,7 @@
   measurement_unit_description: Number of products
   measurement_units:
   - NR
-  dimension: Economy
+  outcome_type: Economy
   has_category: Competitiveness
   supply_chain_component:
   - FoodProcessing
@@ -205,7 +205,7 @@
   measurement_unit_description: Purchasing power standard (PPS, EU27 from 2020), per inhabitant
   measurement_units:
   - PPS_EU27_2020
-  dimension: Economy
+  outcome_type: Economy
   has_category: FoodAffordability
   supply_chain_component:
   - Consumption
@@ -217,7 +217,7 @@
   definition: ''
   measurement_unit_description: Index number of Food CPI
   measurement_units: []
-  dimension: Economy
+  outcome_type: Economy
   has_category: FoodAffordability
   supply_chain_component:
   - Consumption
@@ -230,7 +230,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Economy
+  outcome_type: Economy
   has_category: FoodAffordability
   supply_chain_component:
   - Consumption
@@ -242,7 +242,7 @@
   definition: ''
   measurement_unit_description: international dollars per person per day (using PPP)
   measurement_units: []
-  dimension: Economy
+  outcome_type: Economy
   has_category: FoodAffordability
   supply_chain_component:
   - Consumption
@@ -255,7 +255,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Economy
+  outcome_type: Economy
   has_category: FoodAffordability
   supply_chain_component:
   - Consumption
@@ -268,7 +268,7 @@
   measurement_unit_description: million people
   measurement_units:
   - MIO_PER
-  dimension: Economy
+  outcome_type: Economy
   has_category: FoodAffordability
   supply_chain_component:
   - Consumption
@@ -280,7 +280,7 @@
   definition: ''
   measurement_unit_description: Consumer Price Index (CPI)
   measurement_units: []
-  dimension: Economy
+  outcome_type: Economy
   has_category: FoodAffordability
   supply_chain_component:
   - Consumption
@@ -295,7 +295,7 @@
   measurement_unit_description: '% per year'
   measurement_units:
   - PC_Y
-  dimension: Economy
+  outcome_type: Economy
   has_category: FoodAffordability
   supply_chain_component:
   - Consumption
@@ -307,7 +307,7 @@
   definition: ''
   measurement_unit_description: constant 2015 US$; weighted average
   measurement_units: []
-  dimension: Economy
+  outcome_type: Economy
   has_category: FoodAffordability
   supply_chain_component:
   - Consumption
@@ -319,7 +319,7 @@
   definition: ''
   measurement_unit_description: '% (annual percentage change by month)'
   measurement_units: []
-  dimension: Economy
+  outcome_type: Economy
   has_category: FoodAffordability
   supply_chain_component:
   - Consumption
@@ -332,7 +332,7 @@
   measurement_unit_description: Index, 2015=100
   measurement_units:
   - I15
-  dimension: Economy
+  outcome_type: Economy
   has_category: FoodAffordability
   supply_chain_component:
   - PrimaryProduction
@@ -344,7 +344,7 @@
   measurement_unit_description: '% of total'
   measurement_units:
   - PC_TOT
-  dimension: Economy
+  outcome_type: Economy
   has_category: FoodAffordability
   supply_chain_component:
   - Consumption
@@ -356,7 +356,7 @@
   measurement_unit_description: Ratio
   measurement_units:
   - RAT
-  dimension: Economy
+  outcome_type: Economy
   has_category: FoodAffordability
   supply_chain_component:
   - Consumption
@@ -368,7 +368,7 @@
   measurement_unit_description: Self-sufficiency rate (%)
   measurement_units:
   - RT
-  dimension: Economy
+  outcome_type: Economy
   has_category: EconomicResilience
   supply_chain_component:
   - FoodProcessing
@@ -381,7 +381,7 @@
   eu2025_sdg_indicator_code: EU_SDG_15_50
   measurement_unit_description: '% of the non-artificial erodible area (Where there is no land that is at risk of soil erosion by water of more than 10 tonnes per hectare, a country will have a zero value)'
   measurement_units: []
-  dimension: Environment
+  outcome_type: Environment
   has_category: ConservOfNaturalResources
   supply_chain_component:
   - PrimaryProduction
@@ -393,7 +393,7 @@
   eu2025_sdg_indicator_code: EU_SDG_06_60
   measurement_unit_description: '% of renewable water resources'
   measurement_units: []
-  dimension: Environment
+  outcome_type: Environment
   has_category: ConservOfNaturalResources
   supply_chain_component:
   - FoodProcessing
@@ -405,7 +405,7 @@
   definition: ''
   measurement_unit_description: Tonnes of oil equivalent per hectare of UAA
   measurement_units: []
-  dimension: Environment
+  outcome_type: Environment
   has_category: ConservOfNaturalResources
   supply_chain_component:
   - PrimaryProduction
@@ -416,7 +416,7 @@
   definition: ''
   measurement_unit_description: Livestock units (LSU) per hectare of utilised agricultural area (UAA)
   measurement_units: []
-  dimension: Environment
+  outcome_type: Environment
   has_category: ConservOfNaturalResources
   supply_chain_component:
   - PrimaryProduction
@@ -427,7 +427,7 @@
   definition: ''
   measurement_unit_description: Tonnes per hectare per year
   measurement_units: []
-  dimension: Environment
+  outcome_type: Environment
   has_category: ConservOfNaturalResources
   supply_chain_component:
   - PrimaryProduction
@@ -439,7 +439,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Environment
+  outcome_type: Environment
   has_category: ConservOfNaturalResources
   supply_chain_component:
   - PrimaryProduction
@@ -450,7 +450,7 @@
   measurement_unit_description: Million cubic metres
   measurement_units:
   - MIO_M3
-  dimension: Environment
+  outcome_type: Environment
   has_category: ConservOfNaturalResources
   supply_chain_component:
   - FoodProcessing
@@ -461,7 +461,7 @@
   definition: ''
   measurement_unit_description: TJ
   measurement_units: []
-  dimension: Environment
+  outcome_type: Environment
   has_category: ConservOfNaturalResources
   supply_chain_component:
   - PrimaryProduction
@@ -473,7 +473,7 @@
   measurement_unit_description: Number
   measurement_units:
   - NR
-  dimension: Environment
+  outcome_type: Environment
   has_category: ConservOfNaturalResources
   supply_chain_component:
   - PrimaryProduction
@@ -485,7 +485,7 @@
   measurement_unit_description: Number
   measurement_units:
   - NR
-  dimension: Environment
+  outcome_type: Environment
   has_category: ConservOfNaturalResources
   supply_chain_component:
   - PrimaryProduction
@@ -496,7 +496,7 @@
   definition: ''
   measurement_unit_description: '% of total freshwater withdrawal'
   measurement_units: []
-  dimension: Environment
+  outcome_type: Environment
   has_category: ConservOfNaturalResources
   supply_chain_component:
   - PrimaryProduction
@@ -508,7 +508,7 @@
   measurement_unit_description: Index, 2000=100
   measurement_units:
   - I00
-  dimension: Environment
+  outcome_type: Environment
   has_category: BiodiversityConservation
   supply_chain_component:
   - PrimaryProduction
@@ -520,7 +520,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Environment
+  outcome_type: Environment
   has_category: BiodiversityConservation
   supply_chain_component: []
   sustainability_impact: Positive
@@ -531,7 +531,7 @@
   eu2025_sdg_indicator_code: EU_SDG_02_40
   measurement_unit_description: '% of total utilised agricultural area (UAA)'
   measurement_units: []
-  dimension: Environment
+  outcome_type: Environment
   has_category: OrganicFarming
   supply_chain_component:
   - PrimaryProduction
@@ -541,7 +541,7 @@
   definition: ''
   measurement_unit_description: Hectare / Holdings
   measurement_units: []
-  dimension: Environment
+  outcome_type: Environment
   has_category: OrganicFarming
   supply_chain_component:
   - PrimaryProduction
@@ -551,7 +551,7 @@
   definition: ''
   measurement_unit_description: Livestock unit (LSU -> 1 LSU = the grazing equivalent of one adult dairy cow) / Head (animal) / Holding
   measurement_units: []
-  dimension: Environment
+  outcome_type: Environment
   has_category: OrganicFarming
   supply_chain_component:
   - PrimaryProduction
@@ -563,7 +563,7 @@
   measurement_unit_description: Number
   measurement_units:
   - NR
-  dimension: Environment
+  outcome_type: Environment
   has_category: OrganicFarming
   supply_chain_component:
   - FoodProcessing
@@ -575,7 +575,7 @@
   definition: ''
   measurement_unit_description: Hectare / Percentage of UAA
   measurement_units: []
-  dimension: Environment
+  outcome_type: Environment
   has_category: OrganicFarming
   supply_chain_component:
   - PrimaryProduction
@@ -587,7 +587,7 @@
   measurement_unit_description: Tonnes
   measurement_units:
   - T
-  dimension: Environment
+  outcome_type: Environment
   has_category: OrganicFarming
   supply_chain_component:
   - PrimaryProduction
@@ -598,7 +598,7 @@
   definition: ''
   measurement_unit_description: Head (animals)
   measurement_units: []
-  dimension: Environment
+  outcome_type: Environment
   has_category: OrganicFarming
   supply_chain_component:
   - PrimaryProduction
@@ -610,7 +610,7 @@
   measurement_unit_description: Tonnes
   measurement_units:
   - T
-  dimension: Environment
+  outcome_type: Environment
   has_category: OrganicFarming
   supply_chain_component:
   - FoodProcessing
@@ -622,7 +622,7 @@
   definition: ''
   measurement_unit_description: Tonnes live weight
   measurement_units: []
-  dimension: Environment
+  outcome_type: Environment
   has_category: OrganicFarming
   supply_chain_component:
   - PrimaryProduction
@@ -634,7 +634,7 @@
   measurement_unit_description: Number
   measurement_units:
   - NR
-  dimension: Environment
+  outcome_type: Environment
   has_category: OrganicFarming
   supply_chain_component:
   - FoodProcessing
@@ -646,7 +646,7 @@
   eu2025_sdg_indicator_code: EU_SDG_02_60
   measurement_unit_description: Tons and kg per hectare utilised agricultural area (UAA)
   measurement_units: []
-  dimension: Environment
+  outcome_type: Environment
   has_category: GhgEmissions
   supply_chain_component:
   - PrimaryProduction
@@ -657,7 +657,7 @@
   definition: ''
   measurement_unit_description: Share of GHG in %
   measurement_units: []
-  dimension: Environment
+  outcome_type: Environment
   has_category: GhgEmissions
   supply_chain_component:
   - PrimaryProduction
@@ -668,7 +668,7 @@
   definition: ''
   measurement_unit_description: Thousand tonnes
   measurement_units: []
-  dimension: Environment
+  outcome_type: Environment
   has_category: GhgEmissions
   supply_chain_component:
   - PrimaryProduction
@@ -680,7 +680,7 @@
   measurement_unit_description: kt
   measurement_units:
   - 1000T
-  dimension: Environment
+  outcome_type: Environment
   has_category: GhgEmissions
   supply_chain_component:
   - Consumption
@@ -695,7 +695,7 @@
   definition: ''
   measurement_unit_description: Tonnes/capita
   measurement_units: []
-  dimension: Environment
+  outcome_type: Environment
   has_category: GhgEmissions
   supply_chain_component:
   - PrimaryProduction
@@ -706,7 +706,7 @@
   definition: ''
   measurement_unit_description: kg CO2eq/kg
   measurement_units: []
-  dimension: Environment
+  outcome_type: Environment
   has_category: GhgEmissions
   supply_chain_component:
   - PrimaryProduction
@@ -718,7 +718,7 @@
   measurement_unit_description: kt
   measurement_units:
   - 1000T
-  dimension: Environment
+  outcome_type: Environment
   has_category: GhgEmissions
   supply_chain_component:
   - PrimaryProduction
@@ -730,7 +730,7 @@
   measurement_unit_description: kt
   measurement_units:
   - 1000T
-  dimension: Environment
+  outcome_type: Environment
   has_category: GhgEmissions
   supply_chain_component:
   - PrimaryProduction
@@ -742,7 +742,7 @@
   measurement_unit_description: kt
   measurement_units:
   - 1000T
-  dimension: Environment
+  outcome_type: Environment
   has_category: GhgEmissions
   supply_chain_component:
   - PrimaryProduction
@@ -754,7 +754,7 @@
   measurement_unit_description: kt
   measurement_units:
   - 1000T
-  dimension: Environment
+  outcome_type: Environment
   has_category: GhgEmissions
   supply_chain_component:
   - PrimaryProduction
@@ -766,7 +766,7 @@
   measurement_unit_description: kt
   measurement_units:
   - 1000T
-  dimension: Environment
+  outcome_type: Environment
   has_category: GhgEmissions
   supply_chain_component:
   - Consumption
@@ -782,7 +782,7 @@
   measurement_unit_description: Tonnes
   measurement_units:
   - T
-  dimension: Environment
+  outcome_type: Environment
   has_category: AirPollutants
   supply_chain_component:
   - FoodProcessing
@@ -794,7 +794,7 @@
   eu2025_sdg_indicator_code: EU_SDG_02_53
   measurement_unit_description: Index 2015-2017 average = 100 (Index relative to the average results for the period 2015 to 2017)
   measurement_units: []
-  dimension: Environment
+  outcome_type: Environment
   has_category: PesticideAndAntibioticUse
   supply_chain_component:
   - PrimaryProduction
@@ -805,7 +805,7 @@
   definition: ''
   measurement_unit_description: Active substances in kilograms (kg) (Both, agricultural and non-agricultural uses of plant production products are covered)
   measurement_units: []
-  dimension: Environment
+  outcome_type: Environment
   has_category: PesticideAndAntibioticUse
   supply_chain_component:
   - PrimaryProduction
@@ -816,7 +816,7 @@
   definition: ''
   measurement_unit_description: Index, 2011-2013 average = 100 (Index relattive to a baseline of 100)
   measurement_units: []
-  dimension: Environment
+  outcome_type: Environment
   has_category: PesticideAndAntibioticUse
   supply_chain_component:
   - PrimaryProduction
@@ -827,7 +827,7 @@
   definition: ''
   measurement_unit_description: kg/ha g/International $ kg/capita
   measurement_units: []
-  dimension: Environment
+  outcome_type: Environment
   has_category: PesticideAndAntibioticUse
   supply_chain_component:
   - PrimaryProduction
@@ -838,7 +838,7 @@
   definition: ''
   measurement_unit_description: mg/PCU (PCU=Population Correction Unit)
   measurement_units: []
-  dimension: Environment
+  outcome_type: Environment
   has_category: PesticideAndAntibioticUse
   supply_chain_component:
   - PrimaryProduction
@@ -849,7 +849,7 @@
   definition: ''
   measurement_unit_description: Tonnes of N and of P
   measurement_units: []
-  dimension: Environment
+  outcome_type: Environment
   has_category: FertilizerUse
   supply_chain_component:
   - PrimaryProduction
@@ -861,7 +861,7 @@
   measurement_unit_description: kg/ha
   measurement_units:
   - KG_HA
-  dimension: Environment
+  outcome_type: Environment
   has_category: FertilizerUse
   supply_chain_component:
   - PrimaryProduction
@@ -873,7 +873,7 @@
   measurement_unit_description: kg/ha
   measurement_units:
   - KG_HA
-  dimension: Environment
+  outcome_type: Environment
   has_category: FertilizerUse
   supply_chain_component:
   - PrimaryProduction
@@ -885,7 +885,7 @@
   measurement_unit_description: kg/ha
   measurement_units:
   - KG_HA
-  dimension: Environment
+  outcome_type: Environment
   has_category: FertilizerUse
   supply_chain_component:
   - PrimaryProduction
@@ -896,7 +896,7 @@
   definition: ''
   measurement_unit_description: kg/ha of arable land
   measurement_units: []
-  dimension: Environment
+  outcome_type: Environment
   has_category: FertilizerUse
   supply_chain_component:
   - PrimaryProduction
@@ -908,7 +908,7 @@
   measurement_unit_description: kg/ha
   measurement_units:
   - KG_HA
-  dimension: Environment
+  outcome_type: Environment
   has_category: FertilizerUse
   supply_chain_component:
   - PrimaryProduction
@@ -920,7 +920,7 @@
   measurement_unit_description: kg/ha
   measurement_units:
   - KG_HA
-  dimension: Environment
+  outcome_type: Environment
   has_category: FertilizerUse
   supply_chain_component:
   - PrimaryProduction
@@ -932,7 +932,7 @@
   eu2025_sdg_indicator_code: EU_SDG_15_42
   measurement_unit_description: km2 area affected % of total area
   measurement_units: []
-  dimension: Environment
+  outcome_type: Environment
   has_category: ImpactsOfClimateChange
   supply_chain_component:
   - PrimaryProduction
@@ -942,7 +942,7 @@
   definition: ''
   measurement_unit_description: LSU/ha
   measurement_units: []
-  dimension: Environment
+  outcome_type: Environment
   has_category: AnimalKeeping
   supply_chain_component:
   - PrimaryProduction
@@ -952,7 +952,7 @@
   definition: ''
   measurement_unit_description: Index (2014-2016 = 100)
   measurement_units: []
-  dimension: Environment
+  outcome_type: Environment
   has_category: AnimalKeeping
   supply_chain_component:
   - PrimaryProduction
@@ -962,7 +962,7 @@
   definition: ''
   measurement_unit_description: Share of reported way of keeping in total (in %)
   measurement_units: []
-  dimension: Environment
+  outcome_type: Environment
   has_category: AnimalKeeping
   supply_chain_component:
   - PrimaryProduction
@@ -973,7 +973,7 @@
   definition: ''
   measurement_unit_description: Kilogram per capita / Tonnes of fresh mass
   measurement_units: []
-  dimension: Environment
+  outcome_type: Environment
   has_category: FoodWasteFoodLoss
   supply_chain_component:
   - Consumption
@@ -988,7 +988,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Environment
+  outcome_type: Environment
   has_category: FoodWasteFoodLoss
   supply_chain_component:
   - Retail
@@ -999,7 +999,7 @@
   definition: ''
   measurement_unit_description: mg NO3/L
   measurement_units: []
-  dimension: Environment
+  outcome_type: Environment
   has_category: WaterQuality
   supply_chain_component:
   - PrimaryProduction
@@ -1011,7 +1011,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Environment
+  outcome_type: Environment
   has_category: SusDevelopmentPrimaryProd
   supply_chain_component:
   - PrimaryProduction
@@ -1023,7 +1023,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Environment
+  outcome_type: Environment
   has_category: SusDevelopmentPrimaryProd
   supply_chain_component:
   - PrimaryProduction
@@ -1035,7 +1035,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Environment
+  outcome_type: Environment
   has_category: SusDevelopmentPrimaryProd
   supply_chain_component:
   - PrimaryProduction
@@ -1047,7 +1047,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Environment
+  outcome_type: Environment
   has_category: SusDevelopmentPrimaryProd
   supply_chain_component:
   - PrimaryProduction
@@ -1059,7 +1059,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Environment
+  outcome_type: Environment
   has_category: SusDevelopmentPrimaryProd
   supply_chain_component:
   - PrimaryProduction
@@ -1071,7 +1071,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Environment
+  outcome_type: Environment
   has_category: SusDevelopmentPrimaryProd
   supply_chain_component:
   - PrimaryProduction
@@ -1083,7 +1083,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Environment
+  outcome_type: Environment
   has_category: SusDevelopmentPrimaryProd
   supply_chain_component:
   - PrimaryProduction
@@ -1095,7 +1095,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Environment
+  outcome_type: Environment
   has_category: SusDevelopmentPrimaryProd
   supply_chain_component:
   - PrimaryProduction
@@ -1107,7 +1107,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Environment
+  outcome_type: Environment
   has_category: SusDevelopmentPrimaryProd
   supply_chain_component:
   - PrimaryProduction
@@ -1118,7 +1118,7 @@
   definition: ''
   measurement_unit_description: Number of operations
   measurement_units: []
-  dimension: Environment
+  outcome_type: Environment
   has_category: SusDevelopmentPrimaryProd
   supply_chain_component:
   - PrimaryProduction
@@ -1130,7 +1130,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Environment
+  outcome_type: Environment
   has_category: SusDevelopmentPrimaryProd
   supply_chain_component:
   - PrimaryProduction
@@ -1142,7 +1142,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Environment
+  outcome_type: Environment
   has_category: SusDevelopmentPrimaryProd
   supply_chain_component:
   - PrimaryProduction
@@ -1153,7 +1153,7 @@
   definition: ''
   measurement_unit_description: Number of young farmers
   measurement_units: []
-  dimension: Environment
+  outcome_type: Environment
   has_category: SusDevelopmentPrimaryProd
   supply_chain_component:
   - PrimaryProduction
@@ -1165,7 +1165,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Environment
+  outcome_type: Environment
   has_category: SusDevelopmentPrimaryProd
   supply_chain_component:
   - PrimaryProduction
@@ -1177,7 +1177,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Environment
+  outcome_type: Environment
   has_category: SusDevelopmentPrimaryProd
   supply_chain_component:
   - PrimaryProduction
@@ -1189,7 +1189,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Environment
+  outcome_type: Environment
   has_category: SusDevelopmentPrimaryProd
   supply_chain_component:
   - PrimaryProduction
@@ -1201,7 +1201,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Environment
+  outcome_type: Environment
   has_category: SusDevelopmentPrimaryProd
   supply_chain_component:
   - PrimaryProduction
@@ -1212,7 +1212,7 @@
   definition: ''
   measurement_unit_description: '% (share of total managers)'
   measurement_units: []
-  dimension: Environment
+  outcome_type: Environment
   has_category: SusDevelopmentPrimaryProd
   supply_chain_component:
   - PrimaryProduction
@@ -1223,7 +1223,7 @@
   definition: ''
   measurement_unit_description: Score (1-5; 5 = best)
   measurement_units: []
-  dimension: Environment
+  outcome_type: Environment
   has_category: EcologicalResilience
   supply_chain_component: []
   sustainability_impact: Positive
@@ -1233,7 +1233,7 @@
   definition: ''
   measurement_unit_description: Points (single weighted score; impact per capita or per country selectable)
   measurement_units: []
-  dimension: Environment
+  outcome_type: Environment
   has_category: CrossCuttingIndicators
   supply_chain_component:
   - Consumption
@@ -1245,7 +1245,7 @@
   eu2025_sdg_indicator_code: EU_SDG_02_10
   measurement_unit_description: '% of population aged 18 or over, by body mass index (BMI), classified into overweight, pre-obese or obese'
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: NutritionalHealthOutcomes
   supply_chain_component:
   - Consumption
@@ -1256,7 +1256,7 @@
   definition: ''
   measurement_unit_description: '% of population aged 15 and over, classified into underweight, normal, pre-obese, obese'
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: NutritionalHealthOutcomes
   supply_chain_component:
   - Consumption
@@ -1267,7 +1267,7 @@
   definition: ''
   measurement_unit_description: '% of population aged 16 and over by educational attainment level, sex and age, classified into underweight, normal, overweight, pre-obese, obese'
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: NutritionalHealthOutcomes
   supply_chain_component:
   - Consumption
@@ -1278,7 +1278,7 @@
   definition: ''
   measurement_unit_description: '% of population aged 15 and over, by educational attainment level, sex and age, classified into underweight, normal, pre-obese, obese, overweight'
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: NutritionalHealthOutcomes
   supply_chain_component:
   - Consumption
@@ -1289,7 +1289,7 @@
   definition: ''
   measurement_unit_description: '% of population aged 15 and over, by income quintile, sex and age, classified into underweight, normal, pre-obese, obese, overweight'
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: NutritionalHealthOutcomes
   supply_chain_component:
   - Consumption
@@ -1301,7 +1301,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Health
+  outcome_type: Health
   has_category: NutritionalHealthOutcomes
   supply_chain_component:
   - Consumption
@@ -1313,7 +1313,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Health
+  outcome_type: Health
   has_category: NutritionalHealthOutcomes
   supply_chain_component:
   - Consumption
@@ -1325,7 +1325,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Health
+  outcome_type: Health
   has_category: NutritionalHealthOutcomes
   supply_chain_component:
   - Consumption
@@ -1337,7 +1337,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Health
+  outcome_type: Health
   has_category: NutritionalHealthOutcomes
   supply_chain_component:
   - Consumption
@@ -1348,7 +1348,7 @@
   definition: ''
   measurement_unit_description: '% of children ages 6-59 months'
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: NutritionalHealthOutcomes
   supply_chain_component:
   - Consumption
@@ -1360,7 +1360,7 @@
   definition: ''
   measurement_unit_description: '% of children under 5'
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: NutritionalHealthOutcomes
   supply_chain_component:
   - Consumption
@@ -1371,7 +1371,7 @@
   definition: ''
   measurement_unit_description: '% of population ages 20 to 79'
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: NutritionalHealthOutcomes
   supply_chain_component:
   - Consumption
@@ -1382,7 +1382,7 @@
   definition: ''
   measurement_unit_description: '% of population (aged 15 and over) per daily consumption frequency (consumption of 0 portions, 1 to 4 portions, 5 portions or more)'
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: NutritionalBehaviour
   supply_chain_component:
   - Consumption
@@ -1393,7 +1393,7 @@
   definition: ''
   measurement_unit_description: '% of population (aged 15 and over) per daily consumption frequency (consumption of 0 portions, 1 to 4 portions, 5 portions or more)'
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: NutritionalBehaviour
   supply_chain_component:
   - Consumption
@@ -1404,7 +1404,7 @@
   definition: ''
   measurement_unit_description: '% of population (aged 15 and over) per daily consumption frequency (consumption of 0 portions, 1 to 4 portions, 5 portions or more)'
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: NutritionalBehaviour
   supply_chain_component:
   - Consumption
@@ -1415,7 +1415,7 @@
   definition: ''
   measurement_unit_description: '% of population (aged 15 and over) per daily consumption frequency (consumption of 0 portions, 1 to 4 portions, 5 portions or more)'
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: NutritionalBehaviour
   supply_chain_component:
   - Consumption
@@ -1426,7 +1426,7 @@
   definition: ''
   measurement_unit_description: '% of population (aged 16 and over) per weekly consumption frequency (once a day, at least twice a day, less than once a week, from 1 to 3 times a week, from 4 to 6 times a week, never)'
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: NutritionalBehaviour
   supply_chain_component:
   - Consumption
@@ -1437,7 +1437,7 @@
   definition: ''
   measurement_unit_description: '% of population (aged 15 and over) per weekly consumption frequency (at least once a day, from 1 to 3 times a week, from 4 to 6 times a week, never or occasionally)'
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: NutritionalBehaviour
   supply_chain_component:
   - Consumption
@@ -1448,7 +1448,7 @@
   definition: ''
   measurement_unit_description: '% of population (aged 15 and over) per weekly consumption frequency (at least once a day, from 1 to 3 times a week, from 4 to 6 times a week, never or occasionally)'
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: NutritionalBehaviour
   supply_chain_component:
   - Consumption
@@ -1459,7 +1459,7 @@
   definition: ''
   measurement_unit_description: '% of population (aged 15 and over) per weekly consumption frequency (at least once a day, from 1 to 3 times a week, from 4 to 6 times a week, never or occasionally)'
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: NutritionalBehaviour
   supply_chain_component:
   - Consumption
@@ -1470,7 +1470,7 @@
   definition: ''
   measurement_unit_description: '% of population (aged 15 and over) per weekly consumption frequency (at least once a day, from 1 to 3 times a week, from 4 to 6 times a week, never or occasionally)'
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: NutritionalBehaviour
   supply_chain_component:
   - Consumption
@@ -1481,7 +1481,7 @@
   definition: ''
   measurement_unit_description: '% of population (aged 15 and over) per weekly consumption frequency (at least once a day, from 1 to 3 times a week, from 4 to 6 times a week, never or occasionally)'
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: NutritionalBehaviour
   supply_chain_component:
   - Consumption
@@ -1492,7 +1492,7 @@
   definition: ''
   measurement_unit_description: '% of population (aged 15 and over) per weekly consumption frequency (at least once a day, from 1 to 3 times a week, from 4 to 6 times a week, never or occasionally)'
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: NutritionalBehaviour
   supply_chain_component:
   - Consumption
@@ -1503,7 +1503,7 @@
   definition: ''
   measurement_unit_description: '% of population (aged 15 and over) per weekly consumption frequency (at least once a day, from 1 to 3 times a week, from 4 to 6 times a week, never or occasionally)'
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: NutritionalBehaviour
   supply_chain_component:
   - Consumption
@@ -1514,7 +1514,7 @@
   definition: ''
   measurement_unit_description: g/day
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: NutritionalBehaviour
   supply_chain_component:
   - Consumption
@@ -1525,7 +1525,7 @@
   definition: ''
   measurement_unit_description: g/day
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: NutritionalBehaviour
   supply_chain_component:
   - Consumption
@@ -1536,7 +1536,7 @@
   definition: ''
   measurement_unit_description: g/day
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: NutritionalBehaviour
   supply_chain_component:
   - Consumption
@@ -1547,7 +1547,7 @@
   definition: ''
   measurement_unit_description: g/day
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: NutritionalBehaviour
   supply_chain_component:
   - Consumption
@@ -1558,7 +1558,7 @@
   definition: ''
   measurement_unit_description: '%en or gram per 2,000kcal'
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: NutritionalBehaviour
   supply_chain_component:
   - Consumption
@@ -1569,7 +1569,7 @@
   definition: ''
   measurement_unit_description: '%en or gram per 2,000kcal'
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: NutritionalBehaviour
   supply_chain_component:
   - Consumption
@@ -1580,7 +1580,7 @@
   definition: ''
   measurement_unit_description: '% of households'
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: NutritionalBehaviour
   supply_chain_component:
   - Consumption
@@ -1594,7 +1594,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Health
+  outcome_type: Health
   has_category: NutritionalBehaviour
   supply_chain_component:
   - Consumption
@@ -1606,7 +1606,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Health
+  outcome_type: Health
   has_category: NutritionalBehaviour
   supply_chain_component:
   - Consumption
@@ -1618,7 +1618,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Health
+  outcome_type: Health
   has_category: NutritionalBehaviour
   supply_chain_component:
   - Consumption
@@ -1630,7 +1630,7 @@
   eu2025_sdg_indicator_code: EU_SDG_06_40
   measurement_unit_description: mg NO3 per litre
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: FoodQualitySafety
   supply_chain_component:
   - PrimaryProduction
@@ -1642,7 +1642,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Health
+  outcome_type: Health
   has_category: FoodQualitySafety
   supply_chain_component:
   - Retail
@@ -1654,7 +1654,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Health
+  outcome_type: Health
   has_category: FoodQualitySafety
   supply_chain_component:
   - Retail
@@ -1666,7 +1666,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Health
+  outcome_type: Health
   has_category: FoodQualitySafety
   supply_chain_component:
   - Consumption
@@ -1678,7 +1678,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Health
+  outcome_type: Health
   has_category: FoodQualitySafety
   supply_chain_component:
   - Consumption
@@ -1690,7 +1690,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Health
+  outcome_type: Health
   has_category: Malnutrition
   supply_chain_component:
   - Consumption
@@ -1703,7 +1703,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Health
+  outcome_type: Health
   has_category: Malnutrition
   supply_chain_component:
   - Consumption
@@ -1716,7 +1716,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Health
+  outcome_type: Health
   has_category: FoodAccess
   supply_chain_component:
   - Consumption
@@ -1728,7 +1728,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Health
+  outcome_type: Health
   has_category: FoodAccess
   supply_chain_component:
   - Consumption
@@ -1739,7 +1739,7 @@
   definition: ''
   measurement_unit_description: Int$/cap
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: FoodAccess
   supply_chain_component:
   - Consumption
@@ -1751,7 +1751,7 @@
   measurement_unit_description: km
   measurement_units:
   - KM
-  dimension: Health
+  outcome_type: Health
   has_category: FoodAccess
   supply_chain_component:
   - Consumption
@@ -1763,7 +1763,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Health
+  outcome_type: Health
   has_category: FoodAccess
   supply_chain_component:
   - PrimaryProduction
@@ -1775,7 +1775,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Health
+  outcome_type: Health
   has_category: FoodAvailability
   supply_chain_component:
   - Consumption
@@ -1786,7 +1786,7 @@
   definition: ''
   measurement_unit_description: kcal/cap/d
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: FoodAvailability
   supply_chain_component:
   - Consumption
@@ -1797,7 +1797,7 @@
   definition: ''
   measurement_unit_description: kcal/cap/d
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: FoodAvailability
   supply_chain_component:
   - Consumption
@@ -1808,7 +1808,7 @@
   definition: ''
   measurement_unit_description: g/cap/d
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: FoodAvailability
   supply_chain_component:
   - Consumption
@@ -1819,7 +1819,7 @@
   definition: ''
   measurement_unit_description: g/cap/d
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: FoodAvailability
   supply_chain_component:
   - Consumption
@@ -1830,7 +1830,7 @@
   definition: ''
   measurement_unit_description: g/cap/d
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: FoodAvailability
   supply_chain_component:
   - Consumption
@@ -1841,7 +1841,7 @@
   definition: ''
   measurement_unit_description: US Dollar, converted using purchasing power parities per capita
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: FoodAvailability
   supply_chain_component:
   - PrimaryProduction
@@ -1852,7 +1852,7 @@
   definition: ''
   measurement_unit_description: US Dollar, converted using purchasing power parities per capita
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: FoodAvailability
   supply_chain_component:
   - PrimaryProduction
@@ -1864,7 +1864,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Health
+  outcome_type: Health
   has_category: FoodAvailability
   supply_chain_component:
   - PrimaryProduction
@@ -1876,7 +1876,7 @@
   measurement_unit_description: '% of land area'
   measurement_units:
   - PC_AREA
-  dimension: Health
+  outcome_type: Health
   has_category: FoodAvailability
   supply_chain_component:
   - PrimaryProduction
@@ -1887,7 +1887,7 @@
   definition: ''
   measurement_unit_description: 2014-2016 = 100
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: FoodAvailability
   supply_chain_component:
   - PrimaryProduction
@@ -1898,7 +1898,7 @@
   definition: ''
   measurement_unit_description: g/capita/day
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: FoodAvailability
   supply_chain_component:
   - Consumption
@@ -1909,7 +1909,7 @@
   definition: ''
   measurement_unit_description: g/capita/day
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: FoodAvailability
   supply_chain_component:
   - Consumption
@@ -1920,7 +1920,7 @@
   definition: ''
   measurement_unit_description: kg/capita/year
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: FoodAvailability
   supply_chain_component:
   - Consumption
@@ -1931,7 +1931,7 @@
   definition: ''
   measurement_unit_description: kcal/cap/d
   measurement_units: []
-  dimension: Health
+  outcome_type: Health
   has_category: FoodStability
   supply_chain_component:
   - Consumption
@@ -1943,7 +1943,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Health
+  outcome_type: Health
   has_category: FoodStability
   supply_chain_component:
   - PrimaryProduction
@@ -1955,7 +1955,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Health
+  outcome_type: Health
   has_category: FoodStability
   supply_chain_component:
   - PrimaryProduction
@@ -1966,7 +1966,7 @@
   definition: ''
   measurement_unit_description: '% of total employment'
   measurement_units: []
-  dimension: Society
+  outcome_type: Society
   has_category: EmploymInAgricFoodSector
   supply_chain_component:
   - PrimaryProduction
@@ -1977,7 +1977,7 @@
   definition: ''
   measurement_unit_description: '% (compared to EU27)'
   measurement_units: []
-  dimension: Society
+  outcome_type: Society
   has_category: EmploymInAgricFoodSector
   supply_chain_component:
   - FoodProcessing
@@ -1991,7 +1991,7 @@
   definition: ''
   measurement_unit_description: US Dollar, converted using purchasing power parities
   measurement_units: []
-  dimension: Society
+  outcome_type: Society
   has_category: WorkingCondAgricFoodSect
   supply_chain_component:
   - PrimaryProduction
@@ -2002,7 +2002,7 @@
   definition: ''
   measurement_unit_description: US Dollar, converted using purchasing power parities
   measurement_units: []
-  dimension: Society
+  outcome_type: Society
   has_category: WorkingCondAgricFoodSect
   supply_chain_component:
   - PrimaryProduction
@@ -2014,7 +2014,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Society
+  outcome_type: Society
   has_category: WorkingCondAgricFoodSect
   supply_chain_component:
   - PrimaryProduction
@@ -2025,19 +2025,19 @@
   definition: ''
   measurement_unit_description: '% of population aged 15 to 64'
   measurement_units: []
-  dimension: Society
+  outcome_type: Society
   has_category: GeneralUnEmployment
   supply_chain_component:
   - Consumption
   sustainability_impact: Positive
 - id: FSI_0172
   name: Persons living in households with very low work intensity, by age group (sdg_01_40)
-  description: People in the age of 0 to 64 years living in households where the adults worked a working time equal or less than 20 % of their total combined work-time potential during the previous year. As adults count people in the age of 18 to 64 years. Students aged 18 to 24 years; people who are retired according to their self-defined current economic status or who receive any pension (except survivor's pension); and people in the age bracket 60 to 64 who are inactive and living in a household where the main income is pensions, are not taken into account. The indicator is part of the multidimensional poverty index.
+  description: People in the age of 0 to 64 years living in households where the adults worked a working time equal or less than 20 % of their total combined work-time potential during the previous year. As adults count people in the age of 18 to 64 years. Students aged 18 to 24 years; people who are retired according to their self-defined current economic status or who receive any pension (except survivor's pension); and people in the age bracket 60 to 64 who are inactive and living in a household where the main income is pensions, are not taken into account. The indicator is part of the multioutcome_typeal poverty index.
   definition: ''
   eu2025_sdg_indicator_code: EU_SDG_01_40
   measurement_unit_description: '% of population / Thousand persons i. age group less than 65 ii. age group less than 18'
   measurement_units: []
-  dimension: Society
+  outcome_type: Society
   has_category: GeneralUnEmployment
   supply_chain_component:
   - Consumption
@@ -2049,7 +2049,7 @@
   eu2025_sdg_indicator_code: EU_SDG_08_30
   measurement_unit_description: '% of population aged 20 to 64 by sex'
   measurement_units: []
-  dimension: Society
+  outcome_type: Society
   has_category: GeneralUnEmployment
   supply_chain_component:
   - Consumption
@@ -2060,7 +2060,7 @@
   definition: ''
   measurement_unit_description: '% of population aged 15 to 74 by sex'
   measurement_units: []
-  dimension: Society
+  outcome_type: Society
   has_category: GeneralUnEmployment
   supply_chain_component:
   - Consumption
@@ -2071,7 +2071,7 @@
   definition: ''
   measurement_unit_description: '% of unemployment / % of population in the labour force / Thousand persons'
   measurement_units: []
-  dimension: Society
+  outcome_type: Society
   has_category: GeneralUnEmployment
   supply_chain_component:
   - Consumption
@@ -2082,7 +2082,7 @@
   definition: ''
   measurement_unit_description: '% of total labor force'
   measurement_units: []
-  dimension: Society
+  outcome_type: Society
   has_category: GeneralUnEmployment
   supply_chain_component:
   - Consumption
@@ -2094,7 +2094,7 @@
   eu2025_sdg_indicator_code: EU_SDG_01_10
   measurement_unit_description: '% of population / Thousand persons i. total ii. less than 18 years'
   measurement_units: []
-  dimension: Society
+  outcome_type: Society
   has_category: IncomeDistributPovertyRisk
   supply_chain_component:
   - Consumption
@@ -2105,7 +2105,7 @@
   definition: ''
   measurement_unit_description: Gini index
   measurement_units: []
-  dimension: Society
+  outcome_type: Society
   has_category: IncomeDistributPovertyRisk
   supply_chain_component:
   - Consumption
@@ -2117,7 +2117,7 @@
   eu2025_sdg_indicator_code: EU_SDG_01_10a
   measurement_unit_description: '% of population'
   measurement_units: []
-  dimension: Society
+  outcome_type: Society
   has_category: IncomeDistributPovertyRisk
   supply_chain_component:
   - Consumption
@@ -2128,7 +2128,7 @@
   definition: ''
   measurement_unit_description: '% (percentage share of income)'
   measurement_units: []
-  dimension: Society
+  outcome_type: Society
   has_category: IncomeDistributPovertyRisk
   supply_chain_component:
   - Consumption
@@ -2139,7 +2139,7 @@
   definition: ''
   measurement_unit_description: '% (percentage share of income)'
   measurement_units: []
-  dimension: Society
+  outcome_type: Society
   has_category: IncomeDistributPovertyRisk
   supply_chain_component:
   - Consumption
@@ -2151,7 +2151,7 @@
   measurement_unit_description: '%'
   measurement_units:
   - PC
-  dimension: Society
+  outcome_type: Society
   has_category: IncomeDistributPovertyRisk
   supply_chain_component:
   - Consumption
@@ -2162,7 +2162,7 @@
   definition: ''
   measurement_unit_description: real number
   measurement_units: []
-  dimension: Society
+  outcome_type: Society
   has_category: FoodEquity
   supply_chain_component:
   - Consumption
@@ -2173,7 +2173,7 @@
   definition: ''
   measurement_unit_description: '% of female population ages 15+'
   measurement_units: []
-  dimension: Society
+  outcome_type: Society
   has_category: GenderEquity
   supply_chain_component: []
   sustainability_impact: Positive
@@ -2183,7 +2183,7 @@
   definition: ''
   measurement_unit_description: 'Score 1 to 6: lowest to highest evidence'
   measurement_units: []
-  dimension: Society
+  outcome_type: Society
   has_category: GenderEquity
   supply_chain_component:
   - PrimaryProduction
@@ -2194,7 +2194,7 @@
   definition: ''
   measurement_unit_description: number (1000 people)
   measurement_units: []
-  dimension: Society
+  outcome_type: Society
   has_category: Demography
   supply_chain_component: []
   sustainability_impact: Undefined
@@ -2204,7 +2204,7 @@
   definition: ''
   measurement_unit_description: '% of total population'
   measurement_units: []
-  dimension: Society
+  outcome_type: Society
   has_category: Demography
   supply_chain_component: []
   sustainability_impact: Undefined
@@ -2214,7 +2214,7 @@
   definition: ''
   measurement_unit_description: '% of popoulation'
   measurement_units: []
-  dimension: Society
+  outcome_type: Society
   has_category: SocialResilience
   supply_chain_component: []
   sustainability_impact: Positive
@@ -2224,7 +2224,7 @@
   definition: ''
   measurement_unit_description: Number per 100 people
   measurement_units: []
-  dimension: Society
+  outcome_type: Society
   has_category: SocialResilience
   supply_chain_component: []
   sustainability_impact: Positive
@@ -2234,7 +2234,7 @@
   definition: ''
   measurement_unit_description: score ranging from -2.5 to 2.5
   measurement_units: []
-  dimension: Society
+  outcome_type: Society
   has_category: SocialResilience
   supply_chain_component: []
   sustainability_impact: Positive
@@ -2244,7 +2244,7 @@
   definition: ''
   measurement_unit_description: '% of households'
   measurement_units: []
-  dimension: Society
+  outcome_type: Society
   has_category: RuralDevelopment
   supply_chain_component: []
   sustainability_impact: Positive

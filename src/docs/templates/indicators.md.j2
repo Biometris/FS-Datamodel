@@ -7,8 +7,8 @@ hide:
 
 [[Export xlsx]]({{xlsx_download_path}})
 
-| Dimensions | Category | Name | Unit(s) | Description | Definition | Supply chain components | Sustainability impact |
-|------------|----------|------|---------|-------------|------------|-------------------------|-----------------------|
+| Outcome type | Activity | Category | Name | Unit(s) | Description | Definition | Supply chain components | Sustainability impact |
+|--------------|----------|----------|------|---------|-------------|------------|-------------------------|-----------------------|
 {% for indicator in indicators -%}
   {%- set id = indicator['id'] -%}
   {%- set name = indicator['name'] -%}
@@ -16,8 +16,9 @@ hide:
   {%- set definition = indicator['definition'] -%}
   {%- set units = indicator['measurement_units'] -%}
   {%- set sustainability_impact = enum_dict['SustainabilityImpactType'][indicator['sustainability_impact']]['title'] -%}
-  {%- set dimension = enum_dict['SustainabilityDimension'][indicator['dimension']]['title'] -%}
+  {%- set outcome_type = enum_dict['FoodSystemOutcomeType'][indicator['outcome_type']]['title'] -%}
+  {%- set activity_type = enum_dict['FoodSystemActivityType'][indicator['activity_type']]['title'] if indicator['activity_type'] else '-' -%}
   {%- set category_id = indicator['has_category'] -%}
   {%- set category_name = categories_dict[indicator['has_category']]['name'] -%}
-| [{{ dimension }}](../model/SustainabilityDimension) | [{{category_name}}](../indicator_categories) | [{{name}}](../indicators/{{id}}) | {% for mu in units %} [{{ enum_dict['IndicatorMeasurementUnit'][mu]['title'] }}](../model/IndicatorMeasurementUnit) {% endfor %} | {{ description | replace("\n", "") }} | {{ definition }} | {% for scp in indicator['supply_chain_component'] %} [{{ enum_dict['SupplyChainComponentType'][scp]['title'] }}](../model/SupplyChainComponentType) {% endfor %} | {{sustainability_impact}} |
+| [{{ outcome_type }}](../model/FoodSystemOutcomeType) | [{{ activity_type }}](../model/FoodSystemActivityType) | [{{category_name}}](../indicator_categories) | [{{name}}](../indicators/{{id}}) | {% for mu in units %} [{{ enum_dict['IndicatorMeasurementUnit'][mu]['title'] }}](../model/IndicatorMeasurementUnit) {% endfor %} | {{ description | replace("\n", "") }} | {{ definition }} | {% for scp in indicator['supply_chain_component'] %} [{{ enum_dict['SupplyChainComponentType'][scp]['title'] }}](../model/SupplyChainComponentType) {% endfor %} | {{sustainability_impact}} |
 {% endfor %}

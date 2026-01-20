@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
 
-from linkml.generators.docgen import DocGenerator, SchemaView, DiagramType
+from linkml.generators.docgen import DocGenerator, DiagramType
 
 from indicator_datastore import DataStore
 
@@ -17,24 +17,24 @@ def create_indicator_hiearchy_json(indicators, categories_dict):
     # Build hierarchy
     hierarchy = {}
     for e in indicators:
-        if e['dimension'] not in hierarchy:
-            hierarchy[e['dimension']] = {}
-        if e['has_category'] not in hierarchy[e['dimension']]:
-            hierarchy[e['dimension']][e['has_category']] = []
-        hierarchy[e['dimension']][e['has_category']].append(e)
+        if e['outcome_type'] not in hierarchy:
+            hierarchy[e['outcome_type']] = {}
+        if e['has_category'] not in hierarchy[e['outcome_type']]:
+            hierarchy[e['outcome_type']][e['has_category']] = []
+        hierarchy[e['outcome_type']][e['has_category']].append(e)
 
     # Convert hierarchy
     sunburst_data = []
-    for dimension, categories in hierarchy.items():
-        dimension_node = {"name": dimension, "children": []}
+    for outcome_type, categories in hierarchy.items():
+        outcome_type_node = {"name": outcome_type, "children": []}
         for category_id, ents in categories.items():
              category_name = categories_dict[category_id]['name']
              category_node = {
                  "name": category_name,
                  "children": [{"name": ent['name'], "value": 1} for ent in ents]
                  }
-             dimension_node["children"].append(category_node)
-        sunburst_data.append(dimension_node)
+             outcome_type_node["children"].append(category_node)
+        sunburst_data.append(outcome_type_node)
 
     # Tree data requires base node
     tree_data = {"name": "Indicator hierarchy", "children": sunburst_data}
