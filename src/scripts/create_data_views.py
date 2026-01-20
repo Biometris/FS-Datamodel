@@ -7,6 +7,8 @@ from linkml.generators.docgen import DocGenerator, SchemaView, DiagramType
 
 from indicator_datastore import DataStore
 
+SCHEMA_PATH = "src/schema/food_system_indicators.yaml"
+
 def create_indicator_hiearchy_json(indicators, categories_dict):
     # Output file
     outfile_path_sunburst = "docs/data/indicators_sunburst_chart_data.json"
@@ -106,33 +108,54 @@ def render_template(
         f.write(markdown_output)
 
 if __name__ == "__main__":
-    schema_path = "src/schema/food_system_indicators.yaml"
 
-    indicator_data_path = "data/indicators.yaml"
+    # Data paths
+    indicator_definitions_data_path = "data/indicators.yaml"
     indicator_categories_data_path = "data/indicator_categories.yaml"
-    database_data_path = "data/databases.yaml"
+    indicator_databases_data_path = "data/databases.yaml"
     indicator_data_collection_details_data_path = "data/indicator_data_collection_details.yaml"
     criterion_data_path = "data/criteria.yaml"
     indicatorscores_data_path = "data/indicatorscores.yaml"
 
+    # Exports
     data_export_path = "docs/data"
-    excel_export_path = os.path.join(data_export_path, "indicator_data_export.xlsx")
-    selection_criteria_excel_export_path = os.path.join(data_export_path, "indicator_criteria_export.xlsx")
     glossary_export_path = os.path.join(data_export_path, "glossary.yaml")
+    excel_exports = {
+        'all': {
+            'name': 'All',
+            'filename': 'indicator_data_export.xlsx',
+            'table_names': None # Set to None to export all
+        },
+        'indicator_definitions': {
+            'name': 'Indicator definitions',
+            'filename': 'indicator_definitions.xlsx',
+            'table_names': [
+                'Indicator'
+            ] 
+        },
+        'indicator_criteria': { 
+            'name': 'Indicator selection criteria',
+            'filename': 'indicator_criteria_export.xlsx',
+            'table_names': [
+                'IndicatorCriterion',
+                'CriterionCategory'
+            ] 
+        }
+    }
 
     # Setup data store
     datastore = DataStore(
-        schema_file=schema_path,
-        indicators_file=indicator_data_path,
+        schema_file=SCHEMA_PATH,
+        indicator_definitions_file=indicator_definitions_data_path,
         indicator_categories_file=indicator_categories_data_path,
-        databases_file=database_data_path,
+        databases_file=indicator_databases_data_path,
         indicator_data_collection_details_file=indicator_data_collection_details_data_path,
         criteria_file=criterion_data_path,
-        indicatorscores_file=indicatorscores_data_path
+        indicator_scores_file=indicatorscores_data_path
     )
 
     # Generate model diagram
-    doc_gen = DocGenerator(schema_path, importmap={})
+    doc_gen = DocGenerator(SCHEMA_PATH, importmap={})
     doc_gen.diagram_type = DiagramType.er_diagram
     diagram_classes = [
         'Indicator',
@@ -165,6 +188,7 @@ if __name__ == "__main__":
 
         render_template(
             template_name = 'indicators',
+            xlsx_download_path = f'../data/{excel_exports['indicator_definitions']['filename']}',
             indicators = indicators,
             categories_dict = indicator_categories_dict,
             enum_dict = enum_dict
@@ -219,7 +243,7 @@ if __name__ == "__main__":
         criteria = datastore.get_indicator_criteria()
         render_template(
             template_name = 'indicator_criteria',
-            xlsx_download_path = '../data/indicator_criteria_export.xlsx',
+            xlsx_download_path = f'../data/{excel_exports['indicator_criteria']['filename']}',
             criteria = criteria,
             enum_dict = enum_dict
         )
@@ -229,16 +253,16 @@ if __name__ == "__main__":
         render_template(
             template_name = 'indicator_scores'
         )
-
-        # Export entire datastore to Excel
-        datastore.export_to_excel(excel_export_path)
-
-        # Export indicator selection criteria
-        datastore.export_to_excel(
-            selection_criteria_excel_export_path,
-            table_names = {'IndicatorCriterion', 'CriterionCategory'}
-        )
-
+            
         # Export glossary terms
         datastore.export_glossary_yaml(glossary_export_path)
+
+        # Create data exports
+        for key, excel_export in excel_exports.items():
+            print(f'Exporting {key}')
+            full_path = os.path.join(data_export_path, excel_export['filename'])
+            datastore.export_to_excel(
+                full_path,
+                table_names = excel_export['table_names']
+            )
 

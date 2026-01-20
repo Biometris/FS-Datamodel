@@ -1,4 +1,4 @@
-from typing import Set
+from typing import List, Set
 from linkml_runtime import SchemaView
 from linkml_store import Client
 from linkml_store.utils.format_utils import load_objects
@@ -10,12 +10,12 @@ class DataStore:
     def __init__(
         self,
         schema_file: str,
-        indicators_file: str,
+        indicator_definitions_file: str,
         indicator_categories_file: str,
         databases_file: str,
         indicator_data_collection_details_file: str,
         criteria_file: str,
-        indicatorscores_file: str
+        indicator_scores_file: str
     ):
         # Initialize LinkML Store with DuckDB
         self.client = Client()
@@ -26,7 +26,7 @@ class DataStore:
         self.db.set_schema_view(sv)
 
         # Add database data from yaml to db.
-        self.add_database_data(indicators_file, "Indicator", "Indicators")
+        self.add_database_data(indicator_definitions_file, "Indicator", "Indicators")
         self.add_database_data(indicator_categories_file, "IndicatorCategories", "IndicatorCategories")
         self.add_database_data(indicator_data_collection_details_file, "IndicatorDataCollectionDetails", "IndicatorDataCollectionDetails")
         self.add_database_data(databases_file, "Database", "Databases")
@@ -133,7 +133,7 @@ class DataStore:
         q = Query(from_table="IndicatorCriteriaScores", limit=-1)
         return self.db.query(q).rows
 
-    def export_to_excel(self, output_path: str, table_names: Set[str] = None):
+    def export_to_excel(self, output_path: str, table_names: List[str] = None):
         """Export the database contents to an Excel file with one sheet per collection."""
         collections = self.db.list_collections()
         with pd.ExcelWriter(output_path, engine='openpyxl') as writer:
