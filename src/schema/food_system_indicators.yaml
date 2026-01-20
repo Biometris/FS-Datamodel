@@ -605,23 +605,18 @@ enums:
 
   ScoreCategory:
     title: score category
-    description: Score category.
+    description:
+      Score category
     permissible_values:
-      VeryPoor:
+      Weak:
         description:
-          Very poor.
-      Poor:
+          Weak.
+      Adequate:
         description:
-          Poor.
-      Moderate:
+          Adequate.
+      Strong:
         description:
-          Moderate.
-      Good:
-        description:
-          Good.
-      Excellent:
-        description:
-          Excellent.
+          Strong.
 
   SustainabilityImpactType:
     title: sustainability impact type

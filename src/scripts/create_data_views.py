@@ -72,11 +72,9 @@ def create_indicator_scores_data_json(criteriascores):
     # Output file
     outfile_path = "docs/data/indicator_scores_chart_data.json"
 
-    score_mapping = {"Excellent": 5,
-                     "Good": 4,
-                     "Moderate": 3,
-                     "Poor": 2,
-                     "VeryPoor": 1}
+    score_mapping = {"Strong": 3,
+                     "Adequate": 2,
+                     "Weak": 1}
 
     chart_data = []
     for score in criteriascores:
@@ -115,7 +113,7 @@ if __name__ == "__main__":
     indicator_databases_data_path = "data/databases.yaml"
     indicator_data_collection_details_data_path = "data/indicator_data_collection_details.yaml"
     criterion_data_path = "data/criteria.yaml"
-    indicatorscores_data_path = "data/indicatorscores.yaml"
+    indicator_scores_data_path = "data/indicator_scores.yaml"
 
     # Exports
     data_export_path = "docs/data"
@@ -136,7 +134,7 @@ if __name__ == "__main__":
         databases_file=indicator_databases_data_path,
         indicator_data_collection_details_file=indicator_data_collection_details_data_path,
         criteria_file=criterion_data_path,
-        indicator_scores_file=indicatorscores_data_path
+        indicator_scores_file=indicator_scores_data_path
     )
 
     # Generate model diagram
@@ -223,7 +221,7 @@ if __name__ == "__main__":
                 database = databases_dict[collection['in_database']],
                 enum_dict = enum_dict
             )
-
+                
         criteria = datastore.get_indicator_criteria()
         render_template(
             template_name = 'indicator_criteria',
@@ -231,12 +229,18 @@ if __name__ == "__main__":
             enum_dict = enum_dict
         )
 
-        criteriascores = datastore.get_indicator_criteria_scores()
-        create_indicator_scores_data_json(criteriascores)
+        criteria_scores = datastore.get_indicator_criteria_scores(
+            include_missing = True,
+            indicators = indicators,
+            criteria = criteria,
+            output_path = os.path.join(data_export_path, 'indicator_scores.xlsx')
+        )
+        create_indicator_scores_data_json(criteria_scores)
         render_template(
             template_name = 'indicator_scores'
         )
-            
+
+
         # Export glossary terms
         datastore.export_glossary_yaml(glossary_export_path)
 

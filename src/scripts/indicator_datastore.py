@@ -31,7 +31,7 @@ class DataStore:
         self.add_database_data(indicator_data_collection_details_file, "IndicatorDataCollectionDetails", "IndicatorDataCollectionDetails")
         self.add_database_data(databases_file, "Database", "Databases")
         self.add_database_data(criteria_file, "IndicatorCriterion", "IndicatorCriteria")
-        #self.add_database_data(indicatorscores_file, "IndicatorcriteriaScore", "IndicatorCriteriaScores")
+        self.add_database_data(indicator_scores_file, "IndicatorcriteriaScore", "IndicatorCriteriaScores")
 
         # Validate cross-links
         print("\nRunning validation...")
@@ -45,6 +45,7 @@ class DataStore:
         collection_name
     ):
         collection = self.db.create_collection(reference_class, collection_name)
+        print(data_path)
         objects = load_objects(data_path)
 
         collection.insert(objects)
@@ -128,10 +129,42 @@ class DataStore:
         q = Query(from_table="IndicatorCriteria", limit=-1)
         return self.db.query(q).rows
 
-    def get_indicator_criteria_scores(self):
+    def get_indicator_criteria_scores(
+        self,
+        include_missing = False,
+        indicators = None,
+        criteria = None,
+        output_path = None
+    ):
         """Return a joined view of indicator criteria scores"""
         q = Query(from_table="IndicatorCriteriaScores", limit=-1)
-        return self.db.query(q).rows
+        criteria_scores = self.db.query(q).rows
+        if include_missing:
+            cs_lookup = {
+                (r['score_for_indicator'], r['scores_criterion']): r
+                for r in criteria_scores
+            }
+            records = []
+            for criterion in criteria:
+                for indicator in indicators:
+                    score = cs_lookup.get((indicator['id'], criterion['id']))
+                    records.append({
+                        'score_for_indicator': indicator['id'],
+                        'indicator_name': indicator['name'],
+                        'scores_criterion': criterion['id'],
+                        'criterion_name': criterion['name'],
+                        'score': score['score'] if score else None,
+                        'comment': score['comment'] if score else None
+                    })
+
+            if output_path:
+                with pd.ExcelWriter(output_path, engine='openpyxl') as writer:
+                    df = pd.DataFrame(records)
+                    df.to_excel(writer, sheet_name='Scores', index=False)
+
+            criteria_scores = records
+
+        return criteria_scores
 
     def export_to_excel(self, output_path: str, table_names: List[str] = None):
         """Export the database contents to an Excel file with one sheet per collection."""

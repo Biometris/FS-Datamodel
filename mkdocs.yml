@@ -13,14 +13,15 @@ nav:
   - Indicator categories: indicator_categories.md
   - Indicator databases: databases_table.md
   - Indicator data collection details: indicator_data_collection_details_table.md
+  #- Indicator scoring:
   - Indicator criteria: indicator_criteria.md
+    #- Indicator scores: indicator_scores.md
   - Vocabularies:
     - Food system activity types: model/FoodSystemActivityType.md
     - Sustainability outcome types: model/FoodSystemOutcomeType.md
     - Supply chain components: model/SupplyChainComponentType.md
     - Units of measurement: model/IndicatorMeasurementUnit.md
     - EU SDG indicators: model/Eu2025SdgIndicator.md
-    #- Indicator scores: indicator_scores.md
   - Downloads: downloads.md
 docs_dir: docs
 site_url: https://biometris.github.io/FS-Datamodel

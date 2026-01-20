@@ -6,7 +6,7 @@
 
 {% for c in criteria -%}
 {%- if c['category'] == key %}
-{{ loop.index }}. **{{ c.get("name") }}**: {{ c.get("description") }}
+{{ loop.index }}. **{{ c.get("name") | capitalize }}**: {{ c.get("description") }}
 {% endif -%}
 {% endfor -%}
 
