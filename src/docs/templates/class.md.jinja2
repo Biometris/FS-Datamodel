@@ -1,4 +1,4 @@
-# {{ element.title | capitalize }} {% if element.deprecated %} <span style="color: red;"><strong> (DEPRECATED) </strong></span>{% endif %}{% if element.abstract %}<span style="color: purple;"><strong><small> (Abstract) </small> </strong></span> {% endif %}
+# {{ element.title | upper }} {% if element.deprecated %} <span style="color: red;"><strong> (DEPRECATED) </strong></span>{% endif %}{% if element.abstract %}<span style="color: purple;"><strong><small> (Abstract) </small> </strong></span> {% endif %}
 {% if element.description or element.notes %}
 <div class="highlight-box">
     {% if element.description %}
