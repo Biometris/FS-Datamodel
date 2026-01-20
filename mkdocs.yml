@@ -19,6 +19,7 @@ nav:
     - Sustainability outcome types: model/FoodSystemOutcomeType.md
     - Supply chain components: model/SupplyChainComponentType.md
     - Units of measurement: model/IndicatorMeasurementUnit.md
+    - EU SDG indicators: model/Eu2025SdgIndicator.md
     #- Indicator scores: indicator_scores.md
   - Downloads: downloads.md
 docs_dir: docs

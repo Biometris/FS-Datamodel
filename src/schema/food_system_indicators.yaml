@@ -322,6 +322,7 @@ slots:
     description:
       Indicates whether the indicator is included in the 2025 edition of the EU Sustainable Development Goals indicator set, and provides the corresponding EU SDG indicator code.
     range: Eu2025SdgIndicator
+    multivalued: true
     required: false
 
   data_link:
