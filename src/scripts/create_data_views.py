@@ -126,18 +126,25 @@ if __name__ == "__main__":
             'filename': 'indicator_data_export.xlsx',
             'table_names': None # Set to None to export all
         },
+        'indicator_categories': {
+            'name': 'Indicator categories',
+            'filename': 'indicator_categories.xlsx',
+            'table_names': [
+                'IndicatorCategories'
+            ] 
+        },
         'indicator_definitions': {
             'name': 'Indicator definitions',
             'filename': 'indicator_definitions.xlsx',
             'table_names': [
-                'Indicator'
+                'Indicators'
             ] 
         },
         'indicator_criteria': { 
             'name': 'Indicator selection criteria',
             'filename': 'indicator_criteria_export.xlsx',
             'table_names': [
-                'IndicatorCriterion',
+                'IndicatorCriteria',
                 'CriterionCategory'
             ] 
         }
@@ -197,7 +204,8 @@ if __name__ == "__main__":
         render_template(
             template_name = 'indicator_categories',
             categories = indicator_categories,
-            enum_dict = enum_dict
+            enum_dict = enum_dict,
+            xlsx_download_path = f'../data/{excel_exports['indicator_categories']['filename']}'
         )
 
         for indicator in indicators:

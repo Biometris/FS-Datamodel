@@ -26,11 +26,11 @@ class DataStore:
         self.db.set_schema_view(sv)
 
         # Add database data from yaml to db.
-        self.add_database_data(indicator_definitions_file, "Indicator", "Indicators")
+        self.add_database_data(indicator_definitions_file, "Indicators", "Indicators")
         self.add_database_data(indicator_categories_file, "IndicatorCategories", "IndicatorCategories")
         self.add_database_data(indicator_data_collection_details_file, "IndicatorDataCollectionDetails", "IndicatorDataCollectionDetails")
         self.add_database_data(databases_file, "Database", "Databases")
-        self.add_database_data(criteria_file, "IndicatorCriterion", "IndicatorCriteria")
+        self.add_database_data(criteria_file, "IndicatorCriteria", "IndicatorCriteria")
         #self.add_database_data(indicatorscores_file, "IndicatorcriteriaScore", "IndicatorCriteriaScores")
 
         # Validate cross-links
