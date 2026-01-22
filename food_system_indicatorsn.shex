@@ -89,28 +89,22 @@ linkml:Sparqlpath xsd:string
 <https://w3id.org/linkml/examples/fsiIndicator> CLOSED {
     (  $<https://w3id.org/linkml/examples/fsiIndicator_tes> (  &<https://w3id.org/linkml/examples/fsiEntity_tes> ;
           rdf:type [ <https://w3id.org/linkml/examples/fsiEntity> ] ? ;
+          rdfs:label @<https://w3id.org/linkml/examples/fsiLabelType> ? ;
+          dct:description @<https://w3id.org/linkml/examples/fsiNarrativeText> ? ;
           <https://w3id.org/linkml/examples/fsidefinition> @<https://w3id.org/linkml/examples/fsiNarrativeText> ? ;
-          <https://w3id.org/linkml/examples/fsieu2025_sdg_indicator_code> [
-             <https://w3id.org/linkml/examples/fsiEu2025SdgIndicator#EU_SDG_01_10>
-             <https://w3id.org/linkml/examples/fsiEu2025SdgIndicator#EU_SDG_01_10a>
-             <https://w3id.org/linkml/examples/fsiEu2025SdgIndicator#EU_SDG_01_40>
-             <https://w3id.org/linkml/examples/fsiEu2025SdgIndicator#EU_SDG_02_10>
-             <https://w3id.org/linkml/examples/fsiEu2025SdgIndicator#EU_SDG_02_20>
-             <https://w3id.org/linkml/examples/fsiEu2025SdgIndicator#EU_SDG_02_30>
-             <https://w3id.org/linkml/examples/fsiEu2025SdgIndicator#EU_SDG_02_40>
-             <https://w3id.org/linkml/examples/fsiEu2025SdgIndicator#EU_SDG_02_60>
-             <https://w3id.org/linkml/examples/fsiEu2025SdgIndicator#EU_SDG_02_53>
-             <https://w3id.org/linkml/examples/fsiEu2025SdgIndicator#EU_SDG_08_10>
-             <https://w3id.org/linkml/examples/fsiEu2025SdgIndicator#EU_SDG_06_40>
-             <https://w3id.org/linkml/examples/fsiEu2025SdgIndicator#EU_SDG_06_60>
-             <https://w3id.org/linkml/examples/fsiEu2025SdgIndicator#EU_SDG_08_30>
-             <https://w3id.org/linkml/examples/fsiEu2025SdgIndicator#EU_SDG_15_42>
-             <https://w3id.org/linkml/examples/fsiEu2025SdgIndicator#EU_SDG_15_50> ] ? ;
-          <https://w3id.org/linkml/examples/fsidimension> [
-             <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Environment>
-             <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Economy>
-             <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Society>
-             <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Health> ] ;
+          <https://w3id.org/linkml/examples/fsiactivity_type> [
+             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodSupply>
+             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodEnvironment>
+             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodDemand>
+             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#UseNaturalResources>
+             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#ConsumptionAndDiets> ] ? ;
+          <https://w3id.org/linkml/examples/fsioutcome_type> [
+             <https://w3id.org/linkml/examples/fsiFoodSystemOutcomeType#Environment>
+             <https://w3id.org/linkml/examples/fsiFoodSystemOutcomeType#Economy>
+             <https://w3id.org/linkml/examples/fsiFoodSystemOutcomeType#Society>
+             <https://w3id.org/linkml/examples/fsiFoodSystemOutcomeType#Health>
+             <https://w3id.org/linkml/examples/fsiFoodSystemOutcomeType#FoodSecurity>
+             <https://w3id.org/linkml/examples/fsiFoodSystemOutcomeType#Resilience> ] ;
           <https://w3id.org/linkml/examples/fsisupply_chain_component> [
              <https://w3id.org/linkml/examples/fsiSupplyChainComponentType#PrimaryProduction>
              <https://w3id.org/linkml/examples/fsiSupplyChainComponentType#FoodProcessing>
@@ -282,8 +276,22 @@ linkml:Sparqlpath xsd:string
              <https://w3id.org/linkml/examples/fsiSustainabilityImpactType#Positive>
              <https://w3id.org/linkml/examples/fsiSustainabilityImpactType#Negative>
              <https://w3id.org/linkml/examples/fsiSustainabilityImpactType#Undefined> ] ? ;
-          rdfs:label @<https://w3id.org/linkml/examples/fsiLabelType> ? ;
-          dct:description @<https://w3id.org/linkml/examples/fsiNarrativeText> ?
+          <https://w3id.org/linkml/examples/fsieu2025_sdg_indicator_code> [
+             <https://w3id.org/linkml/examples/fsiEu2025SdgIndicator#EU_SDG_01_10>
+             <https://w3id.org/linkml/examples/fsiEu2025SdgIndicator#EU_SDG_01_10a>
+             <https://w3id.org/linkml/examples/fsiEu2025SdgIndicator#EU_SDG_01_40>
+             <https://w3id.org/linkml/examples/fsiEu2025SdgIndicator#EU_SDG_02_10>
+             <https://w3id.org/linkml/examples/fsiEu2025SdgIndicator#EU_SDG_02_20>
+             <https://w3id.org/linkml/examples/fsiEu2025SdgIndicator#EU_SDG_02_30>
+             <https://w3id.org/linkml/examples/fsiEu2025SdgIndicator#EU_SDG_02_40>
+             <https://w3id.org/linkml/examples/fsiEu2025SdgIndicator#EU_SDG_02_60>
+             <https://w3id.org/linkml/examples/fsiEu2025SdgIndicator#EU_SDG_02_53>
+             <https://w3id.org/linkml/examples/fsiEu2025SdgIndicator#EU_SDG_08_10>
+             <https://w3id.org/linkml/examples/fsiEu2025SdgIndicator#EU_SDG_06_40>
+             <https://w3id.org/linkml/examples/fsiEu2025SdgIndicator#EU_SDG_06_60>
+             <https://w3id.org/linkml/examples/fsiEu2025SdgIndicator#EU_SDG_08_30>
+             <https://w3id.org/linkml/examples/fsiEu2025SdgIndicator#EU_SDG_15_42>
+             <https://w3id.org/linkml/examples/fsiEu2025SdgIndicator#EU_SDG_15_50> ] *
        ) ;
        rdf:type [ <https://w3id.org/linkml/examples/fsiIndicator> ]
     )
@@ -293,7 +301,12 @@ linkml:Sparqlpath xsd:string
     (  $<https://w3id.org/linkml/examples/fsiIndicatorCategory_tes> (  &<https://w3id.org/linkml/examples/fsiEntity_tes> ;
           rdf:type [ <https://w3id.org/linkml/examples/fsiEntity> ] ? ;
           rdfs:label @<https://w3id.org/linkml/examples/fsiLabelType> ? ;
-          dct:description @<https://w3id.org/linkml/examples/fsiNarrativeText> ?
+          dct:description @<https://w3id.org/linkml/examples/fsiNarrativeText> ? ;
+          <https://w3id.org/linkml/examples/fsidimension> [
+             <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Environment>
+             <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Economy>
+             <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Society>
+             <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Health> ]
        ) ;
        rdf:type [ <https://w3id.org/linkml/examples/fsiIndicatorCategory> ]
     )
@@ -303,10 +316,9 @@ linkml:Sparqlpath xsd:string
     (  $<https://w3id.org/linkml/examples/fsiIndicatorcriteriaScore_tes> ( 
           <https://w3id.org/linkml/examples/fsiscore_for_indicator> @<https://w3id.org/linkml/examples/fsiIndicator> ? ;
           <https://w3id.org/linkml/examples/fsiscores_criterion> @<https://w3id.org/linkml/examples/fsiIndicatorCriterion> ? ;
-          <https://w3id.org/linkml/examples/fsiscore> [ <https://w3id.org/linkml/examples/fsiScoreCategory#VeryPoor>
-             <https://w3id.org/linkml/examples/fsiScoreCategory#Poor> <https://w3id.org/linkml/examples/fsiScoreCategory#Moderate>
-             <https://w3id.org/linkml/examples/fsiScoreCategory#Good> <https://w3id.org/linkml/examples/fsiScoreCategory#Excellent>
-             ] ? ;
+          <https://w3id.org/linkml/examples/fsiscore> [ <https://w3id.org/linkml/examples/fsiScoreCategory#Weak>
+             <https://w3id.org/linkml/examples/fsiScoreCategory#Adequate>
+             <https://w3id.org/linkml/examples/fsiScoreCategory#Strong> ] ? ;
           <https://w3id.org/linkml/examples/fsicomment> @<https://w3id.org/linkml/examples/fsiNarrativeText> ?
        ) ;
        rdf:type [ <https://w3id.org/linkml/examples/fsiIndicatorcriteriaScore> ] ?

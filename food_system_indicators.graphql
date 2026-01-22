@@ -26,6 +26,25 @@ enum Eu2025SdgIndicator
     EU_SDG_15_50
   }
 
+enum FoodSystemActivityType
+  {
+    FoodSupply
+    FoodEnvironment
+    FoodDemand
+    UseNaturalResources
+    ConsumptionAndDiets
+  }
+
+enum FoodSystemOutcomeType
+  {
+    Environment
+    Economy
+    Society
+    Health
+    FoodSecurity
+    Resilience
+  }
+
 enum IndicatorMeasurementUnit
   {
     NBR
@@ -1078,11 +1097,9 @@ enum IndicatorMeasurementUnit
 
 enum ScoreCategory
   {
-    VeryPoor
-    Poor
-    Moderate
-    Good
-    Excellent
+    Weak
+    Adequate
+    Strong
   }
 
 enum SpatialGranularity
@@ -1159,17 +1176,18 @@ interface Entity
 type Indicator
   {
     iri: IriType
+    id: String!
+    name: LabelType
+    description: NarrativeText
     definition: NarrativeText
-    eu2025SdgIndicatorCode: Eu2025SdgIndicator
-    dimension: SustainabilityDimension!
+    activityType: FoodSystemActivityType
+    outcomeType: FoodSystemOutcomeType!
     supplyChainComponent: [SupplyChainComponentType]
     measurementUnitDescription: Unit
     measurementUnits: [IndicatorMeasurementUnit]
     hasCategory: IndicatorCategory!
     sustainabilityImpact: SustainabilityImpactType
-    id: String!
-    name: LabelType
-    description: NarrativeText
+    eu2025SdgIndicatorCode: [Eu2025SdgIndicator]
   }
 
 type IndicatorCategory
@@ -1178,6 +1196,7 @@ type IndicatorCategory
     id: String!
     name: LabelType
     description: NarrativeText
+    dimension: SustainabilityDimension!
   }
 
 type IndicatorcriteriaScore
@@ -1199,8 +1218,8 @@ type IndicatorCriterion
 
 type IndicatorDataCollectionDetails
   {
-    id: String!
     iri: IriType
+    id: String!
     name: LabelType
     description: NarrativeText
     measuresIndicator: Indicator!

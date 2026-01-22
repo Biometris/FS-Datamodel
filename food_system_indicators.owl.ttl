@@ -20,32 +20,32 @@ fsi:IndicatorDatapoint a owl:Class ;
     rdfs:label "IndicatorDatapoint" ;
     dct:title "indicator datapoint" ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom fsi:Indicator ;
+            owl:onProperty fsi:measurement_of ],
+        [ a owl:Restriction ;
             owl:minCardinality 1 ;
             owl:onProperty fsi:measurement_of ],
         [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
+            owl:minCardinality 1 ;
             owl:onProperty fsi:id ],
         [ a owl:Restriction ;
             owl:allValuesFrom fsi:IndicatorDataCollectionDetails ;
             owl:onProperty fsi:part_of_collection ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
-            owl:onProperty fsi:part_of_collection ],
+            owl:onProperty fsi:id ],
         [ a owl:Restriction ;
-            owl:minCardinality 1 ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty fsi:id ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
             owl:onProperty fsi:part_of_collection ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
             owl:onProperty fsi:measurement_of ],
         [ a owl:Restriction ;
             owl:minCardinality 1 ;
-            owl:onProperty fsi:id ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom xsd:string ;
-            owl:onProperty fsi:id ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom fsi:Indicator ;
-            owl:onProperty fsi:measurement_of ],
+            owl:onProperty fsi:part_of_collection ],
         fsi:QuantityValue ;
     skos:definition "A food system indicator datapoint is a measured value or statistic that provides quantitative information for a specific sustainability indicator at a given time and place, used to track the performance or state of the food system." ;
     skos:inScheme fsi: .
@@ -54,41 +54,41 @@ fsi:IndicatorcriteriaScore a owl:Class ;
     rdfs:label "IndicatorcriteriaScore" ;
     dct:title "indicator criterion score" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:minCardinality 0 ;
+            owl:allValuesFrom fsi:Indicator ;
             owl:onProperty fsi:score_for_indicator ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:scores_criterion ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:score_for_indicator ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty fsi:scores_criterion ],
         [ a owl:Restriction ;
             owl:allValuesFrom fsi:IndicatorCriterion ;
             owl:onProperty fsi:scores_criterion ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:scores_criterion ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:comment ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:score_for_indicator ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:scores_criterion ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:score ],
         [ a owl:Restriction ;
             owl:allValuesFrom xsd:string ;
             owl:onProperty fsi:comment ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
-            owl:onProperty fsi:score ],
+            owl:onProperty fsi:score_for_indicator ],
         [ a owl:Restriction ;
             owl:allValuesFrom fsi:ScoreCategory ;
             owl:onProperty fsi:score ],
         [ a owl:Restriction ;
-            owl:minCardinality 0 ;
+            owl:maxCardinality 1 ;
             owl:onProperty fsi:comment ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
-            owl:onProperty fsi:score ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom fsi:Indicator ;
-            owl:onProperty fsi:score_for_indicator ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:comment ] ;
+            owl:onProperty fsi:score ] ;
     skos:definition "Score for an indicator for an indicator selection criterion." ;
     skos:inScheme fsi: .
 
@@ -6396,23 +6396,23 @@ fsi:Database a owl:Class ;
     rdfs:label "Database" ;
     dct:title "database" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:allValuesFrom fsi:TimeGranularity ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:database_link ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
             owl:onProperty fsi:update_frequency ],
         [ a owl:Restriction ;
             owl:allValuesFrom xsd:string ;
             owl:onProperty fsi:database_link ],
         [ a owl:Restriction ;
+            owl:allValuesFrom fsi:TimeGranularity ;
+            owl:onProperty fsi:update_frequency ],
+        [ a owl:Restriction ;
             owl:maxCardinality 1 ;
             owl:onProperty fsi:database_link ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
             owl:onProperty fsi:update_frequency ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty fsi:update_frequency ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty fsi:database_link ],
         fsi:Entity ;
     skos:definition "Database containing data corresponding to an indicator." ;
     skos:inScheme fsi: .
@@ -6477,35 +6477,110 @@ fsi:Database a owl:Class ;
     rdfs:label "EU_SDG_15_50" ;
     rdfs:subClassOf fsi:Eu2025SdgIndicator .
 
+<https://w3id.org/linkml/examples/fsiFoodSystemActivityType#ConsumptionAndDiets> a owl:Class ;
+    rdfs:label "ConsumptionAndDiets" ;
+    dct:title "consumption and diets" ;
+    rdfs:subClassOf fsi:FoodSystemActivityType ;
+    skos:definition "This covers food consumption and diets, for total populations, vulnerable groups. Consumption and diets are a result of the food supply, food environment,  and food demand.  It covers, among others, total diets and consumption, including for instance  amount of meat consumption, FBDG, consumption patterns." .
+
+<https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodDemand> a owl:Class ;
+    rdfs:label "FoodDemand" ;
+    dct:title "food demand" ;
+    rdfs:subClassOf fsi:FoodSystemActivityType ;
+    skos:definition "Addresses consumer behaviour and consumer characteristics, incl. consumer preferences. Consumer characteristics can refer to attributes such as knowledge, available time, resources (purchasing power), age, sex, culture, religion, etc. Through these characteristics, consumers develop certain preferences that influence their food choices. It considers various groups (e.g., socioeconomic, demographic, etc.), along with their norms, values, and levels of food literacy." .
+
+<https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodEnvironment> a owl:Class ;
+    rdfs:label "FoodEnvironment" ;
+    dct:title "food environment" ;
+    rdfs:subClassOf fsi:FoodSystemActivityType ;
+    skos:definition "The food environment can be understood as the physical and social environment that affects what people eat. It refers to the settings and conditions in which individuals engage with the food system to obtain and consume food. It also includes the broader social, economic, and cultural contexts that shape food choices. It includes, among others, factors such as food accessibility, availability, pricing, properties, marketing, and messaging. It covers various settings such as supermarkets, hospitality/catering, shops/retail, and out-of-home settings. Furthermore, distinctions can be made between urban and rural areas, which have for instance different distances to supermarkets and therefore access to food." .
+
+<https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodSupply> a owl:Class ;
+    rdfs:label "FoodSupply" ;
+    dct:title "food supply" ;
+    rdfs:subClassOf fsi:FoodSystemActivityType ;
+    skos:definition "This includes activities across the food value chain, incl.  activities from post-harvest and processing to packaging, distribution, and retail. The food value chain operates within an enabling environment that provides the necessary conditions for its functioning, including transport infrastructure. Additionally, the food supply chain is supported by a range of business services that offer goods and services to actors within the chain, such as training, agricultural inputs, technical support, and financial services." .
+
+<https://w3id.org/linkml/examples/fsiFoodSystemActivityType#UseNaturalResources> a owl:Class ;
+    rdfs:label "UseNaturalResources" ;
+    dct:title "use of natural resources" ;
+    rdfs:subClassOf fsi:FoodSystemActivityType ;
+    skos:definition "This refers to the direct use of natural resources and materials that are required to support the food chain, including, among others, inputs such as water, land, crops minerals, fertilisers, energy sources, and packaging materials, among others. These resources are used across the different food supply and food environment." .
+
+<https://w3id.org/linkml/examples/fsiFoodSystemOutcomeType#Economy> a owl:Class ;
+    rdfs:label "Economy" ;
+    dct:title "economic impacts" ;
+    rdfs:subClassOf fsi:FoodSystemOutcomeType ;
+    skos:definition "Social impacts encompass the outcomes resulting from the interactions between society and the food system. It includes, among others, indicators related to employment and animal welfare, among others." .
+
+<https://w3id.org/linkml/examples/fsiFoodSystemOutcomeType#Environment> a owl:Class ;
+    rdfs:label "Environment" ;
+    dct:title "environmental impacts" ;
+    rdfs:subClassOf fsi:FoodSystemOutcomeType ;
+    skos:definition "This covers the impact on natural resources and the biophysical drivers of the food system. It includes, among others, the impact on climate change, biodiversity loss, land, soils, use of (micro)minerals and water. It may also include an assessment against the planetary boundary framework." .
+
+<https://w3id.org/linkml/examples/fsiFoodSystemOutcomeType#FoodSecurity> a owl:Class ;
+    rdfs:label "FoodSecurity" ;
+    dct:title "food security" ;
+    rdfs:subClassOf fsi:FoodSystemOutcomeType ;
+    skos:definition "Food security refers to the availability, accessibility (food affordability), and utilisation of sufficient, safe, and nutritious food that meets dietary needs and food preferences for an active and healthy life, for all people, now and in the future. It encompasses the environmental, economic, social and health outcomes." .
+
+<https://w3id.org/linkml/examples/fsiFoodSystemOutcomeType#Health> a owl:Class ;
+    rdfs:label "Health" ;
+    dct:title "health impacts" ;
+    rdfs:subClassOf fsi:FoodSystemOutcomeType ;
+    skos:definition "Health impacts from especially  diets. It includes, among others, indicators related to food safety, burden of disease, number of noncommunicable diseases (NCDs) related to diets, adherence to food-based dietary guidelines (FBDGs), among others." .
+
+<https://w3id.org/linkml/examples/fsiFoodSystemOutcomeType#Resilience> a owl:Class ;
+    rdfs:label "Resilience" ;
+    dct:title "resilience" ;
+    rdfs:subClassOf fsi:FoodSystemOutcomeType ;
+    skos:definition "Resilience refers to the capacity of food systems to withstand, adapt to, and recover from shocks and stresses (e.g. climate change, economic crises, conflict), while continuing to function in a sustainable and equitable way. It includes the structural conditions, policies, and governance mechanisms that enable stable and healthy food supplies now and in the future. A resilient food system provides food that is ecologically sustainable, socially just, and economically viable. It ensures continued access to healthy food for all, supports sustainable production and consumption patterns, and strengthens the ability of communities and institutions to cope with uncertainty and long-term change." .
+
+<https://w3id.org/linkml/examples/fsiFoodSystemOutcomeType#Society> a owl:Class ;
+    rdfs:label "Society" ;
+    dct:title "societal impacts" ;
+    rdfs:subClassOf fsi:FoodSystemOutcomeType ;
+    skos:definition "Social impacts encompass the outcomes resulting from the interactions between society and the food system. It includes, among others, indicators related to employment and animal welfare, among others." .
+
 fsi:IndicatorCategory a owl:Class ;
     rdfs:label "IndicatorCategory" ;
     dct:title "indicator category" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:allValuesFrom xsd:string ;
-            owl:onProperty fsi:id ],
+            owl:allValuesFrom fsi:SustainabilityDimension ;
+            owl:onProperty fsi:dimension ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
+            owl:onProperty fsi:description ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:id ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty fsi:description ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:description ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty fsi:dimension ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
             owl:onProperty fsi:id ],
         [ a owl:Restriction ;
             owl:minCardinality 1 ;
             owl:onProperty fsi:id ],
         [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:name ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:dimension ],
+        [ a owl:Restriction ;
             owl:maxCardinality 1 ;
             owl:onProperty fsi:name ],
         [ a owl:Restriction ;
             owl:allValuesFrom xsd:string ;
-            owl:onProperty fsi:description ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom xsd:string ;
-            owl:onProperty fsi:name ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty fsi:description ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:description ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
             owl:onProperty fsi:name ],
         fsi:Entity ;
     skos:definition "The category the indicator belongs to." ;
@@ -6531,74 +6606,101 @@ fsi:IndicatorDataCollectionDetails a owl:Class ;
     rdfs:label "IndicatorDataCollectionDetails" ;
     dct:title "indicator data collection details" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:oldest_datapoint ],
-        [ a owl:Restriction ;
             owl:minCardinality 0 ;
-            owl:onProperty fsi:spatial_granularity ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty fsi:data_link ],
-        [ a owl:Restriction ;
-            owl:minCardinality 1 ;
-            owl:onProperty fsi:in_database ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom fsi:TimeGranularity ;
-            owl:onProperty fsi:time_granularity ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:data_link ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom xsd:string ;
-            owl:onProperty fsi:data_link ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:spatial_granularity ],
+            owl:onProperty fsi:spatial_scope ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
             owl:onProperty fsi:time_granularity ],
         [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:in_database ],
-        [ a owl:Restriction ;
             owl:minCardinality 0 ;
             owl:onProperty fsi:oldest_datapoint ],
         [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:newest_datapoint ],
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:data_link ],
         [ a owl:Restriction ;
-            owl:minCardinality 1 ;
-            owl:onProperty fsi:measures_indicator ],
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:description ],
         [ a owl:Restriction ;
             owl:allValuesFrom fsi:Indicator ;
             owl:onProperty fsi:measures_indicator ],
         [ a owl:Restriction ;
-            owl:allValuesFrom linkml:DateOrDatetime ;
-            owl:onProperty fsi:newest_datapoint ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom fsi:Database ;
-            owl:onProperty fsi:in_database ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty fsi:spatial_scope ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty fsi:time_granularity ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom fsi:SpatialGranularity ;
-            owl:onProperty fsi:spatial_granularity ],
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:id ],
         [ a owl:Restriction ;
             owl:allValuesFrom fsi:SpatialScopeType ;
             owl:onProperty fsi:spatial_scope ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
-            owl:onProperty fsi:newest_datapoint ],
+            owl:onProperty fsi:time_granularity ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:spatial_granularity ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty fsi:description ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:data_link ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty fsi:id ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:oldest_datapoint ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty fsi:in_database ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
             owl:onProperty fsi:spatial_scope ],
         [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty fsi:name ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:newest_datapoint ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty fsi:id ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:in_database ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:name ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:description ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:name ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:spatial_granularity ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom fsi:Database ;
+            owl:onProperty fsi:in_database ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom fsi:TimeGranularity ;
+            owl:onProperty fsi:time_granularity ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty fsi:data_link ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty fsi:measures_indicator ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom fsi:SpatialGranularity ;
+            owl:onProperty fsi:spatial_granularity ],
+        [ a owl:Restriction ;
             owl:allValuesFrom linkml:DateOrDatetime ;
             owl:onProperty fsi:oldest_datapoint ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:DateOrDatetime ;
+            owl:onProperty fsi:newest_datapoint ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:newest_datapoint ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
             owl:onProperty fsi:measures_indicator ],
@@ -6606,30 +6708,20 @@ fsi:IndicatorDataCollectionDetails a owl:Class ;
     skos:definition "Details on the collection of indicator data within a certain database/dataset." ;
     skos:inScheme fsi: .
 
-<https://w3id.org/linkml/examples/fsiScoreCategory#Excellent> a owl:Class ;
-    rdfs:label "Excellent" ;
+<https://w3id.org/linkml/examples/fsiScoreCategory#Adequate> a owl:Class ;
+    rdfs:label "Adequate" ;
     rdfs:subClassOf fsi:ScoreCategory ;
-    skos:definition "Excellent." .
+    skos:definition "Adequate." .
 
-<https://w3id.org/linkml/examples/fsiScoreCategory#Good> a owl:Class ;
-    rdfs:label "Good" ;
+<https://w3id.org/linkml/examples/fsiScoreCategory#Strong> a owl:Class ;
+    rdfs:label "Strong" ;
     rdfs:subClassOf fsi:ScoreCategory ;
-    skos:definition "Good." .
+    skos:definition "Strong." .
 
-<https://w3id.org/linkml/examples/fsiScoreCategory#Moderate> a owl:Class ;
-    rdfs:label "Moderate" ;
+<https://w3id.org/linkml/examples/fsiScoreCategory#Weak> a owl:Class ;
+    rdfs:label "Weak" ;
     rdfs:subClassOf fsi:ScoreCategory ;
-    skos:definition "Moderate." .
-
-<https://w3id.org/linkml/examples/fsiScoreCategory#Poor> a owl:Class ;
-    rdfs:label "Poor" ;
-    rdfs:subClassOf fsi:ScoreCategory ;
-    skos:definition "Poor." .
-
-<https://w3id.org/linkml/examples/fsiScoreCategory#VeryPoor> a owl:Class ;
-    rdfs:label "VeryPoor" ;
-    rdfs:subClassOf fsi:ScoreCategory ;
-    skos:definition "Very poor." .
+    skos:definition "Weak." .
 
 <https://w3id.org/linkml/examples/fsiSpatialGranularity#Country> a owl:Class ;
     rdfs:label "Country" ;
@@ -6737,25 +6829,25 @@ fsi:IndicatorDataCollectionDetails a owl:Class ;
     rdfs:label "Economy" ;
     dct:title "economy" ;
     rdfs:subClassOf fsi:SustainabilityDimension ;
-    skos:definition "Sustainability dimension that focuses on the performance, efficiency, and resilience of economic activities within the food system, including aspects like productivity, value distribution, competitiveness, and financial viability." .
+    skos:definition "TODO" .
 
 <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Environment> a owl:Class ;
     rdfs:label "Environment" ;
     dct:title "environment" ;
     rdfs:subClassOf fsi:SustainabilityDimension ;
-    skos:definition "Sustainability dimension that focuses on the state and management of natural resources and ecosystems, including aspects such as climate, biodiversity, pollution, and resource efficiency, to ensure the food system operates within ecological limits." .
+    skos:definition "TODO" .
 
 <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Health> a owl:Class ;
     rdfs:label "Health" ;
     dct:title "health" ;
     rdfs:subClassOf fsi:SustainabilityDimension ;
-    skos:definition "Sustainability dimension that focucus on ... ." .
+    skos:definition "TODO" .
 
 <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Society> a owl:Class ;
     rdfs:label "Society" ;
     dct:title "society" ;
     rdfs:subClassOf fsi:SustainabilityDimension ;
-    skos:definition "Sustainability dimension that focuses on human well-being, equity, and societal outcomes within the food system, including aspects such as health, nutrition, fairness, labor conditions, and access to resources." .
+    skos:definition "TODO" .
 
 <https://w3id.org/linkml/examples/fsiSustainabilityImpactType#Negative> a owl:Class ;
     rdfs:label "Negative" ;
@@ -6800,6 +6892,13 @@ fsi:IndicatorDataCollectionDetails a owl:Class ;
     rdfs:subClassOf fsi:TimeGranularity ;
     skos:definition "Yearly." .
 
+fsi:eu2025_sdg_indicator_code a owl:ObjectProperty ;
+    rdfs:label "eu2025_sdg_indicator_code" ;
+    dct:title "EU (2025) SDG indicator code" ;
+    rdfs:range fsi:Eu2025SdgIndicator ;
+    skos:definition "Indicates whether the indicator is included in the 2025 edition of the EU Sustainable Development Goals indicator set, and provides the corresponding EU SDG indicator code." ;
+    skos:inScheme fsi: .
+
 fsi:measurement_units a owl:ObjectProperty ;
     rdfs:label "measurement_units" ;
     dct:title "units of measurement" ;
@@ -6818,25 +6917,32 @@ fsi:QuantityValue a owl:Class ;
     rdfs:label "QuantityValue" ;
     dct:title "quantity value" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:minCardinality 0 ;
+            owl:allValuesFrom UO:0000000 ;
             owl:onProperty fsi:has_unit ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
             owl:onProperty fsi:has_numeric_value ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:has_unit ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:has_numeric_value ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:has_unit ],
         [ a owl:Restriction ;
             owl:allValuesFrom xsd:double ;
             owl:onProperty fsi:has_numeric_value ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:has_unit ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty fsi:has_numeric_value ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom UO:0000000 ;
-            owl:onProperty fsi:has_unit ],
         fsi:Entity ;
     skos:definition "A value of an attribute that is quantitative and measurable, expressed as a combination of a unit and a numeric value" ;
+    skos:inScheme fsi: .
+
+fsi:activity_type a owl:ObjectProperty ;
+    rdfs:label "activity_type" ;
+    dct:title "food system activity" ;
+    rdfs:range fsi:FoodSystemActivityType ;
+    skos:definition "A reference to the food system activity that is the subject of this indicator's measurement." ;
     skos:inScheme fsi: .
 
 fsi:category a owl:ObjectProperty ;
@@ -6877,13 +6983,6 @@ fsi:dimension a owl:ObjectProperty ;
     dct:title "dimension" ;
     rdfs:range fsi:SustainabilityDimension ;
     skos:definition "Reference to the dimension that the indicator belongs to." ;
-    skos:inScheme fsi: .
-
-fsi:eu2025_sdg_indicator_code a owl:ObjectProperty ;
-    rdfs:label "eu2025_sdg_indicator_code" ;
-    dct:title "EU (2025) SDG indicator code" ;
-    rdfs:range fsi:Eu2025SdgIndicator ;
-    skos:definition "Indicates whether the indicator is included in the 2025 edition of the EU Sustainable Development Goals indicator set, and provides the corresponding EU SDG indicator code." ;
     skos:inScheme fsi: .
 
 fsi:has_category a owl:ObjectProperty ;
@@ -6962,6 +7061,13 @@ fsi:oldest_datapoint a owl:DatatypeProperty ;
     skos:definition "Oldest datapoint for which the indicator is measured." ;
     skos:inScheme fsi: .
 
+fsi:outcome_type a owl:ObjectProperty ;
+    rdfs:label "outcome_type" ;
+    dct:title "outcome type" ;
+    rdfs:range fsi:FoodSystemOutcomeType ;
+    skos:definition "Reference to the type of the outcome measured by the indicator." ;
+    skos:inScheme fsi: .
+
 fsi:part_of_collection a owl:ObjectProperty ;
     rdfs:label "part_of_collection" ;
     dct:title "part of collection" ;
@@ -7031,6 +7137,16 @@ fsi:update_frequency a owl:ObjectProperty ;
 UO:0000000 a rdfs:Datatype ;
     owl:equivalentClass xsd:string .
 
+fsi:ScoreCategory a owl:Class ;
+    rdfs:label "ScoreCategory" ;
+    dct:title "score category" ;
+    owl:unionOf ( <https://w3id.org/linkml/examples/fsiScoreCategory#Weak> <https://w3id.org/linkml/examples/fsiScoreCategory#Adequate> <https://w3id.org/linkml/examples/fsiScoreCategory#Strong> ) ;
+    skos:definition "Score category" ;
+    skos:inScheme fsi: ;
+    linkml:permissible_values <https://w3id.org/linkml/examples/fsiScoreCategory#Adequate>,
+        <https://w3id.org/linkml/examples/fsiScoreCategory#Strong>,
+        <https://w3id.org/linkml/examples/fsiScoreCategory#Weak> .
+
 fsi:SustainabilityImpactType a owl:Class ;
     rdfs:label "SustainabilityImpactType" ;
     dct:title "sustainability impact type" ;
@@ -7056,59 +7172,23 @@ fsi:Indicator a owl:Class ;
     rdfs:label "Indicator" ;
     dct:title "indicator" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:measurement_unit_description ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:id ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty fsi:measurement_units ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom UO:0000000 ;
-            owl:onProperty fsi:measurement_unit_description ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty fsi:supply_chain_component ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom fsi:SupplyChainComponentType ;
-            owl:onProperty fsi:supply_chain_component ],
-        [ a owl:Restriction ;
             owl:minCardinality 0 ;
             owl:onProperty fsi:measurement_unit_description ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty fsi:name ],
         [ a owl:Restriction ;
             owl:allValuesFrom fsi:SustainabilityImpactType ;
             owl:onProperty fsi:sustainability_impact ],
         [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:eu2025_sdg_indicator_code ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom xsd:string ;
-            owl:onProperty fsi:description ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom fsi:IndicatorCategory ;
-            owl:onProperty fsi:has_category ],
+            owl:allValuesFrom fsi:FoodSystemOutcomeType ;
+            owl:onProperty fsi:outcome_type ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
-            owl:onProperty fsi:name ],
+            owl:onProperty fsi:definition ],
         [ a owl:Restriction ;
-            owl:minCardinality 1 ;
-            owl:onProperty fsi:id ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:dimension ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:has_category ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:sustainability_impact ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom xsd:string ;
-            owl:onProperty fsi:name ],
-        [ a owl:Restriction ;
-            owl:minCardinality 1 ;
-            owl:onProperty fsi:dimension ],
+            owl:allValuesFrom fsi:FoodSystemActivityType ;
+            owl:onProperty fsi:activity_type ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
             owl:onProperty fsi:definition ],
@@ -7116,38 +7196,80 @@ fsi:Indicator a owl:Class ;
             owl:allValuesFrom fsi:IndicatorMeasurementUnit ;
             owl:onProperty fsi:measurement_units ],
         [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
+            owl:allValuesFrom fsi:SupplyChainComponentType ;
+            owl:onProperty fsi:supply_chain_component ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:measurement_units ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
             owl:onProperty fsi:description ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom fsi:Eu2025SdgIndicator ;
-            owl:onProperty fsi:eu2025_sdg_indicator_code ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:name ],
         [ a owl:Restriction ;
             owl:allValuesFrom xsd:string ;
             owl:onProperty fsi:definition ],
         [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty fsi:definition ],
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:description ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty fsi:id ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:outcome_type ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
             owl:onProperty fsi:eu2025_sdg_indicator_code ],
         [ a owl:Restriction ;
-            owl:allValuesFrom fsi:SustainabilityDimension ;
-            owl:onProperty fsi:dimension ],
+            owl:allValuesFrom fsi:Eu2025SdgIndicator ;
+            owl:onProperty fsi:eu2025_sdg_indicator_code ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty fsi:description ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
-            owl:onProperty fsi:description ],
+            owl:onProperty fsi:supply_chain_component ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:activity_type ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:id ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom UO:0000000 ;
+            owl:onProperty fsi:measurement_unit_description ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom fsi:IndicatorCategory ;
+            owl:onProperty fsi:has_category ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:name ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:measurement_unit_description ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty fsi:has_category ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:has_category ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty fsi:outcome_type ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:sustainability_impact ],
         [ a owl:Restriction ;
             owl:allValuesFrom xsd:string ;
             owl:onProperty fsi:id ],
         [ a owl:Restriction ;
             owl:minCardinality 0 ;
-            owl:onProperty fsi:sustainability_impact ],
+            owl:onProperty fsi:activity_type ],
         [ a owl:Restriction ;
-            owl:minCardinality 1 ;
-            owl:onProperty fsi:has_category ],
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:name ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:sustainability_impact ],
         fsi:Entity ;
     skos:definition "A quantitative measure used to assess the state, performance, or progress of a specific aspect of the food system in relation to sustainability objectives." ;
     skos:inScheme fsi: .
@@ -7156,24 +7278,24 @@ fsi:SustainabilityDimension a owl:Class ;
     rdfs:label "SustainabilityDimension" ;
     dct:title "sustainability dimension" ;
     owl:unionOf ( <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Environment> <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Economy> <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Society> <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Health> ) ;
-    skos:definition "A core pillar of sustainability (environment, society, economy, or health) that groups indicators to evaluate different aspects of sustainable development within the food system." ;
+    skos:definition "TODO" ;
     skos:inScheme fsi: ;
     linkml:permissible_values <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Economy>,
         <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Environment>,
         <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Health>,
         <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Society> .
 
-fsi:ScoreCategory a owl:Class ;
-    rdfs:label "ScoreCategory" ;
-    dct:title "score category" ;
-    owl:unionOf ( <https://w3id.org/linkml/examples/fsiScoreCategory#VeryPoor> <https://w3id.org/linkml/examples/fsiScoreCategory#Poor> <https://w3id.org/linkml/examples/fsiScoreCategory#Moderate> <https://w3id.org/linkml/examples/fsiScoreCategory#Good> <https://w3id.org/linkml/examples/fsiScoreCategory#Excellent> ) ;
-    skos:definition "Score category." ;
+fsi:FoodSystemActivityType a owl:Class ;
+    rdfs:label "FoodSystemActivityType" ;
+    dct:title "food system activity" ;
+    owl:unionOf ( <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodSupply> <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodEnvironment> <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodDemand> <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#UseNaturalResources> <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#ConsumptionAndDiets> ) ;
+    skos:definition "Food systems encompass  activities related to the food supply chains,  food environments, and food demand, as well as the use of natural resource, consumption and diets, and waste, by-products and recycling. These ultimately have an effect on  food system outcomes." ;
     skos:inScheme fsi: ;
-    linkml:permissible_values <https://w3id.org/linkml/examples/fsiScoreCategory#Excellent>,
-        <https://w3id.org/linkml/examples/fsiScoreCategory#Good>,
-        <https://w3id.org/linkml/examples/fsiScoreCategory#Moderate>,
-        <https://w3id.org/linkml/examples/fsiScoreCategory#Poor>,
-        <https://w3id.org/linkml/examples/fsiScoreCategory#VeryPoor> .
+    linkml:permissible_values <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#ConsumptionAndDiets>,
+        <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodDemand>,
+        <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodEnvironment>,
+        <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodSupply>,
+        <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#UseNaturalResources> .
 
 fsi:SpatialScopeType a owl:Class ;
     rdfs:label "SpatialScopeType" ;
@@ -7192,6 +7314,19 @@ fsi:node_property a owl:DatatypeProperty ;
     rdfs:domain fsi:Entity ;
     skos:definition "A grouping for any property that holds between a node and a value." ;
     skos:inScheme fsi: .
+
+fsi:FoodSystemOutcomeType a owl:Class ;
+    rdfs:label "FoodSystemOutcomeType" ;
+    dct:title "food system outcome" ;
+    owl:unionOf ( <https://w3id.org/linkml/examples/fsiFoodSystemOutcomeType#Environment> <https://w3id.org/linkml/examples/fsiFoodSystemOutcomeType#Economy> <https://w3id.org/linkml/examples/fsiFoodSystemOutcomeType#Society> <https://w3id.org/linkml/examples/fsiFoodSystemOutcomeType#Health> <https://w3id.org/linkml/examples/fsiFoodSystemOutcomeType#FoodSecurity> <https://w3id.org/linkml/examples/fsiFoodSystemOutcomeType#Resilience> ) ;
+    skos:definition "Food system outcomes, being impact related to environment, economic, social and health,  are a result of food systems. This framework distinguishes five different type of food system impacts: environmental, economic, social, health, and the overarching food security and resilience." ;
+    skos:inScheme fsi: ;
+    linkml:permissible_values <https://w3id.org/linkml/examples/fsiFoodSystemOutcomeType#Economy>,
+        <https://w3id.org/linkml/examples/fsiFoodSystemOutcomeType#Environment>,
+        <https://w3id.org/linkml/examples/fsiFoodSystemOutcomeType#FoodSecurity>,
+        <https://w3id.org/linkml/examples/fsiFoodSystemOutcomeType#Health>,
+        <https://w3id.org/linkml/examples/fsiFoodSystemOutcomeType#Resilience>,
+        <https://w3id.org/linkml/examples/fsiFoodSystemOutcomeType#Society> .
 
 fsi:SpatialGranularity a owl:Class ;
     rdfs:label "SpatialGranularity" ;
@@ -7226,6 +7361,12 @@ fsi:Entity a owl:Class ;
             owl:allValuesFrom xsd:string ;
             owl:onProperty fsi:id ],
         [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty fsi:name ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty fsi:iri ],
+        [ a owl:Restriction ;
             owl:minCardinality 0 ;
             owl:onProperty fsi:name ],
         [ a owl:Restriction ;
@@ -7236,28 +7377,22 @@ fsi:Entity a owl:Class ;
             owl:onProperty fsi:description ],
         [ a owl:Restriction ;
             owl:allValuesFrom xsd:string ;
+            owl:onProperty fsi:iri ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty fsi:iri ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
             owl:onProperty fsi:name ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty fsi:description ],
         [ a owl:Restriction ;
             owl:maxCardinality 1 ;
             owl:onProperty fsi:id ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom xsd:string ;
-            owl:onProperty fsi:iri ],
-        [ a owl:Restriction ;
-            owl:minCardinality 0 ;
-            owl:onProperty fsi:iri ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom xsd:string ;
-            owl:onProperty fsi:description ],
         [ a owl:Restriction ;
             owl:minCardinality 1 ;
-            owl:onProperty fsi:id ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:name ],
-        [ a owl:Restriction ;
-            owl:maxCardinality 1 ;
-            owl:onProperty fsi:iri ] ;
+            owl:onProperty fsi:id ] ;
     skos:definition "Root class for all things and informational relationships, real or imagined." ;
     skos:inScheme fsi: .
 

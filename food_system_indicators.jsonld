@@ -416,29 +416,102 @@
     {
       "name": "SustainabilityDimension",
       "definition_uri": "https://w3id.org/linkml/examples/fsiSustainabilityDimension",
-      "description": "A core pillar of sustainability (environment, society, economy, or health) that groups indicators to evaluate different aspects of sustainable development within the food system.",
+      "description": "TODO",
       "title": "sustainability dimension",
       "from_schema": "https://w3id.org/linkml/examples/fsi",
       "permissible_values": [
         {
           "text": "Environment",
-          "description": "Sustainability dimension that focuses on the state and management of natural resources and ecosystems, including aspects such as climate, biodiversity, pollution, and resource efficiency, to ensure the food system operates within ecological limits.",
+          "description": "TODO",
           "title": "environment"
         },
         {
           "text": "Economy",
-          "description": "Sustainability dimension that focuses on the performance, efficiency, and resilience of economic activities within the food system, including aspects like productivity, value distribution, competitiveness, and financial viability.",
+          "description": "TODO",
           "title": "economy"
         },
         {
           "text": "Society",
-          "description": "Sustainability dimension that focuses on human well-being, equity, and societal outcomes within the food system, including aspects such as health, nutrition, fairness, labor conditions, and access to resources.",
+          "description": "TODO",
           "title": "society"
         },
         {
           "text": "Health",
-          "description": "Sustainability dimension that focucus on ... .",
+          "description": "TODO",
           "title": "health"
+        }
+      ]
+    },
+    {
+      "name": "FoodSystemActivityType",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiFoodSystemActivityType",
+      "description": "Food systems encompass  activities related to the food supply chains,  food environments, and food demand, as well as the use of natural resource, consumption and diets, and waste, by-products and recycling. These ultimately have an effect on  food system outcomes.",
+      "title": "food system activity",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "permissible_values": [
+        {
+          "text": "FoodSupply",
+          "description": "This includes activities across the food value chain, incl.  activities from post-harvest and processing to packaging, distribution, and retail. The food value chain operates within an enabling environment that provides the necessary conditions for its functioning, including transport infrastructure. Additionally, the food supply chain is supported by a range of business services that offer goods and services to actors within the chain, such as training, agricultural inputs, technical support, and financial services.",
+          "title": "food supply"
+        },
+        {
+          "text": "FoodEnvironment",
+          "description": "The food environment can be understood as the physical and social environment that affects what people eat. It refers to the settings and conditions in which individuals engage with the food system to obtain and consume food. It also includes the broader social, economic, and cultural contexts that shape food choices. It includes, among others, factors such as food accessibility, availability, pricing, properties, marketing, and messaging. It covers various settings such as supermarkets, hospitality/catering, shops/retail, and out-of-home settings. Furthermore, distinctions can be made between urban and rural areas, which have for instance different distances to supermarkets and therefore access to food.",
+          "title": "food environment"
+        },
+        {
+          "text": "FoodDemand",
+          "description": "Addresses consumer behaviour and consumer characteristics, incl. consumer preferences. Consumer characteristics can refer to attributes such as knowledge, available time, resources (purchasing power), age, sex, culture, religion, etc. Through these characteristics, consumers develop certain preferences that influence their food choices. It considers various groups (e.g., socioeconomic, demographic, etc.), along with their norms, values, and levels of food literacy.",
+          "title": "food demand"
+        },
+        {
+          "text": "UseNaturalResources",
+          "description": "This refers to the direct use of natural resources and materials that are required to support the food chain, including, among others, inputs such as water, land, crops minerals, fertilisers, energy sources, and packaging materials, among others. These resources are used across the different food supply and food environment.",
+          "title": "use of natural resources"
+        },
+        {
+          "text": "ConsumptionAndDiets",
+          "description": "This covers food consumption and diets, for total populations, vulnerable groups. Consumption and diets are a result of the food supply, food environment,  and food demand.  It covers, among others, total diets and consumption, including for instance  amount of meat consumption, FBDG, consumption patterns.",
+          "title": "consumption and diets"
+        }
+      ]
+    },
+    {
+      "name": "FoodSystemOutcomeType",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiFoodSystemOutcomeType",
+      "description": "Food system outcomes, being impact related to environment, economic, social and health,  are a result of food systems. This framework distinguishes five different type of food system impacts: environmental, economic, social, health, and the overarching food security and resilience.",
+      "title": "food system outcome",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "permissible_values": [
+        {
+          "text": "Environment",
+          "description": "This covers the impact on natural resources and the biophysical drivers of the food system. It includes, among others, the impact on climate change, biodiversity loss, land, soils, use of (micro)minerals and water. It may also include an assessment against the planetary boundary framework.",
+          "title": "environmental impacts"
+        },
+        {
+          "text": "Economy",
+          "description": "Social impacts encompass the outcomes resulting from the interactions between society and the food system. It includes, among others, indicators related to employment and animal welfare, among others.",
+          "title": "economic impacts"
+        },
+        {
+          "text": "Society",
+          "description": "Social impacts encompass the outcomes resulting from the interactions between society and the food system. It includes, among others, indicators related to employment and animal welfare, among others.",
+          "title": "societal impacts"
+        },
+        {
+          "text": "Health",
+          "description": "Health impacts from especially  diets. It includes, among others, indicators related to food safety, burden of disease, number of noncommunicable diseases (NCDs) related to diets, adherence to food-based dietary guidelines (FBDGs), among others.",
+          "title": "health impacts"
+        },
+        {
+          "text": "FoodSecurity",
+          "description": "Food security refers to the availability, accessibility (food affordability), and utilisation of sufficient, safe, and nutritious food that meets dietary needs and food preferences for an active and healthy life, for all people, now and in the future. It encompasses the environmental, economic, social and health outcomes.",
+          "title": "food security"
+        },
+        {
+          "text": "Resilience",
+          "description": "Resilience refers to the capacity of food systems to withstand, adapt to, and recover from shocks and stresses (e.g. climate change, economic crises, conflict), while continuing to function in a sustainable and equitable way. It includes the structural conditions, policies, and governance mechanisms that enable stable and healthy food supplies now and in the future. A resilient food system provides food that is ecologically sustainable, socially just, and economically viable. It ensures continued access to healthy food for all, supports sustainable production and consumption patterns, and strengthens the ability of communities and institutions to cope with uncertainty and long-term change.",
+          "title": "resilience"
         }
       ]
     },
@@ -615,29 +688,21 @@
     {
       "name": "ScoreCategory",
       "definition_uri": "https://w3id.org/linkml/examples/fsiScoreCategory",
-      "description": "Score category.",
+      "description": "Score category",
       "title": "score category",
       "from_schema": "https://w3id.org/linkml/examples/fsi",
       "permissible_values": [
         {
-          "text": "VeryPoor",
-          "description": "Very poor."
+          "text": "Weak",
+          "description": "Weak."
         },
         {
-          "text": "Poor",
-          "description": "Poor."
+          "text": "Adequate",
+          "description": "Adequate."
         },
         {
-          "text": "Moderate",
-          "description": "Moderate."
-        },
-        {
-          "text": "Good",
-          "description": "Good."
-        },
-        {
-          "text": "Excellent",
-          "description": "Excellent."
+          "text": "Strong",
+          "description": "Strong."
         }
       ]
     },
@@ -7034,9 +7099,12 @@
         "http://www.w3.org/2004/02/skos/core#definitions"
       ],
       "slot_uri": "http://purl.org/dc/terms/description",
-      "owner": "Entity",
+      "owner": "IndicatorDataCollectionDetails",
       "domain_of": [
-        "Entity"
+        "Entity",
+        "IndicatorCategory",
+        "Indicator",
+        "IndicatorDataCollectionDetails"
       ],
       "range": "narrative_text",
       "@type": "SlotDefinition"
@@ -7110,9 +7178,12 @@
       "domain": "Entity",
       "slot_uri": "https://w3id.org/linkml/examples/fsiid",
       "identifier": true,
-      "owner": "Entity",
+      "owner": "IndicatorDataCollectionDetails",
       "domain_of": [
-        "Entity"
+        "Entity",
+        "IndicatorCategory",
+        "Indicator",
+        "IndicatorDataCollectionDetails"
       ],
       "range": "string",
       "required": true,
@@ -7281,11 +7352,28 @@
       ],
       "domain": "Entity",
       "slot_uri": "http://www.w3.org/2000/01/rdf-schema#label",
-      "owner": "Entity",
+      "owner": "IndicatorDataCollectionDetails",
       "domain_of": [
-        "Entity"
+        "Entity",
+        "IndicatorCategory",
+        "Indicator",
+        "IndicatorDataCollectionDetails"
       ],
       "range": "label_type",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "activity_type",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiactivity_type",
+      "description": "A reference to the food system activity that is the subject of this indicator's measurement.",
+      "title": "food system activity",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "slot_uri": "https://w3id.org/linkml/examples/fsiactivity_type",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "FoodSystemActivityType",
       "@type": "SlotDefinition"
     },
     {
@@ -7295,11 +7383,26 @@
       "title": "dimension",
       "from_schema": "https://w3id.org/linkml/examples/fsi",
       "slot_uri": "https://w3id.org/linkml/examples/fsidimension",
+      "owner": "IndicatorCategory",
+      "domain_of": [
+        "IndicatorCategory"
+      ],
+      "range": "SustainabilityDimension",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "outcome_type",
+      "definition_uri": "https://w3id.org/linkml/examples/fsioutcome_type",
+      "description": "Reference to the type of the outcome measured by the indicator.",
+      "title": "outcome type",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "slot_uri": "https://w3id.org/linkml/examples/fsioutcome_type",
       "owner": "Indicator",
       "domain_of": [
         "Indicator"
       ],
-      "range": "SustainabilityDimension",
+      "range": "FoodSystemOutcomeType",
       "required": true,
       "@type": "SlotDefinition"
     },
@@ -7359,6 +7462,7 @@
         "Indicator"
       ],
       "range": "Eu2025SdgIndicator",
+      "multivalued": true,
       "@type": "SlotDefinition"
     },
     {
@@ -7719,7 +7823,8 @@
         "iri",
         "IndicatorCategory_id",
         "IndicatorCategory_name",
-        "IndicatorCategory_description"
+        "IndicatorCategory_description",
+        "dimension"
       ],
       "slot_usage": {},
       "class_uri": "https://w3id.org/linkml/examples/fsiIndicatorCategory",
@@ -7734,17 +7839,18 @@
       "is_a": "Entity",
       "slots": [
         "iri",
+        "Indicator_id",
+        "Indicator_name",
+        "Indicator_description",
         "Indicator_definition",
-        "eu2025_sdg_indicator_code",
-        "dimension",
+        "activity_type",
+        "outcome_type",
         "supply_chain_component",
         "measurement_unit_description",
         "measurement_units",
         "has_category",
         "sustainability_impact",
-        "Indicator_id",
-        "Indicator_name",
-        "Indicator_description"
+        "eu2025_sdg_indicator_code"
       ],
       "slot_usage": {},
       "class_uri": "https://w3id.org/linkml/examples/fsiIndicator",
@@ -7758,8 +7864,8 @@
       "from_schema": "https://w3id.org/linkml/examples/fsi",
       "is_a": "Entity",
       "slots": [
-        "id",
         "iri",
+        "id",
         "name",
         "description",
         "measures_indicator",
@@ -7871,9 +7977,9 @@
   ],
   "metamodel_version": "1.7.0",
   "source_file": "food_system_indicators.yaml",
-  "source_file_date": "2025-12-15T06:55:51",
-  "source_file_size": 16855,
-  "generation_date": "2025-12-15T06:56:29",
+  "source_file_date": "2026-01-22T14:54:20",
+  "source_file_size": 22438,
+  "generation_date": "2026-01-22T14:54:58",
   "@type": "SchemaDefinition",
   "@context": [
     "project/jsonld/food_system_indicators.context.jsonld",

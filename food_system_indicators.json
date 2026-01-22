@@ -80,10 +80,39 @@
             "title": "Eu2025SdgIndicator",
             "type": "string"
         },
+        "FoodSystemActivityType": {
+            "description": "Food systems encompass  activities related to the food supply chains,  food environments, and food demand, as well as the use of natural resource, consumption and diets, and waste, by-products and recycling. These ultimately have an effect on  food system outcomes.",
+            "enum": [
+                "FoodSupply",
+                "FoodEnvironment",
+                "FoodDemand",
+                "UseNaturalResources",
+                "ConsumptionAndDiets"
+            ],
+            "title": "FoodSystemActivityType",
+            "type": "string"
+        },
+        "FoodSystemOutcomeType": {
+            "description": "Food system outcomes, being impact related to environment, economic, social and health,  are a result of food systems. This framework distinguishes five different type of food system impacts: environmental, economic, social, health, and the overarching food security and resilience.",
+            "enum": [
+                "Environment",
+                "Economy",
+                "Society",
+                "Health",
+                "FoodSecurity",
+                "Resilience"
+            ],
+            "title": "FoodSystemOutcomeType",
+            "type": "string"
+        },
         "Indicator": {
             "additionalProperties": false,
             "description": "A quantitative measure used to assess the state, performance, or progress of a specific aspect of the food system in relation to sustainability objectives.",
             "properties": {
+                "activity_type": {
+                    "$ref": "#/$defs/FoodSystemActivityType",
+                    "description": "A reference to the food system activity that is the subject of this indicator's measurement."
+                },
                 "definition": {
                     "description": "A precise and formal statement that defines the indicator category, explaining its scope, purpose, and distinguishing characteristics.",
                     "type": [
@@ -98,13 +127,15 @@
                         "null"
                     ]
                 },
-                "dimension": {
-                    "$ref": "#/$defs/SustainabilityDimension",
-                    "description": "Reference to the dimension that the indicator belongs to."
-                },
                 "eu2025_sdg_indicator_code": {
-                    "$ref": "#/$defs/Eu2025SdgIndicator",
-                    "description": "Indicates whether the indicator is included in the 2025 edition of the EU Sustainable Development Goals indicator set, and provides the corresponding EU SDG indicator code."
+                    "description": "Indicates whether the indicator is included in the 2025 edition of the EU Sustainable Development Goals indicator set, and provides the corresponding EU SDG indicator code.",
+                    "items": {
+                        "$ref": "#/$defs/Eu2025SdgIndicator"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 },
                 "has_category": {
                     "description": "Specifies the category for the indicator.",
@@ -145,6 +176,10 @@
                         "null"
                     ]
                 },
+                "outcome_type": {
+                    "$ref": "#/$defs/FoodSystemOutcomeType",
+                    "description": "Reference to the type of the outcome measured by the indicator."
+                },
                 "supply_chain_component": {
                     "description": "Reference to the supply chain component(s) for which the indicator is relevant.",
                     "items": {
@@ -161,9 +196,9 @@
                 }
             },
             "required": [
-                "dimension",
-                "has_category",
-                "id"
+                "id",
+                "outcome_type",
+                "has_category"
             ],
             "title": "Indicator",
             "type": "object"
@@ -178,6 +213,10 @@
                         "string",
                         "null"
                     ]
+                },
+                "dimension": {
+                    "$ref": "#/$defs/SustainabilityDimension",
+                    "description": "Reference to the dimension that the indicator belongs to."
                 },
                 "id": {
                     "description": "Unique identifier of the indicator category.",
@@ -199,7 +238,8 @@
                 }
             },
             "required": [
-                "id"
+                "id",
+                "dimension"
             ],
             "title": "IndicatorCategory",
             "type": "object"
@@ -316,9 +356,9 @@
                 }
             },
             "required": [
+                "id",
                 "measures_indicator",
-                "in_database",
-                "id"
+                "in_database"
             ],
             "title": "IndicatorDataCollectionDetails",
             "type": "object"
@@ -1520,13 +1560,11 @@
             "type": "object"
         },
         "ScoreCategory": {
-            "description": "Score category.",
+            "description": "Score category",
             "enum": [
-                "VeryPoor",
-                "Poor",
-                "Moderate",
-                "Good",
-                "Excellent"
+                "Weak",
+                "Adequate",
+                "Strong"
             ],
             "title": "ScoreCategory",
             "type": "string"
@@ -1570,7 +1608,7 @@
             "type": "string"
         },
         "SustainabilityDimension": {
-            "description": "A core pillar of sustainability (environment, society, economy, or health) that groups indicators to evaluate different aspects of sustainable development within the food system.",
+            "description": "TODO",
             "enum": [
                 "Environment",
                 "Economy",
