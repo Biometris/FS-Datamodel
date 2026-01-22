@@ -1,4 +1,19 @@
 target_class: Indicator
 data_sources:
   - data\\indicators.yaml
+target_class: Database
+data_sources:
+  - data\\databases.yaml
+target_class: IndicatorCategory
+data_sources:
+  - data\\indicator_categories.yaml
+target_class: IndicatorCriterion
+data_sources:
+  - data\\indicator_criteria.yaml
+target_class: IndicatorDataCollectionDetails
+data_sources:
+  - data\\indicator_data_collection_details.yaml
+target_class: IndicatorcriteriaScore
+data_sources:
+  - data\\indicator_scores.yaml
 
