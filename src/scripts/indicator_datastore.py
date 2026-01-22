@@ -161,12 +161,11 @@ class DataStore:
                 for criterion in criteria:
                     score = cs_lookup.get((indicator['id'], criterion['id']))
                     records.append({
-                        'criterion_category': criterion['category'],
-                        'criterion_category_name': category_enums[criterion['category']],
-                        'scores_criterion': criterion['id'],
-                        'criterion_name': criterion['name'],
                         'score_for_indicator': indicator['id'],
                         'indicator_name': indicator['name'],
+                        'scores_criterion': criterion['id'],
+                        'criterion_name': criterion['name'],
+                        'criterion_category': category_enums[criterion['category']],
                         'score': score['score'] if score else None,
                         'comment': score['comment'] if score else None
                     })
