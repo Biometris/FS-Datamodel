@@ -44,8 +44,8 @@ class DataStore:
         reference_class,
         collection_name
     ):
+        print(f"Loading data [{data_path}] into database")
         collection = self.db.create_collection(reference_class, collection_name)
-        print(data_path)
         objects = load_objects(data_path)
 
         collection.insert(objects)
@@ -129,6 +129,17 @@ class DataStore:
         q = Query(from_table="IndicatorCriteria", limit=-1)
         return self.db.query(q).rows
 
+    def get_enum_dict(self, enum_name):
+        sv = self.db.schema_view
+        enum = sv.get_enum(enum_name)
+        if enum is None:
+            raise ValueError(f"Enum not found: {enum_name}")
+        result = {}
+        for pv_id, pv in enum.permissible_values.items():
+            result[pv_id] = pv.title or pv.text or pv_id
+
+        return result
+
     def get_indicator_criteria_scores(
         self,
         include_missing = False,
@@ -140,19 +151,22 @@ class DataStore:
         q = Query(from_table="IndicatorCriteriaScores", limit=-1)
         criteria_scores = self.db.query(q).rows
         if include_missing:
+            category_enums = self.get_enum_dict('CriterionCategory')
             cs_lookup = {
                 (r['score_for_indicator'], r['scores_criterion']): r
                 for r in criteria_scores
             }
             records = []
-            for criterion in criteria:
-                for indicator in indicators:
+            for indicator in indicators:
+                for criterion in criteria:
                     score = cs_lookup.get((indicator['id'], criterion['id']))
                     records.append({
-                        'score_for_indicator': indicator['id'],
-                        'indicator_name': indicator['name'],
+                        'criterion_category': criterion['category'],
+                        'criterion_category_name': category_enums[criterion['category']],
                         'scores_criterion': criterion['id'],
                         'criterion_name': criterion['name'],
+                        'score_for_indicator': indicator['id'],
+                        'indicator_name': indicator['name'],
                         'score': score['score'] if score else None,
                         'comment': score['comment'] if score else None
                     })

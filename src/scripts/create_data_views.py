@@ -9,7 +9,7 @@ from indicator_datastore import DataStore
 
 SCHEMA_PATH = "src/schema/food_system_indicators.yaml"
 
-def create_indicator_hiearchy_json(indicators, categories_dict):
+def create_indicator_hierarchy_json(indicators, categories_dict):
     # Output file
     outfile_path_sunburst = "docs/data/indicators_sunburst_chart_data.json"
     outfile_path_tree = "docs/data/indicators_tree_chart_data.json"
@@ -166,7 +166,7 @@ if __name__ == "__main__":
             database_indicators.setdefault(record['in_database'], []).append(record)
 
         enum_dict = datastore.create_enum_dict()
-        create_indicator_hiearchy_json(indicators, indicator_categories_dict)
+        create_indicator_hierarchy_json(indicators, indicator_categories_dict)
         create_supply_chain_indicator_hiearchy_json(indicators)
 
         render_template(
