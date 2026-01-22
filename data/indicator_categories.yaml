@@ -1,136 +1,136 @@
 - id: FarmersIncome
   name: Farmers' income
   description: ''
-  outcome_type: Economy
+  dimension: Economy
 - id: Competitiveness
   name: Competitiveness
   description: ''
-  outcome_type: Economy
+  dimension: Economy
 - id: FoodAffordability
   name: Food affordability
   description: ''
-  outcome_type: Economy
+  dimension: Economy
 - id: EconomicResilience
   name: Economic resilience
   description: ''
-  outcome_type: Economy
+  dimension: Economy
 - id: ConservOfNaturalResources
   name: Conserv. of natural resources
   description: ''
-  outcome_type: Environment
+  dimension: Environment
 - id: BiodiversityConservation
   name: Biodiversity conservation
   description: ''
-  outcome_type: Environment
+  dimension: Environment
 - id: OrganicFarming
   name: Organic farming
   description: ''
-  outcome_type: Environment
+  dimension: Environment
 - id: GhgEmissions
   name: GHG emissions
   description: ''
-  outcome_type: Environment
+  dimension: Environment
 - id: AirPollutants
   name: Air pollutants
   description: ''
-  outcome_type: Environment
+  dimension: Environment
 - id: PesticideAndAntibioticUse
   name: Pesticide and antibiotic use
   description: ''
-  outcome_type: Environment
+  dimension: Environment
 - id: FertilizerUse
   name: Fertilizer use
   description: ''
-  outcome_type: Environment
+  dimension: Environment
 - id: ImpactsOfClimateChange
   name: Impacts of climate change
   description: ''
-  outcome_type: Environment
+  dimension: Environment
 - id: AnimalKeeping
   name: Animal keeping
   description: ''
-  outcome_type: Environment
+  dimension: Environment
 - id: FoodWasteFoodLoss
   name: Food waste & food loss
   description: ''
-  outcome_type: Environment
+  dimension: Environment
 - id: WaterQuality
   name: Water quality
   description: ''
-  outcome_type: Environment
+  dimension: Environment
 - id: SusDevelopmentPrimaryProd
   name: Sus. development_primary prod.
   description: ''
-  outcome_type: Environment
+  dimension: Environment
 - id: EcologicalResilience
   name: Ecological resilience
   description: ''
-  outcome_type: Environment
+  dimension: Environment
 - id: CrossCuttingIndicators
   name: Cross-cutting indicators
   description: ''
-  outcome_type: Environment
+  dimension: Environment
 - id: NutritionalHealthOutcomes
   name: Nutritional health outcomes
   description: ''
-  outcome_type: Health
+  dimension: Health
 - id: NutritionalBehaviour
   name: Nutritional behaviour
   description: ''
-  outcome_type: Health
+  dimension: Health
 - id: FoodQualitySafety
   name: Food quality & safety
   description: ''
-  outcome_type: Health
+  dimension: Health
 - id: Malnutrition
   name: Malnutrition
   description: ''
-  outcome_type: Health
+  dimension: Health
 - id: FoodAccess
   name: Food access
   description: ''
-  outcome_type: Health
+  dimension: Health
 - id: FoodAvailability
   name: Food availability
   description: ''
-  outcome_type: Health
+  dimension: Health
 - id: FoodStability
   name: Food stability
   description: ''
-  outcome_type: Health
+  dimension: Health
 - id: EmploymInAgricFoodSector
   name: Employm. in agric._food sector
   description: ''
-  outcome_type: Society
+  dimension: Society
 - id: WorkingCondAgricFoodSect
   name: Working cond._agric. food sect.
   description: ''
-  outcome_type: Society
+  dimension: Society
 - id: GeneralUnEmployment
   name: General (un)employment
   description: ''
-  outcome_type: Society
+  dimension: Society
 - id: IncomeDistributPovertyRisk
   name: Income distribut._Poverty risk
   description: ''
-  outcome_type: Society
+  dimension: Society
 - id: FoodEquity
   name: Food Equity
   description: ''
-  outcome_type: Society
+  dimension: Society
 - id: GenderEquity
   name: Gender Equity
   description: ''
-  outcome_type: Society
+  dimension: Society
 - id: Demography
   name: Demography
   description: ''
-  outcome_type: Society
+  dimension: Society
 - id: SocialResilience
   name: Social resilience
   description: ''
-  outcome_type: Society
+  dimension: Society
 - id: RuralDevelopment
   name: Rural development
   description: ''
-  outcome_type: Society
+  dimension: Society

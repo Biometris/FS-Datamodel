@@ -43,7 +43,7 @@ classes:
       - id
       - name
       - description
-      - outcome_type
+      - dimension
     slot_usage:
       id:
         description:
@@ -290,6 +290,13 @@ slots:
     required: false
     range: FoodSystemActivityType
 
+  dimension:
+    title: dimension
+    description: >-
+      Reference to the dimension that the indicator belongs to.
+    required: true
+    range: SustainabilityDimension
+
   outcome_type:
     title: outcome type
     description: >-
@@ -419,6 +426,28 @@ types:
 ## --------------------
 
 enums:
+  SustainabilityDimension:
+    title: sustainability dimension
+    description: >-
+      TODO
+    permissible_values:
+      Environment:
+        title: environment
+        description:
+          TODO
+      Economy:
+        title: economy
+        description:
+          TODO
+      Society:
+        title: society
+        description:
+          TODO
+      Health:
+        title: health
+        description:
+          TODO
+
   FoodSystemActivityType:
     title: food system activity
     description: >-

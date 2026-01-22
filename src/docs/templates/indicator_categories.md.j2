@@ -11,6 +11,6 @@ hide:
   {%- set id = record['id'] -%}
   {%- set name = record['name'] -%}
   {%- set description = record['description'] -%}
-  {%- set outcome_type = enum_dict['FoodSystemOutcomeType'][record['outcome_type']]['title'] -%}
-| [{{ outcome_type }}](../model/FoodSystemOutcomeType) | {{ name }} | {{ description | replace("\n", "") }} |
+  {%- set dimension = enum_dict['SustainabilityDimension'][record['dimension']]['title'] -%}
+| [{{ dimension }}](../model/SustainabilityDimension) | {{ name }} | {{ description | replace("\n", "") }} |
 {% endfor %}
