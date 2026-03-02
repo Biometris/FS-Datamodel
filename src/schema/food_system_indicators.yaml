@@ -38,7 +38,7 @@ classes:
     is_a: Entity
     title: indicator category
     description:
-      The category the indicator belongs to.
+      Group of indicators that share common characteristics, functions, or measurement purposes within a monitoring or evaluation framework.
     slots:
       - id
       - name
@@ -130,7 +130,7 @@ classes:
   QuantityValue:
     title: quantity value
     description: >-
-      A value of an attribute that is quantitative and measurable, expressed as a combination of a unit and a numeric value
+      A value of an attribute that is quantitative and measurable, expressed as a combination of a unit and a numeric value.
     is_a: Entity
     slots:
       - has unit
@@ -145,7 +145,7 @@ classes:
 
   IndicatorcriteriaScore:
     title: indicator criterion score
-    description: Score for an indicator for an indicator selection criterion.
+    description: A score assigned to an indicator based on a specific selection criterion.
     slots:
       - score_for_indicator
       - scores_criterion
@@ -248,7 +248,7 @@ slots:
     is_a: node property
     title: indicator category
     description: 
-      Specifies the category for the indicator.
+      Group of indicators that share common characteristics, functions, or measurement purposes within a monitoring or evaluation framework.
     range: IndicatorCategory
     required: true
 
@@ -429,7 +429,7 @@ enums:
   SustainabilityDimension:
     title: sustainability dimension
     description: >-
-      TODO
+      A dimension of sustainability to which the indicator relates.
     permissible_values:
       Environment:
         title: environment
@@ -635,7 +635,7 @@ enums:
   ScoreCategory:
     title: score category
     description:
-      Score category
+      Score category.
     permissible_values:
       Weak:
         description:
