@@ -44,6 +44,8 @@ classes:
       - name
       - description
       - dimension
+      - outcome_type
+      - activity_type
     slot_usage:
       id:
         description:
@@ -54,6 +56,8 @@ classes:
       description:
         description:
           Concise text that provides the meaning of the indicator category.
+      outcome_type:
+        required: false
 
   Indicator:
     is_a: Entity

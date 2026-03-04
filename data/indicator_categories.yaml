@@ -76,12 +76,14 @@
     Indicators capturing the final health outcomes of food systems, encompassing nutritional status and malnutrition in all its forms, 
     including undernutrition, micronutrient deficiencies, overweight, obesity, and diet-related non-communicable diseases (HLPE, 2017).
   dimension: Health
+  outcome_type: Health
 - id: DietaryConsumptionPatternsFoodIntake
   name: Dietary consumption patterns/Food Intake
   description: >-
     Indicators describing the dietary consumption patterns refer to the quantities, proportions, and habitual combinations of foods and 
     drinks that individuals or populations.
   dimension: Health
+  activity_type: ConsumptionAndDiets
 - id: FoodQualityAndSafety
   name: Food quality and safety
   description: >-
@@ -89,6 +91,7 @@
     biological, chemical, and physical hazards, as well as compliance with nutritional, compositional, and hygienic requirements 
     along the food chain.
   dimension: Health
+  outcome_type: Health
 - id: FoodSecurityAccessAndEnablingFactors
   name: >- 
     Food security: access and enabling factors
@@ -96,18 +99,21 @@
     Indicators capturing both people's ability to obtain adequate food (economic and physical access) and the broader economic, 
     infrastructural, and systemic conditions that enable or constrain such access.
   dimension: Health
+  outcome_type: FoodSecurity
 - id: FoodAvailability
   name: Food availability
   description: >- 
     Indicators describing the quantity, composition, and stability of food supplied by the food system through domestic production, 
     imports, and stocks, including the supply of energy and nutrients and the productive capacity of agriculture.
   dimension: Health
+  activity_type: FoodEnvironment
 - id: FoodStability
   name: Food stability
   description: >-
     Indicators describing the extent to which the availability of and access to food are maintained over time, including the 
     resilience of food supply systems to economic, climatic, and market-related shocks and variability.
   dimension: Health
+  outcome_type: Resilience
 - id: EmploymInAgricFoodSector
   name: Employm. in agric._food sector
   description: ''
