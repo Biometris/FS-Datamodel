@@ -10,11 +10,12 @@ nav:
   - Home: index.md
   - Data model: model/index.md
   - Indicator definitions: indicators.md
-  - Indicator categories: indicator_categories.md
+  - Indicator categories: indicator_categories.md  
   - Indicator databases: databases_table.md
-  - Indicator data collection details: indicator_data_collection_details_table.md
+  - Indicator data collection details: indicator_data_collection_details_table.md  
   #- Indicator scoring:
   - Indicator criteria: indicator_criteria.md
+  - References: references.md
     #- Indicator scores: indicator_scores.md
   - Vocabularies:
     - Food system activity types: model/FoodSystemActivityType.md

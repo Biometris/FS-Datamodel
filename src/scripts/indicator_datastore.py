@@ -11,11 +11,12 @@ class DataStore:
         self,
         schema_file: str,
         indicator_definitions_file: str,
-        indicator_categories_file: str,
+        indicator_categories_file: str,        
         databases_file: str,
         indicator_data_collection_details_file: str,
         criteria_file: str,
-        indicator_scores_file: str
+        indicator_scores_file: str,
+        references_file: str
     ):
         # Initialize LinkML Store with DuckDB
         self.client = Client()
@@ -27,12 +28,13 @@ class DataStore:
 
         # Add database data from yaml to db.
         self.add_database_data(indicator_definitions_file, "Indicator", "Indicators")
-        self.add_database_data(indicator_categories_file, "IndicatorCategory", "IndicatorCategories")
+        self.add_database_data(indicator_categories_file, "IndicatorCategory", "IndicatorCategories")        
         self.add_database_data(indicator_data_collection_details_file, "IndicatorDataCollectionDetails", "IndicatorDataCollectionDetails")
         self.add_database_data(databases_file, "Database", "Databases")
         self.add_database_data(criteria_file, "IndicatorCriterion", "IndicatorCriteria")
         self.add_database_data(indicator_scores_file, "IndicatorcriteriaScore", "IndicatorCriteriaScores")
-
+        self.add_database_data(references_file, "Reference", "ReferencesTab")
+        
         # Validate cross-links
         print("\nRunning validation...")
         self.validate_data()
@@ -107,6 +109,11 @@ class DataStore:
     def get_indicator_categories(self):
         """Return a joined view of indicator categories"""
         q = Query(from_table="IndicatorCategories", limit=-1)
+        return self.db.query(q).rows
+    
+    def get_references(self):
+        """Return a joined view of indicator category sources"""
+        q = Query(from_table="ReferencesTab", limit=-1)
         return self.db.query(q).rows
 
     def get_indicators(self):

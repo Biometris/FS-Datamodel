@@ -5,8 +5,8 @@ hide:
 
 # INDICATOR CATEGORIES
 
-| Outcome | Name | Description | Food System Activity Type | Food System Outcome Type |
-|-----------|------|-------------|-------------|-------------|
+| Outcome | Name | Description | Food System Activity Type | Food System Outcome Type | Source
+|-----------|------|-------------|-------------|-------------|-------------|
 {% for record in categories -%}
   {%- set id = record['id'] -%}
   {%- set name = record['name'] -%}
@@ -14,5 +14,8 @@ hide:
   {%- set dimension = enum_dict['SustainabilityDimension'][record['dimension']]['title'] -%}
   {%- set activity_type = enum_dict['FoodSystemActivityType'][record['activity_type']]['title'] if record['activity_type'] else '-' -%}
   {%- set outcome_type = enum_dict['FoodSystemOutcomeType'][record['outcome_type']]['title'] if record['outcome_type'] else '-' -%}
-| [{{ dimension }}](../model/SustainabilityDimension) | {{ name }} | {{ description | replace("\n", "") }} | [{{ activity_type }}](../model/FoodSystemActivityType) | [{{ outcome_type }}](../model/FoodSystemOutcomeType)
+  {%- set sources = record['source'] if record['source'] else [] -%}  
+| [{{ dimension }}](../model/SustainabilityDimension) | {{ name }} | {{ description | replace("\n", "") }} | [{{ activity_type }}](../model/FoodSystemActivityType) | [{{ outcome_type }}](../model/FoodSystemOutcomeType) | 
+{%- for source in sources %} [{{ sources_dict[source]['name'] }}](../references) {% endfor -%} 
+|
 {% endfor %}

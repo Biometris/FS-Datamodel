@@ -109,11 +109,12 @@ if __name__ == "__main__":
 
     # Data paths
     indicator_definitions_data_path = "data/indicators.yaml"
-    indicator_categories_data_path = "data/indicator_categories.yaml"
+    indicator_categories_data_path = "data/indicator_categories.yaml"    
     indicator_databases_data_path = "data/databases.yaml"
     indicator_data_collection_details_data_path = "data/indicator_data_collection_details.yaml"
     criterion_data_path = "data/criteria.yaml"
     indicator_scores_data_path = "data/indicator_scores.yaml"
+    references_data_path = "data/references.yaml"
 
     # Exports
     data_export_path = "docs/data"
@@ -130,11 +131,12 @@ if __name__ == "__main__":
     datastore = DataStore(
         schema_file=SCHEMA_PATH,
         indicator_definitions_file=indicator_definitions_data_path,
-        indicator_categories_file=indicator_categories_data_path,
+        indicator_categories_file=indicator_categories_data_path,        
         databases_file=indicator_databases_data_path,
         indicator_data_collection_details_file=indicator_data_collection_details_data_path,
         criteria_file=criterion_data_path,
-        indicator_scores_file=indicator_scores_data_path
+        indicator_scores_file=indicator_scores_data_path,
+        references_file=references_data_path
     )
 
     # Generate model diagram
@@ -142,13 +144,14 @@ if __name__ == "__main__":
     doc_gen.diagram_type = DiagramType.er_diagram
     diagram_classes = [
         'Indicator',
-        'IndicatorCategory',
+        'IndicatorCategory',        
         'IndicatorDataCollectionDetails',
         'Database',
         'IndicatorDatapoint',
         'IndicatorCriterion',
-        'IndicatorcriteriaScore'
-    ]
+        'IndicatorcriteriaScore',
+        'Reference'
+    ]   
 
     # Validate database content.
     if datastore.validate_data():
@@ -156,6 +159,8 @@ if __name__ == "__main__":
         # Get indicators and create hierarchy JSON and table
         indicator_categories = datastore.get_indicator_categories()
         indicator_categories_dict = res = {i['id']: i for i in indicator_categories}
+        references = datastore.get_references()
+        references_dict = res = {r['id']: r for r in references}
         indicators = datastore.get_indicators()
         indicators_dict = res = {i['id']: i for i in indicators}
         databases = datastore.get_databases()
@@ -179,8 +184,9 @@ if __name__ == "__main__":
         render_template(
             template_name = 'indicator_categories',
             categories = indicator_categories,
+            sources_dict = references_dict,
             enum_dict = enum_dict
-        )
+        )        
 
         for indicator in indicators:
             render_template(
@@ -240,6 +246,11 @@ if __name__ == "__main__":
             template_name = 'indicator_scores'
         )
 
+        render_template(
+            template_name = 'references',
+            sources = references,
+            enum_dict = enum_dict
+        )
 
         # Export glossary terms
         datastore.export_glossary_yaml(glossary_export_path)

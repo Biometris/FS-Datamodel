@@ -46,6 +46,7 @@ classes:
       - dimension
       - outcome_type
       - activity_type
+      - source
     slot_usage:
       id:
         description:
@@ -156,6 +157,15 @@ classes:
       - score
       - comment
 
+  Reference:    
+    is_a: Entity
+    title: reference
+    description: A reference to a publication, database or dataset.
+    slots:
+      - link
+      - reference_type
+      - comment
+
 ## --------------------
 ## SLOTS
 ## --------------------
@@ -256,11 +266,19 @@ slots:
     range: IndicatorCategory
     required: true
 
+  source:
+    is_a: node property
+    title: source
+    description: >
+      Reference to the source of the definition of the indicator category.
+    range: Reference
+    multivalued: true
+
   sustainability_impact:
-      title: sustainability impact
-      description:
-        Description of the sustainability impact the indicator measures.
-      range: SustainabilityImpactType
+    title: sustainability impact
+    description:
+      Description of the sustainability impact the indicator measures.
+    range: SustainabilityImpactType
 
   score_for_indicator:
     is_a: node property
@@ -336,16 +354,22 @@ slots:
     multivalued: true
     required: false
 
+  link:
+    title: link
+    description:
+      Link.
+    range: iri_type
+
   data_link:
     title: data link
     description:
-      Link to the data for the indicator
+      Link to the data for the indicator.
     range: iri_type
 
   database_link:
     title: database link
     description:
-      Link to the database
+      Link to the database.
     range: iri_type
 
   oldest_datapoint:
@@ -393,6 +417,12 @@ slots:
     title: score
     description: score for an indicator selection criterion for an indicator.
     range: ScoreCategory
+
+  reference_type:
+    title: reference type
+    description: Type of reference.
+    range: ReferenceType
+
 
 ## --------------------
 ## TYPES
@@ -688,3 +718,18 @@ enums:
       EU_SDG_08_30:
       EU_SDG_15_42:
       EU_SDG_15_50:
+
+  ReferenceType:
+    title: Reference types
+    description: >-
+      The type of source that a reference refers to.
+    permissible_values:
+      Database:
+        title: database
+        description: Database.
+      Dataset:
+        title: dataset
+        description: Dataset.
+      Publication:
+        title: publication
+        description: Publication.

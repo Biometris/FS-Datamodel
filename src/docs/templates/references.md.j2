@@ -1,0 +1,14 @@
+---
+hide:
+  - toc
+---
+
+# REFERENCES
+
+| Name | Description | 
+|-----------|------|
+{% for record in sources -%}
+  {%- set name = record['name'] -%}
+  {%- set description = record['description'] -%}
+| {{ name }} | {{ description | replace("\n", "") }} | 
+{% endfor %}

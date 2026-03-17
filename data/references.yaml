@@ -1,0 +1,17 @@
+- id: HLPE2017
+  name: HLPE2017
+  author: FAO
+  year: 2017
+  description: >- 
+    Nutrition and food systems. A report by the High Level Panel of Experts on Food Security and Nutrition of the
+    Committee on World Food Security.
+- id: USDHHS2020
+  name: USDHHS2020
+  author: >- 
+    U.S. Department of Health and Human Services & U.S. Department of Agriculture
+  year: 2020
+  description: >- 
+    U.S. Department of Health and Human Services & U.S. Department of Agriculture (2020). Scientific Report of the 2020 Dietary 
+    Guidelines Advisory Committee. Washington, DC: U.S. Government Printing Office
+
+

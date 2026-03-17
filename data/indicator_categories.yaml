@@ -74,9 +74,11 @@
   name: Nutrition and Health
   description: >-
     Indicators capturing the final health outcomes of food systems, encompassing nutritional status and malnutrition in all its forms, 
-    including undernutrition, micronutrient deficiencies, overweight, obesity, and diet-related non-communicable diseases (HLPE, 2017).
+    including undernutrition, micronutrient deficiencies, overweight, obesity, and diet-related non-communicable diseases.
   dimension: Health
   outcome_type: Health
+  reference:
+    - HLPE2017
 - id: DietaryConsumptionPatternsFoodIntake
   name: Dietary consumption patterns/Food Intake
   description: >-
