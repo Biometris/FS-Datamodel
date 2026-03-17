@@ -11,5 +11,5 @@ hide:
   {%- set name = c['name'] -%}
   {%- set id = c['id'] -%}
   {%- set description = c.get("description") -%}  
-| [{{name}}](../databases/{{id}}) | {{ description.replace("\n", "") if description else description }} | [{{ c.get("database_link") }}]({{ c.get("database_link") }}) |
+| [{{name}}](../databases/{{id}}) | {{ description.replace("\n", "") if description else description }} | [{{ c.get("link") }}]({{ c.get("link") }}) |
 {% endfor %}

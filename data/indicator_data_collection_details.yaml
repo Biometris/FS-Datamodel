@@ -56,7 +56,7 @@
 - id: AgriFoodDataPortalDirectorateGeneralForAgriculture_FarmersIncomeComparedToWagesInTheRestOfTheEconomy
   name: Agri-food Data Portal (Directorate-General for Agriculture and Rural Development)-Farmers' income compared to wages in the rest of the economy
   description: ''
-  in_database: AgriFoodDataPortalDirectorateGeneralForAgriculture
+  in_database: AgriFoodDataPortal
   measures_indicator: FSI_0005
   data_link: https://agridata.ec.europa.eu/extensions/DashboardIndicators/JobsGrowth.html
   oldest_datapoint: ''
@@ -133,7 +133,7 @@
 - id: DataModellingPlatformOfResourceEconomicsJrcLasarte_LabourProductivityInTheAgriculturalBeveragesFishin
   name: Data-Modelling platform of resource economics (JRC) / Lasarte-López et al. (2023)-Labour productivity in the agricultural/beverages/fishing and aquaculture/food sector
   description: ''
-  in_database: DataModellingPlatformOfResourceEconomicsJrcLasarte
+  in_database: DataModellingPlatformOfResourceEconomics
   measures_indicator: FSI_0012
   data_link: https://datam.jrc.ec.europa.eu/datam/mashup/BIOECONOMICS/
   oldest_datapoint: ''
@@ -144,7 +144,7 @@
 - id: EuFoodSystemMonitoringDashboardJrc_GrossValueAddedAlongTheFoodChainBySectorAgricultur
   name: EU Food System Monitoring Dashboard (JRC)-(Gross) value added along the food chain (by sector; Agriculture, Fishing and Aquaculture, Food and Beverage selectable)
   description: ''
-  in_database: EuFoodSystemMonitoringDashboardJrc
+  in_database: DataModellingPlatformOfResourceEconomics
   measures_indicator: FSI_0013
   data_link: https://datam.jrc.ec.europa.eu/datam/mashup/EU_FOOD_SYSTEM_MONITORING/index.html
   oldest_datapoint: ''
@@ -155,7 +155,7 @@
 - id: AgriFoodDataPortalDirectorateGeneralForAgriculture_ProductsUnderEuQualitySchemesPerSchemePdoPgiTsgGi
   name: 'Agri-food data portal (Directorate-General for Agriculture and Rural Development)-Products under EU quality schemes (per scheme: PDO, PGI, TSG, GI)'
   description: ''
-  in_database: AgriFoodDataPortalDirectorateGeneralForAgriculture
+  in_database: AgriFoodDataPortal
   measures_indicator: FSI_0014
   data_link: https://agridata.ec.europa.eu/extensions/DashboardIndicators/AddingValue.html
   oldest_datapoint: ''
@@ -452,7 +452,7 @@
 - id: Cap202327ResultIndicatorsEuropeanCommissionDirecto_InvestmentsRelatedToBiodiversity
   name: 'CAP 2023 - 27: Result indicators (European Commission, Directorate-General for Agriculture and Rural Development)-Investments related to biodiversity'
   description: ''
-  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirecto
+  in_database: AgriFoodDataPortal
   measures_indicator: FSI_0041
   data_link: https://agridata.ec.europa.eu/extensions/DashboardCapPlan/result_indicators.html
   oldest_datapoint: ''
@@ -914,7 +914,7 @@
 - id: Cap202327ResultIndicatorsEuropeanCommissionDirecto_FarmModernisation
   name: 'CAP 2023 - 27: Result indicators (European Commission, Directorate-General for Agriculture and Rural Development)-Farm modernisation'
   description: ''
-  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirecto
+  in_database: AgriFoodDataPortal
   measures_indicator: FSI_0083
   data_link: https://agridata.ec.europa.eu/extensions/DashboardCapPlan/result_indicators.html
   oldest_datapoint: ''
@@ -925,7 +925,7 @@
 - id: Cap202327ResultIndicatorsEuropeanCommissionDirecto_AdaptationToClimateChange
   name: 'CAP 2023 - 27: Result indicators (European Commission, Directorate-General for Agriculture and Rural Development)-Adaptation to climate change'
   description: ''
-  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirecto
+  in_database: AgriFoodDataPortal
   measures_indicator: FSI_0084
   data_link: https://agridata.ec.europa.eu/extensions/DashboardCapPlan/result_indicators.html
   oldest_datapoint: ''
@@ -936,7 +936,7 @@
 - id: Cap202327ResultIndicatorsEuropeanCommissionDirecto_ReducingEmissionsInTheLivestockSector
   name: 'CAP 2023 - 27: Result indicators (European Commission, Directorate-General for Agriculture and Rural Development)-Reducing emissions in the livestock sector'
   description: ''
-  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirecto
+  in_database: AgriFoodDataPortal
   measures_indicator: FSI_0085
   data_link: https://agridata.ec.europa.eu/extensions/DashboardCapPlan/result_indicators.html
   oldest_datapoint: ''
@@ -947,7 +947,7 @@
 - id: Cap202327ResultIndicatorsEuropeanCommissionDirecto_CarbonStorageInSoilsAndBiomass
   name: 'CAP 2023 - 27: Result indicators (European Commission, Directorate-General for Agriculture and Rural Development)-Carbon storage in soils and biomass'
   description: ''
-  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirecto
+  in_database: AgriFoodDataPortal
   measures_indicator: FSI_0086
   data_link: https://agridata.ec.europa.eu/extensions/DashboardCapPlan/result_indicators.html
   oldest_datapoint: ''
@@ -958,7 +958,7 @@
 - id: Cap202327ResultIndicatorsEuropeanCommissionDirecto_InvestmentsRelatedToClimate
   name: 'CAP 2023 - 27: Result indicators (European Commission, Directorate-General for Agriculture and Rural Development)-Investments related to climate'
   description: ''
-  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirecto
+  in_database: AgriFoodDataPortal
   measures_indicator: FSI_0087
   data_link: https://agridata.ec.europa.eu/extensions/DashboardCapPlan/result_indicators.html
   oldest_datapoint: ''
@@ -969,7 +969,7 @@
 - id: Cap202327ResultIndicatorsEuropeanCommissionDirecto_ImprovingAirQuality
   name: 'CAP 2023 - 27: Result indicators (European Commission, Directorate-General for Agriculture and Rural Development)-Improving air quality'
   description: ''
-  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirecto
+  in_database: AgriFoodDataPortal
   measures_indicator: FSI_0088
   data_link: https://agridata.ec.europa.eu/extensions/DashboardCapPlan/result_indicators.html
   oldest_datapoint: ''
@@ -980,7 +980,7 @@
 - id: Cap202327ResultIndicatorsEuropeanCommissionDirecto_SustainableAndReducedUseOfPesticides
   name: 'CAP 2023 - 27: Result indicators (European Commission, Directorate-General for Agriculture and Rural Development)-Sustainable and reduced use of pesticides'
   description: ''
-  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirecto
+  in_database: AgriFoodDataPortal
   measures_indicator: FSI_0089
   data_link: https://agridata.ec.europa.eu/extensions/DashboardCapPlan/result_indicators.html
   oldest_datapoint: ''
@@ -991,7 +991,7 @@
 - id: Cap202327ResultIndicatorsEuropeanCommissionDirecto_EnvironmentalPerformanceInTheLivestockSector
   name: 'CAP 2023 - 27: Result indicators (European Commission, Directorate-General for Agriculture and Rural Development)-Environmental performance in the livestock sector'
   description: ''
-  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirecto
+  in_database: AgriFoodDataPortal
   measures_indicator: FSI_0090
   data_link: https://agridata.ec.europa.eu/extensions/DashboardCapPlan/result_indicators.html
   oldest_datapoint: ''
@@ -1002,7 +1002,7 @@
 - id: Cap202327ResultIndicatorsEuropeanCommissionDirecto_InvestmentRelatedToNaturalResources
   name: 'CAP 2023 - 27: Result indicators (European Commission, Directorate-General for Agriculture and Rural Development)-Investment related to natural resources'
   description: ''
-  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirecto
+  in_database: AgriFoodDataPortal
   measures_indicator: FSI_0091
   data_link: https://agridata.ec.europa.eu/extensions/DashboardCapPlan/result_indicators.html
   oldest_datapoint: ''
@@ -1013,7 +1013,7 @@
 - id: Cap202327ResultIndicatorsEuropeanCommissionDirecto_EnvironmentalOrClimateRelatedPerformanceThroughInv
   name: 'CAP 2023 - 27: Result indicators (European Commission, Directorate-General for Agriculture and Rural Development)-Environmental or climate-related performance through investment in rural areas'
   description: ''
-  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirecto
+  in_database: AgriFoodDataPortal
   measures_indicator: FSI_0092
   data_link: https://agridata.ec.europa.eu/extensions/DashboardCapPlan/result_indicators.html
   oldest_datapoint: ''
@@ -1024,7 +1024,7 @@
 - id: Cap202327ResultIndicatorsEuropeanCommissionDirecto_DevelopmentOfOrganicAgriculture
   name: 'CAP 2023 - 27: Result indicators (European Commission, Directorate-General for Agriculture and Rural Development)-Development of organic agriculture'
   description: ''
-  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirecto
+  in_database: AgriFoodDataPortal
   measures_indicator: FSI_0093
   data_link: https://agridata.ec.europa.eu/extensions/DashboardCapPlan/result_indicators.html
   oldest_datapoint: ''
@@ -1035,7 +1035,7 @@
 - id: Cap202327ResultIndicatorsEuropeanCommissionDirecto_PreservingHabitatsAndSpecies
   name: 'CAP 2023 - 27: Result indicators (European Commission, Directorate-General for Agriculture and Rural Development)-Preserving habitats and species'
   description: ''
-  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirecto
+  in_database: AgriFoodDataPortal
   measures_indicator: FSI_0094
   data_link: https://agridata.ec.europa.eu/extensions/DashboardCapPlan/result_indicators.html
   oldest_datapoint: ''
@@ -1046,7 +1046,7 @@
 - id: Cap202327ResultIndicatorsEuropeanCommissionDirecto_GenerationalRenewal
   name: 'CAP 2023 - 27: Result indicators (European Commission, Directorate-General for Agriculture and Rural Development)-Generational renewal'
   description: ''
-  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirecto
+  in_database: AgriFoodDataPortal
   measures_indicator: FSI_0095
   data_link: https://agridata.ec.europa.eu/extensions/DashboardCapPlan/result_indicators.html
   oldest_datapoint: ''
@@ -1057,7 +1057,7 @@
 - id: Cap202327ResultIndicatorsEuropeanCommissionDirecto_LimitingAntimicrobialUse
   name: 'CAP 2023 - 27: Result indicators (European Commission, Directorate-General for Agriculture and Rural Development)-Limiting antimicrobial use'
   description: ''
-  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirecto
+  in_database: AgriFoodDataPortal
   measures_indicator: FSI_0096
   data_link: https://agridata.ec.europa.eu/extensions/DashboardCapPlan/result_indicators.html
   oldest_datapoint: ''
@@ -1068,7 +1068,7 @@
 - id: Cap202327ResultIndicatorsEuropeanCommissionDirecto_ImprovingAnimalWelfare
   name: 'CAP 2023 - 27: Result indicators (European Commission, Directorate-General for Agriculture and Rural Development)-Improving animal welfare'
   description: ''
-  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirecto
+  in_database: AgriFoodDataPortal
   measures_indicator: FSI_0097
   data_link: https://agridata.ec.europa.eu/extensions/DashboardCapPlan/result_indicators.html
   oldest_datapoint: ''
@@ -1079,7 +1079,7 @@
 - id: Cap202327ResultIndicatorsEuropeanCommissionDirecto_RedistributionToSmallerFarms
   name: 'CAP 2023 - 27: Result indicators (European Commission, Directorate-General for Agriculture and Rural Development)-Redistribution to smaller farms'
   description: ''
-  in_database: Cap202327ResultIndicatorsEuropeanCommissionDirecto
+  in_database: AgriFoodDataPortal
   measures_indicator: FSI_0098
   data_link: https://agridata.ec.europa.eu/extensions/DashboardCapPlan/result_indicators.html
   oldest_datapoint: ''
@@ -1211,7 +1211,7 @@
 - id: Who2024_PrevalenceOfOverweightAndObesityAmongBoysAndGirlsA
   name: WHO (2024)-Prevalence of overweight and obesity among boys and girls aged 7-9 years
   description: ''
-  in_database: Who2024
+  in_database: Who
   measures_indicator: FSI_0110
   data_link: https://www.who.int/europe/publications/m/item/brief-review-of-results-from-round-6-of-cosi-2022-2024
   oldest_datapoint: ''
@@ -1431,7 +1431,7 @@
 - id: Who2022_DailyConcumptionOfFreshFruitAmong69YearOlds
   name: WHO (2022)-Daily concumption of fresh fruit among 6–9-year-olds
   description: ''
-  in_database: Who2022
+  in_database: Who
   measures_indicator: FSI_0134
   data_link: https://www.who.int/europe/publications/i/item/WHO-EURO-2022-6594-46360-67071
   oldest_datapoint: ''
@@ -1442,7 +1442,7 @@
 - id: Who2022_DailyConcumptionOfVegetablesAmong69YearOlds
   name: WHO (2022)-Daily concumption of vegetables among 6–9-year-olds
   description: ''
-  in_database: Who2022
+  in_database: Who
   measures_indicator: FSI_0135
   data_link: https://www.who.int/europe/publications/i/item/WHO-EURO-2022-6594-46360-67071
   oldest_datapoint: ''
@@ -1453,7 +1453,7 @@
 - id: Who2022_FrequentConsumptionOfSoftDrinks3DaysWeekAmong69Yea
   name: WHO (2022)-Frequent consumption of soft drinks (>3 days/week) among 6-9-year-olds
   description: ''
-  in_database: Who2022
+  in_database: Who
   measures_indicator: FSI_0136
   data_link: https://www.who.int/europe/publications/i/item/WHO-EURO-2022-6594-46360-67071
   oldest_datapoint: ''
@@ -1761,7 +1761,7 @@
 - id: DataModellingPlatformOfResourceEconomicsJrcLasarte_ShareOfPeopleEmployedInAgricultureBeverageFishingA
   name: Data-Modelling platform of resource economics (JRC) / Lasarte-López et al. (2023)-Share of people employed in agriculture/beverage/fishing and aquaculture/food (vs. EU27)
   description: ''
-  in_database: DataModellingPlatformOfResourceEconomicsJrcLasarte
+  in_database: DataModellingPlatformOfResourceEconomics
   measures_indicator: FSI_0167
   data_link: https://datam.jrc.ec.europa.eu/datam/mashup/BIOECONOMICS/
   oldest_datapoint: ''
