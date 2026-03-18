@@ -168,7 +168,7 @@ classes:
 
   Database:
     is_a: Reference
-    title: reference
+    title: database
     description: A reference to a database.
     slots:
       - update_frequency     
