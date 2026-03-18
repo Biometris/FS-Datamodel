@@ -144,6 +144,9 @@ classes:
     description: Criterion used for indicator selection.
     slots:
       - category
+      - rationale_strong
+      - rationale_adequate
+      - rationale_weak
 
   IndicatorcriteriaScore:
     title: indicator criterion score
@@ -404,7 +407,7 @@ slots:
     title: frequency at which the data is updated
     description:
       Frequency at which the data is updated.
-    range: TimeGranularity  
+    range: TimeGranularity
 
   category:
     title: category
@@ -421,6 +424,23 @@ slots:
     description: Type of reference.
     range: ReferenceType
 
+  rationale_strong:
+    title: rationale strong
+    range: narrative_text
+    description: >-
+      Rationale for a strong score for the indicator.
+
+  rationale_adequate:
+    title: rationale adequate
+    range: narrative_text
+    description: >-
+      Rationale for an adequate score for the indicator.
+
+  rationale_weak:
+    title: rationale weak
+    range: narrative_text
+    description: >-
+      Rationale for a weak score for the indicator.
 
 ## --------------------
 ## TYPES
