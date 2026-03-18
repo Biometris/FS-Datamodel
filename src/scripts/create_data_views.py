@@ -232,6 +232,12 @@ if __name__ == "__main__":
             enum_dict = enum_dict
         )
 
+        render_template(
+            template_name = 'indicator_criteria_rationale',
+            criteria = criteria,
+            enum_dict = enum_dict
+        )
+
         criteria_scores = datastore.get_indicator_criteria_scores(
             include_missing = True,
             indicators = indicators,

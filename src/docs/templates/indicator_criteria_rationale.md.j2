@@ -1,0 +1,16 @@
+---
+hide:
+  - toc
+---
+
+# INDICATOR CRITERIA RATIONALE
+
+| Criterion | Strong | Adequate | Weak | 
+|------|------------------|------------------|------------------|
+{% for criterion in criteria -%}
+  {%- set name = criterion['name'] -%}
+  {%- set strong = criterion['rationale_strong'] if criterion['rationale_strong'] else '-' -%}  
+  {%- set adequate = criterion['rationale_adequate'] if criterion['rationale_adequate'] else '-' -%}
+  {%- set weak = criterion['rationale_weak'] if criterion['rationale_weak'] else '-' -%} 
+| {{ name }} | {{ strong }} | {{ adequate }} | {{ weak }} |
+{% endfor %}

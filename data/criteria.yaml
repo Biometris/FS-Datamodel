@@ -74,7 +74,7 @@
   name: broad geographical coverage
   description: Indicators have to be based on data with broad geographical coverage (i.e., an indicator on agricultural GHG emissions should include data from both high-income and low-income countries). Data should be available at appropriate territorial scales (local, regional, national, and global), depending on the monitoring objectives.
   category: GeographicalCoverageAndTimeliness
-  rationale_strong: ≥27.
+  rationale_strong: \>=27.
   rationale_adequate: 15-26.
   rationale_weak: <15.
 - id: Timeliness
@@ -82,7 +82,6 @@
   description: >-
     Indicators should provide up-to-date and regularly updated data that accurately reflect the current state and performance of the sustainable food system. Timely data support early detection of trends, emerging issues, or progress, enabling informed decision-making. Updates should be frequent enough to be useful while maintaining data quality and consistency with other indicators for integrated analysis.
   category: GeographicalCoverageAndTimeliness
-  rationale_strong: ≤1 year.
+  rationale_strong: <=1 year.
   rationale_adequate: 2-3 years.
-  rationale_weak: >-
-    >3 years.
+  rationale_weak: \>3 years.

@@ -14,7 +14,9 @@ nav:
   - Indicator databases: databases_table.md
   - Indicator data collection details: indicator_data_collection_details_table.md  
   #- Indicator scoring:
-  - Indicator criteria: indicator_criteria.md
+  - Indicator criteria: 
+    - Definitions: indicator_criteria.md
+    - Rationale: indicator_criteria_rationale.md
   - References: references.md
     #- Indicator scores: indicator_scores.md
   - Vocabularies:
