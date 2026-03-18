@@ -12,7 +12,6 @@ class DataStore:
         schema_file: str,
         indicator_definitions_file: str,
         indicator_categories_file: str,        
-        databases_file: str,
         indicator_data_collection_details_file: str,
         criteria_file: str,
         indicator_scores_file: str,
@@ -30,7 +29,6 @@ class DataStore:
         self.add_database_data(indicator_definitions_file, "Indicator", "Indicators")
         self.add_database_data(indicator_categories_file, "IndicatorCategory", "IndicatorCategories")        
         self.add_database_data(indicator_data_collection_details_file, "IndicatorDataCollectionDetails", "IndicatorDataCollectionDetails")
-        self.add_database_data(databases_file, "Database", "Databases")
         self.add_database_data(criteria_file, "IndicatorCriterion", "IndicatorCriteria")
         self.add_database_data(indicator_scores_file, "IndicatorcriteriaScore", "IndicatorCriteriaScores")
         self.add_database_data(references_file, "Reference", "ReferencesTab")
@@ -65,7 +63,7 @@ class DataStore:
         # Validate cross-references between Databases and IndicatorDataCollectionDetails
         data_source_collection = self.db.get_collection("IndicatorDataCollectionDetails")
         for data_collection in data_source_collection.rows_iter():
-            database = data_collection.get("database")
+            database = data_collection.get("reference")
             if database is not None and len(database.find({"id": data_source}).rows) == 0:
                 print(f"{database} specified in data collection {data_collection.ged("id")} is not in the collection of databases.")
                 valid = False
@@ -123,7 +121,7 @@ class DataStore:
 
     def get_databases(self):
         """Return a joined view of databases"""
-        q = Query(from_table="Databases", limit=-1)
+        q = Query(from_table="ReferencesTab", where_clause="reference_type=='Database'", limit=-1)        
         return self.db.query(q).rows
 
     def get_indicator_indicator_data_collection_details(self):

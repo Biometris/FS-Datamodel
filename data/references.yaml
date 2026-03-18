@@ -1,17 +1,118 @@
+- id: Eurostat
+  name: Eurostat
+  author: ''
+  description: ''
+  link: https://ec.europa.eu/eurostat/
+  update_frequency: Yearly
+  reference_type: Database
+- id: Faostat
+  name: FAOSTAT
+  author: ''
+  description: ''
+  link: https://www.fao.org/faostat/
+  update_frequency: Other
+  reference_type: Database  
+- id: AgriFoodDataPortal
+  name: Agri-food data portal
+  author: ''
+  description: ''
+  link: https://agridata.ec.europa.eu/
+  update_frequency: Yearly
+  reference_type: Database  
+- id: WorldBankGroup
+  name: World Bank Group
+  author: ''
+  description: ''
+  link: https://data.worldbank.org/
+  update_frequency: Yearly
+  reference_type: Database  
+- id: DataModellingPlatformOfResourceEconomics
+  name: Data-Modelling platform of resource economics (JRC)
+  author: ''
+  description: ''
+  link: https://datam.jrc.ec.europa.eu/
+  update_frequency: Yearly
+  reference_type: Database  
+- id: EuropeanDatabaseOfSalesOfVeterinaryAntmicrobialAge
+  name: European database of sales of veterinary antmicrobial agents (EMA)
+  author: ''
+  description: ''
+  link: https://esvacbi.ema.europa.eu/analytics/saw.dll?Dashboard
+  update_frequency: Yearly
+  reference_type: Database  
+- id: DirectorateGeneralForAgricultureAndRuralDevelopmen
+  name: Directorate-General for Agriculture and Rural Development
+  author: ''
+  description: ''
+  link: https://agriculture.ec.europa.eu/
+  update_frequency: Yearly
+  reference_type: Database  
+- id: EcEuropeanPlatformOnLifeCycleAssessmentEplca
+  name: EC / European Platform on life cycle assessment (EPLCA)
+  author: ''
+  description: ''
+  link: https://eplca.jrc.ec.europa.eu/
+  update_frequency: Yearly
+  reference_type: Database  
+- id: Who
+  name: WHO
+  author: ''
+  description: ''
+  link: https://www.who.int/
+  update_frequency: Other
+  reference_type: Database  
+- id: EfsaComprehensiveEuropeanFoodConsumptionDatabase
+  name: EFSA Comprehensive European Food Consumption Database
+  author: ''
+  description: ''
+  link: https://www.efsa.europa.eu/
+  update_frequency: Other
+  reference_type: Database  
+- id: MertensEtAl2019
+  name: Mertens et al. (2019)
+  author: ''
+  description: ''
+  link: https://www.sciencedirect.com/science/article/pii/S0959652619326873
+  update_frequency: Other
+  reference_type: Database  
+- id: DirectorateGeneralForCommunicationsNetworksContent
+  name: Directorate-General for Communications Networks, Content and Technology
+  author: ''
+  description: ''
+  link: https://digital-decade-desi.digital-strategy.ec.europa.eu/
+  update_frequency: Yearly
+  reference_type: Database  
 - id: HLPE2017
-  name: HLPE2017
+  name: HLPE 2017
   author: FAO
   year: 2017
   description: >- 
     Nutrition and food systems. A report by the High Level Panel of Experts on Food Security and Nutrition of the
     Committee on World Food Security.
+  reference_type: Publication
 - id: USDHHS2020
-  name: USDHHS2020
+  name: USDHHS 2020
   author: >- 
     U.S. Department of Health and Human Services & U.S. Department of Agriculture
   year: 2020
   description: >- 
     U.S. Department of Health and Human Services & U.S. Department of Agriculture (2020). Scientific Report of the 2020 Dietary 
-    Guidelines Advisory Committee. Washington, DC: U.S. Government Printing Office
-
+    Guidelines Advisory Committee. Washington, DC: U.S. Government Printing Office.
+  reference_type: Publication
+- id: FAO2003
+  name: FAO 2003
+  author: >- 
+    FAO / WHO
+  year: 2003
+  description: >- 
+    Assuring Food Safety and Quality: Guidelines for Strengthening National Food Control System.
+  reference_type: Publication
+- id: FAO2008
+  name: FAO 2008
+  author: >- 
+    FAO / WHO
+  year: 2008
+  description: >- 
+    Food and Agriculture Organization of the United Nations. An introduction to the basic concepts of food security.
+  reference_type: Publication
 

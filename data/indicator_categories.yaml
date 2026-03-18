@@ -77,7 +77,7 @@
     including undernutrition, micronutrient deficiencies, overweight, obesity, and diet-related non-communicable diseases.
   dimension: Health
   outcome_type: Health
-  reference:
+  referenced_in:
     - HLPE2017
 - id: DietaryConsumptionPatternsFoodIntake
   name: Dietary consumption patterns/Food Intake
@@ -86,6 +86,8 @@
     drinks that individuals or populations.
   dimension: Health
   activity_type: ConsumptionAndDiets
+  referenced_in:
+    - USDHHS2020
 - id: FoodQualityAndSafety
   name: Food quality and safety
   description: >-
@@ -94,6 +96,8 @@
     along the food chain.
   dimension: Health
   outcome_type: Health
+  referenced_in:
+    - FAO2003
 - id: FoodSecurityAccessAndEnablingFactors
   name: >- 
     Food security: access and enabling factors
@@ -102,6 +106,8 @@
     infrastructural, and systemic conditions that enable or constrain such access.
   dimension: Health
   outcome_type: FoodSecurity
+  referenced_in:
+    - FAO2008
 - id: FoodAvailability
   name: Food availability
   description: >- 
@@ -109,6 +115,8 @@
     imports, and stocks, including the supply of energy and nutrients and the productive capacity of agriculture.
   dimension: Health
   activity_type: FoodEnvironment
+  referenced_in:
+    - FAO2008
 - id: FoodStability
   name: Food stability
   description: >-
@@ -116,6 +124,8 @@
     resilience of food supply systems to economic, climatic, and market-related shocks and variability.
   dimension: Health
   outcome_type: Resilience
+  referenced_in:
+    - FAO2008
 - id: EmploymInAgricFoodSector
   name: Employm. in agric._food sector
   description: ''

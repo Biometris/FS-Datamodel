@@ -37,8 +37,9 @@ classes:
   IndicatorCategory:
     is_a: Entity
     title: indicator category
-    description:
-      Group of indicators that share common characteristics, functions, or measurement purposes within a monitoring or evaluation framework.
+    description: >-
+      Group of indicators that share common characteristics, functions, or measurement purposes within a monitoring or 
+      evaluation framework.
     slots:
       - id
       - name
@@ -46,7 +47,7 @@ classes:
       - dimension
       - outcome_type
       - activity_type
-      - source
+      - referenced_in
     slot_usage:
       id:
         description:
@@ -64,7 +65,8 @@ classes:
     is_a: Entity
     title: indicator
     description: >-
-      A quantitative measure used to assess the state, performance, or progress of a specific aspect of the food system in relation to sustainability objectives.
+      A quantitative measure used to assess the state, performance, or progress of a specific aspect of the food system 
+      in relation to sustainability objectives.
     slots:
       - id
       - name
@@ -109,15 +111,10 @@ classes:
       - spatial_scope
       - spatial_granularity
       - data_link
-
-  Database:
-    is_a: Entity
-    title: database
-    description: >-
-      Database containing data corresponding to an indicator.
-    slots:
-      - link
-      - update_frequency
+    slot_usage:
+      referenced_in:
+        description:
+          Specifies the database which the entity is part of.
 
   IndicatorDatapoint:
     is_a: QuantityValue
@@ -157,7 +154,7 @@ classes:
       - score
       - comment
 
-  Reference:    
+  Reference:
     is_a: Entity
     title: reference
     description: A reference to a publication, database or dataset.
@@ -165,6 +162,13 @@ classes:
       - link
       - reference_type
       - comment
+
+  Database:
+    is_a: Reference
+    title: reference
+    description: A reference to a database.
+    slots:
+      - update_frequency     
 
 ## --------------------
 ## SLOTS
@@ -266,11 +270,11 @@ slots:
     range: IndicatorCategory
     required: true
 
-  source:
+  referenced_in:
     is_a: node property
-    title: source
-    description: >
-      Reference to the source of the definition of the indicator category.
+    title: referenced in
+    description: >-
+      Reference to the source of the definition of entity.
     range: Reference
     multivalued: true
 

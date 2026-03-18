@@ -1,9 +1,9 @@
 target_class: Indicator
 data_sources:
   - data\\indicators.yaml
-target_class: Database
+target_class: Reference
 data_sources:
-  - data\\databases.yaml
+  - data\\references.yaml
 target_class: IndicatorCategory
 data_sources:
   - data\\indicator_categories.yaml

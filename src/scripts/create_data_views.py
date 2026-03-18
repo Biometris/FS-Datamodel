@@ -109,8 +109,7 @@ if __name__ == "__main__":
 
     # Data paths
     indicator_definitions_data_path = "data/indicators.yaml"
-    indicator_categories_data_path = "data/indicator_categories.yaml"    
-    indicator_databases_data_path = "data/databases.yaml"
+    indicator_categories_data_path = "data/indicator_categories.yaml"
     indicator_data_collection_details_data_path = "data/indicator_data_collection_details.yaml"
     criterion_data_path = "data/criteria.yaml"
     indicator_scores_data_path = "data/indicator_scores.yaml"
@@ -131,8 +130,7 @@ if __name__ == "__main__":
     datastore = DataStore(
         schema_file=SCHEMA_PATH,
         indicator_definitions_file=indicator_definitions_data_path,
-        indicator_categories_file=indicator_categories_data_path,        
-        databases_file=indicator_databases_data_path,
+        indicator_categories_file=indicator_categories_data_path,
         indicator_data_collection_details_file=indicator_data_collection_details_data_path,
         criteria_file=criterion_data_path,
         indicator_scores_file=indicator_scores_data_path,
@@ -146,7 +144,6 @@ if __name__ == "__main__":
         'Indicator',
         'IndicatorCategory',        
         'IndicatorDataCollectionDetails',
-        'Database',
         'IndicatorDatapoint',
         'IndicatorCriterion',
         'IndicatorcriteriaScore',
