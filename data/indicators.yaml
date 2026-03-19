@@ -1246,7 +1246,7 @@
   measurement_unit_description: '% of population aged 18 or over, by body mass index (BMI), classified into overweight, pre-obese or obese'
   measurement_units: []
   outcome_type: Health
-  has_category: NutritionalHealthOutcomes
+  has_category: NutritionAndHealth
   supply_chain_component:
   - Consumption
   sustainability_impact: Negative
@@ -1257,7 +1257,7 @@
   measurement_unit_description: '% of population aged 15 and over, classified into underweight, normal, pre-obese, obese'
   measurement_units: []
   outcome_type: Health
-  has_category: NutritionalHealthOutcomes
+  has_category: NutritionAndHealth
   supply_chain_component:
   - Consumption
   sustainability_impact: Undefined
@@ -1268,7 +1268,7 @@
   measurement_unit_description: '% of population aged 16 and over by educational attainment level, sex and age, classified into underweight, normal, overweight, pre-obese, obese'
   measurement_units: []
   outcome_type: Health
-  has_category: NutritionalHealthOutcomes
+  has_category: NutritionAndHealth
   supply_chain_component:
   - Consumption
   sustainability_impact: Undefined
@@ -1279,7 +1279,7 @@
   measurement_unit_description: '% of population aged 15 and over, by educational attainment level, sex and age, classified into underweight, normal, pre-obese, obese, overweight'
   measurement_units: []
   outcome_type: Health
-  has_category: NutritionalHealthOutcomes
+  has_category: NutritionAndHealth
   supply_chain_component:
   - Consumption
   sustainability_impact: Undefined
@@ -1290,7 +1290,7 @@
   measurement_unit_description: '% of population aged 15 and over, by income quintile, sex and age, classified into underweight, normal, pre-obese, obese, overweight'
   measurement_units: []
   outcome_type: Health
-  has_category: NutritionalHealthOutcomes
+  has_category: NutritionAndHealth
   supply_chain_component:
   - Consumption
   sustainability_impact: Undefined
@@ -1302,7 +1302,7 @@
   measurement_units:
   - PC
   outcome_type: Health
-  has_category: NutritionalHealthOutcomes
+  has_category: NutritionAndHealth
   supply_chain_component:
   - Consumption
   sustainability_impact: Negative
@@ -1314,7 +1314,7 @@
   measurement_units:
   - PC
   outcome_type: Health
-  has_category: NutritionalHealthOutcomes
+  has_category: NutritionAndHealth
   supply_chain_component:
   - Consumption
   sustainability_impact: Negative
@@ -1326,7 +1326,7 @@
   measurement_units:
   - PC
   outcome_type: Health
-  has_category: NutritionalHealthOutcomes
+  has_category: NutritionAndHealth
   supply_chain_component:
   - Consumption
   sustainability_impact: Negative
@@ -1338,7 +1338,7 @@
   measurement_units:
   - PC
   outcome_type: Health
-  has_category: NutritionalHealthOutcomes
+  has_category: NutritionAndHealth
   supply_chain_component:
   - Consumption
   sustainability_impact: Negative
@@ -1349,7 +1349,7 @@
   measurement_unit_description: '% of children ages 6-59 months'
   measurement_units: []
   outcome_type: Health
-  has_category: NutritionalHealthOutcomes
+  has_category: NutritionAndHealth
   supply_chain_component:
   - Consumption
   - FoodProcessing
@@ -1361,7 +1361,7 @@
   measurement_unit_description: '% of children under 5'
   measurement_units: []
   outcome_type: Health
-  has_category: NutritionalHealthOutcomes
+  has_category: NutritionAndHealth
   supply_chain_component:
   - Consumption
   sustainability_impact: Negative
@@ -1372,7 +1372,7 @@
   measurement_unit_description: '% of population ages 20 to 79'
   measurement_units: []
   outcome_type: Health
-  has_category: NutritionalHealthOutcomes
+  has_category: NutritionAndHealth
   supply_chain_component:
   - Consumption
   sustainability_impact: Negative
@@ -1383,7 +1383,7 @@
   measurement_unit_description: '% of population (aged 15 and over) per daily consumption frequency (consumption of 0 portions, 1 to 4 portions, 5 portions or more)'
   measurement_units: []
   outcome_type: Health
-  has_category: NutritionalBehaviour
+  has_category: DietaryConsumptionPatternsFoodIntake
   supply_chain_component:
   - Consumption
   sustainability_impact: Positive
@@ -1394,7 +1394,7 @@
   measurement_unit_description: '% of population (aged 15 and over) per daily consumption frequency (consumption of 0 portions, 1 to 4 portions, 5 portions or more)'
   measurement_units: []
   outcome_type: Health
-  has_category: NutritionalBehaviour
+  has_category: DietaryConsumptionPatternsFoodIntake
   supply_chain_component:
   - Consumption
   sustainability_impact: Positive
@@ -1405,7 +1405,7 @@
   measurement_unit_description: '% of population (aged 15 and over) per daily consumption frequency (consumption of 0 portions, 1 to 4 portions, 5 portions or more)'
   measurement_units: []
   outcome_type: Health
-  has_category: NutritionalBehaviour
+  has_category: DietaryConsumptionPatternsFoodIntake
   supply_chain_component:
   - Consumption
   sustainability_impact: Positive
@@ -1416,7 +1416,7 @@
   measurement_unit_description: '% of population (aged 15 and over) per daily consumption frequency (consumption of 0 portions, 1 to 4 portions, 5 portions or more)'
   measurement_units: []
   outcome_type: Health
-  has_category: NutritionalBehaviour
+  has_category: DietaryConsumptionPatternsFoodIntake
   supply_chain_component:
   - Consumption
   sustainability_impact: Positive
@@ -1427,7 +1427,7 @@
   measurement_unit_description: '% of population (aged 16 and over) per weekly consumption frequency (once a day, at least twice a day, less than once a week, from 1 to 3 times a week, from 4 to 6 times a week, never)'
   measurement_units: []
   outcome_type: Health
-  has_category: NutritionalBehaviour
+  has_category: DietaryConsumptionPatternsFoodIntake
   supply_chain_component:
   - Consumption
   sustainability_impact: Positive
@@ -1438,7 +1438,7 @@
   measurement_unit_description: '% of population (aged 15 and over) per weekly consumption frequency (at least once a day, from 1 to 3 times a week, from 4 to 6 times a week, never or occasionally)'
   measurement_units: []
   outcome_type: Health
-  has_category: NutritionalBehaviour
+  has_category: DietaryConsumptionPatternsFoodIntake
   supply_chain_component:
   - Consumption
   sustainability_impact: Positive
@@ -1449,7 +1449,7 @@
   measurement_unit_description: '% of population (aged 15 and over) per weekly consumption frequency (at least once a day, from 1 to 3 times a week, from 4 to 6 times a week, never or occasionally)'
   measurement_units: []
   outcome_type: Health
-  has_category: NutritionalBehaviour
+  has_category: DietaryConsumptionPatternsFoodIntake
   supply_chain_component:
   - Consumption
   sustainability_impact: Positive
@@ -1460,7 +1460,7 @@
   measurement_unit_description: '% of population (aged 15 and over) per weekly consumption frequency (at least once a day, from 1 to 3 times a week, from 4 to 6 times a week, never or occasionally)'
   measurement_units: []
   outcome_type: Health
-  has_category: NutritionalBehaviour
+  has_category: DietaryConsumptionPatternsFoodIntake
   supply_chain_component:
   - Consumption
   sustainability_impact: Positive
@@ -1471,7 +1471,7 @@
   measurement_unit_description: '% of population (aged 15 and over) per weekly consumption frequency (at least once a day, from 1 to 3 times a week, from 4 to 6 times a week, never or occasionally)'
   measurement_units: []
   outcome_type: Health
-  has_category: NutritionalBehaviour
+  has_category: DietaryConsumptionPatternsFoodIntake
   supply_chain_component:
   - Consumption
   sustainability_impact: Positive
@@ -1482,7 +1482,7 @@
   measurement_unit_description: '% of population (aged 15 and over) per weekly consumption frequency (at least once a day, from 1 to 3 times a week, from 4 to 6 times a week, never or occasionally)'
   measurement_units: []
   outcome_type: Health
-  has_category: NutritionalBehaviour
+  has_category: DietaryConsumptionPatternsFoodIntake
   supply_chain_component:
   - Consumption
   sustainability_impact: Negative
@@ -1493,7 +1493,7 @@
   measurement_unit_description: '% of population (aged 15 and over) per weekly consumption frequency (at least once a day, from 1 to 3 times a week, from 4 to 6 times a week, never or occasionally)'
   measurement_units: []
   outcome_type: Health
-  has_category: NutritionalBehaviour
+  has_category: DietaryConsumptionPatternsFoodIntake
   supply_chain_component:
   - Consumption
   sustainability_impact: Negative
@@ -1504,7 +1504,7 @@
   measurement_unit_description: '% of population (aged 15 and over) per weekly consumption frequency (at least once a day, from 1 to 3 times a week, from 4 to 6 times a week, never or occasionally)'
   measurement_units: []
   outcome_type: Health
-  has_category: NutritionalBehaviour
+  has_category: DietaryConsumptionPatternsFoodIntake
   supply_chain_component:
   - Consumption
   sustainability_impact: Negative
@@ -1515,7 +1515,7 @@
   measurement_unit_description: g/day
   measurement_units: []
   outcome_type: Health
-  has_category: NutritionalBehaviour
+  has_category: DietaryConsumptionPatternsFoodIntake
   supply_chain_component:
   - Consumption
   sustainability_impact: Negative
@@ -1526,7 +1526,7 @@
   measurement_unit_description: g/day
   measurement_units: []
   outcome_type: Health
-  has_category: NutritionalBehaviour
+  has_category: DietaryConsumptionPatternsFoodIntake
   supply_chain_component:
   - Consumption
   sustainability_impact: Positive
@@ -1537,7 +1537,7 @@
   measurement_unit_description: g/day
   measurement_units: []
   outcome_type: Health
-  has_category: NutritionalBehaviour
+  has_category: DietaryConsumptionPatternsFoodIntake
   supply_chain_component:
   - Consumption
   sustainability_impact: Negative
@@ -1548,7 +1548,7 @@
   measurement_unit_description: g/day
   measurement_units: []
   outcome_type: Health
-  has_category: NutritionalBehaviour
+  has_category: DietaryConsumptionPatternsFoodIntake
   supply_chain_component:
   - Consumption
   sustainability_impact: Negative
@@ -1559,7 +1559,7 @@
   measurement_unit_description: '%en or gram per 2,000kcal'
   measurement_units: []
   outcome_type: Health
-  has_category: NutritionalBehaviour
+  has_category: DietaryConsumptionPatternsFoodIntake
   supply_chain_component:
   - Consumption
   sustainability_impact: Negative
@@ -1570,7 +1570,7 @@
   measurement_unit_description: '%en or gram per 2,000kcal'
   measurement_units: []
   outcome_type: Health
-  has_category: NutritionalBehaviour
+  has_category: DietaryConsumptionPatternsFoodIntake
   supply_chain_component:
   - Consumption
   sustainability_impact: Negative
@@ -1581,7 +1581,7 @@
   measurement_unit_description: '% of households'
   measurement_units: []
   outcome_type: Health
-  has_category: NutritionalBehaviour
+  has_category: DietaryConsumptionPatternsFoodIntake
   supply_chain_component:
   - Consumption
   - FoodProcessing
@@ -1595,7 +1595,7 @@
   measurement_units:
   - PC
   outcome_type: Health
-  has_category: NutritionalBehaviour
+  has_category: DietaryConsumptionPatternsFoodIntake
   supply_chain_component:
   - Consumption
   sustainability_impact: Positive
@@ -1607,7 +1607,7 @@
   measurement_units:
   - PC
   outcome_type: Health
-  has_category: NutritionalBehaviour
+  has_category: DietaryConsumptionPatternsFoodIntake
   supply_chain_component:
   - Consumption
   sustainability_impact: Positive
@@ -1619,7 +1619,7 @@
   measurement_units:
   - PC
   outcome_type: Health
-  has_category: NutritionalBehaviour
+  has_category: DietaryConsumptionPatternsFoodIntake
   supply_chain_component:
   - Consumption
   sustainability_impact: Negative
@@ -1631,7 +1631,7 @@
   measurement_unit_description: mg NO3 per litre
   measurement_units: []
   outcome_type: Health
-  has_category: FoodQualitySafety
+  has_category: FoodQualityAndSafety
   supply_chain_component:
   - PrimaryProduction
   sustainability_impact: Negative
@@ -1643,7 +1643,7 @@
   measurement_units:
   - PC
   outcome_type: Health
-  has_category: FoodQualitySafety
+  has_category: FoodQualityAndSafety
   supply_chain_component:
   - Retail
   sustainability_impact: Positive
@@ -1655,7 +1655,7 @@
   measurement_units:
   - PC
   outcome_type: Health
-  has_category: FoodQualitySafety
+  has_category: FoodQualityAndSafety
   supply_chain_component:
   - Retail
   sustainability_impact: Positive
@@ -1667,7 +1667,7 @@
   measurement_units:
   - PC
   outcome_type: Health
-  has_category: FoodQualitySafety
+  has_category: FoodQualityAndSafety
   supply_chain_component:
   - Consumption
   sustainability_impact: Positive
@@ -1679,7 +1679,7 @@
   measurement_units:
   - PC
   outcome_type: Health
-  has_category: FoodQualitySafety
+  has_category: FoodQualityAndSafety
   supply_chain_component:
   - Consumption
   sustainability_impact: Positive
@@ -1691,7 +1691,7 @@
   measurement_units:
   - PC
   outcome_type: Health
-  has_category: Malnutrition
+  has_category: NutritionAndHealth
   supply_chain_component:
   - Consumption
   - Retail
@@ -1704,7 +1704,7 @@
   measurement_units:
   - PC
   outcome_type: Health
-  has_category: Malnutrition
+  has_category: NutritionAndHealth
   supply_chain_component:
   - Consumption
   - Retail
@@ -1717,7 +1717,7 @@
   measurement_units:
   - PC
   outcome_type: Health
-  has_category: FoodAccess
+  has_category: FoodSecurityAccessAndEnablingFactors
   supply_chain_component:
   - Consumption
   sustainability_impact: Negative
@@ -1729,7 +1729,7 @@
   measurement_units:
   - PC
   outcome_type: Health
-  has_category: FoodAccess
+  has_category: FoodSecurityAccessAndEnablingFactors
   supply_chain_component:
   - Consumption
   sustainability_impact: Negative
@@ -1740,7 +1740,7 @@
   measurement_unit_description: Int$/cap
   measurement_units: []
   outcome_type: Health
-  has_category: FoodAccess
+  has_category: FoodSecurityAccessAndEnablingFactors
   supply_chain_component:
   - Consumption
   sustainability_impact: Positive
@@ -1752,7 +1752,7 @@
   measurement_units:
   - KM
   outcome_type: Health
-  has_category: FoodAccess
+  has_category: FoodSecurityAccessAndEnablingFactors
   supply_chain_component:
   - Consumption
   sustainability_impact: Positive
@@ -1764,7 +1764,7 @@
   measurement_units:
   - PC
   outcome_type: Health
-  has_category: FoodAccess
+  has_category: FoodSecurityAccessAndEnablingFactors
   supply_chain_component:
   - PrimaryProduction
   sustainability_impact: Positive

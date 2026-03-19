@@ -70,34 +70,62 @@
   name: Cross-cutting indicators
   description: ''
   dimension: Environment
-- id: NutritionalHealthOutcomes
-  name: Nutritional health outcomes
-  description: ''
+- id: NutritionAndHealth
+  name: Nutrition and Health
+  description: >-
+    Indicators capturing the final health outcomes of food systems, encompassing nutritional status and malnutrition in all its forms, 
+    including undernutrition, micronutrient deficiencies, overweight, obesity, and diet-related non-communicable diseases.
   dimension: Health
-- id: NutritionalBehaviour
-  name: Nutritional behaviour
-  description: ''
+  outcome_type: Health
+  referenced_in:
+    - HLPE2017
+- id: DietaryConsumptionPatternsFoodIntake
+  name: Dietary consumption patterns/Food Intake
+  description: >-
+    Indicators describing the dietary consumption patterns refer to the quantities, proportions, and habitual combinations of foods and 
+    drinks that individuals or populations.
   dimension: Health
-- id: FoodQualitySafety
-  name: Food quality & safety
-  description: ''
+  activity_type: ConsumptionAndDiets
+  referenced_in:
+    - USDHHS2020
+- id: FoodQualityAndSafety
+  name: Food quality and safety
+  description: >-
+    Indicators describing the extent to which foods meet established standards of safety and quality, including the absence of 
+    biological, chemical, and physical hazards, as well as compliance with nutritional, compositional, and hygienic requirements 
+    along the food chain.
   dimension: Health
-- id: Malnutrition
-  name: Malnutrition
-  description: ''
+  outcome_type: Health
+  referenced_in:
+    - FAO2003
+- id: FoodSecurityAccessAndEnablingFactors
+  name: >- 
+    Food security: access and enabling factors
+  description: >-
+    Indicators capturing both people's ability to obtain adequate food (economic and physical access) and the broader economic, 
+    infrastructural, and systemic conditions that enable or constrain such access.
   dimension: Health
-- id: FoodAccess
-  name: Food access
-  description: ''
-  dimension: Health
+  outcome_type: FoodSecurity
+  referenced_in:
+    - FAO2008
 - id: FoodAvailability
   name: Food availability
-  description: ''
+  description: >- 
+    Indicators describing the quantity, composition, and stability of food supplied by the food system through domestic production, 
+    imports, and stocks, including the supply of energy and nutrients and the productive capacity of agriculture.
   dimension: Health
+  activity_type: FoodEnvironment
+  referenced_in:
+    - FAO2008
 - id: FoodStability
   name: Food stability
-  description: ''
+  description: >-
+    Indicators describing the extent to which the availability of and access to food are maintained over time, including the 
+    resilience of food supply systems to economic, climatic, and market-related shocks and variability.
   dimension: Health
+  outcome_type: Resilience
+  referenced_in:
+    - FAO2008
 - id: EmploymInAgricFoodSector
   name: Employm. in agric._food sector
   description: ''

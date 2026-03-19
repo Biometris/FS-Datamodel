@@ -416,7 +416,7 @@
     {
       "name": "SustainabilityDimension",
       "definition_uri": "https://w3id.org/linkml/examples/fsiSustainabilityDimension",
-      "description": "TODO",
+      "description": "A dimension of sustainability to which the indicator relates.",
       "title": "sustainability dimension",
       "from_schema": "https://w3id.org/linkml/examples/fsi",
       "permissible_values": [
@@ -688,7 +688,7 @@
     {
       "name": "ScoreCategory",
       "definition_uri": "https://w3id.org/linkml/examples/fsiScoreCategory",
-      "description": "Score category",
+      "description": "Score category.",
       "title": "score category",
       "from_schema": "https://w3id.org/linkml/examples/fsi",
       "permissible_values": [
@@ -785,6 +785,30 @@
         },
         {
           "text": "EU_SDG_15_50"
+        }
+      ]
+    },
+    {
+      "name": "ReferenceType",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiReferenceType",
+      "description": "The type of source that a reference refers to.",
+      "title": "Reference types",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "permissible_values": [
+        {
+          "text": "Database",
+          "description": "Database.",
+          "title": "database"
+        },
+        {
+          "text": "Dataset",
+          "description": "Dataset.",
+          "title": "dataset"
+        },
+        {
+          "text": "Publication",
+          "description": "Publication.",
+          "title": "publication"
         }
       ]
     },
@@ -7128,9 +7152,10 @@
       "description": "A comment about an entity.",
       "from_schema": "https://w3id.org/linkml/examples/fsi",
       "slot_uri": "https://w3id.org/linkml/examples/fsicomment",
-      "owner": "IndicatorcriteriaScore",
+      "owner": "Reference",
       "domain_of": [
-        "IndicatorcriteriaScore"
+        "IndicatorcriteriaScore",
+        "Reference"
       ],
       "range": "narrative_text",
       "@type": "SlotDefinition"
@@ -7273,7 +7298,7 @@
     {
       "name": "has_category",
       "definition_uri": "https://w3id.org/linkml/examples/fsihas_category",
-      "description": "Specifies the category for the indicator.",
+      "description": "Group of indicators that share common characteristics, functions, or measurement purposes within a monitoring or evaluation framework.",
       "title": "indicator category",
       "from_schema": "https://w3id.org/linkml/examples/fsi",
       "is_a": "node_property",
@@ -7285,6 +7310,23 @@
       ],
       "range": "IndicatorCategory",
       "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "referenced_in",
+      "definition_uri": "https://w3id.org/linkml/examples/fsireferenced_in",
+      "description": "Reference to the source of the definition of entity.",
+      "title": "referenced in",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "is_a": "node_property",
+      "domain": "Entity",
+      "slot_uri": "https://w3id.org/linkml/examples/fsireferenced_in",
+      "owner": "IndicatorCategory",
+      "domain_of": [
+        "IndicatorCategory"
+      ],
+      "range": "Reference",
+      "multivalued": true,
       "@type": "SlotDefinition"
     },
     {
@@ -7371,6 +7413,7 @@
       "slot_uri": "https://w3id.org/linkml/examples/fsiactivity_type",
       "owner": "Indicator",
       "domain_of": [
+        "IndicatorCategory",
         "Indicator"
       ],
       "range": "FoodSystemActivityType",
@@ -7400,6 +7443,7 @@
       "slot_uri": "https://w3id.org/linkml/examples/fsioutcome_type",
       "owner": "Indicator",
       "domain_of": [
+        "IndicatorCategory",
         "Indicator"
       ],
       "range": "FoodSystemOutcomeType",
@@ -7466,29 +7510,29 @@
       "@type": "SlotDefinition"
     },
     {
+      "name": "link",
+      "definition_uri": "https://w3id.org/linkml/examples/fsilink",
+      "description": "Link.",
+      "title": "link",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "slot_uri": "https://w3id.org/linkml/examples/fsilink",
+      "owner": "Reference",
+      "domain_of": [
+        "Reference"
+      ],
+      "range": "iri_type",
+      "@type": "SlotDefinition"
+    },
+    {
       "name": "data_link",
       "definition_uri": "https://w3id.org/linkml/examples/fsidata_link",
-      "description": "Link to the data for the indicator",
+      "description": "Link to the data for the indicator.",
       "title": "data link",
       "from_schema": "https://w3id.org/linkml/examples/fsi",
       "slot_uri": "https://w3id.org/linkml/examples/fsidata_link",
       "owner": "IndicatorDataCollectionDetails",
       "domain_of": [
         "IndicatorDataCollectionDetails"
-      ],
-      "range": "iri_type",
-      "@type": "SlotDefinition"
-    },
-    {
-      "name": "database_link",
-      "definition_uri": "https://w3id.org/linkml/examples/fsidatabase_link",
-      "description": "Link to the database",
-      "title": "database link",
-      "from_schema": "https://w3id.org/linkml/examples/fsi",
-      "slot_uri": "https://w3id.org/linkml/examples/fsidatabase_link",
-      "owner": "Database",
-      "domain_of": [
-        "Database"
       ],
       "range": "iri_type",
       "@type": "SlotDefinition"
@@ -7606,6 +7650,62 @@
       "@type": "SlotDefinition"
     },
     {
+      "name": "reference_type",
+      "definition_uri": "https://w3id.org/linkml/examples/fsireference_type",
+      "description": "Type of reference.",
+      "title": "reference type",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "slot_uri": "https://w3id.org/linkml/examples/fsireference_type",
+      "owner": "Reference",
+      "domain_of": [
+        "Reference"
+      ],
+      "range": "ReferenceType",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "rationale_strong",
+      "definition_uri": "https://w3id.org/linkml/examples/fsirationale_strong",
+      "description": "Rationale for a strong score for the indicator.",
+      "title": "rationale strong",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "slot_uri": "https://w3id.org/linkml/examples/fsirationale_strong",
+      "owner": "IndicatorCriterion",
+      "domain_of": [
+        "IndicatorCriterion"
+      ],
+      "range": "narrative_text",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "rationale_adequate",
+      "definition_uri": "https://w3id.org/linkml/examples/fsirationale_adequate",
+      "description": "Rationale for an adequate score for the indicator.",
+      "title": "rationale adequate",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "slot_uri": "https://w3id.org/linkml/examples/fsirationale_adequate",
+      "owner": "IndicatorCriterion",
+      "domain_of": [
+        "IndicatorCriterion"
+      ],
+      "range": "narrative_text",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "rationale_weak",
+      "definition_uri": "https://w3id.org/linkml/examples/fsirationale_weak",
+      "description": "Rationale for a weak score for the indicator.",
+      "title": "rationale weak",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "slot_uri": "https://w3id.org/linkml/examples/fsirationale_weak",
+      "owner": "IndicatorCriterion",
+      "domain_of": [
+        "IndicatorCriterion"
+      ],
+      "range": "narrative_text",
+      "@type": "SlotDefinition"
+    },
+    {
       "name": "IndicatorCategory_id",
       "definition_uri": "https://w3id.org/linkml/examples/fsiid",
       "description": "Unique identifier of the indicator category.",
@@ -7678,6 +7778,26 @@
       "is_usage_slot": true,
       "usage_slot_name": "description",
       "range": "narrative_text",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "IndicatorCategory_outcome_type",
+      "definition_uri": "https://w3id.org/linkml/examples/fsioutcome_type",
+      "description": "Reference to the type of the outcome measured by the indicator.",
+      "title": "outcome type",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "is_a": "outcome_type",
+      "domain": "IndicatorCategory",
+      "slot_uri": "https://w3id.org/linkml/examples/fsioutcome_type",
+      "alias": "outcome_type",
+      "owner": "IndicatorCategory",
+      "domain_of": [
+        "IndicatorCategory"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "outcome_type",
+      "range": "FoodSystemOutcomeType",
+      "required": true,
       "@type": "SlotDefinition"
     },
     {
@@ -7774,6 +7894,26 @@
       "@type": "SlotDefinition"
     },
     {
+      "name": "IndicatorDataCollectionDetails_referenced_in",
+      "definition_uri": "https://w3id.org/linkml/examples/fsireferenced_in",
+      "description": "Specifies the database which the entity is part of.",
+      "title": "referenced in",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "is_a": "referenced_in",
+      "domain": "IndicatorDataCollectionDetails",
+      "slot_uri": "https://w3id.org/linkml/examples/fsireferenced_in",
+      "alias": "referenced_in",
+      "owner": "IndicatorDataCollectionDetails",
+      "domain_of": [
+        "IndicatorDataCollectionDetails"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "referenced_in",
+      "range": "Reference",
+      "multivalued": true,
+      "@type": "SlotDefinition"
+    },
+    {
       "name": "IndicatorDatapoint_id",
       "definition_uri": "https://w3id.org/linkml/examples/fsiid",
       "description": "Unique identifier of the datapoint.",
@@ -7815,7 +7955,7 @@
     {
       "name": "IndicatorCategory",
       "definition_uri": "https://w3id.org/linkml/examples/fsiIndicatorCategory",
-      "description": "The category the indicator belongs to.",
+      "description": "Group of indicators that share common characteristics, functions, or measurement purposes within a monitoring or  evaluation framework.",
       "title": "indicator category",
       "from_schema": "https://w3id.org/linkml/examples/fsi",
       "is_a": "Entity",
@@ -7824,7 +7964,10 @@
         "IndicatorCategory_id",
         "IndicatorCategory_name",
         "IndicatorCategory_description",
-        "dimension"
+        "dimension",
+        "IndicatorCategory_outcome_type",
+        "activity_type",
+        "referenced_in"
       ],
       "slot_usage": {},
       "class_uri": "https://w3id.org/linkml/examples/fsiIndicatorCategory",
@@ -7833,7 +7976,7 @@
     {
       "name": "Indicator",
       "definition_uri": "https://w3id.org/linkml/examples/fsiIndicator",
-      "description": "A quantitative measure used to assess the state, performance, or progress of a specific aspect of the food system in relation to sustainability objectives.",
+      "description": "A quantitative measure used to assess the state, performance, or progress of a specific aspect of the food system  in relation to sustainability objectives.",
       "title": "indicator",
       "from_schema": "https://w3id.org/linkml/examples/fsi",
       "is_a": "Entity",
@@ -7875,29 +8018,11 @@
         "time_granularity",
         "spatial_scope",
         "spatial_granularity",
-        "data_link"
+        "data_link",
+        "IndicatorDataCollectionDetails_referenced_in"
       ],
       "slot_usage": {},
       "class_uri": "https://w3id.org/linkml/examples/fsiIndicatorDataCollectionDetails",
-      "@type": "ClassDefinition"
-    },
-    {
-      "name": "Database",
-      "definition_uri": "https://w3id.org/linkml/examples/fsiDatabase",
-      "description": "Database containing data corresponding to an indicator.",
-      "title": "database",
-      "from_schema": "https://w3id.org/linkml/examples/fsi",
-      "is_a": "Entity",
-      "slots": [
-        "id",
-        "iri",
-        "name",
-        "description",
-        "database_link",
-        "update_frequency"
-      ],
-      "slot_usage": {},
-      "class_uri": "https://w3id.org/linkml/examples/fsiDatabase",
       "@type": "ClassDefinition"
     },
     {
@@ -7924,7 +8049,7 @@
     {
       "name": "QuantityValue",
       "definition_uri": "https://w3id.org/linkml/examples/fsiQuantityValue",
-      "description": "A value of an attribute that is quantitative and measurable, expressed as a combination of a unit and a numeric value",
+      "description": "A value of an attribute that is quantitative and measurable, expressed as a combination of a unit and a numeric value.",
       "title": "quantity value",
       "from_schema": "https://w3id.org/linkml/examples/fsi",
       "is_a": "Entity",
@@ -7952,7 +8077,10 @@
         "iri",
         "name",
         "description",
-        "category"
+        "category",
+        "rationale_strong",
+        "rationale_adequate",
+        "rationale_weak"
       ],
       "slot_usage": {},
       "class_uri": "https://w3id.org/linkml/examples/fsiIndicatorCriterion",
@@ -7961,7 +8089,7 @@
     {
       "name": "IndicatorcriteriaScore",
       "definition_uri": "https://w3id.org/linkml/examples/fsiIndicatorcriteriaScore",
-      "description": "Score for an indicator for an indicator selection criterion.",
+      "description": "A score assigned to an indicator based on a specific selection criterion.",
       "title": "indicator criterion score",
       "from_schema": "https://w3id.org/linkml/examples/fsi",
       "slots": [
@@ -7973,13 +8101,54 @@
       "slot_usage": {},
       "class_uri": "https://w3id.org/linkml/examples/fsiIndicatorcriteriaScore",
       "@type": "ClassDefinition"
+    },
+    {
+      "name": "Reference",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiReference",
+      "description": "A reference to a publication, database or dataset.",
+      "title": "reference",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "is_a": "Entity",
+      "slots": [
+        "id",
+        "iri",
+        "name",
+        "description",
+        "link",
+        "reference_type",
+        "comment"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/linkml/examples/fsiReference",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Database",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiDatabase",
+      "description": "A reference to a database.",
+      "title": "database",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "is_a": "Reference",
+      "slots": [
+        "id",
+        "iri",
+        "name",
+        "description",
+        "link",
+        "reference_type",
+        "comment",
+        "update_frequency"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/linkml/examples/fsiDatabase",
+      "@type": "ClassDefinition"
     }
   ],
   "metamodel_version": "1.7.0",
   "source_file": "food_system_indicators.yaml",
-  "source_file_date": "2026-01-22T14:54:20",
-  "source_file_size": 22438,
-  "generation_date": "2026-01-22T14:54:58",
+  "source_file_date": "2026-03-19T13:40:01",
+  "source_file_size": 24213,
+  "generation_date": "2026-03-19T13:40:44",
   "@type": "SchemaDefinition",
   "@context": [
     "project/jsonld/food_system_indicators.context.jsonld",

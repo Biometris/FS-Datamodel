@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="https://biometris.github.io/FS-Datamodel/model/Entity/" rel="canonical"/>
 <link href="../../assets/images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.6.1, mkdocs-material-9.7.1" name="generator"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.5" name="generator"/>
 <title>ENTITY (Abstract) - FS Data Model</title>
 <link href="../../assets/stylesheets/main.484c7ddc.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -190,8 +190,9 @@
   </span>
 </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../indicator_criteria/">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
 <span class="md-ellipsis">
     
   
@@ -200,11 +201,60 @@
 
     
   </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Indicator criteria
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../indicator_criteria/">
+<span class="md-ellipsis">
+    
+  
+    Definitions
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../indicator_criteria_rationale/">
+<span class="md-ellipsis">
+    
+  
+    Rationale
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../references/">
+<span class="md-ellipsis">
+    
+  
+    References
+  
+
+    
+  </span>
 </a>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_8" type="checkbox"/>
-<label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+<input class="md-nav__toggle md-toggle" id="__nav_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
 <span class="md-ellipsis">
     
   
@@ -215,8 +265,8 @@
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_8_label" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_8">
+<nav aria-expanded="false" aria-labelledby="__nav_9_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_9">
 <span class="md-nav__icon md-icon"></span>
             
   
@@ -369,9 +419,9 @@
       Entity &lt;|-- IndicatorCategory
       Entity &lt;|-- Indicator
       Entity &lt;|-- IndicatorDataCollectionDetails
-      Entity &lt;|-- Database
       Entity &lt;|-- QuantityValue
       Entity &lt;|-- IndicatorCriterion
+      Entity &lt;|-- Reference
 
 
 
@@ -391,9 +441,9 @@
 <li><a href="../IndicatorCategory/">IndicatorCategory</a></li>
 <li><a href="../Indicator/">Indicator</a></li>
 <li><a href="../IndicatorDataCollectionDetails/">IndicatorDataCollectionDetails</a></li>
-<li><a href="../Database/">Database</a></li>
 <li><a href="../QuantityValue/">QuantityValue</a></li>
 <li><a href="../IndicatorCriterion/">IndicatorCriterion</a></li>
+<li><a href="../Reference/">Reference</a></li>
 </ul>
 </li>
 </ul>
@@ -480,6 +530,12 @@
 <td><a href="./">Entity</a></td>
 </tr>
 <tr>
+<td><a href="../IndicatorCategory/">IndicatorCategory</a></td>
+<td><a href="../referenced_in/">referenced_in</a></td>
+<td>domain</td>
+<td><a href="./">Entity</a></td>
+</tr>
+<tr>
 <td><a href="../Indicator/">Indicator</a></td>
 <td><a href="../id/">id</a></td>
 <td>domain</td>
@@ -518,18 +574,6 @@
 <tr>
 <td><a href="../IndicatorDataCollectionDetails/">IndicatorDataCollectionDetails</a></td>
 <td><a href="../in_database/">in_database</a></td>
-<td>domain</td>
-<td><a href="./">Entity</a></td>
-</tr>
-<tr>
-<td><a href="../Database/">Database</a></td>
-<td><a href="../id/">id</a></td>
-<td>domain</td>
-<td><a href="./">Entity</a></td>
-</tr>
-<tr>
-<td><a href="../Database/">Database</a></td>
-<td><a href="../name/">name</a></td>
 <td>domain</td>
 <td><a href="./">Entity</a></td>
 </tr>
@@ -590,6 +634,30 @@
 <tr>
 <td><a href="../IndicatorcriteriaScore/">IndicatorcriteriaScore</a></td>
 <td><a href="../scores_criterion/">scores_criterion</a></td>
+<td>domain</td>
+<td><a href="./">Entity</a></td>
+</tr>
+<tr>
+<td><a href="../Reference/">Reference</a></td>
+<td><a href="../id/">id</a></td>
+<td>domain</td>
+<td><a href="./">Entity</a></td>
+</tr>
+<tr>
+<td><a href="../Reference/">Reference</a></td>
+<td><a href="../name/">name</a></td>
+<td>domain</td>
+<td><a href="./">Entity</a></td>
+</tr>
+<tr>
+<td><a href="../Database/">Database</a></td>
+<td><a href="../id/">id</a></td>
+<td>domain</td>
+<td><a href="./">Entity</a></td>
+</tr>
+<tr>
+<td><a href="../Database/">Database</a></td>
+<td><a href="../name/">name</a></td>
 <td>domain</td>
 <td><a href="./">Entity</a></td>
 </tr>

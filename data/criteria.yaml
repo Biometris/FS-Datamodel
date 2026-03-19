@@ -3,52 +3,85 @@
   description: >-
     Integration on food system framework Indicators should be mapped within a food system framework and assessed as part of an integrated set, ensuring each provides a unique, non-redundant contribution. Collectively, they must offer a balanced and comprehensive representation of the food system. The operative allocation involves mapping indicators within the framework and maintaining system-level coherence to guarantee their relevance and effectiveness.
   category: CoherenceOnFramework
+  rationale_strong: Mapped once or multiple times; no redundancy.
+  rationale_adequate: Mapped once or multiple times; partially redundancy.
+  rationale_weak: Mapped once or multiple times; redundancy.
 - id: GoalAlignment
   name: goal alignment
   description: >-
     Indicators should align with key sustainability frameworks (SDGs, Green Deal, Farm to Fork, national food policies) and should be clearly linked to relevant SRIA objectives providing a measurable signal of progress on the associated objective. Procedures should be in place to update the prioritization of indicators as SRIA priorities evolve, assessing whether any existing indicator can be adapted for the new purpose without altering what it measures. Any methodological changes should be documented, and if an indicator no longer fits, a new one should be created.
   category: GoalOrientedAndPolicyRelevant
+  rationale_strong: SDGs, Farm to Fork,.
+  rationale_adequate: Partially linked to sustainable objectives.
+  rationale_weak: Not linked.
 - id: TransitionMonitoring
   name: transition monitoring
   description: >-
     Interpretability and evidence of transition. Indicators interoperability (OR INTERDEPENDENCY?? synergies) (need of definition) to identify the progress of transition. Clearly interpretable direction of food system transition with evidence of the outcomes (Fanzo 2023; EUROSTAT 2017
   category: GoalOrientedAndPolicyRelevant
-- id: DecitionUsefulness
+  rationale_strong: Behavioral indicators (e.g., frequency/consumption, interpretable direction).
+  rationale_adequate: Outcome indicators (e.g., prevalences) that require complementary indicators to capture the mechanisms of transition.
+  rationale_weak: No clear indication or outcome of the indicator.
+- id: DecisionUsefulness
   name: decision-usefulness
   description: >-
     Indicators have to inform concrete policies and strategies for decision-makers (public authorities, policymakers, farmers, industry, and consumers) and have to be interpretable, Unambiguous  and communicable to a broad audience also for non-technical stakeholders.
   category: GoalOrientedAndPolicyRelevant
+  rationale_strong: Official datasets/statistics (interpretable and communicable to non-technical audiences.
+  rationale_adequate: Individual studies when applicability for policy is more limited.
+  rationale_weak: No applicable for policy decision and no clear.
 - id: StandardizationComparabilityComplementarity
   name: standardization, comparability, and complementarity
   description: >-
     Indicators should be based on international standards, harmonized definitions, and statistical methodologies to ensure comparability among countries. Adhering to such standards enhances the credibility of the data, facilitates integration into global monitoring frameworks, and allows meaningful cross-national benchmarking. This alignment also ensures that methodologies are transparent, replicable, and coherent with global best practices, strengthening the overall validity and utility of the indicators. Indicators should be assessed for interdependencies and complementarity, for example through interdependency mapping or interoperability analysis
   category: SoundMethodologies
+  rationale_strong: Databases/reports from international organizations.
+  rationale_adequate: Documentation is limited.
+  rationale_weak: No Documentation.
 - id: ScientificRigorAndValidation
   name: scientific rigor and validation
   description: >-
     Indicators should be grounded in scientifically validated evidence and supported by peer-reviewed research to ensure methodological rigor and credibility. Reliance on peer-reviewed sources guarantees that data collection methods, analytical approaches, and interpretations have undergone critical evaluation by experts, enhancing transparency, reliability, and alignment with established scientific standards.
   category: SoundMethodologies
+  rationale_strong: Official datasets and for indicators supported by peer-reviewed literature.
+  rationale_adequate: Documentation is limited.
+  rationale_weak: No Documentation.
 - id: DataAvailability
   name: data availability 
   description: >- 
     Data availability, (existing of data (Findability), data availability refers to whether the required data exists and can be obtained for the indicator. It means the data has been collected, stored, and is present in some form (e.g., databases, reports, surveys)
   category: SoundMethodologies
+  rationale_strong: Recent data are available.
+  rationale_adequate: Records indicate data gaps or the most recent year is old.
+  rationale_weak: No recent or past data available.
 - id: DataAccessibility
   name: data accessibility
   description: >-
     Data accessibility (Ease of obtaining data), data are accessible for different of aggregation level. Ensuring that data are publicly accessible aligns with the purpose of the indicator, which is to make data obtainable, usable, and understandable by all r stakeholders. If the data are available only internally or behind restricted access, they would not fully meet the criteria.
   category: SoundMethodologies
+  rationale_strong: The link is public and direct.
+  rationale_adequate: Partially accessible.
+  rationale_weak: Not accessible.
 - id: DataInteroperability
   name: data interoperability
   description: >-
     The data should be easily integrated with other sources and information systems (Can the data work with other datasets?), and data could be used to develop to more than one indicator.
   category: SoundMethodologies
+  rationale_strong: Large integrable databases.
+  rationale_adequate: Partial interoperability or heterogeneous collections.
+  rationale_weak: 
 - id: BroadGeographicalCoverage
   name: broad geographical coverage
   description: Indicators have to be based on data with broad geographical coverage (i.e., an indicator on agricultural GHG emissions should include data from both high-income and low-income countries). Data should be available at appropriate territorial scales (local, regional, national, and global), depending on the monitoring objectives.
   category: GeographicalCoverageAndTimeliness
+  rationale_strong: \>=27.
+  rationale_adequate: 15-26.
+  rationale_weak: <15.
 - id: Timeliness
   name: timeliness
   description: >-
     Indicators should provide up-to-date and regularly updated data that accurately reflect the current state and performance of the sustainable food system. Timely data support early detection of trends, emerging issues, or progress, enabling informed decision-making. Updates should be frequent enough to be useful while maintaining data quality and consistency with other indicators for integrated analysis.
   category: GeographicalCoverageAndTimeliness
+  rationale_strong: <=1 year.
+  rationale_adequate: 2-3 years.
+  rationale_weak: \>3 years.

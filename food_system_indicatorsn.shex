@@ -56,9 +56,8 @@ linkml:Jsonpath xsd:string
 linkml:Sparqlpath xsd:string
 
 <https://w3id.org/linkml/examples/fsiDatabase> CLOSED {
-    (  $<https://w3id.org/linkml/examples/fsiDatabase_tes> (  &<https://w3id.org/linkml/examples/fsiEntity_tes> ;
-          rdf:type [ <https://w3id.org/linkml/examples/fsiEntity> ] ? ;
-          <https://w3id.org/linkml/examples/fsidatabase_link> @<https://w3id.org/linkml/examples/fsiIriType> ? ;
+    (  $<https://w3id.org/linkml/examples/fsiDatabase_tes> (  &<https://w3id.org/linkml/examples/fsiReference_tes> ;
+          rdf:type [ <https://w3id.org/linkml/examples/fsiReference> ] ? ;
           <https://w3id.org/linkml/examples/fsiupdate_frequency> [
              <https://w3id.org/linkml/examples/fsiTimeGranularity#EveryTwoYears>
              <https://w3id.org/linkml/examples/fsiTimeGranularity#Yearly>
@@ -71,9 +70,10 @@ linkml:Sparqlpath xsd:string
 }
 
 <https://w3id.org/linkml/examples/fsiEntity>  (
-    @<https://w3id.org/linkml/examples/fsiDatabase> OR @<https://w3id.org/linkml/examples/fsiIndicator> OR
-    @<https://w3id.org/linkml/examples/fsiIndicatorCategory> OR @<https://w3id.org/linkml/examples/fsiIndicatorCriterion> OR
+    @<https://w3id.org/linkml/examples/fsiIndicator> OR @<https://w3id.org/linkml/examples/fsiIndicatorCategory> OR
+    @<https://w3id.org/linkml/examples/fsiIndicatorCriterion> OR
     @<https://w3id.org/linkml/examples/fsiIndicatorDataCollectionDetails> OR @<https://w3id.org/linkml/examples/fsiQuantityValue>
+    OR @<https://w3id.org/linkml/examples/fsiReference>
 )
 
 <https://w3id.org/linkml/examples/fsiEntity_struct> {
@@ -306,7 +306,21 @@ linkml:Sparqlpath xsd:string
              <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Environment>
              <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Economy>
              <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Society>
-             <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Health> ]
+             <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Health> ] ;
+          <https://w3id.org/linkml/examples/fsioutcome_type> [
+             <https://w3id.org/linkml/examples/fsiFoodSystemOutcomeType#Environment>
+             <https://w3id.org/linkml/examples/fsiFoodSystemOutcomeType#Economy>
+             <https://w3id.org/linkml/examples/fsiFoodSystemOutcomeType#Society>
+             <https://w3id.org/linkml/examples/fsiFoodSystemOutcomeType#Health>
+             <https://w3id.org/linkml/examples/fsiFoodSystemOutcomeType#FoodSecurity>
+             <https://w3id.org/linkml/examples/fsiFoodSystemOutcomeType#Resilience> ] ;
+          <https://w3id.org/linkml/examples/fsiactivity_type> [
+             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodSupply>
+             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodEnvironment>
+             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodDemand>
+             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#UseNaturalResources>
+             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#ConsumptionAndDiets> ] ? ;
+          <https://w3id.org/linkml/examples/fsireferenced_in> @<https://w3id.org/linkml/examples/fsiReference> *
        ) ;
        rdf:type [ <https://w3id.org/linkml/examples/fsiIndicatorCategory> ]
     )
@@ -332,7 +346,10 @@ linkml:Sparqlpath xsd:string
              <https://w3id.org/linkml/examples/fsiCriterionCategory#CoherenceOnFramework>
              <https://w3id.org/linkml/examples/fsiCriterionCategory#GoalOrientedAndPolicyRelevant>
              <https://w3id.org/linkml/examples/fsiCriterionCategory#SoundMethodologies>
-             <https://w3id.org/linkml/examples/fsiCriterionCategory#GeographicalCoverageAndTimeliness> ] ?
+             <https://w3id.org/linkml/examples/fsiCriterionCategory#GeographicalCoverageAndTimeliness> ] ? ;
+          <https://w3id.org/linkml/examples/fsirationale_strong> @<https://w3id.org/linkml/examples/fsiNarrativeText> ? ;
+          <https://w3id.org/linkml/examples/fsirationale_adequate> @<https://w3id.org/linkml/examples/fsiNarrativeText> ? ;
+          <https://w3id.org/linkml/examples/fsirationale_weak> @<https://w3id.org/linkml/examples/fsiNarrativeText> ?
        ) ;
        rdf:type [ <https://w3id.org/linkml/examples/fsiIndicatorCriterion> ]
     )
@@ -364,7 +381,8 @@ linkml:Sparqlpath xsd:string
              <https://w3id.org/linkml/examples/fsiSpatialGranularity#NUTS2>
              <https://w3id.org/linkml/examples/fsiSpatialGranularity#NUTS3>
              <https://w3id.org/linkml/examples/fsiSpatialGranularity#LAU> ] ? ;
-          <https://w3id.org/linkml/examples/fsidata_link> @<https://w3id.org/linkml/examples/fsiIriType> ?
+          <https://w3id.org/linkml/examples/fsidata_link> @<https://w3id.org/linkml/examples/fsiIriType> ? ;
+          <https://w3id.org/linkml/examples/fsireferenced_in> @<https://w3id.org/linkml/examples/fsiReference> *
        ) ;
        rdf:type [ <https://w3id.org/linkml/examples/fsiIndicatorDataCollectionDetails> ]
     )
@@ -391,4 +409,19 @@ linkml:Sparqlpath xsd:string
           rdf:type [ <https://w3id.org/linkml/examples/fsiQuantityValue> ]
        )
     } OR @<https://w3id.org/linkml/examples/fsiIndicatorDatapoint>
+)
+
+<https://w3id.org/linkml/examples/fsiReference>  (
+    CLOSED {
+       (  $<https://w3id.org/linkml/examples/fsiReference_tes> (  &<https://w3id.org/linkml/examples/fsiEntity_tes> ;
+             rdf:type [ <https://w3id.org/linkml/examples/fsiEntity> ] ? ;
+             <https://w3id.org/linkml/examples/fsilink> @<https://w3id.org/linkml/examples/fsiIriType> ? ;
+             <https://w3id.org/linkml/examples/fsireference_type> [ <https://w3id.org/linkml/examples/fsiReferenceType#Database>
+                <https://w3id.org/linkml/examples/fsiReferenceType#Dataset>
+                <https://w3id.org/linkml/examples/fsiReferenceType#Publication> ] ? ;
+             <https://w3id.org/linkml/examples/fsicomment> @<https://w3id.org/linkml/examples/fsiNarrativeText> ?
+          ) ;
+          rdf:type [ <https://w3id.org/linkml/examples/fsiReference> ]
+       )
+    } OR @<https://w3id.org/linkml/examples/fsiDatabase>
 )

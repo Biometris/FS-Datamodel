@@ -9,7 +9,7 @@
 <link href=".." rel="prev"/>
 <link href="../indicators/" rel="next"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.6.1, mkdocs-material-9.7.1" name="generator"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.5" name="generator"/>
 <title>Data model - FS Data Model</title>
 <link href="../assets/stylesheets/main.484c7ddc.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -239,8 +239,9 @@
   </span>
 </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../indicator_criteria/">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
 <span class="md-ellipsis">
     
   
@@ -249,11 +250,60 @@
 
     
   </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Indicator criteria
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../indicator_criteria/">
+<span class="md-ellipsis">
+    
+  
+    Definitions
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../indicator_criteria_rationale/">
+<span class="md-ellipsis">
+    
+  
+    Rationale
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../references/">
+<span class="md-ellipsis">
+    
+  
+    References
+  
+
+    
+  </span>
 </a>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_8" type="checkbox"/>
-<label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+<input class="md-nav__toggle md-toggle" id="__nav_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
 <span class="md-ellipsis">
     
   
@@ -264,8 +314,8 @@
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_8_label" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_8">
+<nav aria-expanded="false" aria-labelledby="__nav_9_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_9">
 <span class="md-nav__icon md-icon"></span>
             
   
@@ -414,69 +464,87 @@
 <h2 id="model-diagram">Model diagram</h2>
 <div class="mermaid">erDiagram
 Database {
-    iri_type database_link  
     TimeGranularity update_frequency  
     string id  
-    iri_type iri  
     label_type name  
     narrative_text description  
+    narrative_text comment  
+    iri_type iri  
+    iri_type link  
+    ReferenceType reference_type  
 }
 Indicator {
     string id  
     label_type name  
     narrative_text description  
-    narrative_text definition  
     FoodSystemActivityType activity_type  
-    FoodSystemOutcomeType outcome_type  
-    SupplyChainComponentTypeList supply_chain_component  
+    narrative_text definition  
+    Eu2025SdgIndicatorList eu2025_sdg_indicator_code  
     unit measurement_unit_description  
     IndicatorMeasurementUnitList measurement_units  
+    FoodSystemOutcomeType outcome_type  
+    SupplyChainComponentTypeList supply_chain_component  
     SustainabilityImpactType sustainability_impact  
-    Eu2025SdgIndicatorList eu2025_sdg_indicator_code  
     iri_type iri  
 }
 IndicatorCategory {
     string id  
     label_type name  
     narrative_text description  
+    FoodSystemActivityType activity_type  
     SustainabilityDimension dimension  
+    FoodSystemOutcomeType outcome_type  
     iri_type iri  
 }
 IndicatorCriterion {
     CriterionCategory category  
+    narrative_text rationale_adequate  
+    narrative_text rationale_strong  
+    narrative_text rationale_weak  
     string id  
-    iri_type iri  
     label_type name  
     narrative_text description  
+    iri_type iri  
 }
 IndicatorDataCollectionDetails {
+    iri_type data_link  
+    date_or_datetime newest_datapoint  
+    date_or_datetime oldest_datapoint  
+    SpatialGranularity spatial_granularity  
+    SpatialScopeType spatial_scope  
+    TimeGranularity time_granularity  
     string id  
     label_type name  
     narrative_text description  
-    date_or_datetime oldest_datapoint  
-    date_or_datetime newest_datapoint  
-    TimeGranularity time_granularity  
-    SpatialScopeType spatial_scope  
-    SpatialGranularity spatial_granularity  
-    iri_type data_link  
     iri_type iri  
 }
 IndicatorDatapoint {
-    unit has_unit  
-    double has_numeric_value  
     string id  
-    iri_type iri  
     label_type name  
     narrative_text description  
+    double has_numeric_value  
+    unit has_unit  
+    iri_type iri  
 }
 IndicatorcriteriaScore {
-    ScoreCategory score  
     narrative_text comment  
+    ScoreCategory score  
+}
+Reference {
+    narrative_text comment  
+    iri_type link  
+    ReferenceType reference_type  
+    string id  
+    label_type name  
+    narrative_text description  
+    iri_type iri  
 }
 
 Indicator ||--|| IndicatorCategory : "has_category"
+IndicatorCategory ||--}o Reference : "referenced_in"
 IndicatorDataCollectionDetails ||--|| Database : "in_database"
 IndicatorDataCollectionDetails ||--|| Indicator : "measures_indicator"
+IndicatorDataCollectionDetails ||--}o Reference : "referenced_in"
 IndicatorDatapoint ||--|| Indicator : "measurement_of"
 IndicatorDatapoint ||--|| IndicatorDataCollectionDetails : "part_of_collection"
 IndicatorcriteriaScore ||--|o Indicator : "score_for_indicator"
@@ -495,22 +563,22 @@ IndicatorcriteriaScore ||--|o IndicatorCriterion : "scores_criterion"
 <tbody>
 <tr>
 <td><a href="Database/">Database</a></td>
-<td>Database containing data corresponding to an indicator.</td>
+<td>A reference to a database.</td>
 <td>Class</td>
 </tr>
 <tr>
 <td><a href="Indicator/">Indicator</a></td>
-<td>A quantitative measure used to assess the state, performance, or progress of a specific aspect of the food system in relation to sustainability objectives.</td>
+<td>A quantitative measure used to assess the state, performance, or progress of a specific aspect of the food system  in relation to sustainability objectives.</td>
 <td>Class</td>
 </tr>
 <tr>
 <td><a href="IndicatorCategory/">Indicator category</a></td>
-<td>The category the indicator belongs to.</td>
+<td>Group of indicators that share common characteristics, functions, or measurement purposes within a monitoring or  evaluation framework.</td>
 <td>Class</td>
 </tr>
 <tr>
 <td><a href="IndicatorcriteriaScore/">Indicator criterion score</a></td>
-<td>Score for an indicator for an indicator selection criterion.</td>
+<td>A score assigned to an indicator based on a specific selection criterion.</td>
 <td>Class</td>
 </tr>
 <tr>
@@ -530,7 +598,12 @@ IndicatorcriteriaScore ||--|o IndicatorCriterion : "scores_criterion"
 </tr>
 <tr>
 <td><a href="QuantityValue/">Quantity value</a></td>
-<td>A value of an attribute that is quantitative and measurable, expressed as a combination of a unit and a numeric value</td>
+<td>A value of an attribute that is quantitative and measurable, expressed as a combination of a unit and a numeric value.</td>
+<td>Class</td>
+</tr>
+<tr>
+<td><a href="Reference/">Reference</a></td>
+<td>A reference to a publication, database or dataset.</td>
 <td>Class</td>
 </tr>
 </tbody>
@@ -571,8 +644,13 @@ IndicatorcriteriaScore ||--|o IndicatorCriterion : "scores_criterion"
 <td>Enum</td>
 </tr>
 <tr>
+<td><a href="ReferenceType/">Reference types</a></td>
+<td>The type of source that a reference refers to.</td>
+<td>Enum</td>
+</tr>
+<tr>
 <td><a href="ScoreCategory/">Score category</a></td>
-<td>Score category</td>
+<td>Score category.</td>
 <td>Enum</td>
 </tr>
 <tr>
@@ -592,7 +670,7 @@ IndicatorcriteriaScore ||--|o IndicatorCriterion : "scores_criterion"
 </tr>
 <tr>
 <td><a href="SustainabilityDimension/">Sustainability dimension</a></td>
-<td>TODO</td>
+<td>A dimension of sustainability to which the indicator relates.</td>
 <td>Enum</td>
 </tr>
 <tr>

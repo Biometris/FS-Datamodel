@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="https://biometris.github.io/FS-Datamodel/model/IndicatorCategory/" rel="canonical"/>
 <link href="../../assets/images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.6.1, mkdocs-material-9.7.1" name="generator"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.5" name="generator"/>
 <title>INDICATOR CATEGORY - FS Data Model</title>
 <link href="../../assets/stylesheets/main.484c7ddc.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -190,8 +190,9 @@
   </span>
 </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../indicator_criteria/">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
 <span class="md-ellipsis">
     
   
@@ -200,11 +201,60 @@
 
     
   </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Indicator criteria
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../indicator_criteria/">
+<span class="md-ellipsis">
+    
+  
+    Definitions
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../indicator_criteria_rationale/">
+<span class="md-ellipsis">
+    
+  
+    Rationale
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../references/">
+<span class="md-ellipsis">
+    
+  
+    References
+  
+
+    
+  </span>
 </a>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_8" type="checkbox"/>
-<label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+<input class="md-nav__toggle md-toggle" id="__nav_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
 <span class="md-ellipsis">
     
   
@@ -215,8 +265,8 @@
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_8_label" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_8">
+<nav aria-expanded="false" aria-labelledby="__nav_9_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_9">
 <span class="md-nav__icon md-icon"></span>
             
   
@@ -362,7 +412,7 @@
 <article class="md-content__inner md-typeset">
 <h1 id="indicator-category">INDICATOR CATEGORY</h1>
 <div class="highlight-box">
-<strong>Description:</strong><i> The category the indicator belongs to.</i><br/>
+<strong>Description:</strong><i> Group of indicators that share common characteristics, functions, or measurement purposes within a monitoring or  evaluation framework.</i><br/>
 </div>
 <div class="mermaid"> classDiagram
     class IndicatorCategory
@@ -380,6 +430,18 @@
       IndicatorCategory : dimension
 
           IndicatorCategory --|&gt; SustainabilityDimension : dimension
+
+      IndicatorCategory : outcome_type
+
+          IndicatorCategory --|&gt; FoodSystemOutcomeType : outcome_type
+
+      IndicatorCategory : activity_type
+
+          IndicatorCategory --|&gt; FoodSystemActivityType : activity_type
+
+      IndicatorCategory : referenced_in
+
+          IndicatorCategory --|&gt; Reference : referenced_in
 
 
 </div>
@@ -440,6 +502,30 @@
 <td>Reference to the dimension that the indicator belongs to.</td>
 <td>1</td>
 <td><a href="../SustainabilityDimension/">SustainabilityDimension</a></td>
+<td>direct</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../outcome_type/">outcome_type</a></td>
+<td>Reference to the type of the outcome measured by the indicator.</td>
+<td>0..1</td>
+<td><a href="../FoodSystemOutcomeType/">FoodSystemOutcomeType</a></td>
+<td>direct</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../activity_type/">activity_type</a></td>
+<td>A reference to the food system activity that is the subject of this indicator's measurement.</td>
+<td>0..1</td>
+<td><a href="../FoodSystemActivityType/">FoodSystemActivityType</a></td>
+<td>direct</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../referenced_in/">referenced_in</a></td>
+<td>Reference to the source of the definition of entity.</td>
+<td>*</td>
+<td><a href="../Reference/">Reference</a></td>
 <td>direct</td>
 <td></td>
 </tr>

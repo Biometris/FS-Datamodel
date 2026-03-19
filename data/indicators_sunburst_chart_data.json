@@ -515,7 +515,7 @@
     "name": "Health",
     "children": [
       {
-        "name": "Nutritional health outcomes",
+        "name": "Nutrition and Health",
         "children": [
           {
             "name": "Obesity rate by body mass index (BMI) (sdg_02_10)",
@@ -564,11 +564,19 @@
           {
             "name": "Diabetes prevalence",
             "value": 1
+          },
+          {
+            "name": "Prevalence of undernourishment (3-year average)",
+            "value": 1
+          },
+          {
+            "name": "Percentage of children under 5 years of age who are stunted (modelled estimates)",
+            "value": 1
           }
         ]
       },
       {
-        "name": "Nutritional behaviour",
+        "name": "Dietary consumption patterns/Food Intake",
         "children": [
           {
             "name": "Daily consumption of fruit and vegetables by sex, age and educational attainment level (hlth_ehis_fv3e)",
@@ -661,7 +669,7 @@
         ]
       },
       {
-        "name": "Food quality & safety",
+        "name": "Food quality and safety",
         "children": [
           {
             "name": "Nitrate in groundwater (sdg_06_40)",
@@ -686,20 +694,7 @@
         ]
       },
       {
-        "name": "Malnutrition",
-        "children": [
-          {
-            "name": "Prevalence of undernourishment (3-year average)",
-            "value": 1
-          },
-          {
-            "name": "Percentage of children under 5 years of age who are stunted (modelled estimates)",
-            "value": 1
-          }
-        ]
-      },
-      {
-        "name": "Food access",
+        "name": "Food security: access and enabling factors",
         "children": [
           {
             "name": "Prevalence of severe food insecurity in the total population (3-year average)",

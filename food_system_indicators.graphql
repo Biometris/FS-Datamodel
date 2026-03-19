@@ -1095,6 +1095,13 @@ enum IndicatorMeasurementUnit
     PC_ENT_DAOWN
   }
 
+enum ReferenceType
+  {
+    Database
+    Dataset
+    Publication
+  }
+
 enum ScoreCategory
   {
     Weak
@@ -1161,7 +1168,9 @@ type Database
     iri: IriType
     name: LabelType
     description: NarrativeText
-    databaseLink: IriType
+    link: IriType
+    referenceType: ReferenceType
+    comment: NarrativeText
     updateFrequency: TimeGranularity
   }
 
@@ -1197,6 +1206,9 @@ type IndicatorCategory
     name: LabelType
     description: NarrativeText
     dimension: SustainabilityDimension!
+    outcomeType: FoodSystemOutcomeType!
+    activityType: FoodSystemActivityType
+    referencedIn: [Reference]
   }
 
 type IndicatorcriteriaScore
@@ -1214,6 +1226,9 @@ type IndicatorCriterion
     name: LabelType
     description: NarrativeText
     category: CriterionCategory
+    rationaleStrong: NarrativeText
+    rationaleAdequate: NarrativeText
+    rationaleWeak: NarrativeText
   }
 
 type IndicatorDataCollectionDetails
@@ -1230,6 +1245,7 @@ type IndicatorDataCollectionDetails
     spatialScope: SpatialScopeType
     spatialGranularity: SpatialGranularity
     dataLink: IriType
+    referencedIn: [Reference]
   }
 
 type IndicatorDatapoint
@@ -1252,4 +1268,15 @@ type QuantityValue
     description: NarrativeText
     hasUnit: Unit
     hasNumericValue: Float
+  }
+
+type Reference
+  {
+    id: String!
+    iri: IriType
+    name: LabelType
+    description: NarrativeText
+    link: IriType
+    referenceType: ReferenceType
+    comment: NarrativeText
   }
