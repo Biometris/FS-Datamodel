@@ -47,3 +47,10 @@ hide:
 {% for scp in indicator['supply_chain_component'] %}
 - [{{ enum_dict['SupplyChainComponentType'][scp]['title'] }}](../../model/SupplyChainComponentType)
 {% endfor %}
+
+**Methodology**: 
+{% if indicator['methodology_description'] %} 
+  {{ indicator['methodology_description'] }}
+{% else %}
+  *Not available*
+{% endif %}

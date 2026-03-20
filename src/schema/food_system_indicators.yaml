@@ -80,6 +80,7 @@ classes:
       - has_category
       - sustainability_impact
       - eu2025_sdg_indicator_code
+      - methodology_description
     slot_usage:
       id:
         description:
@@ -93,7 +94,10 @@ classes:
       definition:
         description:
           A precise and formal statement that defines the indicator category, explaining its scope, purpose, and distinguishing characteristics.
-                
+      methodology_description:
+        description:
+          The methodological approach used to compute the indicator, including formulas, assumptions.
+     
   IndicatorDataCollectionDetails:
     is_a: Entity
     title: indicator data collection details
@@ -196,6 +200,11 @@ slots:
     range: narrative_text
     description: >-
       A (precise) formal definition.
+
+  methodology_description:
+    range: narrative_text
+    description: >-
+      A description a methodological approach used to compute an indicator, including assumptions and formulas.
 
   comment:
     range: narrative_text
