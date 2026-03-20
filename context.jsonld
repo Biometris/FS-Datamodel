@@ -109,6 +109,9 @@
          "@type": "@id",
          "@id": "measures_indicator"
       },
+      "methodology_description": {
+         "@id": "methodology_description"
+      },
       "name": {
          "@id": "rdfs:label"
       },

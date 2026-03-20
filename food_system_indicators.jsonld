@@ -7147,6 +7147,19 @@
       "@type": "SlotDefinition"
     },
     {
+      "name": "methodology_description",
+      "definition_uri": "https://w3id.org/linkml/examples/fsimethodology_description",
+      "description": "A description a methodological approach used to compute an indicator, including assumptions and formulas.",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "slot_uri": "https://w3id.org/linkml/examples/fsimethodology_description",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "narrative_text",
+      "@type": "SlotDefinition"
+    },
+    {
       "name": "comment",
       "definition_uri": "https://w3id.org/linkml/examples/fsicomment",
       "description": "A comment about an entity.",
@@ -7894,6 +7907,24 @@
       "@type": "SlotDefinition"
     },
     {
+      "name": "Indicator_methodology_description",
+      "definition_uri": "https://w3id.org/linkml/examples/fsimethodology_description",
+      "description": "The methodological approach used to compute the indicator, including formulas, assumptions.",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "is_a": "methodology_description",
+      "domain": "Indicator",
+      "slot_uri": "https://w3id.org/linkml/examples/fsimethodology_description",
+      "alias": "methodology_description",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "methodology_description",
+      "range": "narrative_text",
+      "@type": "SlotDefinition"
+    },
+    {
       "name": "IndicatorDataCollectionDetails_referenced_in",
       "definition_uri": "https://w3id.org/linkml/examples/fsireferenced_in",
       "description": "Specifies the database which the entity is part of.",
@@ -7993,7 +8024,8 @@
         "measurement_units",
         "has_category",
         "sustainability_impact",
-        "eu2025_sdg_indicator_code"
+        "eu2025_sdg_indicator_code",
+        "Indicator_methodology_description"
       ],
       "slot_usage": {},
       "class_uri": "https://w3id.org/linkml/examples/fsiIndicator",
@@ -8146,9 +8178,9 @@
   ],
   "metamodel_version": "1.7.0",
   "source_file": "food_system_indicators.yaml",
-  "source_file_date": "2026-03-19T13:40:01",
-  "source_file_size": 24213,
-  "generation_date": "2026-03-19T13:40:44",
+  "source_file_date": "2026-03-20T07:31:45",
+  "source_file_size": 24574,
+  "generation_date": "2026-03-20T07:32:30",
   "@type": "SchemaDefinition",
   "@context": [
     "project/jsonld/food_system_indicators.context.jsonld",

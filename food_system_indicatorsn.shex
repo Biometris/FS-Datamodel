@@ -291,7 +291,8 @@ linkml:Sparqlpath xsd:string
              <https://w3id.org/linkml/examples/fsiEu2025SdgIndicator#EU_SDG_06_60>
              <https://w3id.org/linkml/examples/fsiEu2025SdgIndicator#EU_SDG_08_30>
              <https://w3id.org/linkml/examples/fsiEu2025SdgIndicator#EU_SDG_15_42>
-             <https://w3id.org/linkml/examples/fsiEu2025SdgIndicator#EU_SDG_15_50> ] *
+             <https://w3id.org/linkml/examples/fsiEu2025SdgIndicator#EU_SDG_15_50> ] * ;
+          <https://w3id.org/linkml/examples/fsimethodology_description> @<https://w3id.org/linkml/examples/fsiNarrativeText> ?
        ) ;
        rdf:type [ <https://w3id.org/linkml/examples/fsiIndicator> ]
     )

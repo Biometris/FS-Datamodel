@@ -1197,6 +1197,7 @@ type Indicator
     hasCategory: IndicatorCategory!
     sustainabilityImpact: SustainabilityImpactType
     eu2025SdgIndicatorCode: [Eu2025SdgIndicator]
+    methodologyDescription: NarrativeText
   }
 
 type IndicatorCategory

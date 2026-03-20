@@ -180,6 +180,13 @@
                         "null"
                     ]
                 },
+                "methodology_description": {
+                    "description": "The methodological approach used to compute the indicator, including formulas, assumptions.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "name": {
                     "description": "Denomination of the indicator.",
                     "type": [
