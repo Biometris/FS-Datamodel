@@ -24,6 +24,7 @@ nav:
     - Sustainability dimensions: model/SustainabilityDimension.md
     - Sustainability outcome types: model/FoodSystemOutcomeType.md
     - Supply chain components: model/SupplyChainComponentType.md
+    - Transition domains: model/TransitionDomain.md
     - Units of measurement: model/IndicatorMeasurementUnit.md
     - EU SDG indicators: model/Eu2025SdgIndicator.md
   - Downloads: downloads.md

@@ -177,6 +177,16 @@ classes:
     slots:
       - update_frequency     
 
+  TransitionDomainPillar:
+    is_a: Entity
+    title: transition domain pillar
+    description: Sub-area of a transition domain.
+    slots:
+      - id
+      - name
+      - description
+      - transition_domain
+
 ## --------------------
 ## SLOTS
 ## --------------------
@@ -451,6 +461,10 @@ slots:
     description: >-
       Rationale for a weak score for the indicator.
 
+  transition_domain:
+    title: transition domain
+    range: TransitionDomain
+
 ## --------------------
 ## TYPES
 ## --------------------
@@ -722,6 +736,28 @@ enums:
       Undefined:
         title: undefined
         description: Undefined impact on sustainability.
+
+  TransitionDomain:
+    title: transition domain
+    description:
+      Transition domains represent key thematic areas for research and innovation (R&I) to drive systemic change towards sustainable food systems.
+    permissible_values:
+      Area_1:
+        title: change the way we eat
+        description: >-
+          Area 1 focuses on shifting food environments and consumer behaviour to promote sustainable consumption of safe, healthy, nutritious, affordable, accessible, equitable and culturally acceptable tasteful foods while tackling malnutrition in all its forms.
+      Area_2:
+        title: change the way we process & supply
+        description: >-
+          Area 2 focuses on reorienting activities of post farming and post fishing food producers (focus: industrial processing and supplying) with the aim of increasing diversity of healthy, safe, affordable and accessible products based on sustainable production.
+      Area_3:
+        title: change the way we connect
+        description: >-
+          Area 3 focuses on enhancing the way consumers engage with and trust food systems by increasing trust and transparency, diversity in consumer engagement, and food democracy with the goal of reshaping food systems to be more inclusive, participatory, and sustainable.
+      Area_4:
+        title: change the way we govern
+        description: >-
+          Area 4 focuses on fostering governance for a positive food system transformation in an interaction among the public sector, private sector, civil society, and consumers to identify, implement, resource, and monitor solutions for achieving healthy, sustainable, resilient, just, and equitable food systems without leaving anyone behind.
 
   Eu2025SdgIndicator:
     title: EU SDG indicators

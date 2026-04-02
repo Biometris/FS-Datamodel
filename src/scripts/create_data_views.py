@@ -114,6 +114,7 @@ if __name__ == "__main__":
     criterion_data_path = "data/criteria.yaml"
     indicator_scores_data_path = "data/indicator_scores.yaml"
     references_data_path = "data/references.yaml"
+    transition_domain_pillars_file = "data/transition_domain_pillars.yaml"
 
     # Exports
     data_export_path = "docs/data"
@@ -134,7 +135,8 @@ if __name__ == "__main__":
         indicator_data_collection_details_file=indicator_data_collection_details_data_path,
         criteria_file=criterion_data_path,
         indicator_scores_file=indicator_scores_data_path,
-        references_file=references_data_path
+        references_file=references_data_path,
+        transition_domain_pillars_file=transition_domain_pillars_file
     )
 
     # Generate model diagram

@@ -15,7 +15,8 @@ class DataStore:
         indicator_data_collection_details_file: str,
         criteria_file: str,
         indicator_scores_file: str,
-        references_file: str
+        references_file: str,
+        transition_domain_pillars_file: str
     ):
         # Initialize LinkML Store with DuckDB
         self.client = Client()
@@ -32,6 +33,7 @@ class DataStore:
         self.add_database_data(criteria_file, "IndicatorCriterion", "IndicatorCriteria")
         self.add_database_data(indicator_scores_file, "IndicatorcriteriaScore", "IndicatorCriteriaScores")
         self.add_database_data(references_file, "Reference", "ReferencesTab")
+        self.add_database_data(transition_domain_pillars_file, "TransitionDomainPillar", "TransitionDomainPillars")
         
         # Validate cross-links
         print("\nRunning validation...")
