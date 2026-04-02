@@ -10,10 +10,10 @@ _{{ element_description_line }}_
 {% if element.permissible_values -%}
 ## Possible values
 
-| Id | Title | URI | Description |
+| Id | Title | Description | URI | 
 | --- | --- | --- | --- |
 {% for pv in element.permissible_values.values() -%}
-| {{pv.text}} | {{pv.title | capitalize }} | {{pv.meaning}} | {{pv.description}} |
+| {{pv.text}} | {{pv.title | capitalize }} | {{pv.description}} | {{pv.meaning}} |
 {% endfor %}
 {% else %}
 _This is a dynamic enum_
