@@ -5,7 +5,7 @@ from jinja2 import Environment, FileSystemLoader
 
 from linkml.generators.docgen import DocGenerator, DiagramType
 
-from indicator_datastore import DataStore
+from indicator_datastore import DataStore, DatabaseDataSource
 
 SCHEMA_PATH = "src/schema/food_system_indicators.yaml"
 
@@ -107,14 +107,22 @@ def render_template(
 
 if __name__ == "__main__":
 
-    # Data paths
-    indicator_definitions_data_path = "data/indicators.yaml"
-    indicator_categories_data_path = "data/indicator_categories.yaml"
-    indicator_data_collection_details_data_path = "data/indicator_data_collection_details.yaml"
-    criterion_data_path = "data/criteria.yaml"
-    indicator_scores_data_path = "data/indicator_scores.yaml"
-    references_data_path = "data/references.yaml"
-    transition_domain_pillars_file = "data/transition_domain_pillars.yaml"
+    # Data sources
+    data_sources = [
+        DatabaseDataSource("data/indicators.yaml", "Indicator", "Indicators"),
+        DatabaseDataSource("data/indicator_categories.yaml", "IndicatorCategory", "IndicatorCategories"),
+        DatabaseDataSource("data/indicator_data_collection_details.yaml", "IndicatorDataCollectionDetails", "IndicatorDataCollectionDetails"),
+        DatabaseDataSource("data/criteria.yaml", "IndicatorCriterion", "IndicatorCriteria"),
+        DatabaseDataSource("data/indicator_scores.yaml", "IndicatorcriteriaScore", "IndicatorCriteriaScores"),
+        DatabaseDataSource("data/references.yaml", "Reference", "ReferencesTab"),
+        DatabaseDataSource("data/transition_domain_pillars.yaml", "TransitionDomainPillar", "TransitionDomainPillars"),
+    ]
+
+    # Setup data store
+    datastore = DataStore(
+        schema_file=SCHEMA_PATH,
+        data_sources=data_sources
+    )
 
     # Exports
     data_export_path = "docs/data"
@@ -126,18 +134,6 @@ if __name__ == "__main__":
             'table_names': None # Set to None to export all
         }
     }
-
-    # Setup data store
-    datastore = DataStore(
-        schema_file=SCHEMA_PATH,
-        indicator_definitions_file=indicator_definitions_data_path,
-        indicator_categories_file=indicator_categories_data_path,
-        indicator_data_collection_details_file=indicator_data_collection_details_data_path,
-        criteria_file=criterion_data_path,
-        indicator_scores_file=indicator_scores_data_path,
-        references_file=references_data_path,
-        transition_domain_pillars_file=transition_domain_pillars_file
-    )
 
     # Generate model diagram
     doc_gen = DocGenerator(SCHEMA_PATH, importmap={})

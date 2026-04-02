@@ -1,4 +1,5 @@
-from typing import List, Set
+from typing import List
+from dataclasses import dataclass
 from linkml_runtime import SchemaView
 from linkml_store import Client
 from linkml_store.utils.format_utils import load_objects
@@ -6,17 +7,17 @@ from linkml_store.api.queries import Query
 import pandas as pd
 import yaml
 
+@dataclass
+class DatabaseDataSource:
+    filename: str
+    reference_class: str
+    collection_name: str
+
 class DataStore:
     def __init__(
         self,
         schema_file: str,
-        indicator_definitions_file: str,
-        indicator_categories_file: str,        
-        indicator_data_collection_details_file: str,
-        criteria_file: str,
-        indicator_scores_file: str,
-        references_file: str,
-        transition_domain_pillars_file: str
+        data_sources: List[DatabaseDataSource]
     ):
         # Initialize LinkML Store with DuckDB
         self.client = Client()
@@ -27,13 +28,8 @@ class DataStore:
         self.db.set_schema_view(sv)
 
         # Add database data from yaml to db.
-        self.add_database_data(indicator_definitions_file, "Indicator", "Indicators")
-        self.add_database_data(indicator_categories_file, "IndicatorCategory", "IndicatorCategories")        
-        self.add_database_data(indicator_data_collection_details_file, "IndicatorDataCollectionDetails", "IndicatorDataCollectionDetails")
-        self.add_database_data(criteria_file, "IndicatorCriterion", "IndicatorCriteria")
-        self.add_database_data(indicator_scores_file, "IndicatorcriteriaScore", "IndicatorCriteriaScores")
-        self.add_database_data(references_file, "Reference", "ReferencesTab")
-        self.add_database_data(transition_domain_pillars_file, "TransitionDomainPillar", "TransitionDomainPillars")
+        for data_source in data_sources:
+            self.add_database_data(data_source)
         
         # Validate cross-links
         print("\nRunning validation...")
@@ -42,14 +38,11 @@ class DataStore:
     # Add data collection to database.
     def add_database_data(
         self,
-        data_path,
-        reference_class,
-        collection_name
+        data_source: DatabaseDataSource
     ):
-        print(f"Loading data [{data_path}] into database")
-        collection = self.db.create_collection(reference_class, collection_name)
-        objects = load_objects(data_path)
-
+        print(f"Loading data [{data_source.filename}] into database")
+        collection = self.db.create_collection(data_source.reference_class, data_source.collection_name)
+        objects = load_objects(data_source.filename)
         collection.insert(objects)
 
     def validate_data(self):
