@@ -103,6 +103,19 @@
             "title": "FoodSystemActivityType",
             "type": "string"
         },
+        "FoodSystemDrivingForce": {
+            "description": "Driving forces can be understood as influential forces of changes that are shaping, or that have the capacity to shape or transform, a system. The driving forces stem from the DESTEP, which is an acronym that encompasses the dimensions of demographics, economic, social-cultural, technological, environmental, and political-institutional factors, are often used as a method for identification of driving forces and trends.",
+            "enum": [
+                "Demography",
+                "Economy",
+                "SocioCultural",
+                "Technology",
+                "Ecology",
+                "PoliticalInstitutional"
+            ],
+            "title": "FoodSystemDrivingForce",
+            "type": "string"
+        },
         "FoodSystemOutcomeType": {
             "description": "Food system outcomes, being impact related to environment, economic, social and health,  are a result of food systems. This framework distinguishes five different type of food system impacts: environmental, economic, social, health, and the overarching food security and resilience.",
             "enum": [
@@ -137,6 +150,10 @@
                         "string",
                         "null"
                     ]
+                },
+                "driving_force": {
+                    "$ref": "#/$defs/FoodSystemActivityType",
+                    "description": "A reference to the food system driving force that is the subject of this indicator's measurement."
                 },
                 "eu2025_sdg_indicator_code": {
                     "description": "Indicates whether the indicator is included in the 2025 edition of the EU Sustainable Development Goals indicator set, and provides the corresponding EU SDG indicator code.",
@@ -208,9 +225,23 @@
                         "null"
                     ]
                 },
+                "sustainability_dimension": {
+                    "$ref": "#/$defs/SustainabilityDimension",
+                    "description": "Reference to the sustainability dimension to which the indicator relates."
+                },
                 "sustainability_impact": {
                     "$ref": "#/$defs/SustainabilityImpactType",
                     "description": "Description of the sustainability impact the indicator measures."
+                },
+                "transition_domain_connections": {
+                    "description": "Reference to the transition domains that indicator connects to.",
+                    "items": {
+                        "$ref": "#/$defs/TransitionDomain"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 }
             },
             "required": [
@@ -239,6 +270,10 @@
                 "dimension": {
                     "$ref": "#/$defs/SustainabilityDimension",
                     "description": "Reference to the dimension that the indicator belongs to."
+                },
+                "driving_force": {
+                    "$ref": "#/$defs/FoodSystemActivityType",
+                    "description": "A reference to the food system driving force that is the subject of this indicator's measurement."
                 },
                 "id": {
                     "description": "Unique identifier of the indicator category.",
@@ -1760,6 +1795,56 @@
             ],
             "title": "TimeGranularity",
             "type": "string"
+        },
+        "TransitionDomain": {
+            "description": "Transition domains represent key thematic areas for research and innovation (R&I) to drive systemic change towards sustainable food systems.",
+            "enum": [
+                "Area_1",
+                "Area_2",
+                "Area_3",
+                "Area_4"
+            ],
+            "title": "TransitionDomain",
+            "type": "string"
+        },
+        "TransitionDomainPillar": {
+            "additionalProperties": false,
+            "description": "Sub-area of a transition domain.",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description of an entity.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "A unique identifier for an entity.",
+                    "type": "string"
+                },
+                "iri": {
+                    "description": "An IRI for an entity. This is determined by the id using expansion rules.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "description": "A human-readable name for an attribute or entity.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "transition_domain": {
+                    "$ref": "#/$defs/TransitionDomain"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "TransitionDomainPillar",
+            "type": "object"
         }
     },
     "$id": "https://w3id.org/linkml/examples/fsi",

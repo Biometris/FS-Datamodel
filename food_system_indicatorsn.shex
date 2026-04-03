@@ -73,7 +73,7 @@ linkml:Sparqlpath xsd:string
     @<https://w3id.org/linkml/examples/fsiIndicator> OR @<https://w3id.org/linkml/examples/fsiIndicatorCategory> OR
     @<https://w3id.org/linkml/examples/fsiIndicatorCriterion> OR
     @<https://w3id.org/linkml/examples/fsiIndicatorDataCollectionDetails> OR @<https://w3id.org/linkml/examples/fsiQuantityValue>
-    OR @<https://w3id.org/linkml/examples/fsiReference>
+    OR @<https://w3id.org/linkml/examples/fsiReference> OR @<https://w3id.org/linkml/examples/fsiTransitionDomainPillar>
 )
 
 <https://w3id.org/linkml/examples/fsiEntity_struct> {
@@ -92,6 +92,17 @@ linkml:Sparqlpath xsd:string
           rdfs:label @<https://w3id.org/linkml/examples/fsiLabelType> ? ;
           dct:description @<https://w3id.org/linkml/examples/fsiNarrativeText> ? ;
           <https://w3id.org/linkml/examples/fsidefinition> @<https://w3id.org/linkml/examples/fsiNarrativeText> ? ;
+          <https://w3id.org/linkml/examples/fsisustainability_dimension> [
+             <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Environment>
+             <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Economy>
+             <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Society>
+             <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Health> ] ? ;
+          <https://w3id.org/linkml/examples/fsidriving_force> [
+             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodSupply>
+             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodEnvironment>
+             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodDemand>
+             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#UseNaturalResources>
+             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#ConsumptionAndDiets> ] ? ;
           <https://w3id.org/linkml/examples/fsiactivity_type> [
              <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodSupply>
              <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodEnvironment>
@@ -272,6 +283,11 @@ linkml:Sparqlpath xsd:string
              euunit:PCH_M24 euunit:PC_POP_NPT euunit:PC_ENT_RA euunit:PC_ENT_RM euunit:PC_ENT_RBT euunit:KG_L euunit:PC_OECD_EU
              euunit:PCH_OECD_EU_5Y euunit:MIO_SKM euunit:PC_ENT_DAOWN ] * ;
           <https://w3id.org/linkml/examples/fsihas_category> @<https://w3id.org/linkml/examples/fsiIndicatorCategory> ;
+          <https://w3id.org/linkml/examples/fsitransition_domain_connections> [
+             <https://w3id.org/linkml/examples/fsiTransitionDomain#Area_1>
+             <https://w3id.org/linkml/examples/fsiTransitionDomain#Area_2>
+             <https://w3id.org/linkml/examples/fsiTransitionDomain#Area_3>
+             <https://w3id.org/linkml/examples/fsiTransitionDomain#Area_4> ] * ;
           <https://w3id.org/linkml/examples/fsisustainability_impact> [
              <https://w3id.org/linkml/examples/fsiSustainabilityImpactType#Positive>
              <https://w3id.org/linkml/examples/fsiSustainabilityImpactType#Negative>
@@ -308,6 +324,18 @@ linkml:Sparqlpath xsd:string
              <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Economy>
              <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Society>
              <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Health> ] ;
+          <https://w3id.org/linkml/examples/fsidriving_force> [
+             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodSupply>
+             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodEnvironment>
+             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodDemand>
+             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#UseNaturalResources>
+             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#ConsumptionAndDiets> ] ? ;
+          <https://w3id.org/linkml/examples/fsiactivity_type> [
+             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodSupply>
+             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodEnvironment>
+             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodDemand>
+             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#UseNaturalResources>
+             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#ConsumptionAndDiets> ] ? ;
           <https://w3id.org/linkml/examples/fsioutcome_type> [
              <https://w3id.org/linkml/examples/fsiFoodSystemOutcomeType#Environment>
              <https://w3id.org/linkml/examples/fsiFoodSystemOutcomeType#Economy>
@@ -315,12 +343,6 @@ linkml:Sparqlpath xsd:string
              <https://w3id.org/linkml/examples/fsiFoodSystemOutcomeType#Health>
              <https://w3id.org/linkml/examples/fsiFoodSystemOutcomeType#FoodSecurity>
              <https://w3id.org/linkml/examples/fsiFoodSystemOutcomeType#Resilience> ] ;
-          <https://w3id.org/linkml/examples/fsiactivity_type> [
-             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodSupply>
-             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodEnvironment>
-             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodDemand>
-             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#UseNaturalResources>
-             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#ConsumptionAndDiets> ] ? ;
           <https://w3id.org/linkml/examples/fsireferenced_in> @<https://w3id.org/linkml/examples/fsiReference> *
        ) ;
        rdf:type [ <https://w3id.org/linkml/examples/fsiIndicatorCategory> ]
@@ -426,3 +448,15 @@ linkml:Sparqlpath xsd:string
        )
     } OR @<https://w3id.org/linkml/examples/fsiDatabase>
 )
+
+<https://w3id.org/linkml/examples/fsiTransitionDomainPillar> CLOSED {
+    (  $<https://w3id.org/linkml/examples/fsiTransitionDomainPillar_tes> (  &<https://w3id.org/linkml/examples/fsiEntity_tes> ;
+          rdf:type [ <https://w3id.org/linkml/examples/fsiEntity> ] ? ;
+          <https://w3id.org/linkml/examples/fsitransition_domain> [ <https://w3id.org/linkml/examples/fsiTransitionDomain#Area_1>
+             <https://w3id.org/linkml/examples/fsiTransitionDomain#Area_2>
+             <https://w3id.org/linkml/examples/fsiTransitionDomain#Area_3>
+             <https://w3id.org/linkml/examples/fsiTransitionDomain#Area_4> ] ?
+       ) ;
+       rdf:type [ <https://w3id.org/linkml/examples/fsiTransitionDomainPillar> ]
+    )
+}

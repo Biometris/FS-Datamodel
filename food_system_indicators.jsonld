@@ -516,6 +516,45 @@
       ]
     },
     {
+      "name": "FoodSystemDrivingForce",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiFoodSystemDrivingForce",
+      "description": "Driving forces can be understood as influential forces of changes that are shaping, or that have the capacity to shape or transform, a system. The driving forces stem from the DESTEP, which is an acronym that encompasses the dimensions of demographics, economic, social-cultural, technological, environmental, and political-institutional factors, are often used as a method for identification of driving forces and trends.",
+      "title": "food system driving force",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "permissible_values": [
+        {
+          "text": "Demography",
+          "description": "Demographic trends involve population characteristics such as population composition, growth and size, and educational attainment.  ",
+          "title": "demography"
+        },
+        {
+          "text": "Economy",
+          "description": "Economic developments involve characteristics of the economy and the labour market, such as economic growth, job structures, employment and unemployment.",
+          "title": "economy"
+        },
+        {
+          "text": "SocioCultural",
+          "description": "Socio-cultural developments involve characteristics of society, such as quality of life, social cohesion and the relationship between citizens and the government, changing norms and values and a changing role/attitude of citizens ",
+          "title": "socio-cultural"
+        },
+        {
+          "text": "Technology",
+          "description": "Technological developments involve developments and innovations in technology, for example in data-driven technology, artificial intelligence (AI), digitisation, genetic engineering, precision medicine and robots/cobots.  ",
+          "title": "technology"
+        },
+        {
+          "text": "Ecology",
+          "description": "Ecological developments refer to features of the physical environment, such as climate change, air, water and soil pollution and the increase of renewable energy.  ",
+          "title": "ecology"
+        },
+        {
+          "text": "PoliticalInstitutional",
+          "description": "Changes, adjustments or reforms in the organisation, functioning and structures of political and administrative institutions within a society. This includes processes related to the organisation of public bodies, the system of governance, power relations, legal frameworks, democratic rules of the game, and the way decision-making takes place at national, European and global levels. ",
+          "title": "political-institutional"
+        }
+      ]
+    },
+    {
       "name": "SpatialScopeType",
       "definition_uri": "https://w3id.org/linkml/examples/fsiSpatialScopeType",
       "description": "The spatial scope for which the indicator is defined.",
@@ -727,6 +766,35 @@
           "text": "Undefined",
           "description": "Undefined impact on sustainability.",
           "title": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "TransitionDomain",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiTransitionDomain",
+      "description": "Transition domains represent key thematic areas for research and innovation (R&I) to drive systemic change towards sustainable food systems.",
+      "title": "transition domain",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "permissible_values": [
+        {
+          "text": "Area_1",
+          "description": "Area 1 focuses on shifting food environments and consumer behaviour to promote sustainable consumption of safe, healthy, nutritious, affordable, accessible, equitable and culturally acceptable tasteful foods while tackling malnutrition in all its forms.",
+          "title": "change the way we eat"
+        },
+        {
+          "text": "Area_2",
+          "description": "Area 2 focuses on reorienting activities of post farming and post fishing food producers (focus: industrial processing and supplying) with the aim of increasing diversity of healthy, safe, affordable and accessible products based on sustainable production.",
+          "title": "change the way we process & supply"
+        },
+        {
+          "text": "Area_3",
+          "description": "Area 3 focuses on enhancing the way consumers engage with and trust food systems by increasing trust and transparency, diversity in consumer engagement, and food democracy with the goal of reshaping food systems to be more inclusive, participatory, and sustainable.",
+          "title": "change the way we connect"
+        },
+        {
+          "text": "Area_4",
+          "description": "Area 4 focuses on fostering governance for a positive food system transformation in an interaction among the public sector, private sector, civil society, and consumers to identify, implement, resource, and monitor solutions for achieving healthy, sustainable, resilient, just, and equitable food systems without leaving anyone behind.",
+          "title": "change the way we govern"
         }
       ]
     },
@@ -7123,12 +7191,13 @@
         "http://www.w3.org/2004/02/skos/core#definitions"
       ],
       "slot_uri": "http://purl.org/dc/terms/description",
-      "owner": "IndicatorDataCollectionDetails",
+      "owner": "TransitionDomainPillar",
       "domain_of": [
         "Entity",
         "IndicatorCategory",
         "Indicator",
-        "IndicatorDataCollectionDetails"
+        "IndicatorDataCollectionDetails",
+        "TransitionDomainPillar"
       ],
       "range": "narrative_text",
       "@type": "SlotDefinition"
@@ -7216,12 +7285,13 @@
       "domain": "Entity",
       "slot_uri": "https://w3id.org/linkml/examples/fsiid",
       "identifier": true,
-      "owner": "IndicatorDataCollectionDetails",
+      "owner": "TransitionDomainPillar",
       "domain_of": [
         "Entity",
         "IndicatorCategory",
         "Indicator",
-        "IndicatorDataCollectionDetails"
+        "IndicatorDataCollectionDetails",
+        "TransitionDomainPillar"
       ],
       "range": "string",
       "required": true,
@@ -7407,12 +7477,13 @@
       ],
       "domain": "Entity",
       "slot_uri": "http://www.w3.org/2000/01/rdf-schema#label",
-      "owner": "IndicatorDataCollectionDetails",
+      "owner": "TransitionDomainPillar",
       "domain_of": [
         "Entity",
         "IndicatorCategory",
         "Indicator",
-        "IndicatorDataCollectionDetails"
+        "IndicatorDataCollectionDetails",
+        "TransitionDomainPillar"
       ],
       "range": "label_type",
       "@type": "SlotDefinition"
@@ -7448,6 +7519,21 @@
       "@type": "SlotDefinition"
     },
     {
+      "name": "driving_force",
+      "definition_uri": "https://w3id.org/linkml/examples/fsidriving_force",
+      "description": "A reference to the food system driving force that is the subject of this indicator's measurement.",
+      "title": "food system driving force",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "slot_uri": "https://w3id.org/linkml/examples/fsidriving_force",
+      "owner": "Indicator",
+      "domain_of": [
+        "IndicatorCategory",
+        "Indicator"
+      ],
+      "range": "FoodSystemActivityType",
+      "@type": "SlotDefinition"
+    },
+    {
       "name": "outcome_type",
       "definition_uri": "https://w3id.org/linkml/examples/fsioutcome_type",
       "description": "Reference to the type of the outcome measured by the indicator.",
@@ -7464,6 +7550,20 @@
       "@type": "SlotDefinition"
     },
     {
+      "name": "sustainability_dimension",
+      "definition_uri": "https://w3id.org/linkml/examples/fsisustainability_dimension",
+      "description": "Reference to the sustainability dimension to which the indicator relates.",
+      "title": "sustainability dimension",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "slot_uri": "https://w3id.org/linkml/examples/fsisustainability_dimension",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "SustainabilityDimension",
+      "@type": "SlotDefinition"
+    },
+    {
       "name": "supply_chain_component",
       "definition_uri": "https://w3id.org/linkml/examples/fsisupply_chain_component",
       "description": "Reference to the supply chain component(s) for which the indicator is relevant.",
@@ -7475,6 +7575,21 @@
         "Indicator"
       ],
       "range": "SupplyChainComponentType",
+      "multivalued": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "transition_domain_connections",
+      "definition_uri": "https://w3id.org/linkml/examples/fsitransition_domain_connections",
+      "description": "Reference to the transition domains that indicator connects to.",
+      "title": "transition domain connections",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "slot_uri": "https://w3id.org/linkml/examples/fsitransition_domain_connections",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "TransitionDomain",
       "multivalued": true,
       "@type": "SlotDefinition"
     },
@@ -7716,6 +7831,19 @@
         "IndicatorCriterion"
       ],
       "range": "narrative_text",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "transition_domain",
+      "definition_uri": "https://w3id.org/linkml/examples/fsitransition_domain",
+      "title": "transition domain",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "slot_uri": "https://w3id.org/linkml/examples/fsitransition_domain",
+      "owner": "TransitionDomainPillar",
+      "domain_of": [
+        "TransitionDomainPillar"
+      ],
+      "range": "TransitionDomain",
       "@type": "SlotDefinition"
     },
     {
@@ -7996,8 +8124,9 @@
         "IndicatorCategory_name",
         "IndicatorCategory_description",
         "dimension",
-        "IndicatorCategory_outcome_type",
+        "driving_force",
         "activity_type",
+        "IndicatorCategory_outcome_type",
         "referenced_in"
       ],
       "slot_usage": {},
@@ -8017,12 +8146,15 @@
         "Indicator_name",
         "Indicator_description",
         "Indicator_definition",
+        "sustainability_dimension",
+        "driving_force",
         "activity_type",
         "outcome_type",
         "supply_chain_component",
         "measurement_unit_description",
         "measurement_units",
         "has_category",
+        "transition_domain_connections",
         "sustainability_impact",
         "eu2025_sdg_indicator_code",
         "Indicator_methodology_description"
@@ -8174,13 +8306,31 @@
       "slot_usage": {},
       "class_uri": "https://w3id.org/linkml/examples/fsiDatabase",
       "@type": "ClassDefinition"
+    },
+    {
+      "name": "TransitionDomainPillar",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiTransitionDomainPillar",
+      "description": "Sub-area of a transition domain.",
+      "title": "transition domain pillar",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "is_a": "Entity",
+      "slots": [
+        "iri",
+        "id",
+        "name",
+        "description",
+        "transition_domain"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/linkml/examples/fsiTransitionDomainPillar",
+      "@type": "ClassDefinition"
     }
   ],
   "metamodel_version": "1.7.0",
   "source_file": "food_system_indicators.yaml",
-  "source_file_date": "2026-03-20T07:31:45",
-  "source_file_size": 24574,
-  "generation_date": "2026-03-20T07:32:30",
+  "source_file_date": "2026-04-03T09:40:15",
+  "source_file_size": 29670,
+  "generation_date": "2026-04-03T09:40:57",
   "@type": "SchemaDefinition",
   "@context": [
     "project/jsonld/food_system_indicators.context.jsonld",

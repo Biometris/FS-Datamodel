@@ -58,6 +58,14 @@
          },
          "@id": "dimension"
       },
+      "driving_force": {
+         "@context": {
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         },
+         "@id": "driving_force"
+      },
       "eu2025_sdg_indicator_code": {
          "@context": {
             "text": "skos:notation",
@@ -199,6 +207,14 @@
          },
          "@id": "supply_chain_component"
       },
+      "sustainability_dimension": {
+         "@context": {
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         },
+         "@id": "sustainability_dimension"
+      },
       "sustainability_impact": {
          "@context": {
             "text": "skos:notation",
@@ -214,6 +230,22 @@
             "meaning": "@id"
          },
          "@id": "time_granularity"
+      },
+      "transition_domain": {
+         "@context": {
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         },
+         "@id": "transition_domain"
+      },
+      "transition_domain_connections": {
+         "@context": {
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         },
+         "@id": "transition_domain_connections"
       },
       "update_frequency": {
          "@context": {
@@ -252,6 +284,9 @@
       },
       "Reference": {
          "@id": "Reference"
+      },
+      "TransitionDomainPillar": {
+         "@id": "TransitionDomainPillar"
       }
    }
 }

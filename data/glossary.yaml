@@ -31,6 +31,9 @@
 - id: Database
   name: database
   description: A reference to a database.
+- id: TransitionDomainPillar
+  name: transition domain pillar
+  description: Sub-area of a transition domain.
 - id: IndicatorMeasurementUnit
   name: Eurostat unit of measurement
   description: Food system indicator units of measurement imported from the Eurostat
@@ -50,6 +53,14 @@
     social and health,  are a result of food systems. This framework distinguishes
     five different type of food system impacts: environmental, economic, social, health,
     and the overarching food security and resilience.'
+- id: FoodSystemDrivingForce
+  name: food system driving force
+  description: Driving forces can be understood as influential forces of changes that
+    are shaping, or that have the capacity to shape or transform, a system. The driving
+    forces stem from the DESTEP, which is an acronym that encompasses the dimensions
+    of demographics, economic, social-cultural, technological, environmental, and
+    political-institutional factors, are often used as a method for identification
+    of driving forces and trends.
 - id: SpatialScopeType
   name: spatial scope type
   description: The spatial scope for which the indicator is defined.
@@ -71,6 +82,10 @@
 - id: SustainabilityImpactType
   name: sustainability impact type
   description: The type of sustainability impact the indicator measures.
+- id: TransitionDomain
+  name: transition domain
+  description: Transition domains represent key thematic areas for research and innovation
+    (R&I) to drive systemic change towards sustainable food systems.
 - id: Eu2025SdgIndicator
   name: EU SDG indicators
   description: Indicators of the 2025 edition of the EU sustainable development goals

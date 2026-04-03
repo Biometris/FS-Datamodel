@@ -35,6 +35,16 @@ enum FoodSystemActivityType
     ConsumptionAndDiets
   }
 
+enum FoodSystemDrivingForce
+  {
+    Demography
+    Economy
+    SocioCultural
+    Technology
+    Ecology
+    PoliticalInstitutional
+  }
+
 enum FoodSystemOutcomeType
   {
     Environment
@@ -1162,6 +1172,14 @@ enum TimeGranularity
     Other
   }
 
+enum TransitionDomain
+  {
+    Area_1
+    Area_2
+    Area_3
+    Area_4
+  }
+
 type Database
   {
     id: String!
@@ -1189,12 +1207,15 @@ type Indicator
     name: LabelType
     description: NarrativeText
     definition: NarrativeText
+    sustainabilityDimension: SustainabilityDimension
+    drivingForce: FoodSystemActivityType
     activityType: FoodSystemActivityType
     outcomeType: FoodSystemOutcomeType!
     supplyChainComponent: [SupplyChainComponentType]
     measurementUnitDescription: Unit
     measurementUnits: [IndicatorMeasurementUnit]
     hasCategory: IndicatorCategory!
+    transitionDomainConnections: [TransitionDomain]
     sustainabilityImpact: SustainabilityImpactType
     eu2025SdgIndicatorCode: [Eu2025SdgIndicator]
     methodologyDescription: NarrativeText
@@ -1207,8 +1228,9 @@ type IndicatorCategory
     name: LabelType
     description: NarrativeText
     dimension: SustainabilityDimension!
-    outcomeType: FoodSystemOutcomeType!
+    drivingForce: FoodSystemActivityType
     activityType: FoodSystemActivityType
+    outcomeType: FoodSystemOutcomeType!
     referencedIn: [Reference]
   }
 
@@ -1280,4 +1302,13 @@ type Reference
     link: IriType
     referenceType: ReferenceType
     comment: NarrativeText
+  }
+
+type TransitionDomainPillar
+  {
+    iri: IriType
+    id: String!
+    name: LabelType
+    description: NarrativeText
+    transitionDomain: TransitionDomain
   }

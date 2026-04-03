@@ -337,6 +337,18 @@
 </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="FoodSystemDrivingForce/">
+<span class="md-ellipsis">
+    
+  
+    Food system driving forces
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="SustainabilityDimension/">
 <span class="md-ellipsis">
     
@@ -366,6 +378,18 @@
     
   
     Supply chain components
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="TransitionDomain/">
+<span class="md-ellipsis">
+    
+  
+    Transition domains
   
 
     
@@ -479,13 +503,16 @@ Indicator {
     narrative_text description  
     FoodSystemActivityType activity_type  
     narrative_text definition  
+    FoodSystemActivityType driving_force  
     Eu2025SdgIndicatorList eu2025_sdg_indicator_code  
     unit measurement_unit_description  
     IndicatorMeasurementUnitList measurement_units  
     narrative_text methodology_description  
     FoodSystemOutcomeType outcome_type  
     SupplyChainComponentTypeList supply_chain_component  
+    SustainabilityDimension sustainability_dimension  
     SustainabilityImpactType sustainability_impact  
+    TransitionDomainList transition_domain_connections  
     iri_type iri  
 }
 IndicatorCategory {
@@ -494,6 +521,7 @@ IndicatorCategory {
     narrative_text description  
     FoodSystemActivityType activity_type  
     SustainabilityDimension dimension  
+    FoodSystemActivityType driving_force  
     FoodSystemOutcomeType outcome_type  
     iri_type iri  
 }
@@ -607,6 +635,11 @@ IndicatorcriteriaScore ||--|o IndicatorCriterion : "scores_criterion"
 <td>A reference to a publication, database or dataset.</td>
 <td>Class</td>
 </tr>
+<tr>
+<td><a href="TransitionDomainPillar/">Transition domain pillar</a></td>
+<td>Sub-area of a transition domain.</td>
+<td>Class</td>
+</tr>
 </tbody>
 </table>
 <h2 id="enums">Enums</h2>
@@ -632,6 +665,11 @@ IndicatorcriteriaScore ||--|o IndicatorCriterion : "scores_criterion"
 <tr>
 <td><a href="FoodSystemActivityType/">Food system activity</a></td>
 <td>Food systems encompass  activities related to the food supply chains,  food environments, and food demand, as well as the use of natural resource, consumption and diets, and waste, by-products and recycling. These ultimately have an effect on  food system outcomes.</td>
+<td>Enum</td>
+</tr>
+<tr>
+<td><a href="FoodSystemDrivingForce/">Food system driving force</a></td>
+<td>Driving forces can be understood as influential forces of changes that are shaping, or that have the capacity to shape or transform, a system. The driving forces stem from the DESTEP, which is an acronym that encompasses the dimensions of demographics, economic, social-cultural, technological, environmental, and political-institutional factors, are often used as a method for identification of driving forces and trends.</td>
 <td>Enum</td>
 </tr>
 <tr>
@@ -682,6 +720,11 @@ IndicatorcriteriaScore ||--|o IndicatorCriterion : "scores_criterion"
 <tr>
 <td><a href="TimeGranularity/">Time granularity</a></td>
 <td>Time granularity for measuring and updating data.</td>
+<td>Enum</td>
+</tr>
+<tr>
+<td><a href="TransitionDomain/">Transition domain</a></td>
+<td>Transition domains represent key thematic areas for research and innovation (R&amp;I) to drive systemic change towards sustainable food systems.</td>
 <td>Enum</td>
 </tr>
 </tbody>

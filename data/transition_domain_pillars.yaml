@@ -1,0 +1,40 @@
+- id: TD_area1_pillar1
+  name: area 1 pillar 1
+  transition_domain: Area_1
+  description: Area1, Pillar 1 focuses on guiding consumer behaviour towards sustainable and healthy diets through education, food literacy, and interventions in food environments to promote healthier, more sustainable consumption.
+- id: TD_area1_pillar2
+  name: area 1 pillar 2
+  transition_domain: Area_1
+  description: Area 1, Pillar 2 focuses on domestic food practices to enhance sustainable and healthy diets, ensuring food safety, nutritional needs, and reducing consumption of unhealthy foods through household-level strategies.
+- id: TD_area1_pillar3
+  name: area 1 pillar 3
+  transition_domain: Area_1
+  description: Area 1, Pillar 3 focuses on transitioning to sustainable diets while ensuring food security and nutritional needs for all, particularly vulnerable populations, through tailored dietary guidelines and interventions.
+- id: TD_area2_pillar1
+  name: area 2 pillar 1
+  transition_domain: Area_2
+  description: Area 2, Pillar 1 focuses on transforming food processing through diversification, minimal processing, circularity, and sustainable packaging to reduce environmental impact while maintaining food safety and quality.
+- id: TD_area2_pillar2
+  name: area 2 pillar 2
+  transition_domain: Area_2
+  description: Area 2, Pillar 2 focuses on sustainable food supply chains, including logistics, short food supply chains, and digitalisation to optimise resource use, reduce waste, and enhance transparency and efficiency.
+- id: TD_area3_pillar1
+  name: area 3 pillar 1
+  transition_domain: Area_3
+  description: Area 3, Pillar 1 focuses on the importance of trust and transparency in food systems to build consumer confidence, ensure traceability, and enable informed decision-making across the food supply chain.
+- id: TD_area3_pillar2
+  name: area 3 pillar 2
+  transition_domain: Area_3
+  description: Area 3, Pillar 2 focuses on engaging consumers and embedding their agency in food systems, fostering multi-actor collaboration and capacity building to drive collective action and shared responsibility.
+- id: TD_area3_pillar3
+  name: area 3 pillar 3
+  transition_domain: Area_3
+  description: Area 3, Pillar 3 focuses on the role of food democracy in empowering citizens to participate in decision-making, promote equitable access to food, and foster sustainable food practices through participatory governance.
+- id: TD_area4_pillar1
+  name: area 4 pillar 1
+  transition_domain: Area_4
+  description: Area 4, Pillar 1 focuses on the current state of food systems governance, including policy frameworks, coordination mechanisms, and the effectiveness of existing structures in addressing sustainability challenges.
+- id: TD_area4_pillar2
+  name: area 4 pillar 2
+  transition_domain: Area_4
+  description: Area 4, Pillar 2 focuses on sustainable food systems governance and power dynamics, aiming to address inequities, promote inclusive policy development, and ensure fair distribution of resources and benefits.
