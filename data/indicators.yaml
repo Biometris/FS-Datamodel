@@ -10,6 +10,9 @@
   has_category: FarmersIncome
   supply_chain_component:
   - PrimaryProduction
+  transition_domain_connections:
+  - Area_1
+  - Area_2
   sustainability_impact: Positive
 - id: FSI_0001
   name: Index of the real income of factors in agriculture per annual work unit (Indicator A)

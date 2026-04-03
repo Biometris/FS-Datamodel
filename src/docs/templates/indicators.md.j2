@@ -5,8 +5,8 @@ hide:
 
 # INDICATOR DEFINITIONS
 
-| Id | Name | Outcome type | Activity | Driving force | Category | Unit(s) | Supply chain components | SDGs | Sustainability impact |
-|----|------|--------------|----------|---------------|----------|---------|-------------------------|------|-----------------------|
+| Id | Name | Outcome type | Activity | Driving force | Category | Unit(s) | Supply chain components | Transition domains | SDGs | Sustainability impact |
+|----|------|--------------|----------|---------------|----------|---------|-------------------------|--------------------|------|-----------------------|
 {% for indicator in indicators -%}
   {%- set id = indicator['id'] -%}
   {%- set name = indicator['name'] -%}
@@ -20,8 +20,11 @@ hide:
   {%- set category_id = indicator['has_category'] -%}
   {%- set category_name = categories_dict[indicator['has_category']]['name'] -%}
   {%- set sdgs = indicator['eu2025_sdg_indicator_code'] if indicator['eu2025_sdg_indicator_code'] else [] -%}
+  {%- set tds = indicator['transition_domain_connections'] if indicator['transition_domain_connections'] else [] -%}
 | {{ id }} | [{{name}}](../indicators/{{id}}) | [{{ outcome_type }}](../model/FoodSystemOutcomeType) | [{{ activity_type }}](../model/FoodSystemActivityType) | [{{ driving_force }}](../model/FoodSystemDrivingForce) | [{{category_name}}](../indicator_categories) | {% for mu in units %} [{{ enum_dict['IndicatorMeasurementUnit'][mu]['title'] }}](../model/IndicatorMeasurementUnit) {% endfor %} |
 {%- for scp in indicator['supply_chain_component'] %} [{{ enum_dict['SupplyChainComponentType'][scp]['title'] }}](../model/SupplyChainComponentType) {% endfor -%}
+|
+{%- for tds in tds %} [{{ enum_dict['TransitionDomain'][tds]['title'] }}](../model/TransitionDomain)] {% endfor -%}
 |
 {%- for sdg in sdgs %} [{{ enum_dict['Eu2025SdgIndicator'][sdg]['title'] }}](../model/Eu2025SdgIndicator) {% endfor -%}
 | {{sustainability_impact}} |

@@ -80,6 +80,7 @@ classes:
       - measurement_unit_description
       - measurement_units
       - has_category
+      - transition_domain_connections
       - sustainability_impact
       - eu2025_sdg_indicator_code
       - methodology_description
@@ -366,6 +367,13 @@ slots:
     description: >-
       Reference to the supply chain component(s) for which the indicator is relevant.
     range: SupplyChainComponentType
+    multivalued: true
+
+  transition_domain_connections:
+    title: transition domain connections
+    description: >-
+      Reference to the transition domains that indicator connects to.
+    range: TransitionDomain
     multivalued: true
 
   measurement_unit_description:

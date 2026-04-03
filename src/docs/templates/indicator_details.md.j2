@@ -32,6 +32,15 @@ hide:
 
 **Category**: {{ indicator['has_category'] }}
 
+**Connects to transition domains**:
+{%- if indicator['transition_domain_connections'] %} 
+  {%- for scp in indicator['transition_domain_connections'] %}
+    [{{ enum_dict['TransitionDomain'][scp]['title'] }}](../../model/TransitionDomain) - 
+  {% endfor -%}
+{% else %}
+  *Not available*
+{% endif -%}
+
 **Unit(s) of measurement description**:
 {% if indicator['measurement_unit_description'] %} 
   {{ indicator['measurement_unit_description'] }}
