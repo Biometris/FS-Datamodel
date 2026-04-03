@@ -18,7 +18,17 @@ hide:
   *Not available*
 {% endif %}
 
-**Food system outcome type**: {{ enum_dict['FoodSystemOutcomeType'][indicator['outcome_type']]['title'] }}
+{%- if indicator['activity_type'] %} 
+  **Activity type**: {{ enum_dict['FoodSystemActivityType'][indicator['activity_type']]['title'] }}
+{% endif -%}
+
+{%- if indicator['driving_force'] %} 
+  **Driving force**: {{ enum_dict['FoodSystemDrivingForce'][indicator['driving_force']]['title'] }}
+{% endif -%}
+
+{%- if indicator['outcome_type'] %} 
+  **Outcome type**: {{ enum_dict['FoodSystemOutcomeType'][indicator['outcome_type']]['title'] }}
+{% endif -%}
 
 **Category**: {{ indicator['has_category'] }}
 

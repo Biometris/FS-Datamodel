@@ -5,8 +5,8 @@ hide:
 
 # INDICATOR DEFINITIONS
 
-| Id | Name | Outcome type | Activity | Category | Unit(s) | Supply chain components | SDGs | Sustainability impact |
-|----|------|--------------|----------|----------|---------|-------------------------|------|-----------------------|
+| Id | Name | Outcome type | Activity | Driving force | Category | Unit(s) | Supply chain components | SDGs | Sustainability impact |
+|----|------|--------------|----------|---------------|----------|---------|-------------------------|------|-----------------------|
 {% for indicator in indicators -%}
   {%- set id = indicator['id'] -%}
   {%- set name = indicator['name'] -%}
@@ -14,12 +14,13 @@ hide:
   {%- set definition = indicator['definition'] -%}
   {%- set units = indicator['measurement_units'] -%}
   {%- set sustainability_impact = enum_dict['SustainabilityImpactType'][indicator['sustainability_impact']]['title'] -%}
-  {%- set outcome_type = enum_dict['FoodSystemOutcomeType'][indicator['outcome_type']]['title'] -%}
+  {%- set driving_force = enum_dict['FoodSystemDrivingForce'][indicator['driving_force']]['title'] if indicator['driving_force'] else '-' -%}
+  {%- set outcome_type = enum_dict['FoodSystemOutcomeType'][indicator['outcome_type']]['title'] if indicator['outcome_type'] else '-' -%}
   {%- set activity_type = enum_dict['FoodSystemActivityType'][indicator['activity_type']]['title'] if indicator['activity_type'] else '-' -%}
   {%- set category_id = indicator['has_category'] -%}
   {%- set category_name = categories_dict[indicator['has_category']]['name'] -%}
   {%- set sdgs = indicator['eu2025_sdg_indicator_code'] if indicator['eu2025_sdg_indicator_code'] else [] -%}
-| {{ id }} | [{{name}}](../indicators/{{id}}) | [{{ outcome_type }}](../model/FoodSystemOutcomeType) | [{{ activity_type }}](../model/FoodSystemActivityType) | [{{category_name}}](../indicator_categories) | {% for mu in units %} [{{ enum_dict['IndicatorMeasurementUnit'][mu]['title'] }}](../model/IndicatorMeasurementUnit) {% endfor %} |
+| {{ id }} | [{{name}}](../indicators/{{id}}) | [{{ outcome_type }}](../model/FoodSystemOutcomeType) | [{{ activity_type }}](../model/FoodSystemActivityType) | [{{ driving_force }}](../model/FoodSystemDrivingForce) | [{{category_name}}](../indicator_categories) | {% for mu in units %} [{{ enum_dict['IndicatorMeasurementUnit'][mu]['title'] }}](../model/IndicatorMeasurementUnit) {% endfor %} |
 {%- for scp in indicator['supply_chain_component'] %} [{{ enum_dict['SupplyChainComponentType'][scp]['title'] }}](../model/SupplyChainComponentType) {% endfor -%}
 |
 {%- for sdg in sdgs %} [{{ enum_dict['Eu2025SdgIndicator'][sdg]['title'] }}](../model/Eu2025SdgIndicator) {% endfor -%}

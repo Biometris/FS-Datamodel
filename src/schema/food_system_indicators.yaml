@@ -45,8 +45,9 @@ classes:
       - name
       - description
       - dimension
-      - outcome_type
+      - driving_force
       - activity_type
+      - outcome_type
       - referenced_in
     slot_usage:
       id:
@@ -72,6 +73,7 @@ classes:
       - name
       - description
       - definition
+      - driving_force
       - activity_type
       - outcome_type
       - supply_chain_component
@@ -345,6 +347,13 @@ slots:
     required: true
     range: SustainabilityDimension
 
+  driving_force:
+    title: food system driving force
+    description:
+      A reference to the food system driving force that is the subject of this indicator's measurement.
+    required: false
+    range: FoodSystemActivityType
+
   outcome_type:
     title: outcome type
     description: >-
@@ -578,6 +587,36 @@ enums:
         title: resilience 
         description:
           Resilience refers to the capacity of food systems to withstand, adapt to, and recover from shocks and stresses (e.g. climate change, economic crises, conflict), while continuing to function in a sustainable and equitable way. It includes the structural conditions, policies, and governance mechanisms that enable stable and healthy food supplies now and in the future. A resilient food system provides food that is ecologically sustainable, socially just, and economically viable. It ensures continued access to healthy food for all, supports sustainable production and consumption patterns, and strengthens the ability of communities and institutions to cope with uncertainty and long-term change.
+
+  FoodSystemDrivingForce:
+    title: food system driving force
+    description:
+      Driving forces can be understood as influential forces of changes that are shaping, or that have the capacity to shape or transform, a system. The driving forces stem from the DESTEP, which is an acronym that encompasses the dimensions of demographics, economic, social-cultural, technological, environmental, and political-institutional factors, are often used as a method for identification of driving forces and trends. 
+    permissible_values:
+      Demography:
+        title: demography
+        description: >-
+          Demographic trends involve population characteristics such as population composition, growth and size, and educational attainment.  
+      Economy:
+        title: economy
+        description: >-
+          Economic developments involve characteristics of the economy and the labour market, such as economic growth, job structures, employment and unemployment.
+      SocioCultural:
+        title: socio-cultural
+        description: >-
+          Socio-cultural developments involve characteristics of society, such as quality of life, social cohesion and the relationship between citizens and the government, changing norms and values and a changing role/attitude of citizens 
+      Technology:
+        title: technology
+        description: >-
+          Technological developments involve developments and innovations in technology, for example in data-driven technology, artificial intelligence (AI), digitisation, genetic engineering, precision medicine and robots/cobots.  
+      Ecology:
+        title: ecology
+        description: >-
+          Ecological developments refer to features of the physical environment, such as climate change, air, water and soil pollution and the increase of renewable energy.  
+      PoliticalInstitutional:
+        title: political-institutional
+        description: >-
+          Changes, adjustments or reforms in the organisation, functioning and structures of political and administrative institutions within a society. This includes processes related to the organisation of public bodies, the system of governance, power relations, legal frameworks, democratic rules of the game, and the way decision-making takes place at national, European and global levels. 
 
   SpatialScopeType:
     title: spatial scope type
