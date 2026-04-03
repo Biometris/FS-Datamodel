@@ -73,6 +73,7 @@ classes:
       - name
       - description
       - definition
+      - sustainability_dimension
       - driving_force
       - activity_type
       - outcome_type
@@ -361,6 +362,13 @@ slots:
       Reference to the type of the outcome measured by the indicator.
     required: true
     range: FoodSystemOutcomeType
+
+  sustainability_dimension:
+    title: sustainability dimension
+    description: >-
+      Reference to the sustainability dimension to which the indicator relates.
+    required: false
+    range: SustainabilityDimension
 
   supply_chain_component:
     title: supply chain component(s)
