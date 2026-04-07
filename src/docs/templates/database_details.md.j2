@@ -25,5 +25,5 @@ hide:
   {%- set oldest_datapoint = record['oldest_datapoint'] -%}
   {%- set newest_datapoint = record['newest_datapoint'] -%}
   {%- set url = record['data_link'] -%}
-| [{{name}}](../indicator_data_collection_details/{{id}}) | [{{indicator}}](../indicators/{{id_indicator}}) | {{ time_granularity }} | {{ spatial_scope }} | {{ spatial_granularity }} | {{ oldest_datapoint }} | {{ newest_datapoint }} | [[link]]({{url}}) | 
+| [{{name}}](../../indicator_data_collection_details/{{id}}) | [{{indicator}}](../../indicators/{{id_indicator}}) | {{ time_granularity }} | {{ spatial_scope }} | {{ spatial_granularity }} | {{ oldest_datapoint }} | {{ newest_datapoint }} | [[link]]({{url}}) | 
 {% endfor %}

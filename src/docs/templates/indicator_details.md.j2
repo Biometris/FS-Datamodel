@@ -5,71 +5,76 @@ hide:
 
 # {{indicator['name']}}
 
-{% if indicator['description'] %} 
+| Field | Value |
+|------|-------|
+| **Description** | 
+{%- if indicator['description'] -%}
   {{ indicator['description'] }}
-{% else %}
-  *Description not available*
-{% endif %}
-
-**Definition**: 
-{% if indicator['definition'] %} 
+{%- else -%}
+  *Not specified*
+{%- endif -%}
+|
+| **Definition** | 
+{%- if indicator['definition'] -%}
   {{ indicator['definition'] }}
-{% else %}
-  *Not available*
-{% endif %}
-
-{%- if indicator['activity_type'] %} 
-  **Activity type**: {{ enum_dict['FoodSystemActivityType'][indicator['activity_type']]['title'] }}
+{%- else -%}
+  *Not specified*
+{%- endif -%}
+|
+{% if indicator['activity_type'] -%}
+| **Activity type** | {{enum_dict['FoodSystemActivityType'][indicator['activity_type']]['title']|capitalize}} |
 {% endif -%}
 
-{%- if indicator['driving_force'] %} 
-  **Driving force**: {{ enum_dict['FoodSystemDrivingForce'][indicator['driving_force']]['title'] }}
+{%- if indicator['driving_force'] -%} 
+| **Driving force** | {{enum_dict['FoodSystemDrivingForce'][indicator['driving_force']]['title']|capitalize}} |
 {% endif -%}
 
-{%- if indicator['outcome_type'] %} 
-  **Outcome type**: {{ enum_dict['FoodSystemOutcomeType'][indicator['outcome_type']]['title'] }}
+{%- if indicator['outcome_type'] -%} 
+| **Outcome type** | {{enum_dict['FoodSystemOutcomeType'][indicator['outcome_type']]['title']|capitalize}} |
 {% endif -%}
-
-**Category**: {{ indicator['has_category'] }}
-
-**Connects to transition domains**:
-{%- if indicator['transition_domain_connections'] %} 
-  {%- for scp in indicator['transition_domain_connections'] %}
-    [{{ enum_dict['TransitionDomain'][scp]['title'] }}](../../model/TransitionDomain) - 
+| **Category** | {{ indicator['has_category'] }} |
+| **Connects to transition domains** |
+{%- if indicator['transition_domain_connections'] -%} 
+  {%- for scp in indicator['transition_domain_connections'] -%}
+    [{{ enum_dict['TransitionDomain'][scp]['title'] }}](../../model/TransitionDomain)
+    {%- if not loop.last -%}, {% endif -%}
   {% endfor -%}
-{% else %}
-  *Not available*
-{% endif -%}
-
-**Unit(s) of measurement description**:
-{% if indicator['measurement_unit_description'] %} 
-  {{ indicator['measurement_unit_description'] }}
-{% else %}
-  *Not available*
-{% endif %}
-
-**Unit of measurement**:
-{% if indicator['measurement_units'] %}
-  {% for mu in indicator['measurement_units'] %}
-  - [{{ enum_dict['IndicatorMeasurementUnit'][mu]['title'] }}](../../model/IndicatorMeasurementUnit)
-  {% endfor %}
-{% else %}
-  - *Not specified*
-{% endif %}
-
-{% if indicator['eu2025_sdg_indicator_code'] %}
-  **EU 2025 SDG Indicator**: {{ indicator['eu2025_sdg_indicator_code'] }}
+{%- else -%}
+  *None specified*
 {%- endif %}
-
-**Supply chain components**:
-
-{% for scp in indicator['supply_chain_component'] %}
-- [{{ enum_dict['SupplyChainComponentType'][scp]['title'] }}](../../model/SupplyChainComponentType)
-{% endfor %}
-
-**Methodology**: 
-{% if indicator['methodology_description'] %} 
+| **Unit(s) of measurement description** |
+{%- if indicator['measurement_unit_description'] -%} 
+  {{ indicator['measurement_unit_description'] }}
+{%- else -%}
+  *Not specified*
+{%- endif -%}
+|
+| **Unit(s) of measurement** |
+{%- for mu in indicator['measurement_units'] -%}
+    [{{ enum_dict['IndicatorMeasurementUnit'][mu]['title'] }}](../../model/IndicatorMeasurementUnit)
+    {%- if not loop.last -%}, {% endif -%}
+{%- else -%}
+  *None specified*
+{%- endfor -%}
+|
+| **EU 2025 SDG Indicator** |
+{%- if indicator['eu2025_sdg_indicator_code'] -%}
+  {%- for item in indicator['eu2025_sdg_indicator_code'] -%}
+    {{ item }} {%- if not loop.last -%}, {% endif -%}
+  {%- endfor %}
+{%- else -%}
+  *None specified*
+{%- endif -%}
+|
+| **Supply chain components** |
+{%- for scp in indicator['supply_chain_component'] -%}
+[{{enum_dict['SupplyChainComponentType'][scp]['title']|capitalize}}](../../model/SupplyChainComponentType)
+{%- endfor -%}
+|
+| **Methodology** |
+{%- if indicator['methodology_description'] -%} 
   {{ indicator['methodology_description'] }}
-{% else %}
-  *Not available*
-{% endif %}
+{%- else -%}
+  *Not specified*
+{%- endif -%}
+|
