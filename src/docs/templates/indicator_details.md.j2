@@ -29,6 +29,10 @@ hide:
 | **Driving force** | {{enum_dict['FoodSystemDrivingForce'][indicator['driving_force']]['title']|capitalize}} |
 {% endif -%}
 
+{%- if indicator['response_policy'] -%} 
+| **Response/Policy** | {{enum_dict['FoodSystemResponsePolicy'][indicator['response_policy']]['title']|capitalize}} |
+{% endif -%}
+
 {%- if indicator['outcome_type'] -%} 
 | **Outcome type** | {{enum_dict['FoodSystemOutcomeType'][indicator['outcome_type']]['title']|capitalize}} |
 {% endif -%}

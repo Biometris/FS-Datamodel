@@ -5,18 +5,19 @@ hide:
 
 # INDICATOR CATEGORIES
 
-| Name | Description | Dimension | Activity type | Outcome type | Driving force | Source |
-|------|-------------|-----------|---------------|--------------|---------------|--------|
+| Name | Description | Dimension | Activity type | Outcome type | Driving force | Response/Policy | Source |
+|------|-------------|-----------|---------------|--------------|---------------|-----------------|--------|
 {% for record in categories -%}
   {%- set id = record['id'] -%}
   {%- set name = record['name'] -%}
   {%- set description = record['description'] -%}
   {%- set dimension = enum_dict['SustainabilityDimension'][record['dimension']]['title'] -%}
   {%- set driving_force = enum_dict['FoodSystemDrivingForce'][record['driving_force']]['title'] if record['driving_force'] else '-' -%}
+  {%- set response_policy = enum_dict['FoodSystemResponsePolicy'][record['response_policy']]['title'] if record['response_policy'] else '-' -%}
   {%- set activity_type = enum_dict['FoodSystemActivityType'][record['activity_type']]['title'] if record['activity_type'] else '-' -%}
   {%- set outcome_type = enum_dict['FoodSystemOutcomeType'][record['outcome_type']]['title'] if record['outcome_type'] else '-' -%}
   {%- set sources = record['source'] if record['source'] else [] -%}  
-| {{ name }} | {{ description | replace("\n", "") }} | [{{ dimension }}](../model/SustainabilityDimension) | [{{activity_type|capitalize}}](../model/FoodSystemActivityType) | [{{outcome_type|capitalize}}](../model/FoodSystemOutcomeType) |  [{{driving_force|capitalize}}](../model/FoodSystemDrivingForce) |
+| {{ name }} | {{ description | replace("\n", "") }} | [{{ dimension }}](../model/SustainabilityDimension) | [{{activity_type|capitalize}}](../model/FoodSystemActivityType) | [{{outcome_type|capitalize}}](../model/FoodSystemOutcomeType) |  [{{driving_force|capitalize}}](../model/FoodSystemDrivingForce) |  [{{response_policy|capitalize}}](../model/FoodSystemResponsePolicy) |
 {%- for source in sources %} [{{ sources_dict[source]['name'] }}](../references) {% endfor -%} 
 |
 {% endfor %}

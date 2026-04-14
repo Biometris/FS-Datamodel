@@ -75,6 +75,7 @@ classes:
       - definition
       - sustainability_dimension
       - driving_force
+      - response_policy
       - activity_type
       - outcome_type
       - supply_chain_component
@@ -356,6 +357,13 @@ slots:
     required: false
     range: FoodSystemActivityType
 
+  response_policy:
+    title: food system response policy
+    description:
+      A reference to the food system response/policy that is the subject of this indicator's measurement.
+    required: false
+    range: FoodSystemResponsePolicy
+
   outcome_type:
     title: outcome type
     description: >-
@@ -633,6 +641,28 @@ enums:
         title: political-institutional
         description: >-
           Changes, adjustments or reforms in the organisation, functioning and structures of political and administrative institutions within a society. This includes processes related to the organisation of public bodies, the system of governance, power relations, legal frameworks, democratic rules of the game, and the way decision-making takes place at national, European and global levels. 
+
+  FoodSystemResponsePolicy:
+    title: food system response/policy
+    description: >-
+      Governance structures and policies addressing, among others, the power of multinationals and consumers. It includes policy measures focused on adaptation, innovation, research, and transformation, which are supported by governance structures that provide the framework to implement changes.  Areas such as public procurement are also relevant.
+    permissible_values:
+      Innovation:
+        title: innovation
+        description: >-
+          Innovation (including research)
+      Adaptation:
+        title: adaptation
+        description: >- 
+          Adaptation
+      Transformation:
+        title: transformation
+        description: >- 
+          Transformation
+      GovernanceStructure:
+        title: governance structure
+        description: >- 
+          Governance structure
 
   SpatialScopeType:
     title: spatial scope type
