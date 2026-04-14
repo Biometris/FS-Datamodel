@@ -12,11 +12,12 @@ nav:
   - Indicator definitions: indicators.md
   - Indicator categories: indicator_categories.md  
   - Indicator databases: databases_table.md
-  - Indicator data collection details: indicator_data_collection_details_table.md  
+  - Indicator data collection details: indicator_data_collection_details_table.md
+  - Transition domain pillars: transition_domain_pillars.md
   #- Indicator scoring:
   - Indicator criteria: 
     - Definitions: indicator_criteria.md
-    - Rationale: indicator_criteria_rationale.md
+    - Rationale: indicator_criteria_rationale.md  
   - References: references.md
     #- Indicator scores: indicator_scores.md
   - Vocabularies:

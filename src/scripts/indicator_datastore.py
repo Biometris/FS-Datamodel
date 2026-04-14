@@ -128,6 +128,11 @@ class DataStore:
         """Return a joined view of indicator criteria"""
         q = Query(from_table="IndicatorCriteria", limit=-1)
         return self.db.query(q).rows
+    
+    def get_transition_domain_pillars(self):
+        """Return a joined view of transition domain pillars"""
+        q = Query(from_table="TransitionDomainPillars", limit=-1)
+        return self.db.query(q).rows
 
     def get_enum_dict(self, enum_name):
         sv = self.db.schema_view

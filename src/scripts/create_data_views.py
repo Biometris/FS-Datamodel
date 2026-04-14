@@ -164,6 +164,7 @@ if __name__ == "__main__":
         database_indicators = {}
         for record in indicator_data_collection_details:
             database_indicators.setdefault(record['in_database'], []).append(record)
+        transition_domain_pillars = datastore.get_transition_domain_pillars()        
 
         enum_dict = datastore.create_enum_dict()
         create_indicator_hierarchy_json(indicators, indicator_categories_dict)
@@ -250,6 +251,12 @@ if __name__ == "__main__":
         render_template(
             template_name = 'references',
             sources = references,
+            enum_dict = enum_dict
+        )
+
+        render_template(
+            template_name = 'transition_domain_pillars',
+            sources = transition_domain_pillars,
             enum_dict = enum_dict
         )
 

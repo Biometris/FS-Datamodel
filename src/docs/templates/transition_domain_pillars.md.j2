@@ -1,0 +1,15 @@
+---
+hide:
+  - toc
+---
+
+# TRANSITION DOMAIN PILLARS
+
+| Name | Description | Transition domain |
+|---------|------------|-----|
+{% for record in sources -%}
+  {%- set name = record['name'] -%}
+  {%- set description = record.get("description") -%}
+  {%- set transition_domain = record['transition_domain'] -%}
+| {{ name }} | {{ description.replace("\n", "") if description else description }} | [{{ transition_domain }}](../model/TransitionDomain) |
+{% endfor %}
