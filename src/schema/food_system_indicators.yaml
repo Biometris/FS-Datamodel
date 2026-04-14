@@ -355,7 +355,7 @@ slots:
     description:
       A reference to the food system driving force that is the subject of this indicator's measurement.
     required: false
-    range: FoodSystemActivityType
+    range: FoodSystemDrivingForce
 
   response_policy:
     title: food system response policy
