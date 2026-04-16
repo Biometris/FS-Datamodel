@@ -22,6 +22,9 @@ nav:
     #- Indicator scores: indicator_scores.md
   - Vocabularies:
     - Food system activity types: model/FoodSystemActivityType.md
+    - Food supply activity types: model/FoodSupplyActivityType.md
+    - Food environment activity types: model/FoodEnvironmentActivityType.md
+    - Food demand activity types: model/FoodDemandActivityType.md
     - Food system driving forces: model/FoodSystemDrivingForce.md
     - Food system responses/policies: model/FoodSystemResponsePolicy.md
     - Sustainability dimensions: model/SustainabilityDimension.md

@@ -77,6 +77,9 @@ classes:
       - driving_force
       - response_policy
       - activity_type
+      - supply_activity_type
+      - environment_activity_type
+      - demand_activity_type
       - outcome_type
       - supply_chain_component
       - measurement_unit_description
@@ -343,6 +346,27 @@ slots:
     required: false
     range: FoodSystemActivityType
 
+  supply_activity_type:
+    title: food supply activity
+    description:
+      A reference to the food supply activity that is the subject of this indicator's measurement.
+    required: false
+    range: FoodSupplyActivityType
+
+  environment_activity_type:
+    title: food environment activity
+    description:
+      A reference to the food environment activity that is the subject of this indicator's measurement.
+    required: false
+    range: FoodEnvironmentActivityType
+
+  demand_activity_type:
+    title: food demand activity
+    description:
+      A reference to the food demand activity that is the subject of this indicator's measurement.
+    required: false
+    range: FoodDemandActivityType
+
   dimension:
     title: dimension
     description: >-
@@ -581,6 +605,84 @@ enums:
         title: consumption and diets
         description:
           This covers food consumption and diets, for total populations, vulnerable groups. Consumption and diets are a result of the food supply, food environment,  and food demand.  It covers, among others, total diets and consumption, including for instance  amount of meat consumption, FBDG, consumption patterns. 
+
+  FoodSupplyActivityType:
+    title: food supply activity type
+    description: >- 
+      Activities across the food value chain, incl. activities from post-harvest and processing to packaging, distribution, and retail.
+    permissible_values:
+      PrimaryProduction:
+        title: primary production
+        description: 
+          Farming, fishing, aquaculture and other activities that generate raw food commodities.
+      Processing:
+        title: processing
+        description:
+          Transformation of raw commodities into intermediate or final food products.
+      Packaging:
+        title: packaging
+        description:
+          Production of materials used to contain, protect and present food products.
+      DistributionAndStorage:
+        title: distribution and storage (cooling)
+        description:
+          Logistics, warehousing and cold-chain infrastructure.
+      Retail:
+        title: retail
+        description:
+          Formal and informal outlets where consumers access food, including supermarkets and markets.
+      Transport:
+        title: transport
+        description:
+          Movement of food across supply chain.
+      CrossCutting:
+        title: cross-cutting
+        description:
+          Elements that influence multiple (or all) stages of the food supply chain.
+
+  FoodEnvironmentActivityType:
+    title: food environment activity type
+    description: >-
+      Physical, digital and social environment that affects what people eat.
+    permissible_values:
+      Availability:
+        title: availability
+        description:
+          Physical availability of sustainable and healthy food.
+      HeritageProperties:
+        title: heritage properties
+        description:
+          Tangible and intangible elements ranging from specific food products and production methods to culinary and gastronomic traditions that strengthen the identity of communities and improve the livelihood of people in the related areas.
+      Marketing:
+        title: marketing
+        description:
+          Information related to food in both the physical and digital environment that can shape consumer behaviour, knowledge and choices.
+      FoodProperties:
+        title: food properties
+        description:
+          Food attributes that influence its value, acceptability, and desirability, especially in terms of health and sustainability. These include factors such as flavor, nutritional content, production methods, and ingredient composition.
+      Pricing:
+        title: pricing
+        description:
+          Food price at consumption for different food chains/food products.
+
+  FoodDemandActivityType:
+    title: food demand activity type
+    description: >-
+      Addresses consumer behaviour and consumer characteristics, incl. consumer preferences. Consumer characteristics can refer to attributes such as knowledge, available time, resources (purchasing power), age, sex, culture, religion, etc.
+    permissible_values:
+      ConsumerCharacteristics:
+        title: consumer characteristics
+        description:
+          Demographic, socioeconomic and health attributes that shape food purchasing capacity and preferences.
+      ConsumerBehaviour:
+        title: consumer behaviour
+        description:
+          Actual food purchase, preparation and consumption decisions and patterns.
+      ConsumerPreferences:
+        title: consumer preferences
+        description:
+          Buying behavior and choices of consumers in a market, influenced by various factors such as personal tastes, health concerns, environmental considerations, and social values.
 
   FoodSystemOutcomeType:
     title: food system outcome

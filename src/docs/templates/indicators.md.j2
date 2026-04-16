@@ -5,8 +5,8 @@ hide:
 
 # INDICATOR DEFINITIONS
 
-| Id | Name | Sustainability dimension | Outcome type | Activity | Driving force | Response/Policy | Category | Unit(s) | Supply chain components | Transition domains | SDGs | Sustainability impact |
-|----|------|--------------------------|--------------|----------|---------------|-----------------|----------|---------|-------------------------|--------------------|------|-----------------------|
+| Id | Name | Sustainability dimension | Outcome type | Activity | Supply Activity | Environment activity | Demand activity | Driving force | Response/Policy | Category | Unit(s) | Supply chain components | Transition domains | SDGs | Sustainability impact |
+|----|------|--------------------------|--------------|----------|-----------------|----------------------|-----------------|---------------|-----------------|----------|---------|-------------------------|--------------------|------|-----------------------|
 {% for indicator in indicators -%}
   {%- set id = indicator['id'] -%}
   {%- set name = indicator['name'] -%}
@@ -19,11 +19,14 @@ hide:
   {%- set response_policy = enum_dict['FoodSystemResponsePolicy'][indicator['response_policy']]['title'] if indicator['response_policy'] else '-' -%}
   {%- set outcome_type = enum_dict['FoodSystemOutcomeType'][indicator['outcome_type']]['title'] if indicator['outcome_type'] else '-' -%}
   {%- set activity_type = enum_dict['FoodSystemActivityType'][indicator['activity_type']]['title'] if indicator['activity_type'] else '-' -%}
+  {%- set supply_activity_type = enum_dict['FoodSupplyActivityType'][indicator['supply_activity_type']]['title'] if indicator['supply_activity_type'] else '-' -%}
+  {%- set environment_activity_type = enum_dict['FoodEnvironmentActivityType'][indicator['environment_activity_type']]['title'] if indicator['environment_activity_type'] else '-' -%}
+  {%- set demand_activity_type = enum_dict['FoodDemandActivityType'][indicator['demand_activity_type']]['title'] if indicator['demand_activity_type'] else '-' -%}
   {%- set category_id = indicator['has_category'] -%}
   {%- set category_name = categories_dict[indicator['has_category']]['name'] -%}
   {%- set sdgs = indicator['eu2025_sdg_indicator_code'] if indicator['eu2025_sdg_indicator_code'] else [] -%}
   {%- set tds = indicator['transition_domain_connections'] if indicator['transition_domain_connections'] else [] -%}
-| {{ id }} | [{{name}}](../indicators/{{id}}) | [{{ sustainability_dimension }}](../model/SustainabilityDimension) | [{{ outcome_type }}](../model/FoodSystemOutcomeType) | [{{ activity_type }}](../model/FoodSystemActivityType) | [{{ driving_force }}](../model/FoodSystemDrivingForce) | [{{ response_policy }}](../model/FoodSystemResponsePolicy) | [{{category_name}}](../indicator_categories) | {% for mu in units %} [{{ enum_dict['IndicatorMeasurementUnit'][mu]['title'] }}](../model/IndicatorMeasurementUnit) {% endfor %} |
+| {{ id }} | [{{name}}](../indicators/{{id}}) | [{{ sustainability_dimension }}](../model/SustainabilityDimension) | [{{ outcome_type }}](../model/FoodSystemOutcomeType) | [{{ activity_type }}](../model/FoodSystemActivityType) | [{{ supply_activity_type }}](../model/FoodSupplyActivityType) | [{{ environment_activity_type }}](../model/FoodEnvironmentActivityType) | [{{ demand_activity_type }}](../model/FoodDemandActivityType) | [{{ driving_force }}](../model/FoodSystemDrivingForce) | [{{ response_policy }}](../model/FoodSystemResponsePolicy) | [{{category_name}}](../indicator_categories) | {% for mu in units %} [{{ enum_dict['IndicatorMeasurementUnit'][mu]['title'] }}](../model/IndicatorMeasurementUnit) {% endfor %} |
 {%- for scp in indicator['supply_chain_component'] %} [{{ enum_dict['SupplyChainComponentType'][scp]['title'] }}](../model/SupplyChainComponentType) {% endfor -%}
 |
 {%- for tds in tds %} [{{ enum_dict['TransitionDomain'][tds]['title'] }}](../model/TransitionDomain)] {% endfor -%}

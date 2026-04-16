@@ -25,6 +25,18 @@ hide:
 | **Activity type** | {{enum_dict['FoodSystemActivityType'][indicator['activity_type']]['title']|capitalize}} |
 {% endif -%}
 
+{% if indicator['supply_activity_type'] -%}
+| **Supply activity type** | {{enum_dict['FoodSupplyActivityType'][indicator['supply_activity_type']]['title']|capitalize}} |
+{% endif -%}
+
+{% if indicator['environment_activity_type'] -%}
+| **Environment activity type** | {{enum_dict['FoodEnvironmentActivityType'][indicator['environment_activity_type']]['title']|capitalize}} |
+{% endif -%}
+
+{% if indicator['demand_activity_type'] -%}
+| **Demand activity type** | {{enum_dict['FoodDemandActivityType'][indicator['demand_activity_type']]['title']|capitalize}} |
+{% endif -%}
+
 {%- if indicator['driving_force'] -%} 
 | **Driving force** | {{enum_dict['FoodSystemDrivingForce'][indicator['driving_force']]['title']|capitalize}} |
 {% endif -%}
