@@ -1,0 +1,23 @@
+---
+hide:
+  - toc
+---
+
+# TRANSITION DOMAINS
+
+{% for key, value in enum_dict['TransitionDomain'].items() %}
+## {{value['title'] | upper}}
+
+{{value['description']}}
+
+| Pillar | Description |
+|---------|------------|
+{% for record in sources -%}
+  {%- if record['transition_domain'] == key -%}
+    {%- set name = record['name'] -%}
+    {%- set description = record.get("description") -%}
+| {{ name | capitalize }} | {{ description.replace("\n", "") if description else description }} |
+  {% endif -%}
+{% endfor %}
+
+{% endfor %}

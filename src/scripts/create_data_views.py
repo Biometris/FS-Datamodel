@@ -255,7 +255,7 @@ if __name__ == "__main__":
         )
 
         render_template(
-            template_name = 'transition_domain_pillars',
+            template_name = 'transition_domains',
             sources = transition_domain_pillars,
             enum_dict = enum_dict
         )

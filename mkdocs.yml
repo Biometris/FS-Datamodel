@@ -13,7 +13,7 @@ nav:
   - Indicator categories: indicator_categories.md  
   - Indicator databases: databases_table.md
   - Indicator data collection details: indicator_data_collection_details_table.md
-  - Transition domain pillars: transition_domain_pillars.md
+  - Transition domains: transition_domains.md
   #- Indicator scoring:
   - Indicator criteria: 
     - Definitions: indicator_criteria.md
