@@ -91,6 +91,42 @@
             "title": "Eu2025SdgIndicator",
             "type": "string"
         },
+        "FoodDemandActivityType": {
+            "description": "Addresses consumer behaviour and consumer characteristics, incl. consumer preferences. Consumer characteristics can refer to attributes such as knowledge, available time, resources (purchasing power), age, sex, culture, religion, etc.",
+            "enum": [
+                "ConsumerCharacteristics",
+                "ConsumerBehaviour",
+                "ConsumerPreferences"
+            ],
+            "title": "FoodDemandActivityType",
+            "type": "string"
+        },
+        "FoodEnvironmentActivityType": {
+            "description": "Physical, digital and social environment that affects what people eat.",
+            "enum": [
+                "Availability",
+                "HeritageProperties",
+                "Marketing",
+                "FoodProperties",
+                "Pricing"
+            ],
+            "title": "FoodEnvironmentActivityType",
+            "type": "string"
+        },
+        "FoodSupplyActivityType": {
+            "description": "Activities across the food value chain, incl. activities from post-harvest and processing to packaging, distribution, and retail.",
+            "enum": [
+                "PrimaryProduction",
+                "Processing",
+                "Packaging",
+                "DistributionAndStorage",
+                "Retail",
+                "Transport",
+                "CrossCutting"
+            ],
+            "title": "FoodSupplyActivityType",
+            "type": "string"
+        },
         "FoodSystemActivityType": {
             "description": "Food systems encompass  activities related to the food supply chains,  food environments, and food demand, as well as the use of natural resource, consumption and diets, and waste, by-products and recycling. These ultimately have an effect on  food system outcomes.",
             "enum": [
@@ -129,6 +165,17 @@
             "title": "FoodSystemOutcomeType",
             "type": "string"
         },
+        "FoodSystemResponsePolicy": {
+            "description": "Governance structures and policies addressing, among others, the power of multinationals and consumers. It includes policy measures focused on adaptation, innovation, research, and transformation, which are supported by governance structures that provide the framework to implement changes.  Areas such as public procurement are also relevant.",
+            "enum": [
+                "Innovation",
+                "Adaptation",
+                "Transformation",
+                "GovernanceStructure"
+            ],
+            "title": "FoodSystemResponsePolicy",
+            "type": "string"
+        },
         "Indicator": {
             "additionalProperties": false,
             "description": "A quantitative measure used to assess the state, performance, or progress of a specific aspect of the food system  in relation to sustainability objectives.",
@@ -144,6 +191,10 @@
                         "null"
                     ]
                 },
+                "demand_activity_type": {
+                    "$ref": "#/$defs/FoodDemandActivityType",
+                    "description": "A reference to the food demand activity that is the subject of this indicator's measurement."
+                },
                 "description": {
                     "description": "Concise text that provides the meaning of the identifier.",
                     "type": [
@@ -152,8 +203,12 @@
                     ]
                 },
                 "driving_force": {
-                    "$ref": "#/$defs/FoodSystemActivityType",
+                    "$ref": "#/$defs/FoodSystemDrivingForce",
                     "description": "A reference to the food system driving force that is the subject of this indicator's measurement."
+                },
+                "environment_activity_type": {
+                    "$ref": "#/$defs/FoodEnvironmentActivityType",
+                    "description": "A reference to the food environment activity that is the subject of this indicator's measurement."
                 },
                 "eu2025_sdg_indicator_code": {
                     "description": "Indicates whether the indicator is included in the 2025 edition of the EU Sustainable Development Goals indicator set, and provides the corresponding EU SDG indicator code.",
@@ -215,6 +270,14 @@
                     "$ref": "#/$defs/FoodSystemOutcomeType",
                     "description": "Reference to the type of the outcome measured by the indicator."
                 },
+                "response_policy": {
+                    "$ref": "#/$defs/FoodSystemResponsePolicy",
+                    "description": "A reference to the food system response/policy that is the subject of this indicator's measurement."
+                },
+                "supply_activity_type": {
+                    "$ref": "#/$defs/FoodSupplyActivityType",
+                    "description": "A reference to the food supply activity that is the subject of this indicator's measurement."
+                },
                 "supply_chain_component": {
                     "description": "Reference to the supply chain component(s) for which the indicator is relevant.",
                     "items": {
@@ -272,7 +335,7 @@
                     "description": "Reference to the dimension that the indicator belongs to."
                 },
                 "driving_force": {
-                    "$ref": "#/$defs/FoodSystemActivityType",
+                    "$ref": "#/$defs/FoodSystemDrivingForce",
                     "description": "A reference to the food system driving force that is the subject of this indicator's measurement."
                 },
                 "id": {

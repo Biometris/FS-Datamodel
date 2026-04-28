@@ -477,6 +477,108 @@
       ]
     },
     {
+      "name": "FoodSupplyActivityType",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiFoodSupplyActivityType",
+      "description": "Activities across the food value chain, incl. activities from post-harvest and processing to packaging, distribution, and retail.",
+      "title": "food supply activity type",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "permissible_values": [
+        {
+          "text": "PrimaryProduction",
+          "description": "Farming, fishing, aquaculture and other activities that generate raw food commodities.",
+          "title": "primary production"
+        },
+        {
+          "text": "Processing",
+          "description": "Transformation of raw commodities into intermediate or final food products.",
+          "title": "processing"
+        },
+        {
+          "text": "Packaging",
+          "description": "Production of materials used to contain, protect and present food products.",
+          "title": "packaging"
+        },
+        {
+          "text": "DistributionAndStorage",
+          "description": "Logistics, warehousing and cold-chain infrastructure.",
+          "title": "distribution and storage (cooling)"
+        },
+        {
+          "text": "Retail",
+          "description": "Formal and informal outlets where consumers access food, including supermarkets and markets.",
+          "title": "retail"
+        },
+        {
+          "text": "Transport",
+          "description": "Movement of food across supply chain.",
+          "title": "transport"
+        },
+        {
+          "text": "CrossCutting",
+          "description": "Elements that influence multiple (or all) stages of the food supply chain.",
+          "title": "cross-cutting"
+        }
+      ]
+    },
+    {
+      "name": "FoodEnvironmentActivityType",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiFoodEnvironmentActivityType",
+      "description": "Physical, digital and social environment that affects what people eat.",
+      "title": "food environment activity type",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "permissible_values": [
+        {
+          "text": "Availability",
+          "description": "Physical availability of sustainable and healthy food.",
+          "title": "availability"
+        },
+        {
+          "text": "HeritageProperties",
+          "description": "Tangible and intangible elements ranging from specific food products and production methods to culinary and gastronomic traditions that strengthen the identity of communities and improve the livelihood of people in the related areas.",
+          "title": "heritage properties"
+        },
+        {
+          "text": "Marketing",
+          "description": "Information related to food in both the physical and digital environment that can shape consumer behaviour, knowledge and choices.",
+          "title": "marketing"
+        },
+        {
+          "text": "FoodProperties",
+          "description": "Food attributes that influence its value, acceptability, and desirability, especially in terms of health and sustainability. These include factors such as flavor, nutritional content, production methods, and ingredient composition.",
+          "title": "food properties"
+        },
+        {
+          "text": "Pricing",
+          "description": "Food price at consumption for different food chains/food products.",
+          "title": "pricing"
+        }
+      ]
+    },
+    {
+      "name": "FoodDemandActivityType",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiFoodDemandActivityType",
+      "description": "Addresses consumer behaviour and consumer characteristics, incl. consumer preferences. Consumer characteristics can refer to attributes such as knowledge, available time, resources (purchasing power), age, sex, culture, religion, etc.",
+      "title": "food demand activity type",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "permissible_values": [
+        {
+          "text": "ConsumerCharacteristics",
+          "description": "Demographic, socioeconomic and health attributes that shape food purchasing capacity and preferences.",
+          "title": "consumer characteristics"
+        },
+        {
+          "text": "ConsumerBehaviour",
+          "description": "Actual food purchase, preparation and consumption decisions and patterns.",
+          "title": "consumer behaviour"
+        },
+        {
+          "text": "ConsumerPreferences",
+          "description": "Buying behavior and choices of consumers in a market, influenced by various factors such as personal tastes, health concerns, environmental considerations, and social values.",
+          "title": "consumer preferences"
+        }
+      ]
+    },
+    {
       "name": "FoodSystemOutcomeType",
       "definition_uri": "https://w3id.org/linkml/examples/fsiFoodSystemOutcomeType",
       "description": "Food system outcomes, being impact related to environment, economic, social and health,  are a result of food systems. This framework distinguishes five different type of food system impacts: environmental, economic, social, health, and the overarching food security and resilience.",
@@ -551,6 +653,35 @@
           "text": "PoliticalInstitutional",
           "description": "Changes, adjustments or reforms in the organisation, functioning and structures of political and administrative institutions within a society. This includes processes related to the organisation of public bodies, the system of governance, power relations, legal frameworks, democratic rules of the game, and the way decision-making takes place at national, European and global levels. ",
           "title": "political-institutional"
+        }
+      ]
+    },
+    {
+      "name": "FoodSystemResponsePolicy",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiFoodSystemResponsePolicy",
+      "description": "Governance structures and policies addressing, among others, the power of multinationals and consumers. It includes policy measures focused on adaptation, innovation, research, and transformation, which are supported by governance structures that provide the framework to implement changes.  Areas such as public procurement are also relevant.",
+      "title": "food system response/policy",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "permissible_values": [
+        {
+          "text": "Innovation",
+          "description": "Innovation (including research)",
+          "title": "innovation"
+        },
+        {
+          "text": "Adaptation",
+          "description": "Adaptation",
+          "title": "adaptation"
+        },
+        {
+          "text": "Transformation",
+          "description": "Transformation",
+          "title": "transformation"
+        },
+        {
+          "text": "GovernanceStructure",
+          "description": "Governance structure",
+          "title": "governance structure"
         }
       ]
     },
@@ -7504,6 +7635,48 @@
       "@type": "SlotDefinition"
     },
     {
+      "name": "supply_activity_type",
+      "definition_uri": "https://w3id.org/linkml/examples/fsisupply_activity_type",
+      "description": "A reference to the food supply activity that is the subject of this indicator's measurement.",
+      "title": "food supply activity",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "slot_uri": "https://w3id.org/linkml/examples/fsisupply_activity_type",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "FoodSupplyActivityType",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "environment_activity_type",
+      "definition_uri": "https://w3id.org/linkml/examples/fsienvironment_activity_type",
+      "description": "A reference to the food environment activity that is the subject of this indicator's measurement.",
+      "title": "food environment activity",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "slot_uri": "https://w3id.org/linkml/examples/fsienvironment_activity_type",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "FoodEnvironmentActivityType",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "demand_activity_type",
+      "definition_uri": "https://w3id.org/linkml/examples/fsidemand_activity_type",
+      "description": "A reference to the food demand activity that is the subject of this indicator's measurement.",
+      "title": "food demand activity",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "slot_uri": "https://w3id.org/linkml/examples/fsidemand_activity_type",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "FoodDemandActivityType",
+      "@type": "SlotDefinition"
+    },
+    {
       "name": "dimension",
       "definition_uri": "https://w3id.org/linkml/examples/fsidimension",
       "description": "Reference to the dimension that the indicator belongs to.",
@@ -7530,7 +7703,21 @@
         "IndicatorCategory",
         "Indicator"
       ],
-      "range": "FoodSystemActivityType",
+      "range": "FoodSystemDrivingForce",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "response_policy",
+      "definition_uri": "https://w3id.org/linkml/examples/fsiresponse_policy",
+      "description": "A reference to the food system response/policy that is the subject of this indicator's measurement.",
+      "title": "food system response policy",
+      "from_schema": "https://w3id.org/linkml/examples/fsi",
+      "slot_uri": "https://w3id.org/linkml/examples/fsiresponse_policy",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "FoodSystemResponsePolicy",
       "@type": "SlotDefinition"
     },
     {
@@ -8148,7 +8335,11 @@
         "Indicator_definition",
         "sustainability_dimension",
         "driving_force",
+        "response_policy",
         "activity_type",
+        "supply_activity_type",
+        "environment_activity_type",
+        "demand_activity_type",
         "outcome_type",
         "supply_chain_component",
         "measurement_unit_description",
@@ -8328,9 +8519,9 @@
   ],
   "metamodel_version": "1.7.0",
   "source_file": "food_system_indicators.yaml",
-  "source_file_date": "2026-04-09T10:19:40",
-  "source_file_size": 29670,
-  "generation_date": "2026-04-09T10:20:22",
+  "source_file_date": "2026-04-28T07:54:09",
+  "source_file_size": 35219,
+  "generation_date": "2026-04-28T07:54:50",
   "@type": "SchemaDefinition",
   "@context": [
     "project/jsonld/food_system_indicators.context.jsonld",

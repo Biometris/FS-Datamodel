@@ -47,6 +47,14 @@
       "definition": {
          "@id": "definition"
       },
+      "demand_activity_type": {
+         "@context": {
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         },
+         "@id": "demand_activity_type"
+      },
       "description": {
          "@id": "dct:description"
       },
@@ -65,6 +73,14 @@
             "meaning": "@id"
          },
          "@id": "driving_force"
+      },
+      "environment_activity_type": {
+         "@context": {
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         },
+         "@id": "environment_activity_type"
       },
       "eu2025_sdg_indicator_code": {
          "@context": {
@@ -167,6 +183,14 @@
          "@type": "@id",
          "@id": "referenced_in"
       },
+      "response_policy": {
+         "@context": {
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         },
+         "@id": "response_policy"
+      },
       "score": {
          "@context": {
             "text": "skos:notation",
@@ -198,6 +222,14 @@
             "meaning": "@id"
          },
          "@id": "spatial_scope"
+      },
+      "supply_activity_type": {
+         "@context": {
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         },
+         "@id": "supply_activity_type"
       },
       "supply_chain_component": {
          "@context": {

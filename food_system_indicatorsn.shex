@@ -98,17 +98,41 @@ linkml:Sparqlpath xsd:string
              <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Society>
              <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Health> ] ? ;
           <https://w3id.org/linkml/examples/fsidriving_force> [
-             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodSupply>
-             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodEnvironment>
-             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodDemand>
-             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#UseNaturalResources>
-             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#ConsumptionAndDiets> ] ? ;
+             <https://w3id.org/linkml/examples/fsiFoodSystemDrivingForce#Demography>
+             <https://w3id.org/linkml/examples/fsiFoodSystemDrivingForce#Economy>
+             <https://w3id.org/linkml/examples/fsiFoodSystemDrivingForce#SocioCultural>
+             <https://w3id.org/linkml/examples/fsiFoodSystemDrivingForce#Technology>
+             <https://w3id.org/linkml/examples/fsiFoodSystemDrivingForce#Ecology>
+             <https://w3id.org/linkml/examples/fsiFoodSystemDrivingForce#PoliticalInstitutional> ] ? ;
+          <https://w3id.org/linkml/examples/fsiresponse_policy> [
+             <https://w3id.org/linkml/examples/fsiFoodSystemResponsePolicy#Innovation>
+             <https://w3id.org/linkml/examples/fsiFoodSystemResponsePolicy#Adaptation>
+             <https://w3id.org/linkml/examples/fsiFoodSystemResponsePolicy#Transformation>
+             <https://w3id.org/linkml/examples/fsiFoodSystemResponsePolicy#GovernanceStructure> ] ? ;
           <https://w3id.org/linkml/examples/fsiactivity_type> [
              <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodSupply>
              <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodEnvironment>
              <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodDemand>
              <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#UseNaturalResources>
              <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#ConsumptionAndDiets> ] ? ;
+          <https://w3id.org/linkml/examples/fsisupply_activity_type> [
+             <https://w3id.org/linkml/examples/fsiFoodSupplyActivityType#PrimaryProduction>
+             <https://w3id.org/linkml/examples/fsiFoodSupplyActivityType#Processing>
+             <https://w3id.org/linkml/examples/fsiFoodSupplyActivityType#Packaging>
+             <https://w3id.org/linkml/examples/fsiFoodSupplyActivityType#DistributionAndStorage>
+             <https://w3id.org/linkml/examples/fsiFoodSupplyActivityType#Retail>
+             <https://w3id.org/linkml/examples/fsiFoodSupplyActivityType#Transport>
+             <https://w3id.org/linkml/examples/fsiFoodSupplyActivityType#CrossCutting> ] ? ;
+          <https://w3id.org/linkml/examples/fsienvironment_activity_type> [
+             <https://w3id.org/linkml/examples/fsiFoodEnvironmentActivityType#Availability>
+             <https://w3id.org/linkml/examples/fsiFoodEnvironmentActivityType#HeritageProperties>
+             <https://w3id.org/linkml/examples/fsiFoodEnvironmentActivityType#Marketing>
+             <https://w3id.org/linkml/examples/fsiFoodEnvironmentActivityType#FoodProperties>
+             <https://w3id.org/linkml/examples/fsiFoodEnvironmentActivityType#Pricing> ] ? ;
+          <https://w3id.org/linkml/examples/fsidemand_activity_type> [
+             <https://w3id.org/linkml/examples/fsiFoodDemandActivityType#ConsumerCharacteristics>
+             <https://w3id.org/linkml/examples/fsiFoodDemandActivityType#ConsumerBehaviour>
+             <https://w3id.org/linkml/examples/fsiFoodDemandActivityType#ConsumerPreferences> ] ? ;
           <https://w3id.org/linkml/examples/fsioutcome_type> [
              <https://w3id.org/linkml/examples/fsiFoodSystemOutcomeType#Environment>
              <https://w3id.org/linkml/examples/fsiFoodSystemOutcomeType#Economy>
@@ -325,11 +349,12 @@ linkml:Sparqlpath xsd:string
              <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Society>
              <https://w3id.org/linkml/examples/fsiSustainabilityDimension#Health> ] ;
           <https://w3id.org/linkml/examples/fsidriving_force> [
-             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodSupply>
-             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodEnvironment>
-             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodDemand>
-             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#UseNaturalResources>
-             <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#ConsumptionAndDiets> ] ? ;
+             <https://w3id.org/linkml/examples/fsiFoodSystemDrivingForce#Demography>
+             <https://w3id.org/linkml/examples/fsiFoodSystemDrivingForce#Economy>
+             <https://w3id.org/linkml/examples/fsiFoodSystemDrivingForce#SocioCultural>
+             <https://w3id.org/linkml/examples/fsiFoodSystemDrivingForce#Technology>
+             <https://w3id.org/linkml/examples/fsiFoodSystemDrivingForce#Ecology>
+             <https://w3id.org/linkml/examples/fsiFoodSystemDrivingForce#PoliticalInstitutional> ] ? ;
           <https://w3id.org/linkml/examples/fsiactivity_type> [
              <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodSupply>
              <https://w3id.org/linkml/examples/fsiFoodSystemActivityType#FoodEnvironment>

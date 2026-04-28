@@ -26,6 +26,33 @@ enum Eu2025SdgIndicator
     EU_SDG_15_50
   }
 
+enum FoodDemandActivityType
+  {
+    ConsumerCharacteristics
+    ConsumerBehaviour
+    ConsumerPreferences
+  }
+
+enum FoodEnvironmentActivityType
+  {
+    Availability
+    HeritageProperties
+    Marketing
+    FoodProperties
+    Pricing
+  }
+
+enum FoodSupplyActivityType
+  {
+    PrimaryProduction
+    Processing
+    Packaging
+    DistributionAndStorage
+    Retail
+    Transport
+    CrossCutting
+  }
+
 enum FoodSystemActivityType
   {
     FoodSupply
@@ -53,6 +80,14 @@ enum FoodSystemOutcomeType
     Health
     FoodSecurity
     Resilience
+  }
+
+enum FoodSystemResponsePolicy
+  {
+    Innovation
+    Adaptation
+    Transformation
+    GovernanceStructure
   }
 
 enum IndicatorMeasurementUnit
@@ -1208,8 +1243,12 @@ type Indicator
     description: NarrativeText
     definition: NarrativeText
     sustainabilityDimension: SustainabilityDimension
-    drivingForce: FoodSystemActivityType
+    drivingForce: FoodSystemDrivingForce
+    responsePolicy: FoodSystemResponsePolicy
     activityType: FoodSystemActivityType
+    supplyActivityType: FoodSupplyActivityType
+    environmentActivityType: FoodEnvironmentActivityType
+    demandActivityType: FoodDemandActivityType
     outcomeType: FoodSystemOutcomeType!
     supplyChainComponent: [SupplyChainComponentType]
     measurementUnitDescription: Unit
@@ -1228,7 +1267,7 @@ type IndicatorCategory
     name: LabelType
     description: NarrativeText
     dimension: SustainabilityDimension!
-    drivingForce: FoodSystemActivityType
+    drivingForce: FoodSystemDrivingForce
     activityType: FoodSystemActivityType
     outcomeType: FoodSystemOutcomeType!
     referencedIn: [Reference]

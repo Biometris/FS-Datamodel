@@ -47,6 +47,18 @@
     environments, and food demand, as well as the use of natural resource, consumption
     and diets, and waste, by-products and recycling. These ultimately have an effect
     on  food system outcomes.
+- id: FoodSupplyActivityType
+  name: food supply activity type
+  description: Activities across the food value chain, incl. activities from post-harvest
+    and processing to packaging, distribution, and retail.
+- id: FoodEnvironmentActivityType
+  name: food environment activity type
+  description: Physical, digital and social environment that affects what people eat.
+- id: FoodDemandActivityType
+  name: food demand activity type
+  description: Addresses consumer behaviour and consumer characteristics, incl. consumer
+    preferences. Consumer characteristics can refer to attributes such as knowledge,
+    available time, resources (purchasing power), age, sex, culture, religion, etc.
 - id: FoodSystemOutcomeType
   name: food system outcome
   description: 'Food system outcomes, being impact related to environment, economic,
@@ -61,6 +73,13 @@
     of demographics, economic, social-cultural, technological, environmental, and
     political-institutional factors, are often used as a method for identification
     of driving forces and trends.
+- id: FoodSystemResponsePolicy
+  name: food system response/policy
+  description: Governance structures and policies addressing, among others, the power
+    of multinationals and consumers. It includes policy measures focused on adaptation,
+    innovation, research, and transformation, which are supported by governance structures
+    that provide the framework to implement changes.  Areas such as public procurement
+    are also relevant.
 - id: SpatialScopeType
   name: spatial scope type
   description: The spatial scope for which the indicator is defined.
