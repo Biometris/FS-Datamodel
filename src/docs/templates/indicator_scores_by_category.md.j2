@@ -1,0 +1,12 @@
+---
+hide:
+  - toc
+---
+
+# INDICATOR SCORES BY CATEGORY
+
+| Category | Criterion | Weak | Adequate | Strong | Undefined |
+|----------|----------|------|----------|--------|-----------|
+{% for score_record in category_score_records -%}
+| {{ score_record['category'] }} | {{ score_record['criterion'] }} | {{ score_record['counts'].get('Weak', 0) }} | {{ score_record['counts'].get('Adequate', 0) }} | {{ score_record['counts'].get('Strong', 0) }} | {{ score_record['counts'].get('Undefined', 0) }} |
+{% endfor %}

@@ -14,12 +14,13 @@ nav:
   - Indicator databases: databases_table.md
   - Indicator data collection details: indicator_data_collection_details_table.md
   - Transition domains: transition_domains.md
-  #- Indicator scoring:
   - Indicator criteria: 
     - Definitions: indicator_criteria.md
     - Rationale: indicator_criteria_rationale.md  
+  - Indicator scores:
+    - Scores per indicator: indicator_scores.md
+    - Scores by category: indicator_scores_by_category.md
   - References: references.md
-    #- Indicator scores: indicator_scores.md
   - Vocabularies:
     - Food system activity types: model/FoodSystemActivityType.md
     - Food supply activity types: model/FoodSupplyActivityType.md

@@ -2,7 +2,7 @@ import os
 import json
 from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
-
+from collections import defaultdict
 from linkml.generators.docgen import DocGenerator, DiagramType
 
 from indicator_datastore import DataStore, DatabaseDataSource
@@ -67,24 +67,84 @@ def create_supply_chain_indicator_hiearchy_json(indicators):
     # Save JSON for reuse
     Path(outfile_path).write_text(json.dumps(tree_data, indent=2))
 
-def create_indicator_scores_data_json(criteriascores):
+def create_indicator_scores_views(criteriascores, indicators, criteria, categories):
+    indicators_dict = res = {i['id']: i for i in indicators}
+    criteria_dict = res = {i['id']: i for i in criteria}
+    categories_dict = res = {i['id']: i for i in categories}
 
-    # Output file
-    outfile_path = "docs/data/indicator_scores_chart_data.json"
+    indicator_score_records = []
+    for score in criteriascores:
+        indicator_id = score.get("relates_to_indicator")
+        indicator = indicators_dict.get(indicator_id, {})
+        criterion_id = score.get("scores_criterion")
+        criterion = criteria_dict.get(criterion_id, {})
+        criterion_name = criterion.get("name", "")
+        category_id = indicator.get("has_category", "")
+        category = categories_dict.get(category_id, {})
+        category_name = category.get("name", "")
+        record = {
+            "indicator_id": indicator_id,
+            "indicator_name": indicator.get("name", ""),
+            "category_id": category_id,
+            "category_name": category_name,
+            "criterion_id": criterion_id,
+            "criterion_name": criterion.get("name", ""),
+            "score": score.get("score", ""),
+            "rationale": score.get("rationale", "")
+        }
+        indicator_score_records.append(record)
 
-    score_mapping = {"Strong": 3,
-                     "Adequate": 2,
-                     "Weak": 1}
+    render_template(
+        template_name = 'indicator_scores',
+        indicator_score_records = indicator_score_records,
+        criteria = criteria
+    )
 
+    grouped = defaultdict(lambda: {
+        "Undefined": 0,
+        "Weak": 0,
+        "Adequate": 0,
+        "Strong": 0
+    })
+
+    for score in criteriascores:
+        criterion_id = score.get("scores_criterion")
+        indicator_id = score.get("relates_to_indicator")
+        indicator = indicators_dict.get(indicator_id, {})
+        category_id = indicator.get("has_category", "")
+        raw_score = score.get("score")
+        if raw_score not in ["Weak", "Adequate", "Strong"]:
+            raw_score = "Undefined"
+        grouped[(category_id, criterion_id)][raw_score] += 1
+
+    category_score_records = []
+    for (category_id, criterion_id), counts in grouped.items():
+        criterion = criteria_dict.get(criterion_id, {})
+        criterion_name = criterion.get("name", "")
+        category = categories_dict.get(category_id, {})
+        category_name = category.get("name", "")
+        category_score_records.append({
+            "category": category_name,
+            "criterion": criterion_name,
+            "counts": counts
+        })
+
+    render_template(
+        template_name = 'indicator_scores_by_category',
+        category_score_records = category_score_records,
+        criteria = criteria
+    )
+
+    score_mapping = {"Strong": 3, "Adequate": 2, "Weak": 1}
     chart_data = []
     for score in criteriascores:
         score_point = [score.get("scores_criterion"),
-                       score.get("score_for_indicator"),
+                       score.get("relates_to_indicator"),
                        score_mapping.get(score.get("score"))]
         chart_data.append(score_point)
-
-    # Save JSON for reuse
+    outfile_path = "docs/data/indicator_scores_chart_data.json"
     Path(outfile_path).write_text(json.dumps(chart_data, indent=2))
+
 
 def render_template(
     template_name,
@@ -253,9 +313,11 @@ if __name__ == "__main__":
             criteria = criteria,
             output_path = os.path.join(data_export_path, 'indicator_scores.xlsx')
         )
-        create_indicator_scores_data_json(criteria_scores)
-        render_template(
-            template_name = 'indicator_scores'
+        create_indicator_scores_views(
+            criteria_scores,
+            indicators,
+            criteria,
+            indicator_categories
         )
 
         render_template(

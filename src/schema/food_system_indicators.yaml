@@ -163,15 +163,15 @@ classes:
     title: indicator criterion score
     description: A score assigned to an indicator based on a specific selection criterion.
     slots:
-      - score_for_indicator
+      - relates_to_indicator
       - scores_criterion
       - score
-      - comment
+      - rationale
 
   Reference:
     is_a: Entity
     title: reference
-    description: A reference to a publication, database or dataset.
+    description: a reference to a publication, database or dataset.
     slots:
       - link
       - reference_type
@@ -235,6 +235,11 @@ slots:
     range: narrative_text
     description:
       A comment about an entity.
+
+  rationale:
+    range: narrative_text
+    description:
+      Justification for the score assigned to an indicator an evaluation criterion.
 
   has numeric value:
     description: >-
@@ -321,11 +326,11 @@ slots:
       Description of the sustainability impact the indicator measures.
     range: SustainabilityImpactType
 
-  score_for_indicator:
+  relates_to_indicator:
     is_a: node property
     title: score for indicator
     description:
-      Indicator.
+      Associated indicator.
     range: Indicator
 
   scores_criterion:
@@ -492,7 +497,8 @@ slots:
 
   score:
     title: score
-    description: score for an indicator selection criterion for an indicator.
+    description: >-
+      Quality score for indicator alignment with indicator criteria and transition domains.
     range: ScoreCategory
 
   reference_type:

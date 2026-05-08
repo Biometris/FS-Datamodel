@@ -163,7 +163,7 @@ class DataStore:
         if include_missing:
             category_enums = self.get_enum_dict('CriterionCategory')
             cs_lookup = {
-                (r['score_for_indicator'], r['scores_criterion']): r
+                (r['relates_to_indicator'], r['scores_criterion']): r
                 for r in criteria_scores
             }
             records = []
@@ -171,13 +171,13 @@ class DataStore:
                 for criterion in criteria:
                     score = cs_lookup.get((indicator['id'], criterion['id']))
                     records.append({
-                        'score_for_indicator': indicator['id'],
+                        'relates_to_indicator': indicator['id'],
                         'indicator_name': indicator['name'],
                         'scores_criterion': criterion['id'],
                         'criterion_name': criterion['name'],
                         'criterion_category': category_enums[criterion['category']],
-                        'score': score['score'] if score else None,
-                        'comment': score['comment'] if score else None
+                        'score': score['score'] if score else "",
+                        'rationale': score['rationale'] if score else ""
                     })
 
             if output_path:
