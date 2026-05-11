@@ -160,7 +160,7 @@ classes:
       - rationale_adequate
       - rationale_weak
 
-  IndicatorcriteriaScore:
+  IndicatorCriterionScore:
     title: indicator criterion score
     description: A score assigned to an indicator based on a specific selection criterion.
     slots:

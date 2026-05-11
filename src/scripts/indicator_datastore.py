@@ -153,7 +153,7 @@ class DataStore:
         output_path = None
     ):
         """Return a joined view of indicator criteria scores"""
-        q = Query(from_table="IndicatorCriteriaScores", limit=-1)
+        q = Query(from_table="IndicatorCriterionScores", limit=-1)
         criteria_scores = self.db.query(q).rows
         if include_missing:
             category_enums = self.get_enum_dict('CriterionCategory')

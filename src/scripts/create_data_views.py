@@ -113,7 +113,7 @@ if __name__ == "__main__":
         DatabaseDataSource("data/indicator_categories.yaml", "IndicatorCategory", "IndicatorCategories"),
         DatabaseDataSource("data/indicator_data_collection_details.yaml", "IndicatorDataCollectionDetails", "IndicatorDataCollectionDetails"),
         DatabaseDataSource("data/criteria.yaml", "IndicatorCriterion", "IndicatorCriteria"),
-        DatabaseDataSource("data/indicator_scores.yaml", "IndicatorcriteriaScore", "IndicatorCriteriaScores"),
+        DatabaseDataSource("data/indicator_scores.yaml", "IndicatorCriterionScore", "IndicatorCriterionScores"),
         DatabaseDataSource("data/references.yaml", "Reference", "ReferencesTab"),
         DatabaseDataSource("data/transition_domain_pillars.yaml", "TransitionDomainPillar", "TransitionDomainPillars"),
     ]
@@ -144,7 +144,7 @@ if __name__ == "__main__":
         'IndicatorDataCollectionDetails',
         'IndicatorDatapoint',
         'IndicatorCriterion',
-        'IndicatorcriteriaScore',
+        'IndicatorCriterionScore',
         'Reference'
     ]   
 
