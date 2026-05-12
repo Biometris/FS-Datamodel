@@ -1563,7 +1563,7 @@
   supply_chain_component:
   - Consumption
   sustainability_impact: Positive
-- id: FSI_0123
+- id: FSI_0195
   name: Frequency of fruit and vegetables consumption by sex, age and educational attainment level
   description: 'Distribution of the population according to the frequency of consumption of fruit and vegetables. The following modalities are used: ''Once or more a day, 4 to 6 times a week, 1 to 3 times a week, Less than once a week or never''.'
   definition: ''
@@ -1575,7 +1575,7 @@
   supply_chain_component:
   - Consumption
   sustainability_impact: Positive
-- id: FSI_0123
+- id: FSI_0196
   name: Frequency of fruit and vegetables consumption by sex, age and income quintile
   description: 'Distribution of the population according to the frequency of consumption of fruit and vegetables. The following modalities are used: ''Once or more a day, 4 to 6 times a week, 1 to 3 times a week, Less than once a week or never''.'
   definition: ''
@@ -1587,7 +1587,7 @@
   supply_chain_component:
   - Consumption
   sustainability_impact: Positive
-- id: FSI_0123
+- id: FSI_0197
   name: Frequency of fruit and vegetables consumption by sex, age and body mass index
   description: 'Distribution of the population according to the frequency of consumption of fruit and vegetables. The following modalities are used: ''Once or more a day, 4 to 6 times a week, 1 to 3 times a week, Less than once a week or never''.'
   definition: ''
@@ -1611,7 +1611,7 @@
   supply_chain_component:
   - Consumption
   sustainability_impact: Negative
-- id: FSI_0125
+- id: FSI_0199
   name: Frequency of drinking sugar-sweetened soft drinks by sex, age and body mass index
   description: 'Distribution of the population according to the frequency of drinking sugar-sweetened soft drinks. The following modalities are used: ''Once or more a day, 4 to 6 times a week, 1 to 3 times a week, Never or occasionally'' (only in wave 3).'
   definition: ''
@@ -1904,7 +1904,7 @@
   supply_chain_component:
   - Consumption
   sustainability_impact: Positive
-- id: FSI_0170
+- id: FSI_0192
   name: Proportion of agricultural land area that has achieved an acceptable or desirable level of food security
   description: 'see metadata (section 2.4.1): https://files-faostat.fao.org/production/SDGB/Metadata.xlsx'
   definition: ''
@@ -1942,7 +1942,7 @@
   supply_chain_component:
   - Consumption
   sustainability_impact: Undefined
-- id: FSI_0151
+- id: FSI_0198
   name: Dietary energy supply used in the estimation of prevalence of undernourishment (3-year average)
   description: National average dietary energy supply (DES) (expressed in calories per caput per day) used in the estimation of prevalence of undernourishment. The data may be different from the DES data published in the Food Balance Sheets domain
   definition: ''
@@ -2014,7 +2014,7 @@
   supply_chain_component:
   - PrimaryProduction
   sustainability_impact: Positive
-- id: FSI_0170
+- id: FSI_0193
   name: Proportion of agricultural land area that has achieved an acceptable or desirable level of farm output value per hectare
   description: 'see metadata (section 2.4.1): https://files-faostat.fao.org/production/SDGB/Metadata.xlsx'
   definition: ''
@@ -2177,7 +2177,7 @@
   supply_chain_component:
   - PrimaryProduction
   sustainability_impact: Positive
-- id: FSI_0170
+- id: FSI_0194
   name: Proportion of agricultural land area that has achieved an acceptable or desirable level of wage rate in agriculture
   description: 'see metadata (section 2.4.1): https://files-faostat.fao.org/production/SDGB/Metadata.xlsx'
   definition: ''
