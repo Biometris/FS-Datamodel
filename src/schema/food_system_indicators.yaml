@@ -605,6 +605,10 @@ enums:
         title: consumption and diets
         description:
           This covers food consumption and diets, for total populations, vulnerable groups. Consumption and diets are a result of the food supply, food environment,  and food demand.  It covers, among others, total diets and consumption, including for instance  amount of meat consumption, FBDG, consumption patterns. 
+      WasteByProductsRecycling:
+        title: waste, by-products and recycling
+        description:
+          Waste and losses generated throughout all different stages considered in the food supply, from post-harvesting to consumption, including retail and distribution, among others.
 
   FoodSupplyActivityType:
     title: food supply activity type
