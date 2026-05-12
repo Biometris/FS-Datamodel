@@ -58,13 +58,6 @@ hide:
 {%- else -%}
   *None specified*
 {%- endif %}
-| **Unit(s) of measurement description** |
-{%- if indicator['measurement_unit_description'] -%} 
-  {{ indicator['measurement_unit_description'] }}
-{%- else -%}
-  *Not specified*
-{%- endif -%}
-|
 | **Unit(s) of measurement** |
 {%- for mu in indicator['measurement_units'] -%}
     [{{ enum_dict['IndicatorMeasurementUnit'][mu]['title'] }}](../../model/IndicatorMeasurementUnit)
@@ -73,10 +66,26 @@ hide:
   *None specified*
 {%- endfor -%}
 |
-| **EU 2025 SDG Indicator** |
-{%- if indicator['eu2025_sdg_indicator_code'] -%}
-  {%- for item in indicator['eu2025_sdg_indicator_code'] -%}
+| **Unit(s) of measurement description** |
+{%- if indicator['measurement_unit_description'] -%} 
+  {{ indicator['measurement_unit_description'] }}
+{%- else -%}
+  *Not specified*
+{%- endif -%}
+|
+| **SDG Targets** |
+{%- if indicator['related_sdg_targets'] -%}
+  {%- for item in indicator['related_sdg_targets'] -%}
     {{ item }} {%- if not loop.last -%}, {% endif -%}
+  {%- endfor %}
+{%- else -%}
+  *None specified*
+{%- endif -%}
+|
+| **Transition domain alignment** |
+{%- if transition_domain_connections -%}
+  {%- for item in transition_domain_connections -%}
+    {{ item['transition_domain'] }} ({{ item['score'] }}) {%- if not loop.last -%}, {% endif -%}
   {%- endfor %}
 {%- else -%}
   *None specified*
@@ -84,7 +93,7 @@ hide:
 |
 | **Supply chain components** |
 {%- for scp in indicator['supply_chain_component'] -%}
-[{{enum_dict['SupplyChainComponentType'][scp]['title']|capitalize}}](../../model/SupplyChainComponentType)
+[{{enum_dict['SupplyChainComponentType'][scp]['title']|capitalize}}](../../model/SupplyChainComponentType){%- if not loop.last -%}, {% endif -%}
 {%- endfor -%}
 |
 | **Methodology** |

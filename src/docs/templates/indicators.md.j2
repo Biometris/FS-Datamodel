@@ -5,8 +5,8 @@ hide:
 
 # INDICATOR DEFINITIONS
 
-| Id | Name | Sustainability dimension | Outcome type | Activity | Supply Activity | Environment activity | Demand activity | Driving force | Response/Policy | Category | Unit(s) | Supply chain components | Transition domains | SDGs | Sustainability impact |
-|----|------|--------------------------|--------------|----------|-----------------|----------------------|-----------------|---------------|-----------------|----------|---------|-------------------------|--------------------|------|-----------------------|
+| Id | Name | Sustainability dimension | Outcome type | Activity | Supply Activity | Environment activity | Demand activity | Driving force | Response/Policy | Category | Unit(s) | Supply chain components | {% for key, td in enum_dict['TransitionDomain'].items() %}{{td['title'] | capitalize}} |{% endfor %} SDGs | Sustainability impact |
+|----|------|--------------------------|--------------|----------|-----------------|----------------------|-----------------|---------------|-----------------|----------|---------|-------------------------| {% for key, td in enum_dict['TransitionDomain'].items() %}---------------------------- |{% endfor %} -----|-----------------------|
 {% for indicator in indicators -%}
   {%- set id = indicator['id'] -%}
   {%- set name = indicator['name'] -%}
@@ -24,13 +24,20 @@ hide:
   {%- set demand_activity_type = enum_dict['FoodDemandActivityType'][indicator['demand_activity_type']]['title'] if indicator['demand_activity_type'] else '-' -%}
   {%- set category_id = indicator['has_category'] -%}
   {%- set category_name = categories_dict[indicator['has_category']]['name'] -%}
-  {%- set sdgs = indicator['eu2025_sdg_indicator_code'] if indicator['eu2025_sdg_indicator_code'] else [] -%}
-  {%- set tds = indicator['transition_domain_connections'] if indicator['transition_domain_connections'] else [] -%}
-| {{ id }} | [{{name}}](../indicators/{{id}}) | [{{ sustainability_dimension }}](../model/SustainabilityDimension) | [{{ outcome_type }}](../model/FoodSystemOutcomeType) | [{{ activity_type }}](../model/FoodSystemActivityType) | [{{ supply_activity_type }}](../model/FoodSupplyActivityType) | [{{ environment_activity_type }}](../model/FoodEnvironmentActivityType) | [{{ demand_activity_type }}](../model/FoodDemandActivityType) | [{{ driving_force }}](../model/FoodSystemDrivingForce) | [{{ response_policy }}](../model/FoodSystemResponsePolicy) | [{{category_name}}](../indicator_categories) | {% for mu in units %} [{{ enum_dict['IndicatorMeasurementUnit'][mu]['title'] }}](../model/IndicatorMeasurementUnit) {% endfor %} |
+  {%- set sdgs = indicator['related_sdg_targets'] if indicator['related_sdg_targets'] else [] -%}
+  {%- set tds = {} -%}
+  {%- if id in transition_domain_connections_lookup %}
+    {%- for x in transition_domain_connections_lookup[id] %}
+        {%- set _ = tds.update({x['transition_domain']: x}) -%}
+    {%- endfor %}
+  {%- endif %}
+  {%- set td_area_1 = tds['Area_1']['score'] if 'Area_1' in tds.keys() -%}
+  {%- set td_area_2 = tds['Area_2']['score'] if 'Area_2' in tds.keys() -%}
+  {%- set td_area_3 = tds['Area_3']['score'] if 'Area_3' in tds.keys() -%}
+  {%- set td_area_4 = tds['Area_4']['score'] if 'Area_4' in tds.keys() -%}
+| {{ id }} | [{{name}}](../indicators/{{id}}) | [{{ sustainability_dimension }}](../model/SustainabilityDimension) | [{{ outcome_type }}](../model/FoodSystemOutcomeType) | [{{ activity_type }}](../model/FoodSystemActivityType) | [{{ supply_activity_type }}](../model/FoodSupplyActivityType) | [{{ environment_activity_type }}](../model/FoodEnvironmentActivityType) | [{{ demand_activity_type }}](../model/FoodDemandActivityType) | [{{ driving_force }}](../model/FoodSystemDrivingForce) | [{{ response_policy }}](../model/FoodSystemResponsePolicy) | [{{category_name}}](../indicator_categories) | {% for mu in units %} [{{ enum_dict['IndicatorMeasurementUnit'][mu]['title'] }}](../model/IndicatorMeasurementUnit) {% endfor -%} |
 {%- for scp in indicator['supply_chain_component'] %} [{{ enum_dict['SupplyChainComponentType'][scp]['title'] }}](../model/SupplyChainComponentType) {% endfor -%}
-|
-{%- for tds in tds %} [{{ enum_dict['TransitionDomain'][tds]['title'] }}](../model/TransitionDomain)] {% endfor -%}
-|
-{%- for sdg in sdgs %} [{{ enum_dict['Eu2025SdgIndicator'][sdg]['title'] }}](../model/Eu2025SdgIndicator) {% endfor -%}
+| {{td_area_1}} | {{td_area_2}} | {{td_area_3}} | {{td_area_4}} |
+{%- for sdg in sdgs %} [{{ enum_dict['SdgTarget'][sdg]['title'] }}](../model/SdgTarget) {% endfor -%}
 | {{sustainability_impact}} |
 {% endfor %}

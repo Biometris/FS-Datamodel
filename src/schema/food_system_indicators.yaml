@@ -85,7 +85,6 @@ classes:
       - measurement_unit_description
       - measurement_units
       - has_category
-      - transition_domain_connections
       - sustainability_impact
       - related_sdg_targets
       - methodology_description
@@ -194,6 +193,14 @@ classes:
       - name
       - description
       - transition_domain
+
+  IndicatorTransitionDomainConnection:
+    title: alignment of an indicator to a transition domain
+    description: alignment of an indicator to a transition domain.
+    slots:
+      - relates_to_indicator
+      - transition_domain
+      - score
 
 ## --------------------
 ## SLOTS
@@ -407,13 +414,6 @@ slots:
     description: >-
       Reference to the supply chain component(s) for which the indicator is relevant.
     range: SupplyChainComponentType
-    multivalued: true
-
-  transition_domain_connections:
-    title: transition domain connections
-    description: >-
-      Reference to the transition domains that indicator connects to.
-    range: TransitionDomain
     multivalued: true
 
   measurement_unit_description:

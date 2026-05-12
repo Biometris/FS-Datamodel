@@ -116,6 +116,7 @@ if __name__ == "__main__":
         DatabaseDataSource("data/indicator_scores.yaml", "IndicatorCriterionScore", "IndicatorCriterionScores"),
         DatabaseDataSource("data/references.yaml", "Reference", "ReferencesTab"),
         DatabaseDataSource("data/transition_domain_pillars.yaml", "TransitionDomainPillar", "TransitionDomainPillars"),
+        DatabaseDataSource("data/indicator_transition_domain_connections.yaml", "IndicatorTransitionDomainConnection", "IndicatorTransitionDomainConnections"),
     ]
 
     # Setup data store
@@ -164,16 +165,23 @@ if __name__ == "__main__":
         database_indicators = {}
         for record in indicator_data_collection_details:
             database_indicators.setdefault(record['in_database'], []).append(record)
-        transition_domain_pillars = datastore.get_transition_domain_pillars()        
+        transition_domain_pillars = datastore.get_transition_domain_pillars()
+        transition_domain_connections = datastore.get_indicator_transition_domain_connections()        
 
         enum_dict = datastore.create_enum_dict()
         create_indicator_hierarchy_json(indicators, indicator_categories_dict)
         create_supply_chain_indicator_hiearchy_json(indicators)
 
+        # Group records by relates_to_indicator
+        transition_domain_connections_lookup = defaultdict(list)
+        for connection in transition_domain_connections:
+            transition_domain_connections_lookup[connection["relates_to_indicator"]].append(connection)
+
         render_template(
             template_name = 'indicators',
             indicators = indicators,
             categories_dict = indicator_categories_dict,
+            transition_domain_connections_lookup = transition_domain_connections_lookup,
             enum_dict = enum_dict
         )
 
@@ -185,10 +193,12 @@ if __name__ == "__main__":
         )        
 
         for indicator in indicators:
+            connections = transition_domain_connections_lookup.get(indicator['id'], [])            
             render_template(
                 template_name = 'indicator_details',
                 output_file = f"docs/indicators/{indicator['id']}.md",
                 indicator = indicator,
+                transition_domain_connections = connections,
                 enum_dict = enum_dict
             )
 
