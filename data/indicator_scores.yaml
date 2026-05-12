@@ -1,4 +1,3256 @@
-- score_for_indicator: FSI_0001
+- relates_to_indicator: FSI_0029
   scores_criterion: IntegrationFoodSystemFramework
-  score:
-  comment:
+  score: Weak
+  rationale: ''
+- relates_to_indicator: FSI_0029
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0029
+  scores_criterion: TransitionMonitoring
+  score: Weak
+  rationale: limited ability to contribute to food system transition
+- relates_to_indicator: FSI_0029
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking, communication, and public health strategies; easy to interpret
+- relates_to_indicator: FSI_0029
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat
+- relates_to_indicator: FSI_0029
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated; methodology coherent with FAO guidelines, UN convention to combact desertification, JRC soil erosion assessments
+- relates_to_indicator: FSI_0029
+  scores_criterion: DataAvailability
+  score: Adequate
+  rationale: Widely available through UN SDG Global Database, FAOSTAT, Eurostat, and national surveys. Last year 2016
+- relates_to_indicator: FSI_0029
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0029
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: Codified according to SDG standards and based on internationally harmonized definitions
+- relates_to_indicator: FSI_0029
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0029
+  scores_criterion: Timeliness
+  score: Weak
+  rationale: Data not updated frequently
+- relates_to_indicator: FSI_0030
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Weak
+  rationale: ''
+- relates_to_indicator: FSI_0030
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0030
+  scores_criterion: TransitionMonitoring
+  score: Weak
+  rationale: limited ability to contribute to food system transition
+- relates_to_indicator: FSI_0030
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking, communication, and public environmental strategies; easy to interpret
+- relates_to_indicator: FSI_0030
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat, OECD
+- relates_to_indicator: FSI_0030
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0030
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2022
+- relates_to_indicator: FSI_0030
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0030
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0030
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0030
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0031
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Weak
+  rationale: ''
+- relates_to_indicator: FSI_0031
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0031
+  scores_criterion: TransitionMonitoring
+  score: Weak
+  rationale: limited ability to contribute to food system transition
+- relates_to_indicator: FSI_0031
+  scores_criterion: DecisionUsefulness
+  score: Adequate
+  rationale: useful for policymaking  and public environmental strategies; difficult for non-technical people to interpret
+- relates_to_indicator: FSI_0031
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat, International Energy Agency, FAO, United Nations Statistics Division
+- relates_to_indicator: FSI_0031
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0031
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2023
+- relates_to_indicator: FSI_0031
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0031
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators
+- relates_to_indicator: FSI_0031
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0031
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0032
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Weak
+  rationale: ''
+- relates_to_indicator: FSI_0032
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0032
+  scores_criterion: TransitionMonitoring
+  score: Weak
+  rationale: limited ability to contribute to food system transition
+- relates_to_indicator: FSI_0032
+  scores_criterion: DecisionUsefulness
+  score: Adequate
+  rationale: useful for policymaking,  and public environmental strategies; easy to interpret, but other context indicators are needed to avoid ambiguity
+- relates_to_indicator: FSI_0032
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat
+- relates_to_indicator: FSI_0032
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0032
+  scores_criterion: DataAvailability
+  score: Adequate
+  rationale: Last year 2020
+- relates_to_indicator: FSI_0032
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0032
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators
+- relates_to_indicator: FSI_0032
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0032
+  scores_criterion: Timeliness
+  score: Weak
+  rationale: data updated every 3-4 years
+- relates_to_indicator: FSI_0033
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Weak
+  rationale: ''
+- relates_to_indicator: FSI_0033
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0033
+  scores_criterion: TransitionMonitoring
+  score: Weak
+  rationale: limited ability to contribute to food system transition
+- relates_to_indicator: FSI_0033
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking, communication, and public environmental strategies; easy to interpret
+- relates_to_indicator: FSI_0033
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat
+- relates_to_indicator: FSI_0033
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0033
+  scores_criterion: DataAvailability
+  score: Adequate
+  rationale: Last year 2016
+- relates_to_indicator: FSI_0033
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0033
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators
+- relates_to_indicator: FSI_0033
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0033
+  scores_criterion: Timeliness
+  score: Weak
+  rationale: irregular update
+- relates_to_indicator: FSI_0034
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Weak
+  rationale: ''
+- relates_to_indicator: FSI_0034
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0034
+  scores_criterion: TransitionMonitoring
+  score: Weak
+  rationale: limited ability to contribute to food system transition
+- relates_to_indicator: FSI_0034
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking, communication, and public environmental strategies; easy to interpret
+- relates_to_indicator: FSI_0034
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat
+- relates_to_indicator: FSI_0034
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0034
+  scores_criterion: DataAvailability
+  score: Adequate
+  rationale: Last year 2016
+- relates_to_indicator: FSI_0034
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0034
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators
+- relates_to_indicator: FSI_0034
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0034
+  scores_criterion: Timeliness
+  score: Weak
+  rationale: irregular update
+- relates_to_indicator: FSI_0035
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0035
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0035
+  scores_criterion: TransitionMonitoring
+  score: Strong
+  rationale: limited ability to contribute to food system transition
+- relates_to_indicator: FSI_0035
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking, communication, and public environmental strategies; difficult for non-technical people to interpret
+- relates_to_indicator: FSI_0035
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat
+- relates_to_indicator: FSI_0035
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0035
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2022
+- relates_to_indicator: FSI_0035
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0035
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators
+- relates_to_indicator: FSI_0035
+  scores_criterion: BroadGeographicalCoverage
+  score: Weak
+  rationale: 8 Countries
+- relates_to_indicator: FSI_0035
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0036
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Weak
+  rationale: ''
+- relates_to_indicator: FSI_0036
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0036
+  scores_criterion: TransitionMonitoring
+  score: Strong
+  rationale: limited ability to contribute to food system transition
+- relates_to_indicator: FSI_0036
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking, communication, and public environmental strategies; difficult for non-technical people to interpret
+- relates_to_indicator: FSI_0036
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat, FAOSTAT
+- relates_to_indicator: FSI_0036
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0036
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2022
+- relates_to_indicator: FSI_0036
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0036
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators
+- relates_to_indicator: FSI_0036
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0036
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0037
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0037
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0037
+  scores_criterion: TransitionMonitoring
+  score: Weak
+  rationale: limited ability to contribute to food system transition
+- relates_to_indicator: FSI_0037
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking, communication, and public environmental strategies; easy to interpret
+- relates_to_indicator: FSI_0037
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat, FAOSTAT
+- relates_to_indicator: FSI_0037
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0037
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2022
+- relates_to_indicator: FSI_0037
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0037
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators
+- relates_to_indicator: FSI_0037
+  scores_criterion: BroadGeographicalCoverage
+  score: Adequate
+  rationale: 26 Countries
+- relates_to_indicator: FSI_0037
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0038
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0038
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0038
+  scores_criterion: TransitionMonitoring
+  score: Weak
+  rationale: limited ability to contribute to food system transition
+- relates_to_indicator: FSI_0038
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking, communication, and public environmental strategies; easy to interpret
+- relates_to_indicator: FSI_0038
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat, FAOSTAT
+- relates_to_indicator: FSI_0038
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0038
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2024
+- relates_to_indicator: FSI_0038
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0038
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators
+- relates_to_indicator: FSI_0038
+  scores_criterion: BroadGeographicalCoverage
+  score: Adequate
+  rationale: 24 Countries
+- relates_to_indicator: FSI_0038
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0039
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0039
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0039
+  scores_criterion: TransitionMonitoring
+  score: Weak
+  rationale: limited ability to contribute to food system transition
+- relates_to_indicator: FSI_0039
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking, communication, and public environmental strategies; easy to interpret
+- relates_to_indicator: FSI_0039
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard FAO (AQUASTAT)
+- relates_to_indicator: FSI_0039
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0039
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2021
+- relates_to_indicator: FSI_0039
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0039
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators
+- relates_to_indicator: FSI_0039
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0039
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0040
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0040
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0040
+  scores_criterion: TransitionMonitoring
+  score: Weak
+  rationale: limited ability to contribute to food system transition
+- relates_to_indicator: FSI_0040
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and environmental monitoring
+- relates_to_indicator: FSI_0040
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Adequate
+  rationale: standard Eurostat, OECD
+- relates_to_indicator: FSI_0040
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated
+- relates_to_indicator: FSI_0040
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2021 or 2023 (depends on country)
+- relates_to_indicator: FSI_0040
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0040
+  scores_criterion: DataInteroperability
+  score: Adequate
+  rationale: structured data but not explicitly designed for integration into a conceptual food system framework
+- relates_to_indicator: FSI_0040
+  scores_criterion: BroadGeographicalCoverage
+  score: Adequate
+  rationale: 22 Countries
+- relates_to_indicator: FSI_0040
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0041
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0041
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0041
+  scores_criterion: TransitionMonitoring
+  score: Weak
+  rationale: limited ability to contribute to food system transition
+- relates_to_indicator: FSI_0041
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking
+- relates_to_indicator: FSI_0041
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard UE
+- relates_to_indicator: FSI_0041
+  scores_criterion: SoundMethodologies
+  score: Adequate
+  rationale: Strong indicator as a policy/statistical indicator, weaker as a scientific indicator. To be integrated with other scientific indicators.
+- relates_to_indicator: FSI_0041
+  scores_criterion: DataAvailability
+  score: Weak
+  rationale: no data available yet
+- relates_to_indicator: FSI_0041
+  scores_criterion: DataAccessibility
+  score: Weak
+  rationale: undefinable
+- relates_to_indicator: FSI_0041
+  scores_criterion: DataInteroperability
+  score: Adequate
+  rationale: structured data in standardized statistical and administrative systems that can be easily integrated with other agricultural datasets and environmental indicators
+- relates_to_indicator: FSI_0041
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0041
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0042
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0042
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0042
+  scores_criterion: TransitionMonitoring
+  score: Adequate
+  rationale: it does not fully evaluate the real effectiveness of the transition
+- relates_to_indicator: FSI_0042
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0042
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat
+- relates_to_indicator: FSI_0042
+  scores_criterion: SoundMethodologies
+  score: Adequate
+  rationale: based on normative definitions and not on scientific models; supported by extensive scientific literature
+- relates_to_indicator: FSI_0042
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2022
+- relates_to_indicator: FSI_0042
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0042
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0042
+  scores_criterion: BroadGeographicalCoverage
+  score: Adequate
+  rationale: 26 Countries
+- relates_to_indicator: FSI_0042
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0043
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0043
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0043
+  scores_criterion: TransitionMonitoring
+  score: Strong
+  rationale: capable of monitoring the real transition
+- relates_to_indicator: FSI_0043
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0043
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat
+- relates_to_indicator: FSI_0043
+  scores_criterion: SoundMethodologies
+  score: Adequate
+  rationale: based on statistical definitions and not on scientific models; supported by extensive scientific literature
+- relates_to_indicator: FSI_0043
+  scores_criterion: DataAvailability
+  score: Adequate
+  rationale: Last year 2020
+- relates_to_indicator: FSI_0043
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0043
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0043
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0043
+  scores_criterion: Timeliness
+  score: Adequate
+  rationale: every 3-4 years
+- relates_to_indicator: FSI_0044
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0044
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0044
+  scores_criterion: TransitionMonitoring
+  score: Strong
+  rationale: capable of monitoring the real transition
+- relates_to_indicator: FSI_0044
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0044
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat
+- relates_to_indicator: FSI_0044
+  scores_criterion: SoundMethodologies
+  score: Adequate
+  rationale: based on statistical definitions and not on scientific models; supported by extensive scientific literature
+- relates_to_indicator: FSI_0044
+  scores_criterion: DataAvailability
+  score: Adequate
+  rationale: Last year 2020
+- relates_to_indicator: FSI_0044
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0044
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0044
+  scores_criterion: BroadGeographicalCoverage
+  score: Adequate
+  rationale: 26 Countries
+- relates_to_indicator: FSI_0044
+  scores_criterion: Timeliness
+  score: Adequate
+  rationale: every 3-4 years
+- relates_to_indicator: FSI_0045
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0045
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0045
+  scores_criterion: TransitionMonitoring
+  score: Strong
+  rationale: it does not fully evaluate the real effectiveness of the transition
+- relates_to_indicator: FSI_0045
+  scores_criterion: DecisionUsefulness
+  score: Adequate
+  rationale: useful for monitoring and communication; easy to interpret
+- relates_to_indicator: FSI_0045
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat
+- relates_to_indicator: FSI_0045
+  scores_criterion: SoundMethodologies
+  score: Adequate
+  rationale: based on statistical definitions and not on scientific models; supported by extensive scientific literature
+- relates_to_indicator: FSI_0045
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2022-2023
+- relates_to_indicator: FSI_0045
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0045
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0045
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0045
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0046
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0046
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0046
+  scores_criterion: TransitionMonitoring
+  score: Strong
+  rationale: capable of monitoring the real transition
+- relates_to_indicator: FSI_0046
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0046
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat
+- relates_to_indicator: FSI_0046
+  scores_criterion: SoundMethodologies
+  score: Adequate
+  rationale: based on statistical definitions and not on scientific models; supported by extensive scientific literature
+- relates_to_indicator: FSI_0046
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2022-2023
+- relates_to_indicator: FSI_0046
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0046
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0046
+  scores_criterion: BroadGeographicalCoverage
+  score: Adequate
+  rationale: 26 Countries
+- relates_to_indicator: FSI_0046
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0047
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0047
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0047
+  scores_criterion: TransitionMonitoring
+  score: Strong
+  rationale: capable of monitoring the real transition
+- relates_to_indicator: FSI_0047
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0047
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat
+- relates_to_indicator: FSI_0047
+  scores_criterion: SoundMethodologies
+  score: Adequate
+  rationale: based on statistical definitions and not on scientific models; supported by extensive scientific literature
+- relates_to_indicator: FSI_0047
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2022-2023
+- relates_to_indicator: FSI_0047
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0047
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0047
+  scores_criterion: BroadGeographicalCoverage
+  score: Adequate
+  rationale: 26 Countries
+- relates_to_indicator: FSI_0047
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0048
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0048
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0048
+  scores_criterion: TransitionMonitoring
+  score: Adequate
+  rationale: capable of monitoring the real transition
+- relates_to_indicator: FSI_0048
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0048
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat
+- relates_to_indicator: FSI_0048
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0048
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2022-2023
+- relates_to_indicator: FSI_0048
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0048
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0048
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0048
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0049
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0049
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0049
+  scores_criterion: TransitionMonitoring
+  score: Strong
+  rationale: capable of monitoring the real transition
+- relates_to_indicator: FSI_0049
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0049
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat
+- relates_to_indicator: FSI_0049
+  scores_criterion: SoundMethodologies
+  score: Adequate
+  rationale: based on statistical definitions and not on scientific models; supported by extensive scientific literature
+- relates_to_indicator: FSI_0049
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2022-2023
+- relates_to_indicator: FSI_0049
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0049
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0049
+  scores_criterion: BroadGeographicalCoverage
+  score: Adequate
+  rationale: 26 Countries
+- relates_to_indicator: FSI_0049
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0050
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0050
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0050
+  scores_criterion: TransitionMonitoring
+  score: Strong
+  rationale: capable of monitoring the real transition
+- relates_to_indicator: FSI_0050
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0050
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat
+- relates_to_indicator: FSI_0050
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0050
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2022-2023
+- relates_to_indicator: FSI_0050
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0050
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0050
+  scores_criterion: BroadGeographicalCoverage
+  score: Adequate
+  rationale: 26 Countries
+- relates_to_indicator: FSI_0050
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0051
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0051
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0051
+  scores_criterion: TransitionMonitoring
+  score: Adequate
+  rationale: it does not fully evaluate the real effectiveness of the transition
+- relates_to_indicator: FSI_0051
+  scores_criterion: DecisionUsefulness
+  score: Adequate
+  rationale: useful for monitoring and communication; easy to interpret
+- relates_to_indicator: FSI_0051
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat
+- relates_to_indicator: FSI_0051
+  scores_criterion: SoundMethodologies
+  score: Weak
+  rationale: purely administrative indicator
+- relates_to_indicator: FSI_0051
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2022-2023
+- relates_to_indicator: FSI_0051
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0051
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0051
+  scores_criterion: BroadGeographicalCoverage
+  score: Adequate
+  rationale: 26 Countries
+- relates_to_indicator: FSI_0051
+  scores_criterion: Timeliness
+  score: Adequate
+  rationale: data updated annually not for all countries
+- relates_to_indicator: FSI_0052
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0052
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0052
+  scores_criterion: TransitionMonitoring
+  score: Strong
+  rationale: capable of monitoring the real transition
+- relates_to_indicator: FSI_0052
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0052
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat
+- relates_to_indicator: FSI_0052
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0052
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2022
+- relates_to_indicator: FSI_0052
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0052
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0052
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0052
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0053
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0053
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0053
+  scores_criterion: TransitionMonitoring
+  score: Strong
+  rationale: capable of monitoring the real transition
+- relates_to_indicator: FSI_0053
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0053
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat
+- relates_to_indicator: FSI_0053
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0053
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2023
+- relates_to_indicator: FSI_0053
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0053
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0053
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0053
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0054
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Weak
+  rationale: ''
+- relates_to_indicator: FSI_0054
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0054
+  scores_criterion: TransitionMonitoring
+  score: Strong
+  rationale: capable of monitoring the real transition
+- relates_to_indicator: FSI_0054
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0054
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat
+- relates_to_indicator: FSI_0054
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0054
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2023
+- relates_to_indicator: FSI_0054
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0054
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0054
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0054
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0055
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0055
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0055
+  scores_criterion: TransitionMonitoring
+  score: Strong
+  rationale: capable of monitoring the real transition
+- relates_to_indicator: FSI_0055
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0055
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: IPCC standards
+- relates_to_indicator: FSI_0055
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0055
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2022
+- relates_to_indicator: FSI_0055
+  scores_criterion: DataAccessibility
+  score: Adequate
+  rationale: datasets not always fully accessible
+- relates_to_indicator: FSI_0055
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0055
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0055
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0056
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0056
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0056
+  scores_criterion: TransitionMonitoring
+  score: Strong
+  rationale: capable of monitoring the real transition
+- relates_to_indicator: FSI_0056
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0056
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: IPCC standards
+- relates_to_indicator: FSI_0056
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0056
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2022
+- relates_to_indicator: FSI_0056
+  scores_criterion: DataAccessibility
+  score: Adequate
+  rationale: datasets not always fully accessible
+- relates_to_indicator: FSI_0056
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0056
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0056
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0057
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0057
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0057
+  scores_criterion: TransitionMonitoring
+  score: Strong
+  rationale: capable of monitoring the real transition
+- relates_to_indicator: FSI_0057
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0057
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: IPCC standards
+- relates_to_indicator: FSI_0057
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0057
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2022
+- relates_to_indicator: FSI_0057
+  scores_criterion: DataAccessibility
+  score: Adequate
+  rationale: datasets not always fully accessible
+- relates_to_indicator: FSI_0057
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0057
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0057
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0058
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0058
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0058
+  scores_criterion: TransitionMonitoring
+  score: Strong
+  rationale: capable of monitoring the real transition
+- relates_to_indicator: FSI_0058
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0058
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: IPCC standards
+- relates_to_indicator: FSI_0058
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0058
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2022
+- relates_to_indicator: FSI_0058
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0058
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0058
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0058
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0059
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0059
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0059
+  scores_criterion: TransitionMonitoring
+  score: Strong
+  rationale: capable of monitoring the real transition
+- relates_to_indicator: FSI_0059
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0059
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: IPCC standards
+- relates_to_indicator: FSI_0059
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0059
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2022
+- relates_to_indicator: FSI_0059
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0059
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0059
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0059
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0060
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0060
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0060
+  scores_criterion: TransitionMonitoring
+  score: Strong
+  rationale: capable of monitoring the real transition
+- relates_to_indicator: FSI_0060
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0060
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: IPCC standards
+- relates_to_indicator: FSI_0060
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0060
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2022
+- relates_to_indicator: FSI_0060
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0060
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0060
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0060
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0061
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0061
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0061
+  scores_criterion: TransitionMonitoring
+  score: Strong
+  rationale: capable of monitoring the real transition
+- relates_to_indicator: FSI_0061
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0061
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: IPCC standards
+- relates_to_indicator: FSI_0061
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0061
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2022
+- relates_to_indicator: FSI_0061
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0061
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0061
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0061
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0062
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0062
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0062
+  scores_criterion: TransitionMonitoring
+  score: Strong
+  rationale: capable of monitoring the real transition
+- relates_to_indicator: FSI_0062
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0062
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: IPCC standards
+- relates_to_indicator: FSI_0062
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0062
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2022
+- relates_to_indicator: FSI_0062
+  scores_criterion: DataAccessibility
+  score: Adequate
+  rationale: datasets not always fully accessible
+- relates_to_indicator: FSI_0062
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0062
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0062
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0063
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0063
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0063
+  scores_criterion: TransitionMonitoring
+  score: Strong
+  rationale: robust for monitoring environmental transition, particularly useful for the industrial phase of the food system
+- relates_to_indicator: FSI_0063
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking, communication, and public environmental strategies; easy to interpret
+- relates_to_indicator: FSI_0063
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat
+- relates_to_indicator: FSI_0063
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0063
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2022
+- relates_to_indicator: FSI_0063
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0063
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0063
+  scores_criterion: BroadGeographicalCoverage
+  score: Weak
+  rationale: coverage not well identified
+- relates_to_indicator: FSI_0063
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0064
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0064
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0064
+  scores_criterion: TransitionMonitoring
+  score: Adequate
+  rationale: capable of monitoring the real transition
+- relates_to_indicator: FSI_0064
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking, communication, and public environmental strategies; easy to interpret
+- relates_to_indicator: FSI_0064
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat
+- relates_to_indicator: FSI_0064
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0064
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2022
+- relates_to_indicator: FSI_0064
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0064
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0064
+  scores_criterion: BroadGeographicalCoverage
+  score: Adequate
+  rationale: 16 Countries
+- relates_to_indicator: FSI_0064
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0065
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0065
+  scores_criterion: GoalAlignment
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0065
+  scores_criterion: TransitionMonitoring
+  score: Strong
+  rationale: capable of monitoring the real transition
+- relates_to_indicator: FSI_0065
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking, communication, and public environmental strategies; easy to interpret
+- relates_to_indicator: FSI_0065
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat
+- relates_to_indicator: FSI_0065
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0065
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2023
+- relates_to_indicator: FSI_0065
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0065
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0065
+  scores_criterion: BroadGeographicalCoverage
+  score: Adequate
+  rationale: 26 Countries
+- relates_to_indicator: FSI_0065
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0066
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0066
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0066
+  scores_criterion: TransitionMonitoring
+  score: Adequate
+  rationale: capable of monitoring the real transition
+- relates_to_indicator: FSI_0066
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking, communication, and public environmental strategies; easy to interpret
+- relates_to_indicator: FSI_0066
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat
+- relates_to_indicator: FSI_0066
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0066
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2022
+- relates_to_indicator: FSI_0066
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0066
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0066
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0066
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0067
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0067
+  scores_criterion: GoalAlignment
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0067
+  scores_criterion: TransitionMonitoring
+  score: Strong
+  rationale: capable of monitoring the real transition
+- relates_to_indicator: FSI_0067
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking, communication, and public environmental strategies; easy to interpret
+- relates_to_indicator: FSI_0067
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Adequate
+  rationale: Differences in farming systems and underlying data limit full benchmarking
+- relates_to_indicator: FSI_0067
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0067
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2022
+- relates_to_indicator: FSI_0067
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0067
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0067
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0067
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0068
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0068
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0068
+  scores_criterion: TransitionMonitoring
+  score: Strong
+  rationale: capable of monitoring the real transition
+- relates_to_indicator: FSI_0068
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking, communication, and public environmental strategies; easy to interpret
+- relates_to_indicator: FSI_0068
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat
+- relates_to_indicator: FSI_0068
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0068
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2022
+- relates_to_indicator: FSI_0068
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0068
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0068
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0068
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0069
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0069
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0069
+  scores_criterion: TransitionMonitoring
+  score: Strong
+  rationale: capable of monitoring the real transition
+- relates_to_indicator: FSI_0069
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0069
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat
+- relates_to_indicator: FSI_0069
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0069
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2023
+- relates_to_indicator: FSI_0069
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0069
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0069
+  scores_criterion: BroadGeographicalCoverage
+  score: Adequate
+  rationale: 26 Countries
+- relates_to_indicator: FSI_0069
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0070
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0070
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0070
+  scores_criterion: TransitionMonitoring
+  score: Strong
+  rationale: capable of monitoring the real transition
+- relates_to_indicator: FSI_0070
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0070
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat
+- relates_to_indicator: FSI_0070
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0070
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2021 or 2022
+- relates_to_indicator: FSI_0070
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0070
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0070
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0070
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0071
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0071
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0071
+  scores_criterion: TransitionMonitoring
+  score: Strong
+  rationale: capable of monitoring the real transition
+- relates_to_indicator: FSI_0071
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0071
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat
+- relates_to_indicator: FSI_0071
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0071
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2021 or 2022
+- relates_to_indicator: FSI_0071
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0071
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0071
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0071
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0072
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0072
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0072
+  scores_criterion: TransitionMonitoring
+  score: Strong
+  rationale: capable of monitoring the real transition
+- relates_to_indicator: FSI_0072
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0072
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat
+- relates_to_indicator: FSI_0072
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0072
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2021 or 2022
+- relates_to_indicator: FSI_0072
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0072
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0072
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0072
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0073
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0073
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0073
+  scores_criterion: TransitionMonitoring
+  score: Strong
+  rationale: capable of monitoring the real transition
+- relates_to_indicator: FSI_0073
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0073
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat
+- relates_to_indicator: FSI_0073
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0073
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2021 or 2022
+- relates_to_indicator: FSI_0073
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0073
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0073
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0073
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0074
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0074
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0074
+  scores_criterion: TransitionMonitoring
+  score: Strong
+  rationale: capable of monitoring the real transition
+- relates_to_indicator: FSI_0074
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0074
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat
+- relates_to_indicator: FSI_0074
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0074
+  scores_criterion: DataAvailability
+  score: Weak
+  rationale: data availability not well identified
+- relates_to_indicator: FSI_0074
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0074
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0074
+  scores_criterion: BroadGeographicalCoverage
+  score: Adequate
+  rationale: 15 Countries
+- relates_to_indicator: FSI_0074
+  scores_criterion: Timeliness
+  score: Weak
+  rationale: update not well identified
+- relates_to_indicator: FSI_0075
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0075
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0075
+  scores_criterion: TransitionMonitoring
+  score: Strong
+  rationale: capable of monitoring the real transition
+- relates_to_indicator: FSI_0075
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0075
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat
+- relates_to_indicator: FSI_0075
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0075
+  scores_criterion: DataAvailability
+  score: Weak
+  rationale: data availability not well identified
+- relates_to_indicator: FSI_0075
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0075
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0075
+  scores_criterion: BroadGeographicalCoverage
+  score: Adequate
+  rationale: 15 Countries
+- relates_to_indicator: FSI_0075
+  scores_criterion: Timeliness
+  score: Weak
+  rationale: update not well identified
+- relates_to_indicator: FSI_0076
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0076
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0076
+  scores_criterion: TransitionMonitoring
+  score: Strong
+  rationale: capable of monitoring the real transition
+- relates_to_indicator: FSI_0076
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0076
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat
+- relates_to_indicator: FSI_0076
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0076
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2023
+- relates_to_indicator: FSI_0076
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0076
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0076
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0076
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0077
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0077
+  scores_criterion: GoalAlignment
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0077
+  scores_criterion: TransitionMonitoring
+  score: Adequate
+  rationale: it does not fully evaluate the real effectiveness of the transition
+- relates_to_indicator: FSI_0077
+  scores_criterion: DecisionUsefulness
+  score: Adequate
+  rationale: Useful for policymaking but it requires complementary indicators for targeted decisions
+- relates_to_indicator: FSI_0077
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat
+- relates_to_indicator: FSI_0077
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0077
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2022
+- relates_to_indicator: FSI_0077
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0077
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0077
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0077
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0078
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0078
+  scores_criterion: GoalAlignment
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0078
+  scores_criterion: TransitionMonitoring
+  score: Weak
+  rationale: limited ability to contribute to food system transition
+- relates_to_indicator: FSI_0078
+  scores_criterion: DecisionUsefulness
+  score: Adequate
+  rationale: Useful for monitoring performance in the livestock sector; easy to interpret
+- relates_to_indicator: FSI_0078
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard FAO
+- relates_to_indicator: FSI_0078
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0078
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2022
+- relates_to_indicator: FSI_0078
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0078
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0078
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0078
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0079
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0079
+  scores_criterion: GoalAlignment
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0079
+  scores_criterion: TransitionMonitoring
+  score: Strong
+  rationale: capable of monitoring the real transition
+- relates_to_indicator: FSI_0079
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Useful for decision makers
+- relates_to_indicator: FSI_0079
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard UE
+- relates_to_indicator: FSI_0079
+  scores_criterion: SoundMethodologies
+  score: Adequate
+  rationale: based on statistical definitions and not on scientific models; supported by extensive scientific literature
+- relates_to_indicator: FSI_0079
+  scores_criterion: DataAvailability
+  score: Adequate
+  rationale: Last year 2021
+- relates_to_indicator: FSI_0079
+  scores_criterion: DataAccessibility
+  score: Adequate
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0079
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0079
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0079
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0080
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0080
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0080
+  scores_criterion: TransitionMonitoring
+  score: Strong
+  rationale: capable of monitoring the real transition
+- relates_to_indicator: FSI_0080
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0080
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat
+- relates_to_indicator: FSI_0080
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0080
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2022
+- relates_to_indicator: FSI_0080
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0080
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0080
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0080
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0081
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0081
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0081
+  scores_criterion: TransitionMonitoring
+  score: Adequate
+  rationale: capable of monitoring the real transition
+- relates_to_indicator: FSI_0081
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0081
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat
+- relates_to_indicator: FSI_0081
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0081
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2023
+- relates_to_indicator: FSI_0081
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0081
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0081
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0081
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0082
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0082
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0082
+  scores_criterion: TransitionMonitoring
+  score: Strong
+  rationale: capable of monitoring the real transition
+- relates_to_indicator: FSI_0082
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0082
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat
+- relates_to_indicator: FSI_0082
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated.
+- relates_to_indicator: FSI_0082
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2022
+- relates_to_indicator: FSI_0082
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0082
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0082
+  scores_criterion: BroadGeographicalCoverage
+  score: Adequate
+  rationale: 18 Countries
+- relates_to_indicator: FSI_0082
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0083
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0083
+  scores_criterion: GoalAlignment
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0083
+  scores_criterion: TransitionMonitoring
+  score: Adequate
+  rationale: it does not fully evaluate the real effectiveness of the transition
+- relates_to_indicator: FSI_0083
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0083
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Adequate
+  rationale: limited to UE countries
+- relates_to_indicator: FSI_0083
+  scores_criterion: SoundMethodologies
+  score: Adequate
+  rationale: based on statistical definitions and not on scientific models
+- relates_to_indicator: FSI_0083
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: the links provide up-to-date information.
+- relates_to_indicator: FSI_0083
+  scores_criterion: DataAccessibility
+  score: Adequate
+  rationale: datasets not always fully accessible; aggregated datasets
+- relates_to_indicator: FSI_0083
+  scores_criterion: DataInteroperability
+  score: Adequate
+  rationale: Limited automatic integration between different datasets
+- relates_to_indicator: FSI_0083
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0083
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0084
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0084
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0084
+  scores_criterion: TransitionMonitoring
+  score: Adequate
+  rationale: it does not fully evaluate the real effectiveness of the transition
+- relates_to_indicator: FSI_0084
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0084
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Adequate
+  rationale: limited to UE countries
+- relates_to_indicator: FSI_0084
+  scores_criterion: SoundMethodologies
+  score: Adequate
+  rationale: based on statistical definitions and not on scientific models
+- relates_to_indicator: FSI_0084
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: the links provide up-to-date information.
+- relates_to_indicator: FSI_0084
+  scores_criterion: DataAccessibility
+  score: Adequate
+  rationale: datasets not always fully accessible; aggregated datasets
+- relates_to_indicator: FSI_0084
+  scores_criterion: DataInteroperability
+  score: Adequate
+  rationale: Limited automatic integration between different datasets
+- relates_to_indicator: FSI_0084
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0084
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0085
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0085
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0085
+  scores_criterion: TransitionMonitoring
+  score: Adequate
+  rationale: it does not fully evaluate the real effectiveness of the transition
+- relates_to_indicator: FSI_0085
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0085
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Adequate
+  rationale: limited to UE countries
+- relates_to_indicator: FSI_0085
+  scores_criterion: SoundMethodologies
+  score: Adequate
+  rationale: based on statistical definitions and not on scientific models
+- relates_to_indicator: FSI_0085
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: the links provide up-to-date information.
+- relates_to_indicator: FSI_0085
+  scores_criterion: DataAccessibility
+  score: Adequate
+  rationale: datasets not always fully accessible; aggregated datasets
+- relates_to_indicator: FSI_0085
+  scores_criterion: DataInteroperability
+  score: Adequate
+  rationale: Limited automatic integration between different datasets
+- relates_to_indicator: FSI_0085
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0085
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0086
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0086
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0086
+  scores_criterion: TransitionMonitoring
+  score: Adequate
+  rationale: it does not fully evaluate the real effectiveness of the transition
+- relates_to_indicator: FSI_0086
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0086
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Adequate
+  rationale: limited to UE countries
+- relates_to_indicator: FSI_0086
+  scores_criterion: SoundMethodologies
+  score: Adequate
+  rationale: based on statistical definitions and not on scientific models
+- relates_to_indicator: FSI_0086
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: the links provide up-to-date information.
+- relates_to_indicator: FSI_0086
+  scores_criterion: DataAccessibility
+  score: Adequate
+  rationale: datasets not always fully accessible; aggregated datasets
+- relates_to_indicator: FSI_0086
+  scores_criterion: DataInteroperability
+  score: Adequate
+  rationale: Limited automatic integration between different datasets
+- relates_to_indicator: FSI_0086
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0086
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0087
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0087
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0087
+  scores_criterion: TransitionMonitoring
+  score: Adequate
+  rationale: it does not fully evaluate the real effectiveness of the transition
+- relates_to_indicator: FSI_0087
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0087
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Adequate
+  rationale: limited to UE countries
+- relates_to_indicator: FSI_0087
+  scores_criterion: SoundMethodologies
+  score: Adequate
+  rationale: based on statistical definitions and not on scientific models
+- relates_to_indicator: FSI_0087
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: the links provide up-to-date information.
+- relates_to_indicator: FSI_0087
+  scores_criterion: DataAccessibility
+  score: Adequate
+  rationale: datasets not always fully accessible; aggregated datasets
+- relates_to_indicator: FSI_0087
+  scores_criterion: DataInteroperability
+  score: Adequate
+  rationale: Limited automatic integration between different datasets
+- relates_to_indicator: FSI_0087
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0087
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0088
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0088
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0088
+  scores_criterion: TransitionMonitoring
+  score: Adequate
+  rationale: it does not fully evaluate the real effectiveness of the transition
+- relates_to_indicator: FSI_0088
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0088
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Adequate
+  rationale: limited to UE countries
+- relates_to_indicator: FSI_0088
+  scores_criterion: SoundMethodologies
+  score: Adequate
+  rationale: based on statistical definitions and not on scientific models
+- relates_to_indicator: FSI_0088
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: the links provide up-to-date information.
+- relates_to_indicator: FSI_0088
+  scores_criterion: DataAccessibility
+  score: Adequate
+  rationale: datasets not always fully accessible; aggregated datasets
+- relates_to_indicator: FSI_0088
+  scores_criterion: DataInteroperability
+  score: Adequate
+  rationale: Limited automatic integration between different datasets
+- relates_to_indicator: FSI_0088
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0088
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0089
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0089
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0089
+  scores_criterion: TransitionMonitoring
+  score: Strong
+  rationale: it does not fully evaluate the real effectiveness of the transition
+- relates_to_indicator: FSI_0089
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0089
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Adequate
+  rationale: limited to UE countries
+- relates_to_indicator: FSI_0089
+  scores_criterion: SoundMethodologies
+  score: Adequate
+  rationale: based on statistical definitions and not on scientific models
+- relates_to_indicator: FSI_0089
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: the links provide up-to-date information.
+- relates_to_indicator: FSI_0089
+  scores_criterion: DataAccessibility
+  score: Adequate
+  rationale: datasets not always fully accessible; aggregated datasets
+- relates_to_indicator: FSI_0089
+  scores_criterion: DataInteroperability
+  score: Adequate
+  rationale: Limited automatic integration between different datasets
+- relates_to_indicator: FSI_0089
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0089
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0090
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0090
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0090
+  scores_criterion: TransitionMonitoring
+  score: Adequate
+  rationale: it does not fully evaluate the real effectiveness of the transition
+- relates_to_indicator: FSI_0090
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0090
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Adequate
+  rationale: limited to UE countries
+- relates_to_indicator: FSI_0090
+  scores_criterion: SoundMethodologies
+  score: Adequate
+  rationale: based on statistical definitions and not on scientific models
+- relates_to_indicator: FSI_0090
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: the links provide up-to-date information.
+- relates_to_indicator: FSI_0090
+  scores_criterion: DataAccessibility
+  score: Adequate
+  rationale: datasets not always fully accessible; aggregated datasets
+- relates_to_indicator: FSI_0090
+  scores_criterion: DataInteroperability
+  score: Adequate
+  rationale: Limited automatic integration between different datasets
+- relates_to_indicator: FSI_0090
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0090
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0091
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0091
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0091
+  scores_criterion: TransitionMonitoring
+  score: Adequate
+  rationale: it does not fully evaluate the real effectiveness of the transition
+- relates_to_indicator: FSI_0091
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0091
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Adequate
+  rationale: limited to UE countries
+- relates_to_indicator: FSI_0091
+  scores_criterion: SoundMethodologies
+  score: Adequate
+  rationale: based on statistical definitions and not on scientific models
+- relates_to_indicator: FSI_0091
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: the links provide up-to-date information.
+- relates_to_indicator: FSI_0091
+  scores_criterion: DataAccessibility
+  score: Adequate
+  rationale: datasets not always fully accessible; aggregated datasets
+- relates_to_indicator: FSI_0091
+  scores_criterion: DataInteroperability
+  score: Adequate
+  rationale: Limited automatic integration between different datasets
+- relates_to_indicator: FSI_0091
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0091
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0092
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0092
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0092
+  scores_criterion: TransitionMonitoring
+  score: Adequate
+  rationale: it does not fully evaluate the real effectiveness of the transition
+- relates_to_indicator: FSI_0092
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0092
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Adequate
+  rationale: limited to UE countries
+- relates_to_indicator: FSI_0092
+  scores_criterion: SoundMethodologies
+  score: Adequate
+  rationale: based on statistical definitions and not on scientific models
+- relates_to_indicator: FSI_0092
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: the links provide up-to-date information.
+- relates_to_indicator: FSI_0092
+  scores_criterion: DataAccessibility
+  score: Adequate
+  rationale: datasets not always fully accessible; aggregated datasets
+- relates_to_indicator: FSI_0092
+  scores_criterion: DataInteroperability
+  score: Adequate
+  rationale: Limited automatic integration between different datasets
+- relates_to_indicator: FSI_0092
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0092
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0093
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0093
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0093
+  scores_criterion: TransitionMonitoring
+  score: Strong
+  rationale: it does not fully evaluate the real effectiveness of the transition
+- relates_to_indicator: FSI_0093
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0093
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Adequate
+  rationale: limited to UE countries
+- relates_to_indicator: FSI_0093
+  scores_criterion: SoundMethodologies
+  score: Adequate
+  rationale: based on statistical definitions and not on scientific models
+- relates_to_indicator: FSI_0093
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: the links provide up-to-date information.
+- relates_to_indicator: FSI_0093
+  scores_criterion: DataAccessibility
+  score: Adequate
+  rationale: datasets not always fully accessible; aggregated datasets
+- relates_to_indicator: FSI_0093
+  scores_criterion: DataInteroperability
+  score: Adequate
+  rationale: Limited automatic integration between different datasets
+- relates_to_indicator: FSI_0093
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0093
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0094
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0094
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0094
+  scores_criterion: TransitionMonitoring
+  score: Adequate
+  rationale: it does not fully evaluate the real effectiveness of the transition
+- relates_to_indicator: FSI_0094
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0094
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Adequate
+  rationale: limited to UE countries
+- relates_to_indicator: FSI_0094
+  scores_criterion: SoundMethodologies
+  score: Adequate
+  rationale: based on statistical definitions and not on scientific models
+- relates_to_indicator: FSI_0094
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: the links provide up-to-date information.
+- relates_to_indicator: FSI_0094
+  scores_criterion: DataAccessibility
+  score: Adequate
+  rationale: datasets not always fully accessible; aggregated datasets
+- relates_to_indicator: FSI_0094
+  scores_criterion: DataInteroperability
+  score: Adequate
+  rationale: Limited automatic integration between different datasets
+- relates_to_indicator: FSI_0094
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0094
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0095
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0095
+  scores_criterion: GoalAlignment
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0095
+  scores_criterion: TransitionMonitoring
+  score: Adequate
+  rationale: it does not fully evaluate the real effectiveness of the transition
+- relates_to_indicator: FSI_0095
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0095
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Adequate
+  rationale: limited to UE countries
+- relates_to_indicator: FSI_0095
+  scores_criterion: SoundMethodologies
+  score: Adequate
+  rationale: based on statistical definitions and not on scientific models
+- relates_to_indicator: FSI_0095
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: the links provide up-to-date information.
+- relates_to_indicator: FSI_0095
+  scores_criterion: DataAccessibility
+  score: Adequate
+  rationale: datasets not always fully accessible; aggregated datasets
+- relates_to_indicator: FSI_0095
+  scores_criterion: DataInteroperability
+  score: Adequate
+  rationale: Limited automatic integration between different datasets
+- relates_to_indicator: FSI_0095
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0095
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0096
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0096
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0096
+  scores_criterion: TransitionMonitoring
+  score: Adequate
+  rationale: it does not fully evaluate the real effectiveness of the transition
+- relates_to_indicator: FSI_0096
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0096
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Adequate
+  rationale: limited to UE countries
+- relates_to_indicator: FSI_0096
+  scores_criterion: SoundMethodologies
+  score: Adequate
+  rationale: based on statistical definitions and not on scientific models
+- relates_to_indicator: FSI_0096
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: the links provide up-to-date information.
+- relates_to_indicator: FSI_0096
+  scores_criterion: DataAccessibility
+  score: Adequate
+  rationale: datasets not always fully accessible; aggregated datasets
+- relates_to_indicator: FSI_0096
+  scores_criterion: DataInteroperability
+  score: Adequate
+  rationale: Limited automatic integration between different datasets
+- relates_to_indicator: FSI_0096
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0096
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0097
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0097
+  scores_criterion: GoalAlignment
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0097
+  scores_criterion: TransitionMonitoring
+  score: Adequate
+  rationale: it does not fully evaluate the real effectiveness of the transition
+- relates_to_indicator: FSI_0097
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0097
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Adequate
+  rationale: limited to UE countries
+- relates_to_indicator: FSI_0097
+  scores_criterion: SoundMethodologies
+  score: Adequate
+  rationale: based on statistical definitions and not on scientific models
+- relates_to_indicator: FSI_0097
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: the links provide up-to-date information.
+- relates_to_indicator: FSI_0097
+  scores_criterion: DataAccessibility
+  score: Adequate
+  rationale: datasets not always fully accessible; aggregated datasets
+- relates_to_indicator: FSI_0097
+  scores_criterion: DataInteroperability
+  score: Adequate
+  rationale: Limited automatic integration between different datasets
+- relates_to_indicator: FSI_0097
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0097
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0098
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0098
+  scores_criterion: GoalAlignment
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0098
+  scores_criterion: TransitionMonitoring
+  score: Adequate
+  rationale: it does not fully evaluate the real effectiveness of the transition
+- relates_to_indicator: FSI_0098
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0098
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Adequate
+  rationale: limited to UE countries
+- relates_to_indicator: FSI_0098
+  scores_criterion: SoundMethodologies
+  score: Adequate
+  rationale: based on statistical definitions and not on scientific models
+- relates_to_indicator: FSI_0098
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: the links provide up-to-date information.
+- relates_to_indicator: FSI_0098
+  scores_criterion: DataAccessibility
+  score: Adequate
+  rationale: datasets not always fully accessible; aggregated datasets
+- relates_to_indicator: FSI_0098
+  scores_criterion: DataInteroperability
+  score: Adequate
+  rationale: Limited automatic integration between different datasets
+- relates_to_indicator: FSI_0098
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0098
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0099
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0099
+  scores_criterion: GoalAlignment
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0099
+  scores_criterion: TransitionMonitoring
+  score: Weak
+  rationale: it does not evaluate the real effectiveness of the transition; no link with food system outcomes
+- relates_to_indicator: FSI_0099
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking and communication; easy to interpret
+- relates_to_indicator: FSI_0099
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Fao
+- relates_to_indicator: FSI_0099
+  scores_criterion: SoundMethodologies
+  score: Adequate
+  rationale: based on statistical definitions and not on scientific models
+- relates_to_indicator: FSI_0099
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2022
+- relates_to_indicator: FSI_0099
+  scores_criterion: DataAccessibility
+  score: Adequate
+  rationale: datasets not always fully accessible; aggregated datasets
+- relates_to_indicator: FSI_0099
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0099
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0099
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
+- relates_to_indicator: FSI_0100
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0100
+  scores_criterion: GoalAlignment
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0100
+  scores_criterion: TransitionMonitoring
+  score: Adequate
+  rationale: it does not evaluate the real effectiveness of the transition; no link with food system outcomes
+- relates_to_indicator: FSI_0100
+  scores_criterion: DecisionUsefulness
+  score: Adequate
+  rationale: Useful for training and capacity building policies; easy to interpret
+- relates_to_indicator: FSI_0100
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat
+- relates_to_indicator: FSI_0100
+  scores_criterion: SoundMethodologies
+  score: Adequate
+  rationale: based on statistical definitions and not on scientific models
+- relates_to_indicator: FSI_0100
+  scores_criterion: DataAvailability
+  score: Adequate
+  rationale: Last year 2020
+- relates_to_indicator: FSI_0100
+  scores_criterion: DataAccessibility
+  score: Strong
+  rationale: Publicly accessible datasets; easy to obtain
+- relates_to_indicator: FSI_0100
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0100
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0100
+  scores_criterion: Timeliness
+  score: Adequate
+  rationale: every 3-4 years
+- relates_to_indicator: FSI_0101
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0101
+  scores_criterion: GoalAlignment
+  score: Adequate
+  rationale: ''
+- relates_to_indicator: FSI_0101
+  scores_criterion: TransitionMonitoring
+  score: Adequate
+  rationale: it does not fully evaluate the real effectiveness of the transition
+- relates_to_indicator: FSI_0101
+  scores_criterion: DecisionUsefulness
+  score: Adequate
+  rationale: useful for policymaking; too aggregated and qualitative for specific actions in the food system
+- relates_to_indicator: FSI_0101
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Adequate
+  rationale: limited standardization
+- relates_to_indicator: FSI_0101
+  scores_criterion: SoundMethodologies
+  score: Weak
+  rationale: based on self-assessment, not on validated quantitative methods
+- relates_to_indicator: FSI_0101
+  scores_criterion: DataAvailability
+  score: Weak
+  rationale: Last year 2011
+- relates_to_indicator: FSI_0101
+  scores_criterion: DataAccessibility
+  score: Adequate
+  rationale: Publicly accessible datasets, not always in standardized databases with complete metadata
+- relates_to_indicator: FSI_0101
+  scores_criterion: DataInteroperability
+  score: Weak
+  rationale: difficult to integrate with other indicators with national coverage
+- relates_to_indicator: FSI_0101
+  scores_criterion: BroadGeographicalCoverage
+  score: Weak
+  rationale: 8 Countries
+- relates_to_indicator: FSI_0101
+  scores_criterion: Timeliness
+  score: Weak
+  rationale: data availability not well identified
+- relates_to_indicator: FSI_0102
+  scores_criterion: IntegrationFoodSystemFramework
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0102
+  scores_criterion: GoalAlignment
+  score: Strong
+  rationale: ''
+- relates_to_indicator: FSI_0102
+  scores_criterion: TransitionMonitoring
+  score: Strong
+  rationale: capable of monitoring the real transition
+- relates_to_indicator: FSI_0102
+  scores_criterion: DecisionUsefulness
+  score: Strong
+  rationale: Highly useful for policymaking
+- relates_to_indicator: FSI_0102
+  scores_criterion: StandardizationComparabilityComplementarity
+  score: Strong
+  rationale: standard Eurostat
+- relates_to_indicator: FSI_0102
+  scores_criterion: SoundMethodologies
+  score: Strong
+  rationale: Strongly supported by scientific literature; widely validated
+- relates_to_indicator: FSI_0102
+  scores_criterion: DataAvailability
+  score: Strong
+  rationale: Last year 2023
+- relates_to_indicator: FSI_0102
+  scores_criterion: DataAccessibility
+  score: Adequate
+  rationale: Accessible datasets, not fully open/raw
+- relates_to_indicator: FSI_0102
+  scores_criterion: DataInteroperability
+  score: Strong
+  rationale: integrable with other indicators with national coverage
+- relates_to_indicator: FSI_0102
+  scores_criterion: BroadGeographicalCoverage
+  score: Strong
+  rationale: 27 Countries
+- relates_to_indicator: FSI_0102
+  scores_criterion: Timeliness
+  score: Strong
+  rationale: data updated annually
