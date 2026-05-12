@@ -87,7 +87,7 @@ classes:
       - has_category
       - transition_domain_connections
       - sustainability_impact
-      - eu2025_sdg_indicator_code
+      - related_sdg_targets
       - methodology_description
     slot_usage:
       id:
@@ -429,11 +429,11 @@ slots:
       Indicator unit(s) of measurement.
     multivalued: true
 
-  eu2025_sdg_indicator_code:
-    title: EU (2025) SDG indicator code
+  related_sdg_targets:
+    title: Related SDG targets
     description:
-      Indicates whether the indicator is included in the 2025 edition of the EU Sustainable Development Goals indicator set, and provides the corresponding EU SDG indicator code.
-    range: Eu2025SdgIndicator
+      Indicates which of the Sustainable Development Goal (SDG) targets the indicator measures/relates to.
+    range: SdgTarget
     multivalued: true
     required: false
 
@@ -950,28 +950,174 @@ enums:
         description: >-
           Area 4 focuses on fostering governance for a positive food system transformation in an interaction among the public sector, private sector, civil society, and consumers to identify, implement, resource, and monitor solutions for achieving healthy, sustainable, resilient, just, and equitable food systems without leaving anyone behind.
 
-  Eu2025SdgIndicator:
-    title: EU SDG indicators
-    description: Indicators of the 2025 edition of the EU sustainable development goals (SDG) monitoring report.
+  SdgTarget:
+    title: UN SDG targets
+    description: Targets from the United Nations Sustainable Development Goals (SDGs).
     see_also:
-      - https://ec.europa.eu/eurostat/web/sdi/quality
-      - https://ec.europa.eu/eurostat/documents/276524/16797281/EU-SDG-indicator-review-report-2025.pdf
+      - https://unstats.un.org/sdgs/indicators/indicators-list/
     permissible_values:
-      EU_SDG_01_10:
-      EU_SDG_01_10a:
-      EU_SDG_01_40:
-      EU_SDG_02_10:
-      EU_SDG_02_20:
-      EU_SDG_02_30:
-      EU_SDG_02_40:
-      EU_SDG_02_60:
-      EU_SDG_02_53:
-      EU_SDG_08_10:
-      EU_SDG_06_40:
-      EU_SDG_06_60:
-      EU_SDG_08_30:
-      EU_SDG_15_42:
-      EU_SDG_15_50:
+      SDG_1:
+        title: "SDG 1"
+        description: ""
+      SDG_1_4:
+        title: "SDG 1.4"
+        description: ""
+      SDG_2:
+        title: "SDG 2"
+        description: ""
+      SDG_2_1:
+        title: "SDG 2.1"
+        description: ""
+      SDG_2_2:
+        title: "SDG 2.2"
+        description: ""
+      SDG_2_3:
+        title: "SDG 2.3"
+        description: ""
+      SDG_2_4:
+        title: "SDG 2.4"
+        description: ""
+      SDG_2_5:
+        title: "SDG 2.5"
+        description: ""
+      SDG_2_a:
+        title: "SDG 2a"
+        description: ""
+      SDG_3:
+        title: "SDG 3"
+        description: ""
+      SDG_3_4:
+        title: "SDG 3.4"
+        description: ""
+      SDG_3_9:
+        title: "SDG 3.9"
+        description: ""
+      SDG_3_d:
+        title: "SDG 3.d"
+        description: ""
+      SDG_4_4:
+        title: "SDG 4.4"
+        description: ""
+      SDG_5:
+        title: "SDG 5"
+        description: ""
+      SDG_5_a:
+        title: "SDG 5a"
+        description: ""
+      SDG_5_5:
+        title: "SDG 5.5"
+        description: ""
+      SDG_6:
+        title: "SDG 6"
+        description: ""
+      SDG_6_3:
+        title: "SDG 6.3"
+        description: ""
+      SDG_6_4:
+        title: "SDG 6.4"
+        description: ""
+      SDG_6_6:
+        title: "SDG 6.6"
+        description: ""
+      SDG_7:
+        title: "SDG 7"
+        description: ""
+      SDG_7_2:
+        title: "SDG 7.2"
+        description: ""
+      SDG_7_3:
+        title: "SDG 7.3"
+        description: ""
+      SDG_8:
+        title: "SDG 8"
+        description: ""
+      SDG_8_2:
+        title: "SDG 8.2"
+        description: ""
+      SDG_8_3:
+        title: "SDG 8.3"
+        description: ""
+      SDG_8_4:
+        title: "SDG 8.4"
+        description: ""
+      SDG_9:
+        title: "SDG 9"
+        description: ""
+      SDG_9_4:
+        title: "SDG 9.4"
+        description: ""
+      SDG_10:
+        title: "SDG 10"
+        description: ""
+      SDG_10_2:
+        title: "SDG 10.2"
+        description: ""
+      SDG_10_3:
+        title: "SDG 10.3"
+        description: ""
+      SDG_11:
+        title: "SDG 11"
+        description: ""
+      SDG_11_5:
+        title: "SDG 11.5"
+        description: ""
+      SDG_12:
+        title: "SDG 12"
+        description: ""
+      SDG_12_2:
+        title: "SDG 12.2"
+        description: ""
+      SDG_12_3:
+        title: "SDG 12.3"
+        description: ""
+      SDG_12_4:
+        title: "SDG 12.4"
+        description: ""
+      SDG_12_5:
+        title: "SDG 12.5"
+        description: ""
+      SDG_12_6:
+        title: "SDG 12.6"
+        description: ""
+      SDG_12_8:
+        title: "SDG 12.8"
+        description: ""
+      SDG_13:
+        title: "SDG 13"
+        description: ""
+      SDG_13_1:
+        title: "SDG 13.1"
+        description: ""
+      SDG_13_2:
+        title: "SDG 13.2"
+        description: ""
+      SDG_13_3:
+        title: "SDG 13.3"
+        description: ""
+      SDG_13_a:
+        title: "SDG 13.a"
+        description: ""
+      SDG_14_2:
+        title: "SDG 14.2"
+        description: ""
+      SDG_15_1:
+        title: "SDG 15.1"
+        description: ""
+      SDG_15_3:
+        title: "SDG 15.3"
+        description: ""
+      SDG_15_5:
+        title: "SDG 15.5"
+        description: ""
+      SDG_15_a:
+        title: "SDG 15.a"
+        description: ""
+      SDG_16:
+        title: "SDG 16"
+        description: ""
+      SDG_17:
+        title: "SDG 17"
+        description: ""
 
   ReferenceType:
     title: Reference types

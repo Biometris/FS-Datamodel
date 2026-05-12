@@ -27,12 +27,12 @@ nav:
     - Food demand activity types: model/FoodDemandActivityType.md
     - Food system driving forces: model/FoodSystemDrivingForce.md
     - Food system responses/policies: model/FoodSystemResponsePolicy.md
+    - SDG targets: model/SdgTarget.md
     - Sustainability dimensions: model/SustainabilityDimension.md
     - Sustainability outcome types: model/FoodSystemOutcomeType.md
     - Supply chain components: model/SupplyChainComponentType.md
     - Transition domains: model/TransitionDomain.md
     - Units of measurement: model/IndicatorMeasurementUnit.md
-    - EU SDG indicators: model/Eu2025SdgIndicator.md
   - Downloads: downloads.md
 docs_dir: docs
 site_url: https://biometris.github.io/FS-Datamodel

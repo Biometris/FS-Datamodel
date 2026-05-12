@@ -1,5 +1,5 @@
 - id: Eurostat_AgriculturalRealFactorIncomePerAnnualWorkUnitAwuSd
-  name: Eurostat-Agricultural real factor income per annual work unit (AWU) (sdg_02_20)
+  name: Eurostat-Agricultural real factor income per annual work unit (AWU)
   description: ''
   in_database: Eurostat
   measures_indicator: FSI_0000
@@ -65,7 +65,7 @@
   spatial_granularity: Country
   spatial_scope: Eu
 - id: Eurostat_GovernmentSupportToAgriculturalResearchAndDevelopm
-  name: Eurostat-Government support to agricultural research and development (sdg_02_30)
+  name: Eurostat-Government support to agricultural research and development
   description: ''
   in_database: Eurostat
   measures_indicator: FSI_0006
@@ -75,8 +75,8 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Eurostat_RealGdpPerCapitaSdg0810
-  name: Eurostat-Real GDP per capita (sdg_08_10)
+- id: Eurostat_RealGdpPerCapita
+  name: Eurostat-Real GDP per capita
   description: ''
   in_database: Eurostat
   measures_indicator: FSI_0007
@@ -317,8 +317,8 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Eurostat_AreaAtRiskOfSevereSoilErosionByWaterSdg1550
-  name: Eurostat-Area at risk of severe soil erosion by water (sdg_15_50)
+- id: Eurostat_AreaAtRiskOfSevereSoilErosionByWater
+  name: Eurostat-Area at risk of severe soil erosion by water
   description: ''
   in_database: Eurostat
   measures_indicator: FSI_0029
@@ -328,8 +328,8 @@
   time_granularity: Other
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Eurostat_WaterExploitationIndexPlusWeiSdg0660
-  name: Eurostat-Water exploitation index, plus (WEI+) (sdg_06_60)
+- id: Eurostat_WaterExploitationIndexPlusWei
+  name: Eurostat-Water exploitation index, plus (WEI+)
   description: ''
   in_database: Eurostat
   measures_indicator: FSI_0030
@@ -460,8 +460,8 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Eurostat_AreaUnderOrganicFarmingSdg0240
-  name: Eurostat-Area under organic farming (sdg_02_40)
+- id: Eurostat_AreaUnderOrganicFarming
+  name: Eurostat-Area under organic farming
   description: ''
   in_database: Eurostat
   measures_indicator: FSI_0042
@@ -570,8 +570,8 @@
   time_granularity: Other
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Eurostat_AmmoniaEmissionsFromAgricultureSdg0260
-  name: Eurostat-Ammonia emissions from agriculture (sdg_02_60)
+- id: Eurostat_AmmoniaEmissionsFromAgriculture
+  name: Eurostat-Ammonia emissions from agriculture
   description: ''
   in_database: Eurostat
   measures_indicator: FSI_0052
@@ -702,8 +702,8 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Eurostat_UseAndRiskOfChemicalPesticidesSdg0253
-  name: Eurostat-Use and risk of chemical pesticides (sdg_02_53)
+- id: Eurostat_UseAndRiskOfChemicalPesticides
+  name: Eurostat-Use and risk of chemical pesticides
   description: ''
   in_database: Eurostat
   measures_indicator: FSI_0064
@@ -834,8 +834,8 @@
   time_granularity: Other
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Eurostat_DroughtImpactAreaOnEcosystemsSdg1542
-  name: Eurostat-Drought impact area on ecosystems (sdg_15_42)
+- id: Eurostat_DroughtImpactAreaOnEcosystems
+  name: Eurostat-Drought impact area on ecosystems
   description: ''
   in_database: Eurostat
   measures_indicator: FSI_0076
@@ -1131,8 +1131,8 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Eurostat_ObesityRateByBodyMassIndexBmiSdg0210
-  name: Eurostat-Obesity rate by body mass index (BMI) (sdg_02_10)
+- id: Eurostat_ObesityRateByBodyMassIndexBmi
+  name: Eurostat-Obesity rate by body mass index (BMI)
   description: ''
   in_database: Eurostat
   measures_indicator: FSI_0103
@@ -1461,8 +1461,8 @@
   time_granularity: Other
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Eurostat_NitrateInGroundwaterSdg0640
-  name: Eurostat-Nitrate in groundwater (sdg_06_40)
+- id: Eurostat_NitrateInGroundwater
+  name: Eurostat-Nitrate in groundwater
   description: ''
   in_database: Eurostat
   measures_indicator: FSI_0137
@@ -1803,7 +1803,7 @@
   spatial_granularity: Country
   spatial_scope: Eu
 - id: Eurostat_PersonsLivingInHouseholdsWithVeryLowWorkIntensityB
-  name: Eurostat-Persons living in households with very low work intensity, by age group (sdg_01_40)
+  name: Eurostat-Persons living in households with very low work intensity, by age group
   description: ''
   in_database: Eurostat
   measures_indicator: FSI_0172
@@ -1813,8 +1813,8 @@
   time_granularity: Other
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Eurostat_EmploymentRateBySexSdg0830
-  name: Eurostat-Employment rate by sex (sdg_08_30)
+- id: Eurostat_EmploymentRateBySex
+  name: Eurostat-Employment rate by sex
   description: ''
   in_database: Eurostat
   measures_indicator: FSI_0173
@@ -1857,8 +1857,8 @@
   time_granularity: Yearly
   spatial_granularity: Country
   spatial_scope: Eu
-- id: Eurostat_PersonsAtRiskOfPovertyOrSocialExclusionSdg0110
-  name: Eurostat-Persons at risk of poverty or social exclusion (sdg_01_10)
+- id: Eurostat_PersonsAtRiskOfPovertyOrSocialExclusion
+  name: Eurostat-Persons at risk of poverty or social exclusion
   description: ''
   in_database: Eurostat
   measures_indicator: FSI_0177
@@ -1880,7 +1880,7 @@
   spatial_granularity: Country
   spatial_scope: Eu
 - id: Eurostat_PersonsAtRiskOfPovertyOrSocialExclusionByDegreeOfU
-  name: Eurostat-Persons at risk of poverty or social exclusion by degree of urbanisation (sdg_01_10a) (broken down by Cities, Towns and suburbs and Rural areas)
+  name: Eurostat-Persons at risk of poverty or social exclusion by degree of urbanisation (broken down by Cities, Towns and suburbs and Rural areas)
   description: ''
   in_database: Eurostat
   measures_indicator: FSI_0179
