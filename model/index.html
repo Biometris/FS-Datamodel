@@ -301,6 +301,56 @@
 </ul>
 </nav>
 </li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Indicator scores
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_9_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_9">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Indicator scores
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../indicator_scores/">
+<span class="md-ellipsis">
+    
+  
+    Scores per indicator
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../indicator_scores_by_category/">
+<span class="md-ellipsis">
+    
+  
+    Scores by category
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../references/">
 <span class="md-ellipsis">
@@ -314,8 +364,8 @@
 </a>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_10" type="checkbox"/>
-<label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+<input class="md-nav__toggle md-toggle" id="__nav_11" type="checkbox"/>
+<label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
 <span class="md-ellipsis">
     
   
@@ -326,8 +376,8 @@
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_10_label" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_10">
+<nav aria-expanded="false" aria-labelledby="__nav_11_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_11">
 <span class="md-nav__icon md-icon"></span>
             
   
@@ -409,6 +459,18 @@
 </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="SdgTarget/">
+<span class="md-ellipsis">
+    
+  
+    SDG targets
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="SustainabilityDimension/">
 <span class="md-ellipsis">
     
@@ -462,18 +524,6 @@
     
   
     Units of measurement
-  
-
-    
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="Eu2025SdgIndicator/">
-<span class="md-ellipsis">
-    
-  
-    EU SDG indicators
   
 
     
@@ -566,17 +616,16 @@ Indicator {
     FoodDemandActivityType demand_activity_type  
     FoodSystemDrivingForce driving_force  
     FoodEnvironmentActivityType environment_activity_type  
-    Eu2025SdgIndicatorList eu2025_sdg_indicator_code  
     unit measurement_unit_description  
     IndicatorMeasurementUnitList measurement_units  
     narrative_text methodology_description  
     FoodSystemOutcomeType outcome_type  
+    SdgTargetList related_sdg_targets  
     FoodSystemResponsePolicy response_policy  
     FoodSupplyActivityType supply_activity_type  
     SupplyChainComponentTypeList supply_chain_component  
     SustainabilityDimension sustainability_dimension  
     SustainabilityImpactType sustainability_impact  
-    TransitionDomainList transition_domain_connections  
     iri_type iri  
 }
 IndicatorCategory {
@@ -599,6 +648,10 @@ IndicatorCriterion {
     narrative_text description  
     iri_type iri  
 }
+IndicatorCriterionScore {
+    narrative_text rationale  
+    ScoreCategory score  
+}
 IndicatorDataCollectionDetails {
     iri_type data_link  
     date_or_datetime newest_datapoint  
@@ -619,10 +672,6 @@ IndicatorDatapoint {
     unit has_unit  
     iri_type iri  
 }
-IndicatorcriteriaScore {
-    narrative_text comment  
-    ScoreCategory score  
-}
 Reference {
     narrative_text comment  
     iri_type link  
@@ -635,13 +684,13 @@ Reference {
 
 Indicator ||--|| IndicatorCategory : "has_category"
 IndicatorCategory ||--}o Reference : "referenced_in"
+IndicatorCriterionScore ||--|o Indicator : "relates_to_indicator"
+IndicatorCriterionScore ||--|o IndicatorCriterion : "scores_criterion"
 IndicatorDataCollectionDetails ||--|| Database : "in_database"
 IndicatorDataCollectionDetails ||--|| Indicator : "measures_indicator"
 IndicatorDataCollectionDetails ||--}o Reference : "referenced_in"
 IndicatorDatapoint ||--|| Indicator : "measurement_of"
 IndicatorDatapoint ||--|| IndicatorDataCollectionDetails : "part_of_collection"
-IndicatorcriteriaScore ||--|o Indicator : "score_for_indicator"
-IndicatorcriteriaScore ||--|o IndicatorCriterion : "scores_criterion"
 
 </div>
 <h2 id="classes">Classes</h2>
@@ -670,13 +719,13 @@ IndicatorcriteriaScore ||--|o IndicatorCriterion : "scores_criterion"
 <td>Class</td>
 </tr>
 <tr>
-<td><a href="IndicatorcriteriaScore/">Indicator criterion score</a></td>
-<td>A score assigned to an indicator based on a specific selection criterion.</td>
+<td><a href="IndicatorCriterion/">Indicator criterion</a></td>
+<td>Criterion used for indicator selection.</td>
 <td>Class</td>
 </tr>
 <tr>
-<td><a href="IndicatorCriterion/">Indicator criterion</a></td>
-<td>Criterion used for indicator selection.</td>
+<td><a href="IndicatorCriterionScore/">Indicator criterion score</a></td>
+<td>A score assigned to an indicator based on a specific selection criterion.</td>
 <td>Class</td>
 </tr>
 <tr>
@@ -690,13 +739,18 @@ IndicatorcriteriaScore ||--|o IndicatorCriterion : "scores_criterion"
 <td>Class</td>
 </tr>
 <tr>
+<td><a href="IndicatorTransitionDomainConnection/">Alignment of an indicator to a transition domain</a></td>
+<td>alignment of an indicator to a transition domain.</td>
+<td>Class</td>
+</tr>
+<tr>
 <td><a href="QuantityValue/">Quantity value</a></td>
 <td>A value of an attribute that is quantitative and measurable, expressed as a combination of a unit and a numeric value.</td>
 <td>Class</td>
 </tr>
 <tr>
 <td><a href="Reference/">Reference</a></td>
-<td>A reference to a publication, database or dataset.</td>
+<td>a reference to a publication, database or dataset.</td>
 <td>Class</td>
 </tr>
 <tr>
@@ -719,11 +773,6 @@ IndicatorcriteriaScore ||--|o IndicatorCriterion : "scores_criterion"
 <tr>
 <td><a href="CriterionCategory/">Criterion category</a></td>
 <td>Category of an indicator selection criterion.</td>
-<td>Enum</td>
-</tr>
-<tr>
-<td><a href="Eu2025SdgIndicator/">Eu sdg indicators</a></td>
-<td>Indicators of the 2025 edition of the EU sustainable development goals (SDG) monitoring report.</td>
 <td>Enum</td>
 </tr>
 <tr>
@@ -774,6 +823,11 @@ IndicatorcriteriaScore ||--|o IndicatorCriterion : "scores_criterion"
 <tr>
 <td><a href="ScoreCategory/">Score category</a></td>
 <td>Score category.</td>
+<td>Enum</td>
+</tr>
+<tr>
+<td><a href="SdgTarget/">Un sdg targets</a></td>
+<td>Targets from the United Nations Sustainable Development Goals (SDGs).</td>
 <td>Enum</td>
 </tr>
 <tr>

@@ -69,27 +69,41 @@
             "title": "Database",
             "type": "object"
         },
-        "Eu2025SdgIndicator": {
-            "description": "Indicators of the 2025 edition of the EU sustainable development goals (SDG) monitoring report.",
-            "enum": [
-                "EU_SDG_01_10",
-                "EU_SDG_01_10a",
-                "EU_SDG_01_40",
-                "EU_SDG_02_10",
-                "EU_SDG_02_20",
-                "EU_SDG_02_30",
-                "EU_SDG_02_40",
-                "EU_SDG_02_60",
-                "EU_SDG_02_53",
-                "EU_SDG_08_10",
-                "EU_SDG_06_40",
-                "EU_SDG_06_60",
-                "EU_SDG_08_30",
-                "EU_SDG_15_42",
-                "EU_SDG_15_50"
+        "Entity": {
+            "additionalProperties": false,
+            "description": "Root class for all things and informational relationships, real or imagined.",
+            "properties": {
+                "description": {
+                    "description": "A human-readable description of an entity.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "A unique identifier for an entity.",
+                    "type": "string"
+                },
+                "iri": {
+                    "description": "An IRI for an entity. This is determined by the id using expansion rules.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "description": "A human-readable name for an attribute or entity.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "id"
             ],
-            "title": "Eu2025SdgIndicator",
-            "type": "string"
+            "title": "Entity",
+            "type": "object"
         },
         "FoodDemandActivityType": {
             "description": "Addresses consumer behaviour and consumer characteristics, incl. consumer preferences. Consumer characteristics can refer to attributes such as knowledge, available time, resources (purchasing power), age, sex, culture, religion, etc.",
@@ -134,7 +148,8 @@
                 "FoodEnvironment",
                 "FoodDemand",
                 "UseNaturalResources",
-                "ConsumptionAndDiets"
+                "ConsumptionAndDiets",
+                "WasteByProductsRecycling"
             ],
             "title": "FoodSystemActivityType",
             "type": "string"
@@ -210,16 +225,6 @@
                     "$ref": "#/$defs/FoodEnvironmentActivityType",
                     "description": "A reference to the food environment activity that is the subject of this indicator's measurement."
                 },
-                "eu2025_sdg_indicator_code": {
-                    "description": "Indicates whether the indicator is included in the 2025 edition of the EU Sustainable Development Goals indicator set, and provides the corresponding EU SDG indicator code.",
-                    "items": {
-                        "$ref": "#/$defs/Eu2025SdgIndicator"
-                    },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
-                },
                 "has_category": {
                     "description": "Group of indicators that share common characteristics, functions, or measurement purposes within a monitoring or evaluation framework.",
                     "type": "string"
@@ -270,6 +275,16 @@
                     "$ref": "#/$defs/FoodSystemOutcomeType",
                     "description": "Reference to the type of the outcome measured by the indicator."
                 },
+                "related_sdg_targets": {
+                    "description": "Indicates which of the Sustainable Development Goal (SDG) targets the indicator measures/relates to.",
+                    "items": {
+                        "$ref": "#/$defs/SdgTarget"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "response_policy": {
                     "$ref": "#/$defs/FoodSystemResponsePolicy",
                     "description": "A reference to the food system response/policy that is the subject of this indicator's measurement."
@@ -295,16 +310,6 @@
                 "sustainability_impact": {
                     "$ref": "#/$defs/SustainabilityImpactType",
                     "description": "Description of the sustainability impact the indicator measures."
-                },
-                "transition_domain_connections": {
-                    "description": "Reference to the transition domains that indicator connects to.",
-                    "items": {
-                        "$ref": "#/$defs/TransitionDomain"
-                    },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
                 }
             },
             "required": [
@@ -437,6 +442,39 @@
                 "id"
             ],
             "title": "IndicatorCriterion",
+            "type": "object"
+        },
+        "IndicatorCriterionScore": {
+            "additionalProperties": false,
+            "description": "A score assigned to an indicator based on a specific selection criterion.",
+            "properties": {
+                "rationale": {
+                    "description": "Justification for the score assigned to an indicator an evaluation criterion.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "relates_to_indicator": {
+                    "description": "Associated indicator.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "score": {
+                    "$ref": "#/$defs/ScoreCategory",
+                    "description": "Quality score for indicator alignment with indicator criteria and transition domains."
+                },
+                "scores_criterion": {
+                    "description": "Indicator criterion.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "title": "IndicatorCriterionScore",
             "type": "object"
         },
         "IndicatorDataCollectionDetails": {
@@ -1631,12 +1669,12 @@
             "title": "IndicatorMeasurementUnit",
             "type": "string"
         },
-        "IndicatorcriteriaScore": {
+        "IndicatorTransitionDomainConnection": {
             "additionalProperties": false,
-            "description": "A score assigned to an indicator based on a specific selection criterion.",
+            "description": "alignment of an indicator to a transition domain.",
             "properties": {
-                "comment": {
-                    "description": "A comment about an entity.",
+                "relates_to_indicator": {
+                    "description": "Associated indicator.",
                     "type": [
                         "string",
                         "null"
@@ -1644,24 +1682,13 @@
                 },
                 "score": {
                     "$ref": "#/$defs/ScoreCategory",
-                    "description": "score for an indicator selection criterion for an indicator."
+                    "description": "Quality score for indicator alignment with indicator criteria and transition domains."
                 },
-                "score_for_indicator": {
-                    "description": "Indicator.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
-                },
-                "scores_criterion": {
-                    "description": "Indicator criterion.",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                "transition_domain": {
+                    "$ref": "#/$defs/TransitionDomain"
                 }
             },
-            "title": "IndicatorcriteriaScore",
+            "title": "IndicatorTransitionDomainConnection",
             "type": "object"
         },
         "QuantityValue": {
@@ -1716,7 +1743,7 @@
         },
         "Reference": {
             "additionalProperties": false,
-            "description": "A reference to a publication, database or dataset.",
+            "description": "a reference to a publication, database or dataset.",
             "properties": {
                 "comment": {
                     "description": "A comment about an entity.",
@@ -1786,6 +1813,67 @@
                 "Strong"
             ],
             "title": "ScoreCategory",
+            "type": "string"
+        },
+        "SdgTarget": {
+            "description": "Targets from the United Nations Sustainable Development Goals (SDGs).",
+            "enum": [
+                "SDG_1",
+                "SDG_1_4",
+                "SDG_2",
+                "SDG_2_1",
+                "SDG_2_2",
+                "SDG_2_3",
+                "SDG_2_4",
+                "SDG_2_5",
+                "SDG_2_a",
+                "SDG_3",
+                "SDG_3_4",
+                "SDG_3_9",
+                "SDG_3_d",
+                "SDG_4_4",
+                "SDG_5",
+                "SDG_5_a",
+                "SDG_5_5",
+                "SDG_6",
+                "SDG_6_3",
+                "SDG_6_4",
+                "SDG_6_6",
+                "SDG_7",
+                "SDG_7_2",
+                "SDG_7_3",
+                "SDG_8",
+                "SDG_8_2",
+                "SDG_8_3",
+                "SDG_8_4",
+                "SDG_9",
+                "SDG_9_4",
+                "SDG_10",
+                "SDG_10_2",
+                "SDG_10_3",
+                "SDG_11",
+                "SDG_11_5",
+                "SDG_12",
+                "SDG_12_2",
+                "SDG_12_3",
+                "SDG_12_4",
+                "SDG_12_5",
+                "SDG_12_6",
+                "SDG_12_8",
+                "SDG_13",
+                "SDG_13_1",
+                "SDG_13_2",
+                "SDG_13_3",
+                "SDG_13_a",
+                "SDG_14_2",
+                "SDG_15_1",
+                "SDG_15_3",
+                "SDG_15_5",
+                "SDG_15_a",
+                "SDG_16",
+                "SDG_17"
+            ],
+            "title": "SdgTarget",
             "type": "string"
         },
         "SpatialGranularity": {
@@ -1913,7 +2001,7 @@
     "$id": "https://w3id.org/linkml/examples/fsi",
     "$schema": "https://json-schema.org/draft/2019-09/schema",
     "additionalProperties": true,
-    "metamodel_version": "1.7.0",
+    "metamodel_version": "1.11.0",
     "title": "food_system_indicators",
     "type": "object",
     "version": null

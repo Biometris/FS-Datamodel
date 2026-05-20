@@ -2,332 +2,332 @@
   [
     "IntegrationFoodSystemFramework",
     "FSI_0000",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0000",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0000",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0000",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0000",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0000",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0000",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0000",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0000",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0000",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0000",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0001",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0001",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0001",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0001",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0001",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0001",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0001",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0001",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0001",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0001",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0001",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0002",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0002",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0002",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0002",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0002",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0002",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0002",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0002",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0002",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0002",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0002",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0003",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0003",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0003",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0003",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0003",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0003",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0003",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0003",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0003",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0003",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0003",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0170",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0170",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0170",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0170",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0170",
-    null
+    2
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0170",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0170",
-    null
+    1
   ],
   [
     "DataAccessibility",
     "FSI_0170",
-    null
+    2
   ],
   [
     "DataInteroperability",
     "FSI_0170",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0170",
-    null
+    1
   ],
   [
     "Timeliness",
     "FSI_0170",
-    null
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0005",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0005",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0005",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0005",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0005",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0005",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0005",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0005",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0005",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0005",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0005",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
@@ -337,52 +337,52 @@
   [
     "GoalAlignment",
     "FSI_0006",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0006",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0006",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0006",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0006",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0006",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0006",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0006",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0006",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0006",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
@@ -392,52 +392,52 @@
   [
     "GoalAlignment",
     "FSI_0007",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0007",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0007",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0007",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0007",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0007",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0007",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0007",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0007",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0007",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
@@ -447,52 +447,52 @@
   [
     "GoalAlignment",
     "FSI_0008",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0008",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0008",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0008",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0008",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0008",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0008",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0008",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0008",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0008",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
@@ -502,382 +502,382 @@
   [
     "GoalAlignment",
     "FSI_0009",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0009",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0009",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0009",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0009",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0009",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0009",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0009",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0009",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0009",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0010",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0010",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0010",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0010",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0010",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0010",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0010",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0010",
-    null
+    2
   ],
   [
     "DataInteroperability",
     "FSI_0010",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0010",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0010",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0011",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0011",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0011",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0011",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0011",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0011",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0011",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0011",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0011",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0011",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0011",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0012",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0012",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0012",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0012",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0012",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0012",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0012",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0012",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0012",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0012",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0012",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0013",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0013",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0013",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0013",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0013",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0013",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0013",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0013",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0013",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0013",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0013",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0014",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0014",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0014",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0014",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0014",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0014",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0014",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0014",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0014",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0014",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0014",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0015",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0015",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0015",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0015",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0015",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0015",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0015",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0015",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0015",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0015",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0015",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
@@ -887,52 +887,52 @@
   [
     "GoalAlignment",
     "FSI_0016",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0016",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0016",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0016",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0016",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0016",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0016",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0016",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0016",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0016",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
@@ -942,52 +942,52 @@
   [
     "GoalAlignment",
     "FSI_0017",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0017",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0017",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0017",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0017",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0017",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0017",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0017",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0017",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0017",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
@@ -997,52 +997,52 @@
   [
     "GoalAlignment",
     "FSI_0018",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0018",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0018",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0018",
-    null
+    2
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0018",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0018",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0018",
-    null
+    2
   ],
   [
     "DataInteroperability",
     "FSI_0018",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0018",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0018",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
@@ -1052,52 +1052,52 @@
   [
     "GoalAlignment",
     "FSI_0019",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0019",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0019",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0019",
-    null
+    2
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0019",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0019",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0019",
-    null
+    2
   ],
   [
     "DataInteroperability",
     "FSI_0019",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0019",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0019",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
@@ -1107,52 +1107,52 @@
   [
     "GoalAlignment",
     "FSI_0020",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0020",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0020",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0020",
-    null
+    2
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0020",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0020",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0020",
-    null
+    2
   ],
   [
     "DataInteroperability",
     "FSI_0020",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0020",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0020",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
@@ -1162,52 +1162,52 @@
   [
     "GoalAlignment",
     "FSI_0021",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0021",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0021",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0021",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0021",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0021",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0021",
-    null
+    2
   ],
   [
     "DataInteroperability",
     "FSI_0021",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0021",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0021",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
@@ -1217,52 +1217,52 @@
   [
     "GoalAlignment",
     "FSI_0022",
-    null
+    2
   ],
   [
     "TransitionMonitoring",
     "FSI_0022",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0022",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0022",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0022",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0022",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0022",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0022",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0022",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0022",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
@@ -1272,52 +1272,52 @@
   [
     "GoalAlignment",
     "FSI_0023",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0023",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0023",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0023",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0023",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0023",
-    null
+    2
   ],
   [
     "DataAccessibility",
     "FSI_0023",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0023",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0023",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0023",
-    null
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
@@ -1327,52 +1327,52 @@
   [
     "GoalAlignment",
     "FSI_0024",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0024",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0024",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0024",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0024",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0024",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0024",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0024",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0024",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0024",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
@@ -1382,52 +1382,52 @@
   [
     "GoalAlignment",
     "FSI_0025",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0025",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0025",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0025",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0025",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0025",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0025",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0025",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0025",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0025",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
@@ -1437,52 +1437,52 @@
   [
     "GoalAlignment",
     "FSI_0026",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0026",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0026",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0026",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0026",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0026",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0026",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0026",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0026",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0026",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
@@ -1492,52 +1492,52 @@
   [
     "GoalAlignment",
     "FSI_0027",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0027",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0027",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0027",
-    null
+    2
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0027",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0027",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0027",
-    null
+    2
   ],
   [
     "DataInteroperability",
     "FSI_0027",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0027",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0027",
-    null
+    2
   ],
   [
     "IntegrationFoodSystemFramework",
@@ -1547,9016 +1547,9016 @@
   [
     "GoalAlignment",
     "FSI_0028",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0028",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0028",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0028",
-    null
+    2
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0028",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0028",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0028",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0028",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0028",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0028",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0029",
-    null
+    1
   ],
   [
     "GoalAlignment",
     "FSI_0029",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0029",
-    null
+    1
   ],
   [
     "DecisionUsefulness",
     "FSI_0029",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0029",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0029",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0029",
-    null
+    2
   ],
   [
     "DataAccessibility",
     "FSI_0029",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0029",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0029",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0029",
-    null
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0030",
-    null
+    1
   ],
   [
     "GoalAlignment",
     "FSI_0030",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0030",
-    null
+    1
   ],
   [
     "DecisionUsefulness",
     "FSI_0030",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0030",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0030",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0030",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0030",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0030",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0030",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0030",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0031",
-    null
+    1
   ],
   [
     "GoalAlignment",
     "FSI_0031",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0031",
-    null
+    1
   ],
   [
     "DecisionUsefulness",
     "FSI_0031",
-    null
+    2
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0031",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0031",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0031",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0031",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0031",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0031",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0031",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0032",
-    null
+    1
   ],
   [
     "GoalAlignment",
     "FSI_0032",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0032",
-    null
+    1
   ],
   [
     "DecisionUsefulness",
     "FSI_0032",
-    null
+    2
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0032",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0032",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0032",
-    null
+    2
   ],
   [
     "DataAccessibility",
     "FSI_0032",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0032",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0032",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0032",
-    null
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0033",
-    null
+    1
   ],
   [
     "GoalAlignment",
     "FSI_0033",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0033",
-    null
+    1
   ],
   [
     "DecisionUsefulness",
     "FSI_0033",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0033",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0033",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0033",
-    null
+    2
   ],
   [
     "DataAccessibility",
     "FSI_0033",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0033",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0033",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0033",
-    null
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0034",
-    null
+    1
   ],
   [
     "GoalAlignment",
     "FSI_0034",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0034",
-    null
+    1
   ],
   [
     "DecisionUsefulness",
     "FSI_0034",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0034",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0034",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0034",
-    null
+    2
   ],
   [
     "DataAccessibility",
     "FSI_0034",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0034",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0034",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0034",
-    null
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0035",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0035",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0035",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0035",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0035",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0035",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0035",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0035",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0035",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0035",
-    null
+    1
   ],
   [
     "Timeliness",
     "FSI_0035",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0036",
-    null
+    1
   ],
   [
     "GoalAlignment",
     "FSI_0036",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0036",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0036",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0036",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0036",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0036",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0036",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0036",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0036",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0036",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0037",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0037",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0037",
-    null
+    1
   ],
   [
     "DecisionUsefulness",
     "FSI_0037",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0037",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0037",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0037",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0037",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0037",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0037",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0037",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0038",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0038",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0038",
-    null
+    1
   ],
   [
     "DecisionUsefulness",
     "FSI_0038",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0038",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0038",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0038",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0038",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0038",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0038",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0038",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0039",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0039",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0039",
-    null
+    1
   ],
   [
     "DecisionUsefulness",
     "FSI_0039",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0039",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0039",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0039",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0039",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0039",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0039",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0039",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0040",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0040",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0040",
-    null
+    1
   ],
   [
     "DecisionUsefulness",
     "FSI_0040",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0040",
-    null
+    2
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0040",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0040",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0040",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0040",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0040",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0040",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0041",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0041",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0041",
-    null
+    1
   ],
   [
     "DecisionUsefulness",
     "FSI_0041",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0041",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0041",
-    null
+    2
   ],
   [
     "DataAvailability",
     "FSI_0041",
-    null
+    1
   ],
   [
     "DataAccessibility",
     "FSI_0041",
-    null
+    1
   ],
   [
     "DataInteroperability",
     "FSI_0041",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0041",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0041",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0042",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0042",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0042",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0042",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0042",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0042",
-    null
+    2
   ],
   [
     "DataAvailability",
     "FSI_0042",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0042",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0042",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0042",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0042",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0043",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0043",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0043",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0043",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0043",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0043",
-    null
+    2
   ],
   [
     "DataAvailability",
     "FSI_0043",
-    null
+    2
   ],
   [
     "DataAccessibility",
     "FSI_0043",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0043",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0043",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0043",
-    null
+    2
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0044",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0044",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0044",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0044",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0044",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0044",
-    null
+    2
   ],
   [
     "DataAvailability",
     "FSI_0044",
-    null
+    2
   ],
   [
     "DataAccessibility",
     "FSI_0044",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0044",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0044",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0044",
-    null
+    2
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0045",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0045",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0045",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0045",
-    null
+    2
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0045",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0045",
-    null
+    2
   ],
   [
     "DataAvailability",
     "FSI_0045",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0045",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0045",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0045",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0045",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0046",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0046",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0046",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0046",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0046",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0046",
-    null
+    2
   ],
   [
     "DataAvailability",
     "FSI_0046",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0046",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0046",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0046",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0046",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0047",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0047",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0047",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0047",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0047",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0047",
-    null
+    2
   ],
   [
     "DataAvailability",
     "FSI_0047",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0047",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0047",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0047",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0047",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0048",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0048",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0048",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0048",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0048",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0048",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0048",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0048",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0048",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0048",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0048",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0049",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0049",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0049",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0049",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0049",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0049",
-    null
+    2
   ],
   [
     "DataAvailability",
     "FSI_0049",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0049",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0049",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0049",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0049",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0050",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0050",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0050",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0050",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0050",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0050",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0050",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0050",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0050",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0050",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0050",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0051",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0051",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0051",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0051",
-    null
+    2
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0051",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0051",
-    null
+    1
   ],
   [
     "DataAvailability",
     "FSI_0051",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0051",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0051",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0051",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0051",
-    null
+    2
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0052",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0052",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0052",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0052",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0052",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0052",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0052",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0052",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0052",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0052",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0052",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0053",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0053",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0053",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0053",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0053",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0053",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0053",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0053",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0053",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0053",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0053",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0054",
-    null
+    1
   ],
   [
     "GoalAlignment",
     "FSI_0054",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0054",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0054",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0054",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0054",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0054",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0054",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0054",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0054",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0054",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0055",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0055",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0055",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0055",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0055",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0055",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0055",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0055",
-    null
+    2
   ],
   [
     "DataInteroperability",
     "FSI_0055",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0055",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0055",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0056",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0056",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0056",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0056",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0056",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0056",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0056",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0056",
-    null
+    2
   ],
   [
     "DataInteroperability",
     "FSI_0056",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0056",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0056",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0057",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0057",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0057",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0057",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0057",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0057",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0057",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0057",
-    null
+    2
   ],
   [
     "DataInteroperability",
     "FSI_0057",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0057",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0057",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0058",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0058",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0058",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0058",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0058",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0058",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0058",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0058",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0058",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0058",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0058",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0059",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0059",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0059",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0059",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0059",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0059",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0059",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0059",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0059",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0059",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0059",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0060",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0060",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0060",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0060",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0060",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0060",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0060",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0060",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0060",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0060",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0060",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0061",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0061",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0061",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0061",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0061",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0061",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0061",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0061",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0061",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0061",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0061",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0062",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0062",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0062",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0062",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0062",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0062",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0062",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0062",
-    null
+    2
   ],
   [
     "DataInteroperability",
     "FSI_0062",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0062",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0062",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0063",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0063",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0063",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0063",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0063",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0063",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0063",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0063",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0063",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0063",
-    null
+    1
   ],
   [
     "Timeliness",
     "FSI_0063",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0064",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0064",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0064",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0064",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0064",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0064",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0064",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0064",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0064",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0064",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0064",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0065",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0065",
-    null
+    2
   ],
   [
     "TransitionMonitoring",
     "FSI_0065",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0065",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0065",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0065",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0065",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0065",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0065",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0065",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0065",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0066",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0066",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0066",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0066",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0066",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0066",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0066",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0066",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0066",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0066",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0066",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0067",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0067",
-    null
+    2
   ],
   [
     "TransitionMonitoring",
     "FSI_0067",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0067",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0067",
-    null
+    2
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0067",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0067",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0067",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0067",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0067",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0067",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0068",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0068",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0068",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0068",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0068",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0068",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0068",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0068",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0068",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0068",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0068",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0069",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0069",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0069",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0069",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0069",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0069",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0069",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0069",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0069",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0069",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0069",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0070",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0070",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0070",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0070",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0070",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0070",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0070",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0070",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0070",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0070",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0070",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0071",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0071",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0071",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0071",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0071",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0071",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0071",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0071",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0071",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0071",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0071",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0072",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0072",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0072",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0072",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0072",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0072",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0072",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0072",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0072",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0072",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0072",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0073",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0073",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0073",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0073",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0073",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0073",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0073",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0073",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0073",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0073",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0073",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0074",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0074",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0074",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0074",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0074",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0074",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0074",
-    null
+    1
   ],
   [
     "DataAccessibility",
     "FSI_0074",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0074",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0074",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0074",
-    null
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0075",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0075",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0075",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0075",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0075",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0075",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0075",
-    null
+    1
   ],
   [
     "DataAccessibility",
     "FSI_0075",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0075",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0075",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0075",
-    null
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0076",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0076",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0076",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0076",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0076",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0076",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0076",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0076",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0076",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0076",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0076",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0077",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0077",
-    null
+    2
   ],
   [
     "TransitionMonitoring",
     "FSI_0077",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0077",
-    null
+    2
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0077",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0077",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0077",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0077",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0077",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0077",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0077",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0078",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0078",
-    null
+    2
   ],
   [
     "TransitionMonitoring",
     "FSI_0078",
-    null
+    1
   ],
   [
     "DecisionUsefulness",
     "FSI_0078",
-    null
+    2
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0078",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0078",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0078",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0078",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0078",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0078",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0078",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0079",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0079",
-    null
+    2
   ],
   [
     "TransitionMonitoring",
     "FSI_0079",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0079",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0079",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0079",
-    null
+    2
   ],
   [
     "DataAvailability",
     "FSI_0079",
-    null
+    2
   ],
   [
     "DataAccessibility",
     "FSI_0079",
-    null
+    2
   ],
   [
     "DataInteroperability",
     "FSI_0079",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0079",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0079",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0080",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0080",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0080",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0080",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0080",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0080",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0080",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0080",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0080",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0080",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0080",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0081",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0081",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0081",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0081",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0081",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0081",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0081",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0081",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0081",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0081",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0081",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0082",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0082",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0082",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0082",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0082",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0082",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0082",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0082",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0082",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0082",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0082",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0083",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0083",
-    null
+    2
   ],
   [
     "TransitionMonitoring",
     "FSI_0083",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0083",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0083",
-    null
+    2
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0083",
-    null
+    2
   ],
   [
     "DataAvailability",
     "FSI_0083",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0083",
-    null
+    2
   ],
   [
     "DataInteroperability",
     "FSI_0083",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0083",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0083",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0084",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0084",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0084",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0084",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0084",
-    null
+    2
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0084",
-    null
+    2
   ],
   [
     "DataAvailability",
     "FSI_0084",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0084",
-    null
+    2
   ],
   [
     "DataInteroperability",
     "FSI_0084",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0084",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0084",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0085",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0085",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0085",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0085",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0085",
-    null
+    2
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0085",
-    null
+    2
   ],
   [
     "DataAvailability",
     "FSI_0085",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0085",
-    null
+    2
   ],
   [
     "DataInteroperability",
     "FSI_0085",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0085",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0085",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0086",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0086",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0086",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0086",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0086",
-    null
+    2
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0086",
-    null
+    2
   ],
   [
     "DataAvailability",
     "FSI_0086",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0086",
-    null
+    2
   ],
   [
     "DataInteroperability",
     "FSI_0086",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0086",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0086",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0087",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0087",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0087",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0087",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0087",
-    null
+    2
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0087",
-    null
+    2
   ],
   [
     "DataAvailability",
     "FSI_0087",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0087",
-    null
+    2
   ],
   [
     "DataInteroperability",
     "FSI_0087",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0087",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0087",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0088",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0088",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0088",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0088",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0088",
-    null
+    2
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0088",
-    null
+    2
   ],
   [
     "DataAvailability",
     "FSI_0088",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0088",
-    null
+    2
   ],
   [
     "DataInteroperability",
     "FSI_0088",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0088",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0088",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0089",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0089",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0089",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0089",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0089",
-    null
+    2
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0089",
-    null
+    2
   ],
   [
     "DataAvailability",
     "FSI_0089",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0089",
-    null
+    2
   ],
   [
     "DataInteroperability",
     "FSI_0089",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0089",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0089",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0090",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0090",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0090",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0090",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0090",
-    null
+    2
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0090",
-    null
+    2
   ],
   [
     "DataAvailability",
     "FSI_0090",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0090",
-    null
+    2
   ],
   [
     "DataInteroperability",
     "FSI_0090",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0090",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0090",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0091",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0091",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0091",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0091",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0091",
-    null
+    2
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0091",
-    null
+    2
   ],
   [
     "DataAvailability",
     "FSI_0091",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0091",
-    null
+    2
   ],
   [
     "DataInteroperability",
     "FSI_0091",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0091",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0091",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0092",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0092",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0092",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0092",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0092",
-    null
+    2
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0092",
-    null
+    2
   ],
   [
     "DataAvailability",
     "FSI_0092",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0092",
-    null
+    2
   ],
   [
     "DataInteroperability",
     "FSI_0092",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0092",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0092",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0093",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0093",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0093",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0093",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0093",
-    null
+    2
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0093",
-    null
+    2
   ],
   [
     "DataAvailability",
     "FSI_0093",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0093",
-    null
+    2
   ],
   [
     "DataInteroperability",
     "FSI_0093",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0093",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0093",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0094",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0094",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0094",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0094",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0094",
-    null
+    2
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0094",
-    null
+    2
   ],
   [
     "DataAvailability",
     "FSI_0094",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0094",
-    null
+    2
   ],
   [
     "DataInteroperability",
     "FSI_0094",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0094",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0094",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0095",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0095",
-    null
+    2
   ],
   [
     "TransitionMonitoring",
     "FSI_0095",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0095",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0095",
-    null
+    2
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0095",
-    null
+    2
   ],
   [
     "DataAvailability",
     "FSI_0095",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0095",
-    null
+    2
   ],
   [
     "DataInteroperability",
     "FSI_0095",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0095",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0095",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0096",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0096",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0096",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0096",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0096",
-    null
+    2
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0096",
-    null
+    2
   ],
   [
     "DataAvailability",
     "FSI_0096",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0096",
-    null
+    2
   ],
   [
     "DataInteroperability",
     "FSI_0096",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0096",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0096",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0097",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0097",
-    null
+    2
   ],
   [
     "TransitionMonitoring",
     "FSI_0097",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0097",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0097",
-    null
+    2
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0097",
-    null
+    2
   ],
   [
     "DataAvailability",
     "FSI_0097",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0097",
-    null
+    2
   ],
   [
     "DataInteroperability",
     "FSI_0097",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0097",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0097",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0098",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0098",
-    null
+    2
   ],
   [
     "TransitionMonitoring",
     "FSI_0098",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0098",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0098",
-    null
+    2
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0098",
-    null
+    2
   ],
   [
     "DataAvailability",
     "FSI_0098",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0098",
-    null
+    2
   ],
   [
     "DataInteroperability",
     "FSI_0098",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0098",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0098",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0099",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0099",
-    null
+    2
   ],
   [
     "TransitionMonitoring",
     "FSI_0099",
-    null
+    1
   ],
   [
     "DecisionUsefulness",
     "FSI_0099",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0099",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0099",
-    null
+    2
   ],
   [
     "DataAvailability",
     "FSI_0099",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0099",
-    null
+    2
   ],
   [
     "DataInteroperability",
     "FSI_0099",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0099",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0099",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0100",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0100",
-    null
+    2
   ],
   [
     "TransitionMonitoring",
     "FSI_0100",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0100",
-    null
+    2
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0100",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0100",
-    null
+    2
   ],
   [
     "DataAvailability",
     "FSI_0100",
-    null
+    2
   ],
   [
     "DataAccessibility",
     "FSI_0100",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0100",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0100",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0100",
-    null
+    2
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0101",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0101",
-    null
+    2
   ],
   [
     "TransitionMonitoring",
     "FSI_0101",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0101",
-    null
+    2
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0101",
-    null
+    2
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0101",
-    null
+    1
   ],
   [
     "DataAvailability",
     "FSI_0101",
-    null
+    1
   ],
   [
     "DataAccessibility",
     "FSI_0101",
-    null
+    2
   ],
   [
     "DataInteroperability",
     "FSI_0101",
-    null
+    1
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0101",
-    null
+    1
   ],
   [
     "Timeliness",
     "FSI_0101",
-    null
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0102",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0102",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0102",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0102",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0102",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0102",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0102",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0102",
-    null
+    2
   ],
   [
     "DataInteroperability",
     "FSI_0102",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0102",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0102",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0103",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0103",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0103",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0103",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0103",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0103",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0103",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0103",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0103",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0103",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0103",
-    null
+    2
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0104",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0104",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0104",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0104",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0104",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0104",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0104",
-    null
+    2
   ],
   [
     "DataAccessibility",
     "FSI_0104",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0104",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0104",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0104",
-    null
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0105",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0105",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0105",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0105",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0105",
-    null
+    2
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0105",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0105",
-    null
+    2
   ],
   [
     "DataAccessibility",
     "FSI_0105",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0105",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0105",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0105",
-    null
+    2
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0106",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0106",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0106",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0106",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0106",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0106",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0106",
-    null
+    2
   ],
   [
     "DataAccessibility",
     "FSI_0106",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0106",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0106",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0106",
-    null
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0107",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0107",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0107",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0107",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0107",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0107",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0107",
-    null
+    2
   ],
   [
     "DataAccessibility",
     "FSI_0107",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0107",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0107",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0107",
-    null
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0108",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0108",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0108",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0108",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0108",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0108",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0108",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0108",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0108",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0108",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0108",
-    null
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0109",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0109",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0109",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0109",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0109",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0109",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0109",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0109",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0109",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0109",
-    null
+    1
   ],
   [
     "Timeliness",
     "FSI_0109",
-    null
+    2
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0110",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0110",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0110",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0110",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0110",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0110",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0110",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0110",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0110",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0110",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0110",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0111",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0111",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0111",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0111",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0111",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0111",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0111",
-    null
+    2
   ],
   [
     "DataAccessibility",
     "FSI_0111",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0111",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0111",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0111",
-    null
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0112",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0112",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0112",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0112",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0112",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0112",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0112",
-    null
+    2
   ],
   [
     "DataAccessibility",
     "FSI_0112",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0112",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0112",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0112",
-    null
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0113",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0113",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0113",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0113",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0113",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0113",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0113",
-    null
+    2
   ],
   [
     "DataAccessibility",
     "FSI_0113",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0113",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0113",
-    null
+    1
   ],
   [
     "Timeliness",
     "FSI_0113",
-    null
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0114",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0114",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0114",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0114",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0114",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0114",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0114",
-    null
+    2
   ],
   [
     "DataAccessibility",
     "FSI_0114",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0114",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0114",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0114",
-    null
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0115",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0115",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0115",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0115",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0115",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0115",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0115",
-    null
+    2
   ],
   [
     "DataAccessibility",
     "FSI_0115",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0115",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0115",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0115",
-    null
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0116",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0116",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0116",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0116",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0116",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0116",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0116",
-    null
+    2
   ],
   [
     "DataAccessibility",
     "FSI_0116",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0116",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0116",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0116",
-    null
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0117",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0117",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0117",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0117",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0117",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0117",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0117",
-    null
+    2
   ],
   [
     "DataAccessibility",
     "FSI_0117",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0117",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0117",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0117",
-    null
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0118",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0118",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0118",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0118",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0118",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0118",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0118",
-    null
+    2
   ],
   [
     "DataAccessibility",
     "FSI_0118",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0118",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0118",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0118",
-    null
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0119",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0119",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0119",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0119",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0119",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0119",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0119",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0119",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0119",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0119",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0119",
-    null
+    2
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0123",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0123",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0123",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0123",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0123",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0123",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0123",
-    null
+    2
   ],
   [
     "DataAccessibility",
     "FSI_0123",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0123",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0123",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0123",
-    null
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
-    "FSI_0123",
-    null
+    "FSI_0195",
+    3
   ],
   [
     "GoalAlignment",
-    "FSI_0123",
-    null
+    "FSI_0195",
+    3
   ],
   [
     "TransitionMonitoring",
-    "FSI_0123",
-    null
+    "FSI_0195",
+    3
   ],
   [
     "DecisionUsefulness",
-    "FSI_0123",
-    null
+    "FSI_0195",
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
-    "FSI_0123",
-    null
+    "FSI_0195",
+    3
   ],
   [
     "ScientificRigorAndValidation",
-    "FSI_0123",
-    null
+    "FSI_0195",
+    3
   ],
   [
     "DataAvailability",
-    "FSI_0123",
-    null
+    "FSI_0195",
+    2
   ],
   [
     "DataAccessibility",
-    "FSI_0123",
-    null
+    "FSI_0195",
+    3
   ],
   [
     "DataInteroperability",
-    "FSI_0123",
-    null
+    "FSI_0195",
+    2
   ],
   [
     "BroadGeographicalCoverage",
-    "FSI_0123",
-    null
+    "FSI_0195",
+    3
   ],
   [
     "Timeliness",
-    "FSI_0123",
-    null
+    "FSI_0195",
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
-    "FSI_0123",
-    null
+    "FSI_0196",
+    3
   ],
   [
     "GoalAlignment",
-    "FSI_0123",
-    null
+    "FSI_0196",
+    3
   ],
   [
     "TransitionMonitoring",
-    "FSI_0123",
-    null
+    "FSI_0196",
+    3
   ],
   [
     "DecisionUsefulness",
-    "FSI_0123",
-    null
+    "FSI_0196",
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
-    "FSI_0123",
-    null
+    "FSI_0196",
+    3
   ],
   [
     "ScientificRigorAndValidation",
-    "FSI_0123",
-    null
+    "FSI_0196",
+    3
   ],
   [
     "DataAvailability",
-    "FSI_0123",
-    null
+    "FSI_0196",
+    2
   ],
   [
     "DataAccessibility",
-    "FSI_0123",
-    null
+    "FSI_0196",
+    3
   ],
   [
     "DataInteroperability",
-    "FSI_0123",
-    null
+    "FSI_0196",
+    2
   ],
   [
     "BroadGeographicalCoverage",
-    "FSI_0123",
-    null
+    "FSI_0196",
+    3
   ],
   [
     "Timeliness",
-    "FSI_0123",
-    null
+    "FSI_0196",
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
-    "FSI_0123",
-    null
+    "FSI_0197",
+    3
   ],
   [
     "GoalAlignment",
-    "FSI_0123",
-    null
+    "FSI_0197",
+    3
   ],
   [
     "TransitionMonitoring",
-    "FSI_0123",
-    null
+    "FSI_0197",
+    3
   ],
   [
     "DecisionUsefulness",
-    "FSI_0123",
-    null
+    "FSI_0197",
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
-    "FSI_0123",
-    null
+    "FSI_0197",
+    3
   ],
   [
     "ScientificRigorAndValidation",
-    "FSI_0123",
-    null
+    "FSI_0197",
+    3
   ],
   [
     "DataAvailability",
-    "FSI_0123",
-    null
+    "FSI_0197",
+    2
   ],
   [
     "DataAccessibility",
-    "FSI_0123",
-    null
+    "FSI_0197",
+    3
   ],
   [
     "DataInteroperability",
-    "FSI_0123",
-    null
+    "FSI_0197",
+    2
   ],
   [
     "BroadGeographicalCoverage",
-    "FSI_0123",
-    null
+    "FSI_0197",
+    3
   ],
   [
     "Timeliness",
-    "FSI_0123",
-    null
-  ],
-  [
-    "IntegrationFoodSystemFramework",
-    "FSI_0125",
-    null
-  ],
-  [
-    "GoalAlignment",
-    "FSI_0125",
-    null
-  ],
-  [
-    "TransitionMonitoring",
-    "FSI_0125",
-    null
-  ],
-  [
-    "DecisionUsefulness",
-    "FSI_0125",
-    null
-  ],
-  [
-    "StandardizationComparabilityComplementarity",
-    "FSI_0125",
-    null
-  ],
-  [
-    "ScientificRigorAndValidation",
-    "FSI_0125",
-    null
-  ],
-  [
-    "DataAvailability",
-    "FSI_0125",
-    null
-  ],
-  [
-    "DataAccessibility",
-    "FSI_0125",
-    null
-  ],
-  [
-    "DataInteroperability",
-    "FSI_0125",
-    null
-  ],
-  [
-    "BroadGeographicalCoverage",
-    "FSI_0125",
-    null
-  ],
-  [
-    "Timeliness",
-    "FSI_0125",
-    null
+    "FSI_0197",
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0125",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0125",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0125",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0125",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0125",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0125",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0125",
-    null
+    2
   ],
   [
     "DataAccessibility",
     "FSI_0125",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0125",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0125",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0125",
-    null
+    1
+  ],
+  [
+    "IntegrationFoodSystemFramework",
+    "FSI_0199",
+    3
+  ],
+  [
+    "GoalAlignment",
+    "FSI_0199",
+    3
+  ],
+  [
+    "TransitionMonitoring",
+    "FSI_0199",
+    3
+  ],
+  [
+    "DecisionUsefulness",
+    "FSI_0199",
+    3
+  ],
+  [
+    "StandardizationComparabilityComplementarity",
+    "FSI_0199",
+    3
+  ],
+  [
+    "ScientificRigorAndValidation",
+    "FSI_0199",
+    3
+  ],
+  [
+    "DataAvailability",
+    "FSI_0199",
+    2
+  ],
+  [
+    "DataAccessibility",
+    "FSI_0199",
+    3
+  ],
+  [
+    "DataInteroperability",
+    "FSI_0199",
+    2
+  ],
+  [
+    "BroadGeographicalCoverage",
+    "FSI_0199",
+    2
+  ],
+  [
+    "Timeliness",
+    "FSI_0199",
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0126",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0126",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0126",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0126",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0126",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0126",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0126",
-    null
+    2
   ],
   [
     "DataAccessibility",
     "FSI_0126",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0126",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0126",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0126",
-    null
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0127",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0127",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0127",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0127",
-    null
+    2
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0127",
-    null
+    2
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0127",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0127",
-    null
+    1
   ],
   [
     "DataAccessibility",
     "FSI_0127",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0127",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0127",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0127",
-    null
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0128",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0128",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0128",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0128",
-    null
+    2
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0128",
-    null
+    2
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0128",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0128",
-    null
+    1
   ],
   [
     "DataAccessibility",
     "FSI_0128",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0128",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0128",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0128",
-    null
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0129",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0129",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0129",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0129",
-    null
+    2
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0129",
-    null
+    2
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0129",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0129",
-    null
+    1
   ],
   [
     "DataAccessibility",
     "FSI_0129",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0129",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0129",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0129",
-    null
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0130",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0130",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0130",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0130",
-    null
+    2
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0130",
-    null
+    2
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0130",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0130",
-    null
+    1
   ],
   [
     "DataAccessibility",
     "FSI_0130",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0130",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0130",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0130",
-    null
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0131",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0131",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0131",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0131",
-    null
+    2
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0131",
-    null
+    2
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0131",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0131",
-    null
+    1
   ],
   [
     "DataAccessibility",
     "FSI_0131",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0131",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0131",
-    null
+    1
   ],
   [
     "Timeliness",
     "FSI_0131",
-    null
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0132",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0132",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0132",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0132",
-    null
+    2
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0132",
-    null
+    2
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0132",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0132",
-    null
+    1
   ],
   [
     "DataAccessibility",
     "FSI_0132",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0132",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0132",
-    null
+    1
   ],
   [
     "Timeliness",
     "FSI_0132",
-    null
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0133",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0133",
-    null
+    1
   ],
   [
     "TransitionMonitoring",
     "FSI_0133",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0133",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0133",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0133",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0133",
-    null
+    1
   ],
   [
     "DataAccessibility",
     "FSI_0133",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0133",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0133",
-    null
+    1
   ],
   [
     "Timeliness",
     "FSI_0133",
-    null
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0134",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0134",
-    null
+    2
   ],
   [
     "TransitionMonitoring",
     "FSI_0134",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0134",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0134",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0134",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0134",
-    null
+    2
   ],
   [
     "DataAccessibility",
     "FSI_0134",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0134",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0134",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0134",
-    null
+    2
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0135",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0135",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0135",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0135",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0135",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0135",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0135",
-    null
+    2
   ],
   [
     "DataAccessibility",
     "FSI_0135",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0135",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0135",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0135",
-    null
+    2
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0136",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0136",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0136",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0136",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0136",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0136",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0136",
-    null
+    2
   ],
   [
     "DataAccessibility",
     "FSI_0136",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0136",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0136",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0136",
-    null
+    2
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0137",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0137",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0137",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0137",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0137",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0137",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0137",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0137",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0137",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0137",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0137",
-    null
+    2
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0138",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0138",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0138",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0138",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0138",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0138",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0138",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0138",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0138",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0138",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0138",
-    null
+    2
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0139",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0139",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0139",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0139",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0139",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0139",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0139",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0139",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0139",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0139",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0139",
-    null
+    2
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0140",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0140",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0140",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0140",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0140",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0140",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0140",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0140",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0140",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0140",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0140",
-    null
+    2
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0141",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0141",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0141",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0141",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0141",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0141",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0141",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0141",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0141",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0141",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0141",
-    null
+    2
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0142",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0142",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0142",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0142",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0142",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0142",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0142",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0142",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0142",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0142",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0142",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0143",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0143",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0143",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0143",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0143",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0143",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0143",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0143",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0143",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0143",
-    null
+    1
   ],
   [
     "Timeliness",
     "FSI_0143",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0144",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0144",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0144",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0144",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0144",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0144",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0144",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0144",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0144",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0144",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0144",
-    null
+    2
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0145",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0145",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0145",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0145",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0145",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0145",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0145",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0145",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0145",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0145",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0145",
-    null
+    2
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0146",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0146",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0146",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0146",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0146",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0146",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0146",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0146",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0146",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0146",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0146",
-    null
+    2
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0147",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0147",
-    null
+    2
   ],
   [
     "TransitionMonitoring",
     "FSI_0147",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0147",
-    null
+    2
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0147",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0147",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0147",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0147",
-    null
+    2
   ],
   [
     "DataInteroperability",
     "FSI_0147",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0147",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0147",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
-    "FSI_0170",
-    null
+    "FSI_0192",
+    1
   ],
   [
     "GoalAlignment",
-    "FSI_0170",
-    null
+    "FSI_0192",
+    2
   ],
   [
     "TransitionMonitoring",
-    "FSI_0170",
-    null
+    "FSI_0192",
+    1
   ],
   [
     "DecisionUsefulness",
-    "FSI_0170",
-    null
+    "FSI_0192",
+    1
   ],
   [
     "StandardizationComparabilityComplementarity",
-    "FSI_0170",
-    null
+    "FSI_0192",
+    1
   ],
   [
     "ScientificRigorAndValidation",
-    "FSI_0170",
-    null
+    "FSI_0192",
+    1
   ],
   [
     "DataAvailability",
-    "FSI_0170",
-    null
+    "FSI_0192",
+    3
   ],
   [
     "DataAccessibility",
-    "FSI_0170",
-    null
+    "FSI_0192",
+    1
   ],
   [
     "DataInteroperability",
-    "FSI_0170",
-    null
+    "FSI_0192",
+    1
   ],
   [
     "BroadGeographicalCoverage",
-    "FSI_0170",
-    null
+    "FSI_0192",
+    1
   ],
   [
     "Timeliness",
-    "FSI_0170",
-    null
+    "FSI_0192",
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0149",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0149",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0149",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0149",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0149",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0149",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0149",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0149",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0149",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0149",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0149",
-    null
+    2
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0151",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0151",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0151",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0151",
-    null
+    2
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0151",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0151",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0151",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0151",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0151",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0151",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0151",
-    null
+    2
   ],
   [
     "IntegrationFoodSystemFramework",
-    "FSI_0151",
-    null
+    "FSI_0198",
+    3
   ],
   [
     "GoalAlignment",
-    "FSI_0151",
-    null
+    "FSI_0198",
+    3
   ],
   [
     "TransitionMonitoring",
-    "FSI_0151",
-    null
+    "FSI_0198",
+    3
   ],
   [
     "DecisionUsefulness",
-    "FSI_0151",
-    null
+    "FSI_0198",
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
-    "FSI_0151",
-    null
+    "FSI_0198",
+    3
   ],
   [
     "ScientificRigorAndValidation",
-    "FSI_0151",
-    null
+    "FSI_0198",
+    3
   ],
   [
     "DataAvailability",
-    "FSI_0151",
-    null
+    "FSI_0198",
+    3
   ],
   [
     "DataAccessibility",
-    "FSI_0151",
-    null
+    "FSI_0198",
+    3
   ],
   [
     "DataInteroperability",
-    "FSI_0151",
-    null
+    "FSI_0198",
+    3
   ],
   [
     "BroadGeographicalCoverage",
-    "FSI_0151",
-    null
+    "FSI_0198",
+    3
   ],
   [
     "Timeliness",
-    "FSI_0151",
-    null
+    "FSI_0198",
+    2
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0152",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0152",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0152",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0152",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0152",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0152",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0152",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0152",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0152",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0152",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0152",
-    null
+    2
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0153",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0153",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0153",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0153",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0153",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0153",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0153",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0153",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0153",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0153",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0153",
-    null
+    2
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0154",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0154",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0154",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0154",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0154",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0154",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0154",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0154",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0154",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0154",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0154",
-    null
+    2
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0155",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0155",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0155",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0155",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0155",
-    null
+    2
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0155",
-    null
+    2
   ],
   [
     "DataAvailability",
     "FSI_0155",
-    null
+    2
   ],
   [
     "DataAccessibility",
     "FSI_0155",
-    null
+    2
   ],
   [
     "DataInteroperability",
     "FSI_0155",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0155",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0155",
-    null
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0156",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0156",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0156",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0156",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0156",
-    null
+    2
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0156",
-    null
+    2
   ],
   [
     "DataAvailability",
     "FSI_0156",
-    null
+    2
   ],
   [
     "DataAccessibility",
     "FSI_0156",
-    null
+    2
   ],
   [
     "DataInteroperability",
     "FSI_0156",
-    null
+    2
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0156",
-    null
+    2
   ],
   [
     "Timeliness",
     "FSI_0156",
-    null
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
-    "FSI_0170",
-    null
+    "FSI_0193",
+    1
   ],
   [
     "GoalAlignment",
-    "FSI_0170",
-    null
+    "FSI_0193",
+    2
   ],
   [
     "TransitionMonitoring",
-    "FSI_0170",
-    null
+    "FSI_0193",
+    1
   ],
   [
     "DecisionUsefulness",
-    "FSI_0170",
-    null
+    "FSI_0193",
+    1
   ],
   [
     "StandardizationComparabilityComplementarity",
-    "FSI_0170",
-    null
+    "FSI_0193",
+    1
   ],
   [
     "ScientificRigorAndValidation",
-    "FSI_0170",
-    null
+    "FSI_0193",
+    1
   ],
   [
     "DataAvailability",
-    "FSI_0170",
-    null
+    "FSI_0193",
+    3
   ],
   [
     "DataAccessibility",
-    "FSI_0170",
-    null
+    "FSI_0193",
+    1
   ],
   [
     "DataInteroperability",
-    "FSI_0170",
-    null
+    "FSI_0193",
+    1
   ],
   [
     "BroadGeographicalCoverage",
-    "FSI_0170",
-    null
+    "FSI_0193",
+    3
   ],
   [
     "Timeliness",
-    "FSI_0170",
-    null
+    "FSI_0193",
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0158",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0158",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0158",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0158",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0158",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0158",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0158",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0158",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0158",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0158",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0158",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0159",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0159",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0159",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0159",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0159",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0159",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0159",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0159",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0159",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0159",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0159",
-    null
+    2
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0160",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0160",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0160",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0160",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0160",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0160",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0160",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0160",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0160",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0160",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0160",
-    null
+    2
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0161",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0161",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0161",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0161",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0161",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0161",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0161",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0161",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0161",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0161",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0161",
-    null
+    2
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0162",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0162",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0162",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0162",
-    null
+    2
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0162",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0162",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0162",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0162",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0162",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0162",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0162",
-    null
+    2
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0163",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0163",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0163",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0163",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0163",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0163",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0163",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0163",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0163",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0163",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0163",
-    null
+    2
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0164",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0164",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0164",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0164",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0164",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0164",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0164",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0164",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0164",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0164",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0164",
-    null
+    2
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0165",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0165",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0165",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0165",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0165",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0165",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0165",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0165",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0165",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0165",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0165",
-    null
+    2
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0166",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0166",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0166",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0166",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0166",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0166",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0166",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0166",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0166",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0166",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0166",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0167",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0167",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0167",
-    null
+    3
   ],
   [
     "DecisionUsefulness",
     "FSI_0167",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0167",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0167",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0167",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0167",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0167",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0167",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0167",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0168",
-    null
+    1
   ],
   [
     "GoalAlignment",
     "FSI_0168",
-    null
+    1
   ],
   [
     "TransitionMonitoring",
     "FSI_0168",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0168",
-    null
+    2
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0168",
-    null
+    2
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0168",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0168",
-    null
+    1
   ],
   [
     "DataAccessibility",
     "FSI_0168",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0168",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0168",
-    null
+    1
   ],
   [
     "Timeliness",
     "FSI_0168",
-    null
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0169",
-    null
+    1
   ],
   [
     "GoalAlignment",
     "FSI_0169",
-    null
+    1
   ],
   [
     "TransitionMonitoring",
     "FSI_0169",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0169",
-    null
+    2
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0169",
-    null
+    2
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0169",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0169",
-    null
+    1
   ],
   [
     "DataAccessibility",
     "FSI_0169",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0169",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0169",
-    null
+    1
   ],
   [
     "Timeliness",
     "FSI_0169",
-    null
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
-    "FSI_0170",
-    null
+    "FSI_0194",
+    3
   ],
   [
     "GoalAlignment",
-    "FSI_0170",
-    null
+    "FSI_0194",
+    3
   ],
   [
     "TransitionMonitoring",
-    "FSI_0170",
-    null
+    "FSI_0194",
+    3
   ],
   [
     "DecisionUsefulness",
-    "FSI_0170",
-    null
+    "FSI_0194",
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
-    "FSI_0170",
-    null
+    "FSI_0194",
+    2
   ],
   [
     "ScientificRigorAndValidation",
-    "FSI_0170",
-    null
+    "FSI_0194",
+    2
   ],
   [
     "DataAvailability",
-    "FSI_0170",
-    null
+    "FSI_0194",
+    3
   ],
   [
     "DataAccessibility",
-    "FSI_0170",
-    null
+    "FSI_0194",
+    1
   ],
   [
     "DataInteroperability",
-    "FSI_0170",
-    null
+    "FSI_0194",
+    2
   ],
   [
     "BroadGeographicalCoverage",
-    "FSI_0170",
-    null
+    "FSI_0194",
+    1
   ],
   [
     "Timeliness",
-    "FSI_0170",
-    null
+    "FSI_0194",
+    2
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0171",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0171",
-    null
+    2
   ],
   [
     "TransitionMonitoring",
     "FSI_0171",
-    null
+    1
   ],
   [
     "DecisionUsefulness",
     "FSI_0171",
-    null
+    2
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0171",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0171",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0171",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0171",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0171",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0171",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0171",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0172",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0172",
-    null
+    2
   ],
   [
     "TransitionMonitoring",
     "FSI_0172",
-    null
+    1
   ],
   [
     "DecisionUsefulness",
     "FSI_0172",
-    null
+    2
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0172",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0172",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0172",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0172",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0172",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0172",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0172",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0173",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0173",
-    null
+    2
   ],
   [
     "TransitionMonitoring",
     "FSI_0173",
-    null
+    1
   ],
   [
     "DecisionUsefulness",
     "FSI_0173",
-    null
+    2
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0173",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0173",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0173",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0173",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0173",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0173",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0173",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0174",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0174",
-    null
+    2
   ],
   [
     "TransitionMonitoring",
     "FSI_0174",
-    null
+    1
   ],
   [
     "DecisionUsefulness",
     "FSI_0174",
-    null
+    2
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0174",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0174",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0174",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0174",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0174",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0174",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0174",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0175",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0175",
-    null
+    2
   ],
   [
     "TransitionMonitoring",
     "FSI_0175",
-    null
+    1
   ],
   [
     "DecisionUsefulness",
     "FSI_0175",
-    null
+    2
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0175",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0175",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0175",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0175",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0175",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0175",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0175",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0176",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0176",
-    null
+    2
   ],
   [
     "TransitionMonitoring",
     "FSI_0176",
-    null
+    1
   ],
   [
     "DecisionUsefulness",
     "FSI_0176",
-    null
+    2
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0176",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0176",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0176",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0176",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0176",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0176",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0176",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0177",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0177",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0177",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0177",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0177",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0177",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0177",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0177",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0177",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0177",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0177",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0178",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0178",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0178",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0178",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0178",
-    null
+    2
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0178",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0178",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0178",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0178",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0178",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0178",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0179",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0179",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0179",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0179",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0179",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0179",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0179",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0179",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0179",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0179",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0179",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0180",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0180",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0180",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0180",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0180",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0180",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0180",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0180",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0180",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0180",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0180",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0181",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0181",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0181",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0181",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0181",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0181",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0181",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0181",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0181",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0181",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0181",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0182",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0182",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0182",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0182",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0182",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0182",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0182",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0182",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0182",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0182",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0182",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0183",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0183",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0183",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0183",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0183",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0183",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0183",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0183",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0183",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0183",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0183",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0184",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0184",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0184",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0184",
-    null
+    2
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0184",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0184",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0184",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0184",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0184",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0184",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0184",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0185",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0185",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0185",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0185",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0185",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0185",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0185",
-    null
+    1
   ],
   [
     "DataAccessibility",
     "FSI_0185",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0185",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0185",
-    null
+    1
   ],
   [
     "Timeliness",
     "FSI_0185",
-    null
+    1
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0186",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0186",
-    null
+    2
   ],
   [
     "TransitionMonitoring",
     "FSI_0186",
-    null
+    1
   ],
   [
     "DecisionUsefulness",
     "FSI_0186",
-    null
+    2
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0186",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0186",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0186",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0186",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0186",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0186",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0186",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0187",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0187",
-    null
+    2
   ],
   [
     "TransitionMonitoring",
     "FSI_0187",
-    null
+    1
   ],
   [
     "DecisionUsefulness",
     "FSI_0187",
-    null
+    2
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0187",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0187",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0187",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0187",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0187",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0187",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0187",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0188",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0188",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0188",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0188",
-    null
+    2
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0188",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0188",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0188",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0188",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0188",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0188",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0188",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0189",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0189",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0189",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0189",
-    null
+    2
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0189",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0189",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0189",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0189",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0189",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0189",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0189",
-    null
+    2
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0190",
-    null
+    3
   ],
   [
     "GoalAlignment",
     "FSI_0190",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0190",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0190",
-    null
+    2
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0190",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0190",
-    null
+    2
   ],
   [
     "DataAvailability",
     "FSI_0190",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0190",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0190",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0190",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0190",
-    null
+    3
   ],
   [
     "IntegrationFoodSystemFramework",
     "FSI_0191",
-    null
+    2
   ],
   [
     "GoalAlignment",
     "FSI_0191",
-    null
+    3
   ],
   [
     "TransitionMonitoring",
     "FSI_0191",
-    null
+    2
   ],
   [
     "DecisionUsefulness",
     "FSI_0191",
-    null
+    3
   ],
   [
     "StandardizationComparabilityComplementarity",
     "FSI_0191",
-    null
+    3
   ],
   [
     "ScientificRigorAndValidation",
     "FSI_0191",
-    null
+    3
   ],
   [
     "DataAvailability",
     "FSI_0191",
-    null
+    3
   ],
   [
     "DataAccessibility",
     "FSI_0191",
-    null
+    3
   ],
   [
     "DataInteroperability",
     "FSI_0191",
-    null
+    3
   ],
   [
     "BroadGeographicalCoverage",
     "FSI_0191",
-    null
+    3
   ],
   [
     "Timeliness",
     "FSI_0191",
-    null
+    3
   ]
 ]

@@ -8,7 +8,7 @@
           "name": "Farmers' income",
           "children": [
             {
-              "name": "Agricultural real factor income per annual work unit (AWU) (sdg_02_20)",
+              "name": "Agricultural real factor income per annual work unit (AWU)",
               "value": 1
             },
             {
@@ -24,11 +24,11 @@
               "value": 1
             },
             {
-              "name": "Proportion of agricultural land area that has achieved an acceptable or desirable level of net farm income",
+              "name": "Farmers' income compared to wages in the rest of the economy",
               "value": 1
             },
             {
-              "name": "Farmers' income compared to wages in the rest of the economy",
+              "name": "Proportion of agricultural land area that has achieved an acceptable or desirable level of wage rate in agriculture",
               "value": 1
             }
           ]
@@ -37,11 +37,11 @@
           "name": "Competitiveness",
           "children": [
             {
-              "name": "Government support to agricultural research and development (sdg_02_30)",
+              "name": "Government support to agricultural research and development",
               "value": 1
             },
             {
-              "name": "Real GDP per capita (sdg_08_10)",
+              "name": "Real GDP per capita",
               "value": 1
             },
             {
@@ -143,17 +143,161 @@
       ]
     },
     {
+      "name": "Society",
+      "children": [
+        {
+          "name": "Employment and working conditions",
+          "children": [
+            {
+              "name": "Proportion of agricultural land area that has achieved an acceptable or desirable level of net farm income",
+              "value": 1
+            },
+            {
+              "name": "Employment in agriculture (% of total employment) (modeled ILO estimate)",
+              "value": 1
+            },
+            {
+              "name": "Share of people employed in agriculture/beverage/fishing and aquaculture/food (vs. EU27)",
+              "value": 1
+            },
+            {
+              "name": "Average income of large-scale food producers",
+              "value": 1
+            },
+            {
+              "name": "Average income of small-scale food producers",
+              "value": 1
+            },
+            {
+              "name": "Employment rates by sex, age, educational attainment level, country of birth and degree of urbanisation",
+              "value": 1
+            },
+            {
+              "name": "Persons living in households with very low work intensity, by age group",
+              "value": 1
+            },
+            {
+              "name": "Employment rate by sex",
+              "value": 1
+            },
+            {
+              "name": "Unemployment rates by sex, age and educational attainment level",
+              "value": 1
+            },
+            {
+              "name": "Long-term unemployment by sex",
+              "value": 1
+            },
+            {
+              "name": "Unemployment, total (% of total labor force) (modeled ILO estimate)",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "name": "Social protection and poverty risk",
+          "children": [
+            {
+              "name": "Persons at risk of poverty or social exclusion",
+              "value": 1
+            },
+            {
+              "name": "Income Equality/Income distribution",
+              "value": 1
+            },
+            {
+              "name": "Persons at risk of poverty or social exclusion by degree of urbanisation (broken down by Cities, Towns and suburbs and Rural areas)",
+              "value": 1
+            },
+            {
+              "name": "Income share held by lowest 20%",
+              "value": 1
+            },
+            {
+              "name": "Income share held by highest 20%",
+              "value": 1
+            },
+            {
+              "name": "Proportion of people living below 50 percent of median income",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "name": "Food Equity",
+          "children": [
+            {
+              "name": "Coefficient of variation of habitual caloric consumption distribution (real number)",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "name": "Gender Equity & Inclusion",
+          "children": [
+            {
+              "name": "Labor force participation rate, female",
+              "value": 1
+            },
+            {
+              "name": "Legal guarantees to women's equal rights to land ownership and/or control",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "name": "Demography",
+          "children": [
+            {
+              "name": "Annual Population",
+              "value": 1
+            },
+            {
+              "name": "Population ages 15-64",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "name": "Social resilience",
+          "children": [
+            {
+              "name": "Individuals using the Internet",
+              "value": 1
+            },
+            {
+              "name": "Mobile cellular subscriptions (per 100 people)",
+              "value": 1
+            },
+            {
+              "name": "Political Stability and Absence of Violence/Terrorism: Estimate",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "name": "Access to Infrastructure and Technology/Social resilience",
+          "children": [
+            {
+              "name": "Rural NGA (Next Generation Access) broadband coverage/availability",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "Environment",
       "children": [
         {
           "name": "Conserv. of natural resources",
           "children": [
             {
-              "name": "Area at risk of severe soil erosion by water (sdg_15_50)",
+              "name": "Area at risk of severe soil erosion by water",
               "value": 1
             },
             {
-              "name": "Water exploitation index, plus (WEI+) (sdg_06_60)",
+              "name": "Water exploitation index, plus (WEI+)",
               "value": 1
             },
             {
@@ -211,7 +355,7 @@
           "name": "Organic farming",
           "children": [
             {
-              "name": "Area under organic farming (sdg_02_40)",
+              "name": "Area under organic farming",
               "value": 1
             },
             {
@@ -256,7 +400,7 @@
           "name": "GHG emissions",
           "children": [
             {
-              "name": "Ammonia emissions from agriculture (sdg_02_60)",
+              "name": "Ammonia emissions from agriculture",
               "value": 1
             },
             {
@@ -314,7 +458,7 @@
           "name": "Pesticide and antibiotic use",
           "children": [
             {
-              "name": "Use and risk of chemical pesticides (sdg_02_53)",
+              "name": "Use and risk of chemical pesticides",
               "value": 1
             },
             {
@@ -372,7 +516,7 @@
           "name": "Impacts of climate change",
           "children": [
             {
-              "name": "Drought impact area on ecosystems (sdg_15_42)",
+              "name": "Drought impact area on ecosystems",
               "value": 1
             }
           ]
@@ -520,7 +664,7 @@
           "name": "Nutrition and Health",
           "children": [
             {
-              "name": "Obesity rate by body mass index (BMI) (sdg_02_10)",
+              "name": "Obesity rate by body mass index (BMI)",
               "value": 1
             },
             {
@@ -674,7 +818,7 @@
           "name": "Food quality and safety",
           "children": [
             {
-              "name": "Nitrate in groundwater (sdg_06_40)",
+              "name": "Nitrate in groundwater",
               "value": 1
             },
             {
@@ -721,7 +865,7 @@
           ]
         },
         {
-          "name": "Food availability",
+          "name": "Food Availability",
           "children": [
             {
               "name": "Average dietary energy supply adequacy (3-year average)",
@@ -794,160 +938,6 @@
             },
             {
               "name": "Cereal import dependency ratio (3-year average)",
-              "value": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Society",
-      "children": [
-        {
-          "name": "Employm. in agric._food sector",
-          "children": [
-            {
-              "name": "Employment in agriculture (% of total employment) (modeled ILO estimate)",
-              "value": 1
-            },
-            {
-              "name": "Share of people employed in agriculture/beverage/fishing and aquaculture/food (vs. EU27)",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "name": "Working cond._agric. food sect.",
-          "children": [
-            {
-              "name": "Average income of large-scale food producers",
-              "value": 1
-            },
-            {
-              "name": "Average income of small-scale food producers",
-              "value": 1
-            },
-            {
-              "name": "Proportion of agricultural land area that has achieved an acceptable or desirable level of wage rate in agriculture",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "name": "General (un)employment",
-          "children": [
-            {
-              "name": "Employment rates by sex, age, educational attainment level, country of birth and degree of urbanisation",
-              "value": 1
-            },
-            {
-              "name": "Persons living in households with very low work intensity, by age group (sdg_01_40)",
-              "value": 1
-            },
-            {
-              "name": "Employment rate by sex (sdg_08_30)",
-              "value": 1
-            },
-            {
-              "name": "Unemployment rates by sex, age and educational attainment level",
-              "value": 1
-            },
-            {
-              "name": "Long-term unemployment by sex",
-              "value": 1
-            },
-            {
-              "name": "Unemployment, total (% of total labor force) (modeled ILO estimate)",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "name": "Income distribut._Poverty risk",
-          "children": [
-            {
-              "name": "Persons at risk of poverty or social exclusion (sdg_01_10)",
-              "value": 1
-            },
-            {
-              "name": "Income Equality/Income distribution",
-              "value": 1
-            },
-            {
-              "name": "Persons at risk of poverty or social exclusion by degree of urbanisation (sdg_01_10a) (broken down by Cities, Towns and suburbs and Rural areas)",
-              "value": 1
-            },
-            {
-              "name": "Income share held by lowest 20%",
-              "value": 1
-            },
-            {
-              "name": "Income share held by highest 20%",
-              "value": 1
-            },
-            {
-              "name": "Proportion of people living below 50 percent of median income",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "name": "Food Equity",
-          "children": [
-            {
-              "name": "Coefficient of variation of habitual caloric consumption distribution (real number)",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "name": "Gender Equity",
-          "children": [
-            {
-              "name": "Labor force participation rate, female",
-              "value": 1
-            },
-            {
-              "name": "Legal guarantees to women's equal rights to land ownership and/or control",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "name": "Demography",
-          "children": [
-            {
-              "name": "Annual Population",
-              "value": 1
-            },
-            {
-              "name": "Population ages 15-64",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "name": "Social resilience",
-          "children": [
-            {
-              "name": "Individuals using the Internet",
-              "value": 1
-            },
-            {
-              "name": "Mobile cellular subscriptions (per 100 people)",
-              "value": 1
-            },
-            {
-              "name": "Political Stability and Absence of Violence/Terrorism: Estimate",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "name": "Rural development",
-          "children": [
-            {
-              "name": "Rural NGA (Next Generation Access) broadband coverage/availability",
               "value": 1
             }
           ]

@@ -22,18 +22,21 @@
 - id: IndicatorCriterion
   name: indicator criterion
   description: Criterion used for indicator selection.
-- id: IndicatorcriteriaScore
+- id: IndicatorCriterionScore
   name: indicator criterion score
   description: A score assigned to an indicator based on a specific selection criterion.
 - id: Reference
   name: reference
-  description: A reference to a publication, database or dataset.
+  description: a reference to a publication, database or dataset.
 - id: Database
   name: database
   description: A reference to a database.
 - id: TransitionDomainPillar
   name: transition domain pillar
   description: Sub-area of a transition domain.
+- id: IndicatorTransitionDomainConnection
+  name: alignment of an indicator to a transition domain
+  description: alignment of an indicator to a transition domain.
 - id: IndicatorMeasurementUnit
   name: Eurostat unit of measurement
   description: Food system indicator units of measurement imported from the Eurostat
@@ -105,10 +108,9 @@
   name: transition domain
   description: Transition domains represent key thematic areas for research and innovation
     (R&I) to drive systemic change towards sustainable food systems.
-- id: Eu2025SdgIndicator
-  name: EU SDG indicators
-  description: Indicators of the 2025 edition of the EU sustainable development goals
-    (SDG) monitoring report.
+- id: SdgTarget
+  name: UN SDG targets
+  description: Targets from the United Nations Sustainable Development Goals (SDGs).
 - id: ReferenceType
   name: Reference types
   description: The type of source that a reference refers to.

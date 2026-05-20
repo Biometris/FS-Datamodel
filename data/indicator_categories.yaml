@@ -1,164 +1,142 @@
 - id: FarmersIncome
   name: Farmers' income
-  description: ''
+  description: The profitability of farming systems is measured by farm income, which reflects the ability of agricultural activities to generate sufficient returns to sustain livelihoods and ensure the economic viability of producers
   dimension: Economy
 - id: Competitiveness
   name: Competitiveness
-  description: ''
+  description: 'Comprises a set of indicators that measure the ability of the agri-food system to compete in markets through: (i) trade performance (e.g. market shares, exports, revealed comparative advantage), (ii) economic performance (e.g. labour productivity, growth, value added), and (iii) structural and efficiency factors (e.g. production conditions,'
   dimension: Economy
 - id: FoodAffordability
   name: Food affordability
-  description: ''
+  description: 'Comprises a set of indicators that measure the extent to which individuals and households can economically access sufficient, safe and nutritious food, considering: (i) food prices and price volatility, (ii) household income and purchasing power, and (iii) the share of income or expenditure devoted to food, as well as the relative cost of a '
   dimension: Economy
 - id: EconomicResilience
   name: Economic resilience
-  description: ''
+  description: 'Comprises a set of indicators that measure the capacity of the agri-food system, households, or economic actors to withstand, adapt to, and recover from shocks and stresses, considering: (i) income stability and diversification, (ii) exposure and sensitivity to economic and market shocks (e.g. price volatility), and (iii) adaptive capacity and coping mechanisms (e.g. savings, access to credit, social protection), ensuring the continuity of economic functions over time.'
   dimension: Economy
 - id: ConservOfNaturalResources
   name: Conserv. of natural resources
-  description: ''
+  description: Capacity of the food system to maintain the quantity, quality, and functionality of soil, water, air, and energy resources over time, preventing degradation and overexploitation.
   dimension: Environment
 - id: BiodiversityConservation
   name: Biodiversity conservation
-  description: ''
+  description: Maintenance of genetic, species, and ecosystem diversity linked to food production and affected habitats.
   dimension: Environment
 - id: OrganicFarming
   name: Organic farming
-  description: ''
+  description: Structural and management arrangements of agricultural production systems (e.g., intensive, organic, agroecological, crop-livestock integration) shaping environmental performance.
   dimension: Environment
 - id: GhgEmissions
   name: GHG emissions
-  description: ''
+  description: Greenhouse gas emissions (CO2, CH4, N2O) generated along the food supply chain, expressed in CO2-equivalents.
   dimension: Environment
 - id: AirPollutants
   name: Air pollutants
-  description: ''
+  description: Emissions of non-climate air pollutants (e.g., NH3, NOx, particulate matter) derived from food system activities.
   dimension: Environment
 - id: PesticideAndAntibioticUse
   name: Pesticide and antibiotic use
-  description: ''
+  description: Intensity and associated risks of pesticide and antimicrobial use in crop and livestock production.
   dimension: Environment
 - id: FertilizerUse
   name: Fertilizer use
-  description: ''
+  description: Application of synthetic and organic fertilizers and related nutrient balances (N, P, K) affecting soil, water, and climate.
   dimension: Environment
 - id: ImpactsOfClimateChange
   name: Impacts of climate change
-  description: ''
+  description: Effects of climate change on food systems, including yield variability, water stress, and extreme events.
   dimension: Environment
 - id: AnimalKeeping
   name: Animal keeping
-  description: ''
+  description: Livestock management systems and practices with implications for emissions, land use, nutrient cycles, and animal welfare.
   dimension: Environment
 - id: FoodWasteFoodLoss
   name: Food waste & food loss
-  description: ''
+  description: Food loss and food waste refer to the decrease in the quantity or quality of food along the food supply chain, from production to consumption, caused by decisions and actions of all actors involved, including producers, processors, retailers, food service providers, and consumers.
   dimension: Environment
 - id: WaterQuality
   name: Water quality
-  description: ''
+  description: Physical, chemical, and biological properties of water that determine its suitability for agricultural production, food processing, and human consumption, while minimizing risks to human health and ecosystems and preventing pollution from food system activities.
   dimension: Environment
 - id: SusDevelopmentPrimaryProd
   name: Sus. development_primary prod.
-  description: ''
+  description: Management of agricultural, livestock, fisheries, and forestry activities in a way that meets current food and material needs while preserving natural resources, ecosystem services, and biodiversity for future generations, ensuring environmental integrity, economic viability, and social equity.
   dimension: Environment
 - id: EcologicalResilience
   name: Ecological resilience
-  description: ''
+  description: Capacity of an ecosystem to absorb disturbances and reorganize while undergoing change, so as to still retain essentially the same function, structure, identity, and feedbacks.
   dimension: Environment
 - id: CrossCuttingIndicators
   name: Cross-cutting indicators
-  description: ''
+  description: Metrics that capture issues or outcomes relevant across multiple sectors, dimensions, or thematic areas, enabling integrated assessment and comparison within complex systems such as sustainable development or food systems.
   dimension: Environment
 - id: NutritionAndHealth
   name: Nutrition and Health
-  description: >-
-    Indicators capturing the final health outcomes of food systems, encompassing nutritional status and malnutrition in all its forms, 
-    including undernutrition, micronutrient deficiencies, overweight, obesity, and diet-related non-communicable diseases.
+  description: Indicators capturing the final health outcomes of food systems, encompassing nutritional status and malnutrition in all its forms, including undernutrition, micronutrient deficiencies, overweight, obesity, and diet-related non-communicable diseases.
   dimension: Health
   outcome_type: Health
   referenced_in:
-    - HLPE2017
+  - HLPE2017
 - id: DietaryConsumptionPatternsFoodIntake
   name: Dietary consumption patterns/Food Intake
-  description: >-
-    Indicators describing the dietary consumption patterns refer to the quantities, proportions, and habitual combinations of foods and 
-    drinks that individuals or populations.
+  description: Indicators describing the dietary consumption patterns refer to the quantities, proportions, and habitual combinations of foods and  drinks that individuals or populations.
   dimension: Health
   activity_type: ConsumptionAndDiets
   referenced_in:
-    - USDHHS2020
+  - USDHHS2020
 - id: FoodQualityAndSafety
   name: Food quality and safety
-  description: >-
-    Indicators describing the extent to which foods meet established standards of safety and quality, including the absence of 
-    biological, chemical, and physical hazards, as well as compliance with nutritional, compositional, and hygienic requirements 
-    along the food chain.
+  description: Indicators describing the extent to which foods meet established standards of safety and quality, including the absence of biological, chemical, and physical hazards, as well as compliance with nutritional, compositional, and hygienic requirements along the food chain.
   dimension: Health
   outcome_type: Health
   referenced_in:
-    - FAO2003
+  - FAO2003
 - id: FoodSecurityAccessAndEnablingFactors
-  name: >- 
-    Food access and enabling factors
-  description: >-
-    Indicators capturing both people's ability to obtain adequate food (economic and physical access) and the broader economic, 
-    infrastructural, and systemic conditions that enable or constrain such access.
+  name: Food access and enabling factors
+  description: Indicators capturing both people's ability to obtain adequate food (economic and physical access) and the broader economic, infrastructural, and systemic conditions that enable or constrain such access.
   dimension: Health
   outcome_type: FoodSecurity
   referenced_in:
-    - FAO2008
+  - FAO2008
 - id: FoodAvailability
-  name: Food availability
-  description: >- 
-    Indicators describing the quantity, composition, and stability of food supplied by the food system through domestic production, 
-    imports, and stocks, including the supply of energy and nutrients and the productive capacity of agriculture.
+  name: Food Availability
+  description: Indicators describing the quantity, composition, and stability of food supplied by the food system through domestic production, imports, and stocks, including the supply of energy and nutrients and the productive capacity of agriculture.
   dimension: Health
   activity_type: FoodEnvironment
   referenced_in:
-    - FAO2008
+  - FAO2008
 - id: FoodStability
   name: Food stability
-  description: >-
-    Indicators describing the extent to which the availability of and access to food are maintained over time, including the 
-    resilience of food supply systems to economic, climatic, and market-related shocks and variability.
+  description: Indicators describing the extent to which the availability of and access to food are maintained over time, including the resilience of food supply systems to economic, climatic, and market-related shocks and variability.
   dimension: Health
   outcome_type: Resilience
   referenced_in:
-    - FAO2008
-- id: EmploymInAgricFoodSector
-  name: Employm. in agric._food sector
+  - FAO2008
+- id: EmploymentAndWorkingConditions
+  name: Employment and working conditions
   description: ''
   dimension: Society
-- id: WorkingCondAgricFoodSect
-  name: Working cond._agric. food sect.
-  description: ''
-  dimension: Society
-- id: GeneralUnEmployment
-  name: General (un)employment
-  description: ''
-  dimension: Society
-- id: IncomeDistributPovertyRisk
-  name: Income distribut._Poverty risk
-  description: ''
+- id: SocialProtectionAndPovertyRisk
+  name: Social protection and poverty risk
+  description: Indicators tracking social protection coverage, poverty levels, and economic vulnerability among food system actors and dependent communities.
   dimension: Society
 - id: FoodEquity
   name: Food Equity
-  description: ''
+  description: Indicators measuring unequal access to adequate food consumption, food affordability, dietary adequacy, and food security outcomes across populations and vulnerable groups.
   dimension: Society
 - id: GenderEquity
-  name: Gender Equity
-  description: ''
+  name: Gender Equity & Inclusion
+  description: Indicators assessing gender differences in access to resources, labour participation, land rights, decision-making, and other conditions shaping equitable participation in food systems.
   dimension: Society
 - id: Demography
   name: Demography
-  description: ''
+  description: Indicators describing population size, composition, age structure, and spatial distribution that shape food demand, labour availability, and territorial planning.
   dimension: Society
 - id: SocialResilience
   name: Social resilience
-  description: ''
+  description: Indicators capturing enabling social, digital, and institutional conditions that support the capacity to anticipate, communicate, absorb, and recover from shocks and stresses.
   dimension: Society
 - id: RuralDevelopment
-  name: Rural development
+  name: Access to Infrastructure and Technology/Social resilience
   description: ''
   dimension: Society

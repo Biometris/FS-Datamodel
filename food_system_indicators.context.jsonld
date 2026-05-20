@@ -82,14 +82,6 @@
          },
          "@id": "environment_activity_type"
       },
-      "eu2025_sdg_indicator_code": {
-         "@context": {
-            "text": "skos:notation",
-            "description": "skos:prefLabel",
-            "meaning": "@id"
-         },
-         "@id": "eu2025_sdg_indicator_code"
-      },
       "has_numeric_value": {
          "@type": "xsd:double",
          "@id": "has_numeric_value"
@@ -162,6 +154,9 @@
          "@type": "@id",
          "@id": "part_of_collection"
       },
+      "rationale": {
+         "@id": "rationale"
+      },
       "rationale_adequate": {
          "@id": "rationale_adequate"
       },
@@ -183,6 +178,18 @@
          "@type": "@id",
          "@id": "referenced_in"
       },
+      "related_sdg_targets": {
+         "@context": {
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         },
+         "@id": "related_sdg_targets"
+      },
+      "relates_to_indicator": {
+         "@type": "@id",
+         "@id": "relates_to_indicator"
+      },
       "response_policy": {
          "@context": {
             "text": "skos:notation",
@@ -198,10 +205,6 @@
             "meaning": "@id"
          },
          "@id": "score"
-      },
-      "score_for_indicator": {
-         "@type": "@id",
-         "@id": "score_for_indicator"
       },
       "scores_criterion": {
          "@type": "@id",
@@ -271,14 +274,6 @@
          },
          "@id": "transition_domain"
       },
-      "transition_domain_connections": {
-         "@context": {
-            "text": "skos:notation",
-            "description": "skos:prefLabel",
-            "meaning": "@id"
-         },
-         "@id": "transition_domain_connections"
-      },
       "update_frequency": {
          "@context": {
             "text": "skos:notation",
@@ -299,17 +294,20 @@
       "IndicatorCategory": {
          "@id": "IndicatorCategory"
       },
-      "IndicatorcriteriaScore": {
-         "@id": "IndicatorcriteriaScore"
-      },
       "IndicatorCriterion": {
          "@id": "IndicatorCriterion"
+      },
+      "IndicatorCriterionScore": {
+         "@id": "IndicatorCriterionScore"
       },
       "IndicatorDataCollectionDetails": {
          "@id": "IndicatorDataCollectionDetails"
       },
       "IndicatorDatapoint": {
          "@id": "IndicatorDatapoint"
+      },
+      "IndicatorTransitionDomainConnection": {
+         "@id": "IndicatorTransitionDomainConnection"
       },
       "QuantityValue": {
          "@id": "QuantityValue"

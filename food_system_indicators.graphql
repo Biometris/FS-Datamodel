@@ -1,29 +1,10 @@
-# metamodel_version: 1.7.0
+# metamodel_version: 1.11.0
 enum CriterionCategory
   {
     CoherenceOnFramework
     GoalOrientedAndPolicyRelevant
     SoundMethodologies
     GeographicalCoverageAndTimeliness
-  }
-
-enum Eu2025SdgIndicator
-  {
-    EU_SDG_01_10
-    EU_SDG_01_10a
-    EU_SDG_01_40
-    EU_SDG_02_10
-    EU_SDG_02_20
-    EU_SDG_02_30
-    EU_SDG_02_40
-    EU_SDG_02_60
-    EU_SDG_02_53
-    EU_SDG_08_10
-    EU_SDG_06_40
-    EU_SDG_06_60
-    EU_SDG_08_30
-    EU_SDG_15_42
-    EU_SDG_15_50
   }
 
 enum FoodDemandActivityType
@@ -60,6 +41,7 @@ enum FoodSystemActivityType
     FoodDemand
     UseNaturalResources
     ConsumptionAndDiets
+    WasteByProductsRecycling
   }
 
 enum FoodSystemDrivingForce
@@ -1154,6 +1136,64 @@ enum ScoreCategory
     Strong
   }
 
+enum SdgTarget
+  {
+    SDG_1
+    SDG_1_4
+    SDG_2
+    SDG_2_1
+    SDG_2_2
+    SDG_2_3
+    SDG_2_4
+    SDG_2_5
+    SDG_2_a
+    SDG_3
+    SDG_3_4
+    SDG_3_9
+    SDG_3_d
+    SDG_4_4
+    SDG_5
+    SDG_5_a
+    SDG_5_5
+    SDG_6
+    SDG_6_3
+    SDG_6_4
+    SDG_6_6
+    SDG_7
+    SDG_7_2
+    SDG_7_3
+    SDG_8
+    SDG_8_2
+    SDG_8_3
+    SDG_8_4
+    SDG_9
+    SDG_9_4
+    SDG_10
+    SDG_10_2
+    SDG_10_3
+    SDG_11
+    SDG_11_5
+    SDG_12
+    SDG_12_2
+    SDG_12_3
+    SDG_12_4
+    SDG_12_5
+    SDG_12_6
+    SDG_12_8
+    SDG_13
+    SDG_13_1
+    SDG_13_2
+    SDG_13_3
+    SDG_13_a
+    SDG_14_2
+    SDG_15_1
+    SDG_15_3
+    SDG_15_5
+    SDG_15_a
+    SDG_16
+    SDG_17
+  }
+
 enum SpatialGranularity
   {
     MacroRegions
@@ -1254,9 +1294,8 @@ type Indicator
     measurementUnitDescription: Unit
     measurementUnits: [IndicatorMeasurementUnit]
     hasCategory: IndicatorCategory!
-    transitionDomainConnections: [TransitionDomain]
     sustainabilityImpact: SustainabilityImpactType
-    eu2025SdgIndicatorCode: [Eu2025SdgIndicator]
+    relatedSdgTargets: [SdgTarget]
     methodologyDescription: NarrativeText
   }
 
@@ -1273,14 +1312,6 @@ type IndicatorCategory
     referencedIn: [Reference]
   }
 
-type IndicatorcriteriaScore
-  {
-    scoreForIndicator: Indicator
-    scoresCriterion: IndicatorCriterion
-    score: ScoreCategory
-    comment: NarrativeText
-  }
-
 type IndicatorCriterion
   {
     id: String!
@@ -1291,6 +1322,14 @@ type IndicatorCriterion
     rationaleStrong: NarrativeText
     rationaleAdequate: NarrativeText
     rationaleWeak: NarrativeText
+  }
+
+type IndicatorCriterionScore
+  {
+    relatesToIndicator: Indicator
+    scoresCriterion: IndicatorCriterion
+    score: ScoreCategory
+    rationale: NarrativeText
   }
 
 type IndicatorDataCollectionDetails
@@ -1320,6 +1359,13 @@ type IndicatorDatapoint
     measurementOf: Indicator!
     partOfCollection: IndicatorDataCollectionDetails!
     id: String!
+  }
+
+type IndicatorTransitionDomainConnection
+  {
+    relatesToIndicator: Indicator
+    transitionDomain: TransitionDomain
+    score: ScoreCategory
   }
 
 type QuantityValue
