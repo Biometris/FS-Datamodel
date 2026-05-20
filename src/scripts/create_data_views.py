@@ -17,24 +17,26 @@ def create_indicator_hierarchy_json(indicators, categories_dict):
     # Build hierarchy
     hierarchy = {}
     for e in indicators:
-        if e['outcome_type'] not in hierarchy:
-            hierarchy[e['outcome_type']] = {}
-        if e['has_category'] not in hierarchy[e['outcome_type']]:
-            hierarchy[e['outcome_type']][e['has_category']] = []
-        hierarchy[e['outcome_type']][e['has_category']].append(e)
+        category = categories_dict[e['has_category']]
+        dimension = category['dimension']
+        if dimension not in hierarchy:
+            hierarchy[dimension] = {}
+        if e['has_category'] not in hierarchy[dimension]:
+            hierarchy[dimension][e['has_category']] = []
+        hierarchy[dimension][e['has_category']].append(e)
 
     # Convert hierarchy
     sunburst_data = []
-    for outcome_type, categories in hierarchy.items():
-        outcome_type_node = {"name": outcome_type, "children": []}
+    for dimension, categories in hierarchy.items():
+        dimension_node = {"name": dimension, "children": []}
         for category_id, ents in categories.items():
              category_name = categories_dict[category_id]['name']
              category_node = {
                  "name": category_name,
                  "children": [{"name": ent['name'], "value": 1} for ent in ents]
                  }
-             outcome_type_node["children"].append(category_node)
-        sunburst_data.append(outcome_type_node)
+             dimension_node["children"].append(category_node)
+        sunburst_data.append(dimension_node)
 
     # Tree data requires base node
     tree_data = {"name": "Indicator hierarchy", "children": sunburst_data}
